@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function SubscribeButton({
   country,
@@ -13,6 +13,7 @@ export default function SubscribeButton({
   hint: string;
 }) {
   const locale = useLocale();
+  const t = useTranslations("country");
   const [copied, setCopied] = useState(false);
   const href = `/${locale}/${country}/calendar.ics`;
 
@@ -29,7 +30,7 @@ export default function SubscribeButton({
   };
 
   return (
-    <div className="space-y-1 text-right">
+    <div className="space-y-1 text-left sm:text-right">
       <a
         href={href}
         className="inline-block rounded-lg bg-brand px-4 py-2 text-sm font-semibold text-brand-fg transition hover:opacity-90"
@@ -42,7 +43,7 @@ export default function SubscribeButton({
           onClick={copy}
           className="text-xs text-[var(--muted)] underline"
         >
-          {copied ? "Copied!" : "Copy link"}
+          {copied ? t("copied") : t("copyLink")}
         </button>
       </div>
       <p className="text-xs text-[var(--muted)]">{hint}</p>

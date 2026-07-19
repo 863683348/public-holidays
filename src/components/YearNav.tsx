@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 
 const base =
   "inline-flex items-center justify-center min-w-[2.75rem] px-3 py-1.5 rounded-md text-sm font-medium border transition-colors";
@@ -13,6 +14,7 @@ export default function YearNav({
   country: string;
   year: number;
 }) {
+  const t = useTranslations("yearNav");
   const window = [year - 1, year, year + 1];
 
   return (
@@ -23,7 +25,7 @@ export default function YearNav({
       <Link
         href={`/${country}/${year - 1}`}
         className={`${base} ${idle}`}
-        aria-label={`Previous year ${year - 1}`}
+        aria-label={t("prev", { year: year - 1 })}
       >
         &larr;
       </Link>
@@ -40,7 +42,7 @@ export default function YearNav({
       <Link
         href={`/${country}/${year + 1}`}
         className={`${base} ${idle}`}
-        aria-label={`Next year ${year + 1}`}
+        aria-label={t("next", { year: year + 1 })}
       >
         &rarr;
       </Link>

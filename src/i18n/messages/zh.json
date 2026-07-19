@@ -1,0 +1,68 @@
+{
+  "site": {
+    "title": "PubHoliday",
+    "tagline": "读懂假期，玩转日历。"
+  },
+  "nav": {
+    "home": "首页"
+  },
+  "home": {
+    "heading": "全球公共假期，一站查全",
+    "subtitle": "选择一个国家，查看它的假期安排、规划长周末，并订阅到你的日历。",
+    "searchPlaceholder": "搜索国家…",
+    "popular": "热门国家",
+    "allCountries": "全部国家",
+    "noResults": "未找到匹配的国家。",
+    "worldClockCard": "世界时钟",
+    "worldClockCardDesc": "查看全球主要城市此刻的时间与公共假期。"
+  },
+  "country": {
+    "yearView": "{year} 年假期日历",
+    "holidays": "假期",
+    "longWeekends": "长周末与调休机会",
+    "subscribe": "订阅日历",
+    "subscribeHint": "将这些假期添加到 Google、Apple 或 Outlook 日历。",
+    "copyLink": "复制链接",
+    "copied": "已复制！",
+    "backHome": "← 全部国家",
+    "dataLag": "数据可能略有滞后。"
+  },
+  "longWeekend": {
+    "natural": "长周末",
+    "bridge": "调休机会",
+    "takeGet": "请 {bridge} 休假",
+    "days": "天",
+    "none": "今年没有可拼出的长周末。"
+  },
+  "calendar": {
+    "weekdays": ["一", "二", "三", "四", "五", "六", "日"],
+    "months": [
+      "一月", "二月", "三月", "四月", "五月", "六月",
+      "七月", "八月", "九月", "十月", "十一月", "十二月"
+    ]
+  },
+  "yearNav": {
+    "prev": "上一年 {year}",
+    "next": "下一年 {year}"
+  },
+  "theme": {
+    "toggle": "切换主题"
+  },
+  "language": {
+    "label": "语言"
+  },
+  "ad": {
+    "label": "广告"
+  },
+  "worldClock": {
+    "title": "世界时钟",
+    "local": "本地",
+    "badge": "公共假期",
+    "noHoliday": "今日无公共假期",
+    "noData": "暂无假期数据",
+    "loading": "加载中…"
+  },
+  "footer": {
+    "disclaimer": "假期数据仅供参考，规划前请以官方发布为准。"
+  }
+}

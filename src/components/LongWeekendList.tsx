@@ -1,14 +1,14 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import type { LongWeekend } from "@/lib/longWeekend";
 
-function fmtRange(start: string, end: string): string {
+function fmtRange(start: string, end: string, locale: string): string {
   const opts: Intl.DateTimeFormatOptions = {
     month: "short",
     day: "numeric",
     timeZone: "UTC",
   };
-  const s = new Date(`${start}T00:00:00Z`).toLocaleDateString("en-US", opts);
-  const e = new Date(`${end}T00:00:00Z`).toLocaleDateString("en-US", opts);
+  const s = new Date(`${start}T00:00:00Z`).toLocaleDateString(locale, opts);
+  const e = new Date(`${end}T00:00:00Z`).toLocaleDateString(locale, opts);
   return start === end ? s : `${s} – ${e}`;
 }
 
@@ -18,6 +18,7 @@ export default function LongWeekendList({
   items: LongWeekend[];
 }) {
   const t = useTranslations("longWeekend");
+  const locale = useLocale();
 
   if (items.length === 0) {
     return <p className="text-[var(--muted)]">{t("none")}</p>;
@@ -38,11 +39,11 @@ export default function LongWeekendList({
           >
             {lw.needBridge ? t("bridge") : t("natural")}
           </span>
-          <span className="font-medium">{fmtRange(lw.start, lw.end)}</span>
+          <span className="font-medium">{fmtRange(lw.start, lw.end, locale)}</span>
           <span className="text-sm text-[var(--muted)]">
-            {lw.days} days
+            {lw.days} {t("days")}
             {lw.needBridge && lw.bridgeDay
-              ? ` · ${t("takeGet", { bridge: lw.bridgeDay, days: lw.days })}`
+              ? ` · ${t("takeGet", { bridge: lw.bridgeDay })}`
               : ""}
           </span>
         </li>

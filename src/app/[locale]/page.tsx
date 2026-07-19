@@ -36,6 +36,23 @@ export default async function HomePage({
         </div>
       </section>
 
+      <section className="space-y-4">
+        <Link
+          href="/world-clock"
+          className="block rounded-xl border border-[var(--border)] bg-[var(--card)] p-5 transition hover:border-brand"
+        >
+          <div className="flex items-center justify-between gap-4">
+            <div>
+              <h2 className="text-lg font-semibold">{t("worldClockCard")}</h2>
+              <p className="mt-1 text-sm text-[var(--muted)]">
+                {t("worldClockCardDesc")}
+              </p>
+            </div>
+            <span className="text-xl text-[var(--muted)]">→</span>
+          </div>
+        </Link>
+      </section>
+
       <AdSlot />
     </div>
   );

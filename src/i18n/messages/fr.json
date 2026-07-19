@@ -11,7 +11,10 @@
     "subtitle": "Choisissez un pays pour voir ses fériés, planifier des ponts et vous abonner à votre calendrier.",
     "searchPlaceholder": "Rechercher un pays...",
     "popular": "Pays populaires",
-    "allCountries": "Tous les pays"
+    "allCountries": "Tous les pays",
+    "noResults": "Aucun pays trouvé.",
+    "worldClockCard": "Horloge Mondiale",
+    "worldClockCardDesc": "Voyez l'heure et les jours fériés actuels dans les grandes villes."
   },
   "country": {
     "yearView": "Calendrier des fériés {year}",
@@ -19,20 +22,45 @@
     "longWeekends": "Ponts et longs week-ends",
     "subscribe": "S'abonner au calendrier",
     "subscribeHint": "Ajoutez ces fériés à Google, Apple ou Outlook Calendar.",
+    "copyLink": "Copier le lien",
+    "copied": "Copié !",
     "backHome": "← Tous les pays",
     "dataLag": "Les données peuvent être légèrement obsolètes."
   },
   "longWeekend": {
     "natural": "Long week-end",
     "bridge": "Opportunité de pont",
-    "takeGet": "Prenez {bridge} → {days} jours libres",
+    "takeGet": "Prenez {bridge} libre",
+    "days": "jours",
     "none": "Aucun long week-end trouvé cette année."
+  },
+  "calendar": {
+    "weekdays": ["Lu", "Ma", "Me", "Je", "Ve", "Sa", "Di"],
+    "months": [
+      "Janvier", "Février", "Mars", "Avril", "Mai", "Juin",
+      "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"
+    ]
+  },
+  "yearNav": {
+    "prev": "Année précédente {year}",
+    "next": "Année suivante {year}"
   },
   "theme": {
     "toggle": "Changer de thème"
   },
+  "language": {
+    "label": "Langue"
+  },
   "ad": {
     "label": "Publicité"
+  },
+  "worldClock": {
+    "title": "Horloge Mondiale",
+    "local": "Local",
+    "badge": "Jour férié",
+    "noHoliday": "Aucun jour férié aujourd'hui",
+    "noData": "Données de jours fériés indisponibles",
+    "loading": "Chargement…"
   },
   "footer": {
     "disclaimer": "Les données de fériés sont fournies à titre indicatif. Vérifiez toujours auprès des sources officielles avant de planifier."

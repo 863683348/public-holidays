@@ -11,7 +11,10 @@
     "subtitle": "Wähle ein Land, um seine Feiertage zu sehen, lange Wochenenden zu planen und den Kalender zu abonnieren.",
     "searchPlaceholder": "Land suchen...",
     "popular": "Beliebte Länder",
-    "allCountries": "Alle Länder"
+    "allCountries": "Alle Länder",
+    "noResults": "Keine Länder gefunden.",
+    "worldClockCard": "Weltuhr",
+    "worldClockCardDesc": "Aktuelle Uhrzeit und Feiertage in Großstädten weltweit."
   },
   "country": {
     "yearView": "Feiertagskalender {year}",
@@ -19,20 +22,45 @@
     "longWeekends": "Lange Wochenenden & Brückentage",
     "subscribe": "Kalender abonnieren",
     "subscribeHint": "Füge diese Feiertage zu Google, Apple oder Outlook Calendar hinzu.",
+    "copyLink": "Link kopieren",
+    "copied": "Kopiert!",
     "backHome": "← Alle Länder",
     "dataLag": "Daten können leicht veraltet sein."
   },
   "longWeekend": {
     "natural": "Langes Wochenende",
     "bridge": "Brückentag-Chance",
-    "takeGet": "Nimm {bridge} frei → {days} Tage frei",
+    "takeGet": "Nehme {bridge} frei",
+    "days": "Tage",
     "none": "Keine langen Wochenenden in diesem Jahr gefunden."
+  },
+  "calendar": {
+    "weekdays": ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"],
+    "months": [
+      "Januar", "Februar", "März", "April", "Mai", "Juni",
+      "Juli", "August", "September", "Oktober", "November", "Dezember"
+    ]
+  },
+  "yearNav": {
+    "prev": "Vorheriges Jahr {year}",
+    "next": "Nächstes Jahr {year}"
   },
   "theme": {
     "toggle": "Theme wechseln"
   },
+  "language": {
+    "label": "Sprache"
+  },
   "ad": {
     "label": "Werbung"
+  },
+  "worldClock": {
+    "title": "Weltuhr",
+    "local": "Lokal",
+    "badge": "Feiertag",
+    "noHoliday": "Heute kein Feiertag",
+    "noData": "Keine Feiertagsdaten",
+    "loading": "Lädt…"
   },
   "footer": {
     "disclaimer": "Feiertagsdaten dienen nur zur Information. Bitte vor der Planung mit offiziellen Quellen abgleichen."

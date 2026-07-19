@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 import type { Country } from "@/lib/types";
 
 export default function CountrySelector({
@@ -13,6 +14,7 @@ export default function CountrySelector({
 }) {
   const [q, setQ] = useState("");
   const router = useRouter();
+  const t = useTranslations("home");
 
   const filtered = countries.filter(
     (c) =>

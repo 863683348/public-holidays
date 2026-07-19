@@ -11,7 +11,10 @@
     "subtitle": "Pick a country to see its holidays, plan long weekends, and subscribe to your calendar.",
     "searchPlaceholder": "Search a country...",
     "popular": "Popular countries",
-    "allCountries": "All countries"
+    "allCountries": "All countries",
+    "noResults": "No countries found.",
+    "worldClockCard": "World Clock",
+    "worldClockCardDesc": "See the current time and public holidays across major cities."
   },
   "country": {
     "yearView": "Holiday calendar {year}",
@@ -19,20 +22,45 @@
     "longWeekends": "Long weekends & bridge days",
     "subscribe": "Subscribe to calendar",
     "subscribeHint": "Add these holidays to Google, Apple or Outlook Calendar.",
+    "copyLink": "Copy link",
+    "copied": "Copied!",
     "backHome": "← All countries",
     "dataLag": "Data may be slightly out of date."
   },
   "longWeekend": {
     "natural": "Long weekend",
     "bridge": "Bridge-day opportunity",
-    "takeGet": "Take {bridge} off → {days} days off",
+    "takeGet": "Take {bridge} off",
+    "days": "days",
     "none": "No long weekends found for this year."
+  },
+  "calendar": {
+    "weekdays": ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
+    "months": [
+      "January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December"
+    ]
+  },
+  "yearNav": {
+    "prev": "Previous year {year}",
+    "next": "Next year {year}"
   },
   "theme": {
     "toggle": "Toggle theme"
   },
+  "language": {
+    "label": "Language"
+  },
   "ad": {
     "label": "Advertisement"
+  },
+  "worldClock": {
+    "title": "World Clock",
+    "local": "Local",
+    "badge": "Public holiday",
+    "noHoliday": "No public holiday today",
+    "noData": "Holiday data unavailable",
+    "loading": "Loading…"
   },
   "footer": {
     "disclaimer": "Holiday data is provided for reference. Always confirm with official sources before planning."

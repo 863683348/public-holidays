@@ -1,11 +1,5 @@
 import type { Holiday } from "@/lib/types";
 
-const WEEKDAYS = ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"];
-const MONTHS = [
-  "January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December",
-];
-
 function isWeekend(d: Date): boolean {
   const day = d.getUTCDay();
   return day === 0 || day === 6;
@@ -15,10 +9,14 @@ export default function MonthCalendar({
   year,
   month,
   holidays,
+  months,
+  weekdays,
 }: {
   year: number;
   month: number;
   holidays: Holiday[];
+  months: string[];
+  weekdays: string[];
 }) {
   const holidayMap = new Map<string, Holiday>();
   for (const h of holidays) holidayMap.set(h.date, h);
@@ -34,10 +32,10 @@ export default function MonthCalendar({
   return (
     <div className="rounded-lg border border-[var(--border)] bg-[var(--card)] p-3">
       <h3 className="mb-2 text-center text-sm font-semibold">
-        {MONTHS[month]}
+        {months[month]}
       </h3>
       <div className="grid grid-cols-7 gap-1 text-center text-xs text-[var(--muted)]">
-        {WEEKDAYS.map((w) => (
+        {weekdays.map((w) => (
           <div key={w}>{w}</div>
         ))}
       </div>
