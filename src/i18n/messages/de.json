@@ -1,0 +1,40 @@
+{
+  "site": {
+    "title": "PubHoliday",
+    "tagline": "Kenn die Feiertage. Schlage den Kalender."
+  },
+  "nav": {
+    "home": "Start"
+  },
+  "home": {
+    "heading": "Feiertage weltweit",
+    "subtitle": "Wähle ein Land, um seine Feiertage zu sehen, lange Wochenenden zu planen und den Kalender zu abonnieren.",
+    "searchPlaceholder": "Land suchen...",
+    "popular": "Beliebte Länder",
+    "allCountries": "Alle Länder"
+  },
+  "country": {
+    "yearView": "Feiertagskalender {year}",
+    "holidays": "Feiertage",
+    "longWeekends": "Lange Wochenenden & Brückentage",
+    "subscribe": "Kalender abonnieren",
+    "subscribeHint": "Füge diese Feiertage zu Google, Apple oder Outlook Calendar hinzu.",
+    "backHome": "← Alle Länder",
+    "dataLag": "Daten können leicht veraltet sein."
+  },
+  "longWeekend": {
+    "natural": "Langes Wochenende",
+    "bridge": "Brückentag-Chance",
+    "takeGet": "Nimm {bridge} frei → {days} Tage frei",
+    "none": "Keine langen Wochenenden in diesem Jahr gefunden."
+  },
+  "theme": {
+    "toggle": "Theme wechseln"
+  },
+  "ad": {
+    "label": "Werbung"
+  },
+  "footer": {
+    "disclaimer": "Feiertagsdaten dienen nur zur Information. Bitte vor der Planung mit offiziellen Quellen abgleichen."
+  }
+}

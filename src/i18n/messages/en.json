@@ -1,0 +1,40 @@
+{
+  "site": {
+    "title": "PubHoliday",
+    "tagline": "Know the holidays. Beat the calendar."
+  },
+  "nav": {
+    "home": "Home"
+  },
+  "home": {
+    "heading": "Public holidays, worldwide",
+    "subtitle": "Pick a country to see its holidays, plan long weekends, and subscribe to your calendar.",
+    "searchPlaceholder": "Search a country...",
+    "popular": "Popular countries",
+    "allCountries": "All countries"
+  },
+  "country": {
+    "yearView": "Holiday calendar {year}",
+    "holidays": "Holidays",
+    "longWeekends": "Long weekends & bridge days",
+    "subscribe": "Subscribe to calendar",
+    "subscribeHint": "Add these holidays to Google, Apple or Outlook Calendar.",
+    "backHome": "← All countries",
+    "dataLag": "Data may be slightly out of date."
+  },
+  "longWeekend": {
+    "natural": "Long weekend",
+    "bridge": "Bridge-day opportunity",
+    "takeGet": "Take {bridge} off → {days} days off",
+    "none": "No long weekends found for this year."
+  },
+  "theme": {
+    "toggle": "Toggle theme"
+  },
+  "ad": {
+    "label": "Advertisement"
+  },
+  "footer": {
+    "disclaimer": "Holiday data is provided for reference. Always confirm with official sources before planning."
+  }
+}

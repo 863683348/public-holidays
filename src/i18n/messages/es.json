@@ -1,0 +1,40 @@
+{
+  "site": {
+    "title": "PubHoliday",
+    "tagline": "Conoce los festivos. Vence al calendario."
+  },
+  "nav": {
+    "home": "Inicio"
+  },
+  "home": {
+    "heading": "Festivos públicos, en todo el mundo",
+    "subtitle": "Elige un país para ver sus festivos, planificar puentes y suscribirte a tu calendario.",
+    "searchPlaceholder": "Busca un país...",
+    "popular": "Países populares",
+    "allCountries": "Todos los países"
+  },
+  "country": {
+    "yearView": "Calendario de festivos {year}",
+    "holidays": "Festivos",
+    "longWeekends": "Puentes y fines de semana largos",
+    "subscribe": "Suscribirse al calendario",
+    "subscribeHint": "Añade estos festivos a Google, Apple o Outlook Calendar.",
+    "backHome": "← Todos los países",
+    "dataLag": "Los datos pueden estar ligeramente desactualizados."
+  },
+  "longWeekend": {
+    "natural": "Fin de semana largo",
+    "bridge": "Oportunidad de puente",
+    "takeGet": "Tómate {bridge} libre → {days} días libres",
+    "none": "No se encontraron fines de semana largos este año."
+  },
+  "theme": {
+    "toggle": "Cambiar tema"
+  },
+  "ad": {
+    "label": "Publicidad"
+  },
+  "footer": {
+    "disclaimer": "Los datos de festivos se ofrecen a título informativo. Confirma siempre con fuentes oficiales antes de planificar."
+  }
+}

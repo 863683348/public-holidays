@@ -1,0 +1,10 @@
+node_modules/
+.next/
+.open-next/
+.cache/
+wrangler.toml
+.dev.vars
+*.log
+.env
+.env.local
+.DS_Store

@@ -1,0 +1,40 @@
+{
+  "site": {
+    "title": "PubHoliday",
+    "tagline": "Connais les jours fériés. Mieux qu'un calendrier."
+  },
+  "nav": {
+    "home": "Accueil"
+  },
+  "home": {
+    "heading": "Jours fériés dans le monde",
+    "subtitle": "Choisissez un pays pour voir ses fériés, planifier des ponts et vous abonner à votre calendrier.",
+    "searchPlaceholder": "Rechercher un pays...",
+    "popular": "Pays populaires",
+    "allCountries": "Tous les pays"
+  },
+  "country": {
+    "yearView": "Calendrier des fériés {year}",
+    "holidays": "Fériés",
+    "longWeekends": "Ponts et longs week-ends",
+    "subscribe": "S'abonner au calendrier",
+    "subscribeHint": "Ajoutez ces fériés à Google, Apple ou Outlook Calendar.",
+    "backHome": "← Tous les pays",
+    "dataLag": "Les données peuvent être légèrement obsolètes."
+  },
+  "longWeekend": {
+    "natural": "Long week-end",
+    "bridge": "Opportunité de pont",
+    "takeGet": "Prenez {bridge} → {days} jours libres",
+    "none": "Aucun long week-end trouvé cette année."
+  },
+  "theme": {
+    "toggle": "Changer de thème"
+  },
+  "ad": {
+    "label": "Publicité"
+  },
+  "footer": {
+    "disclaimer": "Les données de fériés sont fournies à titre indicatif. Vérifiez toujours auprès des sources officielles avant de planifier."
+  }
+}
