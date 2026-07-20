@@ -8,8 +8,6 @@
     "pages:build": "npx @cloudflare/next-on-pages",
     "start": "next start",
     "lint": "next lint",
-    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
     "test": "vitest run"
   },
@@ -23,7 +21,6 @@
   "devDependencies": {
     "@cloudflare/next-on-pages": "^1.13.16",
     "@cloudflare/workers-types": "^5.20260712.1",
-    "@opennextjs/cloudflare": "^1.2.0",
     "@types/node": "^22.10.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
