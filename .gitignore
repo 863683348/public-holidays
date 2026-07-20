@@ -1,8 +1,8 @@
 node_modules/
 .next/
 .open-next/
+.vercel/
 .cache/
-wrangler.toml
 .dev.vars
 *.log
 .env

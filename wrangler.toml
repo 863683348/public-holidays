@@ -1,0 +1,14 @@
+name = "public-holidays"
+account_id = "b7c767dcdc45f94d182787ff7af2858a"
+pages_build_output_dir = ".vercel/output"
+
+# KV namespace for holiday cache.
+# The id below is a PLACEHOLDER — it must be replaced with a real
+# namespace id. Create one (free) in the Cloudflare dashboard
+# (Workers & Pages → KV → Create a namespace) or via
+# `wrangler kv namespace create HOLIDAY_CACHE`, then copy the id here.
+# For the Git-connected Pages project, you can also bind it directly
+# in the dashboard: project → Settings → Functions → KV namespace bindings.
+[[kv_namespaces]]
+binding = "HOLIDAY_CACHE"
+id = "<REPLACE_WITH_KV_NAMESPACE_ID>"
