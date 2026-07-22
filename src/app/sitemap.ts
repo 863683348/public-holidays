@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { routing } from "@/i18n/routing";
 import { COUNTRIES } from "@/lib/countries";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://pubholiday.com";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const urls: MetadataRoute.Sitemap = [];
