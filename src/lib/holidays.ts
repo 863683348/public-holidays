@@ -5,9 +5,9 @@ import path from "path";
 const BASE = "https://date.nager.at/api/v3";
 const CACHE_TTL = 60 * 60 * 24 * 90; // 90 days
 
-// Local filesystem cache (Node runtime only). Used as a fallback when the
-// Cloudflare KV binding is unavailable (e.g. `next dev` / `next start` locally)
-// and pre-seeded with data so the app works without live upstream access.
+// Local filesystem cache (used for local dev / self-hosted Node runtimes).
+// On serverless platforms (Vercel) the filesystem is ephemeral, so writes are
+// best-effort; the real cache is Next.js' fetch `revalidate` below.
 const CACHE_DIR = path.join(process.cwd(), ".cache", "holidays");
 
 // Cache keys use ":" which is a reserved character in Windows filenames, so we
@@ -40,53 +40,25 @@ async function nodeFsCache() {
   };
 }
 
-// Cloudflare KV access: in the Worker runtime the binding lives on
-// `cloudflare:workers`. In Node (`next dev` / `next start`) that module does not
-// exist, so we fall back to the local filesystem cache above.
-//
-// NOTE: the module specifier is intentionally built from a template literal with
-// a variable so esbuild cannot statically resolve it at bundle time (which would
-// otherwise fail the Cloudflare build). At runtime Workers resolve it natively.
-const CF_SCHEME = "cloudflare";
-async function getCloudflareCache(): Promise<{
-  get: (k: string) => Promise<string | null>;
-  put: (k: string, v: string, opts?: { expirationTtl?: number }) => Promise<void>;
-} | null> {
-  try {
-    const mod = await import(`${CF_SCHEME}:workers`);
-    const kv = (mod as { env?: { HOLIDAY_CACHE?: KVNamespace } }).env
-      ?.HOLIDAY_CACHE;
-    if (!kv) return null;
-    return {
-      get: (k: string) => kv.get(k),
-      put: (k: string, v: string, opts?: { expirationTtl?: number }) =>
-        kv.put(k, v, opts),
-    };
-  } catch {
-    return null;
-  }
-}
-
 export async function getHolidays(
   country: string,
   year: number
 ): Promise<Holiday[]> {
   const key = `h:${country.toUpperCase()}:${year}`;
-  const cf = await getCloudflareCache();
-  const cache = cf ?? (await nodeFsCache());
+  const cache = await nodeFsCache();
 
   const cached = await cache.get(key);
   if (cached) return JSON.parse(cached) as Holiday[];
 
   const res = await fetch(`${BASE}/PublicHolidays/${year}/${country}`, {
-    // Edge cache hint; KV is the real cache.
-    next: { revalidate: 60 * 60 * 24 },
+    // Next.js edge/data cache: re-fetch at most once per CACHE_TTL.
+    next: { revalidate: CACHE_TTL },
   });
   if (!res.ok) {
     throw new Error(`Holiday upstream error ${res.status} for ${country}/${year}`);
   }
   const data = (await res.json()) as Holiday[];
 
-  await cache.put(key, JSON.stringify(data), { expirationTtl: CACHE_TTL });
+  await cache.put(key, JSON.stringify(data));
   return data;
 }
