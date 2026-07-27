@@ -25,7 +25,20 @@
     "copyLink": "リンクをコピー",
     "copied": "コピーしました！",
     "backHome": "← すべての国",
-    "dataLag": "データがやや古い可能性があります。"
+    "dataLag": "データがやや古い可能性があります。",
+    "introSummary": "{name} has {count} public holidays in {year}. Of these, {national} are national holidays celebrated nationwide and {regional} are regional observances.",
+    "faqHeading": "Frequently Asked Questions",
+    "faqHowMany": "How many public holidays does {name} have in {year}?",
+    "faqHowManyAnswer": "{name} has {count} public holidays in {year}.",
+    "faqNext": "What is the next public holiday in {name}?",
+    "faqNextAnswer": "The next public holiday is {holiday} on {date}.",
+    "faqAllNational": "Are all holidays national holidays in {name}?",
+    "faqAllNationalAnswer": "{yesno}. {national} out of {count} holidays are national holidays.",
+    "faqLongWeekends": "How many long weekends can I plan in {name} in {year}?",
+    "faqLongWeekendsAnswer": "You can plan {count} long weekends in {name} in {year}.",
+    "faqYes": "Yes",
+    "faqNo": "No",
+    "relatedBlogPosts": "Related blog posts"
   },
   "longWeekend": {
     "natural": "連休",
@@ -100,6 +113,7 @@
     "subscribeNewsletter": "ニュースレターに登録",
     "subscribeNewsletterHint": "新着記事をメールで受信",
     "notFound": "記事が見つかりません",
-    "shareThis": "この記事をシェア"
+    "shareThis": "この記事をシェア",
+    "relatedCountries": "関連国"
   }
 }

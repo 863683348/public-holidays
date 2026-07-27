@@ -14,3 +14,17 @@ export interface Country {
   name: string;
   popular?: boolean;
 }
+
+export interface BlogPost {
+  id: number;
+  title: string;
+  slug: string;
+  category: string;
+  author: string;
+  publishedDate: string;
+  lastModified: string;
+  imageUrl: string;
+  excerpt: string;
+  content: string;
+  relatedCountries: string[];
+}

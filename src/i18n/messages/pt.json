@@ -25,7 +25,20 @@
     "copyLink": "Copiar link",
     "copied": "Copiado!",
     "backHome": "← Todos os países",
-    "dataLag": "Os dados podem estar ligeiramente desatualizados."
+    "dataLag": "Os dados podem estar ligeiramente desatualizados.",
+    "introSummary": "{name} has {count} public holidays in {year}. Of these, {national} are national holidays celebrated nationwide and {regional} are regional observances.",
+    "faqHeading": "Frequently Asked Questions",
+    "faqHowMany": "How many public holidays does {name} have in {year}?",
+    "faqHowManyAnswer": "{name} has {count} public holidays in {year}.",
+    "faqNext": "What is the next public holiday in {name}?",
+    "faqNextAnswer": "The next public holiday is {holiday} on {date}.",
+    "faqAllNational": "Are all holidays national holidays in {name}?",
+    "faqAllNationalAnswer": "{yesno}. {national} out of {count} holidays are national holidays.",
+    "faqLongWeekends": "How many long weekends can I plan in {name} in {year}?",
+    "faqLongWeekendsAnswer": "You can plan {count} long weekends in {name} in {year}.",
+    "faqYes": "Yes",
+    "faqNo": "No",
+    "relatedBlogPosts": "Related blog posts"
   },
   "longWeekend": {
     "natural": "Fim de semana prolongado",
@@ -100,6 +113,7 @@
     "subscribeNewsletter": "Assinar newsletter",
     "subscribeNewsletterHint": "Receba novos artigos no seu email",
     "notFound": "Artigo não encontrado",
-    "shareThis": "Compartilhe este artigo"
+    "shareThis": "Compartilhe este artigo",
+    "relatedCountries": "Países relacionados"
   }
 }

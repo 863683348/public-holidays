@@ -25,7 +25,20 @@
     "copyLink": "نسخ الرابط",
     "copied": "تم النسخ!",
     "backHome": "← جميع الدول",
-    "dataLag": "قد تكون البيانات قديمة قليلاً."
+    "dataLag": "قد تكون البيانات قديمة قليلاً.",
+    "introSummary": "{name} has {count} public holidays in {year}. Of these, {national} are national holidays celebrated nationwide and {regional} are regional observances.",
+    "faqHeading": "Frequently Asked Questions",
+    "faqHowMany": "How many public holidays does {name} have in {year}?",
+    "faqHowManyAnswer": "{name} has {count} public holidays in {year}.",
+    "faqNext": "What is the next public holiday in {name}?",
+    "faqNextAnswer": "The next public holiday is {holiday} on {date}.",
+    "faqAllNational": "Are all holidays national holidays in {name}?",
+    "faqAllNationalAnswer": "{yesno}. {national} out of {count} holidays are national holidays.",
+    "faqLongWeekends": "How many long weekends can I plan in {name} in {year}?",
+    "faqLongWeekendsAnswer": "You can plan {count} long weekends in {name} in {year}.",
+    "faqYes": "Yes",
+    "faqNo": "No",
+    "relatedBlogPosts": "Related blog posts"
   },
   "longWeekend": {
     "natural": "عطلة نهاية أسبوع طويلة",
@@ -100,6 +113,7 @@
     "subscribeNewsletter": "اشترك في النشرة البريدية",
     "subscribeNewsletterHint": "احصل على مقالات جديدة في بريدك",
     "notFound": "لم يتم العثور على المقال",
-    "shareThis": "شارك هذا المقال"
+    "shareThis": "شارك هذا المقال",
+    "relatedCountries": "الدول ذات الصلة"
   }
 }
