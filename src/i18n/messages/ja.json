@@ -1,0 +1,88 @@
+{
+  "site": {
+    "title": "[LOCALIZE: site title - e.g., パブホリデイ]",
+    "tagline": "[LOCALIZE: tagline]"
+  },
+  "nav": {
+    "home": "[LOCALIZE: nav/home - e.g., ホーム]"
+  },
+  "home": {
+    "heading": "[LOCALIZE/home/heading]",
+    "subtitle": "[LOCALIZE/home/subtitle]",
+    "searchPlaceholder": "[LOCALIZE/home/searchPlaceholder]",
+    "popular": "[LOCALIZE/home/popular]",
+    "allCountries": "[LOCALIZE/home/allCountries]",
+    "noResults": "[LOCALIZE/home/noResults]",
+    "worldClockCard": "[LOCALIZE/home/worldClockCard]",
+    "worldClockCardDesc": "[LOCALIZE/home/worldClockCardDesc]"
+  },
+  "country": {
+    "yearView": "[LOCALIZE/country/yearView]",
+    "holidays": "[LOCALIZE/country/holidays]",
+    "longWeekends": "[LOCALIZE/country/longWeekends]",
+    "subscribe": "[LOCALIZE/country/subscribe]",
+    "subscribeHint": "[LOCALIZE/country/subscribeHint]",
+    "copyLink": "[LOCALIZE/country/copyLink]",
+    "copied": "[LOCALIZE/country/copied]",
+    "backHome": "[LOCALIZE/country/backHome]",
+    "dataLag": "[LOCALIZE/country/dataLag]"
+  },
+  "longWeekend": {
+    "natural": "[LOCALIZE/longWeekend/natural]",
+    "bridge": "[LOCALIZE/longWeekend/bridge]",
+    "takeGet": "[LOCALIZE/longWeekend/takeGet]",
+    "days": "[LOCALIZE/longWeekend/days]",
+    "none": "[LOCALIZE/longWeekend/none]"
+  },
+  "calendar": {
+    "weekdays": [
+      "[LOCALIZE/calendar/weekdays]"
+    ],
+    "months": [
+      "[LOCALIZE/calendar/months]"
+    ]
+  },
+  "yearNav": {
+    "prev": "[LOCALIZE/yearNav/prev]",
+    "next": "[LOCALIZE/yearNav/next]"
+  },
+  "theme": {
+    "toggle": "[LOCALIZE/theme/toggle]"
+  },
+  "language": {
+    "label": "[LOCALIZE/language/label]"
+  },
+  "ad": {
+    "label": "[LOCALIZE/ad/label]"
+  },
+  "worldClock": {
+    "title": "[LOCALIZE/worldClock/title]",
+    "local": "[LOCALIZE/worldClock/local]",
+    "badge": "[LOCALIZE/worldClock/badge]",
+    "noHoliday": "[LOCALIZE/worldClock/noHoliday]",
+    "noData": "[LOCALIZE/worldClock/noData]",
+    "loading": "[LOCALIZE/worldClock/loading]"
+  },
+  "footer": {
+    "disclaimer": "[LOCALIZE/footer/disclaimer]"
+  },
+  "blog": {
+    "title": "ブログ",
+    "description": "世界の公共假期に関する記事",
+    "blogSection": "ブログ",
+    "heading": "ブログ",
+    "subheading": "公共假期に関する洞察、ストーリー、実用的ガイド",
+    "viewAll": "全記事表示",
+    "viewAllUrl": "/blog",
+    "featured": " featured post",
+    "categoriesHeading": "カテゴリ別ブラウズ",
+    "recentHeading": "最近の記事",
+    "backToBlog": "← ブログに戻る",
+    "categoryTitle": "{category} ブログ記事",
+    "categoryDescription": "{category} の記事",
+    "subscribeNewsletter": "ニュースレターに登録",
+    "subscribeNewsletterHint": "新記事をメールで受信",
+    "notFound": "記事が見つかりません",
+    "shareThis": "この記事 compartilhar"
+  }
+}

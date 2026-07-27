@@ -22,13 +22,12 @@ const LANG_MAP: Record<string, string> = {
   fr: "fr-FR",
 };
 
-const JSON_LD = {
+const JSON_BASE = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "PubHoliday",
   url: SITE_URL,
   description: "Know the holidays. Beat the calendar.",
-  inLanguage: routing.locales,
 };
 
 export function generateStaticParams() {
@@ -96,7 +95,7 @@ export default async function LocaleLayout({
       <body className="min-h-screen antialiased">
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_LD) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({ ...JSON_BASE, inLanguage: locale }) }}
         />
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <NextIntlClientProvider messages={messages}>

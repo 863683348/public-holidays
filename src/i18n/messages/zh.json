@@ -35,10 +35,28 @@
     "none": "今年没有可拼出的长周末。"
   },
   "calendar": {
-    "weekdays": ["一", "二", "三", "四", "五", "六", "日"],
+    "weekdays": [
+      "一",
+      "二",
+      "三",
+      "四",
+      "五",
+      "六",
+      "日"
+    ],
     "months": [
-      "一月", "二月", "三月", "四月", "五月", "六月",
-      "七月", "八月", "九月", "十月", "十一月", "十二月"
+      "一月",
+      "二月",
+      "三月",
+      "四月",
+      "五月",
+      "六月",
+      "七月",
+      "八月",
+      "九月",
+      "十月",
+      "十一月",
+      "十二月"
     ]
   },
   "yearNav": {
@@ -64,5 +82,24 @@
   },
   "footer": {
     "disclaimer": "假期数据仅供参考，规划前请以官方发布为准。"
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Articles about public holidays around the world",
+    "blogSection": "Blog",
+    "heading": "Blog",
+    "subheading": "Insights, stories, and practical guides about public holidays",
+    "viewAll": "View all posts",
+    "viewAllUrl": "/blog",
+    "featured": "Featured post",
+    "categoriesHeading": "Browse by category",
+    "recentHeading": "Recent posts",
+    "backToBlog": "← Back to Blog",
+    "categoryTitle": "{category} Blog Posts",
+    "categoryDescription": "Posts about {category}",
+    "subscribeNewsletter": "Subscribe to newsletter",
+    "subscribeNewsletterHint": "Get new posts delivered to your inbox",
+    "notFound": "Article not found",
+    "shareThis": "Share this article"
   }
 }

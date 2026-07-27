@@ -35,10 +35,28 @@
     "none": "No long weekends found for this year."
   },
   "calendar": {
-    "weekdays": ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
+    "weekdays": [
+      "Mo",
+      "Tu",
+      "We",
+      "Th",
+      "Fr",
+      "Sa",
+      "Su"
+    ],
     "months": [
-      "January", "February", "March", "April", "May", "June",
-      "July", "August", "September", "October", "November", "December"
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
     ]
   },
   "yearNav": {
@@ -64,5 +82,24 @@
   },
   "footer": {
     "disclaimer": "Holiday data is provided for reference. Always confirm with official sources before planning."
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Articles about public holidays around the world",
+    "blogSection": "Blog",
+    "heading": "Blog",
+    "subheading": "Insights, stories, and practical guides about public holidays",
+    "viewAll": "View all posts",
+    "viewAllUrl": "/blog",
+    "featured": "Featured post",
+    "categoriesHeading": "Browse by category",
+    "recentHeading": "Recent posts",
+    "backToBlog": "← Back to Blog",
+    "categoryTitle": "{category} Blog Posts",
+    "categoryDescription": "Posts about {category}",
+    "subscribeNewsletter": "Subscribe to newsletter",
+    "subscribeNewsletterHint": "Get new posts delivered to your inbox",
+    "notFound": "Article not found",
+    "shareThis": "Share this article"
   }
 }
