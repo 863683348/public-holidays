@@ -12,6 +12,16 @@ import "../globals.css";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
 
+// BCP 47 language tag mapping for precise <html lang> attribute
+// URL path uses simple locale (e.g., "/en/"), but HTML lang gets precise tag (e.g., "en-US")
+const LANG_MAP: Record<string, string> = {
+  zh: "zh-CN",
+  en: "en-US",
+  es: "es-ES",
+  de: "de-DE",
+  fr: "fr-FR",
+};
+
 const JSON_LD = {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -79,7 +89,10 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html
+      lang={LANG_MAP[locale] || locale}
+      suppressHydrationWarning
+    >
       <body className="min-h-screen antialiased">
         <script
           type="application/ld+json"
