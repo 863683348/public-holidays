@@ -7,6 +7,7 @@ import { notFound } from "next/navigation";
 import { ThemeProvider } from "next-themes";
 import ThemeToggle from "@/components/ThemeToggle";
 import LocaleSwitcher from "@/components/LocaleSwitcher";
+import { Link } from "@/i18n/navigation";
 import "../globals.css";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
@@ -36,14 +37,30 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "site" });
+  const title = `${t("title")} — ${t("tagline")}`;
+  const description = t("tagline");
+  const languages = Object.fromEntries(
+    routing.locales.map((l) => [l, `${SITE_URL}/${l}`])
+  );
   return {
-    title: `${t("title")} — ${t("tagline")}`,
-    description: t("tagline"),
+    title,
+    description,
     alternates: {
       canonical: `${SITE_URL}/${locale}`,
-      languages: Object.fromEntries(
-        routing.locales.map((l) => [l, `${SITE_URL}/${l}`])
-      ),
+      languages,
+    },
+    openGraph: {
+      type: "website",
+      siteName: "PubHoliday",
+      title,
+      description,
+      url: `${SITE_URL}/${locale}`,
+      locale,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
     },
   };
 }
@@ -72,9 +89,12 @@ export default async function LocaleLayout({
           <NextIntlClientProvider messages={messages}>
             <header className="border-b border-[var(--border)]">
               <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-3 px-4 py-3">
-                <span className="text-lg font-semibold text-brand">
+                <Link
+                  href="/"
+                  className="text-lg font-semibold text-brand transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg)] rounded-sm"
+                >
                   PubHoliday
-                </span>
+                </Link>
                 <div className="flex items-center gap-2">
                   <LocaleSwitcher />
                   <ThemeToggle />

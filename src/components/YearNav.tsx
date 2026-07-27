@@ -15,7 +15,14 @@ export default function YearNav({
   year: number;
 }) {
   const t = useTranslations("yearNav");
-  const window = [year - 1, year, year + 1];
+  const MIN_YEAR = 2000;
+  const MAX_YEAR = 2035;
+  const clamp = (y: number) => Math.min(MAX_YEAR, Math.max(MIN_YEAR, y));
+  // Wider archive window (4 consecutive years) to improve discovery of
+  // historical and upcoming-year holiday pages.
+  const windowYears = Array.from(
+    new Set([year - 1, year, year + 1, year + 2].map(clamp))
+  );
 
   return (
     <nav
@@ -29,7 +36,7 @@ export default function YearNav({
       >
         &larr;
       </Link>
-      {window.map((y) => (
+      {windowYears.map((y) => (
         <Link
           key={y}
           href={`/${country}/${y}`}
