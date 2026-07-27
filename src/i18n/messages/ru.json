@@ -1,0 +1,65 @@
+{
+  "site": {
+    "title": "",
+    "tagline": ""
+  },
+  "nav": {
+    "home": ""
+  },
+  "home": {
+    "heading": "",
+    "subtitle": "",
+    "searchPlaceholder": "",
+    "popular": "",
+    "allCountries": "",
+    "noResults": "",
+    "worldClockCard": "",
+    "worldClockCardDesc": ""
+  },
+  "country": {
+    "yearView": "",
+    "holidays": "",
+    "longWeekends": "",
+    "subscribe": "",
+    "subscribeHint": "",
+    "copyLink": "",
+    "copied": "",
+    "backHome": "",
+    "dataLag": ""
+  },
+  "longWeekend": {
+    "natural": "",
+    "bridge": "",
+    "takeGet": "",
+    "days": "",
+    "none": ""
+  },
+  "calendar": {
+    "weekdays": [],
+    "months": []
+  },
+  "yearNav": {
+    "prev": "",
+    "next": ""
+  },
+  "theme": {
+    "toggle": ""
+  },
+  "language": {
+    "label": ""
+  },
+  "ad": {
+    "label": ""
+  },
+  "worldClock": {
+    "title": "",
+    "local": "",
+    "badge": "",
+    "noHoliday": "",
+    "noData": "",
+    "loading": ""
+  },
+  "footer": {
+    "disclaimer": ""
+  }
+}
