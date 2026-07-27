@@ -12,6 +12,9 @@ const LABELS: Record<string, string> = {
   fr: "FR",
   pt: "PT",
   it: "IT",
+  ko: "KO",
+  ru: "RU",
+  ar: "AR",
   zh: "中文",
 };
 

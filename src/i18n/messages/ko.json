@@ -1,84 +1,105 @@
 {
   "site": {
-    "title": "",
-    "tagline": ""
+    "title": "PubHoliday",
+    "tagline": "공휴일을 알면 캘린더가 보인다."
   },
   "nav": {
-    "home": ""
+    "home": "홈"
   },
   "home": {
-    "heading": "",
-    "subtitle": "",
-    "searchPlaceholder": "",
-    "popular": "",
-    "allCountries": "",
-    "noResults": "",
-    "worldClockCard": "",
-    "worldClockCardDesc": ""
+    "heading": "전 세계 공휴일을 한곳에서",
+    "subtitle": "국가를 선택하여 공휴일을 확인하고, 긴 주말을 계획하며, 캘린더에 구독하세요.",
+    "searchPlaceholder": "국가 검색...",
+    "popular": "인기 국가",
+    "allCountries": "모든 국가",
+    "noResults": "검색 결과가 없습니다.",
+    "worldClockCard": "세계 시계",
+    "worldClockCardDesc": "주요 도시의 현재 시간과 공휴일을 확인하세요."
   },
   "country": {
-    "yearView": "",
-    "holidays": "",
-    "longWeekends": "",
-    "subscribe": "",
-    "subscribeHint": "",
-    "copyLink": "",
-    "copied": "",
-    "backHome": "",
-    "dataLag": ""
+    "yearView": "{year}년 공휴일 달력",
+    "holidays": "공휴일",
+    "longWeekends": "긴 주말 & 연휴 기회",
+    "subscribe": "캘린더 구독",
+    "subscribeHint": "Google, Apple, Outlook 캘린더에 추가하세요.",
+    "copyLink": "링크 복사",
+    "copied": "복사했습니다!",
+    "backHome": "← 모든 국가",
+    "dataLag": "데이터가 다소 오래되었을 수 있습니다."
   },
   "longWeekend": {
-    "natural": "",
-    "bridge": "",
-    "takeGet": "",
-    "days": "",
-    "none": ""
+    "natural": "긴 주말",
+    "bridge": "연휴 기회",
+    "takeGet": "{bridge} 휴가",
+    "days": "일",
+    "none": "올해는 긴 주말이 없습니다."
   },
   "calendar": {
-    "weekdays": [],
-    "months": []
+    "weekdays": [
+      "월",
+      "화",
+      "수",
+      "목",
+      "금",
+      "토",
+      "일"
+    ],
+    "months": [
+      "1월",
+      "2월",
+      "3월",
+      "4월",
+      "5월",
+      "6월",
+      "7월",
+      "8월",
+      "9월",
+      "10월",
+      "11월",
+      "12월"
+    ]
   },
   "yearNav": {
-    "prev": "",
-    "next": ""
+    "prev": "이전 해 {year}",
+    "next": "다음 해 {year}"
   },
   "theme": {
-    "toggle": ""
+    "toggle": "테마 전환"
   },
   "language": {
-    "label": ""
+    "label": "언어"
   },
   "ad": {
-    "label": ""
+    "label": "광고"
   },
   "worldClock": {
-    "title": "",
-    "local": "",
-    "badge": "",
-    "noHoliday": "",
-    "noData": "",
-    "loading": ""
+    "title": "세계 시계",
+    "local": "현지",
+    "badge": "공휴일",
+    "noHoliday": "오늘은 공휴일이 아닙니다",
+    "noData": "공휴일 데이터를 불러올 수 없습니다",
+    "loading": "로딩 중…"
   },
   "footer": {
-    "disclaimer": ""
+    "disclaimer": "공휴일 데이터는 참고용입니다. 계획 전 항상 공식 출처를 확인하세요."
   },
   "blog": {
-    "title": "Blog",
-    "description": "Articles about public holidays around the world",
-    "blogSection": "Blog",
-    "heading": "Blog",
-    "subheading": "Insights, stories, and practical guides about public holidays",
-    "viewAll": "View all posts",
+    "title": "블로그",
+    "description": "세계 공휴일에 관한 기사",
+    "blogSection": "블로그",
+    "heading": "블로그",
+    "subheading": "공휴일에 대한 인사이트, 스토리, 실용 가이드",
+    "viewAll": "모든 글 보기",
     "viewAllUrl": "/blog",
-    "featured": "Featured post",
-    "categoriesHeading": "Browse by category",
-    "recentHeading": "Recent posts",
-    "backToBlog": "← Back to Blog",
-    "categoryTitle": "{category} Blog Posts",
-    "categoryDescription": "Posts about {category}",
-    "subscribeNewsletter": "Subscribe to newsletter",
-    "subscribeNewsletterHint": "Get new posts delivered to your inbox",
-    "notFound": "Article not found",
-    "shareThis": "Share this article"
+    "featured": "추천 글",
+    "categoriesHeading": "카테고리별 찾기",
+    "recentHeading": "최신 글",
+    "backToBlog": "← 블로그로 돌아가기",
+    "categoryTitle": "{category} 블로그 글",
+    "categoryDescription": "{category}에 관한 글",
+    "subscribeNewsletter": "뉴스레터 구독",
+    "subscribeNewsletterHint": "새 글을 이메일로 받아보세요",
+    "notFound": "글을 찾을 수 없습니다",
+    "shareThis": "이 글 공유하기"
   }
 }

@@ -1,84 +1,105 @@
 {
   "site": {
-    "title": "",
-    "tagline": ""
+    "title": "PubHoliday",
+    "tagline": "Знайте праздники. Управляйте календарём."
   },
   "nav": {
-    "home": ""
+    "home": "Главная"
   },
   "home": {
-    "heading": "",
-    "subtitle": "",
-    "searchPlaceholder": "",
-    "popular": "",
-    "allCountries": "",
-    "noResults": "",
-    "worldClockCard": "",
-    "worldClockCardDesc": ""
+    "heading": "Государственные праздники по всему миру",
+    "subtitle": "Выберите страну, чтобы увидеть праздники, спланировать длинные выходные и подписаться на календарь.",
+    "searchPlaceholder": "Поиск страны...",
+    "popular": "Популярные страны",
+    "allCountries": "Все страны",
+    "noResults": "Страны не найдены.",
+    "worldClockCard": "Мировые часы",
+    "worldClockCardDesc": "Узнайте текущее время и праздники в крупных городах."
   },
   "country": {
-    "yearView": "",
-    "holidays": "",
-    "longWeekends": "",
-    "subscribe": "",
-    "subscribeHint": "",
-    "copyLink": "",
-    "copied": "",
-    "backHome": "",
-    "dataLag": ""
+    "yearView": "Календарь праздников {year}",
+    "holidays": "Праздники",
+    "longWeekends": "Длинные выходные и дни-мосты",
+    "subscribe": "Подписаться на календарь",
+    "subscribeHint": "Добавьте в Google, Apple или Outlook Calendar.",
+    "copyLink": "Копировать ссылку",
+    "copied": "Скопировано!",
+    "backHome": "← Все страны",
+    "dataLag": "Данные могут быть слегка устаревшими."
   },
   "longWeekend": {
-    "natural": "",
-    "bridge": "",
-    "takeGet": "",
-    "days": "",
-    "none": ""
+    "natural": "Длинные выходные",
+    "bridge": "День-мост",
+    "takeGet": "Взять {bridge} выходной",
+    "days": "дн.",
+    "none": "Длинных выходных в этом году не найдено."
   },
   "calendar": {
-    "weekdays": [],
-    "months": []
+    "weekdays": [
+      "Пн",
+      "Вт",
+      "Ср",
+      "Чт",
+      "Пт",
+      "Сб",
+      "Вс"
+    ],
+    "months": [
+      "Январь",
+      "Февраль",
+      "Март",
+      "Апрель",
+      "Май",
+      "Июнь",
+      "Июль",
+      "Август",
+      "Сентябрь",
+      "Октябрь",
+      "Ноябрь",
+      "Декабрь"
+    ]
   },
   "yearNav": {
-    "prev": "",
-    "next": ""
+    "prev": "Предыдущий год {year}",
+    "next": "Следующий год {year}"
   },
   "theme": {
-    "toggle": ""
+    "toggle": "Сменить тему"
   },
   "language": {
-    "label": ""
+    "label": "Язык"
   },
   "ad": {
-    "label": ""
+    "label": "Реклама"
   },
   "worldClock": {
-    "title": "",
-    "local": "",
-    "badge": "",
-    "noHoliday": "",
-    "noData": "",
-    "loading": ""
+    "title": "Мировые часы",
+    "local": "Местное",
+    "badge": "Госпраздник",
+    "noHoliday": "Сегодня нет госпраздников",
+    "noData": "Данные о праздниках недоступны",
+    "loading": "Загрузка…"
   },
   "footer": {
-    "disclaimer": ""
+    "disclaimer": "Данные о праздниках предоставлены для справки. Перед планированием сверяйтесь с официальными источниками."
   },
   "blog": {
-    "title": "Blog",
-    "description": "Articles about public holidays around the world",
-    "blogSection": "Blog",
-    "heading": "Blog",
-    "subheading": "Insights, stories, and practical guides about public holidays",
-    "viewAll": "View all posts",
+    "title": "Блог",
+    "description": "Статьи о государственных праздниках по всему миру",
+    "blogSection": "Блог",
+    "heading": "Блог",
+    "subheading": "Статьи, истории и практические руководства о праздниках",
+    "viewAll": "Все статьи",
     "viewAllUrl": "/blog",
-    "featured": "Featured post",
-    "categoriesHeading": "Browse by category",
-    "recentHeading": "Recent posts",
-    "backToBlog": "← Back to Blog",
-    "categoryTitle": "{category} Blog Posts",
-    "categoryDescription": "Posts about {category}",
-    "subscribeNewsletter": "Subscribe to newsletter",
-    "subscribeNewsletterHint": "Get new posts delivered to your inbox",
-    "notFound": "Article not found",
-    "shareThis": "Share this article"
+    "featured": "Избранная статья",
+    "categoriesHeading": "По категориям",
+    "recentHeading": "Последние статьи",
+    "backToBlog": "← Назад в блог",
+    "categoryTitle": "Статьи: {category}",
+    "categoryDescription": "Статьи о {category}",
+    "subscribeNewsletter": "Подписаться на рассылку",
+    "subscribeNewsletterHint": "Получайте новые статьи на почту",
+    "notFound": "Статья не найдена",
+    "shareThis": "Поделиться статьёй"
   }
 }

@@ -18,11 +18,14 @@ const LANG_MAP: Record<string, string> = {
   zh: "zh-CN",
   en: "en-US",
   ja: "ja-JP",
+  ko: "ko-KR",
   es: "es-ES",
   de: "de-DE",
   fr: "fr-FR",
   pt: "pt-PT",
   it: "it-IT",
+  ru: "ru-RU",
+  ar: "ar-SA",
 };
 
 const JSON_BASE = {

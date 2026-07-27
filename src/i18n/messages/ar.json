@@ -1,84 +1,105 @@
 {
   "site": {
-    "title": "",
-    "tagline": ""
+    "title": "PubHoliday",
+    "tagline": "اعرف العطلات. تحكم في التقويم."
   },
   "nav": {
-    "home": ""
+    "home": "الرئيسية"
   },
   "home": {
-    "heading": "",
-    "subtitle": "",
-    "searchPlaceholder": "",
-    "popular": "",
-    "allCountries": "",
-    "noResults": "",
-    "worldClockCard": "",
-    "worldClockCardDesc": ""
+    "heading": "العطلات الرسمية حول العالم",
+    "subtitle": "اختر دولة لترى عطلاتها، خطط لعطلات نهاية الأسبوع الطويلة، واشترك في التقويم.",
+    "searchPlaceholder": "ابحث عن دولة...",
+    "popular": "الدول الشائعة",
+    "allCountries": "جميع الدول",
+    "noResults": "لم يتم العثور على دول.",
+    "worldClockCard": "الساعة العالمية",
+    "worldClockCardDesc": "شاهد الوقت الحالي والعطلات الرسمية في المدن الكبرى."
   },
   "country": {
-    "yearView": "",
-    "holidays": "",
-    "longWeekends": "",
-    "subscribe": "",
-    "subscribeHint": "",
-    "copyLink": "",
-    "copied": "",
-    "backHome": "",
-    "dataLag": ""
+    "yearView": "تقويم العطلات {year}",
+    "holidays": "العطلات",
+    "longWeekends": "عطلات نهاية الأسبوع الطويلة وأيام الجسر",
+    "subscribe": "اشترك في التقويم",
+    "subscribeHint": "أضف إلى تقويم Google أو Apple أو Outlook.",
+    "copyLink": "نسخ الرابط",
+    "copied": "تم النسخ!",
+    "backHome": "← جميع الدول",
+    "dataLag": "قد تكون البيانات قديمة قليلاً."
   },
   "longWeekend": {
-    "natural": "",
-    "bridge": "",
-    "takeGet": "",
-    "days": "",
-    "none": ""
+    "natural": "عطلة نهاية أسبوع طويلة",
+    "bridge": "فرصة يوم الجسر",
+    "takeGet": "خذ إجازة {bridge}",
+    "days": "أيام",
+    "none": "لم يتم العثور على عطلات نهاية أسبوع طويلة لهذه السنة."
   },
   "calendar": {
-    "weekdays": [],
-    "months": []
+    "weekdays": [
+      "إث",
+      "ثل",
+      "أر",
+      "خم",
+      "جم",
+      "سب",
+      "أح"
+    ],
+    "months": [
+      "يناير",
+      "فبراير",
+      "مارس",
+      "أبريل",
+      "مايو",
+      "يونيو",
+      "يوليو",
+      "أغسطس",
+      "سبتمبر",
+      "أكتوبر",
+      "نوفمبر",
+      "ديسمبر"
+    ]
   },
   "yearNav": {
-    "prev": "",
-    "next": ""
+    "prev": "السنة السابقة {year}",
+    "next": "السنة التالية {year}"
   },
   "theme": {
-    "toggle": ""
+    "toggle": "تبديل السمة"
   },
   "language": {
-    "label": ""
+    "label": "اللغة"
   },
   "ad": {
-    "label": ""
+    "label": "إعلان"
   },
   "worldClock": {
-    "title": "",
-    "local": "",
-    "badge": "",
-    "noHoliday": "",
-    "noData": "",
-    "loading": ""
+    "title": "الساعة العالمية",
+    "local": "محلي",
+    "badge": "عطلة رسمية",
+    "noHoliday": "لا توجد عطلة رسمية اليوم",
+    "noData": "بيانات العطلات غير متوفرة",
+    "loading": "جارٍ التحميل…"
   },
   "footer": {
-    "disclaimer": ""
+    "disclaimer": "بيانات العطلات مقدمة كمرجع. يُرجى التأكيد من المصادر الرسمية قبل التخطيط."
   },
   "blog": {
-    "title": "Blog",
-    "description": "Articles about public holidays around the world",
-    "blogSection": "Blog",
-    "heading": "Blog",
-    "subheading": "Insights, stories, and practical guides about public holidays",
-    "viewAll": "View all posts",
+    "title": "المدونة",
+    "description": "مقالات عن العطلات الرسمية حول العالم",
+    "blogSection": "المدونة",
+    "heading": "المدونة",
+    "subheading": "رؤى وقصص وأدلة عملية حول العطلات الرسمية",
+    "viewAll": "عرض جميع المقالات",
     "viewAllUrl": "/blog",
-    "featured": "Featured post",
-    "categoriesHeading": "Browse by category",
-    "recentHeading": "Recent posts",
-    "backToBlog": "← Back to Blog",
-    "categoryTitle": "{category} Blog Posts",
-    "categoryDescription": "Posts about {category}",
-    "subscribeNewsletter": "Subscribe to newsletter",
-    "subscribeNewsletterHint": "Get new posts delivered to your inbox",
-    "notFound": "Article not found",
-    "shareThis": "Share this article"
+    "featured": "مقال مميز",
+    "categoriesHeading": "تصفح حسب الفئة",
+    "recentHeading": "أحدث المقالات",
+    "backToBlog": "← العودة إلى المدونة",
+    "categoryTitle": "مقالات {category}",
+    "categoryDescription": "مقالات عن {category}",
+    "subscribeNewsletter": "اشترك في النشرة البريدية",
+    "subscribeNewsletterHint": "احصل على مقالات جديدة في بريدك",
+    "notFound": "لم يتم العثور على المقال",
+    "shareThis": "شارك هذا المقال"
   }
 }
