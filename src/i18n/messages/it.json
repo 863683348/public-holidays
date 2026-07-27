@@ -1,0 +1,105 @@
+{
+  "site": {
+    "title": "PubHoliday",
+    "tagline": "Scopri le festività. Domina il calendario."
+  },
+  "nav": {
+    "home": "Home"
+  },
+  "home": {
+    "heading": "Festività pubbliche in tutto il mondo",
+    "subtitle": "Scegli un paese per vedere le sue festività, pianificare i ponti e iscriverti al calendario.",
+    "searchPlaceholder": "Cerca un paese...",
+    "popular": "Paesi popolari",
+    "allCountries": "Tutti i paesi",
+    "noResults": "Nessun paese trovato.",
+    "worldClockCard": "Orologio Mondiale",
+    "worldClockCardDesc": "Vedi l'ora attuale e le festività nelle principali città."
+  },
+  "country": {
+    "yearView": "Calendario festività {year}",
+    "holidays": "Festività",
+    "longWeekends": "Ponti e weekend lunghi",
+    "subscribe": "Iscriviti al calendario",
+    "subscribeHint": "Aggiungi a Google, Apple o Outlook Calendar.",
+    "copyLink": "Copia link",
+    "copied": "Copiato!",
+    "backHome": "← Tutti i paesi",
+    "dataLag": "I dati potrebbero essere leggermente obsoleti."
+  },
+  "longWeekend": {
+    "natural": "Weekend lungo",
+    "bridge": "Opportunità di ponte",
+    "takeGet": "Prendi {bridge} di ferie",
+    "days": "giorni",
+    "none": "Nessun weekend lungo trovato per quest'anno."
+  },
+  "calendar": {
+    "weekdays": [
+      "Lu",
+      "Ma",
+      "Me",
+      "Gi",
+      "Ve",
+      "Sa",
+      "Do"
+    ],
+    "months": [
+      "Gennaio",
+      "Febbraio",
+      "Marzo",
+      "Aprile",
+      "Maggio",
+      "Giugno",
+      "Luglio",
+      "Agosto",
+      "Settembre",
+      "Ottobre",
+      "Novembre",
+      "Dicembre"
+    ]
+  },
+  "yearNav": {
+    "prev": "Anno precedente {year}",
+    "next": "Anno successivo {year}"
+  },
+  "theme": {
+    "toggle": "Cambia tema"
+  },
+  "language": {
+    "label": "Lingua"
+  },
+  "ad": {
+    "label": "Pubblicità"
+  },
+  "worldClock": {
+    "title": "Orologio Mondiale",
+    "local": "Locale",
+    "badge": "Festività",
+    "noHoliday": "Nessuna festività oggi",
+    "noData": "Dati festività non disponibili",
+    "loading": "Caricamento…"
+  },
+  "footer": {
+    "disclaimer": "I dati sulle festività sono forniti a scopo di riferimento. Verifica sempre con fonti ufficiali prima di pianificare."
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Articoli sulle festività pubbliche nel mondo",
+    "blogSection": "Blog",
+    "heading": "Blog",
+    "subheading": "Approfondimenti, storie e guide pratiche sulle festività",
+    "viewAll": "Vedi tutti gli articoli",
+    "viewAllUrl": "/blog",
+    "featured": "Articolo in evidenza",
+    "categoriesHeading": "Sfoglia per categoria",
+    "recentHeading": "Articoli recenti",
+    "backToBlog": "← Torna al Blog",
+    "categoryTitle": "Articoli di {category}",
+    "categoryDescription": "Articoli su {category}",
+    "subscribeNewsletter": "Iscriviti alla newsletter",
+    "subscribeNewsletterHint": "Ricevi nuovi articoli nella tua inbox",
+    "notFound": "Articolo non trovato",
+    "shareThis": "Condividi questo articolo"
+  }
+}

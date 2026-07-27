@@ -17,9 +17,12 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.sh
 const LANG_MAP: Record<string, string> = {
   zh: "zh-CN",
   en: "en-US",
+  ja: "ja-JP",
   es: "es-ES",
   de: "de-DE",
   fr: "fr-FR",
+  pt: "pt-PT",
+  it: "it-IT",
 };
 
 const JSON_BASE = {

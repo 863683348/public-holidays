@@ -1,84 +1,105 @@
 {
   "site": {
-    "title": "",
-    "tagline": ""
+    "title": "PubHoliday",
+    "tagline": "Conheça os feriados. Domine o calendário."
   },
   "nav": {
-    "home": ""
+    "home": "Início"
   },
   "home": {
-    "heading": "",
-    "subtitle": "",
-    "searchPlaceholder": "",
-    "popular": "",
-    "allCountries": "",
-    "noResults": "",
-    "worldClockCard": "",
-    "worldClockCardDesc": ""
+    "heading": "Feriados públicos, mundo todo",
+    "subtitle": "Escolha um país para ver seus feriados, planejar feriados prolongados e assinar o calendário.",
+    "searchPlaceholder": "Buscar um país...",
+    "popular": "Países populares",
+    "allCountries": "Todos os países",
+    "noResults": "Nenhum país encontrado.",
+    "worldClockCard": "Relógio Mundial",
+    "worldClockCardDesc": "Veja a hora atual e feriados nas principais cidades."
   },
   "country": {
-    "yearView": "",
-    "holidays": "",
-    "longWeekends": "",
-    "subscribe": "",
-    "subscribeHint": "",
-    "copyLink": "",
-    "copied": "",
-    "backHome": "",
-    "dataLag": ""
+    "yearView": "Calendário de feriados {year}",
+    "holidays": "Feriados",
+    "longWeekends": "Feriados prolongados e pontes",
+    "subscribe": "Assinar calendário",
+    "subscribeHint": "Adicione ao Google, Apple ou Outlook Calendar.",
+    "copyLink": "Copiar link",
+    "copied": "Copiado!",
+    "backHome": "← Todos os países",
+    "dataLag": "Os dados podem estar ligeiramente desatualizados."
   },
   "longWeekend": {
-    "natural": "",
-    "bridge": "",
-    "takeGet": "",
-    "days": "",
-    "none": ""
+    "natural": "Fim de semana prolongado",
+    "bridge": "Oportunidade de ponte",
+    "takeGet": "Folga de {bridge}",
+    "days": "dias",
+    "none": "Nenhum feriado prolongado encontrado para este ano."
   },
   "calendar": {
-    "weekdays": [],
-    "months": []
+    "weekdays": [
+      "Seg",
+      "Ter",
+      "Qua",
+      "Qui",
+      "Sex",
+      "Sáb",
+      "Dom"
+    ],
+    "months": [
+      "Janeiro",
+      "Fevereiro",
+      "Março",
+      "Abril",
+      "Maio",
+      "Junho",
+      "Julho",
+      "Agosto",
+      "Setembro",
+      "Outubro",
+      "Novembro",
+      "Dezembro"
+    ]
   },
   "yearNav": {
-    "prev": "",
-    "next": ""
+    "prev": "Ano anterior {year}",
+    "next": "Próximo ano {year}"
   },
   "theme": {
-    "toggle": ""
+    "toggle": "Alternar tema"
   },
   "language": {
-    "label": ""
+    "label": "Idioma"
   },
   "ad": {
-    "label": ""
+    "label": "Publicidade"
   },
   "worldClock": {
-    "title": "",
-    "local": "",
-    "badge": "",
-    "noHoliday": "",
-    "noData": "",
-    "loading": ""
+    "title": "Relógio Mundial",
+    "local": "Local",
+    "badge": "Feriado público",
+    "noHoliday": "Nenhum feriado hoje",
+    "noData": "Dados de feriados indisponíveis",
+    "loading": "Carregando…"
   },
   "footer": {
-    "disclaimer": ""
+    "disclaimer": "Os dados de feriados são fornecidos para referência. Sempre confirme com fontes oficiais antes de planejar."
   },
   "blog": {
     "title": "Blog",
-    "description": "Articles about public holidays around the world",
+    "description": "Artigos sobre feriados públicos ao redor do mundo",
     "blogSection": "Blog",
     "heading": "Blog",
-    "subheading": "Insights, stories, and practical guides about public holidays",
-    "viewAll": "View all posts",
+    "subheading": "Insights, histórias e guias práticos sobre feriados",
+    "viewAll": "Ver todos os artigos",
     "viewAllUrl": "/blog",
-    "featured": "Featured post",
-    "categoriesHeading": "Browse by category",
-    "recentHeading": "Recent posts",
-    "backToBlog": "← Back to Blog",
-    "categoryTitle": "{category} Blog Posts",
-    "categoryDescription": "Posts about {category}",
-    "subscribeNewsletter": "Subscribe to newsletter",
-    "subscribeNewsletterHint": "Get new posts delivered to your inbox",
-    "notFound": "Article not found",
-    "shareThis": "Share this article"
+    "featured": "Artigo em destaque",
+    "categoriesHeading": "Navegar por categoria",
+    "recentHeading": "Artigos recentes",
+    "backToBlog": "← Voltar ao Blog",
+    "categoryTitle": "Artigos de {category}",
+    "categoryDescription": "Artigos sobre {category}",
+    "subscribeNewsletter": "Assinar newsletter",
+    "subscribeNewsletterHint": "Receba novos artigos no seu email",
+    "notFound": "Artigo não encontrado",
+    "shareThis": "Compartilhe este artigo"
   }
 }

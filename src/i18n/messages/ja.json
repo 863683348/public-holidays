@@ -1,88 +1,105 @@
 {
   "site": {
-    "title": "[LOCALIZE: site title - e.g., パブホリデイ]",
-    "tagline": "[LOCALIZE: tagline]"
+    "title": "PubHoliday",
+    "tagline": "祝日を知り、カレンダーを制せ。"
   },
   "nav": {
-    "home": "[LOCALIZE: nav/home - e.g., ホーム]"
+    "home": "ホーム"
   },
   "home": {
-    "heading": "[LOCALIZE/home/heading]",
-    "subtitle": "[LOCALIZE/home/subtitle]",
-    "searchPlaceholder": "[LOCALIZE/home/searchPlaceholder]",
-    "popular": "[LOCALIZE/home/popular]",
-    "allCountries": "[LOCALIZE/home/allCountries]",
-    "noResults": "[LOCALIZE/home/noResults]",
-    "worldClockCard": "[LOCALIZE/home/worldClockCard]",
-    "worldClockCardDesc": "[LOCALIZE/home/worldClockCardDesc]"
+    "heading": "世界の祝日を一括検索",
+    "subtitle": "国を選んで祝日を確認、長い週末を計画し、カレンダーに登録しましょう。",
+    "searchPlaceholder": "国を検索...",
+    "popular": "人気の国",
+    "allCountries": "すべての国",
+    "noResults": "該当する国が見つかりません。",
+    "worldClockCard": "ワールドクロック",
+    "worldClockCardDesc": "主要都市の現在時刻と祝日を確認。"
   },
   "country": {
-    "yearView": "[LOCALIZE/country/yearView]",
-    "holidays": "[LOCALIZE/country/holidays]",
-    "longWeekends": "[LOCALIZE/country/longWeekends]",
-    "subscribe": "[LOCALIZE/country/subscribe]",
-    "subscribeHint": "[LOCALIZE/country/subscribeHint]",
-    "copyLink": "[LOCALIZE/country/copyLink]",
-    "copied": "[LOCALIZE/country/copied]",
-    "backHome": "[LOCALIZE/country/backHome]",
-    "dataLag": "[LOCALIZE/country/dataLag]"
+    "yearView": "{year} 年の祝日カレンダー",
+    "holidays": "祝日一覧",
+    "longWeekends": "連休と振替休日",
+    "subscribe": "カレンダーに登録",
+    "subscribeHint": "Google、Apple、Outlook カレンダーに追加。",
+    "copyLink": "リンクをコピー",
+    "copied": "コピーしました！",
+    "backHome": "← すべての国",
+    "dataLag": "データがやや古い可能性があります。"
   },
   "longWeekend": {
-    "natural": "[LOCALIZE/longWeekend/natural]",
-    "bridge": "[LOCALIZE/longWeekend/bridge]",
-    "takeGet": "[LOCALIZE/longWeekend/takeGet]",
-    "days": "[LOCALIZE/longWeekend/days]",
-    "none": "[LOCALIZE/longWeekend/none]"
+    "natural": "連休",
+    "bridge": "振替休日のチャンス",
+    "takeGet": "{bridge} を休暇に",
+    "days": "日間",
+    "none": "今年は連休が見つかりませんでした。"
   },
   "calendar": {
     "weekdays": [
-      "[LOCALIZE/calendar/weekdays]"
+      "月",
+      "火",
+      "水",
+      "木",
+      "金",
+      "土",
+      "日"
     ],
     "months": [
-      "[LOCALIZE/calendar/months]"
+      "1月",
+      "2月",
+      "3月",
+      "4月",
+      "5月",
+      "6月",
+      "7月",
+      "8月",
+      "9月",
+      "10月",
+      "11月",
+      "12月"
     ]
   },
   "yearNav": {
-    "prev": "[LOCALIZE/yearNav/prev]",
-    "next": "[LOCALIZE/yearNav/next]"
+    "prev": "前の年 {year}",
+    "next": "次の年 {year}"
   },
   "theme": {
-    "toggle": "[LOCALIZE/theme/toggle]"
+    "toggle": "テーマ切替"
   },
   "language": {
-    "label": "[LOCALIZE/language/label]"
+    "label": "言語"
   },
   "ad": {
-    "label": "[LOCALIZE/ad/label]"
+    "label": "広告"
   },
   "worldClock": {
-    "title": "[LOCALIZE/worldClock/title]",
-    "local": "[LOCALIZE/worldClock/local]",
-    "badge": "[LOCALIZE/worldClock/badge]",
-    "noHoliday": "[LOCALIZE/worldClock/noHoliday]",
-    "noData": "[LOCALIZE/worldClock/noData]",
-    "loading": "[LOCALIZE/worldClock/loading]"
+    "title": "ワールドクロック",
+    "local": "現地時間",
+    "badge": "祝日",
+    "noHoliday": "今日は祝日ではありません",
+    "noData": "祝日データを取得できません",
+    "loading": "読み込み中…"
   },
   "footer": {
-    "disclaimer": "[LOCALIZE/footer/disclaimer]"
+    "disclaimer": "祝日データは参考用です。実際の予定は公式情報でご確認ください。"
   },
   "blog": {
     "title": "ブログ",
-    "description": "世界の公共假期に関する記事",
+    "description": "世界の祝日に関する記事",
     "blogSection": "ブログ",
     "heading": "ブログ",
-    "subheading": "公共假期に関する洞察、ストーリー、実用的ガイド",
-    "viewAll": "全記事表示",
+    "subheading": "祝日に関する洞察、ストーリー、実用的ガイド",
+    "viewAll": "すべての記事を見る",
     "viewAllUrl": "/blog",
-    "featured": " featured post",
-    "categoriesHeading": "カテゴリ別ブラウズ",
+    "featured": "注目の記事",
+    "categoriesHeading": "カテゴリから探す",
     "recentHeading": "最近の記事",
     "backToBlog": "← ブログに戻る",
-    "categoryTitle": "{category} ブログ記事",
+    "categoryTitle": "{category} のブログ記事",
     "categoryDescription": "{category} の記事",
     "subscribeNewsletter": "ニュースレターに登録",
-    "subscribeNewsletterHint": "新記事をメールで受信",
+    "subscribeNewsletterHint": "新着記事をメールで受信",
     "notFound": "記事が見つかりません",
-    "shareThis": "この記事 compartilhar"
+    "shareThis": "この記事をシェア"
   }
 }
