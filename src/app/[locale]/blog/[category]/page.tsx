@@ -5,6 +5,7 @@ import { routing } from "@/i18n/routing";
 import Link from "next/link";
 import SubscribeButton from "@/components/SubscribeButton";
 import AdSlot from "@/components/AdSlot";
+import { getPostsByCategory } from "@/lib/blog-posts";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
 
@@ -50,51 +51,8 @@ export default async function CategoryPage({
   const { locale, category } = await params;
   const t = await getTranslations("blog");
 
-  // Sample posts for category — in production, fetch from CMS
-  const posts = [
-    {
-      id: 1,
-      title: "How to Calculate Holiday Pay in Germany",
-      slug: "how-to-calculate-holiday-pay-in-germany",
-      excerpt: "Understanding German holiday pay laws for employees.",
-      author: "Michael Weber",
-      publishedDate: "2025-02-20T10:30:00Z",
-      imageUrl: "https://public-holidays.shop/images/blog/germany-holiday-pay.jpg",
-      category: "finance",
-    },
-    {
-      id: 2,
-      title: "UK Public Holidays and Bank Days Explained",
-      slug: "uk-public-holidays-and-bank-days-explained",
-      excerpt: "A complete guide to UK bank holidays and how they work.",
-      author: "Emma Thompson",
-      publishedDate: "2025-03-05T09:15:00Z",
-      imageUrl: "https://public-holidays.shop/images/blog/uk-bank-holidays.jpg",
-      category: "work",
-    },
-    {
-      id: 3,
-      title: "Remote Work Holidays in Japan",
-      slug: "remote-work-holidays-in-japan",
-      excerpt: "Japan's public holidays for remote workers and digital nomads.",
-      author: "Yuki Tanaka",
-      publishedDate: "2025-03-10T11:00:00Z",
-      imageUrl: "https://public-holidays.shop/images/blog/japan-remote-work.jpg",
-      category: "work",
-    },
-    {
-      id: 4,
-      title: "Cultural Significance of Chinese New Year",
-      slug: "cultural-significance-of-chinese-new-year",
-      excerpt: "The history and traditions behind China's most important holiday.",
-      author: "Li Wei",
-      publishedDate: "2025-01-25T09:00:00Z",
-      imageUrl: "https://public-holidays.shop/images/blog/chinese-new-year.jpg",
-      category: "culture",
-    },
-  ];
-
-  const categoryPosts = posts.filter((p) => p.category === category);
+  // Fetch locale-aware posts from data store
+  const categoryPosts = getPostsByCategory(category, locale);
 
   if (categoryPosts.length === 0) {
     notFound();
