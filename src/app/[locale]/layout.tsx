@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
@@ -99,6 +100,18 @@ export default async function LocaleLayout({
       suppressHydrationWarning
     >
       <body className="min-h-screen antialiased">
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-BVFTRDHV2H"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-BVFTRDHV2H');
+          `}
+        </Script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify({ ...JSON_BASE, inLanguage: locale }) }}
