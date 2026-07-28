@@ -56,66 +56,44 @@ export default async function BlogPage({
   const { locale } = await params;
   const t = await getTranslations("blog");
 
-  // Sample blog data — in production, this would come from a CMS or content directory
-  const featuredPost = {
-    title: "Top 10 Public Holidays in 2025 That Will Extend Your Long Weekends",
-    excerpt: "Discover how to combine holidays with weekends for maximum time off.",
-    category: "travel",
-    author: "Sarah Johnson",
-    publishedDate: "2025-01-15T08:00:00Z",
-    imageUrl: "https://public-holidays.shop/images/blog/holiday-planning-2025.jpg",
-  };
+  // Fetch locale-aware blog data from the data store
+  const allPosts = getAllPosts(locale);
+  const categoryList = getCategories(locale);
 
-  const categories = [
-    {
-      id: "travel",
-      name: "Travel",
-      description: "Holidays for travelers and remote workers",
-      count: 12,
-    },
-    {
-      id: "work",
-      name: "Work",
-      description: "Holiday policies and remote work tips",
-      count: 8,
-    },
-    {
-      id: "culture",
-      name: "Culture",
-      description: "Cultural significance of holidays",
-      count: 15,
-    },
-    {
-      id: "finance",
-      name: "Finance",
-      description: "Holiday pay calculations and tax implications",
-      count: 6,
-    },
-  ];
+  const featuredPost = allPosts.length > 0 ? allPosts[0] : null;
 
-  const recentPosts = [
-    {
-      title: "How to Calculate Holiday Pay in Germany",
-      category: "finance",
-      author: "Michael Weber",
-      publishedDate: "2025-02-20T10:30:00Z",
-      excerpt: "Understanding German holiday pay laws for employees.",
-    },
-    {
-      title: "UK Public Holidays and Bank Days Explained",
-      category: "work",
-      author: "Emma Thompson",
-      publishedDate: "2025-03-05T09:15:00Z",
-      excerpt: "A complete guide to UK bank holidays and how they work.",
-    },
-    {
-      title: "Best European Cities for Holiday Travel in 2025",
-      category: "travel",
-      author: "Anna Schmidt",
-      publishedDate: "2025-03-12T14:00:00Z",
-      excerpt: "Top destinations for holiday travelers across Europe.",
-    },
-  ];
+  const categories = categoryList.map((cat) => {
+    const catPosts = allPosts.filter((p) => p.category === cat);
+    const names: Record<string, string> = {
+      data: "Data & Research",
+      travel: "Travel",
+      work: "Work",
+      culture: "Culture",
+      finance: "Finance",
+    };
+    const descriptions: Record<string, string> = {
+      data: "Data-driven holiday research and global analysis",
+      travel: "Holidays for travelers and remote workers",
+      work: "Holiday policies and remote work tips",
+      culture: "Cultural significance of holidays",
+      finance: "Holiday pay calculations and tax implications",
+    };
+    return {
+      id: cat,
+      name: names[cat] || cat,
+      description: descriptions[cat] || "Articles about " + cat,
+      count: catPosts.length,
+    };
+  });
+
+  const recentPosts = allPosts.slice(0, 3).map((p) => ({
+    title: p.title,
+    category: p.category,
+    author: p.author,
+    slug: p.slug,
+    publishedDate: p.publishedDate,
+    excerpt: p.excerpt,
+  }));
 
   return (
     <div className="space-y-12">
@@ -154,9 +132,7 @@ export default async function BlogPage({
               </div>
               <h3 className="text-lg font-semibold leading-tight mb-2">
                 <Link
-                  href={`/${locale}/blog/${featuredPost.category}/${encodeURIComponent(
-                    featuredPost.title
-                  )}`}
+                  href={`/${locale}/blog/${featuredPost.category}/${featuredPost.slug}`}
                   className="hover:text-brand transition-colors"
                 >
                   {featuredPost.title}
@@ -204,9 +180,7 @@ export default async function BlogPage({
               </div>
               <h3 className="text-lg font-semibold leading-tight">
                 <Link
-                  href={`/${locale}/blog/${post.category}/${encodeURIComponent(
-                    post.title
-                  )}`}
+                  href={`/${locale}/blog/${post.category}/${post.slug}`}
                   className="hover:text-brand transition-colors"
                 >
                   {post.title}
