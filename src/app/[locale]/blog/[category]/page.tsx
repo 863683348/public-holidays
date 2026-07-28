@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
@@ -60,6 +60,17 @@ export default async function CategoryPage({
 
   return (
     <div className="space-y-8">
+      {/* Breadcrumb */}
+      <nav className="text-sm text-[var(--muted)] mb-4">
+        <div className="flex items-center gap-2">
+          <a href={`/${locale}`} className="text-brand hover:underline">Home</a>
+          <span>/</span>
+          <a href={`/${locale}/blog`} className="text-brand hover:underline">Blog</a>
+          <span>/</span>
+          <span className="text-[var(--foreground)]">{category}</span>
+        </div>
+      </nav>
+
       <div>
         <Link
           href={`/${locale}/blog`}

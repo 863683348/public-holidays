@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
@@ -97,6 +97,15 @@ export default async function BlogPage({
 
   return (
     <div className="space-y-12">
+      {/* Breadcrumb */}
+      <nav className="text-sm text-[var(--muted)] mb-2">
+        <div className="flex items-center gap-2">
+          <a href={`/${locale}`} className="text-brand hover:underline">Home</a>
+          <span>/</span>
+          <span className="text-[var(--foreground)]">Blog</span>
+        </div>
+      </nav>
+
       {/* Hero Section */}
       <section>
         <h1 className="text-4xl font-bold mb-4">{t("heading")}</h1>

@@ -1,9 +1,9 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { getCountry } from "@/lib/countries";
-import { getPostData } from "@/lib/blog-posts";
+import { getPostData, getPostsByCategory } from "@/lib/blog-posts";
 import { articleBreadcrumb, articleStructuredData } from "@/lib/seo";
 import Link from "next/link";
 import SubscribeButton from "@/components/SubscribeButton";
@@ -77,6 +77,8 @@ export default async function ArticlePage({
   }
 
   const localeStr = locale || "en";
+
+  const relatedPosts = getPostsByCategory(category, locale).filter((p) => p.slug !== slug).slice(0, 3);
 
   return (
     <div className="space-y-8">
@@ -193,6 +195,22 @@ export default async function ArticlePage({
         )}
       </div>
     </article>
+
+      {/* Related Articles */}
+      {relatedPosts.length > 0 && (
+        <div className="mt-8 pt-8 border-t border-[var(--border)]">
+          <h3 className="text-lg font-semibold mb-4">Related Articles</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {relatedPosts.map((rp) => (
+              <Link key={rp.slug} href={`/${localeStr}/blog/${rp.category}/${rp.slug}`} className="block p-4 border rounded-lg hover:border-brand transition-colors">
+                <div className="text-xs text-[var(--muted)] mb-1">{rp.category}</div>
+                <h4 className="text-sm font-semibold leading-tight mb-1">{rp.title}</h4>
+                <p className="text-xs text-[var(--muted)] line-clamp-2">{rp.excerpt}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Structured Data */}
       <script
