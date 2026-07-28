@@ -10,3 +10,9 @@ node_modules/
 .DS_Store
 tsconfig.tsbuildinfo
 *.tsbuildinfo
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
