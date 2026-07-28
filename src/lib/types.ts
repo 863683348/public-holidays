@@ -27,4 +27,5 @@ export interface BlogPost {
   excerpt: string;
   content: string;
   relatedCountries: string[];
+  locale?: string; // "en" | "zh" | etc., defaults to "en"
 }

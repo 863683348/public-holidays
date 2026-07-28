@@ -22,7 +22,7 @@ export async function generateMetadata({
   const t = await getTranslations("blog");
 
   // In production, fetch actual post data from CMS
-  const post = await getPostData(slug);
+  const post = await getPostData(slug, locale);
 
   if (!post) {
     return { title: t("notFound") };
