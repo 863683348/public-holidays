@@ -1,3 +1,4 @@
+import React from "react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
@@ -174,6 +175,34 @@ export default async function CountryPage({
           })}
         </p>
       </section>
+
+      {/* Holiday types breakdown — adds rich text for SEO */}
+      {(() => {
+        const typeCount: Record<string, number> = {};
+        holidays.forEach((h) => h.types.forEach((t) => { typeCount[t] = (typeCount[t] || 0) + 1; }));
+        const typeEntries = Object.entries(typeCount);
+        if (typeEntries.length === 0) return null;
+        return (
+          <section className="space-y-2">
+            <p className="text-[var(--muted)] leading-relaxed text-sm">
+              {meta.name} celebrates {holidays.length} public holidays in {year}. These include{" "}
+              {typeEntries.map(([t, c], i) => (
+                <React.Fragment key={t}>
+                  {i > 0 ? (i === typeEntries.length - 1 ? " and " : ", ") : ""}{c} {t.toLowerCase()}{c > 1 ? " holidays" : " holiday"}
+                </React.Fragment>
+              ))}.
+            </p>
+            <p className="text-[var(--muted)] leading-relaxed text-sm">
+              Notable national holidays include:{" "}
+              {holidays.filter((h) => h.global).slice(0, 5).map((h, i, arr) => (
+                <React.Fragment key={h.date}>
+                  {i > 0 ? (i === arr.length - 1 ? " and " : ", ") : ""}<strong>{h.localName}{h.localName !== h.name ? " (" + h.name + ")" : ""}</strong> (on {new Date(h.date).toLocaleDateString(locale, { month: "long", day: "numeric" })})
+                </React.Fragment>
+              ))}.
+            </p>
+          </section>
+        );
+      })()}
 
       <section className="space-y-3">
         <h2 className="text-xl font-semibold">{t("holidays")}</h2>
