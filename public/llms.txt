@@ -1,0 +1,43 @@
+# PubHoliday
+> Know the holidays. Beat the calendar. — Global public holiday lookup service covering 46 countries in 11 languages. Search public holidays by country and year, calculate long weekends with bridge day recommendations, subscribe to iCal feeds for automatic calendar sync, and view real-time global timezone clocks with holiday badges.
+
+Data source: Nager.Date (open-source, 120+ countries). All holiday data is for reference only — verify with official government announcements before making planning decisions.
+
+## Core Features
+- [Holiday Search & Calendar](https://public-holidays.shop/en): Browse 46 countries, search by name, year-view and month-view calendars with red-marked public holidays
+- [Country Holiday Page](https://public-holidays.shop/en/US): Full year view of all public holidays for a selected country, with long weekend analysis and calendar subscription
+- [Year-by-Year Holiday Archive](https://public-holidays.shop/en/US/2027): Historical and future holiday data with year navigation (previous/next year)
+- [Long Weekend Calculator](https://public-holidays.shop/en/US): Automatically detects natural long weekends (holidays adjacent to weekends) and bridge day opportunities (take 1 day off for 4-day break)
+- [Calendar Subscription (iCal)](https://public-holidays.shop/en/US/calendar.ics): One-click .ics feed for Google Calendar, Apple Calendar, and Outlook — auto-syncs holiday updates
+- [World Clock](https://public-holidays.shop/en/world-clock): Real-time display of 12 global timezones with 1-second ticker, auto-detects local timezone, shows today's holiday badge per country
+- [API Endpoint](https://public-holidays.shop/en/api/holidays?country=US): JSON holiday data API for developers (rate-limited)
+
+## Blog Articles
+- [How to Calculate Holiday Pay in Germany](https://public-holidays.shop/en/blog/finance/how-to-calculate-holiday-pay-in-germany): Understanding German holiday pay laws, daily rate calculation, and 2027 holiday calendar for Germany's 9 nationwide plus state-specific holidays
+- [UK Public Holidays and Bank Days Explained](https://public-holidays.shop/en/blog/work/uk-public-holidays-and-bank-days-explained): Complete guide to UK bank holidays across England, Wales, Scotland, and Northern Ireland, plus substitute day rules
+- [Remote Work Holidays in Japan](https://public-holidays.shop/en/blog/work/remote-work-holidays-in-japan): Japan's 16 national holidays, Golden Week cluster (7-day stretch in 2027), and practical tips for digital nomads
+- [Cultural Significance of Chinese New Year](https://public-holidays.shop/en/blog/culture/cultural-significance-of-chinese-new-year): 4,000-year history, traditions (hongbao, reunion dinner, fireworks), and public holiday durations across China, Hong Kong, and Taiwan
+- [Global Public Holidays 2027: Complete Calendar for 46 Countries](https://public-holidays.shop/en/blog/data/global-public-holidays-2027-complete-calendar): Comprehensive 2027 calendar covering all 46 tracked countries, organized by region for business planning
+
+## Country Pages (46 total)
+- [United States](https://public-holidays.shop/en/US) | [United Kingdom](https://public-holidays.shop/en/GB) | [Canada](https://public-holidays.shop/en/CA) | [Australia](https://public-holidays.shop/en/AU)
+- [Germany](https://public-holidays.shop/en/DE) | [France](https://public-holidays.shop/en/FR) | [Spain](https://public-holidays.shop/en/ES) | [Italy](https://public-holidays.shop/en/IT)
+- [Netherlands](https://public-holidays.shop/en/NL) | [Ireland](https://public-holidays.shop/en/IE) | [Sweden](https://public-holidays.shop/en/SE) | [Switzerland](https://public-holidays.shop/en/CH)
+- [Austria](https://public-holidays.shop/en/AT) | [Belgium](https://public-holidays.shop/en/BE) | [Portugal](https://public-holidays.shop/en/PT) | [Poland](https://public-holidays.shop/en/PL)
+- [Japan](https://public-holidays.shop/en/JP) | [South Korea](https://public-holidays.shop/en/KR) | [China](https://public-holidays.shop/en/CN)
+- [India](https://public-holidays.shop/en/IN) | [Brazil](https://public-holidays.shop/en/BR) | [Mexico](https://public-holidays.shop/en/MX)
+- [Argentina](https://public-holidays.shop/en/AR) | [South Africa](https://public-holidays.shop/en/ZA) | [Singapore](https://public-holidays.shop/en/SG)
+- [United Arab Emirates](https://public-holidays.shop/en/AE) | [New Zealand](https://public-holidays.shop/en/NZ)
+- [Denmark](https://public-holidays.shop/en/DK) | [Norway](https://public-holidays.shop/en/NO) | [Finland](https://public-holidays.shop/en/FI)
+- [Czechia](https://public-holidays.shop/en/CZ) | [Greece](https://public-holidays.shop/en/GR) | [Hungary](https://public-holidays.shop/en/HU)
+- [Romania](https://public-holidays.shop/en/RO) | [Turkey](https://public-holidays.shop/en/TR) | [Russia](https://public-holidays.shop/en/RU)
+- [Thailand](https://public-holidays.shop/en/TH) | [Malaysia](https://public-holidays.shop/en/MY) | [Indonesia](https://public-holidays.shop/en/ID)
+- [Philippines](https://public-holidays.shop/en/PH) | [Nigeria](https://public-holidays.shop/en/NG) | [Egypt](https://public-holidays.shop/en/EG)
+- [Saudi Arabia](https://public-holidays.shop/en/SA) | [Israel](https://public-holidays.shop/en/IL)
+
+## Optional
+- [Full XML Sitemap](https://public-holidays.shop/sitemap.xml): ~1110 URLs across 11 locales x 46 countries x 4 years
+- [Blog Sitemap](https://public-holidays.shop/blog/sitemap.xml): Blog post URLs across all locales
+- [Robots.txt](https://public-holidays.shop/robots.txt): Crawler access rules
+- [GitHub Repository](https://github.com/863683348/public-holidays): Open-source Next.js project
+- [API (JSON)](https://public-holidays.shop/en/api/holidays?country=US): Holiday data in JSON format

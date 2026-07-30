@@ -115,5 +115,9 @@
     "notFound": "Статья не найдена",
     "shareThis": "Поделиться статьёй",
     "relatedCountries": "Связанные страны"
+  },
+  "auth": {
+    "signIn": "Войти через Google",
+    "signOut": "Выйти"
   }
 }

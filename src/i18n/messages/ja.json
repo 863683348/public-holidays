@@ -115,5 +115,9 @@
     "notFound": "記事が見つかりません",
     "shareThis": "この記事をシェア",
     "relatedCountries": "関連国"
+  },
+  "auth": {
+    "signIn": "Googleでログイン",
+    "signOut": "ログアウト"
   }
 }

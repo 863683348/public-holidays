@@ -1,0 +1,198 @@
+# PubHoliday — Full Site Context for LLMs
+
+> Know the holidays. Beat the calendar.
+> Site: https://public-holidays.shop
+> Generated: 2026-07-28
+
+---
+
+## About PubHoliday
+
+PubHoliday (public-holidays.shop) is a global public holiday lookup service designed for cross-border teams, remote workers, digital nomads, and international business operators. The site covers **46 countries** across North America, Europe, Asia Pacific, Latin America, the Middle East, and Africa, and supports **11 languages**.
+
+### Key Facts
+
+- **46 countries** tracked, 19 marked as "popular" with quick-access cards
+- **11 languages**: English (default), Chinese, Japanese, Korean, Spanish, German, French, Portuguese, Italian, Russian, Arabic
+- **Data source**: Nager.Date API (open-source, 120+ countries, rate-limited free tier)
+- **Data range**: 4-year window (previous year, current year, next year, year+2)
+- **Cache**: 90-day revalidation for holiday data via Next.js ISR
+- **43 popular countries shown on homepage grid**, all 46 searchable
+- **19 popular countries** with direct shortcut cards on homepage
+
+### How It Works
+
+1. User selects a country from the homepage search or popular shortcuts
+2. Country page renders a full year calendar with red-highlighted public holidays
+3. Long Weekend section automatically calculates:
+   - **Natural long weekends**: Holidays falling on Monday/Friday creating 3-day weekends
+   - **Bridge days**: Holidays on Tuesday/Thursday where taking 1 day off creates a 4-day break
+4. Subscribe button generates an iCal (.ics) feed URL the user can import into Google Calendar, Apple Calendar, or Outlook
+5. Year navigation lets users browse past and future years (previous, next, +1, +2)
+
+---
+
+## Core Feature Details
+
+### Holiday Calendar (Year View)
+
+```
+/[locale]/[country]          → Current year (e.g., /en/US)
+/[locale]/[country]/[year]   → Specific year (e.g., /en/US/2027)
+```
+
+Each country page displays:
+- 12-month grid calendar with public holidays in red
+- Holiday names (English + local name where available)
+- Holiday type indicators (Public / Bank / School / Optional)
+- Regional/county-level holiday distinctions where applicable
+
+### Long Weekend Calculator
+
+The Long Weekend algorithm (`findLongWeekends` in `src/lib/longWeekend.ts`):
+
+1. Builds a set of "rest days" = weekends (Saturday + Sunday) + public holidays
+2. Scans for consecutive rest day sequences >= 3 days that include a weekend
+3. Labels sequences as:
+   - **Natural**: Holiday adjacent to weekend = 3+ day break without taking time off
+   - **Bridge**: Holiday separated from weekend by 1 workday — suggests taking that workday off for a 4-day break
+4. Outputs: start date, end date, total days off, whether a bridge day is needed, and which day to take off
+
+### Calendar Subscription (iCal)
+
+```
+/[locale]/[country]/calendar.ics   (e.g., /en/US/calendar.ics)
+```
+
+Generates a standard iCalendar (RFC 5545) feed:
+- Content-Type: text/calendar
+- Each holiday as a VEVENT with UID, DTSTART (VALUE=DATE), SUMMARY, DESCRIPTION
+- Importable into Google Calendar ("Add by URL"), Apple Calendar, Outlook
+- Updates automatically when the site refreshes its data
+
+### World Clock
+
+```
+/[locale]/world-clock   (e.g., /en/world-clock)
+```
+
+Interactive real-time world clock showing:
+- 12 major timezones: local, US Eastern, US Pacific, UK, Central Europe, Eastern Europe, Moscow, Dubai, India, China, Japan, Australia Eastern
+- Auto-detects user's local timezone and highlights it
+- 1-second ticker updates all clocks simultaneously
+- Today's holiday badge: for each country, fetches `/api/holidays/{country}` to check if today is a public holiday
+- Shows "Public Holiday" badge or "No public holiday today" for each timezone
+
+### JSON API Endpoint
+
+```
+/[locale]/api/holidays?country=US   → JSON array of Holiday objects
+```
+
+Each Holiday object:
+```json
+{
+  "date": "2027-01-01",
+  "localName": "New Year's Day",
+  "name": "New Year's Day",
+  "countryCode": "US",
+  "fixed": true,
+  "global": true,
+  "counties": null,
+  "types": ["Public"]
+}
+```
+
+---
+
+## Blog Content Center
+
+Blog is organized by categories with full i18n routing:
+```
+/[locale]/blog                    → Blog homepage with featured + recent posts
+/[locale]/blog/[category]         → Category archive (finance, work, culture, data)
+/[locale]/blog/[category]/[slug]  → Full article with Article schema + breadcrumb
+```
+
+### Current Articles
+
+#### 1. How to Calculate Holiday Pay in Germany
+- **Category**: finance | **Slug**: how-to-calculate-holiday-pay-in-germany
+- **Summary**: German holiday pay is regulated by the *Entgeltfortzahlungsgesetz*. Employees receive regular daily wage on public holidays. Working on holidays entitles 25-50% premium pay. Germany has 9 nationwide + up to 13 total holidays with state additions (Bavaria has most). 2027 holidays include: New Year's Day (Jan 1), Good Friday (Mar 26), Easter Monday (Mar 29), Labour Day (May 1), Ascension Day (May 6), Whit Monday (May 17), German Unity Day (Oct 3), Christmas Day (Dec 25), Boxing Day (Dec 26). State-specific: Epiphany (Jan 6), Corpus Christi (Jun 3), Assumption Day (Aug 15).
+
+#### 2. UK Public Holidays and Bank Days Explained
+- **Category**: work | **Slug**: uk-public-holidays-and-bank-days-explained
+- **Summary**: UK bank holidays vary by region. England & Wales: 8 per year. Scotland: additional January 2nd. Northern Ireland: includes July 12th. Substitute (in lieu) day when holiday falls on weekend — in 2027, Christmas on Saturday pushes substitute to Monday Dec 27. UK statutory annual leave: 28 days (including bank holidays) — lowest in Europe (Germany 30, France 25 + 11 holidays).
+
+#### 3. Remote Work Holidays in Japan
+- **Category**: work | **Slug**: remote-work-holidays-in-japan
+- **Summary**: Japan has 16 national holidays — the most among developed nations. Golden Week (Apr 29–May 5): 4 holidays in 7 days creating a 7-day stretch in 2027. All 16 holidays listed with 2027 dates. Key insight: businesses across Japan shut down during Golden Week, making it critical for remote workers and business travelers to plan around.
+
+#### 4. Cultural Significance of Chinese New Year
+- **Category**: culture | **Slug**: cultural-significance-of-chinese-new-year
+- **Summary**: Spring Festival dates back 4,000 years to Shang Dynasty. 2027: Year of the Goat, February 6. Traditions: hongbao (red envelopes), family reunion dinner, fireworks, lion/dragon dances. Public holiday duration: China 7 days (often extended to 2-3 weeks for factories), Hong Kong 4 days, Taiwan 4 days.
+
+#### 5. Global Public Holidays 2027: Complete Calendar for 46 Countries
+- **Category**: data | **Slug**: global-public-holidays-2027-complete-calendar
+- **Summary**: Comprehensive data-driven post covering all 46 tracked countries organized by region. Includes total holiday count per country, notable holiday clusters (Golden Week, Chinese New Year), and cross-border planning tips.
+
+---
+
+## Technical Architecture
+
+| Layer | Technology | Notes |
+|-------|-----------|-------|
+| Framework | Next.js 15 (App Router) | SSG/ISR/Dynamic hybrid |
+| Language | TypeScript | Full type coverage |
+| Styling | Tailwind CSS | Design Token system, responsive |
+| Internationalization | next-intl | 11 locales, route-prefix strategy |
+| Theme | next-themes | Light/dark mode, system-follow |
+| Data API | Nager.Date v3 | Open-source, 120+ countries |
+| Deployment | Vercel | Zero Config, auto-deploy from GitHub |
+| Host | public-holidays.shop | Custom domain |
+
+### Technical SEO Features
+- Sitemap: ~1,110 URLs across 11 locales x 46 countries x 4 years
+- Blog sitemap: All blog posts across all locales
+- Robots.txt: Allows all except /api/
+- Structured data: WebSite, ItemList, BreadcrumbList, Article, FAQPage schemas
+- Hreflang: Full cross-locale alternates with x-default
+- ISR: 86,400s revalidation for country pages
+- Security: 7 security headers (HSTS, CSP, X-Frame-Options, etc.)
+
+---
+
+## Languages
+
+| Code | Language | Status |
+|------|----------|--------|
+| en | English | Default, full translation |
+| zh | Chinese (Simplified) | Full translation |
+| ja | Japanese | Full translation |
+| ko | Korean | Full translation |
+| es | Spanish | Full translation |
+| de | German | Full translation |
+| fr | French | Full translation |
+| pt | Portuguese | Full translation |
+| it | Italian | Full translation |
+| ru | Russian | Full translation |
+| ar | Arabic | Full translation (RTL) |
+
+---
+
+## Site-Wide Rules
+
+- **Holiday data is for reference only.** Always verify with official government announcements.
+- The site uses Nager.Date's free API which covers 120+ countries but may not include all regional/religious holidays.
+- Calendar subscription feeds auto-update when source data changes (ISR revalidation).
+- Long weekend calculations are algorithmic suggestions, not guaranteed time-off entitlements.
+
+---
+
+## Contact & Links
+
+- Site: https://public-holidays.shop
+- GitHub: https://github.com/863683348/public-holidays
+- Sitemap: https://public-holidays.shop/sitemap.xml
+- Blog Sitemap: https://public-holidays.shop/blog/sitemap.xml
+- Robots: https://public-holidays.shop/robots.txt

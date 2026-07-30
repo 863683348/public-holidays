@@ -50,15 +50,20 @@ export async function getHolidays(
   const cached = await cache.get(key);
   if (cached) return JSON.parse(cached) as Holiday[];
 
-  const res = await fetch(`${BASE}/PublicHolidays/${year}/${country}`, {
-    // Next.js edge/data cache: re-fetch at most once per CACHE_TTL.
-    next: { revalidate: CACHE_TTL },
-  });
-  if (!res.ok) {
-    throw new Error(`Holiday upstream error ${res.status} for ${country}/${year}`);
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 5000);
+  try {
+    const res = await fetch(`${BASE}/PublicHolidays/${year}/${country}`, {
+      signal: controller.signal,
+      next: { revalidate: CACHE_TTL },
+    });
+    if (!res.ok) {
+      throw new Error(`Holiday upstream error ${res.status} for ${country}/${year}`);
+    }
+    const data = (await res.json()) as Holiday[];
+    await cache.put(key, JSON.stringify(data));
+    return data;
+  } finally {
+    clearTimeout(timeout);
   }
-  const data = (await res.json()) as Holiday[];
-
-  await cache.put(key, JSON.stringify(data));
-  return data;
 }

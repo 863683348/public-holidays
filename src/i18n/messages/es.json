@@ -115,5 +115,9 @@
     "notFound": "Article not found",
     "shareThis": "Share this article",
     "relatedCountries": "Países relacionados"
+  },
+  "auth": {
+    "signIn": "Iniciar sesión con Google",
+    "signOut": "Cerrar sesión"
   }
 }

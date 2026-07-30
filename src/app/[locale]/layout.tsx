@@ -9,6 +9,8 @@ import { ThemeProvider } from "next-themes";
 import ThemeToggle from "@/components/ThemeToggle";
 import LocaleSwitcher from "@/components/LocaleSwitcher";
 import { Link } from "@/i18n/navigation";
+import SessionProvider from "@/components/SessionProvider";
+import GoogleLogin from "@/components/GoogleLogin";
 import "../globals.css";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
@@ -116,7 +118,8 @@ export default async function LocaleLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify({ ...JSON_BASE, name: (messages as any).site?.title ?? "PubHoliday", description: (messages as any).site?.tagline ?? "Know the holidays. Beat the calendar.", inLanguage: locale }) }}
         />
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <SessionProvider>
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <NextIntlClientProvider messages={messages}>
             <header className="border-b border-[var(--border)]">
               <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-3 px-4 py-3">
@@ -127,6 +130,7 @@ export default async function LocaleLayout({
                   PubHoliday
                 </Link>
                 <div className="flex items-center gap-2">
+                  <GoogleLogin />
                   <LocaleSwitcher />
                   <ThemeToggle />
                 </div>
@@ -136,6 +140,7 @@ export default async function LocaleLayout({
             <Footer />
           </NextIntlClientProvider>
         </ThemeProvider>
+          </SessionProvider>
       </body>
     </html>
   );

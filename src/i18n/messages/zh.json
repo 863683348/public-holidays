@@ -115,5 +115,9 @@
     "notFound": "Article not found",
     "shareThis": "Share this article",
     "relatedCountries": "相关国家"
+  },
+  "auth": {
+    "signIn": "使用 Google 登录",
+    "signOut": "退出登录"
   }
 }

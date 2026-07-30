@@ -4,9 +4,13 @@ import { routing } from "./src/i18n/routing";
 
 const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
-// #10 上线前安全头。MVP 无登录/支付，无用户注入点，故 CSP 以 'self' 为基，
-// 仅对 script/style 放 'unsafe-inline'（next-themes 与 Next 运行时注入内联脚本，
-// 未做 nonce 方案前此为兼容项；M2 接入登录后应升级为 nonce）。
+// #10 上线前安全头。MVP 无登录/支付，无用户注入点。CSP 白名单如下：
+// - script-src 'self' 'unsafe-inline' + Google Tag Manager（GA4）+ Google OAuth 域
+// - style-src 'self' 'unsafe-inline'（next-themes + Next 运行时注入）
+// - img-src 'self' data: https:（含 Google 用户头像 + GA4 像素）
+// - font-src 'self' data:（含 inline SVG 图标）
+// - connect-src 'self' + Nager.Date 数据源 + GA4 采集端点
+// - frame-src https://accounts.google.com（NextAuth 登录弹窗）
 const securityHeaders = [
   { key: "X-Frame-Options", value: "DENY" },
   { key: "X-Content-Type-Options", value: "nosniff" },
@@ -24,14 +28,15 @@ const securityHeaders = [
     key: "Content-Security-Policy",
     value: [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-inline'",
+      "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://accounts.google.com",
       "style-src 'self' 'unsafe-inline'",
       "img-src 'self' data: https:",
-      "font-src 'self'",
-      "connect-src 'self'",
+      "font-src 'self' data:",
+      "connect-src 'self' https://date.nager.at https://www.google-analytics.com https://www.googletagmanager.com",
+      "frame-src https://accounts.google.com",
       "frame-ancestors 'none'",
       "base-uri 'self'",
-      "form-action 'self'",
+      "form-action 'self' https://accounts.google.com",
       "object-src 'none'",
     ].join("; "),
   },
