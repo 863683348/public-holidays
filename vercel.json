@@ -1,5 +1,6 @@
 {
   "env": {
-    "NEXT_PUBLIC_SITE_URL": "https://public-holidays.shop"
+    "NEXT_PUBLIC_SITE_URL": "https://public-holidays.shop",
+    "NEXT_PUBLIC_ADSENSE_AD_UNIT": "2564634874"
   }
 }
