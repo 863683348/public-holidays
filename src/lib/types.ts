@@ -12,6 +12,7 @@ export interface Holiday {
 export interface Country {
   code: string; // ISO alpha-2
   name: string;
+  nameZh?: string;
   popular?: boolean;
 }
 

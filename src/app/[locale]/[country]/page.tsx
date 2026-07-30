@@ -2,7 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
-import { COUNTRIES, getCountry } from "@/lib/countries";
+import { COUNTRIES, getCountry, getCountryName } from "@/lib/countries";
 import { getHolidays } from "@/lib/holidays";
 import { findLongWeekends } from "@/lib/longWeekend";
 import { getPostsByCountry } from "@/lib/blog-posts";
@@ -156,7 +156,7 @@ export default async function CountryPage({
             {t("backHome")}
           </Link>
           <h1 className="text-2xl font-bold">{t("yearView", { year })}</h1>
-          <p className="text-[var(--muted)]">{meta.name}</p>
+          <p className="text-[var(--muted)]">{locale === "zh" ? getCountryName(country, locale) : meta.name}</p>
         </div>
         <SubscribeButton country={country} label={t("subscribe")} hint={t("subscribeHint")} />
       </div>
