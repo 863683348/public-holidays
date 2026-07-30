@@ -1,5 +1,6 @@
 import type { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
+import { routing } from "./src/i18n/routing";
 
 const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
@@ -43,6 +44,10 @@ const nextConfig: NextConfig = {
         source: "/:path*",
         headers: securityHeaders,
       },
+      ...routing.locales.map((locale) => ({
+        source: `/${locale}/:path*`,
+        headers: [{ key: "Content-Language", value: locale === "zh" ? "zh-CN" : locale === "en" ? "en-US" : locale === "ja" ? "ja-JP" : locale === "ko" ? "ko-KR" : locale === "es" ? "es-ES" : locale === "de" ? "de-DE" : locale === "fr" ? "fr-FR" : locale === "pt" ? "pt-PT" : locale === "it" ? "it-IT" : locale === "ru" ? "ru-RU" : "ar-SA" }],
+      })),
     ];
   },
 };

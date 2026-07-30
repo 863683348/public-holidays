@@ -114,7 +114,7 @@ export default async function LocaleLayout({
         </Script>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify({ ...JSON_BASE, inLanguage: locale }) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({ ...JSON_BASE, name: (messages as any).site?.title ?? "PubHoliday", description: (messages as any).site?.tagline ?? "Know the holidays. Beat the calendar.", inLanguage: locale }) }}
         />
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <NextIntlClientProvider messages={messages}>

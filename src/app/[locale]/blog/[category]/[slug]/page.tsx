@@ -233,7 +233,7 @@ export default async function ArticlePage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
-            articleBreadcrumb(category, post.title)
+            articleBreadcrumb(category, post.title, locale)
           ),
         }}
       />

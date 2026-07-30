@@ -35,7 +35,7 @@ export async function generateMetadata({
   if (!meta) return {};
   const year = new Date().getFullYear();
   const title = `${meta.name} Public Holidays ${year}`;
-  const description = `Full list of ${year} public holidays in ${meta.name}, including bridge days and long weekends. Subscribe to your calendar.`;
+  const description = locale === "zh" ? `${meta.name}${year}年公共假期完整列表，含桥梁日和长周末规划。` : `Full list of ${year} public holidays in ${meta.name}, including bridge days and long weekends. Subscribe to your calendar.`;
   const languages: Record<string, string> = {};
   for (const l of routing.locales) languages[l] = `${SITE_URL}/${l}/${country}`;
   return {
@@ -130,7 +130,7 @@ export default async function CountryPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(holidayItemList(meta.name, year, holidays)),
+          __html: JSON.stringify(holidayItemList(meta.name, year, holidays, locale)),
         }}
       />
       <script
@@ -138,8 +138,8 @@ export default async function CountryPage({
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             breadcrumb([
-              { name: "Home", url: `${SITE_URL}/${locale}` },
-              { name: meta.name, url: `${SITE_URL}/${locale}/${country}` },
+              { name: locale === "zh" ? "首页" : "Home", url: `${SITE_URL}/${locale}` },
+              { name: locale === "zh" ? `${meta.name}假期` : `${meta.name} Holidays`, url: `${SITE_URL}/${locale}/${country}` },
             ])
           ),
         }}

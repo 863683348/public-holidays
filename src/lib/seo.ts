@@ -6,12 +6,13 @@ import type { Holiday } from "./types";
 export function holidayItemList(
   countryName: string,
   year: number,
-  holidays: Holiday[]
+  holidays: Holiday[],
+  locale?: string
 ) {
   return {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: `${countryName} public holidays ${year}`,
+    name: locale === "zh" ? `${countryName} ${year}?????` : `${countryName} public holidays ${year}`,
     itemListElement: holidays.map((h, i) => ({
       "@type": "ListItem",
       position: i + 1,
@@ -46,7 +47,8 @@ export function breadcrumb(items: { name: string; url: string }[]) {
 
 export function articleBreadcrumb(
   category: string,
-  title: string
+  title: string,
+  locale?: string
 ) {
   return {
     "@context": "https://schema.org",
@@ -87,7 +89,8 @@ export function articleStructuredData(
   publishedDate: string,
   lastModified: string,
   category: string,
-  imageUrl: string
+  imageUrl: string,
+  locale?: string
 ) {
   return {
     "@context": "https://schema.org",
@@ -100,7 +103,7 @@ export function articleStructuredData(
     },
     publisher: {
       "@type": "Organization",
-      name: "PubHoliday",
+      name: locale === "zh" ? "??????" : "PubHoliday",
       logo: {
         "@type": "ImageObject",
         url: imageUrl,

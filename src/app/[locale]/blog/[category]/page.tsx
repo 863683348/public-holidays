@@ -20,7 +20,7 @@ export async function generateMetadata({
   const t = await getTranslations("blog");
 
   const title = `${t("categoryTitle", { category })} — Blog`;
-  const description = `Latest articles about ${category} at PubHoliday`;
+  const description = locale === "zh" ? `${category}分类的最新文章` : `Latest articles about ${category} at PubHoliday`;
 
   return {
     title,
@@ -30,7 +30,7 @@ export async function generateMetadata({
     },
     openGraph: {
       type: "website",
-      siteName: "PubHoliday",
+      siteName: locale === "zh" ? "公共假期查询" : "PubHoliday",
       title,
       description,
       url: `${SITE_URL}/${locale}/blog/${category}`,
