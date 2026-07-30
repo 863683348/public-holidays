@@ -4,13 +4,13 @@ import { routing } from "./src/i18n/routing";
 
 const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
-// #10 上线前安全头。MVP 无登录/支付，无用户注入点。CSP 白名单如下：
-// - script-src 'self' 'unsafe-inline' + Google Tag Manager（GA4）+ Google OAuth 域
-// - style-src 'self' 'unsafe-inline'（next-themes + Next 运行时注入）
-// - img-src 'self' data: https:（含 Google 用户头像 + GA4 像素）
-// - font-src 'self' data:（含 inline SVG 图标）
-// - connect-src 'self' + Nager.Date 数据源 + GA4 采集端点
-// - frame-src https://accounts.google.com（NextAuth 登录弹窗）
+// #10 上线前安全头。CSP 白名单如下：
+// - script-src: 'self' 'unsafe-inline' + GA4 + Google OAuth + Google AdSense
+// - style-src: 'self' 'unsafe-inline'（next-themes + Next 运行时注入）
+// - img-src: 'self' data: https:（用户头像 + GA4 + 广告素材）
+// - font-src 'self' data:
+// - connect-src: 数据源 + GA4 + gtag + AdSense 采集
+// - frame-src: Google OAuth + AdSense 广告 iframe
 const securityHeaders = [
   { key: "X-Frame-Options", value: "DENY" },
   { key: "X-Content-Type-Options", value: "nosniff" },
@@ -28,12 +28,12 @@ const securityHeaders = [
     key: "Content-Security-Policy",
     value: [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://accounts.google.com",
+      "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://accounts.google.com https://pagead2.googlesyndication.com",
       "style-src 'self' 'unsafe-inline'",
       "img-src 'self' data: https:",
       "font-src 'self' data:",
-      "connect-src 'self' https://date.nager.at https://www.google-analytics.com https://www.googletagmanager.com",
-      "frame-src https://accounts.google.com",
+      "connect-src 'self' https://date.nager.at https://www.google-analytics.com https://www.googletagmanager.com https://pagead2.googlesyndication.com",
+      "frame-src https://accounts.google.com https://googleads.g.doubleclick.net https://tpc.googlesyndication.com",
       "frame-ancestors 'none'",
       "base-uri 'self'",
       "form-action 'self' https://accounts.google.com",

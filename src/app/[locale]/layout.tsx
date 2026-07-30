@@ -114,6 +114,12 @@ export default async function LocaleLayout({
             gtag('config', 'G-BVFTRDHV2H');
           `}
         </Script>
+        <Script
+          id="adsense-auto-ads"
+          strategy="afterInteractive"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=pub-9043592188127461"
+          crossOrigin="anonymous"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify({ ...JSON_BASE, name: (messages as any).site?.title ?? "PubHoliday", description: (messages as any).site?.tagline ?? "Know the holidays. Beat the calendar.", inLanguage: locale }) }}
