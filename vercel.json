@@ -1,6 +1,6 @@
-﻿{
-  "$schema": "https://openapi.vercel.sh/vercel.json",
+{
+  "schema": "https://openapi.vercel.sh/vercel.json",
   "env": {
-    "NEXT_PUBLIC_SITE_URL": "https://public-holidays.shop",\n    "NEXT_PUBLIC_CARBON_SERVE": ""
+    "NEXT_PUBLIC_SITE_URL": "https://public-holidays.shop"
   }
 }
