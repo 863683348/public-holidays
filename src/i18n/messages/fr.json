@@ -119,5 +119,33 @@
   "auth": {
     "signIn": "Se connecter avec Google",
     "signOut": "Se déconnecter"
+  },
+  "pricing": {
+    "title": "Tarifs",
+    "subtitle": "Consultez les jours fériés gratuitement. Passez à Pro pour plus.",
+    "free": "Gratuit",
+    "freePrice": "$0",
+    "pro": "Pro",
+    "proPrice": "$7",
+    "proPeriod": "/mois",
+    "freeFeatures": [
+      "46 pays",
+      "Vues annuelle et mensuelle",
+      "Planificateur de ponts",
+      "Abonnement calendrier iCal"
+    ],
+    "proFeatures": [
+      "Tout le plan Gratuit",
+      "Données pluriannuelles",
+      "Liste de pays favoris",
+      "Sans publicité",
+      "Plus d'avantages à venir"
+    ],
+    "currentPlan": "Plan actuel",
+    "upgrade": "Passer à Pro",
+    "manage": "Gérer l'abonnement",
+    "upgradeHint": "Connectez-vous pour passer à Pro",
+    "successMsg": "Paiement réussi ! Vos avantages Pro sont actifs.",
+    "pendingMsg": "Commande en cours. Actualisez dans un instant."
   }
 }

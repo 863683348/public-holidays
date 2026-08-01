@@ -119,5 +119,33 @@
   "auth": {
     "signIn": "Googleでログイン",
     "signOut": "ログアウト"
+  },
+  "pricing": {
+    "title": "料金",
+    "subtitle": "世界中の祝日を無料で検索。Pro にアップグレードしてさらに便利に。",
+    "free": "無料",
+    "freePrice": "$0",
+    "pro": "Pro",
+    "proPrice": "$7",
+    "proPeriod": "/月",
+    "freeFeatures": [
+      "46か国の祝日を検索",
+      "年表示・月表示カレンダー",
+      "長い週末・ブリッジ休暇の計算",
+      "iCal カレンダー購読"
+    ],
+    "proFeatures": [
+      "無料版の全機能",
+      "複数年データ",
+      "複数国ウォッチリスト",
+      "広告なし",
+      "今後さらに追加予定"
+    ],
+    "currentPlan": "現在のプラン",
+    "upgrade": "Pro にアップグレード",
+    "manage": "サブスクリプション管理",
+    "upgradeHint": "ログインしてアップグレード",
+    "successMsg": "支払い成功！Pro 特典が有効になりました。",
+    "pendingMsg": "注文を処理中です。少し待って更新してください。"
   }
 }

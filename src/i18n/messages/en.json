@@ -119,5 +119,33 @@
   "auth": {
     "signIn": "Sign in with Google",
     "signOut": "Sign out"
+  },
+  "pricing": {
+    "title": "Pricing",
+    "subtitle": "Free public holiday lookups worldwide. Upgrade to Pro for more.",
+    "free": "Free",
+    "freePrice": "$0",
+    "pro": "Pro",
+    "proPrice": "$7",
+    "proPeriod": "/month",
+    "freeFeatures": [
+      "Browse 46 countries",
+      "Year & month calendar views",
+      "Long weekend & bridge day planner",
+      "iCal calendar subscription"
+    ],
+    "proFeatures": [
+      "Everything in Free",
+      "Multi-year holiday data",
+      "Multi-country watchlist",
+      "Ad-free experience",
+      "More benefits coming soon"
+    ],
+    "currentPlan": "Current plan",
+    "upgrade": "Upgrade to Pro",
+    "manage": "Manage subscription",
+    "upgradeHint": "Sign in to upgrade",
+    "successMsg": "Payment successful! Your Pro benefits are now active.",
+    "pendingMsg": "Order is being processed. Please refresh in a moment."
   }
 }

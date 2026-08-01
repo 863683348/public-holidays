@@ -119,5 +119,33 @@
   "auth": {
     "signIn": "Google로 로그인",
     "signOut": "로그아웃"
+  },
+  "pricing": {
+    "title": "요금제",
+    "subtitle": "전 세계 공휴일을 무료로 조회하세요. Pro 업그레이드로 더 많은 혜택을. ",
+    "free": "무료",
+    "freePrice": "$0",
+    "pro": "Pro",
+    "proPrice": "$7",
+    "proPeriod": "/월",
+    "freeFeatures": [
+      "46개국 공휴일 조회",
+      "연간/월간 달력 보기",
+      "연휴 및 브리지 데이 계산",
+      "iCal 달력 구독"
+    ],
+    "proFeatures": [
+      "무료 버전 전체 기능",
+      "복수 연도 데이터",
+      "다중 국가 관심 목록",
+      "광고 없는 경험",
+      "더 많은 혜택 예정"
+    ],
+    "currentPlan": "현재 요금제",
+    "upgrade": "Pro로 업그레이드",
+    "manage": "구독 관리",
+    "upgradeHint": "로그인 후 업그레이드",
+    "successMsg": "결제 성공! Pro 혜택이 활성화되었습니다.",
+    "pendingMsg": "주문 처리 중입니다. 잠시 후 새로고침하세요."
   }
 }

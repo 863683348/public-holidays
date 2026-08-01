@@ -119,5 +119,33 @@
   "auth": {
     "signIn": "Entrar com Google",
     "signOut": "Sair"
+  },
+  "pricing": {
+    "title": "Preços",
+    "subtitle": "Consulte feriados gratuitamente no mundo todo. Upgrade para Pro.",
+    "free": "Grátis",
+    "freePrice": "$0",
+    "pro": "Pro",
+    "proPrice": "$7",
+    "proPeriod": "/mês",
+    "freeFeatures": [
+      "46 países",
+      "Vistas de ano e mês",
+      "Planejador de feriados emendados",
+      "Assinatura de calendário iCal"
+    ],
+    "proFeatures": [
+      "Tudo do Grátis",
+      "Dados de vários anos",
+      "Lista de países favoritos",
+      "Experiência sem anúncios",
+      "Mais benefícios em breve"
+    ],
+    "currentPlan": "Plano atual",
+    "upgrade": "Upgrade para Pro",
+    "manage": "Gerenciar assinatura",
+    "upgradeHint": "Faça login para fazer upgrade",
+    "successMsg": "Pagamento realizado! Seus benefícios Pro estão ativos.",
+    "pendingMsg": "Pedido em processamento. Atualize em instantes."
   }
 }

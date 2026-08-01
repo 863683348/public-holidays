@@ -119,5 +119,33 @@
   "auth": {
     "signIn": "Iniciar sesión con Google",
     "signOut": "Cerrar sesión"
+  },
+  "pricing": {
+    "title": "Precios",
+    "subtitle": "Consulta festivos gratis en todo el mundo. Mejora a Pro para más.",
+    "free": "Gratis",
+    "freePrice": "$0",
+    "pro": "Pro",
+    "proPrice": "$7",
+    "proPeriod": "/mes",
+    "freeFeatures": [
+      "Consulta 46 países",
+      "Vistas de año y mes",
+      "Planificador de puentes",
+      "Suscripción de calendario iCal"
+    ],
+    "proFeatures": [
+      "Todo lo de Gratis",
+      "Datos de varios años",
+      "Lista de países favoritos",
+      "Experiencia sin anuncios",
+      "Más ventajas próximamente"
+    ],
+    "currentPlan": "Plan actual",
+    "upgrade": "Mejorar a Pro",
+    "manage": "Gestionar suscripción",
+    "upgradeHint": "Inicia sesión para mejorar",
+    "successMsg": "¡Pago exitoso! Tus beneficios Pro están activos.",
+    "pendingMsg": "Procesando pedido. Refresca en un momento."
   }
 }

@@ -119,5 +119,33 @@
   "auth": {
     "signIn": "Mit Google anmelden",
     "signOut": "Abmelden"
+  },
+  "pricing": {
+    "title": "Preise",
+    "subtitle": "Feiertage weltweit kostenlos abrufen. Upgrade auf Pro für mehr.",
+    "free": "Kostenlos",
+    "freePrice": "$0",
+    "pro": "Pro",
+    "proPrice": "$7",
+    "proPeriod": "/Monat",
+    "freeFeatures": [
+      "46 Länder durchsuchen",
+      "Jahres- und Monatsansicht",
+      "Brückentage-Planer",
+      "iCal-Kalenderabonnement"
+    ],
+    "proFeatures": [
+      "Alles aus Kostenlos",
+      "Mehrjahresdaten",
+      "Merkliste für Länder",
+      "Werbefrei",
+      "Weitere Vorteile folgen"
+    ],
+    "currentPlan": "Aktueller Plan",
+    "upgrade": "Auf Pro upgraden",
+    "manage": "Abonnement verwalten",
+    "upgradeHint": "Anmelden zum Upgraden",
+    "successMsg": "Zahlung erfolgreich! Deine Pro-Vorteile sind aktiv.",
+    "pendingMsg": "Bestellung wird verarbeitet. Bitte gleich aktualisieren."
   }
 }

@@ -119,5 +119,33 @@
   "auth": {
     "signIn": "使用 Google 登录",
     "signOut": "退出登录"
+  },
+  "pricing": {
+    "title": "定价",
+    "subtitle": "免费查询全球公共假期，升级 Pro 解锁更多权益。",
+    "free": "免费版",
+    "freePrice": "$0",
+    "pro": "Pro",
+    "proPrice": "$7",
+    "proPeriod": "/月",
+    "freeFeatures": [
+      "查询 46 个国家假期",
+      "年视图 / 月视图日历",
+      "长周末与调休计算",
+      "iCal 日历订阅"
+    ],
+    "proFeatures": [
+      "全部免费版功能",
+      "多年数据查询",
+      "多国关注看板",
+      "无广告体验",
+      "更多权益即将上线"
+    ],
+    "currentPlan": "当前套餐",
+    "upgrade": "升级 Pro",
+    "manage": "管理订阅",
+    "upgradeHint": "登录后即可升级",
+    "successMsg": "支付成功！你的 Pro 权益已生效。",
+    "pendingMsg": "订单处理中，请稍候刷新页面。"
   }
 }
