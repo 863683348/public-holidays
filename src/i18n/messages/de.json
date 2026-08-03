@@ -16,7 +16,16 @@
     "allCountries": "Alle Länder",
     "noResults": "Keine Länder gefunden.",
     "worldClockCard": "Weltuhr",
-    "worldClockCardDesc": "Aktuelle Uhrzeit und Feiertage in Großstädten weltweit."
+    "worldClockCardDesc": "Aktuelle Uhrzeit und Feiertage in Großstädten weltweit.",
+    "todayHolidays": "Feiertage heute",
+    "todayNone": "Heute feiert kein ausgewähltes Land.",
+    "nextHoliday": "Nächster Feiertag",
+    "days": "Tage",
+    "myHolidays": "Meine Feiertage",
+    "myHolidaysHint": "Speichere Länder und sieh den nächsten Feiertag auf einen Blick.",
+    "addCountry": "Land hinzufügen",
+    "emptySaved": "Noch keine Länder gespeichert. Wähle oben eines aus.",
+    "remove": "Entfernen"
   },
   "country": {
     "yearView": "Feiertagskalender {year}",

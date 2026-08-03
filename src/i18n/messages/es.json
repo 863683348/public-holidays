@@ -16,7 +16,16 @@
     "allCountries": "Todos los países",
     "noResults": "No se encontraron países.",
     "worldClockCard": "Reloj Mundial",
-    "worldClockCardDesc": "Consulta la hora y los festivos actuales en las grandes ciudades."
+    "worldClockCardDesc": "Consulta la hora y los festivos actuales en las grandes ciudades.",
+    "todayHolidays": "Fiestas de hoy",
+    "todayNone": "Ningún país destacado celebra hoy.",
+    "nextHoliday": "Próxima fiesta",
+    "days": "días",
+    "myHolidays": "Mis fiestas",
+    "myHolidaysHint": "Guarda países para ver su próxima fiesta de un vistazo.",
+    "addCountry": "Añadir país",
+    "emptySaved": "Aún no hay países guardados. Elige uno arriba.",
+    "remove": "Quitar"
   },
   "country": {
     "yearView": "Calendario de festivos {year}",

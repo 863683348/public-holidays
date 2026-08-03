@@ -16,7 +16,16 @@
     "allCountries": "すべての国",
     "noResults": "該当する国が見つかりません。",
     "worldClockCard": "ワールドクロック",
-    "worldClockCardDesc": "主要都市の現在時刻と祝日を確認。"
+    "worldClockCardDesc": "主要都市の現在時刻と祝日を確認。",
+    "todayHolidays": "今日の祝日",
+    "todayNone": "今日祝日の国はありません。",
+    "nextHoliday": "次の祝日",
+    "days": "日後",
+    "myHolidays": "マイ祝日",
+    "myHolidaysHint": "国を保存して、次の祝日をひと目で確認。",
+    "addCountry": "国を追加",
+    "emptySaved": "保存した国はまだありません。上から選んでください。",
+    "remove": "削除"
   },
   "country": {
     "yearView": "{year} 年の祝日カレンダー",

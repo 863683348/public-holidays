@@ -1,8 +1,14 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { COUNTRIES, POPULAR_COUNTRIES } from "@/lib/countries";
+import { getHolidays } from "@/lib/holidays";
+import type { Holiday } from "@/lib/types";
 import CountrySelector from "@/components/CountrySelector";
+import TodayHolidays from "@/components/TodayHolidays";
+import MyHolidays from "@/components/MyHolidays";
 import AdSlot from "@/components/AdSlot";
+
+const FEATURED_COUNTRIES = POPULAR_COUNTRIES.slice(0, 8);
 
 export default async function HomePage({
   params,
@@ -11,6 +17,22 @@ export default async function HomePage({
 }) {
   const { locale } = await params;
   const t = await getTranslations("home");
+  const year = new Date().getFullYear();
+
+  const featured = await Promise.all(
+    FEATURED_COUNTRIES.map(async (c) => {
+      let holidays: Holiday[] = [];
+      try {
+        holidays = [
+          ...(await getHolidays(c.code, year)),
+          ...(await getHolidays(c.code, year + 1)),
+        ];
+      } catch {
+        // Upstream unavailable: the widget renders an empty state.
+      }
+      return { code: c.code, holidays };
+    })
+  );
 
   return (
     <div className="space-y-10">
@@ -20,6 +42,8 @@ export default async function HomePage({
       </section>
 
       <CountrySelector countries={COUNTRIES} placeholder={t("searchPlaceholder")} />
+
+      <TodayHolidays countries={featured} />
 
       <section className="space-y-4">
         <h2 className="text-xl font-semibold">{t("popular")}</h2>
@@ -35,6 +59,8 @@ export default async function HomePage({
           ))}
         </div>
       </section>
+
+      <MyHolidays />
 
       <section className="space-y-4">
         <Link

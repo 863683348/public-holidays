@@ -16,7 +16,16 @@
     "allCountries": "모든 국가",
     "noResults": "검색 결과가 없습니다.",
     "worldClockCard": "세계 시계",
-    "worldClockCardDesc": "주요 도시의 현재 시간과 공휴일을 확인하세요."
+    "worldClockCardDesc": "주요 도시의 현재 시간과 공휴일을 확인하세요.",
+    "todayHolidays": "오늘의 공휴일",
+    "todayNone": "오늘 공휴일인 국가가 없습니다.",
+    "nextHoliday": "다음 공휴일",
+    "days": "일 후",
+    "myHolidays": "내 공휴일",
+    "myHolidaysHint": "국가를 저장해 다음 공휴일을 한눈에 확인하세요.",
+    "addCountry": "국가 추가",
+    "emptySaved": "저장된 국가가 없습니다. 위에서 선택해 주세요.",
+    "remove": "삭제"
   },
   "country": {
     "yearView": "{year}년 공휴일 달력",

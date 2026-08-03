@@ -16,7 +16,16 @@
     "allCountries": "Tous les pays",
     "noResults": "Aucun pays trouvé.",
     "worldClockCard": "Horloge Mondiale",
-    "worldClockCardDesc": "Voyez l'heure et les jours fériés actuels dans les grandes villes."
+    "worldClockCardDesc": "Voyez l'heure et les jours fériés actuels dans les grandes villes.",
+    "todayHolidays": "Fêtes aujourd’hui",
+    "todayNone": "Aucun pays mis en avant ne fête aujourd’hui.",
+    "nextHoliday": "Prochaine fête",
+    "days": "jours",
+    "myHolidays": "Mes fêtes",
+    "myHolidaysHint": "Enregistrez des pays pour voir leur prochaine fête en un coup d’œil.",
+    "addCountry": "Ajouter un pays",
+    "emptySaved": "Aucun pays enregistré. Choisissez-en un ci-dessus.",
+    "remove": "Retirer"
   },
   "country": {
     "yearView": "Calendrier des fériés {year}",

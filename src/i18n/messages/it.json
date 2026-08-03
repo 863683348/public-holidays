@@ -16,7 +16,16 @@
     "allCountries": "Tutti i paesi",
     "noResults": "Nessun paese trovato.",
     "worldClockCard": "Orologio Mondiale",
-    "worldClockCardDesc": "Vedi l'ora attuale e le festività nelle principali città."
+    "worldClockCardDesc": "Vedi l'ora attuale e le festività nelle principali città.",
+    "todayHolidays": "Festività oggi",
+    "todayNone": "Nessun paese in evidenza festeggia oggi.",
+    "nextHoliday": "Prossima festività",
+    "days": "giorni",
+    "myHolidays": "Le mie festività",
+    "myHolidaysHint": "Salva i paesi per vedere la prossima festività a colpo d’occhio.",
+    "addCountry": "Aggiungi paese",
+    "emptySaved": "Nessun paese salvato. Scegline uno qui sopra.",
+    "remove": "Rimuovi"
   },
   "country": {
     "yearView": "Calendario festività {year}",

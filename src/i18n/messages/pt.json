@@ -16,7 +16,16 @@
     "allCountries": "Todos os países",
     "noResults": "Nenhum país encontrado.",
     "worldClockCard": "Relógio Mundial",
-    "worldClockCardDesc": "Veja a hora atual e feriados nas principais cidades."
+    "worldClockCardDesc": "Veja a hora atual e feriados nas principais cidades.",
+    "todayHolidays": "Feriados hoje",
+    "todayNone": "Nenhum país em destaque tem feriado hoje.",
+    "nextHoliday": "Próximo feriado",
+    "days": "dias",
+    "myHolidays": "Meus feriados",
+    "myHolidaysHint": "Salve países para ver o próximo feriado rapidamente.",
+    "addCountry": "Adicionar país",
+    "emptySaved": "Nenhum país salvo ainda. Escolha um acima.",
+    "remove": "Remover"
   },
   "country": {
     "yearView": "Calendário de feriados {year}",

@@ -16,7 +16,16 @@
     "allCountries": "All countries",
     "noResults": "No countries found.",
     "worldClockCard": "World Clock",
-    "worldClockCardDesc": "See the current time and public holidays across major cities."
+    "worldClockCardDesc": "See the current time and public holidays across major cities.",
+    "todayHolidays": "Today's holidays",
+    "todayNone": "No featured country is on holiday today.",
+    "nextHoliday": "Next holiday",
+    "days": "days",
+    "myHolidays": "My holidays",
+    "myHolidaysHint": "Save countries to see their next holiday at a glance.",
+    "addCountry": "Add country",
+    "emptySaved": "No saved countries yet. Pick one above to get started.",
+    "remove": "Remove"
   },
   "country": {
     "yearView": "Holiday calendar {year}",

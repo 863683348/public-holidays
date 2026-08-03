@@ -16,7 +16,16 @@
     "allCountries": "全部国家",
     "noResults": "未找到匹配的国家。",
     "worldClockCard": "世界时钟",
-    "worldClockCardDesc": "查看全球主要城市此刻的时间与公共假期。"
+    "worldClockCardDesc": "查看全球主要城市此刻的时间与公共假期。",
+    "todayHolidays": "今日假期",
+    "todayNone": "今天没有热门国家放假。",
+    "nextHoliday": "下一个假期",
+    "days": "天后",
+    "myHolidays": "我的假期",
+    "myHolidaysHint": "收藏常用国家，一眼看到它们的下一个假期。",
+    "addCountry": "添加国家",
+    "emptySaved": "还没有收藏国家，从上方选择一个开始。",
+    "remove": "移除"
   },
   "country": {
     "yearView": "{year} 年假期日历",
