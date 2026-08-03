@@ -49,12 +49,12 @@ export default async function PrivacyPage({
       <section>
         <h2 className="text-lg font-semibold text-[var(--fg)]">Data controller</h2>
         <p>
-          This service is operated by PubHoliday. The entity responsible for
+          This service is operated by 3C studio (trading as PubHoliday). The entity responsible for
           your personal data (the data controller) is:
         </p>
         <ul className="list-disc space-y-1 pl-5">
-          <li>Operator: PubHoliday ([Legal entity name])</li>
-          <li>Registered address: [Registered business address]</li>
+          <li>Operator: 3C studio (trading as PubHoliday)</li>
+          <li>Registered address: China, Shaanxi, Xi&apos;an, Xianxi Xilu Road No. 29</li>
           <li>
             Privacy contact:{" "}
             <a
