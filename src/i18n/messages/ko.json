@@ -96,7 +96,13 @@
     "loading": "로딩 중…"
   },
   "footer": {
-    "disclaimer": "공휴일 데이터는 참고용입니다. 계획 전 항상 공식 출처를 확인하세요."
+    "disclaimer": "공휴일 데이터는 참고용입니다. 계획 전 항상 공식 출처를 확인하세요.",
+    "privacy": "개인정보 처리방침",
+    "terms": "서비스 이용약관",
+    "faq": "자주 묻는 질문",
+    "blog": "블로그",
+    "contact": "문의하기",
+    "contactEmail": "문의사항은 {email} 으로 이메일 주세요"
   },
   "blog": {
     "title": "블로그",
@@ -151,6 +157,10 @@
     "pendingMsg": "주문 처리 중입니다. 잠시 후 새로고침하세요."
   },
   "account": {
-    "signInPrompt": "계정을 보려면 로그인하세요."
+    "signInPrompt": "계정을 보려면 로그인하세요.",
+    "pro": "Pro",
+    "renewsOn": "{date}에 갱신",
+    "expiresOn": "액세스는 {date}에 종료",
+    "managedBy": "결제는 Waffo에서 처리"
   }
 }

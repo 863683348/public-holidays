@@ -96,7 +96,13 @@
     "loading": "Lädt…"
   },
   "footer": {
-    "disclaimer": "Feiertagsdaten dienen nur zur Information. Bitte vor der Planung mit offiziellen Quellen abgleichen."
+    "disclaimer": "Feiertagsdaten dienen nur zur Information. Bitte vor der Planung mit offiziellen Quellen abgleichen.",
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "contactEmail": "Fragen? Schreiben Sie uns an {email}"
   },
   "blog": {
     "title": "Blog",
@@ -151,6 +157,10 @@
     "pendingMsg": "Bestellung wird verarbeitet. Bitte gleich aktualisieren."
   },
   "account": {
-    "signInPrompt": "Melde dich an, um dein Konto zu sehen."
+    "signInPrompt": "Melde dich an, um dein Konto zu sehen.",
+    "pro": "Pro",
+    "renewsOn": "Verlängert am {date}",
+    "expiresOn": "Zugriff endet am {date}",
+    "managedBy": "Abrechnung über Waffo"
   }
 }

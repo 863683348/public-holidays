@@ -96,7 +96,13 @@
     "loading": "Loading…"
   },
   "footer": {
-    "disclaimer": "Holiday data is provided for reference. Always confirm with official sources before planning."
+    "disclaimer": "Holiday data is provided for reference. Always confirm with official sources before planning.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "contact": "Contact Us",
+    "contactEmail": "Questions? Email us at {email}"
   },
   "blog": {
     "title": "Blog",
@@ -151,6 +157,10 @@
     "pendingMsg": "Order is being processed. Please refresh in a moment."
   },
   "account": {
-    "signInPrompt": "Sign in to view your account."
+    "signInPrompt": "Sign in to view your account.",
+    "pro": "Pro",
+    "renewsOn": "Renews on {date}",
+    "expiresOn": "Access ends on {date}",
+    "managedBy": "Billing handled by Waffo"
   }
 }

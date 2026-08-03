@@ -96,7 +96,13 @@
     "loading": "Carregando…"
   },
   "footer": {
-    "disclaimer": "Os dados de feriados são fornecidos para referência. Sempre confirme com fontes oficiais antes de planejar."
+    "disclaimer": "Os dados de feriados são fornecidos para referência. Sempre confirme com fontes oficiais antes de planejar.",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Serviço",
+    "faq": "Perguntas Frequentes",
+    "blog": "Blog",
+    "contact": "Fale Conosco",
+    "contactEmail": "Dúvidas? Envie-nos um e-mail para {email}"
   },
   "blog": {
     "title": "Blog",
@@ -151,6 +157,10 @@
     "pendingMsg": "Pedido em processamento. Atualize em instantes."
   },
   "account": {
-    "signInPrompt": "Entre para ver sua conta."
+    "signInPrompt": "Entre para ver sua conta.",
+    "pro": "Pro",
+    "renewsOn": "Renova em {date}",
+    "expiresOn": "O acesso termina em {date}",
+    "managedBy": "Faturamento via Waffo"
   }
 }

@@ -96,7 +96,13 @@
     "loading": "Caricamento…"
   },
   "footer": {
-    "disclaimer": "I dati sulle festività sono forniti a scopo di riferimento. Verifica sempre con fonti ufficiali prima di pianificare."
+    "disclaimer": "I dati sulle festività sono forniti a scopo di riferimento. Verifica sempre con fonti ufficiali prima di pianificare.",
+    "privacy": "Informativa sulla privacy",
+    "terms": "Termini di servizio",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "contact": "Contattaci",
+    "contactEmail": "Domande? Scrivici a {email}"
   },
   "blog": {
     "title": "Blog",
@@ -151,6 +157,10 @@
     "pendingMsg": "Ordine in elaborazione. Aggiorna tra poco."
   },
   "account": {
-    "signInPrompt": "Accedi per vedere il tuo account."
+    "signInPrompt": "Accedi per vedere il tuo account.",
+    "pro": "Pro",
+    "renewsOn": "Si rinnova il {date}",
+    "expiresOn": "L'accesso termina il {date}",
+    "managedBy": "Fatturazione gestita da Waffo"
   }
 }

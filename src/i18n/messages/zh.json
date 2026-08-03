@@ -96,7 +96,13 @@
     "loading": "加载中…"
   },
   "footer": {
-    "disclaimer": "假期数据仅供参考，规划前请以官方发布为准。"
+    "disclaimer": "假期数据仅供参考，规划前请以官方发布为准。",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "faq": "常见问题",
+    "blog": "博客",
+    "contact": "联系我们",
+    "contactEmail": "有疑问？请发邮件至 {email}"
   },
   "blog": {
     "title": "Blog",
@@ -151,6 +157,10 @@
     "pendingMsg": "订单处理中，请稍候刷新页面。"
   },
   "account": {
-    "signInPrompt": "登录以查看你的账户。"
+    "signInPrompt": "登录以查看你的账户。",
+    "pro": "Pro",
+    "renewsOn": "续费日期：{date}",
+    "expiresOn": "访问权限将于 {date} 结束",
+    "managedBy": "账单由 Waffo 处理"
   }
 }

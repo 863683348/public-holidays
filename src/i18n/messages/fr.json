@@ -96,7 +96,13 @@
     "loading": "Chargement…"
   },
   "footer": {
-    "disclaimer": "Les données de fériés sont fournies à titre indicatif. Vérifiez toujours auprès des sources officielles avant de planifier."
+    "disclaimer": "Les données de fériés sont fournies à titre indicatif. Vérifiez toujours auprès des sources officielles avant de planifier.",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "contact": "Contact",
+    "contactEmail": "Des questions ? Écrivez-nous à {email}"
   },
   "blog": {
     "title": "Blog",
@@ -151,6 +157,10 @@
     "pendingMsg": "Commande en cours. Actualisez dans un instant."
   },
   "account": {
-    "signInPrompt": "Connecte-toi pour voir ton compte."
+    "signInPrompt": "Connecte-toi pour voir ton compte.",
+    "pro": "Pro",
+    "renewsOn": "Renouvellement le {date}",
+    "expiresOn": "L'accès se termine le {date}",
+    "managedBy": "Facturation gérée par Waffo"
   }
 }

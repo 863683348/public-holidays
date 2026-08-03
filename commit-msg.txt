@@ -1,0 +1,10 @@
+feat(db): P1-0 订阅持久化 — Prisma+Neon 落库、Webhook 写入、账户页真实 Pro 状态
+
+- 新增 prisma/schema.prisma（User + Subscription 表，Neon PostgreSQL）
+- src/lib/prisma.ts：Prisma 单例 + isDbConfigured 优雅降级
+- src/lib/subscriptions.ts：Waffo WebhookEvent -> Subscription 状态映射，按 buyerEmail 幂等落库
+- api/webhooks/waffo/route.ts：校验签名后持久化订阅，始终返回 200（MoR 重试安全）
+- account/page.tsx 改为 server component，调用 auth()+getSubscriptionByEmail 读取真实 Pro 状态
+- AccountClient.tsx：客户端 UI（Pro/Free 卡片、续费/到期日期、Waffo 账单提示）
+- 11 个语言包补充 account 命名空间（pro/renewsOn/expiresOn/managedBy）
+- 全部 DB 代码在无 DATABASE_URL 时优雅降级（构建/本地无库可跑）

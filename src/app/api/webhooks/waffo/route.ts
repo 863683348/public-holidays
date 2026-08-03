@@ -1,11 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
+import type { WebhookEvent } from "@waffo/pancake-ts";
 import { getWaffo } from "@/lib/waffo";
+import { persistWebhookEvent } from "@/lib/subscriptions";
 
 // POST /api/webhooks/waffo
-// Waffo Pancake webhook receiver — verify signature and process events.
-// Events: order.completed, subscription.activated, subscription.canceled
-// NOTE: subscription state persistence needs the DB layer (P1-0).
-// For now we log + return 200. DB integration lands with Neon/Prisma.
+// Waffo Pancake webhook receiver — verify signature and persist subscription
+// state. Always returns 200 so Waffo (Merchant of Record) does not retry
+// indefinitely; persistence errors are logged, not surfaced as 5xx.
 export async function POST(req: NextRequest) {
   const rawBody = await req.text();
   const signature = req.headers.get("x-waffo-signature") ?? "";
@@ -17,27 +18,11 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Invalid signature" }, { status: 401 });
   }
 
-  const data = event as {
-    type?: string;
-    mode?: string;
-    data?: Record<string, unknown>;
-  };
-
-  console.log("[waffo-webhook]", JSON.stringify({ type: data.type, mode: data.mode, data: data.data }));
-
-  switch (data.type) {
-    case "order.completed":
-      // Payment succeeded — grant Pro access (persist to DB when P1-0 lands)
-      break;
-    case "subscription.activated":
-      // Subscription started/renewed
-      break;
-    case "subscription.canceled":
-      // Subscription canceled — downgrade to Free
-      break;
-    default:
-      // Unknown event — acknowledge
-      break;
+  try {
+    await persistWebhookEvent(event as WebhookEvent);
+  } catch (err) {
+    // Never break webhook acknowledgement on DB issues — MoR will retry.
+    console.error("[waffo-webhook] persistence failed", err);
   }
 
   return NextResponse.json({ ok: true });

@@ -96,7 +96,13 @@
     "loading": "Cargando…"
   },
   "footer": {
-    "disclaimer": "Los datos de festivos se ofrecen a título informativo. Confirma siempre con fuentes oficiales antes de planificar."
+    "disclaimer": "Los datos de festivos se ofrecen a título informativo. Confirma siempre con fuentes oficiales antes de planificar.",
+    "privacy": "Política de privacidad",
+    "terms": "Términos del servicio",
+    "faq": "Preguntas frecuentes",
+    "blog": "Blog",
+    "contact": "Contáctanos",
+    "contactEmail": "¿Preguntas? Escríbenos a {email}"
   },
   "blog": {
     "title": "Blog",
@@ -151,6 +157,10 @@
     "pendingMsg": "Procesando pedido. Refresca en un momento."
   },
   "account": {
-    "signInPrompt": "Inicia sesión para ver tu cuenta."
+    "signInPrompt": "Inicia sesión para ver tu cuenta.",
+    "pro": "Pro",
+    "renewsOn": "Se renueva el {date}",
+    "expiresOn": "El acceso finaliza el {date}",
+    "managedBy": "Facturación gestionada por Waffo"
   }
 }

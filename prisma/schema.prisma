@@ -1,0 +1,48 @@
+// Prisma schema — P1-0 (Neon PostgreSQL + Prisma)
+// Docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+/// A site user. Currently keyed by Google email (set from NextAuth session).
+/// Populated lazily: on first Waffo webhook (buyerEmail) or first authenticated visit.
+model User {
+  id        String       @id @default(cuid())
+  email     String       @unique
+  name      String?
+  image     String?
+  locale    String?
+  createdAt DateTime     @default(now())
+  updatedAt DateTime     @updatedAt
+  subscription Subscription?
+}
+
+/// Waffo Pancake subscription state for a user.
+/// One row per user (userId is unique). MoR subscriptions are single-plan.
+model Subscription {
+  id                 String    @id @default(cuid())
+  userId             String    @unique
+  user               User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  /// "pro" (only paid plan today) — retained for future plan tiers.
+  plan               String    @default("pro")
+  /// active | canceled | past_due | canceling
+  status             String
+  /// Latest Waffo order id from the triggering event (idempotency / audit).
+  waffoOrderId       String?
+  /// Latest Waffo business event id (dedupe if a delivery is retried).
+  waffoEventId       String?
+  currentPeriodStart DateTime?
+  currentPeriodEnd   DateTime?
+  /// Set when the customer initiated cancellation; subscription stays active until this date.
+  cancelAt           DateTime?
+  createdAt          DateTime  @default(now())
+  updatedAt          DateTime  @updatedAt
+
+  @@index([status])
+}
