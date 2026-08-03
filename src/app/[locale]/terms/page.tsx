@@ -62,6 +62,48 @@ export default async function TermsPage({
         </p>
       </section>
       <section>
+        <h2 className="text-lg font-semibold text-[var(--fg)]">Refunds</h2>
+        <p>
+          Pro subscriptions are billed by our payment partner Waffo. Because our
+          service is delivered digitally and immediately, subscription fees are
+          generally non-refundable, except as described below.
+        </p>
+        <ul className="list-disc space-y-1 pl-5">
+          <li>
+            <strong>7-day guarantee for first-time subscribers.</strong> If you
+            are a first-time Pro subscriber, you may request a full refund within
+            7 days of your first charge, provided the Pro features have not been
+            substantially used.
+          </li>
+          <li>
+            <strong>Duplicate or erroneous charges.</strong> If you were charged
+            more than once for the same period, we will refund the duplicate
+            amount in full.
+          </li>
+          <li>
+            <strong>Statutory rights.</strong> Where applicable law grants a
+            cooling-off or withdrawal right (for example in the EU or UK), that
+            right is preserved and may override this policy.
+          </li>
+        </ul>
+        <p className="mt-2">
+          To request a refund, email{" "}
+          <a
+            href="mailto:ahmedlzany423@gmail.com"
+            className="text-brand hover:underline"
+          >
+            ahmedlzany423@gmail.com
+          </a>{" "}
+          with your account email and the transaction ID from your Waffo receipt.
+          We confirm requests within 2 business days and issue refunds to the
+          original payment method within 5 to 10 business days.
+        </p>
+        <p className="mt-2">
+          Non-refundable: subscription periods already used, refund requests made
+          after the 7-day window, and accounts closed for violating these terms.
+        </p>
+      </section>
+      <section>
         <h2 className="text-lg font-semibold text-[var(--fg)]">
           Limitation of liability
         </h2>
