@@ -81,6 +81,9 @@ export async function generateMetadata({
       title,
       description,
     },
+    other: {
+      "waffo-verify": "45acd08c8d9ce4f6e9e7368fc2549397",
+    },
   };
 }
 
