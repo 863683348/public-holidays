@@ -13,7 +13,15 @@ export async function POST(req: NextRequest) {
 
   let event: unknown;
   try {
-    event = getWaffo().webhooks.verify(rawBody, signature);
+    // Verify against the PRODUCTION webhook public key. We pin environment to
+    // "prod" so prod-signed events always validate, and prefer the explicit
+    // WAFFO_WEBHOOK_PROD_PUBLIC_KEY env var (set in Vercel) when present —
+    // falling back to the SDK's built-in prod key only if it's unset.
+    const webhookPublicKey = process.env.WAFFO_WEBHOOK_PROD_PUBLIC_KEY;
+    event = getWaffo().webhooks.verify(rawBody, signature, {
+      environment: "prod",
+      ...(webhookPublicKey ? { publicKey: webhookPublicKey } : {}),
+    });
   } catch {
     return NextResponse.json({ error: "Invalid signature" }, { status: 401 });
   }
