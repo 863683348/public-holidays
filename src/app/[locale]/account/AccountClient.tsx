@@ -1,5 +1,7 @@
 "use client";
 
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import { useSession, signIn, signOut } from "next-auth/react";
 import { useTranslations, useFormatter } from "next-intl";
 import { Link } from "@/i18n/navigation";
@@ -28,6 +30,7 @@ export default function AccountClient({
   currentPeriodEnd,
   navAccount,
   signInPrompt,
+  justPaid,
 }: {
   user: AccountUser | null;
   plan: "free" | "pro";
@@ -35,13 +38,30 @@ export default function AccountClient({
   currentPeriodEnd: string | null;
   navAccount: string;
   signInPrompt: string;
+  justPaid: boolean;
 }) {
+  const router = useRouter();
   const { status: sessionStatus } = useSession();
   const tNav = useTranslations("nav");
   const tAuth = useTranslations("auth");
   const tPricing = useTranslations("pricing");
   const tAccount = useTranslations("account");
   const format = useFormatter();
+
+  // After a successful payment Waffo redirects here with ?status=success while
+  // its webhook (which persists the subscription to the DB) is still in flight.
+  // Poll briefly so the Pro plan shows up automatically instead of a false
+  // "Free". Stops as soon as the server reports Pro, or after ~18s.
+  const [refreshAttempts, setRefreshAttempts] = useState(0);
+  useEffect(() => {
+    if (justPaid && plan === "free" && refreshAttempts < 6) {
+      const timer = setTimeout(() => {
+        setRefreshAttempts((n) => n + 1);
+        router.refresh();
+      }, 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [justPaid, plan, refreshAttempts, router]);
 
   // NextAuth's useSession is the authoritative client-side auth state.
   // The server pre-fills `user` for the logged-in case, but we still wait for
@@ -62,6 +82,21 @@ export default function AccountClient({
   return (
     <div className="mx-auto max-w-3xl">
       <h1 className="text-3xl font-bold">{navAccount}</h1>
+
+      {justPaid && plan === "pro" && (
+        <div className="mt-6 rounded-lg border border-green-600/30 bg-green-600/10 p-4 text-sm text-green-700 dark:text-green-400">
+          {tPricing("successMsg")}
+        </div>
+      )}
+
+      {justPaid && plan === "free" && (
+        <div className="mt-6 flex items-start gap-3 rounded-lg border border-amber-600/30 bg-amber-600/10 p-4 text-sm text-amber-700 dark:text-amber-400">
+          <svg className="mt-0.5 h-4 w-4 shrink-0 animate-spin" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <path d="M21 12a9 9 0 1 1-6.219-8.56" />
+          </svg>
+          <span>{tPricing("pendingMsg")}</span>
+        </div>
+      )}
 
       {!effectiveUser ? (
         <div className="mt-8 rounded-xl border border-[var(--border)] p-6">

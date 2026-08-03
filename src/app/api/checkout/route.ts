@@ -38,7 +38,7 @@ export async function POST(req: NextRequest) {
         campaign: "pricing-page",
       },
       successUrl: new URL(
-        `/${requestedLocale}/pricing?status=success`,
+        `/${requestedLocale}/account?status=success`,
         req.nextUrl.origin
       ).toString(),
     });

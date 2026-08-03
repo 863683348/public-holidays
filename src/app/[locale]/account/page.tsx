@@ -3,9 +3,16 @@ import { auth } from "@/auth";
 import { getSubscriptionByEmail, isProActive } from "@/lib/subscriptions";
 import AccountClient from "./AccountClient";
 
-export default async function AccountPage() {
+export default async function AccountPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}) {
   const tNav = await getTranslations("nav");
   const tAccount = await getTranslations("account");
+
+  const sp = await searchParams;
+  const justPaid = sp?.status === "success";
 
   const session = await auth();
   const user = session?.user;
@@ -39,6 +46,7 @@ export default async function AccountPage() {
       currentPeriodEnd={currentPeriodEnd}
       navAccount={tNav("account")}
       signInPrompt={tAccount("signInPrompt")}
+      justPaid={justPaid}
     />
   );
 }
