@@ -6,6 +6,14 @@ import { useSession, signIn, signOut } from "next-auth/react";
 import { useTranslations, useFormatter } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
+function Check() {
+  return (
+    <svg className="mt-0.5 h-4 w-4 shrink-0 text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M20 6 9 17l-5-5" />
+    </svg>
+  );
+}
+
 function GoogleGlyph() {
   return (
     <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -155,7 +163,16 @@ export default function AccountClient({
                   </p>
                 ))}
 
-              <p className="mt-2 text-sm text-[var(--muted)]">
+              <ul className="mt-4 space-y-2 text-sm">
+                {(tPricing.raw("proFeatures") as string[]).map((f) => (
+                  <li key={f} className="flex items-start gap-2">
+                    <Check />
+                    <span>{f}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <p className="mt-4 text-sm text-[var(--muted)]">
                 {tAccount("managedBy")}
               </p>
 
