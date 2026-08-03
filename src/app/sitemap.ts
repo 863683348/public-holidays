@@ -25,6 +25,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.4,
     });
 
+    // Static informational & legal pages (added 2026-08-03)
+    const staticPages: {
+      path: string;
+      priority: number;
+      freq: "monthly" | "yearly";
+    }[] = [
+      { path: "pricing", priority: 0.7, freq: "monthly" },
+      { path: "privacy", priority: 0.5, freq: "monthly" },
+      { path: "terms", priority: 0.5, freq: "monthly" },
+      { path: "faq", priority: 0.4, freq: "monthly" },
+      { path: "contact", priority: 0.4, freq: "monthly" },
+      { path: "link-to-us", priority: 0.3, freq: "yearly" },
+    ];
+    for (const sp of staticPages) {
+      urls.push({
+        url: `${SITE_URL}/${l}/${sp.path}`,
+        lastModified: new Date(),
+        changeFrequency: sp.freq,
+        priority: sp.priority,
+      });
+    }
+
     for (const c of COUNTRIES) {
       // Country landing (current year)
       urls.push({
