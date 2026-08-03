@@ -4,7 +4,9 @@
     "tagline": "Kenn die Feiertage. Schlage den Kalender."
   },
   "nav": {
-    "home": "Start"
+    "home": "Start",
+    "pricing": "Preise",
+    "account": "Konto"
   },
   "home": {
     "heading": "Feiertage weltweit",
@@ -147,5 +149,8 @@
     "upgradeHint": "Anmelden zum Upgraden",
     "successMsg": "Zahlung erfolgreich! Deine Pro-Vorteile sind aktiv.",
     "pendingMsg": "Bestellung wird verarbeitet. Bitte gleich aktualisieren."
+  },
+  "account": {
+    "signInPrompt": "Melde dich an, um dein Konto zu sehen."
   }
 }

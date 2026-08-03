@@ -95,6 +95,7 @@ export default async function LocaleLayout({
     notFound();
   }
   const messages = await getMessages();
+  const tNav = await getTranslations({ locale, namespace: "nav" });
 
   return (
     <html
@@ -129,17 +130,33 @@ export default async function LocaleLayout({
           <NextIntlClientProvider messages={messages}>
             <header className="border-b border-[var(--border)]">
               <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-3 px-4 py-3">
+              <div className="flex items-center gap-5">
                 <Link
                   href="/"
                   className="text-lg font-semibold text-brand transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg)] rounded-sm"
                 >
                   PubHoliday
                 </Link>
-                <div className="flex items-center gap-2">
-                  <GoogleLogin />
-                  <LocaleSwitcher />
-                  <ThemeToggle />
-                </div>
+                <nav className="flex items-center gap-4 text-sm">
+                  <Link
+                    href="/pricing"
+                    className="text-[var(--muted)] transition-colors hover:text-[var(--fg)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--ring)] rounded-sm"
+                  >
+                    {tNav("pricing")}
+                  </Link>
+                  <Link
+                    href="/account"
+                    className="text-[var(--muted)] transition-colors hover:text-[var(--fg)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--ring)] rounded-sm"
+                  >
+                    {tNav("account")}
+                  </Link>
+                </nav>
+              </div>
+              <div className="flex items-center gap-2">
+                <GoogleLogin />
+                <LocaleSwitcher />
+                <ThemeToggle />
+              </div>
               </div>
             </header>
             <main className="mx-auto max-w-5xl px-4 py-8">{children}</main>

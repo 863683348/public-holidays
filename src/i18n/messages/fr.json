@@ -4,7 +4,9 @@
     "tagline": "Connais les jours fériés. Mieux qu'un calendrier."
   },
   "nav": {
-    "home": "Accueil"
+    "home": "Accueil",
+    "pricing": "Tarifs",
+    "account": "Compte"
   },
   "home": {
     "heading": "Jours fériés dans le monde",
@@ -147,5 +149,8 @@
     "upgradeHint": "Connectez-vous pour passer à Pro",
     "successMsg": "Paiement réussi ! Vos avantages Pro sont actifs.",
     "pendingMsg": "Commande en cours. Actualisez dans un instant."
+  },
+  "account": {
+    "signInPrompt": "Connecte-toi pour voir ton compte."
   }
 }

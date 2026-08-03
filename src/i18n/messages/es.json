@@ -4,7 +4,9 @@
     "tagline": "Conoce los festivos. Vence al calendario."
   },
   "nav": {
-    "home": "Inicio"
+    "home": "Inicio",
+    "pricing": "Precios",
+    "account": "Cuenta"
   },
   "home": {
     "heading": "Festivos públicos, en todo el mundo",
@@ -147,5 +149,8 @@
     "upgradeHint": "Inicia sesión para mejorar",
     "successMsg": "¡Pago exitoso! Tus beneficios Pro están activos.",
     "pendingMsg": "Procesando pedido. Refresca en un momento."
+  },
+  "account": {
+    "signInPrompt": "Inicia sesión para ver tu cuenta."
   }
 }

@@ -4,7 +4,9 @@
     "tagline": "Scopri le festività. Domina il calendario."
   },
   "nav": {
-    "home": "Home"
+    "home": "Home",
+    "pricing": "Prezzi",
+    "account": "Account"
   },
   "home": {
     "heading": "Festività pubbliche in tutto il mondo",
@@ -147,5 +149,8 @@
     "upgradeHint": "Accedi per passare a Pro",
     "successMsg": "Pagamento riuscito! I tuoi vantaggi Pro sono attivi.",
     "pendingMsg": "Ordine in elaborazione. Aggiorna tra poco."
+  },
+  "account": {
+    "signInPrompt": "Accedi per vedere il tuo account."
   }
 }

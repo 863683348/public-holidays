@@ -4,7 +4,9 @@
     "tagline": "Know the holidays. Beat the calendar."
   },
   "nav": {
-    "home": "Home"
+    "home": "Home",
+    "pricing": "Pricing",
+    "account": "Account"
   },
   "home": {
     "heading": "Public holidays, worldwide",
@@ -147,5 +149,8 @@
     "upgradeHint": "Sign in to upgrade",
     "successMsg": "Payment successful! Your Pro benefits are now active.",
     "pendingMsg": "Order is being processed. Please refresh in a moment."
+  },
+  "account": {
+    "signInPrompt": "Sign in to view your account."
   }
 }

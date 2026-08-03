@@ -4,7 +4,9 @@
     "tagline": "Conheça os feriados. Domine o calendário."
   },
   "nav": {
-    "home": "Início"
+    "home": "Início",
+    "pricing": "Preços",
+    "account": "Conta"
   },
   "home": {
     "heading": "Feriados públicos, mundo todo",
@@ -147,5 +149,8 @@
     "upgradeHint": "Faça login para fazer upgrade",
     "successMsg": "Pagamento realizado! Seus benefícios Pro estão ativos.",
     "pendingMsg": "Pedido em processamento. Atualize em instantes."
+  },
+  "account": {
+    "signInPrompt": "Entre para ver sua conta."
   }
 }

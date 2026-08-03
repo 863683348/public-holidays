@@ -4,7 +4,9 @@
     "tagline": "读懂假期，玩转日历。"
   },
   "nav": {
-    "home": "首页"
+    "home": "首页",
+    "pricing": "定价",
+    "account": "账户"
   },
   "home": {
     "heading": "全球公共假期，一站查全",
@@ -147,5 +149,8 @@
     "upgradeHint": "登录后即可升级",
     "successMsg": "支付成功！你的 Pro 权益已生效。",
     "pendingMsg": "订单处理中，请稍候刷新页面。"
+  },
+  "account": {
+    "signInPrompt": "登录以查看你的账户。"
   }
 }

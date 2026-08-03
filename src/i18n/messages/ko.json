@@ -4,7 +4,9 @@
     "tagline": "공휴일을 알면 캘린더가 보인다."
   },
   "nav": {
-    "home": "홈"
+    "home": "홈",
+    "pricing": "요금",
+    "account": "계정"
   },
   "home": {
     "heading": "전 세계 공휴일을 한곳에서",
@@ -147,5 +149,8 @@
     "upgradeHint": "로그인 후 업그레이드",
     "successMsg": "결제 성공! Pro 혜택이 활성화되었습니다.",
     "pendingMsg": "주문 처리 중입니다. 잠시 후 새로고침하세요."
+  },
+  "account": {
+    "signInPrompt": "계정을 보려면 로그인하세요."
   }
 }
