@@ -36,6 +36,7 @@ export default async function PrivacyPage({
   const t = await getTranslations({ locale, namespace: "footer" });
   return (
     <LegalPage title={t("privacy")}>
+      <p className="text-sm text-[var(--muted)]">Last updated: August 3, 2026</p>
       <section>
         <h2 className="text-lg font-semibold text-[var(--fg)]">Overview</h2>
         <p>
@@ -44,6 +45,26 @@ export default async function PrivacyPage({
           be transparent and to collect only what we need to operate and improve
           the service.
         </p>
+      </section>
+      <section>
+        <h2 className="text-lg font-semibold text-[var(--fg)]">Data controller</h2>
+        <p>
+          This service is operated by PubHoliday. The entity responsible for
+          your personal data (the data controller) is:
+        </p>
+        <ul className="list-disc space-y-1 pl-5">
+          <li>Operator: PubHoliday ([Legal entity name])</li>
+          <li>Registered address: [Registered business address]</li>
+          <li>
+            Privacy contact:{" "}
+            <a
+              href="mailto:ahmedlzany423@gmail.com"
+              className="text-brand hover:underline"
+            >
+              ahmedlzany423@gmail.com
+            </a>
+          </li>
+        </ul>
       </section>
       <section>
         <h2 className="text-lg font-semibold text-[var(--fg)]">
