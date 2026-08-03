@@ -17,13 +17,10 @@ import { Link } from "@/i18n/navigation";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
 
-// ISR: pages are rendered on demand and cached for 24h, keeping TTFB low
-// for crawlers without hammering the upstream holiday API at build time.
+// ISR: rendered on demand and cached for 24h. No `generateStaticParams` —
+// the locale×country space is large, so on-demand render + `revalidate`
+// avoids DYNAMIC_SERVER_USAGE during static generation at build time.
 export const revalidate = 86400;
-
-export function generateStaticParams() {
-  return COUNTRIES.map((c) => ({ country: c.code }));
-}
 
 export async function generateMetadata({
   params,

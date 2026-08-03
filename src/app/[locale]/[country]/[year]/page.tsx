@@ -15,13 +15,11 @@ import { Link } from "@/i18n/navigation";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
 
-// ISR: rendered on demand, cached 24h.
+// ISR: rendered on demand, cached 24h. No `generateStaticParams` — the
+// locale×country×year space is huge, so we let Next render on first request
+// and cache via `revalidate`. This avoids DYNAMIC_SERVER_USAGE at build time
+// (incomplete static params + a dynamic route is rejected during prerender).
 export const revalidate = 86400;
-
-export function generateStaticParams() {
-  const year = new Date().getFullYear();
-  return [year - 1, year, year + 1, year + 2].map((y) => ({ year: String(y) }));
-}
 
 export async function generateMetadata({
   params,
