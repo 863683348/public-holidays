@@ -111,7 +111,7 @@
     "faq": "Часто задаваемые вопросы",
     "blog": "Блог",
     "contact": "Связаться с нами",
-    "contactEmail": "Вопросы? Напишите нам на {email}"
+    "contactEmail": "Вопросы? Напишите нам на <email>ahmedlzany423@gmail.com</email>"
   },
   "blog": {
     "title": "Блог",

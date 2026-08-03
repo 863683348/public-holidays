@@ -111,7 +111,7 @@
     "faq": "常见问题",
     "blog": "博客",
     "contact": "联系我们",
-    "contactEmail": "有疑问？请发邮件至 {email}"
+    "contactEmail": "有疑问？请发邮件至 <email>ahmedlzany423@gmail.com</email>"
   },
   "blog": {
     "title": "Blog",

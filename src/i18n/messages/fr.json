@@ -111,7 +111,7 @@
     "faq": "FAQ",
     "blog": "Blog",
     "contact": "Contact",
-    "contactEmail": "Des questions ? Écrivez-nous à {email}"
+    "contactEmail": "Des questions ? Écrivez-nous à <email>ahmedlzany423@gmail.com</email>"
   },
   "blog": {
     "title": "Blog",
