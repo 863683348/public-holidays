@@ -43,8 +43,6 @@ export default async function HomePage({
 
       <CountrySelector countries={COUNTRIES} placeholder={t("searchPlaceholder")} />
 
-      <TodayHolidays countries={featured} />
-
       <section className="space-y-4">
         <h2 className="text-xl font-semibold">{t("popular")}</h2>
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4">
@@ -59,6 +57,8 @@ export default async function HomePage({
           ))}
         </div>
       </section>
+
+      <TodayHolidays countries={featured} />
 
       <MyHolidays />
 
