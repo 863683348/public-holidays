@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { useSession, signIn } from "next-auth/react";
 
 function Check() {
@@ -20,6 +20,7 @@ export default function PricingPage({
   status: string | null;
 }) {
   const t = useTranslations("pricing");
+  const locale = useLocale();
   const { status: sessionStatus } = useSession();
   const [loading, setLoading] = useState(false);
   const isLoggedIn = sessionStatus === "authenticated" || Boolean(userEmail);
@@ -27,12 +28,16 @@ export default function PricingPage({
   async function handleUpgrade() {
     if (!isLoggedIn) {
       // Not signed in — redirect to Google sign-in, then back to pricing
-      signIn("google", { callbackUrl: "/pricing" });
+      signIn("google", { callbackUrl: `/${locale}/pricing` });
       return;
     }
     setLoading(true);
     try {
-      const res = await fetch("/api/checkout", { method: "POST" });
+      const res = await fetch("/api/checkout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ locale }),
+      });
       const data = await res.json();
       if (data.checkoutUrl) {
         // Server-side redirect style: navigate current tab to checkout

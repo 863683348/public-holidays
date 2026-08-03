@@ -17,6 +17,16 @@ export async function POST(req: NextRequest) {
   const user = session?.user;
   const buyerIdentity = user?.email ?? "anonymous";
 
+  let requestedLocale = "en";
+  try {
+    const body = (await req.json()) as { locale?: string } | undefined;
+    if (body?.locale && /^[a-z]{2}$/.test(body.locale)) {
+      requestedLocale = body.locale;
+    }
+  } catch {
+    // Body empty or invalid — fall back to default locale
+  }
+
   try {
     const result = await getWaffo().checkout.authenticated.create({
       productId: WAFFO_PRODUCT_ID,
@@ -28,7 +38,7 @@ export async function POST(req: NextRequest) {
         campaign: "pricing-page",
       },
       successUrl: new URL(
-        "/pricing?status=success",
+        `/${requestedLocale}/pricing?status=success`,
         req.nextUrl.origin
       ).toString(),
     });
