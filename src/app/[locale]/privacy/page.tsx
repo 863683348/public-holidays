@@ -75,6 +75,76 @@ export default async function PrivacyPage({
         </p>
       </section>
       <section>
+        <h2 className="text-lg font-semibold text-[var(--fg)]">
+          Third-party sharing and disclosure
+        </h2>
+        <p>
+          We do not sell your personal data. We share information only with the
+          following categories of third parties, under appropriate agreements:
+        </p>
+        <ul className="list-disc space-y-1 pl-5">
+          <li>
+            <strong>Payment processor — Waffo Pancake.</strong> When you upgrade
+            to Pro, we share your buyer name and email, the subscription plan,
+            and billing status with Waffo so it can process the payment and
+            manage your subscription. Card and payment-instrument data are
+            collected and stored by Waffo, a PCI-DSS compliant Merchant of
+            Record, and are never transmitted to or stored on our servers.
+          </li>
+          <li>
+            <strong>Authentication — Google.</strong> When you sign in with
+            Google, Google provides us with your name, email, and profile
+            picture according to your Google account permissions.
+          </li>
+          <li>
+            <strong>Analytics provider.</strong> Privacy-friendly usage analytics
+            receives anonymized or aggregated interaction data, such as pages
+            visited and locale preference, to help us improve the service.
+          </li>
+          <li>
+            <strong>Legal and compliance.</strong> We may disclose data when
+            required by law, court order, or a lawful request from an authorized
+            authority.
+          </li>
+        </ul>
+        <p className="mt-2">
+          Each third party handles your data under its own privacy policy. We
+          recommend reviewing the Waffo and Google policies for details on their
+          processing.
+        </p>
+      </section>
+      <section>
+        <h2 className="text-lg font-semibold text-[var(--fg)]">Data security</h2>
+        <p>We protect your personal data with the following measures:</p>
+        <ul className="list-disc space-y-1 pl-5">
+          <li>
+            <strong>Encryption in transit.</strong> All traffic between your
+            browser and our servers is protected with TLS (HTTPS).
+          </li>
+          <li>
+            <strong>Encryption at rest.</strong> Your data is stored in a managed
+            PostgreSQL database with encryption enabled. Sensitive credentials
+            are hashed or encrypted; we never store your raw OAuth tokens or
+            payment card numbers.
+          </li>
+          <li>
+            <strong>Access control.</strong> We follow the principle of least
+            privilege. Database and infrastructure access is limited to
+            authorized personnel bound by confidentiality obligations.
+          </li>
+          <li>
+            <strong>Monitoring.</strong> We perform regular security reviews and
+            dependency updates to reduce risk.
+          </li>
+        </ul>
+        <p className="mt-2">
+          In the event of a security incident that affects your personal data,
+          we will notify you and the relevant authorities within 72 hours of
+          becoming aware of it, where required by law. You are responsible for
+          keeping your account credentials confidential and not sharing them.
+        </p>
+      </section>
+      <section>
         <h2 className="text-lg font-semibold text-[var(--fg)]">Your rights</h2>
         <p>
           You may request access to, correction of, or deletion of your personal
