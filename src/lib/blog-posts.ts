@@ -1103,6 +1103,92 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>与其每年手动查日期，不如打开 <a href="https://public-holidays.shop">PubHoliday</a>，选择 <strong>United States</strong>，一键订阅 ICS 日历——Google、Apple、Outlook 日历自动更新，永不遗漏。</p>
     `,
   },
+  {
+    id: 111,
+    title: "UK Bank Holidays Explained: England, Scotland & Northern Ireland",
+    slug: "uk-bank-holidays-explained",
+    category: "guide",
+    author: "PubHoliday Research Team",
+    publishedDate: "2026-08-05T08:00:00Z",
+    lastModified: "2026-08-05T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/uk-bank-holidays.svg",
+    excerpt: "England, Scotland and Northern Ireland each have different bank holidays. The full breakdown for 2026, including regional differences and long-weekend planning.",
+    relatedCountries: ["GB"],
+    locale: "en",
+    content: `
+      <p>UK bank holidays aren't like ordinary holidays — they're defined by law, and England, Scotland and Northern Ireland each have different schedules.</p>
+      <h2>What are bank holidays?</h2>
+      <p>Bank holidays are statutory public holidays in the UK, rooted in the 1871 Bank Holidays Act. Despite the name, they apply nationwide — banks close, and so do most businesses and schools.</p>
+      <h2>Regional differences (the key part)</h2>
+      <ul>
+        <li><strong>England:</strong> New Year, Good Friday, Easter Monday, May and Spring bank holidays, Summer (late Aug), Christmas, Boxing Day.</li>
+        <li><strong>Scotland:</strong> New Year, Good Friday (no Easter Monday), May and Spring bank holidays, Summer (early Aug), St Andrew's Day (Nov 30), Christmas, Boxing Day.</li>
+        <li><strong>Northern Ireland:</strong> All of England's holidays plus St Patrick's Day (Mar 17).</li>
+      </ul>
+      <h2>2026 UK public holidays (summary)</h2>
+      <ul>
+        <li>Jan 1: New Year's Day</li>
+        <li>Apr 3: Good Friday</li>
+        <li>Apr 6: Easter Monday (England & NI)</li>
+        <li>May 4: Early May bank holiday</li>
+        <li>May 25: Spring bank holiday</li>
+        <li>Aug 3 (Scotland) / Aug 31 (England & NI): Summer bank holiday</li>
+        <li>Dec 25: Christmas Day</li>
+        <li>Dec 28: Boxing Day (substitute)</li>
+      </ul>
+      <h2>Planning long weekends</h2>
+      <p>Combine holidays with weekends: England's Aug 31 (Mon) holiday means Aug 29-31 is a 3-day break. Use our <a href="https://public-holidays.shop">holiday planner</a> to see long-weekend combos for any country.</p>
+      <h2>FAQ</h2>
+      <ul>
+        <li><strong>Are bank holidays and public holidays different?</strong> Used interchangeably; both trace to bank holiday legislation.</li>
+        <li><strong>Why is Scotland different?</strong> Scotland has its own legal system; its parliament sets holiday arrangements.</li>
+        <li><strong>What if a holiday falls on a weekend?</strong> It rolls to the next working day (a "substitute day").</li>
+      </ul>
+    `,
+  },
+  {
+    id: 112,
+    title: "英国银行假日全解析：英格兰、苏格兰与北爱尔兰",
+    slug: "uk-bank-holidays-explained",
+    category: "guide",
+    author: "PubHoliday 研究团队",
+    publishedDate: "2026-08-05T08:00:00Z",
+    lastModified: "2026-08-05T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/uk-bank-holidays.svg",
+    excerpt: "英格兰、苏格兰、北爱尔兰的银行假日各不相同。2026 年完整拆解：各地区差异 + 长周末规划。",
+    relatedCountries: ["GB"],
+    locale: "zh",
+    content: `
+      <p>英国的"银行假日"和普通节假日不一样——它由法律定义，而且英格兰、苏格兰、北爱尔兰各有不同的安排。</p>
+      <h2>什么是银行假日？</h2>
+      <p>银行假日是英国法定的公众假日，起源于 1871 年《银行假日法》。名字虽叫"银行"，但它适用于全国——银行放假，大多数企业和学校也放假。</p>
+      <h2>三地差异（关键）</h2>
+      <ul>
+        <li><strong>英格兰：</strong>元旦、耶稣受难日、复活节星期一、五月/春季银行假日、夏季（8月末）、圣诞节、节礼日。</li>
+        <li><strong>苏格兰：</strong>元旦、耶稣受难日（无复活节星期一）、五月/春季银行假日、夏季（8月初）、圣安德鲁日（11/30）、圣诞节、节礼日。</li>
+        <li><strong>北爱尔兰：</strong>全部英格兰假日 + 圣帕特里克节（3/17）。</li>
+      </ul>
+      <h2>2026 年英国公共假日（简表）</h2>
+      <ul>
+        <li>1月1日：元旦</li>
+        <li>4月3日：耶稣受难日</li>
+        <li>4月6日：复活节星期一（英格兰&北爱）</li>
+        <li>5月4日：五月银行假日</li>
+        <li>5月25日：春季银行假日</li>
+        <li>8月3日（苏格兰）/ 8月31日（英格兰&北爱）：夏季银行假日</li>
+        <li>12月25日：圣诞节</li>
+        <li>12月28日：节礼日（顺延）</li>
+      </ul>
+      <h2>怎么规划长周末？</h2>
+      <p>把假日和周末拼起来：英格兰 8 月 31 日（周一）假日 → 8 月 29-31 日连休 3 天。用 <a href="https://public-holidays.shop">假日规划工具</a> 查看任意国家的长周末组合。</p>
+      <h2>常见问题</h2>
+      <ul>
+        <li><strong>"银行假日"和"公共假日"有区别吗？</strong> 术语上通用，法律依据都是银行假日法体系。</li>
+        <li><strong>苏格兰为什么不一样？</strong> 苏格兰有独立法律体系，假日安排由议会决定。</li>
+        <li><strong>假日正好在周末怎么办？</strong> 会顺延到下一个工作日（称为 "substitute day"）。</li>
+      </ul>
+    `,
+  },
 ];
 
 // ========================================================================
