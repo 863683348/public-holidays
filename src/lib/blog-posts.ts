@@ -925,6 +925,184 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>访问<a href="https://public-holidays.shop">公共假期查询</a>查看全部46个国家的假期日历，订阅ICS日历保持跨时区同步。</p>
     `,
   },
+
+  // --- Day 1 (2026-08-04): US Federal Holidays 2026-2027 EN ---
+  {
+    id: 109,
+    title: "US Federal Holidays 2026-2027: The Complete List",
+    slug: "us-federal-holidays-2026-2027",
+    category: "guide",
+    author: "PubHoliday Research Team",
+    publishedDate: "2026-08-04T08:00:00Z",
+    lastModified: "2026-08-04T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/us-federal-holidays-2026-2027.svg",
+    excerpt: "The complete list of US federal holidays for 2026 and 2027 with exact dates, in-lieu rules for weekend holidays, and the best long weekends.",
+    relatedCountries: ["US"],
+    locale: "en",
+    faq: [
+      { question: "How many federal holidays does the US have?", answer: "11. Both 2026 and 2027 have 11 federal holidays." },
+      { question: "Are federal holidays mandatory days off?", answer: "Mandatory for federal employees; not legally required for private businesses, but most follow them. Banks, stock markets, and post offices typically close." },
+      { question: "What happens when a holiday falls on a weekend?", answer: "Saturday → Friday off; Sunday → Monday off. Federal employees always get the in-lieu day, and most businesses follow." },
+      { question: "What are the US federal holidays in 2026?", answer: "The 11 federal holidays in 2026: New Year's Day (1/1), MLK Day (1/19), Presidents' Day (2/16), Memorial Day (5/25), Juneteenth (6/19), Independence Day (7/4, observed 7/3), Labor Day (9/7), Columbus Day (10/12), Veterans Day (11/11), Thanksgiving (11/26), Christmas (12/25)." },
+      { question: "What are the US federal holidays in 2027?", answer: "The 11 federal holidays in 2027: New Year's Day (1/1), MLK Day (1/18), Presidents' Day (2/15), Memorial Day (5/31), Juneteenth (observed 6/18), Independence Day (observed 7/5), Labor Day (9/6), Columbus Day (10/11), Veterans Day (11/11), Thanksgiving (11/25), Christmas (observed 12/24)." },
+      { question: "How do I sync US holidays to my calendar?", answer: "Use PubHoliday, pick United States, and subscribe to the ICS calendar link to auto-sync to Google Calendar, Apple Calendar, or Outlook." },
+    ],
+    content: `
+      <p>The U.S. has <strong>11 federal holidays</strong> in both 2026 and 2027. Whether you're planning travel, managing a remote team, or just want to know when banks close, this complete list has every date, the in-lieu rules for weekend holidays, and the best long weekends.</p>
+
+      <h2>Federal Holidays vs State Holidays</h2>
+      <p>Federal holidays are mandatory days off only for <strong>federal employees</strong>, but most businesses, banks, schools, and stock markets follow them. States may add their own holidays — this guide covers the 11 nationwide federal holidays.</p>
+
+      <h2>US Federal Holidays 2026: The Complete List</h2>
+      <table class="min-w-full border-collapse border border-gray-300 mb-4">
+        <thead><tr class="bg-gray-100"><th class="border p-2">Holiday</th><th class="border p-2">2026 Date</th><th class="border p-2">Weekday</th><th class="border p-2">Notes</th></tr></thead>
+        <tbody>
+          <tr><td class="border p-2">New Year's Day</td><td class="border p-2">Jan 1</td><td class="border p-2">Thursday</td><td class="border p-2">—</td></tr>
+          <tr><td class="border p-2">Martin Luther King Jr. Day</td><td class="border p-2">Jan 19</td><td class="border p-2">Monday</td><td class="border p-2">3rd Monday of January</td></tr>
+          <tr><td class="border p-2">Presidents' Day</td><td class="border p-2">Feb 16</td><td class="border p-2">Monday</td><td class="border p-2">3rd Monday of February</td></tr>
+          <tr><td class="border p-2">Memorial Day</td><td class="border p-2">May 25</td><td class="border p-2">Monday</td><td class="border p-2">Last Monday of May</td></tr>
+          <tr><td class="border p-2">Juneteenth National Independence Day</td><td class="border p-2">Jun 19</td><td class="border p-2">Friday</td><td class="border p-2">—</td></tr>
+          <tr><td class="border p-2">Independence Day</td><td class="border p-2">Jul 4</td><td class="border p-2">Saturday</td><td class="border p-2">⚠️ Falls on Saturday</td></tr>
+          <tr><td class="border p-2">Labor Day</td><td class="border p-2">Sep 7</td><td class="border p-2">Monday</td><td class="border p-2">1st Monday of September</td></tr>
+          <tr><td class="border p-2">Columbus Day</td><td class="border p-2">Oct 12</td><td class="border p-2">Monday</td><td class="border p-2">2nd Monday of October</td></tr>
+          <tr><td class="border p-2">Veterans Day</td><td class="border p-2">Nov 11</td><td class="border p-2">Wednesday</td><td class="border p-2">—</td></tr>
+          <tr><td class="border p-2">Thanksgiving Day</td><td class="border p-2">Nov 26</td><td class="border p-2">Thursday</td><td class="border p-2">4th Thursday of November</td></tr>
+          <tr><td class="border p-2">Christmas Day</td><td class="border p-2">Dec 25</td><td class="border p-2">Friday</td><td class="border p-2">—</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Note:</strong> Independence Day 2026 (July 4) falls on a Saturday. Federal employees receive Friday, July 3 as the in-lieu day off. Most private employers follow the same practice, making July 3-5 a long weekend.</p>
+
+      <h2>US Federal Holidays 2027: The Complete List</h2>
+      <table class="min-w-full border-collapse border border-gray-300 mb-4">
+        <thead><tr class="bg-gray-100"><th class="border p-2">Holiday</th><th class="border p-2">2027 Date</th><th class="border p-2">Weekday</th><th class="border p-2">Notes</th></tr></thead>
+        <tbody>
+          <tr><td class="border p-2">New Year's Day</td><td class="border p-2">Jan 1</td><td class="border p-2">Friday</td><td class="border p-2">—</td></tr>
+          <tr><td class="border p-2">Martin Luther King Jr. Day</td><td class="border p-2">Jan 18</td><td class="border p-2">Monday</td><td class="border p-2">3rd Monday of January</td></tr>
+          <tr><td class="border p-2">Presidents' Day</td><td class="border p-2">Feb 15</td><td class="border p-2">Monday</td><td class="border p-2">3rd Monday of February</td></tr>
+          <tr><td class="border p-2">Memorial Day</td><td class="border p-2">May 31</td><td class="border p-2">Monday</td><td class="border p-2">Last Monday of May</td></tr>
+          <tr><td class="border p-2">Juneteenth National Independence Day</td><td class="border p-2">Jun 18</td><td class="border p-2">Friday</td><td class="border p-2">⚠️ Jun 19 (Sat) → observed Jun 18</td></tr>
+          <tr><td class="border p-2">Independence Day</td><td class="border p-2">Jul 5</td><td class="border p-2">Monday</td><td class="border p-2">⚠️ Jul 4 (Sun) → observed Jul 5</td></tr>
+          <tr><td class="border p-2">Labor Day</td><td class="border p-2">Sep 6</td><td class="border p-2">Monday</td><td class="border p-2">1st Monday of September</td></tr>
+          <tr><td class="border p-2">Columbus Day</td><td class="border p-2">Oct 11</td><td class="border p-2">Monday</td><td class="border p-2">2nd Monday of October</td></tr>
+          <tr><td class="border p-2">Veterans Day</td><td class="border p-2">Nov 11</td><td class="border p-2">Thursday</td><td class="border p-2">—</td></tr>
+          <tr><td class="border p-2">Thanksgiving Day</td><td class="border p-2">Nov 25</td><td class="border p-2">Thursday</td><td class="border p-2">4th Thursday of November</td></tr>
+          <tr><td class="border p-2">Christmas Day</td><td class="border p-2">Dec 24</td><td class="border p-2">Friday</td><td class="border p-2">⚠️ Dec 25 (Sat) → observed Dec 24</td></tr>
+        </tbody>
+      </table>
+      <p><strong>2027 special note:</strong> Three holidays need in-lieu adjustments (Juneteenth, Independence Day, Christmas). July 4 falls on a Sunday, so it is observed Monday July 5 — creating a guaranteed 3-day long weekend.</p>
+
+      <h2>The In-Lieu Rule: When a Holiday Falls on a Weekend</h2>
+      <p>U.S. federal holidays follow a fixed rule: <strong>if the holiday falls on Saturday, the preceding Friday is the day off; if it falls on Sunday, the following Monday is the day off.</strong> This is why the "observed" date often differs from the calendar date — and why it's easy to miss a day off when planning travel.</p>
+
+      <h2>Best Long Weekends in 2026-2027</h2>
+      <table class="min-w-full border-collapse border border-gray-300 mb-4">
+        <thead><tr class="bg-gray-100"><th class="border p-2">Year</th><th class="border p-2">Long Weekend</th><th class="border p-2">How</th></tr></thead>
+        <tbody>
+          <tr><td class="border p-2">2026</td><td class="border p-2">Jan 16-19 (3 days)</td><td class="border p-2">MLK Day (Monday)</td></tr>
+          <tr><td class="border p-2">2026</td><td class="border p-2">May 23-25 (3 days)</td><td class="border p-2">Memorial Day (Monday)</td></tr>
+          <tr><td class="border p-2">2026</td><td class="border p-2">Jul 3-5 (3 days)</td><td class="border p-2">Independence Day in-lieu (Friday) + weekend</td></tr>
+          <tr><td class="border p-2">2026</td><td class="border p-2">Nov 26-29 (4 days)</td><td class="border p-2">Thanksgiving (Thu) + 1 day off (Fri)</td></tr>
+          <tr><td class="border p-2">2026</td><td class="border p-2">Dec 25-27 (3 days)</td><td class="border p-2">Christmas (Friday)</td></tr>
+          <tr><td class="border p-2">2027</td><td class="border p-2">Jul 3-5 (3 days)</td><td class="border p-2">Independence Day in-lieu (Monday)</td></tr>
+          <tr><td class="border p-2">2027</td><td class="border p-2">Nov 25-28 (4 days)</td><td class="border p-2">Thanksgiving (Thu) + 1 day off (Fri)</td></tr>
+          <tr><td class="border p-2">2027</td><td class="border p-2">Dec 24-26 (3 days)</td><td class="border p-2">Christmas in-lieu (Friday)</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Best trick:</strong> Take 1 day off (Friday) during Thanksgiving week and you get a 4-day weekend; add the following Monday for a 5-day break.</p>
+
+      <h2>Sync US Holidays to Your Calendar</h2>
+      <p>Stop checking dates every year. Open <a href="https://public-holidays.shop">PubHoliday</a>, select <strong>United States</strong>, and subscribe to the ICS calendar link — your Google Calendar, Apple Calendar, or Outlook updates automatically, every year.</p>
+    `,
+  },
+
+  // --- Day 1 (2026-08-04): US Federal Holidays 2026-2027 ZH ---
+  {
+    id: 110,
+    title: "美国 2026-2027 联邦假日完整清单",
+    slug: "us-federal-holidays-2026-2027",
+    category: "guide",
+    author: "PubHoliday 研究团队",
+    publishedDate: "2026-08-04T08:00:00Z",
+    lastModified: "2026-08-04T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/us-federal-holidays-2026-2027.svg",
+    excerpt: "2026 年美国有 11 个联邦假日，2027 年同样 11 个。完整清单 + 具体日期 + 放假规则（含调休日）+ 长周末攻略，一文讲清。",
+    relatedCountries: ["US"],
+    locale: "zh",
+    faq: [
+      { question: "美国一年有几个联邦假日？", answer: "11 个。2026 和 2027 年都是 11 个联邦假日。" },
+      { question: "联邦假日是强制放假吗？", answer: "对联邦政府雇员是强制的；对私人企业不是法律强制，但绝大多数企业跟随。银行、股市、邮局通常在联邦假日关闭。" },
+      { question: "假日落在周末怎么办？", answer: "落在周六 → 周五调休；落在周日 → 下周一调休。联邦雇员必得调休，多数企业跟随。" },
+      { question: "2026 年有哪些美国联邦假日？", answer: "2026 年 11 个联邦假日：元旦(1/1)、MLK Day(1/19)、总统日(2/16)、阵亡将士纪念日(5/25)、六月节(6/19)、独立日(7/4，周六调休至7/3)、劳动节(9/7)、哥伦布日(10/12)、退伍军人节(11/11)、感恩节(11/26)、圣诞节(12/25)。" },
+      { question: "2027 年有哪些美国联邦假日？", answer: "2027 年 11 个联邦假日：元旦(1/1)、MLK Day(1/18)、总统日(2/15)、阵亡将士纪念日(5/31)、六月节(6/18 调休)、独立日(7/5 调休)、劳动节(9/6)、哥伦布日(10/11)、退伍军人节(11/11)、感恩节(11/25)、圣诞节(12/24 调休)。" },
+      { question: "如何在日历上自动同步美国假日？", answer: "用 PubHoliday 选择 United States，订阅 ICS 日历链接，即可自动同步到 Google Calendar、Apple Calendar、Outlook。" },
+    ],
+    content: `
+      <p>2026 年美国有 <strong>11 个联邦假日</strong>，2027 年同样 11 个。无论你是规划旅行、管理远程团队，还是想知道银行哪天关门——这份完整清单包含每个具体日期、周末假日的调休规则，以及最佳长周末攻略。</p>
+
+      <h2>联邦假日 vs 州假日</h2>
+      <p>联邦假日（federal holidays）只对<strong>联邦政府雇员</strong>强制放假，但绝大多数企业、银行、学校会跟随联邦假日安排休息。各州可以增加自己的州假日，本文聚焦全美通用的 11 个联邦假日。</p>
+
+      <h2>2026 年美国联邦假日完整清单</h2>
+      <table class="min-w-full border-collapse border border-gray-300 mb-4">
+        <thead><tr class="bg-gray-100"><th class="border p-2">假日</th><th class="border p-2">2026 日期</th><th class="border p-2">星期</th><th class="border p-2">备注</th></tr></thead>
+        <tbody>
+          <tr><td class="border p-2">元旦</td><td class="border p-2">1月1日</td><td class="border p-2">周四</td><td class="border p-2">—</td></tr>
+          <tr><td class="border p-2">马丁·路德·金纪念日</td><td class="border p-2">1月19日</td><td class="border p-2">周一</td><td class="border p-2">1月第三个周一</td></tr>
+          <tr><td class="border p-2">总统日（华盛顿诞辰）</td><td class="border p-2">2月16日</td><td class="border p-2">周一</td><td class="border p-2">2月第三个周一</td></tr>
+          <tr><td class="border p-2">阵亡将士纪念日</td><td class="border p-2">5月25日</td><td class="border p-2">周一</td><td class="border p-2">5月最后一个周一</td></tr>
+          <tr><td class="border p-2">六月节（Juneteenth）</td><td class="border p-2">6月19日</td><td class="border p-2">周五</td><td class="border p-2">—</td></tr>
+          <tr><td class="border p-2">独立日</td><td class="border p-2">7月4日</td><td class="border p-2">周六</td><td class="border p-2">⚠️ 落在周六</td></tr>
+          <tr><td class="border p-2">劳动节</td><td class="border p-2">9月7日</td><td class="border p-2">周一</td><td class="border p-2">9月第一个周一</td></tr>
+          <tr><td class="border p-2">哥伦布日（原住民日）</td><td class="border p-2">10月12日</td><td class="border p-2">周一</td><td class="border p-2">10月第二个周一</td></tr>
+          <tr><td class="border p-2">退伍军人节</td><td class="border p-2">11月11日</td><td class="border p-2">周三</td><td class="border p-2">—</td></tr>
+          <tr><td class="border p-2">感恩节</td><td class="border p-2">11月26日</td><td class="border p-2">周四</td><td class="border p-2">11月第四个周四</td></tr>
+          <tr><td class="border p-2">圣诞节</td><td class="border p-2">12月25日</td><td class="border p-2">周五</td><td class="border p-2">—</td></tr>
+        </tbody>
+      </table>
+      <p><strong>注意</strong>：2026 年独立日（7月4日）落在周六。联邦雇员将获得 7月3日（周五）作为调休日，多数私人企业也如此安排，形成 7/3-7/5 三天长周末。</p>
+
+      <h2>2027 年美国联邦假日完整清单</h2>
+      <table class="min-w-full border-collapse border border-gray-300 mb-4">
+        <thead><tr class="bg-gray-100"><th class="border p-2">假日</th><th class="border p-2">2027 日期</th><th class="border p-2">星期</th><th class="border p-2">备注</th></tr></thead>
+        <tbody>
+          <tr><td class="border p-2">元旦</td><td class="border p-2">1月1日</td><td class="border p-2">周五</td><td class="border p-2">—</td></tr>
+          <tr><td class="border p-2">马丁·路德·金纪念日</td><td class="border p-2">1月18日</td><td class="border p-2">周一</td><td class="border p-2">1月第三个周一</td></tr>
+          <tr><td class="border p-2">总统日（华盛顿诞辰）</td><td class="border p-2">2月15日</td><td class="border p-2">周一</td><td class="border p-2">2月第三个周一</td></tr>
+          <tr><td class="border p-2">阵亡将士纪念日</td><td class="border p-2">5月31日</td><td class="border p-2">周一</td><td class="border p-2">5月最后一个周一</td></tr>
+          <tr><td class="border p-2">六月节（Juneteenth）</td><td class="border p-2">6月18日</td><td class="border p-2">周五</td><td class="border p-2">⚠️ 6月19日（周六）→ 调休至18日</td></tr>
+          <tr><td class="border p-2">独立日</td><td class="border p-2">7月5日</td><td class="border p-2">周一</td><td class="border p-2">⚠️ 7月4日（周日）→ 调休至5日</td></tr>
+          <tr><td class="border p-2">劳动节</td><td class="border p-2">9月6日</td><td class="border p-2">周一</td><td class="border p-2">9月第一个周一</td></tr>
+          <tr><td class="border p-2">哥伦布日（原住民日）</td><td class="border p-2">10月11日</td><td class="border p-2">周一</td><td class="border p-2">10月第二个周一</td></tr>
+          <tr><td class="border p-2">退伍军人节</td><td class="border p-2">11月11日</td><td class="border p-2">周四</td><td class="border p-2">—</td></tr>
+          <tr><td class="border p-2">感恩节</td><td class="border p-2">11月25日</td><td class="border p-2">周四</td><td class="border p-2">11月第四个周四</td></tr>
+          <tr><td class="border p-2">圣诞节</td><td class="border p-2">12月24日</td><td class="border p-2">周五</td><td class="border p-2">⚠️ 12月25日（周六）→ 调休至24日</td></tr>
+        </tbody>
+      </table>
+      <p><strong>2027 特殊说明</strong>：这一年有 3 个假日需要调休（六月节、独立日、圣诞节），其中 7月4日（周日）调休至 7月5日（周一），恰好形成连续 3 天长周末。</p>
+
+      <h2>调休规则：假日落在周末怎么办</h2>
+      <p>美国联邦假日有一个固定规则：<strong>假日落在周六，则周五调休；假日落在周日，则下周一调休</strong>。这条规则决定了"实际放假日"与"日历上的假日"可能不一致，也是安排出行、请假时最容易踩的坑。</p>
+
+      <h2>2026-2027 年最佳长周末攻略</h2>
+      <table class="min-w-full border-collapse border border-gray-300 mb-4">
+        <thead><tr class="bg-gray-100"><th class="border p-2">年份</th><th class="border p-2">长周末</th><th class="border p-2">怎么凑</th></tr></thead>
+        <tbody>
+          <tr><td class="border p-2">2026</td><td class="border p-2">1月16-19（3天）</td><td class="border p-2">MLK Day（周一）</td></tr>
+          <tr><td class="border p-2">2026</td><td class="border p-2">5月23-25（3天）</td><td class="border p-2">阵亡将士纪念日（周一）</td></tr>
+          <tr><td class="border p-2">2026</td><td class="border p-2">7月3-5（3天）</td><td class="border p-2">独立日调休（周五）+ 周末</td></tr>
+          <tr><td class="border p-2">2026</td><td class="border p-2">11月26-29（4天）</td><td class="border p-2">感恩节（周四）+ 请1天假（周五）</td></tr>
+          <tr><td class="border p-2">2026</td><td class="border p-2">12月25-27（3天）</td><td class="border p-2">圣诞节（周五）</td></tr>
+          <tr><td class="border p-2">2027</td><td class="border p-2">7月3-5（3天）</td><td class="border p-2">独立日调休（周一）</td></tr>
+          <tr><td class="border p-2">2027</td><td class="border p-2">11月25-28（4天）</td><td class="border p-2">感恩节（周四）+ 请1天假（周五）</td></tr>
+          <tr><td class="border p-2">2027</td><td class="border p-2">12月24-26（3天）</td><td class="border p-2">圣诞节调休（周五）</td></tr>
+        </tbody>
+      </table>
+      <p><strong>最划算的一招</strong>：感恩节那周请 1 天假（周五），就能把 4 天连成长假；再请下周一，就是 5 天。</p>
+
+      <h2>把假日同步到你的日历</h2>
+      <p>与其每年手动查日期，不如打开 <a href="https://public-holidays.shop">PubHoliday</a>，选择 <strong>United States</strong>，一键订阅 ICS 日历——Google、Apple、Outlook 日历自动更新，永不遗漏。</p>
+    `,
+  },
 ];
 
 // ========================================================================
