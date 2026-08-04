@@ -2,7 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
-import { COUNTRIES, getCountry, getCountryName } from "@/lib/countries";
+import { COUNTRIES, getCountry, getCountryName, getHolidayPageTitle } from "@/lib/countries";
 import { getHolidays } from "@/lib/holidays";
 import { findLongWeekends } from "@/lib/longWeekend";
 import { getPostsByCountry } from "@/lib/blog-posts";
@@ -31,7 +31,7 @@ export async function generateMetadata({
   const meta = getCountry(country);
   if (!meta) return {};
   const year = new Date().getFullYear();
-  const title = `${meta.name} Public Holidays ${year}`;
+  const title = getHolidayPageTitle(country, locale, year);
   const description = locale === "zh" ? `${meta.name}${year}年公共假期完整列表，含桥梁日和长周末规划。` : `Full list of ${year} public holidays in ${meta.name}, including bridge days and long weekends. Subscribe to your calendar.`;
   const languages: Record<string, string> = {};
   for (const l of routing.locales) languages[l] = `${SITE_URL}/${l}/${country}`;
@@ -56,6 +56,7 @@ export default async function CountryPage({
 
   const year = new Date().getFullYear();
   const t = await getTranslations("country");
+  const th = await getTranslations("home");
 
   let holidays;
   try {
@@ -82,7 +83,41 @@ export default async function CountryPage({
     .filter((h) => h.date >= todayStr)
     .sort((a, b) => a.date.localeCompare(b.date));
   const nextHoliday = upcoming[0] || null;
+  const daysUntil = nextHoliday
+    ? Math.ceil((new Date(nextHoliday.date).getTime() - now.getTime()) / 86400000)
+    : 0;
   const allNational = nationalCount === holidays.length;
+
+  // "Is today a public holiday?" — targets next-today queries (e.g.
+  // "is august 1st a long weekend", "is monday a holiday in poland").
+  const todayHoliday = holidays.find((h) => h.date === todayStr) || null;
+  const faqToday = todayHoliday
+    ? {
+        question: t("faqToday", { name: meta.name }),
+        answer: t("faqTodayYes", {
+          name: meta.name,
+          holiday: todayHoliday.name || todayHoliday.localName,
+          date: new Date(todayHoliday.date).toLocaleDateString(locale, {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          }),
+        }),
+      }
+    : {
+        question: t("faqToday", { name: meta.name }),
+        answer: t("faqTodayNo", {
+          name: meta.name,
+          holiday: nextHoliday?.name || nextHoliday?.localName || "",
+          date: nextHoliday
+            ? new Date(nextHoliday.date).toLocaleDateString(locale, {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })
+            : "",
+        }),
+      };
 
   const faqItems = [
     {
@@ -120,6 +155,7 @@ export default async function CountryPage({
         year,
       }),
     },
+    faqToday,
   ];
 
   return (
@@ -160,6 +196,30 @@ export default async function CountryPage({
 
       <YearNav country={country} year={year} />
 
+      {/* Next holiday highlight — exposes the upcoming holiday + days-away,
+          directly answering "is <date> a holiday / long weekend" queries. */}
+      {nextHoliday && (
+        <section className="rounded-xl border border-[var(--brand)]/30 bg-[var(--brand)]/5 p-4 flex items-center gap-4">
+          <div className="text-3xl" aria-hidden>📅</div>
+          <div>
+            <p className="text-xs uppercase tracking-wide text-[var(--muted)]">{th("nextHoliday")}</p>
+            <p className="font-semibold text-lg leading-tight">
+              {nextHoliday.name || nextHoliday.localName}
+            </p>
+            <p className="text-sm text-[var(--muted)]">
+              {new Date(nextHoliday.date).toLocaleDateString(locale, {
+                weekday: "long",
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })}
+              {" · "}
+              {daysUntil} {th("days")}
+            </p>
+          </div>
+        </section>
+      )}
+
       {/* Country Intro — dynamic summary from holiday data */}
       <section className="space-y-2">
         <p className="text-[var(--muted)] leading-relaxed">
@@ -171,6 +231,11 @@ export default async function CountryPage({
             regional: regionalCount,
           })}
         </p>
+        {locale === "en" && (
+          <p className="text-[var(--muted)] leading-relaxed text-sm">
+            {t("bankHolidayNote", { name: meta.name })}
+          </p>
+        )}
       </section>
 
       {/* Holiday types breakdown — adds rich text for SEO */}

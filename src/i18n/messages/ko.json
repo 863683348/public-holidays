@@ -49,7 +49,10 @@
     "faqLongWeekendsAnswer": "You can plan {count} long weekends in {name} in {year}.",
     "faqYes": "Yes",
     "faqNo": "No",
-    "relatedBlogPosts": "Related blog posts"
+    "relatedBlogPosts": "Related blog posts",
+    "faqToday": "{name}는 오늘 공휴일인가요?",
+    "faqTodayYes": "네——오늘({date})은(는) {name}의 공휴일 {holiday}입니다.",
+    "faqTodayNo": "아니요. {name}의 다음 공휴일은 {date}의 {holiday}입니다."
   },
   "longWeekend": {
     "natural": "긴 주말",

@@ -224,6 +224,23 @@ export const BLOG_POSTS: BlogPost[] = [
       </ul>
       <p><em>Note: Islamic (Hijri) holidays are approximate as they depend on moon sighting. Dates provided are best estimates based on astronomical calculations.</em></p>
     `,
+    faq: [
+      {
+        question: "What are the public holiday dates for 2025 and 2026?",
+        answer:
+          "This calendar focuses on 2027, but the same 46-country dataset covers 2025 and 2026 as well. Fixed-date holidays (New Year, Christmas) barely move; movable ones (Easter, Islamic Hijri holidays) shift each year. Use the year switcher on any country page to view 2025, 2026, or 2027 dates.",
+      },
+      {
+        question: "What are public dates?",
+        answer:
+          "\"Public dates\" means the official public holiday dates observed in each country. We track all 46 countries with verified dates, ICS calendar subscriptions, and long-weekend planning so you always know the next public date at a glance.",
+      },
+      {
+        question: "¿Cuáles fueron los festivos en 2019?",
+        answer:
+          "Los festivos de 2019 variaron por país, pero la mayoría de las fechas fijas (Año Nuevo, Navidad, Día del Trabajo) se repiten cada año. Para ver los festivos de cualquier año, usa el selector de año en la página de cada país de nuestro calendario.",
+      },
+    ],
   },
 
   // --- POST 6: Countries with Most Public Holidays Ranking ---
@@ -448,6 +465,23 @@ export const BLOG_POSTS: BlogPost[] = [
       <h2>Plan Your 2027 Long Weekends</h2>
       <p>Use our free <a href="https://public-holidays.shop">Public Holidays tool</a> to explore each country's long weekends interactively. Subscribe to the ICS calendar feed for any country and sync directly with Google Calendar, Apple Calendar, or Outlook.</p>
     `,
+    faq: [
+      {
+        question: "What is a July long weekend?",
+        answer:
+          "A July long weekend occurs when a July public holiday falls on a Friday or Monday — for example, US Independence Day (Jul 4, observed Mon Jul 5 in 2027) gives a 3-day weekend, and Canada Day (Jul 1) becomes a 4-day weekend if you take Jul 2 off. Our Long Weekend Planner lists every such opportunity per country.",
+      },
+      {
+        question: "Are weekends public holidays?",
+        answer:
+          "No — Saturday and Sunday are not public holidays by themselves. But when a public holiday lands on a Friday or Monday it creates a long weekend, and taking one bridge day can stretch it to four days. See the per-country long-weekend list above.",
+      },
+      {
+        question: "When is the next long weekend in 2027?",
+        answer:
+          "The next long weekend depends on your country, but reliable global standouts include New Year's Day (Jan 1, Friday), Europe's May Ascension/Whit Monday cluster, and the US Thanksgiving 4-day weekend (Nov 25). The full per-country breakdown is in the guide above.",
+      },
+    ],
   },
 
   // --- POST 8: China vs USA vs Europe Holiday Culture ---

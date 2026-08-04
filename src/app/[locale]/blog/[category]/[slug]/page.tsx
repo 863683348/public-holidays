@@ -4,7 +4,7 @@ import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { getCountry } from "@/lib/countries";
 import { getPostData, getPostsByCategory } from "@/lib/blog-posts";
-import { articleBreadcrumb, articleStructuredData } from "@/lib/seo";
+import { articleBreadcrumb, articleStructuredData, faqPage } from "@/lib/seo";
 import Link from "next/link";
 import SubscribeButton from "@/components/SubscribeButton";
 import AdSlot from "@/components/AdSlot";
@@ -193,6 +193,21 @@ export default async function ArticlePage({
             </div>
           </div>
         )}
+
+          {/* FAQ — captures "People Also Ask" intent + FAQPage rich snippet */}
+          {post.faq && post.faq.length > 0 && (
+            <div className="mt-10 pt-8 border-t border-[var(--border)]">
+              <h2 className="text-2xl font-bold mb-4">Frequently Asked Questions</h2>
+              <div className="space-y-4">
+                {post.faq.map((item, i) => (
+                  <div key={i}>
+                    <h3 className="font-semibold mb-1">{item.question}</h3>
+                    <p className="text-[var(--muted)] leading-relaxed">{item.answer}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
       </div>
     </article>
 
@@ -237,6 +252,15 @@ export default async function ArticlePage({
           ),
         }}
       />
+
+      {post.faq && post.faq.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(faqPage(post.faq)),
+          }}
+        />
+      )}
 
       <AdSlot />
       <SubscribeButton

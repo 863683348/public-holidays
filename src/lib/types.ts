@@ -29,4 +29,6 @@ export interface BlogPost {
   content: string;
   relatedCountries: string[];
   locale?: string; // "en" | "zh" | etc., defaults to "en"
+  // Optional FAQ for rich-snippet (FAQPage) eligibility + "People Also Ask" capture.
+  faq?: { question: string; answer: string }[];
 }

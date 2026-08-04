@@ -49,7 +49,11 @@
     "faqLongWeekendsAnswer": "You can plan {count} long weekends in {name} in {year}.",
     "faqYes": "Yes",
     "faqNo": "No",
-    "relatedBlogPosts": "Related blog posts"
+    "relatedBlogPosts": "Related blog posts",
+    "faqToday": "Is today a public holiday in {name}?",
+    "faqTodayYes": "Yes — today ({date}) is {holiday}, a public holiday in {name}.",
+    "faqTodayNo": "No. The next public holiday in {name} is {holiday} on {date}.",
+    "bankHolidayNote": "{name} public holidays — also called bank holidays or non-working days — are observed nationwide and in some regions. Bridge days let you turn a single holiday into a long weekend."
   },
   "longWeekend": {
     "natural": "Long weekend",

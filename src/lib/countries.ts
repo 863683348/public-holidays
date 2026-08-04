@@ -106,7 +106,56 @@ export function getCountry(code: string): Country | undefined {
 export function getCountryName(code: string, locale?: string): string {
   const c = getCountry(code);
   if (!c) return code;
-  return locale === "zh" && c.nameZh ? c.nameZh : c.name;
+  // Prefer a hand-curated zh name when available.
+  if (locale === "zh" && c.nameZh) return c.nameZh;
+  // Localize country name via native Intl.DisplayNames for all other locales.
+  if (locale && locale !== "en") {
+    try {
+      const localized = new Intl.DisplayNames([locale], { type: "region" }).of(code);
+      if (localized && localized !== code) return localized;
+    } catch {
+      // Intl unavailable — fall through to English name.
+    }
+  }
+  return c.name;
+}
+
+// Localized "public holidays" term per locale — used to compose SEO <title>
+// tags that match the exact query phrasing Google already ranks us for
+// (e.g. Japanese "ポーランド 祝日 2026", Korean "오스트리아 공휴일 2026").
+const HOLIDAY_TERMS: Record<string, string> = {
+  en: "Public Holidays",
+  zh: "公共假期",
+  ja: "祝日",
+  ko: "공휴일",
+  es: "festivos",
+  de: "Feiertage",
+  fr: "jours fériés",
+  pt: "feriados",
+  it: "festività",
+  ru: "праздники",
+  ar: "عطل",
+};
+
+/**
+ * Build a locale-aware <title> for a country/year holiday page.
+ * For English we keep the brand pattern + the "Calendar & Bridge Days"
+ * modifiers (both real search terms). For every other locale we localize
+ * the country name (via Intl.DisplayNames) and the "public holidays" term so
+ * the title mirrors the native query string.
+ */
+export function getHolidayPageTitle(code: string, locale: string, year: number): string {
+  const meta = getCountry(code);
+  if (!meta) return `${code} ${year}`;
+  if (locale === "en") {
+    return `${meta.name} Public Holidays ${year} — Calendar & Bridge Days`;
+  }
+  const term = HOLIDAY_TERMS[locale] ?? "Public Holidays";
+  const name = getCountryName(code, locale);
+  if (locale === "zh") {
+    return `${name} ${year}年${term}`;
+  }
+  return `${name} ${term} ${year}`;
 }
 
 export const POPULAR_COUNTRIES = COUNTRIES.filter((c) => c.popular);

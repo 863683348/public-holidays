@@ -49,7 +49,10 @@
     "faqLongWeekendsAnswer": "You can plan {count} long weekends in {name} in {year}.",
     "faqYes": "Yes",
     "faqNo": "No",
-    "relatedBlogPosts": "Related blog posts"
+    "relatedBlogPosts": "Related blog posts",
+    "faqToday": "Hoje é feriado em {name}?",
+    "faqTodayYes": "Sim — hoje ({date}) é {holiday}, um feriado em {name}.",
+    "faqTodayNo": "Não. O próximo feriado em {name} é {holiday} em {date}."
   },
   "longWeekend": {
     "natural": "Fim de semana prolongado",

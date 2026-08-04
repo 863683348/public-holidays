@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
-import { getCountry, getCountryName } from "@/lib/countries";
+import { getCountry, getCountryName, getHolidayPageTitle } from "@/lib/countries";
 import { getHolidays } from "@/lib/holidays";
 import { findLongWeekends } from "@/lib/longWeekend";
 import { getPostsByCountry } from "@/lib/blog-posts";
@@ -31,7 +31,7 @@ export async function generateMetadata({
   if (!meta) return {};
   const year = Number(yearStr);
   if (!Number.isInteger(year) || year < 2000 || year > 2035) return {};
-  const title = `${meta.name} Public Holidays ${year}`;
+  const title = getHolidayPageTitle(country, locale, year);
   const description = locale === "zh" ? `${meta.name}${year}年公共假期完整列表，含桥梁日和长周末规划。` : `Full list of ${year} public holidays in ${meta.name}, including bridge days and long weekends. Subscribe to your calendar.`;
   const languages: Record<string, string> = {};
   for (const l of routing.locales) languages[l] = `${SITE_URL}/${l}/${country}/${year}`;

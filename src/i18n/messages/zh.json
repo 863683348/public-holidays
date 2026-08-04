@@ -49,7 +49,10 @@
     "faqLongWeekendsAnswer": "You can plan {count} long weekends in {name} in {year}.",
     "faqYes": "Yes",
     "faqNo": "No",
-    "relatedBlogPosts": "Related blog posts"
+    "relatedBlogPosts": "Related blog posts",
+    "faqToday": "今天{name}有公共假期吗？",
+    "faqTodayYes": "是的——今天（{date}）是{name}的公共假期{holiday}。",
+    "faqTodayNo": "没有。{name}的下一个公共假期是{date}的{holiday}。"
   },
   "longWeekend": {
     "natural": "长周末",

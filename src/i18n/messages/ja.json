@@ -49,7 +49,10 @@
     "faqLongWeekendsAnswer": "You can plan {count} long weekends in {name} in {year}.",
     "faqYes": "Yes",
     "faqNo": "No",
-    "relatedBlogPosts": "Related blog posts"
+    "relatedBlogPosts": "Related blog posts",
+    "faqToday": "{name}は今日祝日ですか？",
+    "faqTodayYes": "はい——今日（{date}）は{name}の祝日{holiday}です。",
+    "faqTodayNo": "いいえ。{name}の次の祝日は{date}の{holiday}です。"
   },
   "longWeekend": {
     "natural": "連休",
