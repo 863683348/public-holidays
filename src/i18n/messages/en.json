@@ -53,7 +53,8 @@
     "faqToday": "Is today a public holiday in {name}?",
     "faqTodayYes": "Yes — today ({date}) is {holiday}, a public holiday in {name}.",
     "faqTodayNo": "No. The next public holiday in {name} is {holiday} on {date}.",
-    "bankHolidayNote": "{name} public holidays — also called bank holidays or non-working days — are observed nationwide and in some regions. Bridge days let you turn a single holiday into a long weekend."
+    "bankHolidayNote": "Looking for {demonym} public holidays or {demonym} bank holidays? {name} public holidays — also called national holidays or non-working days — are observed nationwide and in some regions. Bridge days let you turn a single holiday into a long weekend.",
+    "holidayWeekendNote": "A {name} holiday weekend happens when a public holiday falls on a Monday or Friday, creating a three-day weekend. The list above shows every long weekend and bridge-day opportunity in {year}."
   },
   "longWeekend": {
     "natural": "Long weekend",

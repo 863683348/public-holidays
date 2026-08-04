@@ -144,6 +144,31 @@ const HOLIDAY_TERMS: Record<string, string> = {
  * the country name (via Intl.DisplayNames) and the "public holidays" term so
  * the title mirrors the native query string.
  */
+// Demonyms per country — used to compose natural English phrases such as
+// "Austrian bank holiday" / "Swiss public holidays" so country pages also
+// rank for adjective-form queries (e.g. "austrian bank holiday",
+// "swiss public holidays", "brazilian bank holiday").
+const DEMONYMS: Record<string, string> = {
+  US: "American", GB: "British", CA: "Canadian", AU: "Australian",
+  DE: "German", FR: "French", ES: "Spanish", IT: "Italian",
+  NL: "Dutch", IE: "Irish", SE: "Swedish", CH: "Swiss",
+  AT: "Austrian", BE: "Belgian", PT: "Portuguese", PL: "Polish",
+  JP: "Japanese", KR: "South Korean", CN: "Chinese", IN: "Indian",
+  BR: "Brazilian", MX: "Mexican", AR: "Argentine", ZA: "South African",
+  SG: "Singaporean", AE: "Emirati", NZ: "New Zealander", DK: "Danish",
+  NO: "Norwegian", FI: "Finnish", CZ: "Czech", GR: "Greek",
+  HU: "Hungarian", RO: "Romanian", TR: "Turkish", RU: "Russian",
+  TH: "Thai", MY: "Malaysian", ID: "Indonesian", PH: "Filipino",
+  HK: "Hong Kong", TW: "Taiwanese", NG: "Nigerian", EG: "Egyptian",
+  SA: "Saudi", IL: "Israeli",
+};
+
+export function getDemonym(code: string): string {
+  const c = getCountry(code);
+  if (!c) return code;
+  return DEMONYMS[c.code.toUpperCase()] ?? c.name;
+}
+
 export function getHolidayPageTitle(code: string, locale: string, year: number): string {
   const meta = getCountry(code);
   if (!meta) return `${code} ${year}`;

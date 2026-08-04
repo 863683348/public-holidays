@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
-import { getCountry, getCountryName, getHolidayPageTitle } from "@/lib/countries";
+import { getCountry, getCountryName, getHolidayPageTitle, getDemonym } from "@/lib/countries";
 import { getHolidays } from "@/lib/holidays";
 import { findLongWeekends } from "@/lib/longWeekend";
 import { getPostsByCountry } from "@/lib/blog-posts";
@@ -158,7 +158,7 @@ export default async function CountryYearPage({
             {t("backHome")}
           </Link>
           <h1 className="text-2xl font-bold">{t("yearView", { year })}</h1>
-          <p className="text-[var(--muted)]">{meta.name}</p>
+          <p className="text-[var(--muted)]">{locale === "zh" ? getCountryName(country, locale) : `${meta.name} (${country})`}</p>
         </div>
         <SubscribeButton country={country} label={t("subscribe")} hint={t("subscribeHint")} />
       </div>
@@ -176,6 +176,16 @@ export default async function CountryYearPage({
             regional: regionalCount,
           })}
         </p>
+        {locale === "en" && (
+          <p className="text-[var(--muted)] leading-relaxed text-sm">
+            {t("bankHolidayNote", { name: meta.name, demonym: getDemonym(country), year })}
+          </p>
+        )}
+        {locale === "ar" && (
+          <p className="text-[var(--muted)] leading-relaxed text-sm">
+            {t("schoolHolidayNote", { name: getCountryName(country, "ar"), year })}
+          </p>
+        )}
       </section>
 
       <section className="space-y-3">
@@ -185,6 +195,11 @@ export default async function CountryYearPage({
 
       <section className="space-y-3">
         <h2 className="text-xl font-semibold">{t("longWeekends")}</h2>
+        {locale === "en" && (
+          <p className="text-[var(--muted)] leading-relaxed text-sm">
+            {t("holidayWeekendNote", { name: meta.name, year })}
+          </p>
+        )}
         <LongWeekendList items={longWeekends} />
       </section>
 

@@ -52,7 +52,8 @@
     "relatedBlogPosts": "Related blog posts",
     "faqToday": "هل اليوم عطلة رسمية في {name}؟",
     "faqTodayYes": "نعم — اليوم ({date}) هو {holiday}، عطلة رسمية في {name}.",
-    "faqTodayNo": "لا. العطلة الرسمية التالية في {name} هي {holiday} في {date}."
+    "faqTodayNo": "لا. العطلة الرسمية التالية في {name} هي {holiday} في {date}.",
+    "schoolHolidayNote": "عطلة المدارس في {name} {year} — موقعنا يركز على العطل الرسمية، لكن يمكنك الاطلاع على جدول العطل الرسمية في {name} لعام {year} عبر التقويم."
   },
   "longWeekend": {
     "natural": "عطلة نهاية أسبوع طويلة",

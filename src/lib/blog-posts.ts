@@ -240,6 +240,16 @@ export const BLOG_POSTS: BlogPost[] = [
         answer:
           "Los festivos de 2019 variaron por país, pero la mayoría de las fechas fijas (Año Nuevo, Navidad, Día del Trabajo) se repiten cada año. Para ver los festivos de cualquier año, usa el selector de año en la página de cada país de nuestro calendario.",
       },
+      {
+        question: "What were the public holidays like in 2018?",
+        answer:
+          "Public holidays in 2018 followed the same fixed-date pattern as today — New Year's Day, Christmas, Labour Day, and each country's national days. Movable holidays like Easter fell earlier in 2018. You can explore any past year, including 2018, using the year switcher on each country page.",
+      },
+      {
+        question: "Which European countries have the most public holidays?",
+        answer:
+          "Among European countries, Austria, Belgium, France, Germany, Greece, Italy, Poland, Portugal, Spain and Switzerland each observe around 11 public holidays, while the Nordics and the UK range from 8-11. Southern Europe — France, Spain, Italy and Greece — leads the continent for public holidays in Europe.",
+      },
     ],
   },
 
