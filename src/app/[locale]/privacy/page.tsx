@@ -174,6 +174,45 @@ export default async function PrivacyPage({
         </p>
       </section>
       <section>
+        <h2 className="text-lg font-semibold text-[var(--fg)]">Advertising</h2>
+        <p>
+          This website displays advertisements served by Google AdSense, a
+          third-party advertising vendor. Google and its partners may use cookies
+          (including the DART cookie) and similar technologies to serve ads
+          based on your prior visits to this site and other websites, and to
+          measure ad performance. You can opt out of personalized advertising by
+          visiting Google Ads Settings (
+          <a
+            href="https://www.google.com/settings/ads"
+            className="text-brand hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://www.google.com/settings/ads
+          </a>
+          ) or Your Online Choices (
+          <a
+            href="http://www.aboutads.info/choices"
+            className="text-brand hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            http://www.aboutads.info/choices
+          </a>
+          ). For more information on how Google uses data, see Google&apos;s
+          advertising privacy policy (
+          <a
+            href="https://policies.google.com/technologies/ads"
+            className="text-brand hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://policies.google.com/technologies/ads
+          </a>
+          ).
+        </p>
+      </section>
+      <section>
         <h2 className="text-lg font-semibold text-[var(--fg)]">Changes</h2>
         <p>
           We may update this policy from time to time. Material changes will be
