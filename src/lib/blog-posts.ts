@@ -1189,6 +1189,106 @@ export const BLOG_POSTS: BlogPost[] = [
       </ul>
     `,
   },
+  {
+    id: 113,
+    title: "Canada Statutory Holidays: Federal vs Provincial, Explained",
+    slug: "canada-statutory-holidays-federal-vs-provincial",
+    category: "guide",
+    author: "PubHoliday Research Team",
+    publishedDate: "2026-08-06T08:00:00Z",
+    lastModified: "2026-08-06T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/canada-statutory-holidays.svg",
+    excerpt: "Canada has 5 nationwide statutory holidays, but provinces add their own — here's the full federal vs provincial breakdown for 2026 and 2027.",
+    relatedCountries: ["CA"],
+    locale: "en",
+    faq: [
+      { question: "How many statutory holidays does Canada have?", answer: "5 federal statutory holidays for federally regulated employees: New Year's Day, Good Friday, Canada Day, Labour Day, Christmas Day. Provinces add 4-8 more (e.g., Ontario has 9 total, Quebec 8)." },
+      { question: "Which holidays are federally recognized in Canada?", answer: "New Year's Day (Jan 1), Good Friday, Canada Day (Jul 1), Labour Day (1st Mon of Sep), Christmas Day (Dec 25)." },
+      { question: "Why do Canadian provinces have different holidays?", answer: "Labour law is mostly provincial in Canada. Each province legislates its own statutory holidays for most workers, while federal employees follow the federal list." },
+      { question: "Is Family Day a statutory holiday?", answer: "In most provinces yes — BC, Alberta, Ontario, Saskatchewan, New Brunswick, and others observe Family Day on the 3rd Monday of February (dates vary by province)." },
+      { question: "What are the national holidays in Canada?", answer: "The 5 nationwide holidays: New Year's Day, Good Friday, Canada Day, Labour Day, Christmas Day. Most provinces also include Victoria Day in May." },
+    ],
+    content: `
+      <p>Canada's <strong>statutory holidays</strong> system has two layers: <strong>federal holidays</strong> that apply to federally regulated employees nationwide, and <strong>provincial holidays</strong> that each province legislates for most workers. This guide breaks down the 2026 and 2027 calendars so you never miss a <strong>Canadian public holiday</strong>.</p>
+
+      <h2>Federal vs Provincial: The Two-Layer System</h2>
+      <p><strong>Federal statutory holidays (5):</strong> New Year's Day, Good Friday, Canada Day, Labour Day, Christmas Day — these apply to federal employees and federally regulated industries (banks, airlines, telecom).</p>
+      <p><strong>Provincial statutory holidays:</strong> Each province and territory adds its own. Ontario recognizes 9, Quebec 8, British Columbia 10. That's why a <strong>Canadian holiday by province</strong> can look very different.</p>
+
+      <h2>Canada's National Holidays 2026-2027</h2>
+      <table class="min-w-full border-collapse border border-gray-300 mb-4">
+        <thead><tr class="bg-gray-100"><th class="border p-2">Holiday</th><th class="border p-2">2026 Date</th><th class="border p-2">2027 Date</th><th class="border p-2">Scope</th></tr></thead>
+        <tbody>
+          <tr><td class="border p-2">New Year's Day</td><td class="border p-2">Jan 1</td><td class="border p-2">Jan 1</td><td class="border p-2">Nationwide</td></tr>
+          <tr><td class="border p-2">Good Friday</td><td class="border p-2">Apr 3</td><td class="border p-2">Mar 26</td><td class="border p-2">Nationwide</td></tr>
+          <tr><td class="border p-2">Victoria Day</td><td class="border p-2">May 18</td><td class="border p-2">May 24</td><td class="border p-2">Most provinces</td></tr>
+          <tr><td class="border p-2">Canada Day</td><td class="border p-2">Jul 1</td><td class="border p-2">Jul 1</td><td class="border p-2">Nationwide</td></tr>
+          <tr><td class="border p-2">Labour Day</td><td class="border p-2">Sep 7</td><td class="border p-2">Sep 6</td><td class="border p-2">Nationwide</td></tr>
+          <tr><td class="border p-2">Thanksgiving</td><td class="border p-2">Oct 12</td><td class="border p-2">Oct 11</td><td class="border p-2">Most provinces</td></tr>
+          <tr><td class="border p-2">Remembrance Day</td><td class="border p-2">Nov 11</td><td class="border p-2">Nov 11</td><td class="border p-2">Many provinces</td></tr>
+          <tr><td class="border p-2">Christmas Day</td><td class="border p-2">Dec 25</td><td class="border p-2">Dec 25</td><td class="border p-2">Nationwide</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Canadian Holidays by Province (2026)</h2>
+      <ul>
+        <li><strong>Ontario (9):</strong> Family Day (Feb 16), Victoria Day, Canada Day, Civic Holiday (Aug 3), Labour Day, Thanksgiving, Remembrance Day, Christmas, Boxing Day</li>
+        <li><strong>Quebec (8):</strong> Good Friday (some also Easter Monday), National Patriots' Day (May 18), St-Jean-Baptiste (Jun 24), Canada Day, Labour Day, Thanksgiving, Christmas</li>
+        <li><strong>British Columbia (10):</strong> Family Day, Victoria Day, Canada Day, BC Day (Aug 3), Labour Day, Truth and Reconciliation (Sep 30), Thanksgiving, Remembrance Day, Christmas, Boxing Day</li>
+        <li><strong>Alberta (9):</strong> Family Day, Victoria Day, Canada Day, Heritage Day (Aug 3), Labour Day, Thanksgiving, Remembrance Day, Christmas, Boxing Day</li>
+      </ul>
+
+      <h2>When a Holiday Falls on a Weekend</h2>
+      <p>Most provinces observe <strong>in-lieu rules</strong>: a holiday landing on Saturday or Sunday shifts to the nearest weekday so workers still get the day off. Check the exact observance date for your province before booking travel.</p>
+
+      <h2>Plan Around Canadian Holidays</h2>
+      <p>Use PubHoliday to see <a href="https://public-holidays.shop/en/CA">Canada public holidays 2026</a> for any province, sync them to your calendar, and spot long-weekend combinations months ahead.</p>
+    `,
+  },
+  {
+    id: 114,
+    title: "加拿大法定假日：联邦与各省差异全解析",
+    slug: "canada-statutory-holidays-federal-vs-provincial",
+    category: "guide",
+    author: "PubHoliday 研究团队",
+    publishedDate: "2026-08-06T08:00:00Z",
+    lastModified: "2026-08-06T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/canada-statutory-holidays.svg",
+    excerpt: "加拿大法定假日分两层：联邦 5 个全国假日 + 各省自定假日。2026-2027 完整日历与各省差异一次讲清。",
+    relatedCountries: ["CA"],
+    locale: "zh",
+    content: `
+      <p>加拿大的<strong>法定假日</strong>体系分两层：<strong>联邦假日</strong>适用于全国受联邦监管的员工（银行、航空、电信），<strong>省级假日</strong>由各省自己立法，覆盖大多数劳动者。这份指南把 2026-2027 的日历和各省差异讲清楚。</p>
+      <h2>联邦 vs 省级：两层体系</h2>
+      <p><strong>联邦法定假日（5 个）：</strong>元旦、耶稣受难日、加拿大日、劳动节、圣诞节。</p>
+      <p><strong>省级法定假日：</strong>每个省在联邦基础上加自己的假日——安大略共 9 个、魁北克 8 个、不列颠哥伦比亚 10 个。这就是为什么"加拿大假日"按省看差别很大。</p>
+      <h2>加拿大全国假日 2026-2027</h2>
+      <table class="min-w-full border-collapse border border-gray-300 mb-4">
+        <thead><tr class="bg-gray-100"><th class="border p-2">假日</th><th class="border p-2">2026 日期</th><th class="border p-2">2027 日期</th><th class="border p-2">范围</th></tr></thead>
+        <tbody>
+          <tr><td class="border p-2">元旦</td><td class="border p-2">1月1日</td><td class="border p-2">1月1日</td><td class="border p-2">全国</td></tr>
+          <tr><td class="border p-2">耶稣受难日</td><td class="border p-2">4月3日</td><td class="border p-2">3月26日</td><td class="border p-2">全国</td></tr>
+          <tr><td class="border p-2">维多利亚日</td><td class="border p-2">5月18日</td><td class="border p-2">5月24日</td><td class="border p-2">多数省份</td></tr>
+          <tr><td class="border p-2">加拿大日</td><td class="border p-2">7月1日</td><td class="border p-2">7月1日</td><td class="border p-2">全国</td></tr>
+          <tr><td class="border p-2">劳动节</td><td class="border p-2">9月7日</td><td class="border p-2">9月6日</td><td class="border p-2">全国</td></tr>
+          <tr><td class="border p-2">感恩节</td><td class="border p-2">10月12日</td><td class="border p-2">10月11日</td><td class="border p-2">多数省份</td></tr>
+          <tr><td class="border p-2">国殇日</td><td class="border p-2">11月11日</td><td class="border p-2">11月11日</td><td class="border p-2">多数省份</td></tr>
+          <tr><td class="border p-2">圣诞节</td><td class="border p-2">12月25日</td><td class="border p-2">12月25日</td><td class="border p-2">全国</td></tr>
+        </tbody>
+      </table>
+      <h2>各省假日差异（2026）</h2>
+      <ul>
+        <li><strong>安大略（9 个）：</strong>家庭日（2/16）、维多利亚日、加拿大日、市民假日（8/3）、劳动节、感恩节、国殇日、圣诞节、节礼日</li>
+        <li><strong>魁北克（8 个）：</strong>耶稣受难日（部分人还休复活节周一）、爱国者日（5/18）、施洗约翰日（6/24）、加拿大日、劳动节、感恩节、圣诞节</li>
+        <li><strong>不列颠哥伦比亚（10 个）：</strong>家庭日、维多利亚日、加拿大日、BC 日（8/3）、劳动节、真相与和解日（9/30）、感恩节、国殇日、圣诞节、节礼日</li>
+        <li><strong>阿尔伯塔（9 个）：</strong>家庭日、维多利亚日、加拿大日、遗产日（8/3）、劳动节、感恩节、国殇日、圣诞节、节礼日</li>
+      </ul>
+      <h2>假日碰到周末怎么办</h2>
+      <p>多数省份有<strong>顺延规则</strong>：假日落在周六/周日时，会顺延到最近的工作日。出行前先查你所在省的"实际放假日期"。</p>
+      <h2>用加拿大假日做规划</h2>
+      <p>用 PubHoliday 查看<a href="https://public-holidays.shop/zh/CA">加拿大公共假日 2026</a>任意省份的日历，一键同步到你的日历，提前发现长周末组合。</p>
+    `,
+  },
 ];
 
 // ========================================================================

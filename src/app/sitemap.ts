@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { routing } from "@/i18n/routing";
 import { COUNTRIES } from "@/lib/countries";
+import { BLOG_POSTS } from "@/lib/blog-posts";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
 
@@ -65,6 +66,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
           priority: y === year ? 0.8 : 0.6,
         });
       }
+    }
+
+    // Blog articles (bilingual posts share a slug; category from post data)
+    const localePosts = BLOG_POSTS.filter((p) => (p.locale || "en") === l);
+    for (const post of localePosts) {
+      urls.push({
+        url: `${SITE_URL}/${l}/blog/${post.category}/${post.slug}`,
+        lastModified: new Date(post.lastModified),
+        changeFrequency: "monthly",
+        priority: 0.7,
+      });
     }
   }
 
