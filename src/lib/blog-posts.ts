@@ -1332,6 +1332,65 @@ export function getAllPosts(locale?: string): BlogPost[] {
 /**
  * Get unique categories for a given locale.
  */
+  {
+    id: 100,
+    title: "The Complete Guide to Planning Your Year Around Public Holidays",
+    slug: "complete-guide-planning-around-public-holidays",
+    category: "guide",
+    author: "Editorial Team",
+    publishedDate: "2026-08-06T09:00:00Z",
+    lastModified: "2026-08-06T09:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/planning-guide.svg",
+    excerpt: "A practical, month-by-month framework for using public holiday calendars to plan vacations, payroll, and family time without the usual guesswork.",
+    relatedCountries: ["US", "GB", "DE", "CN"],
+    locale: "en",
+    content: `
+      <p>Public holidays shape far more than a single day off. They decide when schools close, when payroll must be run, when factories pause, and when millions of people travel at once. Yet most people plan around holidays reactively — they discover a closure only when it is already too late to book a cheaper flight or schedule a shipment. This guide gives you a repeatable framework for planning an entire year around public holidays, whether you are organizing family trips, managing a team, or running a small business.</p>
+
+      <h2>Why Planning Around Holidays Pays Off</h2>
+      <p>The biggest wins come from two patterns. First, <strong>bridging</strong>: when a holiday falls on a Tuesday or Thursday, taking one or two adjacent vacation days turns a single day off into a four- or five-day break. Second, <strong>avoiding surge periods</strong>: travel, hotels, and shipping all spike in price and delay around major holidays. Knowing the calendar a year ahead lets you book before the curve.</p>
+      <ul>
+        <li><strong>Cost:</strong> Flights booked 3-6 months ahead of a holiday window are routinely 30-60% cheaper than last-minute fares.</li>
+        <li><strong>Operations:</strong> Manufacturers and logistics teams that pre-stage inventory before a holiday closure avoid stockouts that last a week or more.</li>
+        <li><strong>Wellbeing:</strong> Employees who can predict their time off plan rest properly instead of fragmenting it.</li>
+      </ul>
+
+      <h2>How Holiday Calendars Differ by Country</h2>
+      <p>No two countries count holidays the same way. The United States has ten federal holidays but states and private employers vary widely. The United Kingdom splits bank holidays between England & Wales, Scotland, and Northern Ireland. Germany layers nine national holidays under a varying number of state holidays. China concentrates its paid leave into a few golden-week clusters. Japan blends fixed dates with the elegant <em>furikae</em> rule that shifts a holiday to Monday when it lands on a Sunday.</p>
+      <p>If you work across borders, the safest habit is to maintain a per-country calendar rather than a single global list. A holiday that is a normal working day in one market may be a full shutdown in another.</p>
+
+      <h2>A Month-by-Month Planning Framework</h2>
+      <p>You do not need a complex tool to start. Open a spreadsheet with one column per country you care about and one row per week of the year. Mark each public holiday, then highlight the bridge opportunities — the holidays adjacent to a weekend. Review it once a quarter and adjust.</p>
+      <ul>
+        <li><strong>Q1:</strong> New Year clusters (Jan 1-2 in many countries), Lunar New Year in East Asia, and late-winter holidays. Plan annual leave here before budgets reset.</li>
+        <li><strong>Q2:</strong> Easter is the movable anchor — Good Friday, Easter Monday, and associated spring holidays shift every year. Build logistics around the computed date, not a fixed assumption.</li>
+        <li><strong>Q3:</strong> Summer bank holidays and independence-day periods. This is peak travel; book transport early.</li>
+        <li><strong>Q4:</strong> Thanksgiving, Christmas, and New Year create the longest continuous closures in the Western calendar. Manufacturing and e-commerce must pre-build inventory by late October.</li>
+      </ul>
+
+      <h2>Bridging Holidays for Longer Breaks</h2>
+      <p>A holiday on a Tuesday means Monday and Wednesday are the bridge days. Taking those two days off yields a five-day weekend from Saturday to Wednesday. A holiday on Thursday bridges backwards to Wednesday. Map these in your spreadsheet and propose them to your team or family as a package rather than deciding day by day.</p>
+      <p>One caution: in some countries a <em>substitute day</em> (or "in lieu" day) is granted when a holiday falls on a weekend. Plan around the substitute date, not the calendar date, or you will miscalculate the bridge.</p>
+
+      <h2>Holiday Planning for Payroll and HR</h2>
+      <p>For employers, holiday planning is operational, not just cultural. In many European countries, holiday pay is legally distinct from ordinary pay, and working on a public holiday can trigger premium rates or time-off-in-lieu. Communicate the year's holiday schedule to payroll by the preceding December so rosters, on-call rotations, and statutory pay calculations are ready.</p>
+      <ul>
+        <li>Publish the holiday calendar internally before the year starts.</li>
+        <li>Flag fixed-date holidays that fall on weekends for substitute-day handling.</li>
+        <li>Reconcile cross-border teams: a holiday in one office is a normal day elsewhere.</li>
+      </ul>
+
+      <h2>Tools That Make This Effortless</h2>
+      <p>You can build the spreadsheet yourself, but a maintained public holiday calendar removes the research burden. Our <a href="https://public-holidays.shop">country pages</a> list every official holiday per nation with dates, types, and long-weekend flags, and our long-weekend guide highlights the best bridge opportunities automatically. Use it as the source of truth, then copy the dates into your planning sheet.</p>
+
+      <h2>Frequently Asked Questions</h2>
+      <p><strong>How far ahead should I plan?</strong> At least one full year. Holiday dates for fixed-date countries are known years in advance; for movable holidays like Easter, compute them from the lunar or ecclesiastical rules and lock the schedule by December.</p>
+      <p><strong>What is the difference between a public holiday and a bank holiday?</strong> In the UK, "bank holiday" is the legal term for a public holiday when banks and many businesses close. The terms are often used interchangeably, but bank holidays are a subset defined by statute.</p>
+      <p><strong>Do substitute days apply everywhere?</strong> No. The United Kingdom, Japan, and several others grant substitute days; the United States generally does not move federal holidays and instead observes them on the nearest weekday only when the date itself is a Saturday or Sunday.</p>
+      <p><strong>How do I plan for a remote team across countries?</strong> Keep one calendar per country, mark each team's local holidays, and treat cross-border coordination days as the intersection of everyone's working days.</p>
+    `,
+  },
+
 export function getCategories(locale?: string): string[] {
   const posts = locale ? getAllPosts(locale) : BLOG_POSTS;
   return [...new Set(posts.map((p) => p.category))];
