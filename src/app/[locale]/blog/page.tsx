@@ -97,6 +97,19 @@ export default async function BlogPage({
 
   return (
     <div className="space-y-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/${locale}` },
+              { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}/${locale}/blog` },
+            ],
+          }),
+        }}
+      />
       {/* Breadcrumb */}
       <nav className="text-sm text-[var(--muted)] mb-2">
         <div className="flex items-center gap-2">
