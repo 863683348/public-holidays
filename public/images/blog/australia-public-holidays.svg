@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00247d"/>
+      <stop offset="1" stop-color="#ffc400"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="600" cy="290" r="150" fill="#ffffff" opacity="0.92"/>
+  <circle cx="600" cy="290" r="118" fill="#00247d"/>
+  <circle cx="600" cy="290" r="108" fill="#ffffff"/>
+  <path d="M600 200 L612 268 L682 268 L626 309 L650 376 L600 336 L550 376 L574 309 L518 268 L588 268 Z" fill="#ffc400"/>
+  <text x="600" y="520" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="bold" fill="#ffffff" text-anchor="middle">Australia Public Holidays 2026</text>
+  <text x="600" y="570" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#f2f2f2" text-anchor="middle">7 national dates + state-by-state differences</text>
+</svg>

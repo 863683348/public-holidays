@@ -1347,6 +1347,130 @@ export const BLOG_POSTS: BlogPost[] = [
       <p><strong>Do substitute days apply everywhere?</strong> No. The United Kingdom, Japan, and several others grant substitute days; the United States generally does not move federal holidays and instead observes them on the nearest weekday only when the date itself is a Saturday or Sunday.</p>
       <p><strong>How do I plan for a remote team across countries?</strong> Keep one calendar per country, mark each team's local holidays, and treat cross-border coordination days as the intersection of everyone's working days.</p>
     `,
+  },
+  {
+    id: 115,
+    title: "Australia Public Holidays 2026: States That Differ",
+    slug: "australia-public-holidays-states-differ",
+    category: "guide",
+    author: "PubHoliday Research Team",
+    publishedDate: "2026-08-07T08:00:00Z",
+    lastModified: "2026-08-07T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/australia-public-holidays.svg",
+    excerpt: "Australia has 7 national public holidays, then everything else depends on your state. Full 2026 breakdown for NSW, Victoria, Queensland, and more — with exact dates.",
+    relatedCountries: ["AU"],
+    locale: "en",
+    faq: [
+      { question: "How many public holidays does Australia have?", answer: "7 national holidays (New Year's Day, Australia Day, Good Friday, Easter Monday, Anzac Day, Christmas Day, Boxing Day) plus 4-8 state or territory-specific ones. Victoria has 13 total in a typical year, WA can reach 14." },
+      { question: "Which Australian public holidays are nationwide?", answer: "New Year's Day (Jan 1), Australia Day (Jan 26), Good Friday, Easter Monday, Anzac Day (Apr 25), Christmas Day (Dec 25), and Boxing Day (Dec 26). Everything else is legislated by individual states." },
+      { question: "Why do Australian states have different holidays?", answer: "Public holiday legislation is a state matter in Australia. Each parliament sets its own Labour Day date, King's Birthday, and local events like Melbourne Cup Day, which is why NSW and Queensland look so different." },
+      { question: "Is Melbourne Cup Day a public holiday?", answer: "Yes, in Victoria. The first Tuesday of November is a public holiday across Melbourne and parts of the state, though some regional areas observe it differently." },
+    ],
+    content: `
+      <p>Ask two Australians to list the <strong>australia public holidays</strong> and you'll get two different answers. That's not a trivia quirk, it's how the country works: seven dates are national, and everything else depends on which state or territory you're in. This guide sorts the 2026 calendar into what everyone gets and what's local, so you can plan time off without guessing.</p>
+
+      <h2>The 7 national holidays everyone gets</h2>
+      <p>These apply in every state and territory, no matter where you work:</p>
+      <ul>
+        <li>New Year's Day — Jan 1 (Thursday)</li>
+        <li>Australia Day — Jan 26 (Monday)</li>
+        <li>Good Friday — Apr 3</li>
+        <li>Easter Monday — Apr 6</li>
+        <li>Anzac Day — Apr 25 (Saturday)</li>
+        <li>Christmas Day — Dec 25 (Friday)</li>
+        <li>Boxing Day — Dec 26 (Saturday)</li>
+      </ul>
+      <p>That's the whole national list. Everything else you see on an Australian calendar — Labour Day, King's Birthday, Melbourne Cup — is a state decision.</p>
+
+      <h2>The state layer: where the real differences are</h2>
+      <p>Each state and territory adds its own holidays on top of the national seven. The table below lists the big ones with their 2026 dates:</p>
+      <table class="min-w-full border-collapse border border-gray-300 mb-4">
+        <thead><tr class="bg-gray-100"><th class="border p-2">State / Territory</th><th class="border p-2">Extra holidays (2026)</th></tr></thead>
+        <tbody>
+          <tr><td class="border p-2">New South Wales</td><td class="border p-2">Bank Holiday (Aug 3), Labour Day (Oct 5)</td></tr>
+          <tr><td class="border p-2">Victoria</td><td class="border p-2">Labour Day (Mar 9), Melbourne Cup Day (Nov 3)</td></tr>
+          <tr><td class="border p-2">Queensland</td><td class="border p-2">Labour Day (May 4), King's Birthday (Oct 5)</td></tr>
+          <tr><td class="border p-2">Western Australia</td><td class="border p-2">Labour Day (Mar 2), WA Day (Jun 1), King's Birthday (Sep 28)</td></tr>
+          <tr><td class="border p-2">South Australia</td><td class="border p-2">Adelaide Cup (Mar 9), Labour Day (Oct 5), Proclamation Day (Dec 28 observed)</td></tr>
+          <tr><td class="border p-2">Tasmania</td><td class="border p-2">Eight Hours Day (Mar 9), King's Birthday (Jun 8), Recreation Day (Nov 2)</td></tr>
+          <tr><td class="border p-2">ACT</td><td class="border p-2">Canberra Day (Mar 9), Reconciliation Day (Apr 27), Labour Day (Oct 5)</td></tr>
+          <tr><td class="border p-2">Northern Territory</td><td class="border p-2">May Day (May 4), Picnic Day (Aug 3)</td></tr>
+        </tbody>
+      </table>
+      <p>Notice how the first Monday of March is a holiday in WA while the second Monday is one in Victoria and Tasmania. That one-week offset is exactly the kind of thing that trips up cross-state planning.</p>
+
+      <h2>When a holiday lands on a weekend</h2>
+      <p>2026 has two awkward ones: Anzac Day falls on Saturday Apr 25, and Boxing Day on Saturday Dec 26. Most states observe a substitute day on the next Monday (Apr 27 and Dec 28), but the rules vary — Tasmania and Queensland treat Anzac Day differently, so check your state before booking anything. The general rule across the country: fixed-date holidays shift to the nearest weekday so workers still get the day off.</p>
+
+      <h2>Plan around australian holidays by state</h2>
+      <p>If you work across NSW and Victoria, you're juggling two different Labour Days (Oct 5 vs Mar 9). The practical fix is to keep one calendar per state and treat the intersection of everyone's holidays as your real working days. For long weekends, the easiest wins come from national dates that happen to land on Fridays or Mondays — 2026 is a good year for that, with Australia Day, Good Friday, and Christmas all on or near weekends.</p>
+
+      <h2>Frequently Asked Questions</h2>
+      <p><strong>How many public holidays does Australia have in total?</strong> Seven national ones, plus 4-8 state-specific. Victoria typically sees 13, while WA can reach 14 in a good year.</p>
+      <p><strong>Which states get a holiday for the Melbourne Cup?</strong> Victoria only, on the first Tuesday of November — the rest of the country watches it during working hours.</p>
+      <p><strong>Is Easter Monday a public holiday in Australia?</strong> Yes, it's one of the seven national dates, so you get the day off across the country.</p>
+      <p><strong>Do all states observe the King's Birthday on the same day?</strong> No. Most of the eastern states use the second Monday of June (Jun 8 in 2026), but Queensland celebrates in October and Western Australia in late September.</p>
+      <p>See the full <a href="https://public-holidays.shop/en/AU">Australia public holidays 2026 calendar</a> on PubHoliday, or browse the <a href="https://public-holidays.shop">homepage</a> to sync any country's holidays to your calendar.</p>
+    `,
+  },
+  {
+    id: 116,
+    title: "澳大利亚公共假日 2026：各州不一样的“全国假日”",
+    slug: "australia-public-holidays-states-differ",
+    category: "guide",
+    author: "PubHoliday 研究团队",
+    publishedDate: "2026-08-07T08:00:00Z",
+    lastModified: "2026-08-07T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/australia-public-holidays.svg",
+    excerpt: "澳大利亚公共假日分两层：7 个全国假日 + 各州自定假日。2026 年 NSW、维州、昆州等各州完整日期表与拼假攻略。",
+    relatedCountries: ["AU"],
+    locale: "zh",
+    content: `
+      <p>让两个澳大利亚人分别列出本国的<strong>公共假日</strong>，答案大概率不一样——这不是冷知识，而是这个国家的运作方式：7 个日期是全国性的，其余全部看你在哪个州。这篇把 2026 年日历拆成"人人都有"和"各州专属"两层，请年假前先看这个，别靠猜。</p>
+
+      <h2>人人都有：7 个全国假日</h2>
+      <p>无论你在哪个州、什么行业，下面这些全国放假：</p>
+      <ul>
+        <li>元旦 — 1 月 1 日（周四）</li>
+        <li>澳大利亚日 — 1 月 26 日（周一）</li>
+        <li>耶稣受难日 — 4 月 3 日</li>
+        <li>复活节星期一 — 4 月 6 日</li>
+        <li>澳新军团日 — 4 月 25 日（周六）</li>
+        <li>圣诞节 — 12 月 25 日（周五）</li>
+        <li>节礼日 — 12 月 26 日（周六）</li>
+      </ul>
+      <p>全国性假日就这么 7 个。日历上其余那些——劳动节、国王生日、墨尔本杯——全是各州自己的决定。</p>
+
+      <h2>各州专属：差别到底在哪</h2>
+      <p>各州和领地会在全国 7 天之上叠加自己的假日，下表列出主要的几项及 2026 年日期：</p>
+      <table class="min-w-full border-collapse border border-gray-300 mb-4">
+        <thead><tr class="bg-gray-100"><th class="border p-2">州 / 领地</th><th class="border p-2">额外假日（2026）</th></tr></thead>
+        <tbody>
+          <tr><td class="border p-2">新南威尔士州</td><td class="border p-2">银行假日（8 月 3 日）、劳动节（10 月 5 日）</td></tr>
+          <tr><td class="border p-2">维多利亚州</td><td class="border p-2">劳动节（3 月 9 日）、墨尔本杯日（11 月 3 日）</td></tr>
+          <tr><td class="border p-2">昆士兰州</td><td class="border p-2">劳动节（5 月 4 日）、国王生日（10 月 5 日）</td></tr>
+          <tr><td class="border p-2">西澳大利亚州</td><td class="border p-2">劳动节（3 月 2 日）、西澳日（6 月 1 日）、国王生日（9 月 28 日）</td></tr>
+          <tr><td class="border p-2">南澳大利亚州</td><td class="border p-2">阿德莱德杯（3 月 9 日）、劳动节（10 月 5 日）、宣告日（12 月 28 日补休）</td></tr>
+          <tr><td class="border p-2">塔斯马尼亚州</td><td class="border p-2">八小时日（3 月 9 日）、国王生日（6 月 8 日）、娱乐日（11 月 2 日）</td></tr>
+          <tr><td class="border p-2">首都领地</td><td class="border p-2">堪培拉日（3 月 9 日）、和解日（4 月 27 日）、劳动节（10 月 5 日）</td></tr>
+          <tr><td class="border p-2">北领地</td><td class="border p-2">五月节（5 月 4 日）、野餐日（8 月 3 日）</td></tr>
+        </tbody>
+      </table>
+      <p>注意一个细节：西澳的三月第一个周一是假日，维州和塔州却是第二个周一。就这一周的错位，足以让跨州协作的人栽跟头。</p>
+
+      <h2>假日撞上周末怎么办</h2>
+      <p>2026 年有两个尴尬的：澳新军团日落在 4 月 25 日周六，节礼日落在 12 月 26 日周六。多数州会在下一个周一补休（4 月 27 日、12 月 28 日），但塔州和昆州对澳新军团日的处理不同——订票前先查自己州的规定。全国通用的原则是：固定日期的假日撞周末就顺延到最近的工作日，保证照常休息。</p>
+
+      <h2>按州拼假攻略</h2>
+      <p>如果你在 NSW 和维州之间两头跑，等于同时要管两个劳动节（10 月 5 日 vs 3 月 9 日）。实用的做法是每个州单独建一个日历，把大家真正的交集工作日算出来。想拼长周末，优先盯全国性假日落在周五或周一的年份——2026 年运气不错，澳大利亚日、耶稣受难日和圣诞节都挨着周末。</p>
+
+      <h2>常见问题</h2>
+      <p><strong>澳大利亚一年到底放几天假？</strong> 全国 7 天 + 各州 4-8 天。维州通常全年 13 天，西澳好的年份能到 14 天。</p>
+      <p><strong>墨尔本杯哪些州放假？</strong> 只有维州，在 11 月第一个周二——其他州的人都在上班时间看直播。</p>
+      <p><strong>复活节星期一是公共假日吗？</strong> 是，属于 7 个全国假日之一，全澳放假。</p>
+      <p><strong>国王生日各州同一天吗？</strong> 不同。东部多数州用 6 月第二个周一（2026 年为 6 月 8 日），昆州在 10 月，西澳在 9 月底。</p>
+      <p>到 PubHoliday 查看完整的<a href="https://public-holidays.shop/en/AU">澳大利亚 2026 公共假日日历</a>，或从<a href="https://public-holidays.shop">首页</a>把任意国家的假日同步进你的日历。</p>
+    `,
   }
 ];
 
