@@ -173,14 +173,48 @@ export function getHolidayPageTitle(code: string, locale: string, year: number):
   const meta = getCountry(code);
   if (!meta) return `${code} ${year}`;
   if (locale === "en") {
-    return `${meta.name} Public Holidays ${year} — Calendar & Bridge Days`;
+    return `${meta.name} Public Holidays ${year} — Full List & Official Dates`;
   }
   const term = HOLIDAY_TERMS[locale] ?? "Public Holidays";
   const name = getCountryName(code, locale);
   if (locale === "zh") {
-    return `${name} ${year}年${term}`;
+    return `${name} ${year}年${term}完整列表（官方日期）`;
   }
-  return `${name} ${term} ${year}`;
+  return `${name} ${term} ${year} — Full List`;
+}
+
+/**
+ * Locale-aware meta description with high-intent CTR hooks:
+ * "official dates", "full list", "download / print / free calendar".
+ * Used by both the country landing page and the country×year pages.
+ */
+export function getHolidayPageDescription(code: string, locale: string, year: number): string {
+  const meta = getCountry(code);
+  if (!meta) return `${year} public holidays — full list and official dates.`;
+  if (locale === "zh") {
+    return `${meta.name}${year}年公共假期完整列表：含官方日期、桥梁日与长周末，可免费下载并打印日历。`;
+  }
+  return `Complete ${year} ${meta.name} public holidays list with official dates, bridge days and long weekends. Download or print your free calendar.`;
+}
+
+// Curated official government sources for the top markets. Rendered as the
+// "Official source" E-E-A-T link on country / year pages. Only confident,
+// stable government URLs are included; other countries omit the link.
+const OFFICIAL_SOURCES: Record<string, string> = {
+  US: "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+  GB: "https://www.gov.uk/bank-holidays",
+  CA: "https://www.canada.ca/en/services/culture/holidays.html",
+  AU: "https://www.australia.gov.au/public-holidays",
+  FR: "https://www.service-public.fr/particuliers/vosdroits/F2367",
+  ES: "https://www.boe.es/calendario.php",
+  NL: "https://www.rijksoverheid.nl/onderwerpen/feestdagen",
+  AT: "https://www.help.gv.at/",
+  JP: "https://www8.cao.go.jp/syukujitsu/",
+};
+
+export function getOfficialSource(code: string): string | undefined {
+  const c = getCountry(code);
+  return c ? OFFICIAL_SOURCES[c.code.toUpperCase()] : undefined;
 }
 
 export const POPULAR_COUNTRIES = COUNTRIES.filter((c) => c.popular);

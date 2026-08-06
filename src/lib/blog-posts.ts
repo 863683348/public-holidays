@@ -1289,49 +1289,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>用 PubHoliday 查看<a href="https://public-holidays.shop/zh/CA">加拿大公共假日 2026</a>任意省份的日历，一键同步到你的日历，提前发现长周末组合。</p>
     `,
   },
-];
 
-// ========================================================================
-// Locale-aware helper functions
-// ========================================================================
-
-/**
- * Get a single post by slug and optional locale.
- * Falls back to "en" if no locale match found.
- */
-export function getPostData(slug: string, locale?: string): BlogPost | undefined {
-  if (locale) {
-    const post = BLOG_POSTS.find(
-      (p) => p.slug === slug && (p.locale || "en") === locale
-    );
-    if (post) return post;
-  }
-  // Fallback: return any post with this slug (prefer "en")
-  return BLOG_POSTS.find((p) => p.slug === slug && (p.locale || "en") === "en");
-}
-
-/**
- * Get posts filtered by category and optional locale.
- */
-export function getPostsByCategory(category: string, locale?: string): BlogPost[] {
-  return BLOG_POSTS.filter((p) => {
-    const matchCategory = p.category === category;
-    const matchLocale = locale ? (p.locale || "en") === locale : true;
-    return matchCategory && matchLocale;
-  });
-}
-
-/**
- * Get all posts filtered by locale.
- */
-export function getAllPosts(locale?: string): BlogPost[] {
-  if (!locale) return BLOG_POSTS;
-  return BLOG_POSTS.filter((p) => (p.locale || "en") === locale);
-}
-
-/**
- * Get unique categories for a given locale.
- */
   {
     id: 100,
     title: "The Complete Guide to Planning Your Year Around Public Holidays",
@@ -1389,7 +1347,48 @@ export function getAllPosts(locale?: string): BlogPost[] {
       <p><strong>Do substitute days apply everywhere?</strong> No. The United Kingdom, Japan, and several others grant substitute days; the United States generally does not move federal holidays and instead observes them on the nearest weekday only when the date itself is a Saturday or Sunday.</p>
       <p><strong>How do I plan for a remote team across countries?</strong> Keep one calendar per country, mark each team's local holidays, and treat cross-border coordination days as the intersection of everyone's working days.</p>
     `,
-  },
+  }
+];
+
+// ========================================================================
+// Locale-aware helper functions
+// ========================================================================
+
+/**
+ * Get a single post by slug and optional locale.
+ * Falls back to "en" if no locale match found.
+ */
+export function getPostData(slug: string, locale?: string): BlogPost | undefined {
+  if (locale) {
+    const post = BLOG_POSTS.find(
+      (p) => p.slug === slug && (p.locale || "en") === locale
+    );
+    if (post) return post;
+  }
+  // Fallback: return any post with this slug (prefer "en")
+  return BLOG_POSTS.find((p) => p.slug === slug && (p.locale || "en") === "en");
+}
+
+/**
+ * Get posts filtered by category and optional locale.
+ */
+export function getPostsByCategory(category: string, locale?: string): BlogPost[] {
+  return BLOG_POSTS.filter((p) => {
+    const matchCategory = p.category === category;
+    const matchLocale = locale ? (p.locale || "en") === locale : true;
+    return matchCategory && matchLocale;
+  });
+}
+
+/**
+ * Get all posts filtered by locale.
+ */
+export function getAllPosts(locale?: string): BlogPost[] {
+  if (!locale) return BLOG_POSTS;
+  return BLOG_POSTS.filter((p) => (p.locale || "en") === locale);
+}
+
+
 
 export function getCategories(locale?: string): string[] {
   const posts = locale ? getAllPosts(locale) : BLOG_POSTS;

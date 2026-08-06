@@ -1,24 +1,23 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getTranslations } from "next-intl/server";
-import { getCountry, getCountryName, getHolidayPageTitle, getDemonym } from "@/lib/countries";
-import { getHolidays } from "@/lib/holidays";
-import { findLongWeekends } from "@/lib/longWeekend";
-import { getPostsByCountry } from "@/lib/blog-posts";
-import { holidayItemList, breadcrumb, faqPage } from "@/lib/seo";
+import { getCountry, getHolidayPageTitle, getHolidayPageDescription } from "@/lib/countries";
 import { routing } from "@/i18n/routing";
-import YearCalendar from "@/components/YearCalendar";
-import LongWeekendList from "@/components/LongWeekendList";
-import SubscribeButton from "@/components/SubscribeButton";
-import YearNav from "@/components/YearNav";
-import { Link } from "@/i18n/navigation";
+import CountryHolidayView from "@/components/CountryHolidayView";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
 
-// ISR: rendered on demand, cached 24h. No `generateStaticParams` — the
-// locale×country×year space is huge, so we let Next render on first request
-// and cache via `revalidate`. This avoids DYNAMIC_SERVER_USAGE at build time
-// (incomplete static params + a dynamic route is rejected during prerender).
+// Keep the year window in sync with YearNav (MIN_YEAR 2000 / MAX_YEAR 2035).
+const MIN_YEAR = 2000;
+const MAX_YEAR = 2035;
+
+function parseYear(raw: string): number | null {
+  const y = Number(raw);
+  if (!Number.isInteger(y) || y < MIN_YEAR || y > MAX_YEAR) return null;
+  return y;
+}
+
+// ISR: rendered on demand and cached for 24h. On-demand + `revalidate`
+// avoids DYNAMIC_SERVER_USAGE during static generation.
 export const revalidate = 86400;
 
 export async function generateMetadata({
@@ -26,21 +25,20 @@ export async function generateMetadata({
 }: {
   params: Promise<{ locale: string; country: string; year: string }>;
 }): Promise<Metadata> {
-  const { locale, country, year: yearStr } = await params;
+  const { locale, country, year } = await params;
   const meta = getCountry(country);
-  if (!meta) return {};
-  const year = Number(yearStr);
-  if (!Number.isInteger(year) || year < 2000 || year > 2035) return {};
-  const title = getHolidayPageTitle(country, locale, year);
-  const description = locale === "zh" ? `${meta.name}${year}年公共假期完整列表，含桥梁日和长周末规划。` : `Full list of ${year} public holidays in ${meta.name}, including bridge days and long weekends. Subscribe to your calendar.`;
+  const y = parseYear(year);
+  if (!meta || y === null) return {};
+  const title = getHolidayPageTitle(country, locale, y);
+  const description = getHolidayPageDescription(country, locale, y);
   const languages: Record<string, string> = {};
-  for (const l of routing.locales) languages[l] = `${SITE_URL}/${l}/${country}/${year}`;
+  for (const l of routing.locales) languages[l] = `${SITE_URL}/${l}/${country}/${y}`;
   return {
     title,
     description,
     alternates: {
-      canonical: `${SITE_URL}/${locale}/${country}/${year}`,
-      languages: { ...languages, "x-default": `${SITE_URL}/en/${country}/${year}` },
+      canonical: `${SITE_URL}/${locale}/${country}/${y}`,
+      languages: { ...languages, "x-default": `${SITE_URL}/en/${country}/${y}` },
     },
   };
 }
@@ -50,199 +48,8 @@ export default async function CountryYearPage({
 }: {
   params: Promise<{ locale: string; country: string; year: string }>;
 }) {
-  const { locale, country, year: yearStr } = await params;
-  const meta = getCountry(country);
-  if (!meta) notFound();
-
-  const year = Number(yearStr);
-  if (!Number.isInteger(year) || year < 2000 || year > 2035) notFound();
-
-  const t = await getTranslations("country");
-
-  let holidays;
-  try {
-    holidays = await getHolidays(country, year);
-  } catch {
-    return (
-      <div className="space-y-4">
-        <Link href="/" className="text-sm text-brand">
-          {t("backHome")}
-        </Link>
-        <p className="text-[var(--muted)]">{t("dataLag")}</p>
-      </div>
-    );
-  }
-
-  const longWeekends = findLongWeekends(holidays, year);
-
-  // Compute FAQ data from holiday data
-  const nationalCount = holidays.filter((h) => h.global).length;
-  const regionalCount = holidays.length - nationalCount;
-  const todayStr = new Date().toISOString().slice(0, 10);
-  const upcoming = holidays
-    .filter((h) => h.date >= todayStr)
-    .sort((a, b) => a.date.localeCompare(b.date));
-  const nextHoliday = upcoming[0] || null;
-  const allNational = nationalCount === holidays.length;
-
-  const faqItems = [
-    {
-      question: t("faqHowMany", { name: meta.name, year }),
-      answer: t("faqHowManyAnswer", { name: meta.name, count: holidays.length, year }),
-    },
-    ...(nextHoliday
-      ? [
-          {
-            question: t("faqNext", { name: meta.name }),
-            answer: t("faqNextAnswer", {
-              holiday: nextHoliday.name || nextHoliday.localName,
-              date: new Date(nextHoliday.date).toLocaleDateString(locale, {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              }),
-            }),
-          },
-        ]
-      : []),
-    {
-      question: t("faqAllNational", { name: meta.name }),
-      answer: t("faqAllNationalAnswer", {
-        yesno: allNational ? t("faqYes") : t("faqNo"),
-        national: nationalCount,
-        count: holidays.length,
-      }),
-    },
-    {
-      question: t("faqLongWeekends", { name: meta.name, year }),
-      answer: t("faqLongWeekendsAnswer", {
-        count: longWeekends.length,
-        name: meta.name,
-        year,
-      }),
-    },
-  ];
-
-  return (
-    <div className="space-y-8">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(holidayItemList(meta.name, year, holidays, locale)),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            breadcrumb([
-              { name: locale === "zh" ? "首页" : "Home", url: `${SITE_URL}/${locale}` },
-              { name: meta.name, url: `${SITE_URL}/${locale}/${country}` },
-              {
-                name: String(year),
-                url: `${SITE_URL}/${locale}/${country}/${year}`,
-              },
-            ])
-          ),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(faqPage(faqItems)),
-        }}
-      />
-      <div className="flex flex-wrap items-center justify-between gap-3">
-        <div>
-          <Link href="/" className="text-sm text-brand">
-            {t("backHome")}
-          </Link>
-          <h1 className="text-2xl font-bold">{t("yearView", { year })}</h1>
-          <p className="text-[var(--muted)]">{locale === "zh" ? getCountryName(country, locale) : `${meta.name} (${country})`}</p>
-        </div>
-        <SubscribeButton country={country} label={t("subscribe")} hint={t("subscribeHint")} />
-      </div>
-
-      <YearNav country={country} year={year} />
-
-      {/* Country Intro */}
-      <section className="space-y-2">
-        <p className="text-[var(--muted)] leading-relaxed">
-          {t("introSummary", {
-            name: meta.name,
-            year,
-            count: holidays.length,
-            national: nationalCount,
-            regional: regionalCount,
-          })}
-        </p>
-        {locale === "en" && (
-          <p className="text-[var(--muted)] leading-relaxed text-sm">
-            {t("bankHolidayNote", { name: meta.name, demonym: getDemonym(country), year })}
-          </p>
-        )}
-        {locale === "ar" && (
-          <p className="text-[var(--muted)] leading-relaxed text-sm">
-            {t("schoolHolidayNote", { name: getCountryName(country, "ar"), year })}
-          </p>
-        )}
-      </section>
-
-      <section className="space-y-3">
-        <h2 className="text-xl font-semibold">{t("holidays")}</h2>
-        <YearCalendar holidays={holidays} year={year} />
-      </section>
-
-      <section className="space-y-3">
-        <h2 className="text-xl font-semibold">{t("longWeekends")}</h2>
-        {locale === "en" && (
-          <p className="text-[var(--muted)] leading-relaxed text-sm">
-            {t("holidayWeekendNote", { name: meta.name, year })}
-          </p>
-        )}
-        <LongWeekendList items={longWeekends} />
-      </section>
-
-      {/* FAQ Section */}
-      {faqItems.length > 0 && (
-        <section className="space-y-4">
-          <h2 className="text-xl font-semibold">{t("faqHeading")}</h2>
-          <div className="space-y-4">
-            {faqItems.map((item, i) => (
-              <div key={i} className="border-b border-[var(--border)] pb-3 last:border-0">
-                <h3 className="font-medium mb-1">{item.question}</h3>
-                <p className="text-[var(--muted)] text-sm">{item.answer}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-      )}
-
-      {/* Related Blog Posts */}
-      {(() => {
-        const relatedPosts = getPostsByCountry(country);
-        if (relatedPosts.length === 0) return null;
-        return (
-          <section className="space-y-4">
-            <h2 className="text-xl font-semibold">{t("relatedBlogPosts")}</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {relatedPosts.map((post) => (
-                <Link
-                  key={post.id}
-                  href={`/${locale}/blog/${post.category}/${post.slug}`}
-                  className="border border-[var(--border)] rounded-lg p-4 hover:border-brand transition-colors space-y-1"
-                >
-                  <div className="text-xs text-[var(--muted)]">
-                    {post.category} • {post.author}
-                  </div>
-                  <h3 className="font-semibold leading-tight">{post.title}</h3>
-                  <p className="text-sm text-[var(--muted)]">{post.excerpt}</p>
-                </Link>
-              ))}
-            </div>
-          </section>
-        );
-      })()}
-    </div>
-  );
+  const { locale, country, year } = await params;
+  const y = parseYear(year);
+  if (y === null) notFound();
+  return <CountryHolidayView locale={locale} country={country} year={y} isYearPage={true} />;
 }

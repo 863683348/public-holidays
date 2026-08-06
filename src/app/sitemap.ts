@@ -8,7 +8,9 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.sh
 export default function sitemap(): MetadataRoute.Sitemap {
   const urls: MetadataRoute.Sitemap = [];
   const year = new Date().getFullYear();
-  const years = [year - 1, year, year + 1, year + 2];
+  // Past 1 year through next 5 years — keeps the sitemap focused on
+  // discoverable, near-term long-tail while YearNav allows 2000–2035 on demand.
+  const years = Array.from({ length: 7 }, (_, i) => year - 1 + i);
 
   for (const l of routing.locales) {
     // Homepage (highest priority)
