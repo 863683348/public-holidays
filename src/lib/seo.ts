@@ -242,3 +242,36 @@ export function holidayEventList(
     }),
   };
 }
+
+// ==========================================
+// Detail-page WebPage structured data (SPEC-002 §3b) — the fourth ld+json
+// block on HolidayDetailView. Mirrors the WebPage shape on the country/year
+// pages (author/publisher/isPartOf Organization "PubHoliday"), with
+// `mainEntity` pointing at the Event node's @id instead of an inline list.
+// ==========================================
+
+export function webPageDetail(opts: {
+  canonical: string;
+  title: string;
+  description: string;
+  locale: string;
+  dateModified: string;
+  eventId: string;
+}): Record<string, unknown> {
+  const siteUrl =
+    process.env.NEXT_PUBLIC_SITE_URL || "https://public-holidays.shop";
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": opts.canonical,
+    url: opts.canonical,
+    name: opts.title,
+    description: opts.description,
+    inLanguage: opts.locale,
+    dateModified: opts.dateModified,
+    author: { "@type": "Organization", name: "PubHoliday", url: siteUrl },
+    publisher: { "@type": "Organization", name: "PubHoliday", url: siteUrl },
+    isPartOf: { "@type": "WebSite", name: "PubHoliday", url: siteUrl },
+    mainEntity: { "@id": opts.eventId },
+  };
+}
