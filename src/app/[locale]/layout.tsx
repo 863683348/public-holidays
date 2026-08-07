@@ -133,15 +133,15 @@ export default async function LocaleLayout({
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <NextIntlClientProvider messages={messages}>
             <header className="border-b border-[var(--border)]">
-              <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-3 px-4 py-3">
-              <div className="flex items-center gap-5">
+              <div className="flex w-full items-center justify-between gap-2 px-3 py-2.5">
+              <div className="flex min-w-0 items-center gap-4">
                 <Link
                   href="/"
                   className="text-lg font-semibold text-brand transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg)] rounded-sm"
                 >
                   PubHoliday
                 </Link>
-                <nav className="flex items-center gap-3 text-sm">
+                <nav className="flex min-w-0 flex-1 items-center justify-center gap-3 overflow-x-auto whitespace-nowrap text-sm">
                   <Link
                     href="/compare"
                     className="text-[var(--muted)] transition-colors hover:text-[var(--fg)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--ring)] rounded-sm"
