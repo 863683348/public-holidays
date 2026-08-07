@@ -1,4 +1,4 @@
-import type { Holiday } from "./types";
+import type { Holiday, HolidayGroup } from "./types";
 
 // Structured data helpers shared by country / year pages.
 // Kept dependency-free so they can run at render time in RSC.
@@ -12,7 +12,7 @@ export function holidayItemList(
   return {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: locale === "zh" ? `${countryName} ${year}?????` : `${countryName} public holidays ${year}`,
+    name: locale === "zh" ? `${countryName} ${year}年公共假期` : `${countryName} public holidays ${year}`,
     itemListElement: holidays.map((h, i) => ({
       "@type": "ListItem",
       position: i + 1,
@@ -103,7 +103,7 @@ export function articleStructuredData(
     },
     publisher: {
       "@type": "Organization",
-      name: locale === "zh" ? "??????" : "PubHoliday",
+      name: "PubHoliday",
       logo: {
         "@type": "ImageObject",
         url: imageUrl,
@@ -145,5 +145,100 @@ export function faqPage(questions: { question: string; answer: string }[]) {
         text: q.answer,
       },
     })),
+  };
+}
+
+// ==========================================
+// Single-holiday detail-page structured data (ADR-001 §6)
+// ==========================================
+
+/**
+ * Event node for a single-date holiday group. `Event` here is for entity
+ * disambiguation, not for Event rich results — expect GSC "valid with
+ * warnings". Do NOT add offers / performer / venue to silence those warnings
+ * (ADR-001 §6.1).
+ */
+export function holidayEvent(
+  group: HolidayGroup,
+  countryCode: string,
+  countryName: string,
+  locale: string,
+  url: string
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "@id": `${url}#event`,
+    url,
+    name: group.name,
+    ...(group.localName && group.localName !== group.name
+      ? { alternateName: group.localName }
+      : {}),
+    startDate: group.primaryDate,
+    endDate: group.primaryDate,
+    eventStatus: "https://schema.org/EventScheduled",
+    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+    isAccessibleForFree: true,
+    inLanguage: locale,
+    location: {
+      "@type": "Place",
+      name: countryName,
+      address: {
+        "@type": "PostalAddress",
+        addressCountry: countryCode,
+      },
+    },
+  };
+}
+
+/**
+ * ItemList of Event nodes for a multi-date holiday group (dates.length > 1),
+ * one Event per date. When a date maps to records carrying a single ISO-3166-2
+ * region code, that code is emitted as `addressRegion` — real data, never
+ * fabricated. Mirrors the `holidayItemList` convention.
+ */
+export function holidayEventList(
+  group: HolidayGroup,
+  countryCode: string,
+  countryName: string,
+  locale: string,
+  url: string
+) {
+  const year = group.primaryDate.slice(0, 4);
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: `${group.name} — ${countryName} ${year}`,
+    itemListElement: group.dates.map((date, i) => {
+      const onDate = group.records.filter((r) => r.date === date);
+      const regionCodes = [
+        ...new Set(onDate.flatMap((r) => r.counties ?? [])),
+      ];
+      const address = {
+        "@type": "PostalAddress",
+        addressCountry: countryCode,
+        // Only when unambiguous — a single region code for this date.
+        ...(regionCodes.length === 1 ? { addressRegion: regionCodes[0] } : {}),
+      };
+      return {
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Event",
+          name: group.name,
+          startDate: date,
+          endDate: date,
+          eventStatus: "https://schema.org/EventScheduled",
+          eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+          isAccessibleForFree: true,
+          inLanguage: locale,
+          location: {
+            "@type": "Place",
+            name: countryName,
+            address,
+          },
+        },
+      };
+    }),
   };
 }

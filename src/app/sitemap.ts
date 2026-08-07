@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { routing } from "@/i18n/routing";
-import { COUNTRIES } from "@/lib/countries";
+import { COUNTRIES, NO_DATA_COUNTRIES } from "@/lib/countries";
 import { BLOG_POSTS } from "@/lib/blog-posts";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
@@ -50,7 +50,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       });
     }
 
-    for (const c of COUNTRIES) {
+    // Exclude countries the upstream has no data for — their pages are noindex.
+    const listedCountries = COUNTRIES.filter(
+      (c) => !NO_DATA_COUNTRIES.has(c.code.toUpperCase())
+    );
+    for (const c of listedCountries) {
       // Country landing (current year)
       urls.push({
         url: `${SITE_URL}/${l}/${c.code}`,

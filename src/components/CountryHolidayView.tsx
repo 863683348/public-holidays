@@ -1,6 +1,7 @@
 import React from "react";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
+import { CalendarDays } from "lucide-react";
 import {
   COUNTRIES,
   getCountry,
@@ -253,7 +254,7 @@ export default async function CountryHolidayView({
       {/* Next holiday highlight */}
       {nextHoliday && (
         <section className="rounded-xl border border-[var(--brand)]/30 bg-[var(--brand)]/5 p-4 flex items-center gap-4">
-          <div className="text-3xl" aria-hidden>📅</div>
+          <CalendarDays size={32} strokeWidth={1.5} className="shrink-0 text-[var(--brand)]" aria-hidden />
           <div>
             <p className="text-xs uppercase tracking-wide text-[var(--muted)]">{th("nextHoliday")}</p>
             <p className="font-semibold text-lg leading-tight">

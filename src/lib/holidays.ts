@@ -60,6 +60,14 @@ export async function getHolidays(
     if (!res.ok) {
       throw new Error(`Holiday upstream error ${res.status} for ${country}/${year}`);
     }
+    // Nager signals "no data for this country/year" with HTTP 204 No Content.
+    // `res.ok` is true for 204, so `res.json()` on the empty body would throw a
+    // SyntaxError. Cache `[]` (which also stops the un-cached re-fetch storm) and
+    // return an empty list — the caller renders an honest, noindex empty state.
+    if (res.status === 204) {
+      await cache.put(key, "[]");
+      return [];
+    }
     const data = (await res.json()) as Holiday[];
     await cache.put(key, JSON.stringify(data));
     return data;

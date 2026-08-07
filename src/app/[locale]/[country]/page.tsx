@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getCountry, getHolidayPageTitle, getHolidayPageDescription } from "@/lib/countries";
+import { getCountry, getHolidayPageTitle, getHolidayPageDescription, NO_DATA_COUNTRIES } from "@/lib/countries";
 import { routing } from "@/i18n/routing";
 import CountryHolidayView from "@/components/CountryHolidayView";
 
@@ -23,9 +23,13 @@ export async function generateMetadata({
   const description = getHolidayPageDescription(country, locale, year);
   const languages: Record<string, string> = {};
   for (const l of routing.locales) languages[l] = `${SITE_URL}/${l}/${country}`;
+  // Countries the upstream has no data for render an honest empty state — keep
+  // them out of the index but let crawlers follow the internal links (ADR-001 Q1).
+  const noData = NO_DATA_COUNTRIES.has(country.toUpperCase());
   return {
     title,
     description,
+    ...(noData ? { robots: { index: false, follow: true } } : {}),
     alternates: {
       canonical: `${SITE_URL}/${locale}/${country}`,
       languages: { ...languages, "x-default": `${SITE_URL}/en/${country}` },

@@ -1,5 +1,6 @@
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
+import { MIN_YEAR, MAX_YEAR } from "@/lib/year-window";
 
 const base =
   "inline-flex items-center justify-center min-w-[2.75rem] px-3 py-1.5 rounded-md text-sm font-medium border transition-colors";
@@ -15,8 +16,6 @@ export default function YearNav({
   year: number;
 }) {
   const t = useTranslations("yearNav");
-  const MIN_YEAR = 2000;
-  const MAX_YEAR = 2035;
   const clamp = (y: number) => Math.min(MAX_YEAR, Math.max(MIN_YEAR, y));
   // Wider archive window (4 consecutive years) to improve discovery of
   // historical and upcoming-year holiday pages.
