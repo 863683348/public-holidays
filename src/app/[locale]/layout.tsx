@@ -141,7 +141,25 @@ export default async function LocaleLayout({
                 >
                   PubHoliday
                 </Link>
-                <nav className="flex items-center gap-4 text-sm">
+                <nav className="flex items-center gap-3 text-sm">
+                  <Link
+                    href="/compare"
+                    className="text-[var(--muted)] transition-colors hover:text-[var(--fg)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--ring)] rounded-sm"
+                  >
+                    {tNav("compare")}
+                  </Link>
+                  <Link
+                    href="/today"
+                    className="text-[var(--muted)] transition-colors hover:text-[var(--fg)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--ring)] rounded-sm"
+                  >
+                    {tNav("today")}
+                  </Link>
+                  <Link
+                    href="/world-clock"
+                    className="text-[var(--muted)] transition-colors hover:text-[var(--fg)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--ring)] rounded-sm"
+                  >
+                    {tNav("worldClock")}
+                  </Link>
                   <Link
                     href="/pricing"
                     className="text-[var(--muted)] transition-colors hover:text-[var(--fg)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--ring)] rounded-sm"

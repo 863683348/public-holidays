@@ -6,10 +6,14 @@
   "nav": {
     "home": "Home",
     "pricing": "Prezzi",
-    "account": "Account"
+    "account": "Account",
+    "compare": "Confronta paesi",
+    "today": "Festività di oggi",
+    "worldClock": "Orologio Mondiale"
   },
   "home": {
     "heading": "Festività pubbliche in tutto il mondo",
+    "localTime": "La tua ora locale",
     "subtitle": "Scegli un paese per vedere le sue festività, pianificare i ponti e iscriverti al calendario.",
     "searchPlaceholder": "Cerca un paese...",
     "popular": "Paesi popolari",

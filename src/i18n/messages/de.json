@@ -6,10 +6,14 @@
   "nav": {
     "home": "Start",
     "pricing": "Preise",
-    "account": "Konto"
+    "account": "Konto",
+    "compare": "Länder vergleichen",
+    "today": "Feiertage heute",
+    "worldClock": "Weltuhr"
   },
   "home": {
     "heading": "Feiertage weltweit",
+    "localTime": "Deine Ortszeit",
     "subtitle": "Wähle ein Land, um seine Feiertage zu sehen, lange Wochenenden zu planen und den Kalender zu abonnieren.",
     "searchPlaceholder": "Land suchen...",
     "popular": "Beliebte Länder",

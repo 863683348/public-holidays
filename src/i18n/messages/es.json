@@ -6,10 +6,14 @@
   "nav": {
     "home": "Inicio",
     "pricing": "Precios",
-    "account": "Cuenta"
+    "account": "Cuenta",
+    "compare": "Comparar países",
+    "today": "Fiestas de hoy",
+    "worldClock": "Reloj Mundial"
   },
   "home": {
     "heading": "Festivos públicos, en todo el mundo",
+    "localTime": "Tu hora local",
     "subtitle": "Elige un país para ver sus festivos, planificar puentes y suscribirte a tu calendario.",
     "searchPlaceholder": "Busca un país...",
     "popular": "Países populares",

@@ -9,6 +9,7 @@ import CountrySelector from "@/components/CountrySelector";
 import TodayHolidays from "@/components/TodayHolidays";
 import MyHolidays from "@/components/MyHolidays";
 import AdSlot from "@/components/AdSlot";
+import LocalTime from "@/components/LocalTime";
 
 const FEATURED_COUNTRIES = POPULAR_COUNTRIES.slice(0, 8);
 
@@ -54,6 +55,8 @@ export default async function HomePage({
         <h1 className="text-3xl font-bold">{t("heading")}</h1>
         <p className="max-w-2xl text-[var(--muted)]">{t("subtitle")}</p>
       </section>
+
+      <LocalTime locale={locale} />
 
       <CountrySelector countries={COUNTRIES} placeholder={t("searchPlaceholder")} />
 

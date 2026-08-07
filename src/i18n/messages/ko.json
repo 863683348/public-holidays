@@ -6,10 +6,14 @@
   "nav": {
     "home": "홈",
     "pricing": "요금",
-    "account": "계정"
+    "account": "계정",
+    "compare": "국가 비교",
+    "today": "오늘의 공휴일",
+    "worldClock": "세계 시계"
   },
   "home": {
     "heading": "전 세계 공휴일을 한곳에서",
+    "localTime": "내 현지 시간",
     "subtitle": "국가를 선택하여 공휴일을 확인하고, 긴 주말을 계획하며, 캘린더에 구독하세요.",
     "searchPlaceholder": "국가 검색...",
     "popular": "인기 국가",

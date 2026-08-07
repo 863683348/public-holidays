@@ -6,10 +6,14 @@
   "nav": {
     "home": "Início",
     "pricing": "Preços",
-    "account": "Conta"
+    "account": "Conta",
+    "compare": "Comparar países",
+    "today": "Feriados de hoje",
+    "worldClock": "Relógio Mundial"
   },
   "home": {
     "heading": "Feriados públicos, mundo todo",
+    "localTime": "Sua hora local",
     "subtitle": "Escolha um país para ver seus feriados, planejar feriados prolongados e assinar o calendário.",
     "searchPlaceholder": "Buscar um país...",
     "popular": "Países populares",

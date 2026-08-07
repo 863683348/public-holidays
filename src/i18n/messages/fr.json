@@ -6,10 +6,14 @@
   "nav": {
     "home": "Accueil",
     "pricing": "Tarifs",
-    "account": "Compte"
+    "account": "Compte",
+    "compare": "Comparer les pays",
+    "today": "Fêtes d'aujourd'hui",
+    "worldClock": "Horloge Mondiale"
   },
   "home": {
     "heading": "Jours fériés dans le monde",
+    "localTime": "Votre heure locale",
     "subtitle": "Choisissez un pays pour voir ses fériés, planifier des ponts et vous abonner à votre calendrier.",
     "searchPlaceholder": "Rechercher un pays...",
     "popular": "Pays populaires",

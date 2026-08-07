@@ -6,10 +6,14 @@
   "nav": {
     "home": "Home",
     "pricing": "Pricing",
-    "account": "Account"
+    "account": "Account",
+    "compare": "Compare countries",
+    "today": "Today's holidays",
+    "worldClock": "World Clock"
   },
   "home": {
     "heading": "Public holidays, worldwide",
+    "localTime": "Your local time",
     "subtitle": "Pick a country to see its holidays, plan long weekends, and subscribe to your calendar.",
     "searchPlaceholder": "Search a country...",
     "popular": "Popular countries",
