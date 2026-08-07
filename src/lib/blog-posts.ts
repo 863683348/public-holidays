@@ -1471,7 +1471,550 @@ export const BLOG_POSTS: BlogPost[] = [
       <p><strong>国王生日各州同一天吗？</strong> 不同。东部多数州用 6 月第二个周一（2026 年为 6 月 8 日），昆州在 10 月，西澳在 9 月底。</p>
       <p>到 PubHoliday 查看完整的<a href="https://public-holidays.shop/en/AU">澳大利亚 2026 公共假日日历</a>，或从<a href="https://public-holidays.shop">首页</a>把任意国家的假日同步进你的日历。</p>
     `,
-  }
+  },
+  // ========================================================================
+  // TIER 3 (T3-③): long-weekend deep-dive cluster — US 2026
+  // Dates verified against Nager API 2026 + findLongWeekends (see tmp/lw-guide-calc.cjs)
+  // ========================================================================
+  {
+    id: 117,
+    title: "US Long Weekends in 2026: 13 Getaways, 10 from Federal Holidays",
+    slug: "us-long-weekends-2026",
+    category: "travel",
+    author: "PubHoliday Research Team",
+    publishedDate: "2026-08-07T09:00:00Z",
+    lastModified: "2026-08-07T09:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/long-weekend-2027-guide.svg",
+    excerpt: "2026 gives US workers 10 federal long weekends plus 3 regional extras. Full list with dates, bridge-day tips, and the two 4-day getaways hiding in the calendar.",
+    relatedCountries: ["US", "CA"],
+    locale: "en",
+    faq: [
+      { question: "How many long weekends does the US have in 2026?", answer: "13 total: 10 from federal holidays (New Year's, MLK Jr. Day, Presidents Day, Memorial Day, Juneteenth, Independence Day, Labor Day, Columbus Day, Thanksgiving, Christmas) plus 3 regional ones (Good Friday, Lincoln's Birthday, Truman Day) that only apply in some states." },
+      { question: "Which 2026 US long weekends give 4 days off?", answer: "Two: New Year's (Jan 1-4) if you take Friday Jan 2 off, and Thanksgiving (Nov 26-29) if you take Friday Nov 27 off. Both are bridge-day long weekends." },
+      { question: "Is Veterans Day 2026 a long weekend?", answer: "No. Veterans Day falls on Wednesday Nov 11, 2026, so it sits mid-week with no adjacent weekend. It is the only one of the 11 federal holidays in 2026 that does not create a long weekend." },
+    ],
+    content: `
+      <p>If you work in the United States, 2026 is a generous year for long weekends. Between the ten federal holidays that land near a weekend and a handful of state-level extras, most Americans can count on <strong>13 three-day (or longer) breaks</strong> — and two of them stretch to four days with a single vacation day. This guide lists every one of them with exact dates, so you can book travel before prices spike.</p>
+
+      <h2>The 10 federal long weekends in 2026</h2>
+      <p>These apply nationwide, wherever you work. Each entry shows the full break (Saturday through the holiday, unless noted) and the holiday that creates it.</p>
+      <table class="min-w-full border-collapse border border-gray-300 mb-4">
+        <thead><tr class="bg-gray-100"><th class="border p-2">Long weekend</th><th class="border p-2">Dates</th><th class="border p-2">Holiday</th></tr></thead>
+        <tbody>
+          <tr><td class="border p-2">New Year's (4 days with bridge)</td><td class="border p-2">Jan 1-4, 2026</td><td class="border p-2"><a href="https://public-holidays.shop/en/US/2026/new-years-day">New Year's Day</a></td></tr>
+          <tr><td class="border p-2">MLK Jr. Day</td><td class="border p-2">Jan 17-19, 2026</td><td class="border p-2"><a href="https://public-holidays.shop/en/US/2026/martin-luther-king-jr-day">Martin Luther King, Jr. Day</a></td></tr>
+          <tr><td class="border p-2">Presidents Day</td><td class="border p-2">Feb 14-16, 2026</td><td class="border p-2"><a href="https://public-holidays.shop/en/US/2026/presidents-day">Presidents Day</a></td></tr>
+          <tr><td class="border p-2">Memorial Day</td><td class="border p-2">May 23-25, 2026</td><td class="border p-2"><a href="https://public-holidays.shop/en/US/2026/memorial-day">Memorial Day</a></td></tr>
+          <tr><td class="border p-2">Juneteenth</td><td class="border p-2">Jun 19-21, 2026</td><td class="border p-2"><a href="https://public-holidays.shop/en/US/2026/juneteenth-national-independence-day">Juneteenth National Independence Day</a></td></tr>
+          <tr><td class="border p-2">Independence Day</td><td class="border p-2">Jul 3-5, 2026</td><td class="border p-2"><a href="https://public-holidays.shop/en/US/2026/independence-day">Independence Day</a> (observed Jul 3)</td></tr>
+          <tr><td class="border p-2">Labor Day</td><td class="border p-2">Sep 5-7, 2026</td><td class="border p-2"><a href="https://public-holidays.shop/en/US/2026/labour-day">Labor Day</a></td></tr>
+          <tr><td class="border p-2">Columbus Day</td><td class="border p-2">Oct 10-12, 2026</td><td class="border p-2"><a href="https://public-holidays.shop/en/US/2026/columbus-day">Columbus Day</a></td></tr>
+          <tr><td class="border p-2">Thanksgiving (4 days with bridge)</td><td class="border p-2">Nov 26-29, 2026</td><td class="border p-2"><a href="https://public-holidays.shop/en/US/2026/thanksgiving-day">Thanksgiving Day</a></td></tr>
+          <tr><td class="border p-2">Christmas</td><td class="border p-2">Dec 25-27, 2026</td><td class="border p-2"><a href="https://public-holidays.shop/en/US/2026/christmas-day">Christmas Day</a></td></tr>
+        </tbody>
+      </table>
+      <p>The formula is simple: five federal holidays land on Mondays in 2026 (MLK, Presidents, Memorial, Labor, and Columbus), and two land on Fridays (Juneteenth and the Independence Day observance). Friday and Monday holidays are automatic three-day weekends with zero vacation time.</p>
+
+      <h2>Why Independence Day gives you Jul 3-5</h2>
+      <p>July 4, 2026 falls on a Saturday. Federal workers and most private employers observe the holiday on Friday July 3 instead, turning the weekend into a natural <strong>Jul 3-5 run</strong>. If your state observes it on Saturday instead, you still get the Saturday-Sunday weekend plus a floating holiday — check your employer's calendar.</p>
+
+      <h2>The 3 regional extras (state-dependent)</h2>
+      <p>Beyond the federal list, three holidays create long weekends in 2026 but only in certain states:</p>
+      <ul>
+        <li><strong>Good Friday</strong> — Apr 3-5, 2026. A public holiday in about a dozen states including Texas, California (stock exchange observance), and parts of the Northeast; many more states give it to state employees.</li>
+        <li><strong>Lincoln's Birthday</strong> — Feb 12-15, 2026 with a Feb 13 bridge. Observed in California, Connecticut, Illinois, New York and others; combine with Presidents Day on Feb 16 for a very long run if you can take the week.</li>
+        <li><strong>Truman Day</strong> — May 8-10, 2026. Missouri only; a Friday holiday that creates a May 8-10 weekend.</li>
+      </ul>
+      <p>That brings the state-dependent total to 13, though almost nobody gets all three — check the <a href="https://public-holidays.shop/en/US/2026">US 2026 calendar</a> for your state's exact list.</p>
+
+      <h2>The two 4-day getaways: use one vacation day</h2>
+      <p>2026 hides two four-day breaks behind a single PTO day:</p>
+      <ul>
+        <li><strong>New Year's (Jan 1-4):</strong> Jan 1 is a Thursday, so take Friday Jan 2 off and you own Thursday through Sunday.</li>
+        <li><strong>Thanksgiving (Nov 26-29):</strong> Thanksgiving is Thursday Nov 26; take Friday Nov 27 off and you get a four-day holiday weekend right before the December rush.</li>
+      </ul>
+
+      <h2>Best months to plan around</h2>
+      <p>May is the richest month with three long weekends (May 8-10 regional, May 23-25 Memorial Day, plus the Apr 3-5 Good Friday run bleeding into early May for state workers). January gives you two breaks within three weeks. July, September, October and November each deliver one reliable getaway, and December closes the year with Christmas on a Friday — a natural Dec 25-27 weekend.</p>
+      <p>Book early for the Thanksgiving window; it is the single most expensive travel period in the US. For the rest, booking 6-8 weeks out typically beats last-minute fares by 20-40%.</p>
+
+      <h2>Frequently Asked Questions</h2>
+      <p><strong>Which US federal holidays in 2026 are NOT long weekends?</strong> Veterans Day (Wed Nov 11) and — if you count it — the floating federal holidays that get substituted. Veterans Day is the only mid-week federal holiday in 2026.</p>
+      <p><strong>Can I turn Presidents Day into a longer break?</strong> Yes. Presidents Day is Monday Feb 16, 2026. Take Feb 17-20 off and you connect the Feb 14-16 weekend to the following weekend for nine consecutive days.</p>
+      <p><strong>Does the US get substitute days when a holiday falls on Saturday?</strong> Federal law observes Saturday holidays on the preceding Friday. That is why Independence Day lands on Jul 3 in 2026. Most states follow the same rule, but not all — verify your state's observance.</p>
+    `,
+  },
+  {
+    id: 118,
+    title: "美国 2026 年长周末全攻略：13 个假期窗口，10 个来自联邦假日",
+    slug: "us-long-weekends-2026",
+    category: "travel",
+    author: "PubHoliday 研究团队",
+    publishedDate: "2026-08-07T09:00:00Z",
+    lastModified: "2026-08-07T09:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/long-weekend-2027-guide.svg",
+    excerpt: "2026 年美国人有 10 个联邦假日长周末，加上少数州的额外假日共 13 个。附完整日期表、拼假建议，以及藏在日历里的两个四天长假。",
+    relatedCountries: ["US", "CA"],
+    locale: "zh",
+    faq: [
+      { question: "2026 年美国有多少个长周末？", answer: "共 13 个：10 个来自联邦假日（元旦、马丁·路德·金纪念日、总统日、阵亡将士纪念日、六月节、独立日、劳动节、哥伦布日、感恩节、圣诞节），外加只在部分州生效的 3 个地区性假日（耶稣受难日、林肯诞辰、杜鲁门日）。" },
+      { question: "2026 年哪些美国长周末能休 4 天？", answer: "两个：元旦（1 月 1-4 日）只要在 1 月 2 日周五请假，以及感恩节（11 月 26-29 日）只要在 11 月 27 日周五请假。两者都属于拼假型长周末。" },
+      { question: "2026 年退伍军人节是长周末吗？", answer: "不是。2026 年退伍军人节落在 11 月 11 日周三，处于周中，不挨着周末。它是 2026 年唯一不构成长周末的联邦假日。" },
+    ],
+    content: `
+      <p>如果你在美国工作，2026 年是长周末相当慷慨的一年。十个靠近周末的联邦假日，加上少数州层面的额外假日，多数美国人能数出 <strong>13 个三天或更长的假期窗口</strong>——其中两个只需请一天假就能变成四天。本文列出每一个的准确日期，方便你提前订票、避开涨价。</p>
+
+      <h2>2026 年 10 个联邦假日长周末</h2>
+      <p>以下假期全国适用，无论你在哪个州工作。每条列出完整的休息区间（通常从周六到假日当天）和对应的假日。</p>
+      <table class="min-w-full border-collapse border border-gray-300 mb-4">
+        <thead><tr class="bg-gray-100"><th class="border p-2">长周末</th><th class="border p-2">日期</th><th class="border p-2">假日</th></tr></thead>
+        <tbody>
+          <tr><td class="border p-2">元旦（拼假可休 4 天）</td><td class="border p-2">2026 年 1 月 1-4 日</td><td class="border p-2"><a href="https://public-holidays.shop/en/US/2026/new-years-day">元旦</a></td></tr>
+          <tr><td class="border p-2">马丁·路德·金纪念日</td><td class="border p-2">2026 年 1 月 17-19 日</td><td class="border p-2"><a href="https://public-holidays.shop/en/US/2026/martin-luther-king-jr-day">马丁·路德·金纪念日</a></td></tr>
+          <tr><td class="border p-2">总统日</td><td class="border p-2">2026 年 2 月 14-16 日</td><td class="border p-2"><a href="https://public-holidays.shop/en/US/2026/presidents-day">总统日</a></td></tr>
+          <tr><td class="border p-2">阵亡将士纪念日</td><td class="border p-2">2026 年 5 月 23-25 日</td><td class="border p-2"><a href="https://public-holidays.shop/en/US/2026/memorial-day">阵亡将士纪念日</a></td></tr>
+          <tr><td class="border p-2">六月节</td><td class="border p-2">2026 年 6 月 19-21 日</td><td class="border p-2"><a href="https://public-holidays.shop/en/US/2026/juneteenth-national-independence-day">六月节</a></td></tr>
+          <tr><td class="border p-2">独立日</td><td class="border p-2">2026 年 7 月 3-5 日</td><td class="border p-2"><a href="https://public-holidays.shop/en/US/2026/independence-day">独立日</a>（7 月 3 日补休）</td></tr>
+          <tr><td class="border p-2">劳动节</td><td class="border p-2">2026 年 9 月 5-7 日</td><td class="border p-2"><a href="https://public-holidays.shop/en/US/2026/labour-day">劳动节</a></td></tr>
+          <tr><td class="border p-2">哥伦布日</td><td class="border p-2">2026 年 10 月 10-12 日</td><td class="border p-2"><a href="https://public-holidays.shop/en/US/2026/columbus-day">哥伦布日</a></td></tr>
+          <tr><td class="border p-2">感恩节（拼假可休 4 天）</td><td class="border p-2">2026 年 11 月 26-29 日</td><td class="border p-2"><a href="https://public-holidays.shop/en/US/2026/thanksgiving-day">感恩节</a></td></tr>
+          <tr><td class="border p-2">圣诞节</td><td class="border p-2">2026 年 12 月 25-27 日</td><td class="border p-2"><a href="https://public-holidays.shop/en/US/2026/christmas-day">圣诞节</a></td></tr>
+        </tbody>
+      </table>
+      <p>规律很简单：2026 年有五个联邦假日落在周一（马丁·路德·金、总统日、阵亡将士纪念日、劳动节、哥伦布日），两个落在周五（六月节和独立日补休）。周五和周一的假日等于自动获得三天周末，完全不用请假。</p>
+
+      <h2>为什么独立日能休 7 月 3-5 日</h2>
+      <p>2026 年 7 月 4 日正好是周六。联邦雇员和多数私营企业把假日提前到周五 7 月 3 日放假，于是形成天然的 <strong>7 月 3-5 日三连休</strong>。如果你的州按周六放假，那周末照常，假日另行调休——请以雇主日历为准。</p>
+
+      <h2>3 个地区性额外长周末（看州）</h2>
+      <p>除联邦假日外，2026 年还有三个假日能构成长周末，但只在部分州生效：</p>
+      <ul>
+        <li><strong>耶稣受难日</strong> — 2026 年 4 月 3-5 日。德克萨斯、加利福尼亚（交易所休市）和东北部部分州等约十二个州是公共假日；更多州给州政府雇员放假。</li>
+        <li><strong>林肯诞辰</strong> — 2026 年 2 月 12-15 日，2 月 13 日拼假。加利福尼亚、康涅狄格、伊利诺伊、纽约等州生效；若能连请一周，可与 2 月 16 日总统日接成超长假期。</li>
+        <li><strong>杜鲁门日</strong> — 2026 年 5 月 8-10 日。仅密苏里州；周五假日构成 5 月 8-10 日三连休。</li>
+      </ul>
+      <p>这样地区性合计最多 13 个，但几乎没有人三个都能休——请到 <a href="https://public-holidays.shop/en/US/2026">美国 2026 假日日历</a>核对本州的完整列表。</p>
+
+      <h2>两个四天长假：各请一天假</h2>
+      <p>2026 年藏着两个只需一天年假就能拿下的四天连休：</p>
+      <ul>
+        <li><strong>元旦（1 月 1-4 日）：</strong>1 月 1 日是周四，请掉周五 1 月 2 日，就拥有周四到周日四天。</li>
+        <li><strong>感恩节（11 月 26-29 日）：</strong>感恩节在周四 11 月 26 日，请掉周五 11 月 27 日，赶在 12 月大忙季前拿到四天假期。</li>
+      </ul>
+
+      <h2>最佳规划月份</h2>
+      <p>五月最富：三个长周末（5 月 8-10 日地区性、5 月 23-25 日阵亡将士纪念日，4 月 3-5 日耶稣受难日还紧挨着五月初）。一月在三个星期内有两个假期窗口。七月、九月、十月和十一月各有一个稳定的三连休，十二月以圣诞节周五收官，自然形成 12 月 25-27 日周末。</p>
+      <p>感恩节窗口务必提前订票，它是全美最贵的出行时段。其余假期提前 6-8 周订，通常比临期便宜 20-40%。</p>
+
+      <h2>常见问题</h2>
+      <p><strong>2026 年哪些美国联邦假日不构成长周末？</strong> 退伍军人节（11 月 11 日周三）。它是 2026 年唯一落在周中的联邦假日。</p>
+      <p><strong>总统日能拼成更长的假期吗？</strong> 能。总统日是 2026 年 2 月 16 日周一，请掉 2 月 17-20 日，就能把 2 月 14-16 日周末与下个周末连成九天。</p>
+      <p><strong>假日撞周六美国有补休吗？</strong> 联邦规定周六假日提前到周五补休，所以 2026 年独立日在 7 月 3 日放假。多数州遵循同样规则，但不是全部——请核对本州规定。</p>
+    `,
+  },
+  // ========================================================================
+  // TIER 3 (T3-③): long-weekend deep-dive cluster — GB 2026
+  // ========================================================================
+  {
+    id: 119,
+    title: "UK Long Weekends in 2026: Bank Holidays and Bridge Days, Region by Region",
+    slug: "uk-long-weekends-2026",
+    category: "travel",
+    author: "PubHoliday Research Team",
+    publishedDate: "2026-08-07T09:00:00Z",
+    lastModified: "2026-08-07T09:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/uk-bank-holidays.svg",
+    excerpt: "England & Wales get 6 long weekends in 2026; Scotland and Northern Ireland get more. Complete UK bank-holiday long weekend list with exact dates and bridge tips.",
+    relatedCountries: ["GB", "IE"],
+    locale: "en",
+    faq: [
+      { question: "How many long weekends does the UK have in 2026?", answer: "England & Wales have 6 (New Year, Easter, Early May, Spring, Summer, Christmas). Scotland has 8 — it keeps New Year, Early May, Spring and Christmas but skips Easter Monday, and adds 2 January, a World Cup bank holiday in June, Summer on Aug 3 and St Andrew's Day. Northern Ireland has 8, adding St Patrick's Day and Battle of the Boyne to the E&W core." },
+      { question: "Is there a 4-day UK long weekend in 2026?", answer: "Yes, two: Easter (Good Friday Apr 3 through Easter Monday Apr 6) is a natural 4-day break with no annual leave, and Christmas (Dec 25-28) is a 4-day run thanks to the Boxing Day substitute on Monday Dec 28." },
+      { question: "What is the Boxing Day substitute in 2026?", answer: "Boxing Day falls on Saturday Dec 26, 2026, so the bank holiday moves to Monday Dec 28 (St. Stephen's Day). Combined with Christmas on Friday Dec 25, that gives a Dec 25-28 four-day weekend." },
+    ],
+    content: `
+      <p>The UK's long-weekend story in 2026 is a story of three different calendars. England & Wales get six bank-holiday long weekends, Scotland gets eight, and Northern Ireland gets eight — and two of the best breaks (Easter in England & Wales, and Christmas) are natural four-dayers that need zero annual leave. Here is the full picture with exact dates.</p>
+
+      <h2>England & Wales: 6 long weekends in 2026</h2>
+      <p>England and Wales have eight bank holidays in 2026, and six of them land next to a weekend:</p>
+      <table class="min-w-full border-collapse border border-gray-300 mb-4">
+        <thead><tr class="bg-gray-100"><th class="border p-2">Long weekend</th><th class="border p-2">Dates</th><th class="border p-2">Bank holiday</th></tr></thead>
+        <tbody>
+          <tr><td class="border p-2">New Year</td><td class="border p-2">Jan 1-4, 2026</td><td class="border p-2"><a href="https://public-holidays.shop/en/GB/2026/new-years-day">New Year's Day</a> (Jan 1 Thu)</td></tr>
+          <tr><td class="border p-2">Easter (4 days, no leave)</td><td class="border p-2">Apr 3-6, 2026</td><td class="border p-2"><a href="https://public-holidays.shop/en/GB/2026/good-friday">Good Friday</a> + <a href="https://public-holidays.shop/en/GB/2026/easter-monday">Easter Monday</a></td></tr>
+          <tr><td class="border p-2">Early May</td><td class="border p-2">May 2-4, 2026</td><td class="border p-2"><a href="https://public-holidays.shop/en/GB/2026/early-may-bank-holiday">Early May Bank Holiday</a></td></tr>
+          <tr><td class="border p-2">Spring</td><td class="border p-2">May 23-25, 2026</td><td class="border p-2"><a href="https://public-holidays.shop/en/GB/2026/spring-bank-holiday">Spring Bank Holiday</a></td></tr>
+          <tr><td class="border p-2">Summer</td><td class="border p-2">Aug 29-31, 2026</td><td class="border p-2"><a href="https://public-holidays.shop/en/GB/2026/summer-bank-holiday">Summer Bank Holiday</a></td></tr>
+          <tr><td class="border p-2">Christmas (4 days, no leave)</td><td class="border p-2">Dec 25-28, 2026</td><td class="border p-2"><a href="https://public-holidays.shop/en/GB/2026/christmas-day">Christmas Day</a> + Boxing Day substitute</td></tr>
+        </tbody>
+      </table>
+      <p>Five of the six are Monday bank holidays, so they are effectively automatic — no annual leave required. The exception is New Year's Day, which falls on Thursday Jan 1, 2026: in England & Wales you take Friday Jan 2 off to make it a four-day break (Scotland gets Jan 2 as a holiday automatically, so the same run costs nothing there).</p>
+
+      <h2>Scotland: 8 long weekends</h2>
+      <p>Scotland runs its own calendar: it keeps New Year, the Early May and Spring holidays, and Christmas, but it does not observe Easter Monday — so its Easter break is just the Good Friday three-dayer. It adds three extras of its own:</p>
+      <ul>
+        <li><strong>2 January</strong> — Jan 1-4, 2026. With Jan 1 (Thu) and Jan 2 (Fri) both off, Scotland's New Year break is a natural four-dayer.</li>
+        <li><strong>Summer Bank Holiday (Scotland)</strong> — Aug 1-3, 2026. Scotland observes the summer holiday on the first Monday of August, not the last, giving a May-to-September rhythm of Monday breaks.</li>
+        <li><strong>St Andrew's Day</strong> — Nov 28-30, 2026. The country's patron saint's day lands on Monday Nov 30, closing out the year with a three-day weekend.</li>
+      </ul>
+      <p>Scotland's full 2026 long-weekend list: Jan 1-4, Apr 3-5, May 2-4, May 23-25, Jun 13-15, Aug 1-3, Nov 28-30, and Dec 25-28 — eight in total. (The mid-June window comes from a World Cup bank holiday listed for Scotland in the 2026 data.)</p>
+
+      <h2>Northern Ireland: 8 long weekends</h2>
+      <p>Northern Ireland also gets the England & Wales core plus two of its own:</p>
+      <ul>
+        <li><strong>St Patrick's Day</strong> — Mar 14-17, 2026. The holiday is Tuesday Mar 17; take Monday Mar 16 off and you have a four-day St Patrick's break.</li>
+        <li><strong>Battle of the Boyne</strong> — Jul 11-13, 2026. The Twelfth (Jul 12) is observed Monday Jul 13, creating a mid-July three-day weekend.</li>
+      </ul>
+
+      <h2>The two no-leave 4-dayers are the headline</h2>
+      <p>Two UK long weekends in 2026 require no annual leave at all and run four days:</p>
+      <ul>
+        <li><strong>Easter, Apr 3-6:</strong> Good Friday (Apr 3) through Easter Monday (Apr 6). The single best UK break of the year for a city trip or a short-haul flight.</li>
+        <li><strong>Christmas, Dec 25-28:</strong> Christmas is Friday Dec 25; Boxing Day falls Saturday Dec 26, so the substitute bank holiday lands Monday Dec 28 (St. Stephen's Day). That stitches together a four-day run with no leave.</li>
+      </ul>
+
+      <h2>How to stretch the Spring and Summer breaks</h2>
+      <p>Spring Bank Holiday is Monday May 25, 2026 — take May 26-29 off and you connect to the following weekend for nine days. The Summer Bank Holiday is Monday Aug 31; taking Sep 1-4 gives you another nine-day stretch into the first week of September. Pairing one week of annual leave with a Monday bank holiday is the cheapest way to double your break in the UK.</p>
+
+      <h2>Frequently Asked Questions</h2>
+      <p><strong>Why does Scotland have more long weekends than England?</strong> Scotland observes 2 January and St Andrew's Day, places its summer bank holiday on the first Monday of August, and gets a one-off World Cup bank holiday in June 2026 — while England & Wales do not. Scotland skips Easter Monday, but the three extras more than make up for it, putting its total at eight versus six.</p>
+      <p><strong>Does the UK get substitute days when a bank holiday falls on a weekend?</strong> Yes. When a bank holiday falls on Saturday or Sunday, a substitute weekday (in lieu) is granted. In 2026 that happens twice: Boxing Day (Dec 26, Sat) moves to Dec 28, and the Summer Bank Holiday in Scotland falls on Aug 3 by design.</p>
+      <p><strong>What is the cheapest UK long weekend to book?</strong> The Early May (May 2-4) and Spring (May 23-25) breaks historically have lower average flight and hotel prices than Easter or Christmas, and both sit in good weather windows.</p>
+      <p>See the full <a href="https://public-holidays.shop/en/GB">UK bank holidays 2026</a> page for every date, or sync the <a href="https://public-holidays.shop/en/GB/2026">UK 2026 calendar</a> to your phone.</p>
+    `,
+  },
+  {
+    id: 120,
+    title: "英国 2026 年长周末全攻略：银行假日与拼假，分地区详解",
+    slug: "uk-long-weekends-2026",
+    category: "travel",
+    author: "PubHoliday 研究团队",
+    publishedDate: "2026-08-07T09:00:00Z",
+    lastModified: "2026-08-07T09:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/uk-bank-holidays.svg",
+    excerpt: "2026 年英格兰与威尔士有 6 个长周末，苏格兰 9 个，北爱尔兰 8 个。复活节和圣诞节还是两个不用请假的四天连休。附完整日期与拼假技巧。",
+    relatedCountries: ["GB", "IE"],
+    locale: "zh",
+    faq: [
+      { question: "2026 年英国有多少个长周末？", answer: "英格兰与威尔士 6 个（元旦、复活节、五月节、春季银行假日、夏季银行假日、圣诞节）。苏格兰 8 个——保留元旦、五月节、春季和圣诞节，但没有复活节星期一，另加 1 月 2 日、六月世界杯银行假日、8 月 3 日夏季银行假日和圣安德鲁日。北爱尔兰 8 个，在英格兰与威尔士核心之上再加圣帕特里克日和博因河战役纪念日。" },
+      { question: "2026 年英国有四天连休吗？", answer: "有两个：复活节（4 月 3 日耶稣受难日到 4 月 6 日复活节星期一）是天然四连休，不用请假；圣诞节（12 月 25-28 日）因节礼日补休到 12 月 28 日周一，也是四天。" },
+      { question: "2026 年节礼日补休是哪天？", answer: "2026 年节礼日落在 12 月 26 日周六，银行假日顺延到 12 月 28 日周一（圣斯蒂芬日）。与 12 月 25 日周五的圣诞节相连，形成 12 月 25-28 日四天连休。" },
+    ],
+    content: `
+      <p>英国 2026 年的长周末，本质上是三套不同的日历：英格兰与威尔士有 6 个银行假日长周末，苏格兰有 8 个，北爱尔兰有 8 个。其中最棒的两个——英格兰与威尔士的复活节，以及圣诞节——是无需任何年假的天然四连休。下面是带准确日期的完整盘点。</p>
+
+      <h2>英格兰与威尔士：2026 年 6 个长周末</h2>
+      <p>英格兰和威尔士 2026 年有 8 个银行假日，其中 6 个挨着周末：</p>
+      <table class="min-w-full border-collapse border border-gray-300 mb-4">
+        <thead><tr class="bg-gray-100"><th class="border p-2">长周末</th><th class="border p-2">日期</th><th class="border p-2">银行假日</th></tr></thead>
+        <tbody>
+          <tr><td class="border p-2">元旦</td><td class="border p-2">2026 年 1 月 1-4 日</td><td class="border p-2"><a href="https://public-holidays.shop/en/GB/2026/new-years-day">元旦</a>（1 月 1 日周四）</td></tr>
+          <tr><td class="border p-2">复活节（四天，不用请假）</td><td class="border p-2">2026 年 4 月 3-6 日</td><td class="border p-2"><a href="https://public-holidays.shop/en/GB/2026/good-friday">耶稣受难日</a> + <a href="https://public-holidays.shop/en/GB/2026/easter-monday">复活节星期一</a></td></tr>
+          <tr><td class="border p-2">五月节</td><td class="border p-2">2026 年 5 月 2-4 日</td><td class="border p-2"><a href="https://public-holidays.shop/en/GB/2026/early-may-bank-holiday">五月初银行假日</a></td></tr>
+          <tr><td class="border p-2">春季银行假日</td><td class="border p-2">2026 年 5 月 23-25 日</td><td class="border p-2"><a href="https://public-holidays.shop/en/GB/2026/spring-bank-holiday">春季银行假日</a></td></tr>
+          <tr><td class="border p-2">夏季银行假日</td><td class="border p-2">2026 年 8 月 29-31 日</td><td class="border p-2"><a href="https://public-holidays.shop/en/GB/2026/summer-bank-holiday">夏季银行假日</a></td></tr>
+          <tr><td class="border p-2">圣诞节（四天，不用请假）</td><td class="border p-2">2026 年 12 月 25-28 日</td><td class="border p-2"><a href="https://public-holidays.shop/en/GB/2026/christmas-day">圣诞节</a> + 节礼日补休</td></tr>
+        </tbody>
+      </table>
+      <p>除元旦（周四）和复活节组合（周五 + 周一）外，其余全是周一银行假日。也就是说这 6 个长周末几乎都是自动形成的，一个年假都不用请。</p>
+
+      <h2>苏格兰：8 个长周末</h2>
+      <p>苏格兰有自己的日历：保留元旦、五月节、春季和圣诞节，但没有复活节星期一——所以它的复活节只有耶稣受难日三连休。它另外多加三个：</p>
+      <ul>
+        <li><strong>1 月 2 日</strong> — 2026 年 1 月 1-4 日。1 月 1 日（周四）和 1 月 2 日（周五）都放假，苏格兰的元旦是天然四连休。</li>
+        <li><strong>夏季银行假日（苏格兰版）</strong> — 2026 年 8 月 1-3 日。苏格兰在八月第一个周一休夏季银行假日，而不是最后一个，形成五月到九月连续周一放假的节奏。</li>
+        <li><strong>圣安德鲁日</strong> — 2026 年 11 月 28-30 日。守护神圣安德鲁的节日落在 11 月 30 日周一，为全年收尾再添一个三连休。</li>
+      </ul>
+      <p>苏格兰 2026 年完整长周末清单：1 月 1-4 日、4 月 3-5 日、5 月 2-4 日、5 月 23-25 日、6 月 13-15 日、8 月 1-3 日、11 月 28-30 日、12 月 25-28 日，共 8 个。（六月中旬的窗口来自 2026 年数据中为苏格兰列出的世界杯银行假日。）</p>
+
+      <h2>北爱尔兰：8 个长周末</h2>
+      <p>北爱尔兰同样拥有英格兰与威尔士的核心六项，另加两个自己的：</p>
+      <ul>
+        <li><strong>圣帕特里克日</strong> — 2026 年 3 月 14-17 日。假日是 3 月 17 日周二，请掉 3 月 16 日周一，就得到一个四天圣帕特里克假期。</li>
+        <li><strong>博因河战役纪念日</strong> — 2026 年 7 月 11-13 日。七月十二日（7 月 12 日）在 7 月 13 日周一补休，形成七月中旬三连休。</li>
+      </ul>
+
+      <h2>重头戏：两个不用请假的四天连休</h2>
+      <p>2026 年英国有两个完全不用请年假、且长达四天的长周末：</p>
+      <ul>
+        <li><strong>复活节，4 月 3-6 日：</strong>从耶稣受难日（4 月 3 日）到复活节星期一（4 月 6 日）。这是英国全年最适合城市短途游或短途飞行的一次假期。</li>
+        <li><strong>圣诞节，12 月 25-28 日：</strong>圣诞节在 12 月 25 日周五；节礼日落在 12 月 26 日周六，因此补休到 12 月 28 日周一（圣斯蒂芬日）。零请假拼成四连休。</li>
+      </ul>
+
+      <h2>如何把春季和夏季银行假日拉长</h2>
+      <p>春季银行假日是 2026 年 5 月 25 日周一——请掉 5 月 26-29 日，就能连到下个周末共九天。夏季银行假日是 8 月 31 日周一；请掉 9 月 1-4 日，又得到延伸到九月初的九天。用一周年假配一个周一银行假日，是英国把假期翻倍最划算的方式。</p>
+
+      <h2>常见问题</h2>
+      <p><strong>为什么苏格兰的长周末比英格兰多？</strong> 苏格兰额外放 1 月 2 日和圣安德鲁日，并把夏季银行假日放在八月第一个周一。英格兰与威尔士没有这些，所以总数是 6 而不是 9。</p>
+      <p><strong>银行假日撞周末英国有补休吗？</strong> 有。银行假日落在周六或周日时，会顺延到一个工作日（in lieu）。2026 年出现两次：节礼日（12 月 26 日周六）移到 12 月 28 日，苏格兰夏季银行假日按惯例在 8 月 3 日。</p>
+      <p><strong>英国哪个长周末订票最便宜？</strong> 五月节（5 月 2-4 日）和春季银行假日（5 月 23-25 日）历来机票和酒店均价低于复活节或圣诞节，而且都在好天气窗口。</p>
+      <p>到 <a href="https://public-holidays.shop/en/GB">英国 2026 银行假日页</a>查看所有日期，或把 <a href="https://public-holidays.shop/en/GB/2026">英国 2026 日历</a>同步进手机。</p>
+    `,
+  },
+  // ========================================================================
+  // TIER 3 (T3-③): long-weekend deep-dive cluster — DE 2026
+  // ========================================================================
+  {
+    id: 121,
+    title: "Germany Long Weekends in 2026: 8 Breaks, 6 Nationwide",
+    slug: "germany-long-weekends-2026",
+    category: "travel",
+    author: "PubHoliday Research Team",
+    publishedDate: "2026-08-07T09:00:00Z",
+    lastModified: "2026-08-07T09:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/long-weekend-2027-guide.svg",
+    excerpt: "Germany gets 8 long weekends in 2026, and 6 of them apply in every state. Easter is a natural 4-day break, Ascension and Corpus Christi are classic bridge days.",
+    relatedCountries: ["DE", "AT", "CH"],
+    locale: "en",
+    faq: [
+      { question: "How many long weekends does Germany have in 2026?", answer: "8 total. Six are nationwide (New Year's, Easter, Labour Day, Ascension Day, Whit Monday, Christmas). Two are regional: Epiphany (Jan 3-6, in Bavaria, Baden-Württemberg and Saxony-Anhalt) and Corpus Christi (Jun 4-7, in Catholic-majority states)." },
+      { question: "Which 2026 German long weekends need a bridge day?", answer: "Three: New Year's (take Fri Jan 2 off for Jan 1-4), Ascension Day (take Fri May 15 off for May 14-17), and Corpus Christi (take Fri Jun 5 off for Jun 4-7, regional). Easter, Labour Day, Whit Monday and Christmas need no leave at all." },
+      { question: "Is German Unity Day 2026 a long weekend?", answer: "No. German Unity Day falls on Saturday Oct 3, 2026. The holiday itself is on the weekend, so there is no three-day break — a rare miss in an otherwise generous year." },
+    ],
+    content: `
+      <p>Germany's 2026 holiday calendar is unusually kind to anyone who likes a long weekend. The year produces <strong>8 long weekends</strong>, and six of them are nationwide — no matter which Bundesland you work in. The two headline breaks are natural four-dayers: Easter (Good Friday to Easter Monday) and the Christmas run. Three more become four-dayers with a single bridge day. Here is the complete list with exact dates.</p>
+
+      <h2>The 6 nationwide long weekends in 2026</h2>
+      <p>These apply in all 16 states. Four of the six require no annual leave at all.</p>
+      <table class="min-w-full border-collapse border border-gray-300 mb-4">
+        <thead><tr class="bg-gray-100"><th class="border p-2">Long weekend</th><th class="border p-2">Dates</th><th class="border p-2">Holiday</th></tr></thead>
+        <tbody>
+          <tr><td class="border p-2">New Year's (4 days with bridge)</td><td class="border p-2">Jan 1-4, 2026</td><td class="border p-2"><a href="https://public-holidays.shop/en/DE/2026/new-years-day">New Year's Day</a> (Jan 1 Thu)</td></tr>
+          <tr><td class="border p-2">Easter (4 days, no leave)</td><td class="border p-2">Apr 3-6, 2026</td><td class="border p-2"><a href="https://public-holidays.shop/en/DE/2026/good-friday">Good Friday</a> + <a href="https://public-holidays.shop/en/DE/2026/easter-monday">Easter Monday</a></td></tr>
+          <tr><td class="border p-2">Labour Day</td><td class="border p-2">May 1-3, 2026</td><td class="border p-2"><a href="https://public-holidays.shop/en/DE/2026/labour-day">Labour Day</a> (May 1 Fri)</td></tr>
+          <tr><td class="border p-2">Ascension Day (4 days with bridge)</td><td class="border p-2">May 14-17, 2026</td><td class="border p-2"><a href="https://public-holidays.shop/en/DE/2026/ascension-day">Ascension Day</a> (May 14 Thu)</td></tr>
+          <tr><td class="border p-2">Whit Monday</td><td class="border p-2">May 23-25, 2026</td><td class="border p-2"><a href="https://public-holidays.shop/en/DE/2026/whit-monday">Whit Monday</a> (May 25 Mon)</td></tr>
+          <tr><td class="border p-2">Christmas</td><td class="border p-2">Dec 25-27, 2026</td><td class="border p-2"><a href="https://public-holidays.shop/en/DE/2026/christmas-day">Christmas Day</a> (Dec 25 Fri)</td></tr>
+        </tbody>
+      </table>
+      <p>The pattern is distinctive: 2026 front-loads German breaks into spring. April and May alone carry four of the six nationwide long weekends, making late spring the best season for domestic travel, camping, and city trips.</p>
+
+      <h2>Easter 2026: the best no-leave break of the year</h2>
+      <p>Good Friday falls on Friday Apr 3, 2026, and Easter Monday follows on Apr 6. That produces a natural <strong>Apr 3-6 four-day weekend</strong> — the single longest nationwide break of the year with zero annual leave. It is the ideal window for a short-haul flight, a Berlin-to-Bavaria rail trip, or the first proper spring getaway.</p>
+
+      <h2>The classic German bridge days</h2>
+      <p>Germany rewards careful planners with three bridge opportunities in 2026, each turning a weekday holiday into a four-day break by taking one adjacent Friday:</p>
+      <ul>
+        <li><strong>New Year's, Jan 1-4:</strong> Jan 1 is Thursday; take Friday Jan 2 off.</li>
+        <li><strong>Ascension Day, May 14-17:</strong> Ascension is always a Thursday in Germany. Take Friday May 15 off and you own the whole weekend — a beloved <em>Brückentag</em> tradition.</li>
+        <li><strong>Corpus Christi, Jun 4-7:</strong> Thursday Jun 4 in Catholic-majority states; take Friday Jun 5 off for another four-dayer (regional).</li>
+      </ul>
+
+      <h2>The 2 regional long weekends</h2>
+      <p>Two additional long weekends appear only in states that observe extra holidays:</p>
+      <ul>
+        <li><strong>Epiphany, Jan 3-6 (2026):</strong> Epiphany falls on Tuesday Jan 6 in Bavaria, Baden-Württemberg and Saxony-Anhalt. Take Monday Jan 5 off and you get a Jan 3-6 four-day break — the perfect post-holiday recovery window.</li>
+        <li><strong>Corpus Christi, Jun 4-7:</strong> Observed in Bavaria, Baden-Württemberg, Hesse, North Rhine-Westphalia, Rhineland-Palatinate, Saarland and parts of Thuringia; the Thursday holiday plus a Friday bridge yields four days.</li>
+      </ul>
+      <p>If you live in Bavaria, 2026 is a bumper year: you get Epiphany, Corpus Christi and All Saints' Day (Nov 1, Sunday — no long weekend) on top of the nationwide list. Check the <a href="https://public-holidays.shop/en/DE/2026">Germany 2026 calendar</a> for your state.</p>
+
+      <h2>What about German Unity Day?</h2>
+      <p>The one disappointment in 2026 is <a href="https://public-holidays.shop/en/DE/2026/german-unity-day">German Unity Day</a>, which falls on Saturday Oct 3. The holiday lands on the weekend itself, so it does not create a three-day break. Plan any October travel around other dates.</p>
+
+      <h2>Best months and booking advice</h2>
+      <p>April and May are the standout months: four nationwide long weekends in six weeks, including the no-leave Easter four-dayer. Book the Ascension window early — it is a popular long weekend across Germany, and prices for the Alps and Baltic coast spike. Christmas (Dec 25-27) is a short, low-key run; if you want a longer winter break, combine it with the two public holidays around New Year's in early 2027.</p>
+
+      <h2>Frequently Asked Questions</h2>
+      <p><strong>Do all German states have the same long weekends?</strong> No. Six long weekends are nationwide in 2026, but Epiphany and Corpus Christi only apply in certain states, and a few states add Reformation Day (Oct 31, Saturday in 2026) or All Saints' Day.</p>
+      <p><strong>Is Whit Monday a long weekend in 2026?</strong> Yes. Whit Monday falls on Monday May 25, 2026, giving a natural May 23-25 three-day weekend in every state.</p>
+      <p><strong>How many vacation days should I save for bridges in 2026?</strong> Three bridge days — Jan 2, May 15, and (in Catholic states) Jun 5 — unlock three four-day weekends. If you use all three, you convert them into 9 rest days using only 3 vacation days.</p>
+    `,
+  },
+  {
+    id: 122,
+    title: "德国 2026 年长周末全攻略：8 个假期窗口，6 个全国通用",
+    slug: "germany-long-weekends-2026",
+    category: "travel",
+    author: "PubHoliday 研究团队",
+    publishedDate: "2026-08-07T09:00:00Z",
+    lastModified: "2026-08-07T09:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/long-weekend-2027-guide.svg",
+    excerpt: "2026 年德国有 8 个长周末，其中 6 个全国通用。复活节是零年假的天然四连休，耶稣升天节和圣体节是经典拼假日。附完整日期。",
+    relatedCountries: ["DE", "AT", "CH"],
+    locale: "zh",
+    faq: [
+      { question: "2026 年德国有多少个长周末？", answer: "共 8 个。六个全国通用（元旦、复活节、劳动节、耶稣升天节、圣灵降临节、圣诞节）。两个地区性：主显节（1 月 3-6 日，巴伐利亚、巴登-符腾堡、萨克森-安哈尔特）和圣体节（6 月 4-7 日，天主教为主各州）。" },
+      { question: "2026 年德国哪些长周末需要拼假？", answer: "三个：元旦（请掉 1 月 2 日周五可休 1 月 1-4 日）、耶稣升天节（请掉 5 月 15 日周五可休 5 月 14-17 日）、圣体节（请掉 6 月 5 日周五可休 6 月 4-7 日，地区性）。复活节、劳动节、圣灵降临节和圣诞节完全不用请假。" },
+      { question: "2026 年德国统一日是长周末吗？", answer: "不是。2026 年德国统一日落在 10 月 3 日周六，假日本身在周末，没有形成三连休——这是慷慨年份里少见的遗憾。" },
+    ],
+    content: `
+      <p>2026 年的德国假期日历，对喜欢长周末的人格外慷慨。全年共有 <strong>8 个长周末</strong>，其中六个全国通用——无论你在哪个州工作都能休。两个重头戏是天然四连休：复活节（耶稣受难日到复活节星期一）和圣诞节连休。另有三个只需一个拼假日就能变成四天。下面是带准确日期的完整清单。</p>
+
+      <h2>2026 年 6 个全国通用长周末</h2>
+      <p>以下假期在全部 16 个州适用。其中五个完全不需要请年假。</p>
+      <table class="min-w-full border-collapse border border-gray-300 mb-4">
+        <thead><tr class="bg-gray-100"><th class="border p-2">长周末</th><th class="border p-2">日期</th><th class="border p-2">假日</th></tr></thead>
+        <tbody>
+          <tr><td class="border p-2">元旦（拼假可休 4 天）</td><td class="border p-2">2026 年 1 月 1-4 日</td><td class="border p-2"><a href="https://public-holidays.shop/en/DE/2026/new-years-day">元旦</a>（1 月 1 日周四）</td></tr>
+          <tr><td class="border p-2">复活节（四天，不用请假）</td><td class="border p-2">2026 年 4 月 3-6 日</td><td class="border p-2"><a href="https://public-holidays.shop/en/DE/2026/good-friday">耶稣受难日</a> + <a href="https://public-holidays.shop/en/DE/2026/easter-monday">复活节星期一</a></td></tr>
+          <tr><td class="border p-2">劳动节</td><td class="border p-2">2026 年 5 月 1-3 日</td><td class="border p-2"><a href="https://public-holidays.shop/en/DE/2026/labour-day">劳动节</a>（5 月 1 日周五）</td></tr>
+          <tr><td class="border p-2">耶稣升天节（拼假可休 4 天）</td><td class="border p-2">2026 年 5 月 14-17 日</td><td class="border p-2"><a href="https://public-holidays.shop/en/DE/2026/ascension-day">耶稣升天节</a>（5 月 14 日周四）</td></tr>
+          <tr><td class="border p-2">圣灵降临节</td><td class="border p-2">2026 年 5 月 23-25 日</td><td class="border p-2"><a href="https://public-holidays.shop/en/DE/2026/whit-monday">圣灵降临节</a>（5 月 25 日周一）</td></tr>
+          <tr><td class="border p-2">圣诞节</td><td class="border p-2">2026 年 12 月 25-27 日</td><td class="border p-2"><a href="https://public-holidays.shop/en/DE/2026/christmas-day">圣诞节</a>（12 月 25 日周五）</td></tr>
+        </tbody>
+      </table>
+      <p>一个鲜明特点：2026 年德国的假期高度集中在春季。四月和五月就占了六个全国长周末中的四个，晚春因此是国内旅行、露营和城市游的最佳季节。</p>
+
+      <h2>2026 复活节：全年最棒的零请假连休</h2>
+      <p>耶稣受难日落在 2026 年 4 月 3 日周五，复活节星期一在 4 月 6 日。于是形成天然的 <strong>4 月 3-6 日四连休</strong>——全年最长、且完全不用请年假的全国性假期。这是短途飞行、柏林到巴伐利亚铁路旅行或第一场真正春游的理想窗口。</p>
+
+      <h2>德国经典的拼假日（Brückentag）</h2>
+      <p>2026 年德国给细心规划的人准备了三个拼假机会，每个只需请掉相邻的周五，就能把一个工作日假日变成四天连休：</p>
+      <ul>
+        <li><strong>元旦，1 月 1-4 日：</strong>1 月 1 日是周四，请掉周五 1 月 2 日。</li>
+        <li><strong>耶稣升天节，5 月 14-17 日：</strong>德国的耶稣升天节永远是周四。请掉周五 5 月 15 日，就拥有整个周末——德国人最爱的 Brückentag 传统。</li>
+        <li><strong>圣体节，6 月 4-7 日：</strong>天主教为主各州在 6 月 4 日周四放假，请掉周五 6 月 5 日，又是一个四连休（地区性）。</li>
+      </ul>
+
+      <h2>2 个地区性长周末</h2>
+      <p>还有两个长周末，只在庆祝额外假日的州出现：</p>
+      <ul>
+        <li><strong>主显节，1 月 3-6 日：</strong>巴伐利亚、巴登-符腾堡和萨克森-安哈尔特在 1 月 6 日周二庆祝主显节。请掉周一 1 月 5 日，就得到 1 月 3-6 日四天——假期结束后的完美恢复窗口。</li>
+        <li><strong>圣体节，6 月 4-7 日：</strong>巴伐利亚、巴登-符腾堡、黑森、北莱茵-威斯特法伦、莱茵兰-普法尔茨、萨尔和图林根部分地区庆祝；周四假日加周五拼假共四天。</li>
+      </ul>
+      <p>如果你住在巴伐利亚，2026 年是丰收年：除全国假日外，还有主显节、圣体节和诸圣日（11 月 1 日周日，无长周末）。请到 <a href="https://public-holidays.shop/en/DE/2026">德国 2026 假日日历</a>查看你所在州的完整列表。</p>
+
+      <h2>德国统一日呢？</h2>
+      <p>2026 年唯一的遗憾是 <a href="https://public-holidays.shop/en/DE/2026/german-unity-day">德国统一日</a>落在 10 月 3 日周六。假日正好在周末，没有形成三连休。十月出行请另选日期。</p>
+
+      <h2>最佳月份与订票建议</h2>
+      <p>四月和五月是绝对的黄金期：六周内四个全国长周末，包括零请假的复活节四连休。耶稣升天节窗口务必提前预订——它是全德热门长周末，阿尔卑斯和波罗的海沿岸价格会飙升。圣诞节（12 月 25-27 日）是短而轻松的三连休；想要更长的冬季假期，可把它与 2027 年初元旦前后两个假日连起来。</p>
+
+      <h2>常见问题</h2>
+      <p><strong>德国各州的长周末都一样吗？</strong> 不一样。2026 年六个全国通用，但主显节和圣体节只在部分州生效，少数州还庆祝宗教改革日（2026 年 10 月 31 日周六）或诸圣日。</p>
+      <p><strong>2026 年圣灵降临节是长周末吗？</strong> 是。圣灵降临节在 2026 年 5 月 25 日周一，每个州都能享受 5 月 23-25 日天然三连休。</p>
+      <p><strong>2026 年拼假需要留几天年假？</strong> 三个拼假日——1 月 2 日、5 月 15 日，以及（天主教各州）6 月 5 日——能解锁三个四天连休。全部用上的话，只用 3 天年假换来 9 天休息。</p>
+    `,
+  },
+  // ========================================================================
+  // TIER 3 (T3-③): long-weekend deep-dive cluster — JP 2026
+  // ========================================================================
+  {
+    id: 123,
+    title: "Japan Long Weekends in 2026: 11 Getaways and a 5-Day Golden Week",
+    slug: "japan-long-weekends-2026",
+    category: "travel",
+    author: "PubHoliday Research Team",
+    publishedDate: "2026-08-07T09:00:00Z",
+    lastModified: "2026-08-07T09:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/japan-remote-work.svg",
+    excerpt: "Japan stacks 11 long weekends into 2026, led by a 5-day Golden Week. Two bridge days (Mountain Day and Culture Day) turn into 4-day breaks. Complete date list inside.",
+    relatedCountries: ["JP", "KR"],
+    locale: "en",
+    faq: [
+      { question: "How many long weekends does Japan have in 2026?", answer: "11. That includes a 5-day Golden Week (May 2-6), eight natural 3-day weekends, and two 4-day breaks unlocked with a single bridge day (Mountain Day Aug 8-11 and Culture Day Oct 31-Nov 3)." },
+      { question: "Why is Golden Week 2026 five days long?", answer: "Constitution Memorial Day (May 3) falls on a Sunday in 2026, so Japan's substitute-holiday rule moves it to Wednesday May 6. Combined with Greenery Day (May 4) and Children's Day (May 5), the run from Saturday May 2 to Wednesday May 6 becomes a natural 5-day break." },
+      { question: "Which 2026 Japanese long weekends need a bridge day?", answer: "Two: Mountain Day (Aug 11 Tue; take Mon Aug 10 off for Aug 8-11) and Culture Day (Nov 3 Tue; take Mon Nov 2 off for Oct 31-Nov 3). Everything else is automatic." },
+    ],
+    content: `
+      <p>Japan runs on one of the world's richest holiday calendars, and 2026 is a standout year: <strong>11 long weekends</strong>, including a five-day Golden Week and two bridge-day four-dayers. No other country in our coverage produces this many automatic three-day breaks. This guide lists every 2026 long weekend with exact dates so you can plan around the famous travel crunches.</p>
+
+      <h2>The headline: a 5-day Golden Week (May 2-6)</h2>
+      <p>Golden Week is Japan's biggest holiday cluster, and 2026 stretches it to five consecutive rest days. Constitution Memorial Day falls on Sunday May 3, and Japan's substitute-holiday rule (<em>furikae kyūjitsu</em>) shifts it to Wednesday May 6. Greenery Day lands on Monday May 4 and Children's Day on Tuesday May 5. The natural run from Saturday May 2 through Wednesday May 6 gives you <strong>five days off with zero annual leave</strong>.</p>
+      <p>Even better: <a href="https://public-holidays.shop/en/JP/2026/showa-day">Shōwa Day</a> falls on Wednesday Apr 29. Take Apr 30 and May 1 off and Golden Week becomes an eight-day break (Apr 29 - May 6). Expect airports, <em>shinkansen</em>, and hotels to be at peak occupancy — book three months ahead or travel domestically in the shoulder days.</p>
+
+      <h2>All 11 long weekends in 2026</h2>
+      <table class="min-w-full border-collapse border border-gray-300 mb-4">
+        <thead><tr class="bg-gray-100"><th class="border p-2">Long weekend</th><th class="border p-2">Dates</th><th class="border p-2">Holiday</th></tr></thead>
+        <tbody>
+          <tr><td class="border p-2">New Year's (4 days with bridge)</td><td class="border p-2">Jan 1-4, 2026</td><td class="border p-2"><a href="https://public-holidays.shop/en/JP/2026/new-years-day">New Year's Day</a></td></tr>
+          <tr><td class="border p-2">Coming of Age Day</td><td class="border p-2">Jan 10-12, 2026</td><td class="border p-2"><a href="https://public-holidays.shop/en/JP/2026/coming-of-age-day">Coming of Age Day</a></td></tr>
+          <tr><td class="border p-2">Emperor's Birthday</td><td class="border p-2">Feb 21-23, 2026</td><td class="border p-2"><a href="https://public-holidays.shop/en/JP/2026/the-emperors-birthday">The Emperor's Birthday</a></td></tr>
+          <tr><td class="border p-2">Vernal Equinox</td><td class="border p-2">Mar 20-22, 2026</td><td class="border p-2"><a href="https://public-holidays.shop/en/JP/2026/vernal-equinox-day">Vernal Equinox Day</a></td></tr>
+          <tr><td class="border p-2">Golden Week (5 days, no leave)</td><td class="border p-2">May 2-6, 2026</td><td class="border p-2">Constitution Memorial + Greenery + Children's</td></tr>
+          <tr><td class="border p-2">Marine Day</td><td class="border p-2">Jul 18-20, 2026</td><td class="border p-2"><a href="https://public-holidays.shop/en/JP/2026/marine-day">Marine Day</a></td></tr>
+          <tr><td class="border p-2">Mountain Day (4 days with bridge)</td><td class="border p-2">Aug 8-11, 2026</td><td class="border p-2"><a href="https://public-holidays.shop/en/JP/2026/mountain-day">Mountain Day</a></td></tr>
+          <tr><td class="border p-2">Respect for the Aged Day</td><td class="border p-2">Sep 19-21, 2026</td><td class="border p-2"><a href="https://public-holidays.shop/en/JP/2026/respect-for-the-aged-day">Respect for the Aged Day</a></td></tr>
+          <tr><td class="border p-2">Sports Day</td><td class="border p-2">Oct 10-12, 2026</td><td class="border p-2"><a href="https://public-holidays.shop/en/JP/2026/sports-day">Sports Day</a></td></tr>
+          <tr><td class="border p-2">Culture Day (4 days with bridge)</td><td class="border p-2">Oct 31 - Nov 3, 2026</td><td class="border p-2"><a href="https://public-holidays.shop/en/JP/2026/culture-day">Culture Day</a></td></tr>
+          <tr><td class="border p-2">Labour Thanksgiving Day</td><td class="border p-2">Nov 21-23, 2026</td><td class="border p-2"><a href="https://public-holidays.shop/en/JP/2026/labour-thanksgiving-day">Labour Thanksgiving Day</a></td></tr>
+        </tbody>
+      </table>
+      <p>Eight of the eleven are automatic three-dayers built on Monday holidays. January is the densest month with two breaks in two weeks (New Year's and Coming of Age Day), and the autumn runs of September through November deliver four more.</p>
+
+      <h2>The two bridge-day four-dayers</h2>
+      <p>Japan's Monday-heavy calendar hides two four-day breaks behind a single vacation day:</p>
+      <ul>
+        <li><strong>Mountain Day, Aug 8-11:</strong> The holiday falls on Tuesday Aug 11, 2026. Take Monday Aug 10 off and you get a four-day mountain escape — a great window for the Japanese Alps or a cool northern retreat.</li>
+        <li><strong>Culture Day, Oct 31 - Nov 3:</strong> The holiday is Tuesday Nov 3. Take Monday Nov 2 off and the run spans Halloween weekend into Culture Day — four days for autumn leaves in Kyoto.</li>
+      </ul>
+
+      <h2>How the substitute-holiday rule shapes 2026</h2>
+      <p>Japan grants a substitute day when a national holiday falls on a Sunday (<em>furikae</em>). In 2026 that rule is what turns Golden Week into five days: Constitution Memorial Day (May 3, Sunday) moves to May 6. It is also why the year feels so long-weekend-rich — the Monday-holiday design plus a well-placed Sunday creates clusters the calendar would not otherwise have.</p>
+
+      <h2>Planning around the crunch seasons</h2>
+      <p>Golden Week (late Apr - early May) and the New Year's week are Japan's two biggest travel crunches. Book trains and hotels three months ahead, or plan counter-seasonal trips to Kyushu and Hokkaido. The August Obon period overlaps Mountain Day, so early August is busier than usual. September to November is the sweet spot: four long weekends, mild weather, and autumn colours — arguably the best three months of 2026 for Japanese travel.</p>
+
+      <h2>Frequently Asked Questions</h2>
+      <p><strong>Is Golden Week the same length every year?</strong> No. In 2026 the Sunday Constitution Memorial Day triggers a substitute day, making Golden Week five days (May 2-6). In years without a Sunday holiday, it is usually four days. Check the exact dates each year.</p>
+      <p><strong>Are all Japanese long weekends nationwide?</strong> Yes. Japan's 16 national holidays apply nationwide — there are no state-level holidays. That makes the 11 long weekends in 2026 available to everyone in the country.</p>
+      <p><strong>Can I extend the New Year's break in 2026?</strong> Yes. Jan 1 is Thursday; take Friday Jan 2 off and New Year's becomes a four-day break (Jan 1-4), which also overlaps the traditional <em>shōgatsu</em> closure many businesses observe.</p>
+      <p>Browse the full <a href="https://public-holidays.shop/en/JP/2026">Japan 2026 holiday calendar</a> to sync every date to your phone.</p>
+    `,
+  },
+  {
+    id: 124,
+    title: "日本 2026 年长周末全攻略：11 个假期窗口，黄金周连休 5 天",
+    slug: "japan-long-weekends-2026",
+    category: "travel",
+    author: "PubHoliday 研究团队",
+    publishedDate: "2026-08-07T09:00:00Z",
+    lastModified: "2026-08-07T09:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/japan-remote-work.svg",
+    excerpt: "日本 2026 年有 11 个长周末，最亮眼的是连休 5 天的黄金周。山之日和文化之日各只需一天拼假即可变四天。附完整日期表。",
+    relatedCountries: ["JP", "KR"],
+    locale: "zh",
+    faq: [
+      { question: "2026 年日本有多少个长周末？", answer: "11 个。包括连休 5 天的黄金周（5 月 2-6 日）、8 个天然三连休，以及两个靠一天拼假解锁的四天连休（山之日 8 月 8-11 日、文化之日 10 月 31 日-11 月 3 日）。" },
+      { question: "为什么 2026 年黄金周有 5 天？", answer: "宪法纪念日（5 月 3 日）在 2026 年正好是周日，日本法律将其顺延到 5 月 6 日周三补休。加上 5 月 4 日绿之日和 5 月 5 日儿童日，从 5 月 2 日周六到 5 月 6 日周三就形成天然 5 连休。" },
+      { question: "2026 年日本哪些长周末需要拼假？", answer: "两个：山之日（8 月 11 日周二，请掉 8 月 10 日周一可休 8 月 8-11 日）和文化之日（11 月 3 日周二，请掉 11 月 2 日周一可休 10 月 31 日-11 月 3 日）。其余全部自动连休。" },
+    ],
+    content: `
+      <p>日本拥有世界上最丰富的假期日历之一，2026 年更是突出：<strong>11 个长周末</strong>，包括连休 5 天的黄金周和两个拼假四连休。在我们覆盖的国家里，没有哪个能产生这么多自动三连休。本文列出 2026 年每个长周末的准确日期，帮你避开著名的出行高峰。</p>
+
+      <h2>重头戏：连休 5 天的黄金周（5 月 2-6 日）</h2>
+      <p>黄金周是日本最大的假期集群，2026 年被拉长到连续 5 天。宪法纪念日落在 5 月 3 日周日，日本的补休规则（振替休日）把它顺延到 5 月 6 日周三。绿之日在 5 月 4 日周一，儿童日在 5 月 5 日周二。从 5 月 2 日周六到 5 月 6 日周三，形成 <strong>零年假 5 连休</strong>。</p>
+      <p>更棒的是：<a href="https://public-holidays.shop/en/JP/2026/showa-day">昭和之日</a>在 4 月 29 日周三。请掉 4 月 30 日和 5 月 1 日，黄金周就变成 8 天长假（4 月 29 日-5 月 6 日）。届时机场、新干线和酒店将达到满负荷——请提前三个月预订，或选择错峰国内游。</p>
+
+      <h2>2026 年全部 11 个长周末</h2>
+      <table class="min-w-full border-collapse border border-gray-300 mb-4">
+        <thead><tr class="bg-gray-100"><th class="border p-2">长周末</th><th class="border p-2">日期</th><th class="border p-2">假日</th></tr></thead>
+        <tbody>
+          <tr><td class="border p-2">元旦（拼假可休 4 天）</td><td class="border p-2">2026 年 1 月 1-4 日</td><td class="border p-2"><a href="https://public-holidays.shop/en/JP/2026/new-years-day">元旦</a></td></tr>
+          <tr><td class="border p-2">成人之日</td><td class="border p-2">2026 年 1 月 10-12 日</td><td class="border p-2"><a href="https://public-holidays.shop/en/JP/2026/coming-of-age-day">成人之日</a></td></tr>
+          <tr><td class="border p-2">天皇诞生日</td><td class="border p-2">2026 年 2 月 21-23 日</td><td class="border p-2"><a href="https://public-holidays.shop/en/JP/2026/the-emperors-birthday">天皇诞生日</a></td></tr>
+          <tr><td class="border p-2">春分之日</td><td class="border p-2">2026 年 3 月 20-22 日</td><td class="border p-2"><a href="https://public-holidays.shop/en/JP/2026/vernal-equinox-day">春分之日</a></td></tr>
+          <tr><td class="border p-2">黄金周（5 天，不用请假）</td><td class="border p-2">2026 年 5 月 2-6 日</td><td class="border p-2">宪法纪念日 + 绿之日 + 儿童日</td></tr>
+          <tr><td class="border p-2">海之日</td><td class="border p-2">2026 年 7 月 18-20 日</td><td class="border p-2"><a href="https://public-holidays.shop/en/JP/2026/marine-day">海之日</a></td></tr>
+          <tr><td class="border p-2">山之日（拼假可休 4 天）</td><td class="border p-2">2026 年 8 月 8-11 日</td><td class="border p-2"><a href="https://public-holidays.shop/en/JP/2026/mountain-day">山之日</a></td></tr>
+          <tr><td class="border p-2">敬老之日</td><td class="border p-2">2026 年 9 月 19-21 日</td><td class="border p-2"><a href="https://public-holidays.shop/en/JP/2026/respect-for-the-aged-day">敬老之日</a></td></tr>
+          <tr><td class="border p-2">体育之日</td><td class="border p-2">2026 年 10 月 10-12 日</td><td class="border p-2"><a href="https://public-holidays.shop/en/JP/2026/sports-day">体育之日</a></td></tr>
+          <tr><td class="border p-2">文化之日（拼假可休 4 天）</td><td class="border p-2">2026 年 10 月 31 日-11 月 3 日</td><td class="border p-2"><a href="https://public-holidays.shop/en/JP/2026/culture-day">文化之日</a></td></tr>
+          <tr><td class="border p-2">勤劳感谢之日</td><td class="border p-2">2026 年 11 月 21-23 日</td><td class="border p-2"><a href="https://public-holidays.shop/en/JP/2026/labour-thanksgiving-day">勤劳感谢之日</a></td></tr>
+        </tbody>
+      </table>
+      <p>11 个里 8 个是建立在周一假日上的自动三连休。一月最密集，两周内两个假期窗口（元旦和成人之日）；九月到十一月的秋季连跑又贡献四个。</p>
+
+      <h2>两个拼假四连休</h2>
+      <p>日本以周一为主的日历里，藏着两个只需一天年假就能拿下的四连休：</p>
+      <ul>
+        <li><strong>山之日，8 月 8-11 日：</strong>假日落在 2026 年 8 月 11 日周二。请掉周一 8 月 10 日，就是四天山野假期——非常适合日本阿尔卑斯或北方避暑。</li>
+        <li><strong>文化之日，10 月 31 日-11 月 3 日：</strong>假日是 11 月 3 日周二。请掉周一 11 月 2 日，从万圣节周末一路休到文化之日，四天正好赶京都红叶。</li>
+      </ul>
+
+      <h2>补休规则如何塑造 2026</h2>
+      <p>当法定假日落在周日时，日本会补休（振替休日）。2026 年正是这条规则把黄金周变成 5 天：宪法纪念日（5 月 3 日周日）顺延到 5 月 6 日。这也是今年长周末如此密集的原因——周一假日设计加上恰到好处的周日，拼出了原本没有的假期集群。</p>
+
+      <h2>错峰规划建议</h2>
+      <p>黄金周（四月底至五月初）和元旦周是日本两大出行高峰。请提前三个月订火车和酒店，或反向规划九州、北海道之旅。八月盂兰盆节与山之日重叠，八月初比往年更挤。九月到十一月是甜蜜期：四个长周末、宜人气候、红叶——堪称 2026 年日本旅行最好的三个月。</p>
+
+      <h2>常见问题</h2>
+      <p><strong>黄金周每年都一样长吗？</strong> 不一样。2026 年宪法纪念日撞周日触发补休，黄金周因此有 5 天（5 月 2-6 日）。没有周日假日的年份通常是 4 天。请每年核对准确日期。</p>
+      <p><strong>日本的长周末全国通用吗？</strong> 通用。日本 16 个法定假日全国生效，没有州级假日。因此 2026 年的 11 个长周末全日本人都能享受。</p>
+      <p><strong>2026 年元旦能延长吗？</strong> 能。1 月 1 日是周四，请掉周五 1 月 2 日，元旦就变成四连休（1 月 1-4 日），还能与许多企业传统的正月连休重叠。</p>
+      <p>浏览完整的 <a href="https://public-holidays.shop/en/JP/2026">日本 2026 假日日历</a>，把所有日期同步进手机。</p>
+    `,
+  },
 ];
 
 // ========================================================================
