@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import { GitCompare } from "lucide-react";
+import { ArrowRight, GitCompare } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { COUNTRIES, POPULAR_COUNTRIES } from "@/lib/countries";
 import { getHolidays } from "@/lib/holidays";
@@ -73,6 +73,13 @@ export default async function HomePage({
             </Link>
           ))}
         </div>
+        <Link
+          href="/countries"
+          className="inline-flex min-h-[44px] items-center gap-2 rounded-md border border-[var(--border)] bg-[var(--card)] px-4 py-2.5 text-sm font-medium text-brand transition hover:border-brand hover:bg-[var(--highlight)] focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-brand/30"
+        >
+          {t("viewAllCountries")}
+          <ArrowRight className="h-4 w-4" aria-hidden="true" />
+        </Link>
       </section>
 
       <section className="space-y-4">

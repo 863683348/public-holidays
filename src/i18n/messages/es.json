@@ -33,7 +33,8 @@
     "myHolidaysHint": "Guarda países para ver su próxima fiesta de un vistazo.",
     "addCountry": "Añadir país",
     "emptySaved": "Aún no hay países guardados. Elige uno arriba.",
-    "remove": "Quitar"
+    "remove": "Quitar",
+    "viewAllCountries": "Ver todos los países"
   },
   "homeAbout": {
     "heading": "Acerca de PubHoliday",
@@ -263,11 +264,11 @@
     "factWeekday": "Día de la semana",
     "factScope": "Dónde se celebra",
     "factType": "Tipo de festivo",
-
     "metaWeek": "Número de semana",
     "metaDayOfYear": "Día del año",
     "metaTimeZone": "Zona horaria local",
-    "metaCurrency": "Moneda",    "scopeNational": "Nacional",
+    "metaCurrency": "Moneda",
+    "scopeNational": "Nacional",
     "scopeRegional": "Regional ({count})",
     "scopeUnknown": "Varía según la región",
     "typePublic": "Festivo oficial",
@@ -368,5 +369,16 @@
     "ctaBody": "Explora los datos de festivos de {count} países en tu idioma — y si encaja, toma Pro para las funciones de varios años y varios países.",
     "ctaPrimary": "Prueba Pro para tu equipo",
     "ctaSecondary": "Primero compara países"
+  },
+  "countries": {
+    "metaTitle": "Festivos por país — directorio A–Z de {count} países",
+    "metaDescription": "Consulta los días festivos por país. Directorio A–Z de {count} países con fechas oficiales, puentes y calendarios gratuitos.",
+    "heading": "Todos los países",
+    "intro": "Días festivos de {count} países del mundo, de la A a la Z. Elige un país para ver su calendario completo.",
+    "searchPlaceholder": "Buscar un país...",
+    "noResults": "No se encontraron países.",
+    "popularGroup": "Populares",
+    "otherGroup": "#",
+    "indexLabel": "Ir a la letra"
   }
 }

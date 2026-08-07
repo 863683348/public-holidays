@@ -33,7 +33,8 @@
     "myHolidaysHint": "Enregistrez des pays pour voir leur prochaine fête en un coup d’œil.",
     "addCountry": "Ajouter un pays",
     "emptySaved": "Aucun pays enregistré. Choisissez-en un ci-dessus.",
-    "remove": "Retirer"
+    "remove": "Retirer",
+    "viewAllCountries": "Voir tous les pays"
   },
   "homeAbout": {
     "heading": "À propos de PubHoliday",
@@ -263,11 +264,11 @@
     "factWeekday": "Jour de la semaine",
     "factScope": "Zone d'application",
     "factType": "Type de jour férié",
-
     "metaWeek": "Numéro de semaine",
     "metaDayOfYear": "Jour de l'année",
     "metaTimeZone": "Fuseau horaire local",
-    "metaCurrency": "Devise",    "scopeNational": "National",
+    "metaCurrency": "Devise",
+    "scopeNational": "National",
     "scopeRegional": "Régional ({count})",
     "scopeUnknown": "Variable selon la région",
     "typePublic": "Jour férié",
@@ -368,5 +369,16 @@
     "ctaBody": "Explorez les données de jours fériés de {count} pays dans votre langue — et si cela vous convient, prenez Pro pour les fonctionnalités pluriannuelles et multi-pays.",
     "ctaPrimary": "Essayez Pro pour votre équipe",
     "ctaSecondary": "Comparez d'abord les pays"
+  },
+  "countries": {
+    "metaTitle": "Jours fériés par pays — répertoire A–Z de {count} pays",
+    "metaDescription": "Consultez les jours fériés par pays. Répertoire A–Z de {count} pays avec dates officielles, ponts et calendriers gratuits.",
+    "heading": "Tous les pays",
+    "intro": "Jours fériés de {count} pays dans le monde, de A à Z. Choisissez un pays pour voir son calendrier complet.",
+    "searchPlaceholder": "Rechercher un pays...",
+    "noResults": "Aucun pays trouvé.",
+    "popularGroup": "Populaires",
+    "otherGroup": "#",
+    "indexLabel": "Aller à la lettre"
   }
 }

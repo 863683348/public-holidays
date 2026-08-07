@@ -33,7 +33,8 @@
     "myHolidaysHint": "收藏常用国家，一眼看到它们的下一个假期。",
     "addCountry": "添加国家",
     "emptySaved": "还没有收藏国家，从上方选择一个开始。",
-    "remove": "移除"
+    "remove": "移除",
+    "viewAllCountries": "查看所有国家"
   },
   "homeAbout": {
     "heading": "关于 PubHoliday",
@@ -263,11 +264,11 @@
     "factWeekday": "星期",
     "factScope": "适用范围",
     "factType": "假期类型",
-
     "metaWeek": "周次",
     "metaDayOfYear": "年序日",
     "metaTimeZone": "当地时区",
-    "metaCurrency": "货币",    "scopeNational": "全国性",
+    "metaCurrency": "货币",
+    "scopeNational": "全国性",
     "scopeRegional": "地区性（{count}）",
     "scopeUnknown": "各地区不同",
     "typePublic": "公共假期",
@@ -368,5 +369,16 @@
     "ctaBody": "用你的语言浏览 {count} 个国家的假期数据——如果合适，用 Pro 解锁多年与多国功能。",
     "ctaPrimary": "为团队试用 Pro",
     "ctaSecondary": "先比较各国"
+  },
+  "countries": {
+    "metaTitle": "各国公共假期大全 — A–Z 国家列表",
+    "metaDescription": "按国家查看公共假期：收录 {count} 个国家的官方假期日期、长周末与免费日历，按字母 A–Z 浏览。",
+    "heading": "全部国家",
+    "intro": "收录全球 {count} 个国家的公共假期，按字母 A–Z 排列。选择国家查看完整假期日历。",
+    "searchPlaceholder": "搜索国家…",
+    "noResults": "未找到匹配的国家。",
+    "popularGroup": "热门",
+    "otherGroup": "#",
+    "indexLabel": "跳转到字母"
   }
 }

@@ -33,7 +33,8 @@
     "myHolidaysHint": "국가를 저장해 다음 공휴일을 한눈에 확인하세요.",
     "addCountry": "국가 추가",
     "emptySaved": "저장된 국가가 없습니다. 위에서 선택해 주세요.",
-    "remove": "삭제"
+    "remove": "삭제",
+    "viewAllCountries": "모든 국가 보기"
   },
   "homeAbout": {
     "heading": "PubHoliday 소개",
@@ -263,11 +264,11 @@
     "factWeekday": "요일",
     "factScope": "적용 범위",
     "factType": "공휴일 유형",
-
     "metaWeek": "주차",
     "metaDayOfYear": "연중 날짜",
     "metaTimeZone": "현지 시간대",
-    "metaCurrency": "통화",    "scopeNational": "전국",
+    "metaCurrency": "통화",
+    "scopeNational": "전국",
     "scopeRegional": "지역별({count})",
     "scopeUnknown": "지역마다 다름",
     "typePublic": "공휴일",
@@ -368,5 +369,16 @@
     "ctaBody": "자신의 언어로 {count}개국의 공휴일 데이터를 둘러보고, 마음에 들면 여러 해·여러 국가 기능을 갖춘 Pro를 이용해 보세요.",
     "ctaPrimary": "팀을 위해 Pro 사용해 보기",
     "ctaSecondary": "먼저 국가 비교하기"
+  },
+  "countries": {
+    "metaTitle": "국가별 공휴일 — 전 {count}개국 A–Z",
+    "metaDescription": "{count}개국의 공휴일을 A–Z로 둘러보세요. 공식 공휴일 날짜, 연휴, 무료 달력을 확인할 수 있습니다.",
+    "heading": "전체 국가",
+    "intro": "전 세계 {count}개국의 공휴일을 A–Z 순서로 제공합니다. 국가를 선택해 공휴일 달력을 확인하세요.",
+    "searchPlaceholder": "국가 검색…",
+    "noResults": "일치하는 국가가 없습니다.",
+    "popularGroup": "인기",
+    "otherGroup": "#",
+    "indexLabel": "문자로 이동"
   }
 }

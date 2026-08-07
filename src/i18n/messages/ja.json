@@ -33,7 +33,8 @@
     "myHolidaysHint": "国を保存して、次の祝日をひと目で確認。",
     "addCountry": "国を追加",
     "emptySaved": "保存した国はまだありません。上から選んでください。",
-    "remove": "削除"
+    "remove": "削除",
+    "viewAllCountries": "すべての国を見る"
   },
   "homeAbout": {
     "heading": "PubHolidayについて",
@@ -263,11 +264,11 @@
     "factWeekday": "曜日",
     "factScope": "適用範囲",
     "factType": "祝日の種類",
-
     "metaWeek": "週番号",
     "metaDayOfYear": "年の日数",
     "metaTimeZone": "現地時間帯",
-    "metaCurrency": "通貨",    "scopeNational": "全国",
+    "metaCurrency": "通貨",
+    "scopeNational": "全国",
     "scopeRegional": "地域限定（{count}）",
     "scopeUnknown": "地域により異なる",
     "typePublic": "公休日",
@@ -368,5 +369,16 @@
     "ctaBody": "自分の言語で {count} か国の祝日データを試し、合えば複数年・複数国の機能を備えた Pro をどうぞ。",
     "ctaPrimary": "チームで Pro を試す",
     "ctaSecondary": "まず国を比較する"
+  },
+  "countries": {
+    "metaTitle": "国別の祝日一覧 — 全{count}か国 A–Z",
+    "metaDescription": "{count}か国の祝日を A–Z で検索。公式の祝日日程、連休、無料カレンダーを確認できます。",
+    "heading": "すべての国",
+    "intro": "世界の{count}か国の祝日を A–Z 順に掲載。国を選んで祝日カレンダーを確認できます。",
+    "searchPlaceholder": "国を検索…",
+    "noResults": "該当する国が見つかりません。",
+    "popularGroup": "人気",
+    "otherGroup": "#",
+    "indexLabel": "文字へ移動"
   }
 }

@@ -33,7 +33,8 @@
     "myHolidaysHint": "Speichere Länder und sieh den nächsten Feiertag auf einen Blick.",
     "addCountry": "Land hinzufügen",
     "emptySaved": "Noch keine Länder gespeichert. Wähle oben eines aus.",
-    "remove": "Entfernen"
+    "remove": "Entfernen",
+    "viewAllCountries": "Alle Länder ansehen"
   },
   "homeAbout": {
     "heading": "Über PubHoliday",
@@ -263,11 +264,11 @@
     "factWeekday": "Wochentag",
     "factScope": "Geltungsbereich",
     "factType": "Art des Feiertags",
-
     "metaWeek": "Kalenderwoche",
     "metaDayOfYear": "Tag im Jahr",
     "metaTimeZone": "Ortszeitzone",
-    "metaCurrency": "Währung",    "scopeNational": "Landesweit",
+    "metaCurrency": "Währung",
+    "scopeNational": "Landesweit",
     "scopeRegional": "Regional ({count})",
     "scopeUnknown": "Je nach Region unterschiedlich",
     "typePublic": "Gesetzlicher Feiertag",
@@ -368,5 +369,16 @@
     "ctaBody": "Erkunde die Feiertagsdaten von {count} Ländern in deiner Sprache — und wenn es passt, nimm Pro für mehrjährige und länderübergreifende Funktionen.",
     "ctaPrimary": "Pro für dein Team testen",
     "ctaSecondary": "Zuerst Länder vergleichen"
+  },
+  "countries": {
+    "metaTitle": "Feiertage nach Ländern — A–Z Verzeichnis von {count} Ländern",
+    "metaDescription": "Feiertage nach Land: A–Z Verzeichnis von {count} Ländern mit offiziellen Daten, Brückentagen und kostenlosen Kalendern.",
+    "heading": "Alle Länder",
+    "intro": "Feiertage für {count} Länder weltweit, von A bis Z. Wähle ein Land für den vollständigen Feiertagskalender.",
+    "searchPlaceholder": "Land suchen...",
+    "noResults": "Keine Länder gefunden.",
+    "popularGroup": "Beliebt",
+    "otherGroup": "#",
+    "indexLabel": "Zum Buchstaben"
   }
 }

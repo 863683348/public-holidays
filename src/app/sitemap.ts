@@ -34,6 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: number;
       freq: "monthly" | "yearly";
     }[] = [
+      { path: "countries", priority: 0.7, freq: "monthly" },
       { path: "pricing", priority: 0.7, freq: "monthly" },
       { path: "for-teams", priority: 0.6, freq: "monthly" },
       { path: "privacy", priority: 0.5, freq: "monthly" },

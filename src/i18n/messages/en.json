@@ -33,7 +33,8 @@
     "myHolidaysHint": "Save countries to see their next holiday at a glance.",
     "addCountry": "Add country",
     "emptySaved": "No saved countries yet. Pick one above to get started.",
-    "remove": "Remove"
+    "remove": "Remove",
+    "viewAllCountries": "View all countries"
   },
   "homeAbout": {
     "heading": "About PubHoliday",
@@ -265,11 +266,11 @@
     "factWeekday": "Day of the week",
     "factScope": "Where observed",
     "factType": "Holiday type",
-
     "metaWeek": "Week number",
     "metaDayOfYear": "Day of year",
     "metaTimeZone": "Local time zone",
-    "metaCurrency": "Currency",    "scopeNational": "Nationwide",
+    "metaCurrency": "Currency",
+    "scopeNational": "Nationwide",
     "scopeRegional": "Regional ({count})",
     "scopeUnknown": "Varies by region",
     "typePublic": "Public holiday",
@@ -370,5 +371,16 @@
     "ctaBody": "Explore {count} countries of holiday data in your language — and if it fits, take Pro for multi-year and multi-country features.",
     "ctaPrimary": "Try Pro for your team",
     "ctaSecondary": "Compare countries first"
+  },
+  "countries": {
+    "metaTitle": "Public Holidays by Country — Complete A–Z List",
+    "metaDescription": "Browse official public holidays by country. A–Z directory of {count} countries with holiday dates, long weekends and free calendar downloads.",
+    "heading": "All countries",
+    "intro": "Public holidays for {count} countries around the world, from A to Z. Pick a country to see its full holiday calendar.",
+    "searchPlaceholder": "Search a country...",
+    "noResults": "No countries found.",
+    "popularGroup": "Popular",
+    "otherGroup": "#",
+    "indexLabel": "Jump to letter"
   }
 }

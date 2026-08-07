@@ -33,7 +33,8 @@
     "myHolidaysHint": "احفظ الدول لترى عطلتها القادمة بنظرة واحدة.",
     "addCountry": "إضافة دولة",
     "emptySaved": "لا توجد دول محفوظة بعد. اختر دولة بالأعلى.",
-    "remove": "إزالة"
+    "remove": "إزالة",
+    "viewAllCountries": "عرض جميع الدول"
   },
   "homeAbout": {
     "heading": "حول PubHoliday",
@@ -264,11 +265,11 @@
     "factWeekday": "يوم الأسبوع",
     "factScope": "نطاق التطبيق",
     "factType": "نوع العطلة",
-
     "metaWeek": "رقم الأسبوع",
     "metaDayOfYear": "يوم السنة",
     "metaTimeZone": "المنطقة الزمنية المحلية",
-    "metaCurrency": "العملة",    "scopeNational": "على مستوى البلاد",
+    "metaCurrency": "العملة",
+    "scopeNational": "على مستوى البلاد",
     "scopeRegional": "إقليمي ({count})",
     "scopeUnknown": "يختلف حسب المنطقة",
     "typePublic": "عطلة رسمية",
@@ -369,5 +370,16 @@
     "ctaBody": "استكشف بيانات عطلات {count} دولة بلغتك — وإن ناسبك الأمر، خذ Pro للميزات متعددة السنوات والدول.",
     "ctaPrimary": "جرّب Pro لفريقك",
     "ctaSecondary": "قارن الدول أولًا"
+  },
+  "countries": {
+    "metaTitle": "العطلات الرسمية حسب الدولة — دليل A–Z لـ {count} دولة",
+    "metaDescription": "تصفح العطلات الرسمية حسب الدولة. دليل A–Z لـ {count} دولة مع التواريخ الرسمية وعطلات نهاية الأسبوع الطويلة وتقاويم مجانية.",
+    "heading": "جميع الدول",
+    "intro": "العطلات الرسمية لـ {count} دولة حول العالم، من A إلى Z. اختر دولة لعرض تقويم العطلات الكامل.",
+    "searchPlaceholder": "ابحث عن دولة...",
+    "noResults": "لم يتم العثور على دول.",
+    "popularGroup": "الأكثر شعبية",
+    "otherGroup": "#",
+    "indexLabel": "الانتقال إلى الحرف"
   }
 }

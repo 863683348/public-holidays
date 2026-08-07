@@ -33,7 +33,8 @@
     "myHolidaysHint": "Salve países para ver o próximo feriado rapidamente.",
     "addCountry": "Adicionar país",
     "emptySaved": "Nenhum país salvo ainda. Escolha um acima.",
-    "remove": "Remover"
+    "remove": "Remover",
+    "viewAllCountries": "Ver todos os países"
   },
   "homeAbout": {
     "heading": "Sobre o PubHoliday",
@@ -263,11 +264,11 @@
     "factWeekday": "Dia da semana",
     "factScope": "Onde é observado",
     "factType": "Tipo de feriado",
-
     "metaWeek": "Número da semana",
     "metaDayOfYear": "Dia do ano",
     "metaTimeZone": "Fuso horário local",
-    "metaCurrency": "Moeda",    "scopeNational": "Nacional",
+    "metaCurrency": "Moeda",
+    "scopeNational": "Nacional",
     "scopeRegional": "Regional ({count})",
     "scopeUnknown": "Varia por região",
     "typePublic": "Feriado nacional",
@@ -368,5 +369,16 @@
     "ctaBody": "Explore os dados de feriados de {count} países no seu idioma — e, se servir, use o Pro para os recursos plurianuais e multinacionais.",
     "ctaPrimary": "Experimente o Pro para sua equipe",
     "ctaSecondary": "Primeiro compare países"
+  },
+  "countries": {
+    "metaTitle": "Feriados por país — diretório A–Z de {count} países",
+    "metaDescription": "Veja os feriados por país. Diretório A–Z de {count} países com datas oficiais, pontes e calendários gratuitos.",
+    "heading": "Todos os países",
+    "intro": "Feriados de {count} países do mundo, de A a Z. Escolha um país para ver o calendário completo.",
+    "searchPlaceholder": "Pesquisar um país...",
+    "noResults": "Nenhum país encontrado.",
+    "popularGroup": "Populares",
+    "otherGroup": "#",
+    "indexLabel": "Ir para a letra"
   }
 }
