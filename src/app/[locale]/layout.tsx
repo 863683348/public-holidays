@@ -141,7 +141,7 @@ export default async function LocaleLayout({
                 >
                   PubHoliday
                 </Link>
-                <nav className="flex min-w-0 flex-1 items-center justify-center gap-3 overflow-x-auto whitespace-nowrap text-sm">
+                <nav className="flex min-w-0 flex-1 items-center justify-center gap-2 whitespace-nowrap text-sm sm:gap-3 overflow-x-auto">
                   <Link
                     href="/compare"
                     className="text-[var(--muted)] transition-colors hover:text-[var(--fg)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--ring)] rounded-sm"
