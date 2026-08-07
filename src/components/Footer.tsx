@@ -8,6 +8,8 @@ const CONTACT_EMAIL = "ahmedlzany423@gmail.com";
 export default function Footer() {
   const t = useTranslations("footer");
   const links = [
+    { href: "/compare", label: t("compare") },
+    { href: "/today", label: t("today") },
     { href: "/privacy", label: t("privacy") },
     { href: "/terms", label: t("terms") },
     { href: "/faq", label: t("faq") },
