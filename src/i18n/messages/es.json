@@ -145,11 +145,11 @@
     "subtitle": "Consulta festivos gratis en todo el mundo. Mejora a Pro para más.",
     "free": "Gratis",
     "freePrice": "$0",
+    "freeFeaturesCount": "Consulta {count} países",
     "pro": "Pro",
     "proPrice": "$7",
     "proPeriod": "/mes",
     "freeFeatures": [
-      "Consulta 46 países",
       "Vistas de año y mes",
       "Planificador de puentes",
       "Suscripción de calendario iCal"
@@ -200,6 +200,7 @@
     "bridgeWeekend": "En {year}, {name} cae en fin de semana, así que no añade un día libre extra.",
     "faqHeading": "Preguntas frecuentes",
     "faqWhen": "¿Cuándo es {name} en {country} en {year}?",
+    "faqWhenNext": "¿Cuándo es el próximo día festivo en {country}?",
     "faqWhenAnswer": "En {country}, {name} es el {date} de {year}.",
     "faqWhenMulti": "En {country}, {name} se celebra los {dates} de {year}.",
     "faqWeekday": "¿Qué día de la semana cae {name} en {year}?",

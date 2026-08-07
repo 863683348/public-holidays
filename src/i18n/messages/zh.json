@@ -145,11 +145,11 @@
     "subtitle": "免费查询全球公共假期，升级 Pro 解锁更多权益。",
     "free": "免费版",
     "freePrice": "$0",
+    "freeFeaturesCount": "查询 {count} 个国家假期",
     "pro": "Pro",
     "proPrice": "$7",
     "proPeriod": "/月",
     "freeFeatures": [
-      "查询 46 个国家假期",
       "年视图 / 月视图日历",
       "长周末与调休计算",
       "iCal 日历订阅"
@@ -200,6 +200,7 @@
     "bridgeWeekend": "{year}年{name}落在周末，因此不会额外多出一天休息。",
     "faqHeading": "常见问题",
     "faqWhen": "{country}{year}年的{name}是哪一天？",
+    "faqWhenNext": "{country}的下一个公共假期是什么时候？",
     "faqWhenAnswer": "在{country}，{name}是{year}年的{date}。",
     "faqWhenMulti": "在{country}，{name}在{year}年的{dates}举行。",
     "faqWeekday": "{year}年的{name}是星期几？",

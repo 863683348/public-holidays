@@ -145,11 +145,11 @@
     "subtitle": "Бесплатный поиск праздников по всему миру. Перейдите на Pro.",
     "free": "Бесплатно",
     "freePrice": "$0",
+    "freeFeaturesCount": "{count} стран",
     "pro": "Pro",
     "proPrice": "$7",
     "proPeriod": "/мес",
     "freeFeatures": [
-      "46 стран",
       "Годовой и месячный календарь",
       "Планировщик длинных выходных",
       "Подписка на календарь iCal"
@@ -200,6 +200,7 @@
     "bridgeWeekend": "В {year} году {name} приходится на выходные, поэтому дополнительного выходного не добавляет.",
     "faqHeading": "Часто задаваемые вопросы",
     "faqWhen": "Когда {name} в стране {country} в {year} году?",
+    "faqWhenNext": "Когда следующий государственный праздник в {country}?",
     "faqWhenAnswer": "В стране {country} {name} — {date} {year} года.",
     "faqWhenMulti": "В стране {country} {name} отмечается {dates} в {year} году.",
     "faqWeekday": "На какой день недели приходится {name} в {year} году?",

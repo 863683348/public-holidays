@@ -145,11 +145,11 @@
     "subtitle": "Consulte feriados gratuitamente no mundo todo. Upgrade para Pro.",
     "free": "Grátis",
     "freePrice": "$0",
+    "freeFeaturesCount": "{count} países",
     "pro": "Pro",
     "proPrice": "$7",
     "proPeriod": "/mês",
     "freeFeatures": [
-      "46 países",
       "Vistas de ano e mês",
       "Planejador de feriados emendados",
       "Assinatura de calendário iCal"
@@ -200,6 +200,7 @@
     "bridgeWeekend": "Em {year}, {name} cai no fim de semana, portanto não gera um dia de folga extra.",
     "faqHeading": "Perguntas frequentes",
     "faqWhen": "Quando é {name} em {country} em {year}?",
+    "faqWhenNext": "Quando é o próximo feriado público em {country}?",
     "faqWhenAnswer": "Em {country}, {name} é em {date} de {year}.",
     "faqWhenMulti": "Em {country}, {name} é observado nos dias {dates} de {year}.",
     "faqWeekday": "Em que dia da semana cai {name} em {year}?",

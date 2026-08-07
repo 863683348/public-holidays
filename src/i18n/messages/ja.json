@@ -145,11 +145,11 @@
     "subtitle": "世界中の祝日を無料で検索。Pro にアップグレードしてさらに便利に。",
     "free": "無料",
     "freePrice": "$0",
+    "freeFeaturesCount": "{count}か国の祝日を検索",
     "pro": "Pro",
     "proPrice": "$7",
     "proPeriod": "/月",
     "freeFeatures": [
-      "46か国の祝日を検索",
       "年表示・月表示カレンダー",
       "長い週末・ブリッジ休暇の計算",
       "iCal カレンダー購読"
@@ -200,6 +200,7 @@
     "bridgeWeekend": "{year}年、{name}は週末にあたるため、追加の休みにはなりません。",
     "faqHeading": "よくある質問",
     "faqWhen": "{country}の{name}は{year}年のいつですか？",
+    "faqWhenNext": "{country}の次の祝日はいつですか？",
     "faqWhenAnswer": "{country}では、{name}は{year}年の{date}です。",
     "faqWhenMulti": "{country}では、{name}は{year}年の{dates}に祝われます。",
     "faqWeekday": "{year}年の{name}は何曜日ですか？",

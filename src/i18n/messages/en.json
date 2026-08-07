@@ -147,11 +147,11 @@
     "subtitle": "Free public holiday lookups worldwide. Upgrade to Pro for more.",
     "free": "Free",
     "freePrice": "$0",
+    "freeFeaturesCount": "Browse {count} countries",
     "pro": "Pro",
     "proPrice": "$7",
     "proPeriod": "/month",
     "freeFeatures": [
-      "Browse 46 countries",
       "Year & month calendar views",
       "Long weekend & bridge day planner",
       "iCal calendar subscription"
@@ -202,6 +202,7 @@
     "bridgeWeekend": "{name} falls on the weekend in {year}, so it does not add an extra day off.",
     "faqHeading": "Frequently asked questions",
     "faqWhen": "When is {name} in {country} in {year}?",
+    "faqWhenNext": "When is the next public holiday in {country}?",
     "faqWhenAnswer": "In {country}, {name} is on {date} in {year}.",
     "faqWhenMulti": "In {country}, {name} is observed on {dates} in {year}.",
     "faqWeekday": "What day of the week is {name} in {year}?",

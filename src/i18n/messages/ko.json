@@ -145,11 +145,11 @@
     "subtitle": "전 세계 공휴일을 무료로 조회하세요. Pro 업그레이드로 더 많은 혜택을. ",
     "free": "무료",
     "freePrice": "$0",
+    "freeFeaturesCount": "{count}개국 공휴일 조회",
     "pro": "Pro",
     "proPrice": "$7",
     "proPeriod": "/월",
     "freeFeatures": [
-      "46개국 공휴일 조회",
       "연간/월간 달력 보기",
       "연휴 및 브리지 데이 계산",
       "iCal 달력 구독"
@@ -200,6 +200,7 @@
     "bridgeWeekend": "{year}년 {name}은(는) 주말에 있어 추가 휴일이 생기지 않습니다.",
     "faqHeading": "자주 묻는 질문",
     "faqWhen": "{country}의 {name}은(는) {year}년 언제입니까?",
+    "faqWhenNext": "{country}의 다음 공휴일은 언제인가요?",
     "faqWhenAnswer": "{country}에서 {name}은(는) {year}년 {date}입니다.",
     "faqWhenMulti": "{country}에서 {name}은(는) {year}년 {dates}에 기념됩니다.",
     "faqWeekday": "{year}년 {name}은(는) 무슨 요일입니까?",

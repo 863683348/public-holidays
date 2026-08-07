@@ -145,11 +145,11 @@
     "subtitle": "Consultez les jours fériés gratuitement. Passez à Pro pour plus.",
     "free": "Gratuit",
     "freePrice": "$0",
+    "freeFeaturesCount": "{count} pays",
     "pro": "Pro",
     "proPrice": "$7",
     "proPeriod": "/mois",
     "freeFeatures": [
-      "46 pays",
       "Vues annuelle et mensuelle",
       "Planificateur de ponts",
       "Abonnement calendrier iCal"
@@ -200,6 +200,7 @@
     "bridgeWeekend": "En {year}, {name} tombe le week-end, il n'ajoute donc pas de jour de congé supplémentaire.",
     "faqHeading": "Questions fréquentes",
     "faqWhen": "Quand a lieu {name} en {country} en {year} ?",
+    "faqWhenNext": "Quand est le prochain jour férié en {country} ?",
     "faqWhenAnswer": "En {country}, {name} a lieu le {date} {year}.",
     "faqWhenMulti": "En {country}, {name} est observé les {dates} en {year}.",
     "faqWeekday": "Quel jour de la semaine tombe {name} en {year} ?",

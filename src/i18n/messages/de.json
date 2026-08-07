@@ -145,11 +145,11 @@
     "subtitle": "Feiertage weltweit kostenlos abrufen. Upgrade auf Pro für mehr.",
     "free": "Kostenlos",
     "freePrice": "$0",
+    "freeFeaturesCount": "{count} Länder durchsuchen",
     "pro": "Pro",
     "proPrice": "$7",
     "proPeriod": "/Monat",
     "freeFeatures": [
-      "46 Länder durchsuchen",
       "Jahres- und Monatsansicht",
       "Brückentage-Planer",
       "iCal-Kalenderabonnement"
@@ -200,6 +200,7 @@
     "bridgeWeekend": "{year} fällt {name} auf das Wochenende und bringt daher keinen zusätzlichen freien Tag.",
     "faqHeading": "Häufig gestellte Fragen",
     "faqWhen": "Wann ist {name} in {country} im Jahr {year}?",
+    "faqWhenNext": "Wann ist der nächste Feiertag in {country}?",
     "faqWhenAnswer": "In {country} ist {name} am {date} {year}.",
     "faqWhenMulti": "In {country} wird {name} {year} an folgenden Terminen begangen: {dates}.",
     "faqWeekday": "Auf welchen Wochentag fällt {name} {year}?",

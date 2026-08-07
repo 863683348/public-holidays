@@ -146,11 +146,11 @@
     "subtitle": "ابحث عن العطلات الرسمية مجاناً حول العالم. ترقية إلى Pro للمزيد.",
     "free": "مجاني",
     "freePrice": "$0",
+    "freeFeaturesCount": "تصفح {count} دولة",
     "pro": "Pro",
     "proPrice": "$7",
     "proPeriod": "/شهر",
     "freeFeatures": [
-      "تصفح 46 دولة",
       "عرض سنوي وشهري",
       "مخطط عطلات نهاية الأسبوع",
       "اشتراك تقويم iCal"
@@ -201,6 +201,7 @@
     "bridgeWeekend": "في {year}، يقع {name} في عطلة نهاية الأسبوع، لذا لا يضيف يوم راحة إضافيًا.",
     "faqHeading": "الأسئلة الشائعة",
     "faqWhen": "متى {name} في {country} عام {year}؟",
+    "faqWhenNext": "متى العطلة الرسمية القادمة في {country}؟",
     "faqWhenAnswer": "في {country}، يكون {name} في {date} من عام {year}.",
     "faqWhenMulti": "في {country}، يُحتفل بـ {name} في الأيام {dates} من عام {year}.",
     "faqWeekday": "في أي يوم من الأسبوع يقع {name} عام {year}؟",

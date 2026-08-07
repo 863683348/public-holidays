@@ -21,6 +21,7 @@ import LongWeekendList from "@/components/LongWeekendList";
 import SubscribeButton from "@/components/SubscribeButton";
 import AdSlot from "@/components/AdSlot";
 import YearNav from "@/components/YearNav";
+import FaqAccordion from "@/components/FaqAccordion";
 import { Link } from "@/i18n/navigation";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
@@ -370,14 +371,7 @@ export default async function CountryHolidayView({
       {faqItems.length > 0 && (
         <section className="space-y-4">
           <h2 className="text-xl font-semibold">{t("faqHeading")}</h2>
-          <div className="space-y-4">
-            {faqItems.map((item, i) => (
-              <div key={i} className="border-b border-[var(--border)] pb-3 last:border-0">
-                <h3 className="font-medium mb-1">{item.question}</h3>
-                <p className="text-[var(--muted)] text-sm">{item.answer}</p>
-              </div>
-            ))}
-          </div>
+          <FaqAccordion items={faqItems} headingLevel="h2" />
         </section>
       )}
 

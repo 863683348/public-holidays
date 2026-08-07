@@ -3,14 +3,8 @@
 import { useState } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { useSession, signIn } from "next-auth/react";
-
-function Check() {
-  return (
-    <svg className="mt-0.5 h-4 w-4 shrink-0 text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <path d="M20 6 9 17l-5-5" />
-    </svg>
-  );
-}
+import { Check } from "lucide-react";
+import { COUNTRIES } from "@/lib/countries";
 
 export default function PricingPage({
   userEmail,
@@ -24,6 +18,11 @@ export default function PricingPage({
   const { status: sessionStatus } = useSession();
   const [loading, setLoading] = useState(false);
   const isLoggedIn = sessionStatus === "authenticated" || Boolean(userEmail);
+  const freeFeatures = [
+    t("freeFeaturesCount", { count: COUNTRIES.length }),
+    ...(t.raw("freeFeatures") as string[]),
+  ];
+  const checkClass = "mt-0.5 h-4 w-4 shrink-0 text-brand";
 
   async function handleUpgrade() {
     if (!isLoggedIn) {
@@ -76,9 +75,9 @@ export default function PricingPage({
             {t("freePrice")}
           </p>
           <ul className="mt-4 space-y-2 text-sm">
-            {(t.raw("freeFeatures") as string[]).map((f) => (
+            {freeFeatures.map((f) => (
               <li key={f} className="flex items-start gap-2">
-                <Check />
+                <Check className={checkClass} aria-hidden />
                 <span>{f}</span>
               </li>
             ))}
@@ -105,7 +104,7 @@ export default function PricingPage({
           <ul className="mt-4 space-y-2 text-sm">
             {(t.raw("proFeatures") as string[]).map((f) => (
               <li key={f} className="flex items-start gap-2">
-                <Check />
+                <Check className={checkClass} aria-hidden />
                 <span>{f}</span>
               </li>
             ))}
