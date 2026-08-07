@@ -260,7 +260,11 @@
     "factWeekday": "يوم الأسبوع",
     "factScope": "نطاق التطبيق",
     "factType": "نوع العطلة",
-    "scopeNational": "على مستوى البلاد",
+
+    "metaWeek": "رقم الأسبوع",
+    "metaDayOfYear": "يوم السنة",
+    "metaTimeZone": "المنطقة الزمنية المحلية",
+    "metaCurrency": "العملة",    "scopeNational": "على مستوى البلاد",
     "scopeRegional": "إقليمي ({count})",
     "scopeUnknown": "يختلف حسب المنطقة",
     "typePublic": "عطلة رسمية",

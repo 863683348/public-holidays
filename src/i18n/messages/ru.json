@@ -259,7 +259,11 @@
     "factWeekday": "День недели",
     "factScope": "Где отмечается",
     "factType": "Тип праздника",
-    "scopeNational": "По всей стране",
+
+    "metaWeek": "Номер недели",
+    "metaDayOfYear": "День года",
+    "metaTimeZone": "Местный часовой пояс",
+    "metaCurrency": "Валюта",    "scopeNational": "По всей стране",
     "scopeRegional": "Региональный ({count})",
     "scopeUnknown": "Зависит от региона",
     "typePublic": "Государственный праздник",

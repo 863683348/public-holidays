@@ -12,6 +12,7 @@ import {
 import { getHolidays } from "@/lib/holidays";
 import { groupHolidays, slugifyHoliday, findHolidayGroup } from "@/lib/slug";
 import { deriveHolidayFacts, type BridgeAdvice } from "@/lib/holiday-facts";
+import { timeZoneForCountry, currencyForCountry, isoWeek, dayOfYear } from "@/lib/country-meta";
 import {
   breadcrumb,
   faqPage,
@@ -27,6 +28,7 @@ import HolidayMultiDate from "@/components/HolidayMultiDate";
 import HolidayRegions from "@/components/HolidayRegions";
 import HolidaySource from "@/components/HolidaySource";
 import HolidaySiblingSection from "@/components/HolidaySiblingSection";
+import HolidayMetaRows from "@/components/HolidayMetaRows";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
 
@@ -40,15 +42,6 @@ const BRIDGE_KEY: Record<BridgeAdvice, string> = {
 
 function utcDate(d: string): Date {
   return new Date(d + "T00:00:00Z");
-}
-
-function Fact({ label, value }: { label: string; value: string }) {
-  return (
-    <div className="rounded-lg border border-[var(--border)] p-3">
-      <dt className="text-xs uppercase tracking-wide text-[var(--muted)]">{label}</dt>
-      <dd className="mt-0.5 font-medium">{value}</dd>
-    </div>
-  );
 }
 
 export default async function HolidayDetailView({
@@ -125,6 +118,21 @@ export default async function HolidayDetailView({
   const scopeLabel =
     facts.scope === "national" ? t("scopeNational") : facts.scope === "regional" ? t("scopeRegional", { count: facts.regionCount }) : t("scopeUnknown");
   const typeLabel = [facts.isPublic ? t("typePublic") : null, ...facts.otherTypes].filter(Boolean).join(" · ");
+
+  // ---- Micro data rows (P1-②): ISO week / day of year / local tz / currency ----
+  // Time zone and currency come from the country catalogue; unknown codes are
+  // honestly omitted (null → row dropped) rather than showing a placeholder.
+  const localTz = timeZoneForCountry(country); const currency = currencyForCountry(country);
+  const metaRows = [
+    { label: t("factDate"), value: dateLong },
+    { label: t("factWeekday"), value: weekday },
+    { label: t("factScope"), value: scopeLabel },
+    ...(typeLabel ? [{ label: t("factType"), value: typeLabel }] : []),
+    { label: t("metaWeek"), value: String(isoWeek(group.primaryDate)) },
+    { label: t("metaDayOfYear"), value: String(dayOfYear(group.primaryDate)) },
+    ...(localTz ? [{ label: t("metaTimeZone"), value: localTz }] : []),
+    ...(currency ? [{ label: t("metaCurrency"), value: currency }] : []),
+  ];
 
   // ---- Adjacent-year verified links (SPEC §3a) -----------------------------
   // Best-effort fetch year-1/year+1 (skip out-of-window years); link to a year
@@ -237,12 +245,7 @@ export default async function HolidayDetailView({
 
       <section className="space-y-3">
         <h2 className="text-xl font-semibold">{t("factsHeading")}</h2>
-        <dl className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-          <Fact label={t("factDate")} value={dateLong} />
-          <Fact label={t("factWeekday")} value={weekday} />
-          <Fact label={t("factScope")} value={scopeLabel} />
-          {typeLabel && <Fact label={t("factType")} value={typeLabel} />}
-        </dl>
+        <HolidayMetaRows rows={metaRows} />
       </section>
 
       {facts.multiDate && (

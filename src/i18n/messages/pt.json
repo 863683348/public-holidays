@@ -259,7 +259,11 @@
     "factWeekday": "Dia da semana",
     "factScope": "Onde é observado",
     "factType": "Tipo de feriado",
-    "scopeNational": "Nacional",
+
+    "metaWeek": "Número da semana",
+    "metaDayOfYear": "Dia do ano",
+    "metaTimeZone": "Fuso horário local",
+    "metaCurrency": "Moeda",    "scopeNational": "Nacional",
     "scopeRegional": "Regional ({count})",
     "scopeUnknown": "Varia por região",
     "typePublic": "Feriado nacional",

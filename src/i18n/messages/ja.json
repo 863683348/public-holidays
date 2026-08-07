@@ -259,7 +259,11 @@
     "factWeekday": "曜日",
     "factScope": "適用範囲",
     "factType": "祝日の種類",
-    "scopeNational": "全国",
+
+    "metaWeek": "週番号",
+    "metaDayOfYear": "年の日数",
+    "metaTimeZone": "現地時間帯",
+    "metaCurrency": "通貨",    "scopeNational": "全国",
     "scopeRegional": "地域限定（{count}）",
     "scopeUnknown": "地域により異なる",
     "typePublic": "公休日",

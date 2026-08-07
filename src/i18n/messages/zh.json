@@ -259,7 +259,11 @@
     "factWeekday": "星期",
     "factScope": "适用范围",
     "factType": "假期类型",
-    "scopeNational": "全国性",
+
+    "metaWeek": "周次",
+    "metaDayOfYear": "年序日",
+    "metaTimeZone": "当地时区",
+    "metaCurrency": "货币",    "scopeNational": "全国性",
     "scopeRegional": "地区性（{count}）",
     "scopeUnknown": "各地区不同",
     "typePublic": "公共假期",

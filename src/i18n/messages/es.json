@@ -259,7 +259,11 @@
     "factWeekday": "Día de la semana",
     "factScope": "Dónde se celebra",
     "factType": "Tipo de festivo",
-    "scopeNational": "Nacional",
+
+    "metaWeek": "Número de semana",
+    "metaDayOfYear": "Día del año",
+    "metaTimeZone": "Zona horaria local",
+    "metaCurrency": "Moneda",    "scopeNational": "Nacional",
     "scopeRegional": "Regional ({count})",
     "scopeUnknown": "Varía según la región",
     "typePublic": "Festivo oficial",

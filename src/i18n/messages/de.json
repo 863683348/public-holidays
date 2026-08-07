@@ -259,7 +259,11 @@
     "factWeekday": "Wochentag",
     "factScope": "Geltungsbereich",
     "factType": "Art des Feiertags",
-    "scopeNational": "Landesweit",
+
+    "metaWeek": "Kalenderwoche",
+    "metaDayOfYear": "Tag im Jahr",
+    "metaTimeZone": "Ortszeitzone",
+    "metaCurrency": "Währung",    "scopeNational": "Landesweit",
     "scopeRegional": "Regional ({count})",
     "scopeUnknown": "Je nach Region unterschiedlich",
     "typePublic": "Gesetzlicher Feiertag",

@@ -259,7 +259,11 @@
     "factWeekday": "요일",
     "factScope": "적용 범위",
     "factType": "공휴일 유형",
-    "scopeNational": "전국",
+
+    "metaWeek": "주차",
+    "metaDayOfYear": "연중 날짜",
+    "metaTimeZone": "현지 시간대",
+    "metaCurrency": "통화",    "scopeNational": "전국",
     "scopeRegional": "지역별({count})",
     "scopeUnknown": "지역마다 다름",
     "typePublic": "공휴일",

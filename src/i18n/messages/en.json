@@ -261,7 +261,11 @@
     "factWeekday": "Day of the week",
     "factScope": "Where observed",
     "factType": "Holiday type",
-    "scopeNational": "Nationwide",
+
+    "metaWeek": "Week number",
+    "metaDayOfYear": "Day of year",
+    "metaTimeZone": "Local time zone",
+    "metaCurrency": "Currency",    "scopeNational": "Nationwide",
     "scopeRegional": "Regional ({count})",
     "scopeUnknown": "Varies by region",
     "typePublic": "Public holiday",
