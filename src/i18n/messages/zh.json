@@ -52,7 +52,9 @@
     "relatedBlogPosts": "Related blog posts",
     "faqToday": "今天{name}有公共假期吗？",
     "faqTodayYes": "是的——今天（{date}）是{name}的公共假期{holiday}。",
-    "faqTodayNo": "没有。{name}的下一个公共假期是{date}的{holiday}。"
+    "faqTodayNo": "没有。{name}的下一个公共假期是{date}的{holiday}。",
+    "faqWhenNext": "{country}的下一个公共假期是什么时候？",
+    "faqWhenNextAnswer": "{country}的下一个公共假期是{date}的{holiday}。"
   },
   "longWeekend": {
     "natural": "长周末",
@@ -244,7 +246,6 @@
     "bridgeWeekend": "{year}年{name}落在周末，因此不会额外多出一天休息。",
     "faqHeading": "常见问题",
     "faqWhen": "{country}{year}年的{name}是哪一天？",
-    "faqWhenNext": "{country}的下一个公共假期是什么时候？",
     "faqWhenAnswer": "在{country}，{name}是{year}年的{date}。",
     "faqWhenMulti": "在{country}，{name}在{year}年的{dates}举行。",
     "faqWeekday": "{year}年的{name}是星期几？",
@@ -261,6 +262,14 @@
     "viewAllYear": "查看{country}{year}年全部假期 →",
     "sourceHeading": "关于这些日期",
     "sourceNote": "{country}{year}年{name}的日期依据公开官方来源整理，最后更新于{date}。",
-    "officialSource": "官方来源："
+    "officialSource": "官方来源：",
+    "adjacentHeading": "其他年份的同一节日",
+    "datesWeekdayHeading": "星期",
+    "faqNextOccurrence": "{country}的下一个{name}是什么时候？",
+    "faqNextOccurrenceAnswer": "{country}的下一个{name}是{date}。",
+    "faqNextOccurrenceNone": "{country}的下一个{name}尚未公布。",
+    "nextYearLink": "{year}年的{name}",
+    "prevYearLink": "{year}年的{name}",
+    "regionsHeading": "庆祝地区"
   }
 }

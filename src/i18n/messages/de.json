@@ -52,7 +52,9 @@
     "relatedBlogPosts": "Related blog posts",
     "faqToday": "Ist heute ein Feiertag in {name}?",
     "faqTodayYes": "Ja — heute ({date}) ist {holiday}, ein Feiertag in {name}.",
-    "faqTodayNo": "Nein. Der nächste Feiertag in {name} ist {holiday} am {date}."
+    "faqTodayNo": "Nein. Der nächste Feiertag in {name} ist {holiday} am {date}.",
+    "faqWhenNext": "Wann ist der nächste Feiertag in {country}?",
+    "faqWhenNextAnswer": "Der nächste Feiertag in {country} ist {holiday} am {date}."
   },
   "longWeekend": {
     "natural": "Langes Wochenende",
@@ -244,7 +246,6 @@
     "bridgeWeekend": "{year} fällt {name} auf das Wochenende und bringt daher keinen zusätzlichen freien Tag.",
     "faqHeading": "Häufig gestellte Fragen",
     "faqWhen": "Wann ist {name} in {country} im Jahr {year}?",
-    "faqWhenNext": "Wann ist der nächste Feiertag in {country}?",
     "faqWhenAnswer": "In {country} ist {name} am {date} {year}.",
     "faqWhenMulti": "In {country} wird {name} {year} an folgenden Terminen begangen: {dates}.",
     "faqWeekday": "Auf welchen Wochentag fällt {name} {year}?",
@@ -261,6 +262,14 @@
     "viewAllYear": "Alle Feiertage in {country} {year} ansehen →",
     "sourceHeading": "Über diese Termine",
     "sourceNote": "Das Datum für {name} in {country} {year} wurde aus öffentlichen offiziellen Quellen zusammengestellt und zuletzt am {date} aktualisiert.",
-    "officialSource": "Offizielle Quelle:"
+    "officialSource": "Offizielle Quelle:",
+    "adjacentHeading": "Dieser Feiertag in anderen Jahren",
+    "datesWeekdayHeading": "Wochentag",
+    "faqNextOccurrence": "Wann ist der nächste {name} in {country}?",
+    "faqNextOccurrenceAnswer": "Der nächste {name} in {country} ist am {date}.",
+    "faqNextOccurrenceNone": "Der nächste {name} in {country} wurde noch nicht bekannt gegeben.",
+    "nextYearLink": "{name} im Jahr {year}",
+    "prevYearLink": "{name} im Jahr {year}",
+    "regionsHeading": "Regionen, in denen gefeiert wird"
   }
 }

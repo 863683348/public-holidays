@@ -52,7 +52,9 @@
     "relatedBlogPosts": "Related blog posts",
     "faqToday": "{name}は今日祝日ですか？",
     "faqTodayYes": "はい——今日（{date}）は{name}の祝日{holiday}です。",
-    "faqTodayNo": "いいえ。{name}の次の祝日は{date}の{holiday}です。"
+    "faqTodayNo": "いいえ。{name}の次の祝日は{date}の{holiday}です。",
+    "faqWhenNext": "{country}の次の祝日はいつですか？",
+    "faqWhenNextAnswer": "{country}の次の祝日は{date}の{holiday}です。"
   },
   "longWeekend": {
     "natural": "連休",
@@ -244,7 +246,6 @@
     "bridgeWeekend": "{year}年、{name}は週末にあたるため、追加の休みにはなりません。",
     "faqHeading": "よくある質問",
     "faqWhen": "{country}の{name}は{year}年のいつですか？",
-    "faqWhenNext": "{country}の次の祝日はいつですか？",
     "faqWhenAnswer": "{country}では、{name}は{year}年の{date}です。",
     "faqWhenMulti": "{country}では、{name}は{year}年の{dates}に祝われます。",
     "faqWeekday": "{year}年の{name}は何曜日ですか？",
@@ -261,6 +262,14 @@
     "viewAllYear": "{country}{year}年のすべての祝日を見る →",
     "sourceHeading": "日付について",
     "sourceNote": "{country}{year}年の{name}の日付は公開された公式情報に基づいて作成され、最終更新日は{date}です。",
-    "officialSource": "公式情報源："
+    "officialSource": "公式情報源：",
+    "adjacentHeading": "他の年のこの祝日",
+    "datesWeekdayHeading": "曜日",
+    "faqNextOccurrence": "{country}の次の{name}はいつですか？",
+    "faqNextOccurrenceAnswer": "{country}の次の{name}は{date}です。",
+    "faqNextOccurrenceNone": "{country}の次の{name}はまだ発表されていません。",
+    "nextYearLink": "{year}年の{name}",
+    "prevYearLink": "{year}年の{name}",
+    "regionsHeading": "祝われる地域"
   }
 }

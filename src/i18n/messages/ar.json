@@ -53,7 +53,9 @@
     "faqToday": "هل اليوم عطلة رسمية في {name}؟",
     "faqTodayYes": "نعم — اليوم ({date}) هو {holiday}، عطلة رسمية في {name}.",
     "faqTodayNo": "لا. العطلة الرسمية التالية في {name} هي {holiday} في {date}.",
-    "schoolHolidayNote": "عطلة المدارس في {name} {year} — موقعنا يركز على العطل الرسمية، لكن يمكنك الاطلاع على جدول العطل الرسمية في {name} لعام {year} عبر التقويم."
+    "schoolHolidayNote": "عطلة المدارس في {name} {year} — موقعنا يركز على العطل الرسمية، لكن يمكنك الاطلاع على جدول العطل الرسمية في {name} لعام {year} عبر التقويم.",
+    "faqWhenNext": "متى العطلة الرسمية القادمة في {country}؟",
+    "faqWhenNextAnswer": "العطلة الرسمية القادمة في {country} هي {holiday} في {date}."
   },
   "longWeekend": {
     "natural": "عطلة نهاية أسبوع طويلة",
@@ -245,7 +247,6 @@
     "bridgeWeekend": "في {year}، يقع {name} في عطلة نهاية الأسبوع، لذا لا يضيف يوم راحة إضافيًا.",
     "faqHeading": "الأسئلة الشائعة",
     "faqWhen": "متى {name} في {country} عام {year}؟",
-    "faqWhenNext": "متى العطلة الرسمية القادمة في {country}؟",
     "faqWhenAnswer": "في {country}، يكون {name} في {date} من عام {year}.",
     "faqWhenMulti": "في {country}، يُحتفل بـ {name} في الأيام {dates} من عام {year}.",
     "faqWeekday": "في أي يوم من الأسبوع يقع {name} عام {year}؟",
@@ -262,6 +263,14 @@
     "viewAllYear": "عرض جميع عطلات {country} لعام {year} ←",
     "sourceHeading": "حول هذه التواريخ",
     "sourceNote": "جُمِع تاريخ {name} لـ {country} عام {year} من مصادر رسمية عامة وجرى تحديثه آخر مرة في {date}.",
-    "officialSource": "المصدر الرسمي:"
+    "officialSource": "المصدر الرسمي:",
+    "adjacentHeading": "هذه العطلة في السنوات الأخرى",
+    "datesWeekdayHeading": "يوم الأسبوع",
+    "faqNextOccurrence": "متى يكون {name} القادم في {country}؟",
+    "faqNextOccurrenceAnswer": "يكون {name} القادم في {country} في {date}.",
+    "faqNextOccurrenceNone": "لم يُعلن بعد عن {name} القادم في {country}.",
+    "nextYearLink": "{name} في {year}",
+    "prevYearLink": "{name} في {year}",
+    "regionsHeading": "المناطق التي يُحتفل بها"
   }
 }

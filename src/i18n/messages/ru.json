@@ -52,7 +52,9 @@
     "relatedBlogPosts": "Related blog posts",
     "faqToday": "Сегодня праздничный день в {name}?",
     "faqTodayYes": "Да — сегодня ({date}) {holiday}, праздник в {name}.",
-    "faqTodayNo": "Нет. Следующий праздник в {name} — {holiday} {date}."
+    "faqTodayNo": "Нет. Следующий праздник в {name} — {holiday} {date}.",
+    "faqWhenNext": "Когда следующий государственный праздник в {country}?",
+    "faqWhenNextAnswer": "Следующий государственный праздник в стране {country} — {holiday} {date}."
   },
   "longWeekend": {
     "natural": "Длинные выходные",
@@ -244,7 +246,6 @@
     "bridgeWeekend": "В {year} году {name} приходится на выходные, поэтому дополнительного выходного не добавляет.",
     "faqHeading": "Часто задаваемые вопросы",
     "faqWhen": "Когда {name} в стране {country} в {year} году?",
-    "faqWhenNext": "Когда следующий государственный праздник в {country}?",
     "faqWhenAnswer": "В стране {country} {name} — {date} {year} года.",
     "faqWhenMulti": "В стране {country} {name} отмечается {dates} в {year} году.",
     "faqWeekday": "На какой день недели приходится {name} в {year} году?",
@@ -261,6 +262,14 @@
     "viewAllYear": "Смотреть все праздники {country} за {year} год →",
     "sourceHeading": "Об этих датах",
     "sourceNote": "Дата {name} для страны {country} за {year} год составлена из открытых официальных источников и последний раз обновлена {date}.",
-    "officialSource": "Официальный источник:"
+    "officialSource": "Официальный источник:",
+    "adjacentHeading": "Этот праздник в другие годы",
+    "datesWeekdayHeading": "День недели",
+    "faqNextOccurrence": "Когда следующий {name} в стране {country}?",
+    "faqNextOccurrenceAnswer": "Следующий {name} в стране {country} — {date}.",
+    "faqNextOccurrenceNone": "Следующий {name} в стране {country} ещё не объявлен.",
+    "nextYearLink": "{name} в {year} году",
+    "prevYearLink": "{name} в {year} году",
+    "regionsHeading": "Регионы, где отмечается"
   }
 }

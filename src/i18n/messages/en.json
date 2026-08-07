@@ -54,7 +54,9 @@
     "faqTodayYes": "Yes — today ({date}) is {holiday}, a public holiday in {name}.",
     "faqTodayNo": "No. The next public holiday in {name} is {holiday} on {date}.",
     "bankHolidayNote": "Looking for {demonym} public holidays or {demonym} bank holidays? {name} public holidays — also called national holidays or non-working days — are observed nationwide and in some regions. Bridge days let you turn a single holiday into a long weekend.",
-    "holidayWeekendNote": "A {name} holiday weekend happens when a public holiday falls on a Monday or Friday, creating a three-day weekend. The list above shows every long weekend and bridge-day opportunity in {year}."
+    "holidayWeekendNote": "A {name} holiday weekend happens when a public holiday falls on a Monday or Friday, creating a three-day weekend. The list above shows every long weekend and bridge-day opportunity in {year}.",
+    "faqWhenNext": "When is the next public holiday in {country}?",
+    "faqWhenNextAnswer": "The next public holiday in {country} is {holiday} on {date}."
   },
   "longWeekend": {
     "natural": "Long weekend",
@@ -246,7 +248,6 @@
     "bridgeWeekend": "{name} falls on the weekend in {year}, so it does not add an extra day off.",
     "faqHeading": "Frequently asked questions",
     "faqWhen": "When is {name} in {country} in {year}?",
-    "faqWhenNext": "When is the next public holiday in {country}?",
     "faqWhenAnswer": "In {country}, {name} is on {date} in {year}.",
     "faqWhenMulti": "In {country}, {name} is observed on {dates} in {year}.",
     "faqWeekday": "What day of the week is {name} in {year}?",
@@ -263,6 +264,14 @@
     "viewAllYear": "View all {country} holidays in {year} →",
     "sourceHeading": "About these dates",
     "sourceNote": "The {name} date for {country} {year} is compiled from public official sources and was last updated on {date}.",
-    "officialSource": "Official source:"
+    "officialSource": "Official source:",
+    "adjacentHeading": "This holiday in other years",
+    "datesWeekdayHeading": "Weekday",
+    "faqNextOccurrence": "When is the next {name} in {country}?",
+    "faqNextOccurrenceAnswer": "The next {name} in {country} is on {date}.",
+    "faqNextOccurrenceNone": "The next {name} in {country} has not been announced yet.",
+    "nextYearLink": "{name} in {year}",
+    "prevYearLink": "{name} in {year}",
+    "regionsHeading": "Regions where observed"
   }
 }

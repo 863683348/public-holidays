@@ -131,6 +131,21 @@ export default async function CountryHolidayView({
               }),
             }),
           },
+          // PAA hook (SPEC-002 §4b): "When is the next public holiday…?" —
+          // answered with the already-computed nextHoliday; no new fetch.
+          {
+            question: t("faqWhenNext", { country: meta.name }),
+            answer: t("faqWhenNextAnswer", {
+              country: meta.name,
+              holiday: nextHoliday.name || nextHoliday.localName,
+              date: new Date(nextHoliday.date + "T00:00:00Z").toLocaleDateString(locale, {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+                timeZone: "UTC",
+              }),
+            }),
+          },
         ]
       : []),
     {

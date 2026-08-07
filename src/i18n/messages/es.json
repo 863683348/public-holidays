@@ -52,7 +52,9 @@
     "relatedBlogPosts": "Related blog posts",
     "faqToday": "¿Hoy es festivo en {name}?",
     "faqTodayYes": "Sí — hoy ({date}) es {holiday}, un festivo en {name}.",
-    "faqTodayNo": "No. El próximo festivo en {name} es {holiday} el {date}."
+    "faqTodayNo": "No. El próximo festivo en {name} es {holiday} el {date}.",
+    "faqWhenNext": "¿Cuándo es el próximo día festivo en {country}?",
+    "faqWhenNextAnswer": "El próximo día festivo en {country} es {holiday} el {date}."
   },
   "longWeekend": {
     "natural": "Fin de semana largo",
@@ -244,7 +246,6 @@
     "bridgeWeekend": "En {year}, {name} cae en fin de semana, así que no añade un día libre extra.",
     "faqHeading": "Preguntas frecuentes",
     "faqWhen": "¿Cuándo es {name} en {country} en {year}?",
-    "faqWhenNext": "¿Cuándo es el próximo día festivo en {country}?",
     "faqWhenAnswer": "En {country}, {name} es el {date} de {year}.",
     "faqWhenMulti": "En {country}, {name} se celebra los {dates} de {year}.",
     "faqWeekday": "¿Qué día de la semana cae {name} en {year}?",
@@ -261,6 +262,14 @@
     "viewAllYear": "Ver todos los festivos de {country} en {year} →",
     "sourceHeading": "Sobre estas fechas",
     "sourceNote": "La fecha de {name} para {country} {year} se ha recopilado de fuentes oficiales públicas y se actualizó por última vez el {date}.",
-    "officialSource": "Fuente oficial:"
+    "officialSource": "Fuente oficial:",
+    "adjacentHeading": "Este festivo en otros años",
+    "datesWeekdayHeading": "Día de la semana",
+    "faqNextOccurrence": "¿Cuándo es el próximo {name} en {country}?",
+    "faqNextOccurrenceAnswer": "El próximo {name} en {country} es el {date}.",
+    "faqNextOccurrenceNone": "El próximo {name} en {country} aún no se ha anunciado.",
+    "nextYearLink": "{name} en {year}",
+    "prevYearLink": "{name} en {year}",
+    "regionsHeading": "Regiones donde se celebra"
   }
 }

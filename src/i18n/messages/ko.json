@@ -52,7 +52,9 @@
     "relatedBlogPosts": "Related blog posts",
     "faqToday": "{name}는 오늘 공휴일인가요?",
     "faqTodayYes": "네——오늘({date})은(는) {name}의 공휴일 {holiday}입니다.",
-    "faqTodayNo": "아니요. {name}의 다음 공휴일은 {date}의 {holiday}입니다."
+    "faqTodayNo": "아니요. {name}의 다음 공휴일은 {date}의 {holiday}입니다.",
+    "faqWhenNext": "{country}의 다음 공휴일은 언제인가요?",
+    "faqWhenNextAnswer": "{country}의 다음 공휴일은 {date} {holiday}입니다."
   },
   "longWeekend": {
     "natural": "긴 주말",
@@ -244,7 +246,6 @@
     "bridgeWeekend": "{year}년 {name}은(는) 주말에 있어 추가 휴일이 생기지 않습니다.",
     "faqHeading": "자주 묻는 질문",
     "faqWhen": "{country}의 {name}은(는) {year}년 언제입니까?",
-    "faqWhenNext": "{country}의 다음 공휴일은 언제인가요?",
     "faqWhenAnswer": "{country}에서 {name}은(는) {year}년 {date}입니다.",
     "faqWhenMulti": "{country}에서 {name}은(는) {year}년 {dates}에 기념됩니다.",
     "faqWeekday": "{year}년 {name}은(는) 무슨 요일입니까?",
@@ -261,6 +262,14 @@
     "viewAllYear": "{country} {year}년 전체 공휴일 보기 →",
     "sourceHeading": "날짜 안내",
     "sourceNote": "{country} {year}년 {name} 날짜는 공개된 공식 자료를 바탕으로 정리되었으며 {date}에 마지막으로 업데이트되었습니다.",
-    "officialSource": "공식 출처:"
+    "officialSource": "공식 출처:",
+    "adjacentHeading": "다른 연도의 이 공휴일",
+    "datesWeekdayHeading": "요일",
+    "faqNextOccurrence": "{country}의 다음 {name}은(는) 언제인가요?",
+    "faqNextOccurrenceAnswer": "{country}의 다음 {name}은(는) {date}입니다.",
+    "faqNextOccurrenceNone": "{country}의 다음 {name}은(는) 아직 발표되지 않았습니다.",
+    "nextYearLink": "{year}년의 {name}",
+    "prevYearLink": "{year}년의 {name}",
+    "regionsHeading": "기념되는 지역"
   }
 }

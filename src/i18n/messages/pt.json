@@ -52,7 +52,9 @@
     "relatedBlogPosts": "Related blog posts",
     "faqToday": "Hoje é feriado em {name}?",
     "faqTodayYes": "Sim — hoje ({date}) é {holiday}, um feriado em {name}.",
-    "faqTodayNo": "Não. O próximo feriado em {name} é {holiday} em {date}."
+    "faqTodayNo": "Não. O próximo feriado em {name} é {holiday} em {date}.",
+    "faqWhenNext": "Quando é o próximo feriado público em {country}?",
+    "faqWhenNextAnswer": "O próximo feriado público em {country} é {holiday} em {date}."
   },
   "longWeekend": {
     "natural": "Fim de semana prolongado",
@@ -244,7 +246,6 @@
     "bridgeWeekend": "Em {year}, {name} cai no fim de semana, portanto não gera um dia de folga extra.",
     "faqHeading": "Perguntas frequentes",
     "faqWhen": "Quando é {name} em {country} em {year}?",
-    "faqWhenNext": "Quando é o próximo feriado público em {country}?",
     "faqWhenAnswer": "Em {country}, {name} é em {date} de {year}.",
     "faqWhenMulti": "Em {country}, {name} é observado nos dias {dates} de {year}.",
     "faqWeekday": "Em que dia da semana cai {name} em {year}?",
@@ -261,6 +262,14 @@
     "viewAllYear": "Ver todos os feriados de {country} em {year} →",
     "sourceHeading": "Sobre estas datas",
     "sourceNote": "A data de {name} para {country} {year} foi compilada de fontes oficiais públicas e atualizada pela última vez em {date}.",
-    "officialSource": "Fonte oficial:"
+    "officialSource": "Fonte oficial:",
+    "adjacentHeading": "Este feriado em outros anos",
+    "datesWeekdayHeading": "Dia da semana",
+    "faqNextOccurrence": "Quando é o próximo {name} em {country}?",
+    "faqNextOccurrenceAnswer": "O próximo {name} em {country} é em {date}.",
+    "faqNextOccurrenceNone": "O próximo {name} em {country} ainda não foi anunciado.",
+    "nextYearLink": "{name} em {year}",
+    "prevYearLink": "{name} em {year}",
+    "regionsHeading": "Regiões onde é observado"
   }
 }
