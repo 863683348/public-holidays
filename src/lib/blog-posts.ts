@@ -2015,6 +2015,138 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>浏览完整的 <a href="https://public-holidays.shop/en/JP/2026">日本 2026 假日日历</a>，把所有日期同步进手机。</p>
     `,
   },
+  {
+    id: 125,
+    title: "Germany Public Holidays 2026: Federal vs Regional",
+    slug: "germany-public-holidays-federal-regional",
+    category: "guide",
+    author: "PubHoliday Research Team",
+    publishedDate: "2026-08-08T08:00:00Z",
+    lastModified: "2026-08-08T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/germany-public-holidays.svg",
+    excerpt: "Germany has 9 nationwide public holidays, then the states take over: Bavaria alone adds 4 more. Full 2026 breakdown of the federal layer and every regional extra, with exact dates.",
+    relatedCountries: ["DE"],
+    locale: "en",
+    faq: [
+      { question: "How many public holidays does Germany have in 2026?", answer: "9 nationwide (New Year's Day, Good Friday, Easter Monday, Labour Day, Ascension Day, Whit Monday, German Unity Day, Christmas Day, Boxing Day). Bavaria has 13 total, the most of any state, adding Epiphany, Corpus Christi, Assumption Day, and All Saints' Day." },
+      { question: "Why do German states have different holidays?", answer: "Germany's Basic Law leaves holiday legislation to the states (Länder). The 9 federal holidays are set by nationwide agreement, but each state decides its own additional days, which is why Bavaria gets Epiphany and Corpus Christi while Berlin gets neither." },
+      { question: "Is German Unity Day a public holiday everywhere?", answer: "Yes. October 3 is the only holiday all 16 states share in addition to the standard federal list. It marks the 1990 reunification and is a nationwide day off." },
+      { question: "Does Germany have a substitute day when a holiday falls on Sunday?", answer: "Generally no. Unlike Japan or the UK, Germany does not routinely grant make-up days for holidays landing on weekends. Plan around the calendar date itself." },
+    ],
+    content: `
+      <p>Germany's <strong>public holidays</strong> come in two layers, and the second one catches visitors by surprise. Nine dates apply everywhere in the country, from Hamburg to Munich. Then the states start adding their own: Bavaria stacks four extra days on top, while a Berliner gets exactly the national nine. This guide breaks the 2026 calendar into the federal layer and the regional layer, with exact dates so you can plan around both.</p>
+
+      <h2>The 9 nationwide holidays everyone gets</h2>
+      <p>These are observed in all 16 states (Bundesländer), no exceptions:</p>
+      <ul>
+        <li>New Year's Day — Jan 1 (Thursday)</li>
+        <li>Good Friday — Apr 3</li>
+        <li>Easter Monday — Apr 6</li>
+        <li>Labour Day — May 1 (Friday)</li>
+        <li>Ascension Day — May 14 (Thursday)</li>
+        <li>Whit Monday — May 25</li>
+        <li>German Unity Day — Oct 3 (Saturday)</li>
+        <li>Christmas Day — Dec 25 (Friday)</li>
+        <li>Boxing Day — Dec 26 (Saturday)</li>
+      </ul>
+      <p>2026 is a good year for bridge days here. Labour Day lands on Friday May 1, so take Thursday Apr 30 off and you get a four-day run. Ascension Day on Thursday May 14 turns into a long weekend with a single Friday off. German Unity Day falls on Saturday, which means most workers do not get a substitute Monday — book accordingly.</p>
+
+      <h2>The regional layer: who adds what</h2>
+      <p>Each state legislates its own holidays on top of the federal nine. The table below shows the extras and where they apply in 2026:</p>
+      <table class="min-w-full border-collapse border border-gray-300 mb-4">
+        <thead><tr class="bg-gray-100"><th class="border p-2">Holiday</th><th class="border p-2">2026 date</th><th class="border p-2">Observed in</th></tr></thead>
+        <tbody>
+          <tr><td class="border p-2">Epiphany (Heilige Drei Könige)</td><td class="border p-2">Jan 6 (Tuesday)</td><td class="border p-2">Baden-Württemberg, Bavaria, Saxony-Anhalt</td></tr>
+          <tr><td class="border p-2">Corpus Christi (Fronleichnam)</td><td class="border p-2">Jun 4 (Thursday)</td><td class="border p-2">Baden-Württemberg, Bavaria, Hesse, North Rhine-Westphalia, Rhineland-Palatinate, Saarland</td></tr>
+          <tr><td class="border p-2">Assumption Day (Mariä Himmelfahrt)</td><td class="border p-2">Aug 15 (Saturday)</td><td class="border p-2">Bavaria (parts), Saarland</td></tr>
+          <tr><td class="border p-2">World Children's Day</td><td class="border p-2">Sep 20 (Sunday)</td><td class="border p-2">Thuringia</td></tr>
+          <tr><td class="border p-2">Reformation Day</td><td class="border p-2">Oct 31 (Saturday)</td><td class="border p-2">Brandenburg, Bremen, Hamburg, Mecklenburg-Vorpommern, Lower Saxony, Saxony, Saxony-Anhalt, Schleswig-Holstein, Thuringia</td></tr>
+          <tr><td class="border p-2">All Saints' Day (Allerheiligen)</td><td class="border p-2">Nov 1 (Sunday)</td><td class="border p-2">Baden-Württemberg, Bavaria, North Rhine-Westphalia, Rhineland-Palatinate, Saarland</td></tr>
+          <tr><td class="border p-2">Repentance and Prayer Day (Buß- und Bettag)</td><td class="border p-2">Nov 18 (Wednesday)</td><td class="border p-2">Saxony only</td></tr>
+        </tbody>
+      </table>
+      <p>The Catholic south is where the holiday count climbs. Bavaria is the champion with 13 total; the Protestant north runs leaner, and the city-states (Berlin, Hamburg, Bremen) stick close to the national nine.</p>
+
+      <h2>How germany holidays 2026 differ from the stereotype</h2>
+      <p>A few things people get wrong about the German calendar. First, there is no substitute-day system: a holiday on Saturday (like German Unity Day in 2026) is simply lost for most office workers, so check the weekday before booking travel. Second, the <em>deutsche feiertage</em> list is not national-only; the phrase itself usually refers to the federal layer, but state holidays are where the real planning value hides. Third, bridges are a genuine cultural practice here — Germans call it <em>Brückentag</em> — and 2026 offers two clean ones on the federal layer alone.</p>
+
+      <h2>Plan around german holidays by state</h2>
+      <p>If your team spans Munich and Berlin, you are managing two different holiday calendars. Bavaria gets Epiphany, Corpus Christi, and All Saints' Day; Berlin gets none of those but still gets German Unity Day. The practical approach: keep one calendar per state, mark the federal nine everywhere, then layer the regional extras. For travel, the June cluster is the quiet winner — Corpus Christi on Thursday Jun 4 in the south turns into a four-day weekend with a single Friday off.</p>
+
+      <h2>Frequently Asked Questions</h2>
+      <p><strong>What are the 9 German public holidays in 2026?</strong> New Year's Day (Jan 1), Good Friday (Apr 3), Easter Monday (Apr 6), Labour Day (May 1), Ascension Day (May 14), Whit Monday (May 25), German Unity Day (Oct 3), Christmas Day (Dec 25), and Boxing Day (Dec 26).</p>
+      <p><strong>Which German state has the most holidays?</strong> Bavaria, with 13 in 2026 — the federal nine plus Epiphany, Corpus Christi, Assumption Day, and All Saints' Day. Saxony also hits 12 by adding the Repentance and Prayer Day.</p>
+      <p><strong>Is May 1 a public holiday in Germany?</strong> Yes, Labour Day (Tag der Arbeit) is one of the nine nationwide holidays, and in 2026 it conveniently falls on a Friday.</p>
+      <p><strong>Do German businesses close on all state holidays?</strong> Mostly yes, but it varies by state and sector. Shops in Bavaria close on Epiphany; in Berlin they stay open. When in doubt, check the regional calendar.</p>
+      <p>See the full <a href="https://public-holidays.shop/en/DE">Germany public holidays 2026 calendar</a> on PubHoliday, or browse the <a href="https://public-holidays.shop">homepage</a> to sync any country's holidays to your calendar.</p>
+    `,
+  },
+  {
+    id: 126,
+    title: "德国公共假日 2026：全国性与州级差异",
+    slug: "germany-public-holidays-federal-regional",
+    category: "guide",
+    author: "PubHoliday 研究团队",
+    publishedDate: "2026-08-08T08:00:00Z",
+    lastModified: "2026-08-08T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/germany-public-holidays.svg",
+    excerpt: "德国公共假日分两层：9 个全国假日 + 各州自定假日。拜仁州全年 13 天全德最多。2026 年联邦层与州级假日的完整日期表与拼假攻略。",
+    relatedCountries: ["DE"],
+    locale: "zh",
+    faq: [
+      { question: "2026 年德国有多少个公共假日？", answer: "全国性 9 个（元旦、耶稣受难日、复活节星期一、劳动节、升天节、圣灵降临节星期一、德国统一日、圣诞节、节礼日）。拜仁州全年 13 天全德最多，额外增加主显节、圣体节、圣母升天节和万圣节。" },
+      { question: "为什么德国各州假日不一样？", answer: "德国《基本法》把假日立法权交给各州。9 个联邦假日是全国协商一致的，但每个州自行决定是否增加额外假日，所以拜仁有主显节和圣体节，柏林却一个都没有。" },
+      { question: "德国统一日是全国放假吗？", answer: "是。10 月 3 日是 16 个州共同享有的唯一一个联邦级假日，纪念 1990 年两德统一，全国放假。" },
+      { question: "德国假日撞周日会补休吗？", answer: "基本不会。与日本、英国不同，德国没有成熟的补休制度，假日落在周六（如 2026 年的德国统一日）对多数上班族来说就「损失」了，订票前务必看星期。" },
+    ],
+    content: `
+      <p>德国的<strong>公共假日</strong>分两层，第二层常常让外来者措手不及。9 个日期全国统一，从汉堡到慕尼黑都放假；然后各州开始叠加自己的假日——拜仁州一口气多放 4 天，而柏林的打工人全年就只有那 9 天。这篇把 2026 年日历拆成"联邦层"和"州级层"两部分，附准确日期，方便你两层都安排好。</p>
+
+      <h2>人人都有：9 个全国假日</h2>
+      <p>以下日期在全部 16 个州（Bundesländer）生效，无一例外：</p>
+      <ul>
+        <li>元旦 — 1 月 1 日（周四）</li>
+        <li>耶稣受难日 — 4 月 3 日</li>
+        <li>复活节星期一 — 4 月 6 日</li>
+        <li>劳动节 — 5 月 1 日（周五）</li>
+        <li>升天节 — 5 月 14 日（周四）</li>
+        <li>圣灵降临节星期一 — 5 月 25 日</li>
+        <li>德国统一日 — 10 月 3 日（周六）</li>
+        <li>圣诞节 — 12 月 25 日（周五）</li>
+        <li>节礼日 — 12 月 26 日（周六）</li>
+      </ul>
+      <p>2026 年是拼假的好年份。劳动节落在周五 5 月 1 日，请掉周四 4 月 30 日就是四连休；升天节在周四 5 月 14 日，请一个周五就变长周末。德国统一日撞周六，多数公司不会补休——订行程前先看星期。</p>
+
+      <h2>州级层：谁加放了什么</h2>
+      <p>每个州在联邦 9 天之上自行立法增加假日。下表列出 2026 年的州级假日及适用州：</p>
+      <table class="min-w-full border-collapse border border-gray-300 mb-4">
+        <thead><tr class="bg-gray-100"><th class="border p-2">假日</th><th class="border p-2">2026 年日期</th><th class="border p-2">适用州</th></tr></thead>
+        <tbody>
+          <tr><td class="border p-2">主显节（Heilige Drei Könige）</td><td class="border p-2">1 月 6 日（周二）</td><td class="border p-2">巴登-符腾堡、拜仁、萨克森-安哈尔特</td></tr>
+          <tr><td class="border p-2">圣体节（Fronleichnam）</td><td class="border p-2">6 月 4 日（周四）</td><td class="border p-2">巴登-符腾堡、拜仁、黑森、北威、莱法、萨尔</td></tr>
+          <tr><td class="border p-2">圣母升天节（Mariä Himmelfahrt）</td><td class="border p-2">8 月 15 日（周六）</td><td class="border p-2">拜仁（部分地区）、萨尔</td></tr>
+          <tr><td class="border p-2">世界儿童日</td><td class="border p-2">9 月 20 日（周日）</td><td class="border p-2">图林根</td></tr>
+          <tr><td class="border p-2">宗教改革日</td><td class="border p-2">10 月 31 日（周六）</td><td class="border p-2">勃兰登堡、不来梅、汉堡、梅前、下萨克森、萨克森、萨安、石荷、图林根</td></tr>
+          <tr><td class="border p-2">万圣节（Allerheiligen）</td><td class="border p-2">11 月 1 日（周日）</td><td class="border p-2">巴登-符腾堡、拜仁、北威、莱法、萨尔</td></tr>
+          <tr><td class="border p-2">忏悔祈祷日（Buß- und Bettag）</td><td class="border p-2">11 月 18 日（周三）</td><td class="border p-2">仅萨克森</td></tr>
+        </tbody>
+      </table>
+      <p>天主教南部是假日大户。拜仁全年 13 天稳居榜首；新教北部相对精简，汉堡、柏林、不来梅这些城市州基本贴着全国 9 天走。</p>
+
+      <h2>2026 年德国假日的三个反常识点</h2>
+      <p>第一，德国没有补休制度：假日落在周六（比如 2026 年的德国统一日），多数上班族就直接"损失"了，所以订票前先查星期几。第二，<em>deutsche feiertage</em> 这个词通常只指联邦层，但真正能帮上忙的是州级假日——规划价值都藏在第二层。第三，搭桥（Brückentag）在德国是正经文化，2026 年联邦层就提供了两个干净利落的桥假窗口。</p>
+
+      <h2>按州拼假：慕尼黑和柏林是两个世界</h2>
+      <p>如果你的团队横跨慕尼黑和柏林，等于在管两本假日日历。拜仁有主显节、圣体节、万圣节；柏林一个都没有，但同样享受德国统一日。务实的做法：每个州单独建日历，9 个联邦假日全标，再叠上州级差异。出行建议盯紧 6 月那波——南方圣体节在周四 6 月 4 日，请一个周五就是四连休，而且这波游客最少。</p>
+
+      <h2>常见问题</h2>
+      <p><strong>2026 年德国 9 个公共假日是哪几天？</strong> 元旦（1 月 1 日）、耶稣受难日（4 月 3 日）、复活节星期一（4 月 6 日）、劳动节（5 月 1 日）、升天节（5 月 14 日）、圣灵降临节星期一（5 月 25 日）、德国统一日（10 月 3 日）、圣诞节（12 月 25 日）、节礼日（12 月 26 日）。</p>
+      <p><strong>德国哪个州假日最多？</strong> 拜仁州，2026 年全年 13 天——联邦 9 天加上主显节、圣体节、圣母升天节、万圣节。萨克森靠忏悔祈祷日也到 12 天。</p>
+      <p><strong>5 月 1 日德国放假吗？</strong> 放。劳动节（Tag der Arbeit）是 9 个全国假日之一，2026 年恰好落在周五。</p>
+      <p><strong>州级假日德国商店也关门吗？</strong> 大部分关，但按州和行业有差别。拜仁主显节商店歇业，柏林照常营业。拿不准就看州级日历。</p>
+      <p>到 PubHoliday 查看完整的<a href="https://public-holidays.shop/en/DE">德国 2026 公共假日日历</a>，或从<a href="https://public-holidays.shop">首页</a>把任意国家的假日同步进你的日历。</p>
+    `,
+  },
 ];
 
 // ========================================================================
