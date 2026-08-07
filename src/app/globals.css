@@ -22,3 +22,17 @@ body {
   background: var(--bg);
   color: var(--fg);
 }
+
+/* Interaction-state tokens (compare dashboard + FaqAccordion share these).
+   Brand family only — no new hue. See DESIGN compare-skeleton §11. */
+:root {
+  --focus-ring: 0 0 0 3px rgba(79, 70, 229, 0.3);
+  --highlight: color-mix(in srgb, #4f46e5 10%, transparent);
+  --highlight-strong: color-mix(in srgb, #4f46e5 22%, transparent);
+}
+
+.dark {
+  --focus-ring: 0 0 0 3px rgba(99, 102, 241, 0.4);
+  --highlight: color-mix(in srgb, #4f46e5 18%, transparent);
+  --highlight-strong: color-mix(in srgb, #4f46e5 32%, transparent);
+}
