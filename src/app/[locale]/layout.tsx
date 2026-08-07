@@ -11,6 +11,7 @@ import LocaleSwitcher from "@/components/LocaleSwitcher";
 import { Link } from "@/i18n/navigation";
 import SessionProvider from "@/components/SessionProvider";
 import GoogleLogin from "@/components/GoogleLogin";
+import MobileMenu from "@/components/MobileMenu";
 import "../globals.css";
 import Footer from "@/components/Footer";
 
@@ -141,7 +142,7 @@ export default async function LocaleLayout({
                 >
                   PubHoliday
                 </Link>
-                <nav className="flex min-w-0 flex-1 items-center justify-center gap-2 whitespace-nowrap text-sm sm:gap-3 overflow-x-auto">
+                <nav className="hidden min-w-0 flex-1 items-center justify-center gap-2 whitespace-nowrap text-sm sm:gap-3 md:flex overflow-x-auto">
                   <Link
                     href="/compare"
                     className="text-[var(--muted)] transition-colors hover:text-[var(--fg)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--ring)] rounded-sm"
@@ -175,7 +176,10 @@ export default async function LocaleLayout({
                 </nav>
               </div>
               <div className="flex items-center gap-2">
-                <GoogleLogin />
+                <MobileMenu />
+                <div className="hidden md:block">
+                  <GoogleLogin />
+                </div>
                 <LocaleSwitcher />
                 <ThemeToggle />
               </div>
