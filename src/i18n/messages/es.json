@@ -27,6 +27,17 @@
     "emptySaved": "Aún no hay países guardados. Elige uno arriba.",
     "remove": "Quitar"
   },
+  "homeAbout": {
+    "heading": "Acerca de PubHoliday",
+    "p1": "PubHoliday es un calendario gratuito y rápido de días festivos que cubre países de todas las regiones. Ya sea que planee días libres, programe envíos o simplemente consulte qué está cerrado esta semana, puede buscar días festivos oficiales, conmemoraciones y fines de semana largos en segundos.",
+    "p2": "Elija un país de la lista para ver su calendario completo de días festivos del año actual y el próximo. Resaltamos los fines de semana largos para que aproveche los puentes, y nuestro reloj mundial lo mantiene sincronizado con la hora local de cualquier lugar.",
+    "li1": "Días festivos oficiales actualizados para {count} países y regiones.",
+    "li2": "Detección de fines de semana largos para planificar descansos.",
+    "li3": "Reloj mundial con hora actual junto al calendario de cada país.",
+    "li4": "Suscríbase a Pro para guardar países, listas de festivos personales y exportaciones ICS.",
+    "forTeamsLink": "/for-teams",
+    "forTeamsLinkLabel": "¿Buscas opciones para tu equipo? Descubre PubHoliday for Teams →"
+  },
   "country": {
     "yearView": "Calendario de festivos {year}",
     "holidays": "Festivos",
@@ -180,7 +191,15 @@
     "subscribeNewsletterHint": "Get new posts delivered to your inbox",
     "notFound": "Article not found",
     "shareThis": "Share this article",
-    "relatedCountries": "Países relacionados"
+    "relatedCountries": "Países relacionados",
+    "byAuthor": "Por {author}",
+    "categoryLabel": "Categoría: {category}",
+    "shareTwitter": "Twitter",
+    "shareLinkedIn": "LinkedIn",
+    "shareFacebook": "Facebook",
+    "faqHeading": "Preguntas frecuentes",
+    "relatedArticles": "Artículos relacionados",
+    "relatedCountryLink": "{name} Festivos →"
   },
   "auth": {
     "signIn": "Iniciar sesión con Google",

@@ -27,6 +27,17 @@
     "emptySaved": "Aucun pays enregistré. Choisissez-en un ci-dessus.",
     "remove": "Retirer"
   },
+  "homeAbout": {
+    "heading": "À propos de PubHoliday",
+    "p1": "PubHoliday est un calendrier gratuit et rapide des jours fériés couvrant des pays de toutes les régions. Que vous planifiiez des congés, organisiez des expéditions ou vérifiiez simplement ce qui est fermé cette semaine, vous pouvez consulter les jours fériés officiels, les observances et les week-ends prolongés en quelques secondes.",
+    "p2": "Choisissez un pays dans la liste pour voir son calendrier complet des jours fériés pour l'année en cours et l'année prochaine. Nous mettons en évidence les week-ends prolongés pour profiter des ponts, et notre horloge mondiale vous garde en phase avec l'heure locale partout.",
+    "li1": "Jours fériés officiels à jour pour {count} pays et régions.",
+    "li2": "Détection des week-ends prolongés pour planifier vos pauses.",
+    "li3": "Horloge mondiale en temps réel à côté du calendrier de chaque pays.",
+    "li4": "Abonnez-vous à Pro pour les pays enregistrés, les listes de congés personnelles et les exportations ICS.",
+    "forTeamsLink": "/for-teams",
+    "forTeamsLinkLabel": "Vous cherchez pour votre équipe ? Découvrez PubHoliday for Teams →"
+  },
   "country": {
     "yearView": "Calendrier des fériés {year}",
     "holidays": "Fériés",
@@ -180,7 +191,15 @@
     "subscribeNewsletterHint": "Get new posts delivered to your inbox",
     "notFound": "Article not found",
     "shareThis": "Share this article",
-    "relatedCountries": "Pays associés"
+    "relatedCountries": "Pays associés",
+    "byAuthor": "Par {author}",
+    "categoryLabel": "Catégorie : {category}",
+    "shareTwitter": "Twitter",
+    "shareLinkedIn": "LinkedIn",
+    "shareFacebook": "Facebook",
+    "faqHeading": "Questions fréquentes",
+    "relatedArticles": "Articles connexes",
+    "relatedCountryLink": "{name} Jours fériés →"
   },
   "auth": {
     "signIn": "Se connecter avec Google",

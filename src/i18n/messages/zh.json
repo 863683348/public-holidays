@@ -27,6 +27,17 @@
     "emptySaved": "还没有收藏国家，从上方选择一个开始。",
     "remove": "移除"
   },
+  "homeAbout": {
+    "heading": "关于 PubHoliday",
+    "p1": "PubHoliday 是一款免费、快速的公共假期日历，覆盖全球各个地区的国家。无论你是计划休假、安排发货，还是只想看看这周哪些地方放假，都能在几秒内查到官方公共假期、纪念日与长周末。",
+    "p2": "从上方列表选择一个国家，即可查看它今年与明年的完整假期日历。我们会标出长周末，帮你充分利用调休日；世界时钟则让你随时与各地的当地时间保持同步。",
+    "li1": "覆盖 {count} 个国家和地区的官方公共假期，数据实时更新。",
+    "li2": "长周末检测，帮你规划更长的假期。",
+    "li3": "各国日历旁附实时世界时钟。",
+    "li4": "订阅 Pro 可收藏国家、创建个人假期清单并导出 ICS 日历。",
+    "forTeamsLink": "/for-teams",
+    "forTeamsLinkLabel": "想为团队安排假期？了解 PubHoliday for Teams →"
+  },
   "country": {
     "yearView": "{year} 年假期日历",
     "holidays": "假期",
@@ -180,7 +191,15 @@
     "subscribeNewsletterHint": "Get new posts delivered to your inbox",
     "notFound": "Article not found",
     "shareThis": "Share this article",
-    "relatedCountries": "相关国家"
+    "relatedCountries": "相关国家",
+    "byAuthor": "作者：{author}",
+    "categoryLabel": "分类：{category}",
+    "shareTwitter": "Twitter",
+    "shareLinkedIn": "LinkedIn",
+    "shareFacebook": "Facebook",
+    "faqHeading": "常见问题",
+    "relatedArticles": "相关文章",
+    "relatedCountryLink": "{name} 假期 →"
   },
   "auth": {
     "signIn": "使用 Google 登录",

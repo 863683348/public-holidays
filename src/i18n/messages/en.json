@@ -27,6 +27,17 @@
     "emptySaved": "No saved countries yet. Pick one above to get started.",
     "remove": "Remove"
   },
+  "homeAbout": {
+    "heading": "About PubHoliday",
+    "p1": "PubHoliday is a free, fast public-holiday calendar covering countries across every region. Whether you are planning time off, scheduling shipments, or simply checking what is closed this week, you can look up official public holidays, observances, and long weekends in seconds.",
+    "p2": "Pick a country from the list above to see its full holiday calendar for the current and next year. We highlight long weekends so you can make the most of bridging days, and our world clock keeps you in sync with local time anywhere.",
+    "li1": "Up-to-date official public holidays for {count} countries and regions.",
+    "li2": "Long-weekend detection to help you plan extended breaks.",
+    "li3": "Current-time world clock alongside each country's calendar.",
+    "li4": "Subscribe to Pro for saved countries, personal holiday lists, and ICS exports.",
+    "forTeamsLink": "/for-teams",
+    "forTeamsLinkLabel": "Looking for your team? Explore PubHoliday for Teams →"
+  },
   "country": {
     "yearView": "Holiday calendar {year}",
     "holidays": "Holidays",
@@ -182,7 +193,15 @@
     "subscribeNewsletterHint": "Get new posts delivered to your inbox",
     "notFound": "Article not found",
     "shareThis": "Share this article",
-    "relatedCountries": "Related countries"
+    "relatedCountries": "Related countries",
+    "byAuthor": "By {author}",
+    "categoryLabel": "Category: {category}",
+    "shareTwitter": "Twitter",
+    "shareLinkedIn": "LinkedIn",
+    "shareFacebook": "Facebook",
+    "faqHeading": "Frequently Asked Questions",
+    "relatedArticles": "Related Articles",
+    "relatedCountryLink": "{name} Holidays →"
   },
   "auth": {
     "signIn": "Sign in with Google",

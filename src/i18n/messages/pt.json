@@ -27,6 +27,17 @@
     "emptySaved": "Nenhum país salvo ainda. Escolha um acima.",
     "remove": "Remover"
   },
+  "homeAbout": {
+    "heading": "Sobre o PubHoliday",
+    "p1": "O PubHoliday é um calendário gratuito e rápido de feriados que cobre países de todas as regiões. Seja para planejar folgas, programar envios ou apenas verificar o que está fechado esta semana, você consulta feriados oficiais, datas comemorativas e fins de semana prolongados em segundos.",
+    "p2": "Escolha um país na lista acima para ver o calendário completo de feriados do ano atual e do próximo. Destacamos fins de semana prolongados para você aproveitar os pontos facultativos, e nosso relógio mundial mantém você sincronizado com o horário local em qualquer lugar.",
+    "li1": "Feriados oficiais atualizados para {count} países e regiões.",
+    "li2": "Detecção de fins de semana prolongados para planejar pausas.",
+    "li3": "Relógio mundial com hora atual ao lado do calendário de cada país.",
+    "li4": "Assine o Pro para salvar países, listas de feriados pessoais e exportações ICS.",
+    "forTeamsLink": "/for-teams",
+    "forTeamsLinkLabel": "Procurando para sua equipe? Conheça o PubHoliday for Teams →"
+  },
   "country": {
     "yearView": "Calendário de feriados {year}",
     "holidays": "Feriados",
@@ -180,7 +191,15 @@
     "subscribeNewsletterHint": "Receba novos artigos no seu email",
     "notFound": "Artigo não encontrado",
     "shareThis": "Compartilhe este artigo",
-    "relatedCountries": "Países relacionados"
+    "relatedCountries": "Países relacionados",
+    "byAuthor": "Por {author}",
+    "categoryLabel": "Categoria: {category}",
+    "shareTwitter": "Twitter",
+    "shareLinkedIn": "LinkedIn",
+    "shareFacebook": "Facebook",
+    "faqHeading": "Perguntas frequentes",
+    "relatedArticles": "Artigos relacionados",
+    "relatedCountryLink": "{name} Feriados →"
   },
   "auth": {
     "signIn": "Entrar com Google",

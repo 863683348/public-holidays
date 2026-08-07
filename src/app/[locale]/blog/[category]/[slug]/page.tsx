@@ -5,7 +5,7 @@ import { routing } from "@/i18n/routing";
 import { getCountry } from "@/lib/countries";
 import { getPostData, getPostsByCategory } from "@/lib/blog-posts";
 import { articleBreadcrumb, articleStructuredData, faqPage } from "@/lib/seo";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import SubscribeButton from "@/components/SubscribeButton";
 import AdSlot from "@/components/AdSlot";
 
@@ -69,6 +69,7 @@ export default async function ArticlePage({
 }) {
   const { locale, category, slug } = await params;
   const t = await getTranslations("blog");
+  const tNav = await getTranslations("nav");
 
   const post = await getPostData(slug);
 
@@ -85,12 +86,12 @@ export default async function ArticlePage({
       {/* Breadcrumb */}
       <nav className="text-sm text-[var(--muted)]">
         <div className="flex items-center gap-2">
-          <Link href={`/${localeStr}`} className="text-brand hover:underline">
-            Home
+          <Link href="/" className="text-brand hover:underline">
+            {tNav("home")}
           </Link>
           <span>/</span>
-          <Link href={`/${localeStr}/blog`} className="text-brand hover:underline">
-            Blog
+          <Link href="/blog" className="text-brand hover:underline">
+            {t("blogSection")}
           </Link>
           <span>/</span>
           <span>{category}</span>
@@ -104,7 +105,7 @@ export default async function ArticlePage({
         <div className="prose prose-invert max-w-none">
           <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
           <div className="flex items-center gap-4 text-sm text-[var(--muted)] mb-6">
-            <span>By {post.author}</span>
+            <span>{t("byAuthor", { author: post.author })}</span>
             <span>•</span>
             <time dateTime={post.publishedDate}>
               {new Date(post.publishedDate).toLocaleDateString(localeStr, {
@@ -114,7 +115,7 @@ export default async function ArticlePage({
               })}
             </time>
             <span>•</span>
-            <span>Category: {post.category}</span>
+            <span>{t("categoryLabel", { category: post.category })}</span>
           </div>
 
           {/* Featured Image */}
@@ -147,7 +148,7 @@ export default async function ArticlePage({
                 rel="noopener noreferrer"
                 className="px-4 py-2 bg-blue-600 text-white rounded-sm hover:bg-blue-700 transition-colors"
               >
-                Twitter
+                {t("shareTwitter")}
               </a>
               <a
                 href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
@@ -157,7 +158,7 @@ export default async function ArticlePage({
                 rel="noopener noreferrer"
                 className="px-4 py-2 bg-blue-800 text-white rounded-sm hover:bg-blue-900 transition-colors"
               >
-                LinkedIn
+                {t("shareLinkedIn")}
               </a>
               <a
                 href={`https://api.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
@@ -167,7 +168,7 @@ export default async function ArticlePage({
                 rel="noopener noreferrer"
                 className="px-4 py-2 bg-blue-700 text-white rounded-sm hover:bg-blue-800 transition-colors"
               >
-                Facebook
+                {t("shareFacebook")}
               </a>
           </div>
         </div>
@@ -183,10 +184,10 @@ export default async function ArticlePage({
                 return (
                   <Link
                     key={code}
-                    href={`/${localeStr}/${code}`}
+                    href={`/${code}`}
                     className="px-3 py-1.5 bg-[var(--brand)]/10 text-sm rounded-sm hover:bg-[var(--brand)]/20 transition-colors"
                   >
-                    {c.name} Holidays →
+                    {t("relatedCountryLink", { name: c.name })}
                   </Link>
                 );
               })}
@@ -197,7 +198,7 @@ export default async function ArticlePage({
           {/* FAQ — captures "People Also Ask" intent + FAQPage rich snippet */}
           {post.faq && post.faq.length > 0 && (
             <div className="mt-10 pt-8 border-t border-[var(--border)]">
-              <h2 className="text-2xl font-bold mb-4">Frequently Asked Questions</h2>
+              <h2 className="text-2xl font-bold mb-4">{t("faqHeading")}</h2>
               <div className="space-y-4">
                 {post.faq.map((item, i) => (
                   <div key={i}>
@@ -214,10 +215,10 @@ export default async function ArticlePage({
       {/* Related Articles */}
       {relatedPosts.length > 0 && (
         <div className="mt-8 pt-8 border-t border-[var(--border)]">
-          <h3 className="text-lg font-semibold mb-4">Related Articles</h3>
+          <h3 className="text-lg font-semibold mb-4">{t("relatedArticles")}</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {relatedPosts.map((rp) => (
-              <Link key={rp.slug} href={`/${localeStr}/blog/${rp.category}/${rp.slug}`} className="block p-4 border rounded-lg hover:border-brand transition-colors">
+              <Link key={rp.slug} href={`/blog/${rp.category}/${rp.slug}`} className="block p-4 border rounded-lg hover:border-brand transition-colors">
                 <div className="text-xs text-[var(--muted)] mb-1">{rp.category}</div>
                 <h4 className="text-sm font-semibold leading-tight mb-1">{rp.title}</h4>
                 <p className="text-xs text-[var(--muted)] line-clamp-2">{rp.excerpt}</p>

@@ -27,6 +27,17 @@
     "emptySaved": "Noch keine Länder gespeichert. Wähle oben eines aus.",
     "remove": "Entfernen"
   },
+  "homeAbout": {
+    "heading": "Über PubHoliday",
+    "p1": "PubHoliday ist ein kostenloser, schneller Feiertagskalender für Länder aus allen Regionen der Welt. Ob Sie freie Tage planen, Lieferungen terminieren oder nur prüfen möchten, was diese Woche geschlossen ist – offizielle Feiertage, Gedenktage und lange Wochenenden finden Sie in Sekunden.",
+    "p2": "Wählen Sie oben ein Land aus, um seinen vollständigen Feiertagskalender für das aktuelle und nächste Jahr zu sehen. Wir heben lange Wochenenden hervor, damit Sie Brückentage optimal nutzen können, und unsere Weltuhr hält Sie überall mit der lokalen Zeit synchron.",
+    "li1": "Aktuelle offizielle Feiertage für {count} Länder und Regionen.",
+    "li2": "Erkennung langer Wochenenden für Ihre Planung.",
+    "li3": "Weltuhr mit aktueller Zeit neben jedem Länderkalender.",
+    "li4": "Abonnieren Sie Pro für gespeicherte Länder, persönliche Feiertagslisten und ICS-Exporte.",
+    "forTeamsLink": "/for-teams",
+    "forTeamsLinkLabel": "Für Ihr Team? Entdecken Sie PubHoliday for Teams →"
+  },
   "country": {
     "yearView": "Feiertagskalender {year}",
     "holidays": "Feiertage",
@@ -180,7 +191,15 @@
     "subscribeNewsletterHint": "Get new posts delivered to your inbox",
     "notFound": "Article not found",
     "shareThis": "Share this article",
-    "relatedCountries": "Verwandte Länder"
+    "relatedCountries": "Verwandte Länder",
+    "byAuthor": "Von {author}",
+    "categoryLabel": "Kategorie: {category}",
+    "shareTwitter": "Twitter",
+    "shareLinkedIn": "LinkedIn",
+    "shareFacebook": "Facebook",
+    "faqHeading": "Häufig gestellte Fragen",
+    "relatedArticles": "Verwandte Artikel",
+    "relatedCountryLink": "{name} Feiertage →"
   },
   "auth": {
     "signIn": "Mit Google anmelden",

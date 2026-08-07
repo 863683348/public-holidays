@@ -27,6 +27,17 @@
     "emptySaved": "保存した国はまだありません。上から選んでください。",
     "remove": "削除"
   },
+  "homeAbout": {
+    "heading": "PubHolidayについて",
+    "p1": "PubHolidayは、あらゆる地域の国をカバーする無料で高速な祝日カレンダーです。休暇の計画、出荷のスケジュール、今週の休業確認など、公式の祝日・記念日・連休を数秒で調べられます。",
+    "p2": "上のリストから国を選ぶと、今年と来年の完全な祝日カレンダーを確認できます。連休を強調表示して振替休日を最大限活用できるようにし、ワールドクロックでどこでも現地時間に合わせられます。",
+    "li1": "{count} の国と地域の最新の公式祝日。",
+    "li2": "長期休暇の計画に役立つ連休の検出。",
+    "li3": "各国のカレンダーと併せて表示されるリアルタイムのワールドクロック。",
+    "li4": "Proに登録すると、国を保存し、自分だけの祝日リストを作成し、ICSでエクスポートできます。",
+    "forTeamsLink": "/for-teams",
+    "forTeamsLinkLabel": "チーム向け？ PubHoliday for Teams を見る →"
+  },
   "country": {
     "yearView": "{year} 年の祝日カレンダー",
     "holidays": "祝日一覧",
@@ -180,7 +191,15 @@
     "subscribeNewsletterHint": "新着記事をメールで受信",
     "notFound": "記事が見つかりません",
     "shareThis": "この記事をシェア",
-    "relatedCountries": "関連国"
+    "relatedCountries": "関連国",
+    "byAuthor": "{author} 著",
+    "categoryLabel": "カテゴリ：{category}",
+    "shareTwitter": "Twitter",
+    "shareLinkedIn": "LinkedIn",
+    "shareFacebook": "Facebook",
+    "faqHeading": "よくある質問",
+    "relatedArticles": "関連記事",
+    "relatedCountryLink": "{name} の祝日 →"
   },
   "auth": {
     "signIn": "Googleでログイン",

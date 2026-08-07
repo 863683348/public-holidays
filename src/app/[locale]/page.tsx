@@ -17,6 +17,7 @@ export default async function HomePage({
 }) {
   const { locale } = await params;
   const t = await getTranslations("home");
+  const ta = await getTranslations("homeAbout");
   const year = new Date().getFullYear();
 
   const featured = await Promise.all(
@@ -80,25 +81,23 @@ export default async function HomePage({
       </section>
 
       <section className="space-y-4 rounded-xl border border-[var(--border)] bg-[var(--card)] p-6">
-        <h2 className="text-xl font-semibold">About PubHoliday</h2>
-        <p className="text-sm leading-relaxed text-[var(--muted)]">
-          PubHoliday is a free, fast public-holiday calendar covering countries
-          across every region. Whether you are planning time off, scheduling
-          shipments, or simply checking what is closed this week, you can look up
-          official public holidays, observances, and long weekends in seconds.
-        </p>
-        <p className="text-sm leading-relaxed text-[var(--muted)]">
-          Pick a country from the list above to see its full holiday calendar for
-          the current and next year. We highlight long weekends so you can make
-          the most of bridging days, and our world clock keeps you in sync with
-          local time anywhere.
-        </p>
+        <h2 className="text-xl font-semibold">{ta("heading")}</h2>
+        <p className="text-sm leading-relaxed text-[var(--muted)]">{ta("p1")}</p>
+        <p className="text-sm leading-relaxed text-[var(--muted)]">{ta("p2")}</p>
         <ul className="list-disc space-y-1 pl-5 text-sm text-[var(--muted)]">
-          <li>Up-to-date official public holidays for {COUNTRIES.length} countries and regions.</li>
-          <li>Long-weekend detection to help you plan extended breaks.</li>
-          <li>Current-time world clock alongside each country&apos;s calendar.</li>
-          <li>Subscribe to Pro for saved countries, personal holiday lists, and ICS exports.</li>
+          <li>{ta("li1", { count: COUNTRIES.length })}</li>
+          <li>{ta("li2")}</li>
+          <li>{ta("li3")}</li>
+          <li>{ta("li4")}</li>
         </ul>
+        <p className="text-sm">
+          <Link
+            href={ta("forTeamsLink")}
+            className="font-medium text-brand hover:underline"
+          >
+            {ta("forTeamsLinkLabel")}
+          </Link>
+        </p>
       </section>
 
       <AdSlot />
