@@ -180,6 +180,8 @@
     "heading": "Blog",
     "subheading": "Approfondimenti, storie e guide pratiche sulle festività",
     "viewAll": "Vedi tutti gli articoli",
+    "postsCount": "{count} articoli",
+    "viewAllCategory": "Vedi tutto →",
     "viewAllUrl": "/blog",
     "featured": "Articolo in evidenza",
     "categoriesHeading": "Sfoglia per categoria",

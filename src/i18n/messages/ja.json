@@ -180,6 +180,8 @@
     "heading": "ブログ",
     "subheading": "祝日に関する洞察、ストーリー、実用的ガイド",
     "viewAll": "すべての記事を見る",
+    "postsCount": "{count} 件の記事",
+    "viewAllCategory": "すべて見る →",
     "viewAllUrl": "/blog",
     "featured": "注目の記事",
     "categoriesHeading": "カテゴリから探す",

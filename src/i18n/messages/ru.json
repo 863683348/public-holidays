@@ -180,6 +180,8 @@
     "heading": "Блог",
     "subheading": "Статьи, истории и практические руководства о праздниках",
     "viewAll": "Все статьи",
+    "postsCount": "{count} статей",
+    "viewAllCategory": "Смотреть все →",
     "viewAllUrl": "/blog",
     "featured": "Избранная статья",
     "categoriesHeading": "По категориям",

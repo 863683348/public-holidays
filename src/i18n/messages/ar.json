@@ -181,6 +181,8 @@
     "heading": "المدونة",
     "subheading": "رؤى وقصص وأدلة عملية حول العطلات الرسمية",
     "viewAll": "عرض جميع المقالات",
+    "postsCount": "{count} مقالات",
+    "viewAllCategory": "عرض الكل ←",
     "viewAllUrl": "/blog",
     "featured": "مقال مميز",
     "categoriesHeading": "تصفح حسب الفئة",

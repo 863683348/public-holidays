@@ -2,7 +2,7 @@
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import SubscribeButton from "@/components/SubscribeButton";
 import AdSlot from "@/components/AdSlot";
 import { getPostsByCategory } from "@/lib/blog-posts";
@@ -50,6 +50,7 @@ export default async function CategoryPage({
 }) {
   const { locale, category } = await params;
   const t = await getTranslations("blog");
+  const tNav = await getTranslations("nav");
 
   // Fetch locale-aware posts from data store
   const categoryPosts = getPostsByCategory(category, locale);
@@ -63,9 +64,9 @@ export default async function CategoryPage({
       {/* Breadcrumb */}
       <nav className="text-sm text-[var(--muted)] mb-4">
         <div className="flex items-center gap-2">
-          <a href={`/${locale}`} className="text-brand hover:underline">Home</a>
+          <Link href="/" className="text-brand hover:underline">{tNav("home")}</Link>
           <span>/</span>
-          <a href={`/${locale}/blog`} className="text-brand hover:underline">Blog</a>
+          <Link href="/blog" className="text-brand hover:underline">{t("blogSection")}</Link>
           <span>/</span>
           <span className="text-[var(--foreground)]">{category}</span>
         </div>
@@ -73,7 +74,7 @@ export default async function CategoryPage({
 
       <div>
         <Link
-          href={`/${locale}/blog`}
+          href="/blog"
           className="text-sm text-brand hover:underline"
         >
           {t("backToBlog")}
@@ -101,7 +102,7 @@ export default async function CategoryPage({
             </div>
             <h3 className="text-lg font-semibold leading-tight mb-2">
               <Link
-                href={`/${locale}/blog/${post.category}/${post.slug}`}
+                href={`/blog/${post.category}/${post.slug}`}
                 className="hover:text-brand transition-colors"
               >
                 {post.title}

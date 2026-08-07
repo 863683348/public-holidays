@@ -180,6 +180,8 @@
     "heading": "Blog",
     "subheading": "Insights, stories, and practical guides about public holidays",
     "viewAll": "View all posts",
+    "postsCount": "{count} Beiträge",
+    "viewAllCategory": "Alle ansehen →",
     "viewAllUrl": "/blog",
     "featured": "Featured post",
     "categoriesHeading": "Browse by category",

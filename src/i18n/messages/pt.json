@@ -180,6 +180,8 @@
     "heading": "Blog",
     "subheading": "Insights, histórias e guias práticos sobre feriados",
     "viewAll": "Ver todos os artigos",
+    "postsCount": "{count} artigos",
+    "viewAllCategory": "Ver todos →",
     "viewAllUrl": "/blog",
     "featured": "Artigo em destaque",
     "categoriesHeading": "Navegar por categoria",

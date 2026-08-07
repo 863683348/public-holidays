@@ -2,7 +2,7 @@
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import SubscribeButton from "@/components/SubscribeButton";
 import AdSlot from "@/components/AdSlot";
 import { getCountry } from "@/lib/countries";
@@ -55,6 +55,7 @@ export default async function BlogPage({
 }) {
   const { locale } = await params;
   const t = await getTranslations("blog");
+  const tNav = await getTranslations("nav");
 
   // Fetch locale-aware blog data from the data store
   const allPosts = getAllPosts(locale);
@@ -104,8 +105,8 @@ export default async function BlogPage({
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/${locale}` },
-              { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}/${locale}/blog` },
+              { "@type": "ListItem", position: 1, name: tNav("home"), item: `${SITE_URL}/${locale}` },
+              { "@type": "ListItem", position: 2, name: t("blogSection"), item: `${SITE_URL}/${locale}/blog` },
             ],
           }),
         }}
@@ -113,9 +114,9 @@ export default async function BlogPage({
       {/* Breadcrumb */}
       <nav className="text-sm text-[var(--muted)] mb-2">
         <div className="flex items-center gap-2">
-          <a href={`/${locale}`} className="text-brand hover:underline">Home</a>
+          <Link href="/" className="text-brand hover:underline">{tNav("home")}</Link>
           <span>/</span>
-          <span className="text-[var(--foreground)]">Blog</span>
+          <span className="text-[var(--foreground)]">{t("blogSection")}</span>
         </div>
       </nav>
 
@@ -154,7 +155,7 @@ export default async function BlogPage({
               </div>
               <h3 className="text-lg font-semibold leading-tight mb-2">
                 <Link
-                  href={`/${locale}/blog/${featuredPost.category}/${featuredPost.slug}`}
+                  href={`/blog/${featuredPost.category}/${featuredPost.slug}`}
                   className="hover:text-brand transition-colors"
                 >
                   {featuredPost.title}
@@ -177,14 +178,14 @@ export default async function BlogPage({
             >
               <div className="flex items-center justify-between mb-2">
                 <h3 className="text-lg font-semibold">{category.name}</h3>
-                <span className="text-sm text-[var(--muted)]">{category.count} posts</span>
+                <span className="text-sm text-[var(--muted)]">{t("postsCount", { count: category.count })}</span>
               </div>
               <p className="text-[var(--muted)] text-sm mb-4">{category.description}</p>
               <Link
-                href={`/${locale}/blog/${category.id}`}
+                href={`/blog/${category.id}`}
                 className="text-sm text-brand hover:underline"
               >
-                View all →
+                {t("viewAllCategory")}
               </Link>
             </div>
           ))}
@@ -202,7 +203,7 @@ export default async function BlogPage({
               </div>
               <h3 className="text-lg font-semibold leading-tight">
                 <Link
-                  href={`/${locale}/blog/${post.category}/${post.slug}`}
+                  href={`/blog/${post.category}/${post.slug}`}
                   className="hover:text-brand transition-colors"
                 >
                   {post.title}
