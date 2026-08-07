@@ -292,5 +292,19 @@
     "nextYearLink": "{year}年の{name}",
     "prevYearLink": "{year}年の{name}",
     "regionsHeading": "祝われる地域"
+  },
+  "today": {
+    "metaTitle": "今日、祝日の国はどこ？",
+    "metaDescription": "今日祝日の国をすべて確認できます。世界時計付き。日付は UTC で表示され、世界中のどこが休みかがひと目でわかります。",
+    "eyebrow": "今日の祝日",
+    "heroTitle": "今日、休みの国はどこ？",
+    "heroCount": "{count, plural, other {今日は # か国が祝日です}}",
+    "asOf": "{date}（UTC）時点",
+    "utcNote": "日付は UTC で表示しています。アジア太平洋地域では、現地の日付がすでに翌日になっている場合があります。",
+    "clockTitle": "世界時計",
+    "emptyStateTitle": "今日、祝日の国はありません",
+    "emptyState": "世界的に珍しく静かな一日です。今日、祝日のある国はありません。",
+    "emptyCta": "代わりに国の比較を見る",
+    "upstreamUnavailable": "祝日データが一時的に利用できません。しばらくしてからもう一度お試しください。"
   }
 }

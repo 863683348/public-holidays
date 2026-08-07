@@ -1,0 +1,13 @@
+/* /today right rail — WorldClock is reused as-is (a self-contained client
+   grid: `grid-cols-1 sm:grid-cols-2 lg:grid-cols-3`). Inside the ~1/3-width
+   sidebar its 3-up cards would collapse to ~95px each and overflow, so on
+   desktop we pin it to a single column. Below lg the page stacks and the
+   clock spans full width, where its native grid is correct.
+
+   Specificity: `.clockStack > div` (0,1,1) beats Tailwind's utility classes
+   (0,1,0); !important guards against any future re-layering. */
+@media (min-width: 1024px) {
+  .clockStack > div {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+}

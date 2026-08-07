@@ -292,5 +292,19 @@
     "nextYearLink": "{year}年的{name}",
     "prevYearLink": "{year}年的{name}",
     "regionsHeading": "庆祝地区"
+  },
+  "today": {
+    "metaTitle": "今天哪些国家在放假？",
+    "metaDescription": "查看今天所有放假的公共假期国家，并附实时世界时钟。日期以 UTC 显示，让你随时掌握世界各地是否休假。",
+    "eyebrow": "今日公共假期",
+    "heroTitle": "今天哪些国家放假？",
+    "heroCount": "{count, plural, other {今天有 # 个国家放假}}",
+    "asOf": "数据截至 {date}（UTC）",
+    "utcNote": "日期均以 UTC 显示。在亚太地区，当地日期可能已是明天——本页不会猜测你的时区。",
+    "clockTitle": "世界时钟",
+    "emptyStateTitle": "今天没有国家放假",
+    "emptyState": "全球难得的安静一天——今天没有任何受追踪国家有公共假期。",
+    "emptyCta": "改用多国对比",
+    "upstreamUnavailable": "假期数据暂时不可用，请稍后再试。"
   }
 }

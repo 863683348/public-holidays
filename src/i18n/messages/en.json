@@ -294,5 +294,19 @@
     "nextYearLink": "{name} in {year}",
     "prevYearLink": "{name} in {year}",
     "regionsHeading": "Regions where observed"
+  },
+  "today": {
+    "metaTitle": "Which countries have a public holiday today?",
+    "metaDescription": "See every country on a public holiday today, plus a live world clock. Dates are shown in UTC, so you always know who is off — anywhere.",
+    "eyebrow": "Today's public holidays",
+    "heroTitle": "Who is off work today?",
+    "heroCount": "{count, plural, one {# country is on holiday today} other {# countries are on holiday today}}",
+    "asOf": "As of {date} (UTC)",
+    "utcNote": "Dates are shown in UTC. In Asia-Pacific the local date may already be tomorrow — this page does not guess your timezone.",
+    "clockTitle": "World clock",
+    "emptyStateTitle": "No country is on holiday today",
+    "emptyState": "An unusually quiet day worldwide — no tracked country has a public holiday today.",
+    "emptyCta": "Compare countries instead",
+    "upstreamUnavailable": "Holiday data is temporarily unavailable. Please try again shortly."
   }
 }
