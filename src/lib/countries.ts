@@ -1,8 +1,8 @@
 import type { Country } from "./types";
 
 // Curated country catalogue for the selector and holiday pages. Nager.Date
-// supports 200+ countries; this is the Tier-A subset (110 entries) covering the
-// markets with real search demand. See ADR-001 §7.
+// supports 200+ countries; this is the Tier-A+B subset (151 entries) covering
+// the markets with real search demand. See ADR-001 §7.
 //
 // Field policy for the entries beyond the original 16 popular markets:
 //  - `name`: exactly the Nager `name` string, so lookups stay in sync upstream.
@@ -126,6 +126,53 @@ export const COUNTRIES: Country[] = [
   { code: "TT", name: "Trinidad and Tobago" },
   { code: "PR", name: "Puerto Rico" },
   { code: "BS", name: "Bahamas" },
+  // ---- Tier-B expansion (+41, all verified to return 2026 data) ----
+  // Sub-Saharan Africa
+  { code: "CD", name: "DR Congo" },
+  { code: "SD", name: "Sudan" },
+  { code: "MG", name: "Madagascar" },
+  { code: "ML", name: "Mali" },
+  { code: "BF", name: "Burkina Faso" },
+  { code: "NE", name: "Niger" },
+  { code: "MW", name: "Malawi" },
+  { code: "TD", name: "Chad" },
+  { code: "GN", name: "Guinea" },
+  { code: "BI", name: "Burundi" },
+  { code: "RW", name: "Rwanda" },
+  { code: "BJ", name: "Benin" },
+  { code: "TG", name: "Togo" },
+  { code: "SL", name: "Sierra Leone" },
+  { code: "LR", name: "Liberia" },
+  { code: "SO", name: "Somalia" },
+  { code: "SS", name: "South Sudan" },
+  { code: "MR", name: "Mauritania" },
+  { code: "ER", name: "Eritrea" },
+  { code: "LY", name: "Libya" },
+  { code: "BW", name: "Botswana" },
+  { code: "NA", name: "Namibia" },
+  { code: "LS", name: "Lesotho" },
+  { code: "GA", name: "Gabon" },
+  { code: "SZ", name: "Eswatini" },
+  { code: "GM", name: "Gambia" },
+  { code: "CF", name: "Central African Republic" },
+  { code: "CG", name: "Congo" },
+  // MENA
+  { code: "YE", name: "Yemen" },
+  { code: "SY", name: "Syria" },
+  { code: "DJ", name: "Djibouti" },
+  // Caribbean
+  { code: "HT", name: "Haiti" },
+  { code: "BB", name: "Barbados" },
+  { code: "LC", name: "Saint Lucia" },
+  { code: "GD", name: "Grenada" },
+  // South America
+  { code: "GY", name: "Guyana" },
+  { code: "SR", name: "Suriname" },
+  // Europe
+  { code: "LI", name: "Liechtenstein" },
+  { code: "MC", name: "Monaco" },
+  { code: "SM", name: "San Marino" },
+  { code: "AD", name: "Andorra" },
 ];
 
 // Countries kept in the catalogue but with no upstream Nager data (HTTP 204).
@@ -213,6 +260,18 @@ const DEMONYMS: Record<string, string> = {
   CR: "Costa Rican", PA: "Panamanian", GT: "Guatemalan", HN: "Honduran",
   SV: "Salvadoran", NI: "Nicaraguan", DO: "Dominican", CU: "Cuban",
   JM: "Jamaican", TT: "Trinidadian", PR: "Puerto Rican", BS: "Bahamian",
+  // ---- Tier-B expansion demonyms ----
+  CD: "Congolese", SD: "Sudanese", MG: "Malagasy", ML: "Malian",
+  BF: "Burkinabe", NE: "Nigerien", MW: "Malawian", TD: "Chadian",
+  GN: "Guinean", BI: "Burundian", RW: "Rwandan", BJ: "Beninese",
+  TG: "Togolese", SL: "Sierra Leonean", LR: "Liberian", SO: "Somali",
+  SS: "South Sudanese", MR: "Mauritanian", ER: "Eritrean", LY: "Libyan",
+  BW: "Botswanan", NA: "Namibian", LS: "Basotho", GA: "Gabonese",
+  SZ: "Swazi", GM: "Gambian", CF: "Central African", CG: "Congolese",
+  YE: "Yemeni", SY: "Syrian", DJ: "Djiboutian", HT: "Haitian",
+  BB: "Barbadian", LC: "Saint Lucian", GD: "Grenadian",
+  GY: "Guyanese", SR: "Surinamese",
+  LI: "Liechtensteiner", MC: "Monegasque", SM: "Sammarinese", AD: "Andorran",
 };
 
 export function getDemonym(code: string): string {
