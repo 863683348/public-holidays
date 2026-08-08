@@ -10,9 +10,9 @@ export default function Footer() {
   const t = useTranslations("footer");
 
   const toolLinks = [
-    { href: "/", label: t("tools_today") },
+    { href: "/today", label: t("tools_today") },
     { href: "/US/2026", label: t("tools_calendar") },
-    { href: "/", label: t("tools_country") },
+    { href: "/countries", label: t("tools_country") },
     { href: "/world-clock", label: t("tools_clock") },
   ] as const;
 
