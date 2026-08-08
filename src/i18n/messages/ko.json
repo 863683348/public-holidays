@@ -6,7 +6,10 @@
   "nav": {
     "home": "홈",
     "pricing": "요금",
-    "account": "계정"
+    "account": "계정",
+    "compare": "비교",
+    "today": "오늘",
+    "worldClock": "세계 시계"
   },
   "home": {
     "heading": "전 세계 공휴일을 한곳에서",
@@ -115,8 +118,8 @@
     "blog": "블로그",
     "contact": "문의하기",
     "contactEmail": "문의사항은 <email>ahmedlzany423@gmail.com</email> 으로 이메일 주세요",
-    "brand": "세계 공휴일",
-    "slogan": "세계가 언제 쉬는지 확인하세요",
+    "brand": "PubHoliday",
+    "slogan": "전 세계 공휴일을 한곳에서",
     "tools": "도구",
     "tools_today": "오늘",
     "tools_calendar": "달력",
@@ -126,7 +129,8 @@
     "about_us": "회사 소개",
     "language": "언어",
     "copyright": "모든 권리 보유.",
-    "builtWith": "Next.js로 제작"
+    "builtWith": "Next.js로 제작",
+    "tools_compare": "비교"
   },
   "blog": {
     "title": "블로그",

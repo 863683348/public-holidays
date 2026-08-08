@@ -6,7 +6,10 @@
   "nav": {
     "home": "Accueil",
     "pricing": "Tarifs",
-    "account": "Compte"
+    "account": "Compte",
+    "compare": "Comparer",
+    "today": "Aujourd'hui",
+    "worldClock": "Horloge mondiale"
   },
   "home": {
     "heading": "Jours fériés dans le monde",
@@ -115,8 +118,8 @@
     "blog": "Blog",
     "contact": "Contact",
     "contactEmail": "Des questions ? Écrivez-nous à <email>ahmedlzany423@gmail.com</email>",
-    "brand": "Jours Fériés Mondiaux",
-    "slogan": "Voyez quand le monde prend des vacances",
+    "brand": "PubHoliday",
+    "slogan": "Jours fériés du monde en un seul endroit",
     "tools": "Outils",
     "tools_today": "Aujourd'hui",
     "tools_calendar": "Calendrier",
@@ -126,7 +129,8 @@
     "about_us": "Qui sommes-nous",
     "language": "Langue",
     "copyright": "Tous droits réservés.",
-    "builtWith": "Construit avec Next.js"
+    "builtWith": "Construit avec Next.js",
+    "tools_compare": "Comparer"
   },
   "blog": {
     "title": "Blog",

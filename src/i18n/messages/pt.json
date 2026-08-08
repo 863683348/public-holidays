@@ -6,7 +6,10 @@
   "nav": {
     "home": "Início",
     "pricing": "Preços",
-    "account": "Conta"
+    "account": "Conta",
+    "compare": "Comparar",
+    "today": "Hoje",
+    "worldClock": "Relógio mundial"
   },
   "home": {
     "heading": "Feriados públicos, mundo todo",
@@ -115,8 +118,8 @@
     "blog": "Blog",
     "contact": "Fale Conosco",
     "contactEmail": "Dúvidas? Envie-nos um e-mail para <email>ahmedlzany423@gmail.com</email>",
-    "brand": "Feriados Globais",
-    "slogan": "Veja quando o mundo tira férias",
+    "brand": "PubHoliday",
+    "slogan": "Feriados globais em um só lugar",
     "tools": "Ferramentas",
     "tools_today": "Hoje",
     "tools_calendar": "Calendário",
@@ -126,7 +129,8 @@
     "about_us": "Sobre nós",
     "language": "Idioma",
     "copyright": "Todos os direitos reservados.",
-    "builtWith": "Feito com Next.js"
+    "builtWith": "Feito com Next.js",
+    "tools_compare": "Comparar"
   },
   "blog": {
     "title": "Blog",

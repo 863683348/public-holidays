@@ -6,7 +6,10 @@
   "nav": {
     "home": "ホーム",
     "pricing": "料金",
-    "account": "アカウント"
+    "account": "アカウント",
+    "compare": "比較",
+    "today": "今日",
+    "worldClock": "世界時計"
   },
   "home": {
     "heading": "世界の祝日を一括検索",
@@ -115,8 +118,8 @@
     "blog": "ブログ",
     "contact": "お問い合わせ",
     "contactEmail": "ご質問は <email>ahmedlzany423@gmail.com</email> までメールでお問い合わせください",
-    "brand": "世界の祝日",
-    "slogan": "世界がいつ休暇を取るか見る",
+    "brand": "PubHoliday",
+    "slogan": "世界中の祝日をまとめて確認",
     "tools": "ツール",
     "tools_today": "今日",
     "tools_calendar": "カレンダー",
@@ -126,7 +129,8 @@
     "about_us": "私たちについて",
     "language": "言語",
     "copyright": "無断複写・転載を禁じます。",
-    "builtWith": "Next.js で構築"
+    "builtWith": "Next.js で構築",
+    "tools_compare": "比較"
   },
   "blog": {
     "title": "ブログ",

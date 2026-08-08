@@ -6,7 +6,10 @@
   "nav": {
     "home": "Home",
     "pricing": "Prezzi",
-    "account": "Account"
+    "account": "Account",
+    "compare": "Confronta",
+    "today": "Oggi",
+    "worldClock": "Orologio mondiale"
   },
   "home": {
     "heading": "Festività pubbliche in tutto il mondo",
@@ -115,8 +118,8 @@
     "blog": "Blog",
     "contact": "Contattaci",
     "contactEmail": "Domande? Scrivici a <email>ahmedlzany423@gmail.com</email>",
-    "brand": "Feste Globali",
-    "slogan": "Guarda quando il mondo va in vacanza",
+    "brand": "PubHoliday",
+    "slogan": "Feste mondiali in un unico posto",
     "tools": "Strumenti",
     "tools_today": "Oggi",
     "tools_calendar": "Calendario",
@@ -126,7 +129,8 @@
     "about_us": "Chi siamo",
     "language": "Lingua",
     "copyright": "Tutti i diritti riservati.",
-    "builtWith": "Creato con Next.js"
+    "builtWith": "Creato con Next.js",
+    "tools_compare": "Confronta"
   },
   "blog": {
     "title": "Blog",

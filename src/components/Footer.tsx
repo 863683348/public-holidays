@@ -11,6 +11,7 @@ export default function Footer() {
 
   const toolLinks = [
     { href: "/today", label: t("tools_today") },
+    { href: "/compare", label: t("tools_compare") },
     { href: "/US/2026", label: t("tools_calendar") },
     { href: "/countries", label: t("tools_country") },
     { href: "/world-clock", label: t("tools_clock") },
@@ -31,11 +32,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {/* 列 1：品牌区 */}
           <div>
-            <div className="flex items-center gap-2">
-              <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-[var(--brand)] text-sm font-bold text-white">
-                📅
-              </span>
-              <span className="text-base font-semibold text-[var(--fg)]">{t("brand")}</span>
+            <div className="flex items-baseline gap-2">
+              <span className="text-xl font-extrabold text-[var(--brand)]">PubHoliday</span>
+              <span className="text-xs text-[var(--muted)]">/ {t("brand")}</span>
             </div>
             <p className="mt-3 text-sm text-[var(--muted)]">{t("slogan")}</p>
             <p className="mt-3 text-xs text-[var(--muted)] opacity-80">{t("builtWith")}</p>

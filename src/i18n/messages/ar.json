@@ -6,7 +6,10 @@
   "nav": {
     "home": "الرئيسية",
     "pricing": "التسعير",
-    "account": "الحساب"
+    "account": "الحساب",
+    "compare": "قارن",
+    "today": "اليوم",
+    "worldClock": "ساعة عالمية"
   },
   "home": {
     "heading": "العطلات الرسمية حول العالم",
@@ -116,8 +119,8 @@
     "blog": "المدونة",
     "contact": "اتصل بنا",
     "contactEmail": "أسئلة؟ راسلنا على <email>ahmedlzany423@gmail.com</email>",
-    "brand": "العطلات العالمية",
-    "slogan": "شاهد متى يأخذ العالم إجازة",
+    "brand": "PubHoliday",
+    "slogan": "العطلات العالمية في مكان واحد",
     "tools": "أدوات",
     "tools_today": "اليوم",
     "tools_calendar": "التقويم",
@@ -127,7 +130,8 @@
     "about_us": "من نحن",
     "language": "اللغة",
     "copyright": "جميع الحقوق محفوظة.",
-    "builtWith": "تم البناء باستخدام Next.js"
+    "builtWith": "تم البناء باستخدام Next.js",
+    "tools_compare": "قارن"
   },
   "blog": {
     "title": "المدونة",

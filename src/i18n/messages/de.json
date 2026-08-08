@@ -6,7 +6,10 @@
   "nav": {
     "home": "Start",
     "pricing": "Preise",
-    "account": "Konto"
+    "account": "Konto",
+    "compare": "Vergleichen",
+    "today": "Heute",
+    "worldClock": "Weltuhr"
   },
   "home": {
     "heading": "Feiertage weltweit",
@@ -115,8 +118,8 @@
     "blog": "Blog",
     "contact": "Kontakt",
     "contactEmail": "Fragen? Schreiben Sie uns an <email>ahmedlzany423@gmail.com</email>",
-    "brand": "Weltweite Feiertage",
-    "slogan": "Sieh, wann die Welt Urlaub macht",
+    "brand": "PubHoliday",
+    "slogan": "Weltweite Feiertage an einem Ort",
     "tools": "Tools",
     "tools_today": "Heute",
     "tools_calendar": "Kalender",
@@ -126,7 +129,8 @@
     "about_us": "Über uns",
     "language": "Sprache",
     "copyright": "Alle Rechte vorbehalten.",
-    "builtWith": "Mit Next.js erstellt"
+    "builtWith": "Mit Next.js erstellt",
+    "tools_compare": "Vergleichen"
   },
   "blog": {
     "title": "Blog",

@@ -6,7 +6,10 @@
   "nav": {
     "home": "Home",
     "pricing": "Pricing",
-    "account": "Account"
+    "account": "Account",
+    "compare": "Compare",
+    "today": "Today",
+    "worldClock": "World Clock"
   },
   "home": {
     "heading": "Public holidays, worldwide",
@@ -117,8 +120,8 @@
     "blog": "Blog",
     "contact": "Contact Us",
     "contactEmail": "Questions? Email us at <email>ahmedlzany423@gmail.com</email>",
-    "brand": "Global Public Holidays",
-    "slogan": "See when the world takes a holiday",
+    "brand": "PubHoliday",
+    "slogan": "Global holidays, all in one place",
     "tools": "Tools",
     "tools_today": "Today",
     "tools_calendar": "Calendar",
@@ -128,7 +131,8 @@
     "about_us": "About Us",
     "language": "Language",
     "copyright": "All rights reserved.",
-    "builtWith": "Built with Next.js"
+    "builtWith": "Built with Next.js",
+    "tools_compare": "Compare"
   },
   "blog": {
     "title": "Blog",

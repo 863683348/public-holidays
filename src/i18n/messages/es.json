@@ -6,7 +6,10 @@
   "nav": {
     "home": "Inicio",
     "pricing": "Precios",
-    "account": "Cuenta"
+    "account": "Cuenta",
+    "compare": "Comparar",
+    "today": "Hoy",
+    "worldClock": "Reloj mundial"
   },
   "home": {
     "heading": "Festivos públicos, en todo el mundo",
@@ -115,8 +118,8 @@
     "blog": "Blog",
     "contact": "Contáctanos",
     "contactEmail": "¿Preguntas? Escríbenos a <email>ahmedlzany423@gmail.com</email>",
-    "brand": "Días Festivos Globales",
-    "slogan": "Mira cuándo el mundo toma vacaciones",
+    "brand": "PubHoliday",
+    "slogan": "Feriados globales en un solo lugar",
     "tools": "Herramientas",
     "tools_today": "Hoy",
     "tools_calendar": "Calendario",
@@ -126,7 +129,8 @@
     "about_us": "Sobre nosotros",
     "language": "Idioma",
     "copyright": "Todos los derechos reservados.",
-    "builtWith": "Hecho con Next.js"
+    "builtWith": "Hecho con Next.js",
+    "tools_compare": "Comparar"
   },
   "blog": {
     "title": "Blog",

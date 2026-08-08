@@ -6,7 +6,10 @@
   "nav": {
     "home": "首页",
     "pricing": "定价",
-    "account": "账户"
+    "account": "账户",
+    "compare": "比较",
+    "today": "今天",
+    "worldClock": "世界时钟"
   },
   "home": {
     "heading": "全球公共假期，一站查全",
@@ -115,8 +118,8 @@
     "blog": "博客",
     "contact": "联系我们",
     "contactEmail": "有疑问？请发邮件至 <email>ahmedlzany423@gmail.com</email>",
-    "brand": "全球公共假期",
-    "slogan": "看看世界什么时候在放假",
+    "brand": "PubHoliday",
+    "slogan": "全球公共假期，一站查全",
     "tools": "工具",
     "tools_today": "今天",
     "tools_calendar": "日历",
@@ -126,7 +129,8 @@
     "about_us": "关于我们",
     "language": "语言",
     "copyright": "保留所有权利。",
-    "builtWith": "基于 Next.js 构建"
+    "builtWith": "基于 Next.js 构建",
+    "tools_compare": "比较"
   },
   "blog": {
     "title": "Blog",

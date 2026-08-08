@@ -6,7 +6,10 @@
   "nav": {
     "home": "Главная",
     "pricing": "Цены",
-    "account": "Аккаунт"
+    "account": "Аккаунт",
+    "compare": "Сравнить",
+    "today": "Сегодня",
+    "worldClock": "Мировые часы"
   },
   "home": {
     "heading": "Государственные праздники по всему миру",
@@ -115,8 +118,8 @@
     "blog": "Блог",
     "contact": "Связаться с нами",
     "contactEmail": "Вопросы? Напишите нам на <email>ahmedlzany423@gmail.com</email>",
-    "brand": "Всемирные праздники",
-    "slogan": "Узнайте, когда мир отдыхает",
+    "brand": "PubHoliday",
+    "slogan": "Мировые праздники в одном месте",
     "tools": "Инструменты",
     "tools_today": "Сегодня",
     "tools_calendar": "Календарь",
@@ -126,7 +129,8 @@
     "about_us": "О компании",
     "language": "Язык",
     "copyright": "Все права защищены.",
-    "builtWith": "Сделано на Next.js"
+    "builtWith": "Сделано на Next.js",
+    "tools_compare": "Сравнить"
   },
   "blog": {
     "title": "Блог",
