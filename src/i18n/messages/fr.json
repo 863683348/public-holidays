@@ -28,7 +28,8 @@
     "myHolidaysHint": "Enregistrez des pays pour voir leur prochaine fête en un coup d’œil.",
     "addCountry": "Ajouter un pays",
     "emptySaved": "Aucun pays enregistré. Choisissez-en un ci-dessus.",
-    "remove": "Retirer"
+    "remove": "Retirer",
+    "localTime": "Heure locale"
   },
   "country": {
     "yearView": "Calendrier des fériés {year}",

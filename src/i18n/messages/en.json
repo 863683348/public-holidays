@@ -28,7 +28,8 @@
     "myHolidaysHint": "Save countries to see their next holiday at a glance.",
     "addCountry": "Add country",
     "emptySaved": "No saved countries yet. Pick one above to get started.",
-    "remove": "Remove"
+    "remove": "Remove",
+    "localTime": "Local Time"
   },
   "country": {
     "yearView": "Holiday calendar {year}",

@@ -28,7 +28,8 @@
     "myHolidaysHint": "Speichere Länder und sieh den nächsten Feiertag auf einen Blick.",
     "addCountry": "Land hinzufügen",
     "emptySaved": "Noch keine Länder gespeichert. Wähle oben eines aus.",
-    "remove": "Entfernen"
+    "remove": "Entfernen",
+    "localTime": "Ortszeit"
   },
   "country": {
     "yearView": "Feiertagskalender {year}",

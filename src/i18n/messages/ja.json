@@ -28,7 +28,8 @@
     "myHolidaysHint": "国を保存して、次の祝日をひと目で確認。",
     "addCountry": "国を追加",
     "emptySaved": "保存した国はまだありません。上から選んでください。",
-    "remove": "削除"
+    "remove": "削除",
+    "localTime": "現地時間"
   },
   "country": {
     "yearView": "{year} 年の祝日カレンダー",

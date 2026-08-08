@@ -28,7 +28,8 @@
     "myHolidaysHint": "Salve países para ver o próximo feriado rapidamente.",
     "addCountry": "Adicionar país",
     "emptySaved": "Nenhum país salvo ainda. Escolha um acima.",
-    "remove": "Remover"
+    "remove": "Remover",
+    "localTime": "Hora local"
   },
   "country": {
     "yearView": "Calendário de feriados {year}",

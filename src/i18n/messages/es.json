@@ -28,7 +28,8 @@
     "myHolidaysHint": "Guarda países para ver su próxima fiesta de un vistazo.",
     "addCountry": "Añadir país",
     "emptySaved": "Aún no hay países guardados. Elige uno arriba.",
-    "remove": "Quitar"
+    "remove": "Quitar",
+    "localTime": "Hora local"
   },
   "country": {
     "yearView": "Calendario de festivos {year}",

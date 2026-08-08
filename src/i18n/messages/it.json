@@ -28,7 +28,8 @@
     "myHolidaysHint": "Salva i paesi per vedere la prossima festività a colpo d’occhio.",
     "addCountry": "Aggiungi paese",
     "emptySaved": "Nessun paese salvato. Scegline uno qui sopra.",
-    "remove": "Rimuovi"
+    "remove": "Rimuovi",
+    "localTime": "Ora locale"
   },
   "country": {
     "yearView": "Calendario festività {year}",

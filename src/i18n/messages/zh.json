@@ -28,7 +28,8 @@
     "myHolidaysHint": "收藏常用国家，一眼看到它们的下一个假期。",
     "addCountry": "添加国家",
     "emptySaved": "还没有收藏国家，从上方选择一个开始。",
-    "remove": "移除"
+    "remove": "移除",
+    "localTime": "当地时间"
   },
   "country": {
     "yearView": "{year} 年假期日历",
