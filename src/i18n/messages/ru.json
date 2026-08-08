@@ -56,7 +56,9 @@
     "relatedBlogPosts": "Related blog posts",
     "faqToday": "Сегодня праздничный день в {name}?",
     "faqTodayYes": "Да — сегодня ({date}) {holiday}, праздник в {name}.",
-    "faqTodayNo": "Нет. Следующий праздник в {name} — {holiday} {date}."
+    "faqTodayNo": "Нет. Следующий праздник в {name} — {holiday} {date}.",
+    "bankHolidayNote": "Банковские праздники",
+    "holidayWeekendNote": "Праздничные выходные"
   },
   "longWeekend": {
     "natural": "Длинные выходные",
@@ -183,7 +185,8 @@
     "manage": "Управление подпиской",
     "upgradeHint": "Войдите, чтобы перейти",
     "successMsg": "Оплата успешна! Ваши Pro-преимущества активны.",
-    "pendingMsg": "Заказ обрабатывается. Обновите через минуту."
+    "pendingMsg": "Заказ обрабатывается. Обновите через минуту.",
+    "freeFeaturesCount": "{count} стран включены бесплатно"
   },
   "account": {
     "signInPrompt": "Войдите, чтобы увидеть свой аккаунт.",
@@ -191,5 +194,50 @@
     "renewsOn": "Продление {date}",
     "expiresOn": "Доступ завершается {date}",
     "managedBy": "Выставление счетов через Waffo"
+  },
+  "compare": {
+    "densityLabel": "Праздников в месяц",
+    "ariaMonthNav": "Навигация по месяцам",
+    "legendAll": "Все свободны",
+    "legendSome": "Частично свободны",
+    "legendNone": "Нет праздников",
+    "legendHeading": "Легенда",
+    "allOffNone": "Все страны свободны",
+    "dateColumn": "Дата",
+    "longWeekendCount": "{count} длинных выходных",
+    "commonThisMonth": "Общие в этом месяце",
+    "monthlyNoShared": "Нет общих праздников в этом месяце",
+    "ariaHolidayCell": "Праздник",
+    "noHoliday": "Нет праздника",
+    "summaryHint": "Сравните праздники между странами",
+    "viewSummary": "Сводка",
+    "viewMatrix": "Матрица",
+    "allOffHeading": "Все выбранные страны свободны",
+    "sharedAll": "Все {count} стран свободны",
+    "pickCountries": "Выберите страны",
+    "removeCountry": "Убрать {country}",
+    "ariaAddCountry": "Добавить страну",
+    "maxCountries": "Максимум {max} стран",
+    "addCountry": "Добавить страну",
+    "addCountryPlaceholder": "Поиск стран...",
+    "noResults": "Страны не найдены.",
+    "minCountries": "Выберите минимум {min} стран",
+    "emptyHeading": "Ничего общего",
+    "emptyBody": "У этих стран нет общих праздников в этот период.",
+    "nearMissPrefix": "Почти",
+    "sharedCount": "{count} общих",
+    "countriesNotOff": "{count} не свободны",
+    "share": "Поделиться",
+    "copied": "Ссылка скопирована",
+    "reset": "Сбросить",
+    "yearLabel": "Год {year}",
+    "prevYear": "Предыдущий год",
+    "nextYear": "Следующий год"
+  },
+  "countries": {
+    "searchPlaceholder": "Поиск страны...",
+    "indexLabel": "Индекс",
+    "popularGroup": "Популярные",
+    "noResults": "Страны не найдены."
   }
 }

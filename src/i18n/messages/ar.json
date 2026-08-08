@@ -57,7 +57,9 @@
     "faqToday": "هل اليوم عطلة رسمية في {name}؟",
     "faqTodayYes": "نعم — اليوم ({date}) هو {holiday}، عطلة رسمية في {name}.",
     "faqTodayNo": "لا. العطلة الرسمية التالية في {name} هي {holiday} في {date}.",
-    "schoolHolidayNote": "عطلة المدارس في {name} {year} — موقعنا يركز على العطل الرسمية، لكن يمكنك الاطلاع على جدول العطل الرسمية في {name} لعام {year} عبر التقويم."
+    "schoolHolidayNote": "عطلة المدارس في {name} {year} — موقعنا يركز على العطل الرسمية، لكن يمكنك الاطلاع على جدول العطل الرسمية في {name} لعام {year} عبر التقويم.",
+    "bankHolidayNote": "عطلات البنوك",
+    "holidayWeekendNote": "عطلة نهاية الأسبوع"
   },
   "longWeekend": {
     "natural": "عطلة نهاية أسبوع طويلة",
@@ -184,7 +186,8 @@
     "manage": "إدارة الاشتراك",
     "upgradeHint": "سجل الدخول للترقية",
     "successMsg": "تم الدفع بنجاح! مزايا Pro مفعّلة الآن.",
-    "pendingMsg": "جاري معالجة الطلب. حدّث الصفحة بعد قليل."
+    "pendingMsg": "جاري معالجة الطلب. حدّث الصفحة بعد قليل.",
+    "freeFeaturesCount": "{count} دولة مجانية"
   },
   "account": {
     "signInPrompt": "سجّل الدخول لعرض حسابك.",
@@ -192,5 +195,50 @@
     "renewsOn": "التجديد في {date}",
     "expiresOn": "ينتهي الوصول في {date}",
     "managedBy": "الفوترة تتم عبر Waffo"
+  },
+  "compare": {
+    "densityLabel": "عطلات في الشهر",
+    "ariaMonthNav": "التنقل بين الأشهر",
+    "legendAll": "الجميع عطلة",
+    "legendSome": "البعض عطلة",
+    "legendNone": "لا عطلات",
+    "legendHeading": "دليل",
+    "allOffNone": "جميع الدول عطلة",
+    "dateColumn": "التاريخ",
+    "longWeekendCount": "{count} عطلة نهاية أسبوع طويلة",
+    "commonThisMonth": "مشتركة هذا الشهر",
+    "monthlyNoShared": "لا عطلات مشتركة هذا الشهر",
+    "ariaHolidayCell": "عطلة",
+    "noHoliday": "لا عطلة",
+    "summaryHint": "قارن العطلات بين الدول",
+    "viewSummary": "ملخص",
+    "viewMatrix": "مصفوفة",
+    "allOffHeading": "جميع الدول المحددة عطلة",
+    "sharedAll": "جميع الدول الـ{count} عطلة",
+    "pickCountries": "اختر الدول",
+    "removeCountry": "إزالة {country}",
+    "ariaAddCountry": "إضافة دولة",
+    "maxCountries": "الحد الأقصى {max} دول",
+    "addCountry": "إضافة دولة",
+    "addCountryPlaceholder": "ابحث عن دول...",
+    "noResults": "لم يتم العثور على دول.",
+    "minCountries": "اختر على الأقل {min} دول",
+    "emptyHeading": "لا شيء مشترك",
+    "emptyBody": "لا توجد عطلات مشتركة بين هذه الدول في هذه الفترة.",
+    "nearMissPrefix": "قريب",
+    "sharedCount": "{count} مشتركة",
+    "countriesNotOff": "{count} ليست عطلة",
+    "share": "مشاركة",
+    "copied": "تم نسخ الرابط",
+    "reset": "إعادة تعيين",
+    "yearLabel": "سنة {year}",
+    "prevYear": "السنة السابقة",
+    "nextYear": "السنة التالية"
+  },
+  "countries": {
+    "searchPlaceholder": "ابحث عن دولة...",
+    "indexLabel": "فهرس",
+    "popularGroup": "شائعة",
+    "noResults": "لم يتم العثور على دول."
   }
 }

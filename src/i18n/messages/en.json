@@ -57,8 +57,8 @@
     "faqToday": "Is today a public holiday in {name}?",
     "faqTodayYes": "Yes — today ({date}) is {holiday}, a public holiday in {name}.",
     "faqTodayNo": "No. The next public holiday in {name} is {holiday} on {date}.",
-    "bankHolidayNote": "Looking for {demonym} public holidays or {demonym} bank holidays? {name} public holidays — also called national holidays or non-working days — are observed nationwide and in some regions. Bridge days let you turn a single holiday into a long weekend.",
-    "holidayWeekendNote": "A {name} holiday weekend happens when a public holiday falls on a Monday or Friday, creating a three-day weekend. The list above shows every long weekend and bridge-day opportunity in {year}."
+    "bankHolidayNote": "Bank holidays",
+    "holidayWeekendNote": "Holiday weekend"
   },
   "longWeekend": {
     "natural": "Long weekend",
@@ -185,7 +185,8 @@
     "manage": "Manage subscription",
     "upgradeHint": "Sign in to upgrade",
     "successMsg": "Payment successful! Your Pro benefits are now active.",
-    "pendingMsg": "Order is being processed. Please refresh in a moment."
+    "pendingMsg": "Order is being processed. Please refresh in a moment.",
+    "freeFeaturesCount": "{count} countries included free"
   },
   "account": {
     "signInPrompt": "Sign in to view your account.",
@@ -193,5 +194,50 @@
     "renewsOn": "Renews on {date}",
     "expiresOn": "Access ends on {date}",
     "managedBy": "Billing handled by Waffo"
+  },
+  "compare": {
+    "densityLabel": "Holidays per month",
+    "ariaMonthNav": "Month navigation",
+    "legendAll": "All off",
+    "legendSome": "Some off",
+    "legendNone": "No holidays",
+    "legendHeading": "Legend",
+    "allOffNone": "All countries off",
+    "dateColumn": "Date",
+    "longWeekendCount": "{count} long weekends",
+    "commonThisMonth": "Common this month",
+    "monthlyNoShared": "No shared holidays this month",
+    "ariaHolidayCell": "Holiday",
+    "noHoliday": "No holiday",
+    "summaryHint": "Compare holidays across countries",
+    "viewSummary": "Summary",
+    "viewMatrix": "Matrix",
+    "allOffHeading": "All selected countries are off",
+    "sharedAll": "All {count} countries off",
+    "pickCountries": "Pick countries",
+    "removeCountry": "Remove {country}",
+    "ariaAddCountry": "Add country",
+    "maxCountries": "Maximum {max} countries",
+    "addCountry": "Add country",
+    "addCountryPlaceholder": "Search countries...",
+    "noResults": "No countries found.",
+    "minCountries": "Pick at least {min} countries",
+    "emptyHeading": "Nothing in common",
+    "emptyBody": "These countries share no holidays in this period.",
+    "nearMissPrefix": "Near miss",
+    "sharedCount": "{count} shared",
+    "countriesNotOff": "{count} not off",
+    "share": "Share",
+    "copied": "Link copied",
+    "reset": "Reset",
+    "yearLabel": "Year {year}",
+    "prevYear": "Previous year",
+    "nextYear": "Next year"
+  },
+  "countries": {
+    "searchPlaceholder": "Search a country...",
+    "indexLabel": "Index",
+    "popularGroup": "Popular",
+    "noResults": "No countries found."
   }
 }

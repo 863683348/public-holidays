@@ -56,7 +56,9 @@
     "relatedBlogPosts": "Related blog posts",
     "faqToday": "Est-ce un jour férié aujourd'hui en {name} ?",
     "faqTodayYes": "Oui — aujourd'hui ({date}) est {holiday}, un jour férié en {name}.",
-    "faqTodayNo": "Non. Le prochain jour férié en {name} est {holiday} le {date}."
+    "faqTodayNo": "Non. Le prochain jour férié en {name} est {holiday} le {date}.",
+    "bankHolidayNote": "Jours fériés bancaires",
+    "holidayWeekendNote": "Week-end férié"
   },
   "longWeekend": {
     "natural": "Long week-end",
@@ -183,7 +185,8 @@
     "manage": "Gérer l'abonnement",
     "upgradeHint": "Connectez-vous pour passer à Pro",
     "successMsg": "Paiement réussi ! Vos avantages Pro sont actifs.",
-    "pendingMsg": "Commande en cours. Actualisez dans un instant."
+    "pendingMsg": "Commande en cours. Actualisez dans un instant.",
+    "freeFeaturesCount": "{count} pays inclus gratuitement"
   },
   "account": {
     "signInPrompt": "Connecte-toi pour voir ton compte.",
@@ -191,5 +194,50 @@
     "renewsOn": "Renouvellement le {date}",
     "expiresOn": "L'accès se termine le {date}",
     "managedBy": "Facturation gérée par Waffo"
+  },
+  "compare": {
+    "densityLabel": "Jours fériés par mois",
+    "ariaMonthNav": "Navigation mensuelle",
+    "legendAll": "Tous libres",
+    "legendSome": "Certains libres",
+    "legendNone": "Aucun jour férié",
+    "legendHeading": "Légende",
+    "allOffNone": "Tous les pays libres",
+    "dateColumn": "Date",
+    "longWeekendCount": "{count} ponts",
+    "commonThisMonth": "Communs ce mois-ci",
+    "monthlyNoShared": "Aucun jour férié commun ce mois-ci",
+    "ariaHolidayCell": "Jour férié",
+    "noHoliday": "Aucun jour férié",
+    "summaryHint": "Comparez les jours fériés entre pays",
+    "viewSummary": "Résumé",
+    "viewMatrix": "Matrice",
+    "allOffHeading": "Tous les pays sélectionnés sont libres",
+    "sharedAll": "Les {count} pays libres",
+    "pickCountries": "Choisir des pays",
+    "removeCountry": "Retirer {country}",
+    "ariaAddCountry": "Ajouter un pays",
+    "maxCountries": "Maximum {max} pays",
+    "addCountry": "Ajouter un pays",
+    "addCountryPlaceholder": "Rechercher des pays...",
+    "noResults": "Aucun pays trouvé.",
+    "minCountries": "Choisissez au moins {min} pays",
+    "emptyHeading": "Rien en commun",
+    "emptyBody": "Ces pays ne partagent aucun jour férié sur cette période.",
+    "nearMissPrefix": "Presque",
+    "sharedCount": "{count} en commun",
+    "countriesNotOff": "{count} pas libres",
+    "share": "Partager",
+    "copied": "Lien copié",
+    "reset": "Réinitialiser",
+    "yearLabel": "Année {year}",
+    "prevYear": "Année précédente",
+    "nextYear": "Année suivante"
+  },
+  "countries": {
+    "searchPlaceholder": "Rechercher un pays...",
+    "indexLabel": "Index",
+    "popularGroup": "Populaires",
+    "noResults": "Aucun pays trouvé."
   }
 }

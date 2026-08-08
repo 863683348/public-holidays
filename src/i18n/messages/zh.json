@@ -56,7 +56,9 @@
     "relatedBlogPosts": "Related blog posts",
     "faqToday": "今天{name}有公共假期吗？",
     "faqTodayYes": "是的——今天（{date}）是{name}的公共假期{holiday}。",
-    "faqTodayNo": "没有。{name}的下一个公共假期是{date}的{holiday}。"
+    "faqTodayNo": "没有。{name}的下一个公共假期是{date}的{holiday}。",
+    "bankHolidayNote": "银行假日",
+    "holidayWeekendNote": "假日周末"
   },
   "longWeekend": {
     "natural": "长周末",
@@ -183,7 +185,8 @@
     "manage": "管理订阅",
     "upgradeHint": "登录后即可升级",
     "successMsg": "支付成功！你的 Pro 权益已生效。",
-    "pendingMsg": "订单处理中，请稍候刷新页面。"
+    "pendingMsg": "订单处理中，请稍候刷新页面。",
+    "freeFeaturesCount": "{count} 个国家免费包含"
   },
   "account": {
     "signInPrompt": "登录以查看你的账户。",
@@ -191,5 +194,50 @@
     "renewsOn": "续费日期：{date}",
     "expiresOn": "访问权限将于 {date} 结束",
     "managedBy": "账单由 Waffo 处理"
+  },
+  "compare": {
+    "densityLabel": "每月假期数",
+    "ariaMonthNav": "月份导航",
+    "legendAll": "全部放假",
+    "legendSome": "部分放假",
+    "legendNone": "无假期",
+    "legendHeading": "图例",
+    "allOffNone": "所有国家都放假",
+    "dateColumn": "日期",
+    "longWeekendCount": "{count} 个长周末",
+    "commonThisMonth": "本月共同假期",
+    "monthlyNoShared": "本月无共同假期",
+    "ariaHolidayCell": "假期",
+    "noHoliday": "无假期",
+    "summaryHint": "跨国家对比假期",
+    "viewSummary": "摘要",
+    "viewMatrix": "矩阵",
+    "allOffHeading": "所有选定国家都放假",
+    "sharedAll": "全部 {count} 个国家放假",
+    "pickCountries": "选择国家",
+    "removeCountry": "移除 {country}",
+    "ariaAddCountry": "添加国家",
+    "maxCountries": "最多 {max} 个国家",
+    "addCountry": "添加国家",
+    "addCountryPlaceholder": "搜索国家...",
+    "noResults": "未找到国家。",
+    "minCountries": "至少选择 {min} 个国家",
+    "emptyHeading": "无共同假期",
+    "emptyBody": "这些国家在此时间段内没有共同假期。",
+    "nearMissPrefix": "接近假期",
+    "sharedCount": "{count} 个共同",
+    "countriesNotOff": "{count} 个不放假",
+    "share": "分享",
+    "copied": "链接已复制",
+    "reset": "重置",
+    "yearLabel": "{year} 年",
+    "prevYear": "上一年",
+    "nextYear": "下一年"
+  },
+  "countries": {
+    "searchPlaceholder": "搜索国家...",
+    "indexLabel": "索引",
+    "popularGroup": "热门",
+    "noResults": "未找到国家。"
   }
 }

@@ -56,7 +56,9 @@
     "relatedBlogPosts": "Related blog posts",
     "faqToday": "{name}は今日祝日ですか？",
     "faqTodayYes": "はい——今日（{date}）は{name}の祝日{holiday}です。",
-    "faqTodayNo": "いいえ。{name}の次の祝日は{date}の{holiday}です。"
+    "faqTodayNo": "いいえ。{name}の次の祝日は{date}の{holiday}です。",
+    "bankHolidayNote": "銀行休業日",
+    "holidayWeekendNote": "祝日の週末"
   },
   "longWeekend": {
     "natural": "連休",
@@ -183,7 +185,8 @@
     "manage": "サブスクリプション管理",
     "upgradeHint": "ログインしてアップグレード",
     "successMsg": "支払い成功！Pro 特典が有効になりました。",
-    "pendingMsg": "注文を処理中です。少し待って更新してください。"
+    "pendingMsg": "注文を処理中です。少し待って更新してください。",
+    "freeFeaturesCount": "{count} か国を無料で利用可能"
   },
   "account": {
     "signInPrompt": "アカウントを表示するにはログインしてください。",
@@ -191,5 +194,50 @@
     "renewsOn": "{date} に更新",
     "expiresOn": "アクセスは {date} に終了",
     "managedBy": "請求は Waffo が処理"
+  },
+  "compare": {
+    "densityLabel": "月ごとの祝日数",
+    "ariaMonthNav": "月ナビゲーション",
+    "legendAll": "全員休み",
+    "legendSome": "一部休み",
+    "legendNone": "祝日なし",
+    "legendHeading": "凡例",
+    "allOffNone": "全員休み",
+    "dateColumn": "日付",
+    "longWeekendCount": "連休 {count} 回",
+    "commonThisMonth": "今月の共通祝日",
+    "monthlyNoShared": "今月の共通祝日なし",
+    "ariaHolidayCell": "祝日",
+    "noHoliday": "祝日なし",
+    "summaryHint": "国をまたいで祝日を比較",
+    "viewSummary": "概要",
+    "viewMatrix": "マトリックス",
+    "allOffHeading": "選択した全員が休み",
+    "sharedAll": "全 {count} か国が休み",
+    "pickCountries": "国を選択",
+    "removeCountry": "{country} を削除",
+    "ariaAddCountry": "国を追加",
+    "maxCountries": "最大 {max} か国",
+    "addCountry": "国を追加",
+    "addCountryPlaceholder": "国を検索...",
+    "noResults": "国が見つかりません。",
+    "minCountries": "最低 {min} か国を選択",
+    "emptyHeading": "共通なし",
+    "emptyBody": "この期間に共通の祝日はありません。",
+    "nearMissPrefix": "ニアミス",
+    "sharedCount": "{count} 件共通",
+    "countriesNotOff": "{count} 件が休みでない",
+    "share": "シェア",
+    "copied": "リンクをコピーしました",
+    "reset": "リセット",
+    "yearLabel": "{year} 年",
+    "prevYear": "前年",
+    "nextYear": "翌年"
+  },
+  "countries": {
+    "searchPlaceholder": "国を検索...",
+    "indexLabel": "索引",
+    "popularGroup": "人気",
+    "noResults": "国が見つかりません。"
   }
 }

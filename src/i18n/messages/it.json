@@ -56,7 +56,9 @@
     "relatedBlogPosts": "Related blog posts",
     "faqToday": "Oggi è un giorno festivo in {name}?",
     "faqTodayYes": "Sì — oggi ({date}) è {holiday}, una festività in {name}.",
-    "faqTodayNo": "No. La prossima festività in {name} è {holiday} il {date}."
+    "faqTodayNo": "No. La prossima festività in {name} è {holiday} il {date}.",
+    "bankHolidayNote": "Feste bancarie",
+    "holidayWeekendNote": "Fine settimana festivo"
   },
   "longWeekend": {
     "natural": "Weekend lungo",
@@ -183,7 +185,8 @@
     "manage": "Gestisci abbonamento",
     "upgradeHint": "Accedi per passare a Pro",
     "successMsg": "Pagamento riuscito! I tuoi vantaggi Pro sono attivi.",
-    "pendingMsg": "Ordine in elaborazione. Aggiorna tra poco."
+    "pendingMsg": "Ordine in elaborazione. Aggiorna tra poco.",
+    "freeFeaturesCount": "{count} paesi inclusi gratis"
   },
   "account": {
     "signInPrompt": "Accedi per vedere il tuo account.",
@@ -191,5 +194,50 @@
     "renewsOn": "Si rinnova il {date}",
     "expiresOn": "L'accesso termina il {date}",
     "managedBy": "Fatturazione gestita da Waffo"
+  },
+  "compare": {
+    "densityLabel": "Feste per mese",
+    "ariaMonthNav": "Navigazione mese",
+    "legendAll": "Tutti liberi",
+    "legendSome": "Alcuni liberi",
+    "legendNone": "Nessuna festa",
+    "legendHeading": "Legenda",
+    "allOffNone": "Tutti i paesi liberi",
+    "dateColumn": "Data",
+    "longWeekendCount": "{count} ponti",
+    "commonThisMonth": "Comuni questo mese",
+    "monthlyNoShared": "Nessuna festa comune questo mese",
+    "ariaHolidayCell": "Festa",
+    "noHoliday": "Nessuna festa",
+    "summaryHint": "Confronta le feste tra paesi",
+    "viewSummary": "Riepilogo",
+    "viewMatrix": "Matrice",
+    "allOffHeading": "Tutti i paesi selezionati sono liberi",
+    "sharedAll": "Tutti i {count} paesi liberi",
+    "pickCountries": "Scegli paesi",
+    "removeCountry": "Rimuovi {country}",
+    "ariaAddCountry": "Aggiungi paese",
+    "maxCountries": "Massimo {max} paesi",
+    "addCountry": "Aggiungi paese",
+    "addCountryPlaceholder": "Cerca paesi...",
+    "noResults": "Nessun paese trovato.",
+    "minCountries": "Scegli almeno {min} paesi",
+    "emptyHeading": "Niente in comune",
+    "emptyBody": "Questi paesi non condividono feste in questo periodo.",
+    "nearMissPrefix": "Quasi",
+    "sharedCount": "{count} in comune",
+    "countriesNotOff": "{count} non liberi",
+    "share": "Condividi",
+    "copied": "Link copiato",
+    "reset": "Azzera",
+    "yearLabel": "Anno {year}",
+    "prevYear": "Anno precedente",
+    "nextYear": "Anno successivo"
+  },
+  "countries": {
+    "searchPlaceholder": "Cerca un paese...",
+    "indexLabel": "Indice",
+    "popularGroup": "Popolari",
+    "noResults": "Nessun paese trovato."
   }
 }
