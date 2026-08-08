@@ -2147,6 +2147,132 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>到 PubHoliday 查看完整的<a href="https://public-holidays.shop/en/DE">德国 2026 公共假日日历</a>，或从<a href="https://public-holidays.shop">首页</a>把任意国家的假日同步进你的日历。</p>
     `,
   },
+  {
+    id: 127,
+    title: "France Public Holidays 2026: The Art of the Long Break",
+    slug: "france-public-holidays-long-breaks",
+    category: "guide",
+    author: "PubHoliday Research Team",
+    publishedDate: "2026-08-09T08:00:00Z",
+    lastModified: "2026-08-09T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/france-public-holidays.svg",
+    excerpt: "France has 11 national public holidays in 2026, and the French have turned them into an art form: the pont (bridge day). Full 2026 calendar with the best bridge-day combinations and exact dates.",
+    relatedCountries: ["FR"],
+    locale: "en",
+    faq: [
+      { question: "How many public holidays does France have in 2026?", answer: "11 nationwide. France does not use regional holiday legislation the way Germany or Spain do, so the same 11 dates apply everywhere from Paris to Marseille." },
+      { question: "What is a pont (bridge day) in France?", answer: "When a holiday falls on a Tuesday or Thursday, the French take the day in between off, turning it into a four-day weekend. It is an accepted workplace practice in much of France, though not a legal right." },
+      { question: "Which French holidays fall on weekends in 2026?", answer: "Assumption (Aug 15) falls on a Saturday and All Saints' Day (Nov 1) on a Sunday, so those two effectively vanish for office workers. The rest land on weekdays." },
+      { question: "Is May 8 a public holiday in France?", answer: "Yes. Victory in Europe Day (May 8) is a national holiday in France, and in 2026 it falls on a Friday, creating a free three-day weekend." },
+    ],
+    content: `
+      <p>France has exactly 11 national <strong>public holidays</strong> in 2026, which puts it mid-table in Europe. What sets the French apart is what they do with them: the <em>pont</em>, or bridge day. When a holiday lands on a Tuesday or Thursday, a large share of the country simply takes the single day in between off, turning it into a four-day weekend. It is not a legal right, it is a workplace tradition, and in 2026 it delivers unusually well. This guide walks through every date, the weekends worth claiming, and the two holidays that quietly fall on Saturday and Sunday.</p>
+
+      <h2>The 11 national holidays of 2026</h2>
+      <ul>
+        <li>New Year's Day (Jour de l'an) — Jan 1 (Thursday)</li>
+        <li>Easter Monday (Lundi de Pâques) — Apr 6</li>
+        <li>Labour Day (Fête du Travail) — May 1 (Friday)</li>
+        <li>Victory in Europe Day (Victoire 1945) — May 8 (Friday)</li>
+        <li>Ascension Day (Ascension) — May 14 (Thursday)</li>
+        <li>Whit Monday (Lundi de Pentecôte) — May 25</li>
+        <li>Bastille Day (Fête nationale) — Jul 14 (Tuesday)</li>
+        <li>Assumption (Assomption) — Aug 15 (Saturday)</li>
+        <li>All Saints' Day (Toussaint) — Nov 1 (Sunday)</li>
+        <li>Armistice Day (Armistice 1918) — Nov 11 (Wednesday)</li>
+        <li>Christmas Day (Noël) — Dec 25 (Friday)</li>
+      </ul>
+      <p>France does not legislate regional holidays the way Germany or Spain do, so the same 11 dates apply from Paris to Marseille. That simplicity is part of why the pont tradition works so well: the whole country operates on one calendar.</p>
+
+      <h2>The best bridge days (ponts) in 2026</h2>
+      <p>Two holidays sit on Thursdays and one on a Tuesday, which is a good year for bridges:</p>
+      <table class="min-w-full border-collapse border border-gray-300 mb-4">
+        <thead><tr class="bg-gray-100"><th class="border p-2">Holiday</th><th class="border p-2">2026 date</th><th class="border p-2">Take off</th><th class="border p-2">You get</th></tr></thead>
+        <tbody>
+          <tr><td class="border p-2">Ascension Day</td><td class="border p-2">May 14 (Thu)</td><td class="border p-2">Fri May 15</td><td class="border p-2">4-day weekend (May 14-17)</td></tr>
+          <tr><td class="border p-2">Bastille Day</td><td class="border p-2">Jul 14 (Tue)</td><td class="border p-2">Mon Jul 13</td><td class="border p-2">4-day weekend (Jul 11-14)</td></tr>
+          <tr><td class="border p-2">Christmas Day</td><td class="border p-2">Dec 25 (Fri)</td><td class="border p-2">Thu Dec 24</td><td class="border p-2">4-day weekend (Dec 24-27)</td></tr>
+        </tbody>
+      </table>
+      <p>May is genuinely stacked. Labour Day lands on Friday May 1, Victory Day on Friday May 8, and Ascension on Thursday May 14. Take off May 15 and May 7 and you have a month where nearly every weekend stretches to three or four days. Schools and many offices will be closed anyway for the Ascension bridge, so you are not fighting the calendar.</p>
+
+      <h2>The two holidays that vanish</h2>
+      <p>Assumption (Aug 15) falls on a Saturday and All Saints' Day (Nov 1) on a Sunday, so for office workers they effectively disappear in 2026. Schools do not get substitute days for them in most cases. If you were planning a summer trip around August 15, note that the day off is already swallowed by the weekend.</p>
+
+      <h2>France holidays 2026 vs. its neighbors</h2>
+      <p>Compare France with Germany's 9 federal days, the UK's 8, or Italy's 12 and the difference is not the count, it is the culture. French employers widely accept bridge-day requests, which stretches 11 holidays into 15 or 16 actual days off. That is why <strong>france holidays 2026</strong> searches are mostly people hunting pont combinations rather than the dates themselves. Knowing the weekday is the whole game.</p>
+
+      <h2>FAQ</h2>
+      <p><strong>Is May 8 a public holiday in France?</strong> Yes, Victory in Europe Day is a national holiday, and in 2026 it falls on a Friday, giving everyone a free three-day weekend.</p>
+      <p><strong>Does France have regional holidays?</strong> No. The 11 national dates apply across all of mainland France. Alsace-Moselle adds Good Friday and St. Stephen's Day (Dec 26) for historical reasons, but that is the only regional exception.</p>
+      <p><strong>Do shops close on French public holidays?</strong> Largely yes for supermarkets and banks, though many restaurants, bakeries and tourist spots stay open, especially in cities and around bridges.</p>
+      <p><strong>Is the pont a legal right?</strong> No. It is a workplace convention, usually negotiated or simply accepted, and you give up one day of annual leave for it.</p>
+      <p>Browse the full <a href="https://public-holidays.shop/en/FR">France 2026 public holiday calendar</a> on PubHoliday, or start from the <a href="https://public-holidays.shop">homepage</a> and sync any country's holidays into your calendar.</p>
+    `,
+  },
+  {
+    id: 128,
+    title: "法国公共假日 2026：把假期串成长假的艺术",
+    slug: "france-public-holidays-long-breaks",
+    category: "guide",
+    author: "PubHoliday 研究团队",
+    publishedDate: "2026-08-09T08:00:00Z",
+    lastModified: "2026-08-09T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/france-public-holidays.svg",
+    excerpt: "法国 2026 年共有 11 个全国公共假日，法国人把假日过成了一门艺术：搭桥（pont）。完整 2026 日期表 + 最佳搭桥组合，以及两个悄悄落在周末的假日。",
+    relatedCountries: ["FR"],
+    locale: "zh",
+    faq: [
+      { question: "2026 年法国有几个公共假日？", answer: "全国性 11 个。法国不像德国、西班牙那样立法规定地区假日，11 个日期从巴黎到马赛完全一致。" },
+      { question: "什么是搭桥（pont）？", answer: "当假日落在周二或周四时，法国人会把中间那一天也请掉，凑成四连休。这是法国普遍接受的职场惯例，但不是法定权利。" },
+      { question: "2026 年哪些法国假日撞上周末？", answer: "圣母升天节（8 月 15 日）落在周六、万圣节（11 月 1 日）落在周日，对上班族来说这两天等于消失。其余都在工作日。" },
+      { question: "5 月 8 日法国放假吗？", answer: "放。二战胜利日是法国法定假日，2026 年恰好落在周五，白送一个三连休。" },
+    ],
+    content: `
+      <p>法国 2026 年正好有 11 个全国<strong>公共假日</strong>，在欧洲属于中游水平。真正让法国人不一样的是他们对待假日的方式：搭桥（pont）。当假日落在周二或周四，相当一部分法国人会把中间那一天请掉，凑成四连休。这不是法定权利，是职场惯例，而 2026 年这个惯例特别好用。这篇带你过一遍所有日期、值得争取的长周末，以及两个悄悄掉进周末的假日。</p>
+
+      <h2>2026 年 11 个全国假日</h2>
+      <ul>
+        <li>元旦（Jour de l'an）— 1 月 1 日（周四）</li>
+        <li>复活节星期一（Lundi de Pâques）— 4 月 6 日</li>
+        <li>劳动节（Fête du Travail）— 5 月 1 日（周五）</li>
+        <li>二战胜利日（Victoire 1945）— 5 月 8 日（周五）</li>
+        <li>升天节（Ascension）— 5 月 14 日（周四）</li>
+        <li>圣灵降临节星期一（Lundi de Pentecôte）— 5 月 25 日</li>
+        <li>国庆节（Fête nationale）— 7 月 14 日（周二）</li>
+        <li>圣母升天节（Assomption）— 8 月 15 日（周六）</li>
+        <li>万圣节（Toussaint）— 11 月 1 日（周日）</li>
+        <li>一战停战日（Armistice 1918）— 11 月 11 日（周三）</li>
+        <li>圣诞节（Noël）— 12 月 25 日（周五）</li>
+      </ul>
+      <p>法国不像德国、西班牙那样立法规定地区假日，11 个日期从巴黎到马赛完全一致。这种简单恰恰是搭桥文化能成立的原因：全国都按同一本日历运行。</p>
+
+      <h2>2026 年最佳搭桥组合</h2>
+      <p>两个假日落在周四、一个落在周二，今年是搭桥的好年头：</p>
+      <table class="min-w-full border-collapse border border-gray-300 mb-4">
+        <thead><tr class="bg-gray-100"><th class="border p-2">假日</th><th class="border p-2">2026 年日期</th><th class="border p-2">请假</th><th class="border p-2">获得</th></tr></thead>
+        <tbody>
+          <tr><td class="border p-2">升天节</td><td class="border p-2">5 月 14 日（周四）</td><td class="border p-2">5 月 15 日（周五）</td><td class="border p-2">四连休（5 月 14-17 日）</td></tr>
+          <tr><td class="border p-2">国庆节</td><td class="border p-2">7 月 14 日（周二）</td><td class="border p-2">7 月 13 日（周一）</td><td class="border p-2">四连休（7 月 11-14 日）</td></tr>
+          <tr><td class="border p-2">圣诞节</td><td class="border p-2">12 月 25 日（周五）</td><td class="border p-2">12 月 24 日（周四）</td><td class="border p-2">四连休（12 月 24-27 日）</td></tr>
+        </tbody>
+      </table>
+      <p>5 月是真的豪华。劳动节在周五 5 月 1 日、胜利日在周五 5 月 8 日、升天节在周四 5 月 14 日。请掉 5 月 15 日和 5 月 7 日，这个月几乎每个周末都能拉到三天以上。学校和许多公司本来就会为升天节搭桥放假，你不用跟日历对着干。</p>
+
+      <h2>两个悄悄消失的假日</h2>
+      <p>圣母升天节（8 月 15 日）落在周六、万圣节（11 月 1 日）落在周日，对上班族来说，2026 年这两天基本等于没有。学校多数情况也不会补休。如果你正计划围绕 8 月 15 日安排暑期出行，注意这个休息日已经被周末吞掉了。</p>
+
+      <h2>法国 2026 假日与邻国对比</h2>
+      <p>拿法国和德国的 9 个联邦假日、英国的 8 个、意大利的 12 个比，差别不在数量，在文化。法国雇主普遍接受搭桥请假，11 个假日能实际拉成 15、16 个休息日。这就是为什么搜「france holidays 2026」的人多数是在找搭桥组合，而不是日期本身——知道星期几才是关键。</p>
+
+      <h2>常见问题</h2>
+      <p><strong>5 月 8 日法国放假吗？</strong> 放。二战胜利日是法国法定假日，2026 年落在周五，白送三连休。</p>
+      <p><strong>法国有地区假日吗？</strong> 没有。11 个全国日期覆盖法国本土。只有阿尔萨斯-摩泽尔地区因历史原因额外有耶稣受难日和 12 月 26 日的圣斯德望日。</p>
+      <p><strong>法国假日商店关门吗？</strong> 超市和银行基本关门，但餐厅、面包店和旅游景点大多照常营业，城市和搭桥期间尤其如此。</p>
+      <p><strong>搭桥是法定权利吗？</strong> 不是。它是职场惯例，通常协商或默认接受，代价是消耗一天年假。</p>
+      <p>到 PubHoliday 查看完整的<a href="https://public-holidays.shop/en/FR">法国 2026 公共假日日历</a>，或从<a href="https://public-holidays.shop">首页</a>把任意国家的假日同步进你的日历。</p>
+    `,
+  },
 ];
 
 // ========================================================================
