@@ -29,7 +29,12 @@
     "addCountry": "添加国家",
     "emptySaved": "还没有收藏国家，从上方选择一个开始。",
     "remove": "移除",
-    "localTime": "当地时间"
+    "localTime": "当地时间",
+    "viewAllCountries": "查看所有国家",
+    "todayCount": "今天有 {count} 个国家放假",
+    "todayCountLink": "查看今天的假期",
+    "compareCardTitle": "国家对比",
+    "compareCardDesc": "查看哪些国家共享假期，规划你的长周末。"
   },
   "country": {
     "yearView": "{year} 年假期日历",
@@ -247,5 +252,15 @@
     "metaDescription": "{count} 个国家拥有公共假期日历——搜索、浏览、对比。",
     "heading": "国家",
     "intro": "{count} 个国家拥有公共假期日历。"
+  },
+  "homeAbout": {
+    "heading": "为什么选择 PubHoliday？",
+    "p1": "每个国家都有自己的假期节奏。PubHoliday 将 100+ 个国家整合进一个干净、可搜索的日历。",
+    "p2": "规划长周末、并排对比国家，订阅 ICS 日历，再也不会错过休息日。",
+    "li2": "长周末规划",
+    "li3": "国家并排对比",
+    "li4": "ICS 日历订阅",
+    "forTeamsLink": "团队版",
+    "forTeamsLinkLabel": "了解更多"
   }
 }

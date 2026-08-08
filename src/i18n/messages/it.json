@@ -29,7 +29,12 @@
     "addCountry": "Aggiungi paese",
     "emptySaved": "Nessun paese salvato. Scegline uno qui sopra.",
     "remove": "Rimuovi",
-    "localTime": "Ora locale"
+    "localTime": "Ora locale",
+    "viewAllCountries": "Vedi tutti i paesi",
+    "todayCount": "{count} paesi in festa oggi",
+    "todayCountLink": "Vedi le feste di oggi",
+    "compareCardTitle": "Confronta paesi",
+    "compareCardDesc": "Scopri quali paesi condividono le feste e pianifica i tuoi ponti."
   },
   "country": {
     "yearView": "Calendario festività {year}",
@@ -247,5 +252,15 @@
     "metaDescription": "{count} paesi con calendari delle feste — cerca, esplora e confronta.",
     "heading": "Paesi",
     "intro": "{count} paesi con calendari delle feste."
+  },
+  "homeAbout": {
+    "heading": "Perché PubHoliday?",
+    "p1": "Ogni paese ha il suo ritmo di feste. PubHoliday riunisce oltre 100 paesi in un calendario pulito e ricercabile.",
+    "p2": "Pianifica i ponti, confronta i paesi e iscriviti ai calendari ICS.",
+    "li2": "Pianificazione dei ponti",
+    "li3": "Confronto tra paesi",
+    "li4": "Abbonamenti calendario ICS",
+    "forTeamsLink": "Per i team",
+    "forTeamsLinkLabel": "Scopri di più"
   }
 }

@@ -29,7 +29,12 @@
     "addCountry": "Add country",
     "emptySaved": "No saved countries yet. Pick one above to get started.",
     "remove": "Remove",
-    "localTime": "Local Time"
+    "localTime": "Local Time",
+    "viewAllCountries": "View all countries",
+    "todayCount": "{count} countries on holiday today",
+    "todayCountLink": "See today's holidays",
+    "compareCardTitle": "Compare countries",
+    "compareCardDesc": "See which countries share holidays and plan your long weekends."
   },
   "country": {
     "yearView": "Holiday calendar {year}",
@@ -247,5 +252,15 @@
     "metaDescription": "{count} countries with public holiday calendars — search, browse, and compare.",
     "heading": "Countries",
     "intro": "{count} countries with public holiday calendars."
+  },
+  "homeAbout": {
+    "heading": "Why PubHoliday?",
+    "p1": "Every country has its own rhythm of holidays. PubHoliday brings 100+ countries into one clean, searchable calendar.",
+    "p2": "Plan long weekends, compare countries side by side, and subscribe to ICS feeds so you never miss a day off.",
+    "li2": "Long weekend planning",
+    "li3": "Side-by-side country comparison",
+    "li4": "ICS calendar subscriptions",
+    "forTeamsLink": "For teams",
+    "forTeamsLinkLabel": "Learn more"
   }
 }

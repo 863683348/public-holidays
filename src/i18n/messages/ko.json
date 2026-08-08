@@ -29,7 +29,12 @@
     "addCountry": "국가 추가",
     "emptySaved": "저장된 국가가 없습니다. 위에서 선택해 주세요.",
     "remove": "삭제",
-    "localTime": "현지 시각"
+    "localTime": "현지 시각",
+    "viewAllCountries": "모든 국가 보기",
+    "todayCount": "오늘 {count}개국이 공휴일",
+    "todayCountLink": "오늘의 공휴일 보기",
+    "compareCardTitle": "국가 비교",
+    "compareCardDesc": "어떤 국가들이 공휴일을 공유하는지 확인하고 연휴를 계획하세요."
   },
   "country": {
     "yearView": "{year}년 공휴일 달력",
@@ -247,5 +252,15 @@
     "metaDescription": "공휴일 달력이 있는 {count}개국 — 검색, 탐색, 비교.",
     "heading": "국가",
     "intro": "공휴일 달력이 있는 {count}개국."
+  },
+  "homeAbout": {
+    "heading": "PubHoliday를 선택하는 이유",
+    "p1": "각 국가마다 고유한 공휴일 리듬이 있습니다. PubHoliday는 100개 이상의 국가를 하나의 깔끔한 달력에 담았습니다.",
+    "p2": "연휴 계획, 국가별 비교, ICS 캘린더 구독으로 휴일을 놓치지 마세요.",
+    "li2": "연휴 계획",
+    "li3": "국가별 나란히 비교",
+    "li4": "ICS 캘린더 구독",
+    "forTeamsLink": "팀용",
+    "forTeamsLinkLabel": "자세히 보기"
   }
 }

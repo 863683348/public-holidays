@@ -29,7 +29,12 @@
     "addCountry": "Land hinzufügen",
     "emptySaved": "Noch keine Länder gespeichert. Wähle oben eines aus.",
     "remove": "Entfernen",
-    "localTime": "Ortszeit"
+    "localTime": "Ortszeit",
+    "viewAllCountries": "Alle Länder ansehen",
+    "todayCount": "{count} Länder heute frei",
+    "todayCountLink": "Heutige Feiertage ansehen",
+    "compareCardTitle": "Länder vergleichen",
+    "compareCardDesc": "Sehen Sie, welche Länder Feiertage teilen, und planen Sie lange Wochenenden."
   },
   "country": {
     "yearView": "Feiertagskalender {year}",
@@ -247,5 +252,15 @@
     "metaDescription": "{count} Länder mit Feiertagskalendern — suchen, stöbern und vergleichen.",
     "heading": "Länder",
     "intro": "{count} Länder mit Feiertagskalendern."
+  },
+  "homeAbout": {
+    "heading": "Warum PubHoliday?",
+    "p1": "Jedes Land hat seinen eigenen Feiertagsrhythmus. PubHoliday vereint über 100 Länder in einem sauberen, durchsuchbaren Kalender.",
+    "p2": "Planen Sie lange Wochenenden, vergleichen Sie Länder und abonnieren Sie ICS-Kalender.",
+    "li2": "Lange Wochenenden planen",
+    "li3": "Länder vergleichen",
+    "li4": "ICS-Kalender-Abos",
+    "forTeamsLink": "Für Teams",
+    "forTeamsLinkLabel": "Mehr erfahren"
   }
 }

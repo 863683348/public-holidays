@@ -29,7 +29,12 @@
     "addCountry": "Añadir país",
     "emptySaved": "Aún no hay países guardados. Elige uno arriba.",
     "remove": "Quitar",
-    "localTime": "Hora local"
+    "localTime": "Hora local",
+    "viewAllCountries": "Ver todos los países",
+    "todayCount": "{count} países de vacaciones hoy",
+    "todayCountLink": "Ver los festivos de hoy",
+    "compareCardTitle": "Comparar países",
+    "compareCardDesc": "Vea qué países comparten festivos y planifique sus puentes."
   },
   "country": {
     "yearView": "Calendario de festivos {year}",
@@ -247,5 +252,15 @@
     "metaDescription": "{count} países con calendarios de festivos — buscar, explorar y comparar.",
     "heading": "Países",
     "intro": "{count} países con calendarios de festivos."
+  },
+  "homeAbout": {
+    "heading": "¿Por qué PubHoliday?",
+    "p1": "Cada país tiene su propio ritmo de festivos. PubHoliday reúne más de 100 países en un calendario limpio y buscable.",
+    "p2": "Planifique puentes, compare países y suscríbase a calendarios ICS para no perder ningún día libre.",
+    "li2": "Planificación de puentes",
+    "li3": "Comparación de países",
+    "li4": "Suscripciones ICS",
+    "forTeamsLink": "Para equipos",
+    "forTeamsLinkLabel": "Saber más"
   }
 }

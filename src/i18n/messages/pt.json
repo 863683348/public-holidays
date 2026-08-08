@@ -29,7 +29,12 @@
     "addCountry": "Adicionar país",
     "emptySaved": "Nenhum país salvo ainda. Escolha um acima.",
     "remove": "Remover",
-    "localTime": "Hora local"
+    "localTime": "Hora local",
+    "viewAllCountries": "Ver todos os países",
+    "todayCount": "{count} países em feriado hoje",
+    "todayCountLink": "Ver feriados de hoje",
+    "compareCardTitle": "Comparar países",
+    "compareCardDesc": "Veja quais países compartilham feriados e planeje seus feriados prolongados."
   },
   "country": {
     "yearView": "Calendário de feriados {year}",
@@ -247,5 +252,15 @@
     "metaDescription": "{count} países com calendários de feriados — pesquisar, explorar e comparar.",
     "heading": "Países",
     "intro": "{count} países com calendários de feriados."
+  },
+  "homeAbout": {
+    "heading": "Por que PubHoliday?",
+    "p1": "Cada país tem seu próprio ritmo de feriados. O PubHoliday reúne mais de 100 países em um calendário limpo e pesquisável.",
+    "p2": "Planeje feriados prolongados, compare países e assine calendários ICS.",
+    "li2": "Planejamento de feriados prolongados",
+    "li3": "Comparação entre países",
+    "li4": "Assinaturas de calendário ICS",
+    "forTeamsLink": "Para equipes",
+    "forTeamsLinkLabel": "Saiba mais"
   }
 }

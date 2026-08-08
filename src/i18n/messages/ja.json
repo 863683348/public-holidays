@@ -29,7 +29,12 @@
     "addCountry": "国を追加",
     "emptySaved": "保存した国はまだありません。上から選んでください。",
     "remove": "削除",
-    "localTime": "現地時間"
+    "localTime": "現地時間",
+    "viewAllCountries": "すべての国を見る",
+    "todayCount": "今日 {count} か国が祝日",
+    "todayCountLink": "今日の祝日を見る",
+    "compareCardTitle": "国の比較",
+    "compareCardDesc": "どの国が祝日を共有しているか確認し、連休を計画しましょう。"
   },
   "country": {
     "yearView": "{year} 年の祝日カレンダー",
@@ -247,5 +252,15 @@
     "metaDescription": "{count} か国の祝日カレンダー — 検索、閲覧、比較。",
     "heading": "国",
     "intro": "{count} か国の祝日カレンダー。"
+  },
+  "homeAbout": {
+    "heading": "PubHoliday の特徴",
+    "p1": "国ごとに異なる祝日のリズム。PubHoliday は 100+ か国をひとつの検索可能なカレンダーに統合します。",
+    "p2": "連休の計画、国同士の比較、ICS カレンダー購読で、休日を逃しません。",
+    "li2": "連休の計画",
+    "li3": "国同士の比較",
+    "li4": "ICS カレンダー購読",
+    "forTeamsLink": "チーム向け",
+    "forTeamsLinkLabel": "詳しく見る"
   }
 }
