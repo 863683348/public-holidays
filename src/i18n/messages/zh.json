@@ -261,6 +261,7 @@
     "li3": "国家并排对比",
     "li4": "ICS 日历订阅",
     "forTeamsLink": "团队版",
-    "forTeamsLinkLabel": "了解更多"
+    "forTeamsLinkLabel": "了解更多",
+    "li1": "{count} 个国家的假期日历"
   }
 }

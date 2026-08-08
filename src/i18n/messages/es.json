@@ -261,6 +261,7 @@
     "li3": "Comparación de países",
     "li4": "Suscripciones ICS",
     "forTeamsLink": "Para equipos",
-    "forTeamsLinkLabel": "Saber más"
+    "forTeamsLinkLabel": "Saber más",
+    "li1": "Calendarios de festivos para {count} países"
   }
 }

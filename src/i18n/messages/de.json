@@ -261,6 +261,7 @@
     "li3": "Länder vergleichen",
     "li4": "ICS-Kalender-Abos",
     "forTeamsLink": "Für Teams",
-    "forTeamsLinkLabel": "Mehr erfahren"
+    "forTeamsLinkLabel": "Mehr erfahren",
+    "li1": "Feiertagskalender für {count} Länder"
   }
 }

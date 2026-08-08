@@ -261,6 +261,7 @@
     "li3": "국가별 나란히 비교",
     "li4": "ICS 캘린더 구독",
     "forTeamsLink": "팀용",
-    "forTeamsLinkLabel": "자세히 보기"
+    "forTeamsLinkLabel": "자세히 보기",
+    "li1": "{count}개국의 공휴일 달력"
   }
 }

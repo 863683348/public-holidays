@@ -261,6 +261,7 @@
     "li3": "Side-by-side country comparison",
     "li4": "ICS calendar subscriptions",
     "forTeamsLink": "For teams",
-    "forTeamsLinkLabel": "Learn more"
+    "forTeamsLinkLabel": "Learn more",
+    "li1": "Holiday calendars for {count} countries"
   }
 }
