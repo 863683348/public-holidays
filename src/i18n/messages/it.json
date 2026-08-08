@@ -232,12 +232,20 @@
     "reset": "Azzera",
     "yearLabel": "Anno {year}",
     "prevYear": "Anno precedente",
-    "nextYear": "Anno successivo"
+    "nextYear": "Anno successivo",
+    "metaTitle": "Confronta le feste tra Paesi",
+    "metaDescription": "Scopri quali paesi condividono le feste e pianifica il tuo anno attorno ai giorni liberi comuni.",
+    "heading": "Confronta paesi",
+    "subtitle": "Scegli due o più paesi per vedere feste sovrapposte, ponti e quasi feste."
   },
   "countries": {
     "searchPlaceholder": "Cerca un paese...",
     "indexLabel": "Indice",
     "popularGroup": "Popolari",
-    "noResults": "Nessun paese trovato."
+    "noResults": "Nessun paese trovato.",
+    "metaTitle": "Tutti i Paesi con Feste",
+    "metaDescription": "{count} paesi con calendari delle feste — cerca, esplora e confronta.",
+    "heading": "Paesi",
+    "intro": "{count} paesi con calendari delle feste."
   }
 }

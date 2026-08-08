@@ -232,12 +232,20 @@
     "reset": "Restablecer",
     "yearLabel": "Año {year}",
     "prevYear": "Año anterior",
-    "nextYear": "Año siguiente"
+    "nextYear": "Año siguiente",
+    "metaTitle": "Comparar Días Festivos entre Países",
+    "metaDescription": "Vea qué países comparten festivos y planifique su año en torno a los días libres comunes.",
+    "heading": "Comparar países",
+    "subtitle": "Elija dos o más países para ver festivos superpuestos, puentes y casi coincidencias."
   },
   "countries": {
     "searchPlaceholder": "Buscar un país...",
     "indexLabel": "Índice",
     "popularGroup": "Populares",
-    "noResults": "No se encontraron países."
+    "noResults": "No se encontraron países.",
+    "metaTitle": "Todos los Países con Festivos",
+    "metaDescription": "{count} países con calendarios de festivos — buscar, explorar y comparar.",
+    "heading": "Países",
+    "intro": "{count} países con calendarios de festivos."
   }
 }

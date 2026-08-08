@@ -232,12 +232,20 @@
     "reset": "Réinitialiser",
     "yearLabel": "Année {year}",
     "prevYear": "Année précédente",
-    "nextYear": "Année suivante"
+    "nextYear": "Année suivante",
+    "metaTitle": "Comparer les jours fériés entre pays",
+    "metaDescription": "Découvrez quels pays partagent des jours fériés et planifiez votre année autour des jours communs.",
+    "heading": "Comparer les pays",
+    "subtitle": "Choisissez deux pays ou plus pour voir les jours fériés communs, les ponts et les presque jours."
   },
   "countries": {
     "searchPlaceholder": "Rechercher un pays...",
     "indexLabel": "Index",
     "popularGroup": "Populaires",
-    "noResults": "Aucun pays trouvé."
+    "noResults": "Aucun pays trouvé.",
+    "metaTitle": "Tous les pays avec jours fériés",
+    "metaDescription": "{count} pays avec calendriers de jours fériés — rechercher, parcourir, comparer.",
+    "heading": "Pays",
+    "intro": "{count} pays avec calendriers de jours fériés."
   }
 }

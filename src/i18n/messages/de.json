@@ -232,12 +232,20 @@
     "reset": "Zurücksetzen",
     "yearLabel": "Jahr {year}",
     "prevYear": "Vorjahr",
-    "nextYear": "Nächstes Jahr"
+    "nextYear": "Nächstes Jahr",
+    "metaTitle": "Feiertage zwischen Ländern vergleichen",
+    "metaDescription": "Sehen Sie, welche Länder Feiertage teilen, und planen Sie Ihr Jahr um gemeinsame freie Tage.",
+    "heading": "Länder vergleichen",
+    "subtitle": "Wählen Sie zwei oder mehr Länder für überlappende Feiertage, lange Wochenenden und Fast-Treffer."
   },
   "countries": {
     "searchPlaceholder": "Land suchen...",
     "indexLabel": "Index",
     "popularGroup": "Beliebt",
-    "noResults": "Keine Länder gefunden."
+    "noResults": "Keine Länder gefunden.",
+    "metaTitle": "Alle Länder mit Feiertagen",
+    "metaDescription": "{count} Länder mit Feiertagskalendern — suchen, stöbern und vergleichen.",
+    "heading": "Länder",
+    "intro": "{count} Länder mit Feiertagskalendern."
   }
 }

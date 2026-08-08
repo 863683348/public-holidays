@@ -232,12 +232,20 @@
     "reset": "Redefinir",
     "yearLabel": "Ano {year}",
     "prevYear": "Ano anterior",
-    "nextYear": "Próximo ano"
+    "nextYear": "Próximo ano",
+    "metaTitle": "Comparar Feriados entre Países",
+    "metaDescription": "Veja quais países compartilham feriados e planeje seu ano em torno dos dias de folga comuns.",
+    "heading": "Comparar países",
+    "subtitle": "Escolha dois ou mais países para ver feriados sobrepostos, prolongados e quase feriados."
   },
   "countries": {
     "searchPlaceholder": "Pesquisar um país...",
     "indexLabel": "Índice",
     "popularGroup": "Populares",
-    "noResults": "Nenhum país encontrado."
+    "noResults": "Nenhum país encontrado.",
+    "metaTitle": "Todos os Países com Feriados",
+    "metaDescription": "{count} países com calendários de feriados — pesquisar, explorar e comparar.",
+    "heading": "Países",
+    "intro": "{count} países com calendários de feriados."
   }
 }

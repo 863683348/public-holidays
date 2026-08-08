@@ -232,12 +232,20 @@
     "reset": "重置",
     "yearLabel": "{year} 年",
     "prevYear": "上一年",
-    "nextYear": "下一年"
+    "nextYear": "下一年",
+    "metaTitle": "跨国家公共假期对比",
+    "metaDescription": "查看哪些国家共享假期，围绕共同休假日规划你的一年。",
+    "heading": "国家对比",
+    "subtitle": "选择两个或更多国家，查看重叠假期、长周末和临近假期。"
   },
   "countries": {
     "searchPlaceholder": "搜索国家...",
     "indexLabel": "索引",
     "popularGroup": "热门",
-    "noResults": "未找到国家。"
+    "noResults": "未找到国家。",
+    "metaTitle": "所有有公共假期的国家",
+    "metaDescription": "{count} 个国家拥有公共假期日历——搜索、浏览、对比。",
+    "heading": "国家",
+    "intro": "{count} 个国家拥有公共假期日历。"
   }
 }

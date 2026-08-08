@@ -232,12 +232,20 @@
     "reset": "초기화",
     "yearLabel": "{year}년",
     "prevYear": "이전 연도",
-    "nextYear": "다음 연도"
+    "nextYear": "다음 연도",
+    "metaTitle": "국가별 공휴일 비교",
+    "metaDescription": "어떤 국가들이 공휴일을 공유하는지 확인하고 공통 휴일을 중심으로 계획하세요.",
+    "heading": "국가 비교",
+    "subtitle": "두 개 이상의 국가를 선택해 겹치는 공휴일, 연휴, 근접 날짜를 확인하세요."
   },
   "countries": {
     "searchPlaceholder": "국가 검색...",
     "indexLabel": "색인",
     "popularGroup": "인기",
-    "noResults": "국가를 찾을 수 없습니다."
+    "noResults": "국가를 찾을 수 없습니다.",
+    "metaTitle": "공휴일이 있는 모든 국가",
+    "metaDescription": "공휴일 달력이 있는 {count}개국 — 검색, 탐색, 비교.",
+    "heading": "국가",
+    "intro": "공휴일 달력이 있는 {count}개국."
   }
 }

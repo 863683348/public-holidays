@@ -232,12 +232,20 @@
     "reset": "Reset",
     "yearLabel": "Year {year}",
     "prevYear": "Previous year",
-    "nextYear": "Next year"
+    "nextYear": "Next year",
+    "metaTitle": "Compare Public Holidays Between Countries",
+    "metaDescription": "See which countries share holidays and plan your year around common days off.",
+    "heading": "Compare countries",
+    "subtitle": "Pick two or more countries to see overlapping holidays, long weekends, and near misses."
   },
   "countries": {
     "searchPlaceholder": "Search a country...",
     "indexLabel": "Index",
     "popularGroup": "Popular",
-    "noResults": "No countries found."
+    "noResults": "No countries found.",
+    "metaTitle": "All Countries with Public Holidays",
+    "metaDescription": "{count} countries with public holiday calendars — search, browse, and compare.",
+    "heading": "Countries",
+    "intro": "{count} countries with public holiday calendars."
   }
 }

@@ -232,12 +232,20 @@
     "reset": "リセット",
     "yearLabel": "{year} 年",
     "prevYear": "前年",
-    "nextYear": "翌年"
+    "nextYear": "翌年",
+    "metaTitle": "国別祝日比較",
+    "metaDescription": "どの国が同じ祝日を持つか確認し、共通の休日を中心に計画を立てましょう。",
+    "heading": "国の比較",
+    "subtitle": "2か国以上を選んで、重複する祝日、連休、ニアミスを確認。"
   },
   "countries": {
     "searchPlaceholder": "国を検索...",
     "indexLabel": "索引",
     "popularGroup": "人気",
-    "noResults": "国が見つかりません。"
+    "noResults": "国が見つかりません。",
+    "metaTitle": "祝日があるすべての国",
+    "metaDescription": "{count} か国の祝日カレンダー — 検索、閲覧、比較。",
+    "heading": "国",
+    "intro": "{count} か国の祝日カレンダー。"
   }
 }
