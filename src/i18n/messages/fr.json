@@ -263,5 +263,19 @@
     "forTeamsLink": "Pour les équipes",
     "forTeamsLinkLabel": "En savoir plus",
     "li1": "Calendriers de jours fériés pour {count} pays"
+  },
+  "today": {
+    "metaTitle": "Quels pays sont en jour férié aujourd'hui ?",
+    "metaDescription": "Voyez tous les pays en jour férié aujourd'hui, plus une horloge mondiale en direct. Les dates sont affichées en UTC, pour savoir qui est en congé où que ce soit.",
+    "eyebrow": "Jours fériés du jour",
+    "heroTitle": "Qui est en congé aujourd'hui ?",
+    "heroCount": "{count, plural, one {# pays est en jour férié aujourd'hui} other {# pays sont en jour férié aujourd'hui}}",
+    "asOf": "En date du {date} (UTC)",
+    "utcNote": "Les dates sont affichées en UTC. En Asie-Pacifique, la date locale peut déjà être demain : cette page ne devine pas votre fuseau horaire.",
+    "clockTitle": "Horloge mondiale",
+    "emptyStateTitle": "Aucun pays n'est en jour férié aujourd'hui",
+    "emptyState": "Une journée exceptionnellement calme dans le monde : aucun pays suivi n'a de jour férié aujourd'hui.",
+    "emptyCta": "Comparer des pays à la place",
+    "upstreamUnavailable": "Les données des jours fériés sont temporairement indisponibles. Veuillez réessayer dans un instant."
   }
 }

@@ -263,5 +263,19 @@
     "forTeamsLink": "Per i team",
     "forTeamsLinkLabel": "Scopri di più",
     "li1": "Calendari delle feste per {count} paesi"
+  },
+  "today": {
+    "metaTitle": "Quali paesi sono in festa oggi?",
+    "metaDescription": "Scopri tutti i paesi in festa oggi, più un orologio mondiale in tempo reale. Le date sono mostrate in UTC, per sapere sempre chi è in ferie.",
+    "eyebrow": "Festività di oggi",
+    "heroTitle": "Chi è in ferie oggi?",
+    "heroCount": "{count, plural, one {# paese è in festa oggi} other {# paesi sono in festa oggi}}",
+    "asOf": "Dati al {date} (UTC)",
+    "utcNote": "Le date sono mostrate in UTC. In Asia-Pacifico la data locale potrebbe essere già domani: questa pagina non indovina il tuo fuso orario.",
+    "clockTitle": "Orologio mondiale",
+    "emptyStateTitle": "Nessun paese è in festa oggi",
+    "emptyState": "Una giornata insolitamente tranquilla nel mondo: nessun paese monitorato ha una festività oggi.",
+    "emptyCta": "Confronta i paesi invece",
+    "upstreamUnavailable": "I dati sulle festività non sono temporaneamente disponibili. Riprova tra poco."
   }
 }

@@ -263,5 +263,19 @@
     "forTeamsLink": "팀용",
     "forTeamsLinkLabel": "자세히 보기",
     "li1": "{count}개국의 공휴일 달력"
+  },
+  "today": {
+    "metaTitle": "오늘 공휴일인 나라는?",
+    "metaDescription": "오늘 공휴일인 모든 국가와 실시간 세계시계를 확인하세요. 날짜는 UTC 기준으로 표시되어 어디가 쉬는지 한눈에 알 수 있습니다.",
+    "eyebrow": "오늘의 공휴일",
+    "heroTitle": "오늘 쉬는 나라는?",
+    "heroCount": "{count, plural, other {오늘 공휴일인 국가 #곳}}",
+    "asOf": "{date} (UTC) 기준",
+    "utcNote": "날짜는 UTC 기준으로 표시됩니다. 아시아·태평양 지역에서는 현지 날짜가 이미 내일일 수 있습니다.",
+    "clockTitle": "세계시계",
+    "emptyStateTitle": "오늘 공휴일인 나라가 없습니다",
+    "emptyState": "전 세계적으로 드물게 조용한 날입니다. 오늘 공휴일인 국가가 없습니다.",
+    "emptyCta": "대신 국가 비교하기",
+    "upstreamUnavailable": "공휴일 데이터를 일시적으로 불러올 수 없습니다. 잠시 후 다시 시도해 주세요."
   }
 }

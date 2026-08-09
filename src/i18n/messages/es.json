@@ -263,5 +263,19 @@
     "forTeamsLink": "Para equipos",
     "forTeamsLinkLabel": "Saber más",
     "li1": "Calendarios de festivos para {count} países"
+  },
+  "today": {
+    "metaTitle": "¿Qué países tienen un día festivo hoy?",
+    "metaDescription": "Consulta todos los países con día festivo hoy, más un reloj mundial en directo. Las fechas se muestran en UTC, para saber siempre quién descansa.",
+    "eyebrow": "Días festivos de hoy",
+    "heroTitle": "¿Quién descansa hoy?",
+    "heroCount": "{count, plural, one {# país está de fiesta hoy} other {# países están de fiesta hoy}}",
+    "asOf": "Datos al {date} (UTC)",
+    "utcNote": "Las fechas se muestran en UTC. En Asia-Pacífico, la fecha local puede ser ya mañana: esta página no adivina tu zona horaria.",
+    "clockTitle": "Reloj mundial",
+    "emptyStateTitle": "Ningún país está de fiesta hoy",
+    "emptyState": "Un día inusualmente tranquilo en todo el mundo: ningún país tiene un día festivo hoy.",
+    "emptyCta": "Comparar países en su lugar",
+    "upstreamUnavailable": "Los datos de festivos no están disponibles temporalmente. Inténtalo de nuevo en unos momentos."
   }
 }

@@ -263,5 +263,19 @@
     "forTeamsLink": "Para equipes",
     "forTeamsLinkLabel": "Saiba mais",
     "li1": "Calendários de feriados para {count} países"
+  },
+  "today": {
+    "metaTitle": "Quais países estão em feriado hoje?",
+    "metaDescription": "Veja todos os países em feriado hoje, além de um relógio mundial ao vivo. As datas são exibidas em UTC, para você saber sempre quem está de folga.",
+    "eyebrow": "Feriados de hoje",
+    "heroTitle": "Quem está de folga hoje?",
+    "heroCount": "{count, plural, one {# país está em feriado hoje} other {# países estão em feriado hoje}}",
+    "asOf": "Dados de {date} (UTC)",
+    "utcNote": "As datas são exibidas em UTC. Na Ásia-Pacífico, a data local pode já ser amanhã — esta página não adivinha o seu fuso horário.",
+    "clockTitle": "Relógio mundial",
+    "emptyStateTitle": "Nenhum país está em feriado hoje",
+    "emptyState": "Um dia incomumente tranquilo no mundo — nenhum país monitorado tem feriado hoje.",
+    "emptyCta": "Comparar países em vez disso",
+    "upstreamUnavailable": "Os dados de feriados estão temporariamente indisponíveis. Tente novamente em instantes."
   }
 }

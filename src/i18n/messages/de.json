@@ -263,5 +263,19 @@
     "forTeamsLink": "Für Teams",
     "forTeamsLinkLabel": "Mehr erfahren",
     "li1": "Feiertagskalender für {count} Länder"
+  },
+  "today": {
+    "metaTitle": "Welche Länder haben heute einen Feiertag?",
+    "metaDescription": "Alle Länder mit Feiertag heute auf einen Blick, plus Weltzeituhr. Die Daten werden in UTC angezeigt – so weißt du immer, wer frei hat.",
+    "eyebrow": "Feiertage heute",
+    "heroTitle": "Wer hat heute frei?",
+    "heroCount": "{count, plural, one {# Land hat heute einen Feiertag} other {# Länder haben heute einen Feiertag}}",
+    "asOf": "Stand {date} (UTC)",
+    "utcNote": "Die Daten werden in UTC angezeigt. In Asien-Pazifik kann das lokale Datum bereits morgen sein – diese Seite rät deine Zeitzone nicht.",
+    "clockTitle": "Weltzeituhr",
+    "emptyStateTitle": "Heute hat kein Land Feiertag",
+    "emptyState": "Ein ungewöhnlich ruhiger Tag weltweit – heute hat kein erfasstes Land einen Feiertag.",
+    "emptyCta": "Stattdessen Länder vergleichen",
+    "upstreamUnavailable": "Die Feiertagsdaten sind derzeit nicht verfügbar. Bitte versuche es gleich noch einmal."
   }
 }
