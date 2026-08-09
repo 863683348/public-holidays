@@ -2273,6 +2273,150 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>到 PubHoliday 查看完整的<a href="https://public-holidays.shop/en/FR">法国 2026 公共假日日历</a>，或从<a href="https://public-holidays.shop">首页</a>把任意国家的假日同步进你的日历。</p>
     `,
   },
+  {
+    id: 129,
+    title: "Spain Public Holidays: A Map of Regional Festivities",
+    slug: "spain-public-holidays-regional-fiestas",
+    category: "guide",
+    author: "PubHoliday Research Team",
+    publishedDate: "2026-08-10T08:00:00Z",
+    lastModified: "2026-08-10T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/spain-public-holidays.svg",
+    excerpt: "Spanish public holidays have no single national list: 9 dates apply nationwide, and each of the 17 autonomous communities adds its own. Full 2026 calendar, the biggest regional differences, and how the puente bridge-day culture works.",
+    relatedCountries: ["ES"],
+    locale: "en",
+    faq: [
+      { question: "How many public holidays does Spain have in 2026?", answer: "Nine national dates, plus one or two extra per autonomous community, for a real total of 12 to 14 days depending on the region." },
+      { question: "Are Spanish holidays the same across the country?", answer: "No. Nine are national; the other 17 communities add their own, which is why Catalonia, Andalusia and Valencia all have unique holidays." },
+      { question: "Does Spain have a bridge-day (puente) culture?", answer: "Yes, and it is widespread. When a holiday falls on Tuesday or Thursday, most people take the single day in between off, and many companies close by default." },
+      { question: "Is August 15 a holiday in Spain?", answer: "Yes, Assumption is national. But in 2026 it falls on a Saturday, so office workers effectively lose that one." },
+    ],
+    content: `
+      <p>Spanish <strong>public holidays</strong> work differently from almost anywhere else in Europe: there is no single national list. Nine dates apply nationwide, and the other 17 autonomous communities each add their own. Catalonia gets its patron saint's day, Andalusia gets Andalusia Day, Valencia puts a holiday around the Fallas festival. This guide covers the 2026 national calendar, the biggest regional differences, and how the <em>puente</em> (bridge day) culture works.</p>
+
+      <h2>The 9 national holidays of 2026</h2>
+      <table class="min-w-full border-collapse border border-gray-300 mb-4">
+        <thead><tr class="bg-gray-100"><th class="border p-2">Holiday</th><th class="border p-2">2026 date</th><th class="border p-2">Weekday</th></tr></thead>
+        <tbody>
+          <tr><td class="border p-2">New Year's Day (Año Nuevo)</td><td class="border p-2">Jan 1</td><td class="border p-2">Thursday</td></tr>
+          <tr><td class="border p-2">Epiphany (Epifanía del Señor)</td><td class="border p-2">Jan 6</td><td class="border p-2">Tuesday</td></tr>
+          <tr><td class="border p-2">Good Friday (Viernes Santo)</td><td class="border p-2">Apr 3</td><td class="border p-2">Friday</td></tr>
+          <tr><td class="border p-2">Labour Day (Fiesta del Trabajo)</td><td class="border p-2">May 1</td><td class="border p-2">Friday</td></tr>
+          <tr><td class="border p-2">Assumption (Asunción)</td><td class="border p-2">Aug 15</td><td class="border p-2">Saturday</td></tr>
+          <tr><td class="border p-2">National Day (Fiesta Nacional)</td><td class="border p-2">Oct 12</td><td class="border p-2">Monday</td></tr>
+          <tr><td class="border p-2">All Saints' Day (Todos los Santos)</td><td class="border p-2">Nov 1</td><td class="border p-2">Sunday</td></tr>
+          <tr><td class="border p-2">Constitution Day (Día de la Constitución)</td><td class="border p-2">Dec 6</td><td class="border p-2">Sunday</td></tr>
+          <tr><td class="border p-2">Christmas (Navidad)</td><td class="border p-2">Dec 25</td><td class="border p-2">Friday</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Best puente opportunities in 2026</strong>: take Jan 5 off and Epiphany becomes a four-day weekend; Oct 12 already falls on a Monday, a free three-day weekend; Christmas on a Friday gives you another. May is the real prize: two Fridays (May 1 and May 8) mean three days off in between turns into nine.</p>
+
+      <h2>Regional holidays: where the map really differs</h2>
+      <p>Spanish law lets each autonomous community add up to two local holidays per year (in practice, some stretch the total to 14 days). This is the part that trips up people searching for spain holidays 2026: the same date can be a working day in Madrid and a holiday in Barcelona. Highlights by region:</p>
+      <ul>
+        <li><strong>Catalonia</strong>: Sant Jordi (Apr 23, the book-and-rose day) and La Mercè (Sep 24). Catalonia pushes its holiday policy hardest and often ends up with the most days in the country</li>
+        <li><strong>Andalusia</strong>: Andalusia Day (Feb 28)</li>
+        <li><strong>Madrid</strong>: May 2 (Dos de Mayo, commemorating the 1808 uprising)</li>
+        <li><strong>Valencia</strong>: San José (Mar 19, the core day of the Fallas festival)</li>
+        <li><strong>Basque Country</strong>: Maundy Thursday (Apr 2) is observed in several communities</li>
+      </ul>
+
+      <h2>Spain vs other countries: holiday counts compared</h2>
+      <table class="min-w-full border-collapse border border-gray-300 mb-4">
+        <thead><tr class="bg-gray-100"><th class="border p-2">Country</th><th class="border p-2">National holidays</th><th class="border p-2">Regional holidays</th><th class="border p-2">Notes</th></tr></thead>
+        <tbody>
+          <tr><td class="border p-2">Spain</td><td class="border p-2">9</td><td class="border p-2">up to +2 per community</td><td class="border p-2">The biggest regional variance in Europe</td></tr>
+          <tr><td class="border p-2">France</td><td class="border p-2">11</td><td class="border p-2">none (except Alsace-Moselle)</td><td class="border p-2">Uniform calendar, bridge-day culture</td></tr>
+          <tr><td class="border p-2">Germany</td><td class="border p-2">9</td><td class="border p-2">varies by state</td><td class="border p-2">Regional, but restrained totals</td></tr>
+          <tr><td class="border p-2">Italy</td><td class="border p-2">12</td><td class="border p-2">some cities</td><td class="border p-2">Mostly national</td></tr>
+        </tbody>
+      </table>
+      <p>The real number of days off in Spain floats between 12 and 14 depending on where you live. That is why the honest answer to "how many public holidays does Spain have" is always: it depends where you are.</p>
+
+      <h2>How visitors and remote workers should use this calendar</h2>
+      <p>For visitors: do not plan around the national list alone. Aug 15 falls on a Saturday in 2026, so the action is in summer fiestas, not a day off. Avoid the long weekends around Oct 12 and the Dec 6-8 Constitution stretch if you hate crowds.</p>
+      <p>For remote workers: Spanish bank holidays and bridge days work differently from the UK or Germany. Many companies simply close on the bridge day when a holiday lands on Tuesday or Thursday. Check the company calendar at the start of each month before booking anything.</p>
+
+      <h2>FAQ</h2>
+      <p><strong>How many public holidays does Spain have in 2026?</strong> Nine national dates, plus one or two extra per autonomous community, for a real total of 12 to 14 days depending on the region.</p>
+      <p><strong>Are Spanish holidays the same across the country?</strong> No. Nine are national; the other 17 communities add their own, which is why Catalonia, Andalusia and Valencia all have unique holidays.</p>
+      <p><strong>Does Spain have a bridge-day (puente) culture?</strong> Yes, and it is widespread. When a holiday falls on Tuesday or Thursday, most people take the single day in between off, and many companies close by default.</p>
+      <p><strong>Is August 15 a holiday in Spain?</strong> Yes, Assumption is national. But in 2026 it falls on a Saturday, so office workers effectively lose that one.</p>
+      <p>Check the full <a href="https://public-holidays.shop/en/ES">Spain 2026 public holiday calendar</a> on PubHoliday, or sync any country's holidays into your own calendar from the <a href="https://public-holidays.shop">homepage</a>.</p>
+    `,
+  },
+  {
+    id: 130,
+    title: "西班牙公共假日：地区自治的节日版图",
+    slug: "spain-public-holidays-regional-fiestas",
+    category: "guide",
+    author: "PubHoliday 研究团队",
+    publishedDate: "2026-08-10T08:00:00Z",
+    lastModified: "2026-08-10T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/spain-public-holidays.svg",
+    excerpt: "西班牙公共假日没有一份全国统一清单：9 天全国性，17 个自治区各自加码。完整 2026 日历、最大的地区差异，以及搭桥（puente）文化怎么运作。",
+    relatedCountries: ["ES"],
+    locale: "zh",
+    faq: [
+      { question: "2026 年西班牙有多少个公共假日？", answer: "全国性 9 天，加上各自治区额外指定的 1-2 天，实际总假期在 12-14 天之间。具体看所在地区。" },
+      { question: "西班牙假日全国统一吗？", answer: "不。只有 9 天是全国性的，其余由 17 个自治区自行决定，加泰罗尼亚、安达卢西亚、瓦伦西亚等都有自己独有的假日。" },
+      { question: "西班牙有搭桥（puente）文化吗？", answer: "有，而且很普遍。假日落在周二或周四时，很多人会把中间一天请掉凑四连休，不少公司默认放假。" },
+      { question: "8 月 15 日西班牙放假吗？", answer: "放，圣母升天节是全国假日。但 2026 年它落在周六，对上班族来说等于少了一个休息日。" },
+    ],
+    content: `
+      <p>西班牙的 <strong>公共假日</strong>和欧洲其他国家最大的不同，是没有一份全国统一的长假清单。全国性假日只有 9 天打底，剩下由 17 个自治区自己加码：加泰罗尼亚有自己的守护圣徒日，安达卢西亚有安达卢西亚日，瓦伦西亚直接给法雅节放假。这篇把 2026 年的全国假日、主要地区差异和搭桥（puente）技巧一次讲清。</p>
+
+      <h2>2026 年西班牙全国假日（9 天）</h2>
+      <table class="min-w-full border-collapse border border-gray-300 mb-4">
+        <thead><tr class="bg-gray-100"><th class="border p-2">假日</th><th class="border p-2">2026 年日期</th><th class="border p-2">星期</th></tr></thead>
+        <tbody>
+          <tr><td class="border p-2">元旦（Año Nuevo）</td><td class="border p-2">1 月 1 日</td><td class="border p-2">周四</td></tr>
+          <tr><td class="border p-2">主显节（Epifanía del Señor）</td><td class="border p-2">1 月 6 日</td><td class="border p-2">周二</td></tr>
+          <tr><td class="border p-2">耶稣受难日（Viernes Santo）</td><td class="border p-2">4 月 3 日</td><td class="border p-2">周五</td></tr>
+          <tr><td class="border p-2">劳动节（Fiesta del Trabajo）</td><td class="border p-2">5 月 1 日</td><td class="border p-2">周五</td></tr>
+          <tr><td class="border p-2">圣母升天节（Asunción）</td><td class="border p-2">8 月 15 日</td><td class="border p-2">周六</td></tr>
+          <tr><td class="border p-2">国庆节（Fiesta Nacional）</td><td class="border p-2">10 月 12 日</td><td class="border p-2">周一</td></tr>
+          <tr><td class="border p-2">万圣节（Todos los Santos）</td><td class="border p-2">11 月 1 日</td><td class="border p-2">周日</td></tr>
+          <tr><td class="border p-2">宪法日（Día de la Constitución）</td><td class="border p-2">12 月 6 日</td><td class="border p-2">周日</td></tr>
+          <tr><td class="border p-2">圣诞（Navidad）</td><td class="border p-2">12 月 25 日</td><td class="border p-2">周五</td></tr>
+        </tbody>
+      </table>
+      <p><strong>2026 年最佳搭桥机会</strong>：1 月 6 日（周二）请掉 1 月 5 日就是四连休；10 月 12 日（周一）直接三连休；12 月 25 日（周五）白送三连休。5 月 1 日 + 8 日双周五，中间请三天能连休九天，这是全年最划算的一笔。</p>
+
+      <h2>地区假日：西班牙节日的真正版图</h2>
+      <p>西班牙法律规定，每个自治区每年可额外指定最多两个本地假日（加上非强制替换日可达 14 天）。搜 spain holidays 2026 的人常被这一点搞晕：同一天在马德里是工作日，在巴塞罗那就是假日。主要自治区代表：</p>
+      <ul>
+        <li><strong>加泰罗尼亚</strong>：Sant Jordi（4 月 23 日，图书与玫瑰日）、La Mercè（9 月 24 日），假期政策在自治区里最激进</li>
+        <li><strong>安达卢西亚</strong>：安达卢西亚日（2 月 28 日）</li>
+        <li><strong>马德里</strong>：5 月 2 日（Dos de Mayo，纪念 1808 年起义）</li>
+        <li><strong>瓦伦西亚</strong>：San José（3 月 19 日，法雅节核心日）</li>
+        <li><strong>巴斯克</strong>：圣周四（4 月 2 日），部分自治区把圣周四也列为假日</li>
+      </ul>
+
+      <h2>西班牙 vs 其他国家：假日数量对比</h2>
+      <table class="min-w-full border-collapse border border-gray-300 mb-4">
+        <thead><tr class="bg-gray-100"><th class="border p-2">国家</th><th class="border p-2">全国假日</th><th class="border p-2">地区假日</th><th class="border p-2">特点</th></tr></thead>
+        <tbody>
+          <tr><td class="border p-2">西班牙</td><td class="border p-2">9 天</td><td class="border p-2">每个自治区最多 +2</td><td class="border p-2">地区差异全欧最大</td></tr>
+          <tr><td class="border p-2">法国</td><td class="border p-2">11 天</td><td class="border p-2">无（除阿尔萨斯-摩泽尔）</td><td class="border p-2">全国一致，靠搭桥文化</td></tr>
+          <tr><td class="border p-2">德国</td><td class="border p-2">9 天</td><td class="border p-2">各州不同</td><td class="border p-2">地区差异大但总量克制</td></tr>
+          <tr><td class="border p-2">意大利</td><td class="border p-2">12 天</td><td class="border p-2">部分城市</td><td class="border p-2">全国为主</td></tr>
+        </tbody>
+      </table>
+      <p>西班牙的实际休息天数在 12-14 天之间浮动，取决于你在哪个自治区生活。这就是为什么"西班牙公共假日有几天"这个问题的正确答案永远是：看你在哪儿。</p>
+
+      <h2>游客和远程办公者怎么用这份日历</h2>
+      <p>对游客：行程规划别只盯全国假日。8 月 15 日是周六，热闹的是各地夏季庆典而非法定假期；想避开人潮，避开 10 月 12 日国庆节和 12 月 6-8 日宪法日连成的长周末即可。</p>
+      <p>对远程办公者：西班牙的 bank holiday 和搭桥习惯跟英国、德国不同，很多公司默认在假日落在周四/周二时放桥假。如果你在西班牙远程工作，月初先看公司日历，别自己提前订行程。</p>
+
+      <h2>常见问题</h2>
+      <p><strong>2026 年西班牙有多少个公共假日？</strong> 全国性 9 天，加上各自治区额外指定的 1-2 天，实际总假期在 12-14 天之间。具体看所在地区。</p>
+      <p><strong>西班牙假日全国统一吗？</strong> 不。只有 9 天是全国性的，其余由 17 个自治区自行决定，加泰罗尼亚、安达卢西亚、瓦伦西亚等都有自己独有的假日。</p>
+      <p><strong>西班牙有搭桥（puente）文化吗？</strong> 有，而且很普遍。假日落在周二或周四时，很多人会把中间一天请掉凑四连休，不少公司默认放假。</p>
+      <p><strong>8 月 15 日西班牙放假吗？</strong> 放，圣母升天节是全国假日。但 2026 年它落在周六，对上班族来说等于少了一个休息日。</p>
+      <p>到 PubHoliday 查看完整的<a href="https://public-holidays.shop/en/ES">西班牙 2026 公共假日日历</a>，或从<a href="https://public-holidays.shop">首页</a>把任意国家的假日同步进你的日历。</p>
+    `,
+  },
 ];
 
 // ========================================================================
