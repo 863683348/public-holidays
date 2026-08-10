@@ -1,5 +1,8 @@
 import { notFound, permanentRedirect } from "next/navigation";
-import { getTranslations } from "next-intl/server";
+import {
+  getTranslations,
+  setRequestLocale,
+} from "next-intl/server";
 import { CalendarDays } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import {
@@ -55,6 +58,7 @@ export default async function HolidayDetailView({
   year: number;
   slug: string;
 }) {
+  setRequestLocale(locale);
   const meta = getCountry(country);
   if (!meta) notFound();
 

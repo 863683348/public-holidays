@@ -1,6 +1,9 @@
 import React from "react";
 import { notFound } from "next/navigation";
-import { getTranslations } from "next-intl/server";
+import {
+  getTranslations,
+  setRequestLocale,
+} from "next-intl/server";
 import { CalendarDays } from "lucide-react";
 import {
   COUNTRIES,
@@ -47,6 +50,7 @@ export default async function CountryHolidayView({
   year: number;
   isYearPage: boolean;
 }) {
+  setRequestLocale(locale);
   const meta = getCountry(country);
   if (!meta) notFound();
 
