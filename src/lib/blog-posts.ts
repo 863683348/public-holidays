@@ -2453,8 +2453,11 @@ export function getPostsByCategory(category: string, locale?: string): BlogPost[
  * Get all posts filtered by locale.
  */
 export function getAllPosts(locale?: string): BlogPost[] {
-  if (!locale) return BLOG_POSTS;
-  return BLOG_POSTS.filter((p) => (p.locale || "en") === locale);
+  const posts = locale ? BLOG_POSTS.filter((p) => (p.locale || "en") === locale) : BLOG_POSTS;
+  // 按发布时间倒序（最新在前）
+  return [...posts].sort(
+    (a, b) => new Date(b.publishedDate).getTime() - new Date(a.publishedDate).getTime()
+  );
 }
 
 
