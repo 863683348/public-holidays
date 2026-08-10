@@ -125,17 +125,33 @@ export default async function BlogPage({
         <h1 className="text-4xl font-bold mb-4">{t("heading")}</h1>
         <p className="text-lg text-[var(--muted)] mb-6">{t("subheading")}</p>
         <div className="flex flex-wrap gap-3">
-          <Link
-            href="/blog"
-            className="px-6 py-2 bg-brand text-white rounded-sm hover:opacity-90 transition-opacity"
-          >
-            {t("viewAll")}
-          </Link>
-          <SubscribeButton
-            country=""
-            label={t("subscribeNewsletter")}
-            hint={t("subscribeNewsletterHint")}
-          />
+          {featuredPost ? (
+            <Link
+              href={`/blog/${featuredPost.category}/${featuredPost.slug}`}
+              className="px-6 py-2 bg-brand text-white rounded-sm hover:opacity-90 transition-opacity"
+            >
+              {t("viewAll")}
+            </Link>
+          ) : (
+            <Link
+              href="/blog"
+              className="px-6 py-2 bg-brand text-white rounded-sm hover:opacity-90 transition-opacity"
+            >
+              {t("viewAll")}
+            </Link>
+          )}
+          {/*
+           * SubscribeButton 需要具体国家才能生成有效的 calendar.ics URL。
+           * 在 /blog 列表页（无国家上下文）调用 country="" 会产出 "/zh//calendar.ics" 双斜杠 → 404。
+           * 此处条件渲染：仅当有 featuredPost.country 时才显示订阅按钮。
+           */}
+          {featuredPost?.relatedCountries?.[0] && (
+            <SubscribeButton
+              country={featuredPost.relatedCountries[0]}
+              label={t("subscribeNewsletter")}
+              hint={t("subscribeNewsletterHint")}
+            />
+          )}
         </div>
       </section>
 
