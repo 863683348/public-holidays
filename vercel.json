@@ -5,11 +5,20 @@
   },
   "headers": [
     {
-      "source": "/(zh|en|ja|ko|es|de|fr|pt|it|ru|ar)/((?!account|pricing|compare|today|world-clock|blog|countries|faq|contact|privacy|terms|for-teams|link-to-us|api)[^/]+(/[^/]+){0,2})/?",
+      "source": "/(zh|en|ja|ko|es|de|fr|pt|it|ru|ar)/([^/]+)(/[^/]+){0,2}",
       "headers": [
         {
           "key": "Cache-Control",
           "value": "public, s-maxage=86400, stale-while-revalidate=3600"
+        }
+      ]
+    },
+    {
+      "source": "/(zh|en|ja|ko|es|de|fr|pt|it|ru|ar)/(account|pricing|compare|today|api)(/.*)?",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "private, no-cache, no-store, max-age=0, must-revalidate"
         }
       ]
     }
