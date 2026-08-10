@@ -219,7 +219,9 @@ export default async function ArticlePage({
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {relatedPosts.map((rp) => (
               <Link key={rp.slug} href={`/blog/${rp.category}/${rp.slug}`} className="block p-4 border rounded-lg hover:border-brand transition-colors">
-                <div className="text-xs text-[var(--muted)] mb-1">{rp.category}</div>
+                <div className="text-xs text-[var(--muted)] mb-1">
+                  {rp.category} · {new Date(rp.publishedDate).toLocaleDateString(locale, { year: 'numeric', month: 'short', day: 'numeric' })}
+                </div>
                 <h4 className="text-sm font-semibold leading-tight mb-1">{rp.title}</h4>
                 <p className="text-xs text-[var(--muted)] line-clamp-2">{rp.excerpt}</p>
               </Link>
