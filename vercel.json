@@ -2,25 +2,5 @@
   "env": {
     "NEXT_PUBLIC_SITE_URL": "https://public-holidays.shop",
     "NEXT_PUBLIC_ADSENSE_AD_UNIT": "2564634874"
-  },
-  "headers": [
-    {
-      "source": "/(zh|en|ja|ko|es|de|fr|pt|it|ru|ar)/([^/]+)(/[^/]+){0,2}",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, s-maxage=86400, stale-while-revalidate=3600"
-        }
-      ]
-    },
-    {
-      "source": "/(zh|en|ja|ko|es|de|fr|pt|it|ru|ar)/(account|pricing|compare|today|api)(/.*)?",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "private, no-cache, no-store, max-age=0, must-revalidate"
-        }
-      ]
-    }
-  ]
+  }
 }

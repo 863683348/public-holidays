@@ -1,14 +1,21 @@
 import type { Metadata } from "next";
-import { getCountry, getHolidayPageTitle, getHolidayPageDescription, NO_DATA_COUNTRIES } from "@/lib/countries";
+import { COUNTRIES, getCountry, getHolidayPageTitle, getHolidayPageDescription, NO_DATA_COUNTRIES } from "@/lib/countries";
 import { routing } from "@/i18n/routing";
 import CountryHolidayView from "@/components/CountryHolidayView";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
 
-// ISR: rendered on demand and cached for 24h. No `generateStaticParams` —
-// the locale×country space is large, so on-demand render + `revalidate`
-// avoids DYNAMIC_SERVER_USAGE during static generation at build time.
+// Pre-render every locale × country at build time so the CDN serves them
+// directly (PRERENDER). On-demand ISR is not honored for dynamic-segment
+// routes on Vercel (each request re-renders), which was inflating Fast Origin
+// Transfer. revalidate=86400 still refreshes them daily.
 export const revalidate = 86400;
+
+export function generateStaticParams() {
+  return routing.locales.flatMap((locale) =>
+    COUNTRIES.map((c) => ({ locale, country: c.code }))
+  );
+}
 
 export async function generateMetadata({
   params,
