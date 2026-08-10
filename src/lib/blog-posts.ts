@@ -2417,6 +2417,126 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>到 PubHoliday 查看完整的<a href="https://public-holidays.shop/en/ES">西班牙 2026 公共假日日历</a>，或从<a href="https://public-holidays.shop">首页</a>把任意国家的假日同步进你的日历。</p>
     `,
   },
+  {
+    id: 131,
+    title: "Italy Public Holidays: Holidays and Red Days",
+    slug: "italy-public-holidays-red-days",
+    category: "guide",
+    author: "PubHoliday Research Team",
+    publishedDate: "2026-08-11T08:00:00Z",
+    lastModified: "2026-08-11T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/italy-public-holidays.svg",
+    excerpt: "Italians call a public holiday a red day (giorno rosso) because holidays are printed in red on the calendar. Full 2026 calendar of 12 national days, the Ferragosto and Easter traditions, and the bridge-day patterns worth planning around.",
+    relatedCountries: ["IT"],
+    locale: "en",
+    faq: [
+      { question: "How many public holidays does Italy have in 2026?", answer: "Twelve national days, plus local patron saint days in a few cities like Rome." },
+      { question: "Are Italian holidays the same across the country?", answer: "Mostly yes. Only some cities add a local day (e.g. Rome's June 29). Nothing like Spain, where 17 autonomous communities each add their own." },
+      { question: "Why do Italians call holidays red days?", answer: "Because holidays are printed in red on Italian calendars, so giorno rosso literally means red day." },
+      { question: "Is August a big holiday month in Italy?", answer: "Yes. Around Ferragosto on August 15 the whole country travels, beaches and tourist cities overflow, and many local restaurants serve lunch only for the month." },
+    ],
+    content: `
+      <p>Italians call a public holiday a "red day" (giorno rosso) because holidays are marked in red on the calendar. This guide to <strong>italy public holidays</strong> covers the 2026 national calendar, the church-holiday tradition behind those red days, and the patterns visitors actually care about, with a full italian public holidays list along the way.</p>
+
+      <h2>Why the "red days" work this way</h2>
+      <p>Italy splits its public holidays into two buckets: civil ones (New Year, Labour Day, Republic Day) and religious ones (Assumption, All Saints, Christmas). Religious holidays make up more than half of the national list, a direct inheritance from the church's role in Italian civic life. It is the most distinctive feature of the festività italiane.</p>
+      <p>Unlike Germany or Spain, Italy keeps regional variation small. There are 12 national holidays, and only a handful of cities add a local patron saint's day, such as Rome's June 29 (Saints Peter and Paul). For planning purposes this is good news: one national calendar works almost everywhere.</p>
+
+      <h2>Italy public holidays 2026 (12 national days)</h2>
+      <table class="min-w-full border-collapse border border-gray-300 mb-4">
+        <thead><tr class="bg-gray-100"><th class="border p-2">Holiday</th><th class="border p-2">2026 date</th><th class="border p-2">Weekday</th></tr></thead>
+        <tbody>
+          <tr><td class="border p-2">New Year's Day (Capodanno)</td><td class="border p-2">Jan 1</td><td class="border p-2">Thursday</td></tr>
+          <tr><td class="border p-2">Epiphany (Epifania)</td><td class="border p-2">Jan 6</td><td class="border p-2">Tuesday</td></tr>
+          <tr><td class="border p-2">Easter Sunday (Pasqua)</td><td class="border p-2">Apr 5</td><td class="border p-2">Sunday</td></tr>
+          <tr><td class="border p-2">Easter Monday (Lunedì dell'Angelo)</td><td class="border p-2">Apr 6</td><td class="border p-2">Monday</td></tr>
+          <tr><td class="border p-2">Liberation Day</td><td class="border p-2">Apr 25</td><td class="border p-2">Saturday</td></tr>
+          <tr><td class="border p-2">Labour Day (Festa del Lavoro)</td><td class="border p-2">May 1</td><td class="border p-2">Friday</td></tr>
+          <tr><td class="border p-2">Republic Day (Festa della Repubblica)</td><td class="border p-2">Jun 2</td><td class="border p-2">Tuesday</td></tr>
+          <tr><td class="border p-2">Assumption (Ferragosto)</td><td class="border p-2">Aug 15</td><td class="border p-2">Saturday</td></tr>
+          <tr><td class="border p-2">All Saints (Ognissanti)</td><td class="border p-2">Nov 1</td><td class="border p-2">Sunday</td></tr>
+          <tr><td class="border p-2">Immaculate Conception (Immacolata)</td><td class="border p-2">Dec 8</td><td class="border p-2">Tuesday</td></tr>
+          <tr><td class="border p-2">Christmas (Natale)</td><td class="border p-2">Dec 25</td><td class="border p-2">Friday</td></tr>
+          <tr><td class="border p-2">St. Stephen's Day (Santo Stefano)</td><td class="border p-2">Dec 26</td><td class="border p-2">Saturday</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Best bridge opportunities in 2026</strong>: Jan 6 falls on a Tuesday, so taking Jan 5 off makes a four-day weekend. Jun 2 (Tuesday) bridges the same way. Dec 8 (Tuesday) plus the weekend and Christmas turns December into two long stretches.</p>
+
+      <h2>The church holidays that really move the country: Ferragosto and Easter</h2>
+      <p>August 15, the Assumption, is known simply as Ferragosto. It is the day Italy genuinely shuts down: cities go quiet, the coast fills up, many small restaurants serve lunch only for the whole month. For visitors, August is the hardest month to book a good table or a reasonable hotel.</p>
+      <p>Easter moves every year. In 2026 it lands on April 5 (Sunday) with Pasquetta on April 6. Holy Week ceremonies, the Pope's Mass in Rome and the Sicilian processions, behave less like a public holiday and more like a cultural event. Worth planning around if you are in the country anyway.</p>
+
+      <h2>How visitors and remote workers should use this calendar</h2>
+      <p>For visitors: April 25, May 1 and Jun 2 form a holiday cluster in late spring, so museums and sights queue hard. August is high season across the board, accept the crowds or accept the prices. For remote workers: Italians take holidays seriously. From December 8 through January 6 the country runs on a de facto Christmas break, and business emails get answered slowly. Do not set deadlines that depend on Italian colleagues during that stretch.</p>
+
+      <h2>FAQ</h2>
+      <p><strong>How many public holidays does Italy have in 2026?</strong> Twelve national days, plus local patron saint days in a few cities like Rome.</p>
+      <p><strong>Are Italian holidays the same across the country?</strong> Mostly yes. Only some cities add a local day (e.g. Rome's June 29). Nothing like Spain, where 17 autonomous communities each add their own.</p>
+      <p><strong>Why do Italians call holidays "red days"?</strong> Because holidays are printed in red on Italian calendars, so giorno rosso literally means "red day".</p>
+      <p><strong>Is August a big holiday month in Italy?</strong> Yes. Around Ferragosto on August 15 the whole country travels, beaches and tourist cities overflow, and many local restaurants serve lunch only for the month.</p>
+      <p>Check the full <a href="https://public-holidays.shop/en/IT">Italy 2026 public holiday calendar</a> on PubHoliday, or sync any country's holidays into your own calendar from the <a href="https://public-holidays.shop">homepage</a>.</p>
+    `,
+  },
+  {
+    id: 132,
+    title: "意大利公共假日：假日与红日",
+    slug: "italy-public-holidays-red-days",
+    category: "guide",
+    author: "PubHoliday 研究团队",
+    publishedDate: "2026-08-11T08:00:00Z",
+    lastModified: "2026-08-11T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/italy-public-holidays.svg",
+    excerpt: "意大利人把公共假日叫红日（giorno rosso），因为日历上假日都标红。完整 2026 年 12 天全国假日、Ferragosto 与复活节传统，以及值得搭桥的长假机会。",
+    relatedCountries: ["IT"],
+    locale: "zh",
+    faq: [
+      { question: "2026 年意大利有多少个公共假日？", answer: "全国性 12 天，另外罗马等少数城市有自己的守护圣徒日。" },
+      { question: "意大利的假日全国统一吗？", answer: "基本统一，只有个别城市多放本地节日（如罗马 6 月 29 日）。跟西班牙那种 17 个自治区各自加码的情况完全不同。" },
+      { question: "为什么意大利人把假日叫红日？", answer: "因为日历上假日都用红色标注，giorno rosso 就是红色的一天，对应我们说的节假日。" },
+      { question: "8 月在意大利是度假高峰吗？", answer: "是。8 月 15 日 Ferragosto 前后意大利全国大迁徙，海滩和旅游城市人满为患，很多本地餐馆整月只做午市。" },
+    ],
+    content: `
+      <p>意大利人管公共假日叫"红日"（giorno rosso），因为日历上放假的日子一律标红。这份 <strong>italy public holidays</strong> 攻略把 2026 年的全国假日、教堂节日的"红日"传统、以及游客最关心的放假规律一次讲清，顺便附上完整的 italian public holidays list。</p>
+
+      <h2>意大利的"红日"是怎么回事</h2>
+      <p>意大利的节假日体系很特别：法定假日分两类，一类是世俗节日（元旦、劳动节、共和国日），另一类是宗教节日（圣母升天节、万圣节、圣诞）。宗教节日占了全国假日的一多半，这和意大利的教会传统直接相关，也是 festività italiane 最鲜明的特征。</p>
+      <p>和德国、西班牙不同，意大利全国性假日有 12 天，地区差异很小，只有个别城市有本地守护圣徒日，比如罗马的 6 月 29 日（圣彼得和圣保罗节）。对做行程规划的人来说这是好消息：一份全国日历基本通用。</p>
+
+      <h2>2026 年意大利公共假日（全国 12 天）</h2>
+      <table class="min-w-full border-collapse border border-gray-300 mb-4">
+        <thead><tr class="bg-gray-100"><th class="border p-2">假日</th><th class="border p-2">2026 年日期</th><th class="border p-2">星期</th></tr></thead>
+        <tbody>
+          <tr><td class="border p-2">元旦（Capodanno）</td><td class="border p-2">1 月 1 日</td><td class="border p-2">周四</td></tr>
+          <tr><td class="border p-2">主显节（Epifania）</td><td class="border p-2">1 月 6 日</td><td class="border p-2">周二</td></tr>
+          <tr><td class="border p-2">复活节（Pasqua）</td><td class="border p-2">4 月 5 日</td><td class="border p-2">周日</td></tr>
+          <tr><td class="border p-2">复活节星期一（Lunedì dell'Angelo）</td><td class="border p-2">4 月 6 日</td><td class="border p-2">周一</td></tr>
+          <tr><td class="border p-2">解放日（Festa della Liberazione）</td><td class="border p-2">4 月 25 日</td><td class="border p-2">周六</td></tr>
+          <tr><td class="border p-2">劳动节（Festa del Lavoro）</td><td class="border p-2">5 月 1 日</td><td class="border p-2">周五</td></tr>
+          <tr><td class="border p-2">共和国日（Festa della Repubblica）</td><td class="border p-2">6 月 2 日</td><td class="border p-2">周二</td></tr>
+          <tr><td class="border p-2">圣母升天节（Ferragosto）</td><td class="border p-2">8 月 15 日</td><td class="border p-2">周六</td></tr>
+          <tr><td class="border p-2">万圣节（Ognissanti）</td><td class="border p-2">11 月 1 日</td><td class="border p-2">周日</td></tr>
+          <tr><td class="border p-2">圣母无染原罪节（Immacolata）</td><td class="border p-2">12 月 8 日</td><td class="border p-2">周二</td></tr>
+          <tr><td class="border p-2">圣诞节（Natale）</td><td class="border p-2">12 月 25 日</td><td class="border p-2">周五</td></tr>
+          <tr><td class="border p-2">圣史蒂芬节（Santo Stefano）</td><td class="border p-2">12 月 26 日</td><td class="border p-2">周六</td></tr>
+        </tbody>
+      </table>
+      <p><strong>2026 年搭桥机会</strong>：1 月 6 日（周二）请掉 1 月 5 日就是四连休；6 月 2 日（周二）同样可以桥成四连休；12 月 8 日（周二）连着周末加圣诞，12 月几乎可以桥出两段长假。</p>
+
+      <h2>教堂节日的"红日"：Ferragosto 和复活节</h2>
+      <p>每年 8 月 15 日的圣母升天节，意大利人直接叫它 Ferragosto，这是全国真正"关张"的日子：城市空了一半，海边挤满人，很多小餐馆整个月只开中午。对游客来说，8 月是意大利最难订到好餐厅和好酒店的月份。</p>
+      <p>复活节在意大利是移动假日，2026 年落在 4 月 5 日（周日），4 月 6 日补一天（Pasquetta）。复活节周的宗教仪式（罗马的教皇弥撒、西西里的圣周游行）比普通公共假日更像文化体验，规划行程时可以专门留出。</p>
+
+      <h2>游客与远程办公者怎么用这份日历</h2>
+      <p>对游客：4 月 25 日、5 月 1 日、6 月 2 日连成 4-5 月的假日密集带，博物馆和景点会排长队；8 月全月都算旺季，避开或者接受涨价二选一。对远程办公者：意大利人放假是真的放假，12 月 8 日到 1 月 6 日是事实上的"圣诞长假"，商务邮件基本没人回，别在这段时间安排需要意大利同事配合的截止日期。</p>
+
+      <h2>常见问题</h2>
+      <p><strong>2026 年意大利有多少个公共假日？</strong> 全国性 12 天，另外罗马等少数城市有自己的守护圣徒日。</p>
+      <p><strong>意大利的假日全国统一吗？</strong> 基本统一，只有个别城市多放本地节日（如罗马 6 月 29 日）。跟西班牙那种 17 个自治区各自加码的情况完全不同。</p>
+      <p><strong>为什么意大利人把假日叫"红日"？</strong> 因为日历上假日都用红色标注，giorno rosso 就是"红色的一天"，对应我们说的节假日。</p>
+      <p><strong>8 月在意大利是度假高峰吗？</strong> 是。8 月 15 日 Ferragosto 前后意大利全国大迁徙，海滩和旅游城市人满为患，很多本地餐馆整月只做午市。</p>
+      <p>到 PubHoliday 查看完整的<a href="https://public-holidays.shop/en/IT">意大利 2026 公共假日日历</a>，或从<a href="https://public-holidays.shop">首页</a>把任意国家的假日同步进你的日历。</p>
+    `,
+  },
 ];
 
 // ========================================================================
