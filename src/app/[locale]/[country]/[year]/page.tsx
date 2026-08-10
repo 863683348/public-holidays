@@ -1,15 +1,25 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getCountry, getHolidayPageTitle, getHolidayPageDescription, NO_DATA_COUNTRIES } from "@/lib/countries";
+import { COUNTRIES, getCountry, getHolidayPageTitle, getHolidayPageDescription, NO_DATA_COUNTRIES } from "@/lib/countries";
 import { parseYear } from "@/lib/year-window";
 import { routing } from "@/i18n/routing";
 import CountryHolidayView from "@/components/CountryHolidayView";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
 
-// ISR: rendered on demand and cached for 24h. On-demand + `revalidate`
-// avoids DYNAMIC_SERVER_USAGE during static generation.
+// Pre-render the current year + next year for every country/locale at build
+// time (these cover ~all organic search traffic); other years stay on-demand.
+// On-demand ISR is not honored for dynamic-segment routes on Vercel, so
+// pre-rendering is what lets the CDN serve these pages.
 export const revalidate = 86400;
+
+export function generateStaticParams() {
+  const thisYear = new Date().getFullYear();
+  const years = [String(thisYear), String(thisYear + 1)];
+  return routing.locales.flatMap((locale) =>
+    COUNTRIES.flatMap((c) => years.map((year) => ({ locale, country: c.code, year })))
+  );
+}
 
 export async function generateMetadata({
   params,
