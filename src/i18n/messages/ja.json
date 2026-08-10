@@ -159,7 +159,9 @@
     "subscribeNewsletterHint": "新着記事をメールで受信",
     "notFound": "記事が見つかりません",
     "shareThis": "この記事をシェア",
-    "relatedCountries": "関連国"
+    "relatedCountries": "関連国",
+    "postsCount": "{count} 件のブログ記事",
+    "viewAllCategory": "カテゴリー全体を見る"
   },
   "auth": {
     "signIn": "Googleでログイン",

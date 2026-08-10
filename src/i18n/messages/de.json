@@ -159,7 +159,9 @@
     "subscribeNewsletterHint": "Get new posts delivered to your inbox",
     "notFound": "Article not found",
     "shareThis": "Share this article",
-    "relatedCountries": "Verwandte Länder"
+    "relatedCountries": "Verwandte Länder",
+    "postsCount": "{count} Artikel",
+    "viewAllCategory": "Alle ansehen"
   },
   "auth": {
     "signIn": "Mit Google anmelden",

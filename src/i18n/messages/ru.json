@@ -159,7 +159,9 @@
     "subscribeNewsletterHint": "Получайте новые статьи на почту",
     "notFound": "Статья не найдена",
     "shareThis": "Поделиться статьёй",
-    "relatedCountries": "Связанные страны"
+    "relatedCountries": "Связанные страны",
+    "postsCount": "{count} статей",
+    "viewAllCategory": "Смотреть всю категорию"
   },
   "auth": {
     "signIn": "Войти через Google",
