@@ -151,7 +151,12 @@ export default async function BlogPage({
             />
             <div className="p-6">
               <div className="text-sm text-[var(--muted)] mb-2">
-                {featuredPost.category} • {featuredPost.author}
+                {featuredPost.category} • {featuredPost.author} •{" "}
+                {new Date(featuredPost.publishedDate).toLocaleDateString(locale, {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
               </div>
               <h3 className="text-lg font-semibold leading-tight mb-2">
                 <Link
@@ -199,7 +204,12 @@ export default async function BlogPage({
           {recentPosts.map((post) => (
             <div key={post.title} className="space-y-3">
               <div className="text-sm text-[var(--muted)]">
-                {post.category} • {post.author}
+                {post.category} • {post.author} •{" "}
+                {new Date(post.publishedDate).toLocaleDateString(locale, {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
               </div>
               <h3 className="text-lg font-semibold leading-tight">
                 <Link

@@ -98,7 +98,12 @@ export default async function CategoryPage({
               />
             )}
             <div className="text-sm text-[var(--muted)] mb-2">
-              {post.category} • {post.author}
+              {post.category} • {post.author} •{" "}
+              {new Date(post.publishedDate).toLocaleDateString(locale, {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })}
             </div>
             <h3 className="text-lg font-semibold leading-tight mb-2">
               <Link
