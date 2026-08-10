@@ -1,6 +1,6 @@
 ﻿import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { Link } from "@/i18n/navigation";
 import SubscribeButton from "@/components/SubscribeButton";
@@ -23,6 +23,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations("blog");
   const title = t("title");
   const description = t("description");
@@ -54,6 +55,7 @@ export default async function BlogPage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations("blog");
   const tNav = await getTranslations("nav");
 
@@ -125,17 +127,33 @@ export default async function BlogPage({
         <h1 className="text-4xl font-bold mb-4">{t("heading")}</h1>
         <p className="text-lg text-[var(--muted)] mb-6">{t("subheading")}</p>
         <div className="flex flex-wrap gap-3">
-          <Link
-            href="/blog"
-            className="px-6 py-2 bg-brand text-white rounded-sm hover:opacity-90 transition-opacity"
-          >
-            {t("viewAll")}
-          </Link>
-          <SubscribeButton
-            country=""
-            label={t("subscribeNewsletter")}
-            hint={t("subscribeNewsletterHint")}
-          />
+          {featuredPost ? (
+            <Link
+              href={`/blog/${featuredPost.category}/${featuredPost.slug}`}
+              className="px-6 py-2 bg-brand text-white rounded-sm hover:opacity-90 transition-opacity"
+            >
+              {t("viewAll")}
+            </Link>
+          ) : (
+            <Link
+              href="/blog"
+              className="px-6 py-2 bg-brand text-white rounded-sm hover:opacity-90 transition-opacity"
+            >
+              {t("viewAll")}
+            </Link>
+          )}
+          {/*
+           * SubscribeButton 需要具体国家才能生成有效的 calendar.ics URL。
+           * 在 /blog 列表页（无国家上下文）调用 country="" 会产出 "/zh//calendar.ics" 双斜杠 → 404。
+           * 此处条件渲染：仅当有 featuredPost.country 时才显示订阅按钮。
+           */}
+          {featuredPost?.relatedCountries?.[0] && (
+            <SubscribeButton
+              country={featuredPost.relatedCountries[0]}
+              label={t("subscribeNewsletter")}
+              hint={t("subscribeNewsletterHint")}
+            />
+          )}
         </div>
       </section>
 
@@ -151,7 +169,12 @@ export default async function BlogPage({
             />
             <div className="p-6">
               <div className="text-sm text-[var(--muted)] mb-2">
-                {featuredPost.category} • {featuredPost.author}
+                {featuredPost.category} • {featuredPost.author} •{" "}
+                {new Date(featuredPost.publishedDate).toLocaleDateString(locale, {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
               </div>
               <h3 className="text-lg font-semibold leading-tight mb-2">
                 <Link
@@ -199,7 +222,12 @@ export default async function BlogPage({
           {recentPosts.map((post) => (
             <div key={post.title} className="space-y-3">
               <div className="text-sm text-[var(--muted)]">
-                {post.category} • {post.author}
+                {post.category} • {post.author} •{" "}
+                {new Date(post.publishedDate).toLocaleDateString(locale, {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
               </div>
               <h3 className="text-lg font-semibold leading-tight">
                 <Link

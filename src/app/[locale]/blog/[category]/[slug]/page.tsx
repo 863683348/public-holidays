@@ -1,6 +1,6 @@
 ﻿import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { getCountry } from "@/lib/countries";
 import { getPostData, getPostsByCategory } from "@/lib/blog-posts";
@@ -19,6 +19,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string; category: string; slug: string }>;
 }): Promise<Metadata> {
   const { locale, category, slug } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations("blog");
 
   // In production, fetch actual post data from CMS
@@ -68,6 +69,7 @@ export default async function ArticlePage({
   params: Promise<{ locale: string; category: string; slug: string }>;
 }) {
   const { locale, category, slug } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations("blog");
   const tNav = await getTranslations("nav");
 
@@ -219,7 +221,9 @@ export default async function ArticlePage({
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {relatedPosts.map((rp) => (
               <Link key={rp.slug} href={`/blog/${rp.category}/${rp.slug}`} className="block p-4 border rounded-lg hover:border-brand transition-colors">
-                <div className="text-xs text-[var(--muted)] mb-1">{rp.category}</div>
+                <div className="text-xs text-[var(--muted)] mb-1">
+                  {rp.category} · {new Date(rp.publishedDate).toLocaleDateString(locale, { year: 'numeric', month: 'short', day: 'numeric' })}
+                </div>
                 <h4 className="text-sm font-semibold leading-tight mb-1">{rp.title}</h4>
                 <p className="text-xs text-[var(--muted)] line-clamp-2">{rp.excerpt}</p>
               </Link>

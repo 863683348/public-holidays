@@ -2,7 +2,11 @@ import type { ReactNode } from "react";
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages, getTranslations } from "next-intl/server";
+import {
+  getMessages,
+  getTranslations,
+  setRequestLocale,
+} from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
 import { ThemeProvider } from "next-themes";
@@ -99,7 +103,11 @@ export default async function LocaleLayout({
   if (!routing.locales.includes(locale as never)) {
     notFound();
   }
-  const messages = await getMessages();
+  // Static-render friendly: pin the request locale so next-intl's implicit
+  // getLocale() never falls back to reading cookies (which would force the
+  // whole layout segment — and every child page — to dynamic rendering).
+  setRequestLocale(locale);
+  const messages = await getMessages({ locale });
   const tNav = await getTranslations({ locale, namespace: "nav" });
 
   return (
@@ -166,6 +174,12 @@ export default async function LocaleLayout({
                     className="text-[var(--muted)] transition-colors hover:text-[var(--fg)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--ring)] rounded-sm"
                   >
                     {tNav("pricing")}
+                  </Link>
+                  <Link
+                    href="/blog"
+                    className="text-[var(--muted)] transition-colors hover:text-[var(--fg)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--ring)] rounded-sm"
+                  >
+                    {tNav("blog")}
                   </Link>
                   <Link
                     href="/account"

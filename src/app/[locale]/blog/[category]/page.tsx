@@ -1,6 +1,6 @@
 ﻿import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { Link } from "@/i18n/navigation";
 import SubscribeButton from "@/components/SubscribeButton";
@@ -17,6 +17,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string; category: string }>;
 }): Promise<Metadata> {
   const { locale, category } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations("blog");
 
   const title = `${t("categoryTitle", { category })} — Blog`;
@@ -49,6 +50,7 @@ export default async function CategoryPage({
   params: Promise<{ locale: string; category: string }>;
 }) {
   const { locale, category } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations("blog");
   const tNav = await getTranslations("nav");
 
@@ -98,7 +100,12 @@ export default async function CategoryPage({
               />
             )}
             <div className="text-sm text-[var(--muted)] mb-2">
-              {post.category} • {post.author}
+              {post.category} • {post.author} •{" "}
+              {new Date(post.publishedDate).toLocaleDateString(locale, {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })}
             </div>
             <h3 className="text-lg font-semibold leading-tight mb-2">
               <Link
