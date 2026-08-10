@@ -12,6 +12,8 @@ export interface SubscriptionView {
   status: string;
   /** ISO string of the current billing period end, or null. */
   currentPeriodEnd: string | null;
+  /** Waffo order id backing this subscription, or null if unknown (legacy rows). */
+  waffoOrderId: string | null;
 }
 
 /**
@@ -131,7 +133,12 @@ export async function getSubscriptionByEmail(
     where: { email },
     select: {
       subscription: {
-        select: { plan: true, status: true, currentPeriodEnd: true },
+        select: {
+          plan: true,
+          status: true,
+          currentPeriodEnd: true,
+          waffoOrderId: true,
+        },
       },
     },
   });
@@ -145,7 +152,17 @@ export async function getSubscriptionByEmail(
     currentPeriodEnd: sub.currentPeriodEnd
       ? sub.currentPeriodEnd.toISOString()
       : null,
+    waffoOrderId: sub.waffoOrderId,
   };
+}
+
+/**
+ * Whether a subscription status can still be cancelled from the account UI.
+ * "active" is the normal case; "canceling" is allowed so a retry after a
+ * webhook race re-confirms the request instead of failing.
+ */
+export function canCancelStatus(status: string | null | undefined): boolean {
+  return status === "active" || status === "canceling";
 }
 
 /**
@@ -159,4 +176,27 @@ export function isProActive(sub: SubscriptionView | null): boolean {
     return new Date(sub.currentPeriodEnd).getTime() > Date.now();
   }
   return false;
+}
+
+/**
+ * Backfill the Waffo order id on a subscription row. Used after a legacy
+ * GraphQL lookup finds the order for rows created before the id was stored.
+ * No-op when DB is unconfigured or the row already has an id.
+ */
+export async function updateSubscriptionOrderId(
+  email: string,
+  orderId: string
+): Promise<void> {
+  if (!isDbConfigured || !email || !orderId) return;
+
+  const user = await getPrisma().user.findUnique({
+    where: { email },
+    select: { id: true },
+  });
+  if (!user) return;
+
+  await getPrisma().subscription.updateMany({
+    where: { userId: user.id, waffoOrderId: null },
+    data: { waffoOrderId: orderId },
+  });
 }

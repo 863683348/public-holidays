@@ -1,0 +1,813 @@
+{
+  "hits": [
+    [
+      "FM",
+      {
+        "name": "Micronesia",
+        "status": 200,
+        "count": 21
+      }
+    ],
+    [
+      "LI",
+      {
+        "name": "Liechtenstein",
+        "status": 200,
+        "count": 21
+      }
+    ],
+    [
+      "HT",
+      {
+        "name": "Haiti",
+        "status": 200,
+        "count": 20
+      }
+    ],
+    [
+      "SM",
+      {
+        "name": "San Marino",
+        "status": 200,
+        "count": 18
+      }
+    ],
+    [
+      "SR",
+      {
+        "name": "Suriname",
+        "status": 200,
+        "count": 18
+      }
+    ],
+    [
+      "VI",
+      {
+        "name": "United States Virgin Islands",
+        "status": 200,
+        "count": 18
+      }
+    ],
+    [
+      "FO",
+      {
+        "name": "Faroe Islands",
+        "status": 200,
+        "count": 17
+      }
+    ],
+    [
+      "AX",
+      {
+        "name": "Åland Islands",
+        "status": 200,
+        "count": 16
+      }
+    ],
+    [
+      "GL",
+      {
+        "name": "Greenland",
+        "status": 200,
+        "count": 16
+      }
+    ],
+    [
+      "KI",
+      {
+        "name": "Kiribati",
+        "status": 200,
+        "count": 16
+      }
+    ],
+    [
+      "PF",
+      {
+        "name": "French Polynesia",
+        "status": 200,
+        "count": 16
+      }
+    ],
+    [
+      "BQ",
+      {
+        "name": "Caribbean Netherlands",
+        "status": 200,
+        "count": 15
+      }
+    ],
+    [
+      "BZ",
+      {
+        "name": "Belize",
+        "status": 200,
+        "count": 15
+      }
+    ],
+    [
+      "MP",
+      {
+        "name": "Northern Mariana Islands",
+        "status": 200,
+        "count": 15
+      }
+    ],
+    [
+      "VA",
+      {
+        "name": "Vatican City",
+        "status": 200,
+        "count": 15
+      }
+    ],
+    [
+      "AD",
+      {
+        "name": "Andorra",
+        "status": 200,
+        "count": 14
+      }
+    ],
+    [
+      "BJ",
+      {
+        "name": "Benin",
+        "status": 200,
+        "count": 14
+      }
+    ],
+    [
+      "AI",
+      {
+        "name": "Anguilla",
+        "status": 200,
+        "count": 14
+      }
+    ],
+    [
+      "CW",
+      {
+        "name": "Curaçao",
+        "status": 200,
+        "count": 14
+      }
+    ],
+    [
+      "ML",
+      {
+        "name": "Mali",
+        "status": 200,
+        "count": 14
+      }
+    ],
+    [
+      "SX",
+      {
+        "name": "Sint Maarten",
+        "status": 200,
+        "count": 14
+      }
+    ],
+    [
+      "VG",
+      {
+        "name": "British Virgin Islands",
+        "status": 200,
+        "count": 14
+      }
+    ],
+    [
+      "VU",
+      {
+        "name": "Vanuatu",
+        "status": 200,
+        "count": 14
+      }
+    ],
+    [
+      "WF",
+      {
+        "name": "Wallis and Futuna",
+        "status": 200,
+        "count": 14
+      }
+    ],
+    [
+      "BF",
+      {
+        "name": "Burkina Faso",
+        "status": 200,
+        "count": 13
+      }
+    ],
+    [
+      "GD",
+      {
+        "name": "Grenada",
+        "status": 200,
+        "count": 13
+      }
+    ],
+    [
+      "KN",
+      {
+        "name": "Saint Kitts and Nevis",
+        "status": 200,
+        "count": 13
+      }
+    ],
+    [
+      "MQ",
+      {
+        "name": "Martinique",
+        "status": 200,
+        "count": 13
+      }
+    ],
+    [
+      "NA",
+      {
+        "name": "Namibia",
+        "status": 200,
+        "count": 13
+      }
+    ],
+    [
+      "NC",
+      {
+        "name": "New Caledonia",
+        "status": 200,
+        "count": 13
+      }
+    ],
+    [
+      "RW",
+      {
+        "name": "Rwanda",
+        "status": 200,
+        "count": 13
+      }
+    ],
+    [
+      "SC",
+      {
+        "name": "Seychelles",
+        "status": 200,
+        "count": 13
+      }
+    ],
+    [
+      "NR",
+      {
+        "name": "Nauru",
+        "status": 200,
+        "count": 13
+      }
+    ],
+    [
+      "AG",
+      {
+        "name": "Antigua and Barbuda",
+        "status": 200,
+        "count": 12
+      }
+    ],
+    [
+      "BI",
+      {
+        "name": "Burundi",
+        "status": 200,
+        "count": 12
+      }
+    ],
+    [
+      "BB",
+      {
+        "name": "Barbados",
+        "status": 200,
+        "count": 12
+      }
+    ],
+    [
+      "AW",
+      {
+        "name": "Aruba",
+        "status": 200,
+        "count": 12
+      }
+    ],
+    [
+      "BL",
+      {
+        "name": "Saint Barthélemy",
+        "status": 200,
+        "count": 12
+      }
+    ],
+    [
+      "CF",
+      {
+        "name": "Central African Republic",
+        "status": 200,
+        "count": 12
+      }
+    ],
+    [
+      "DM",
+      {
+        "name": "Dominica",
+        "status": 200,
+        "count": 12
+      }
+    ],
+    [
+      "GF",
+      {
+        "name": "French Guiana",
+        "status": 200,
+        "count": 12
+      }
+    ],
+    [
+      "GI",
+      {
+        "name": "Gibraltar",
+        "status": 200,
+        "count": 12
+      }
+    ],
+    [
+      "GP",
+      {
+        "name": "Guadeloupe",
+        "status": 200,
+        "count": 12
+      }
+    ],
+    [
+      "LC",
+      {
+        "name": "Saint Lucia",
+        "status": 200,
+        "count": 12
+      }
+    ],
+    [
+      "MC",
+      {
+        "name": "Monaco",
+        "status": 200,
+        "count": 12
+      }
+    ],
+    [
+      "NF",
+      {
+        "name": "Norfolk Island",
+        "status": 200,
+        "count": 12
+      }
+    ],
+    [
+      "SS",
+      {
+        "name": "South Sudan",
+        "status": 200,
+        "count": 12
+      }
+    ],
+    [
+      "SJ",
+      {
+        "name": "Svalbard and Jan Mayen",
+        "status": 200,
+        "count": 12
+      }
+    ],
+    [
+      "TC",
+      {
+        "name": "Turks and Caicos Islands",
+        "status": 200,
+        "count": 12
+      }
+    ],
+    [
+      "VC",
+      {
+        "name": "Saint Vincent and the Grenadines",
+        "status": 200,
+        "count": 12
+      }
+    ],
+    [
+      "BW",
+      {
+        "name": "Botswana",
+        "status": 200,
+        "count": 11
+      }
+    ],
+    [
+      "CD",
+      {
+        "name": "DR Congo",
+        "status": 200,
+        "count": 11
+      }
+    ],
+    [
+      "CK",
+      {
+        "name": "Cook Islands",
+        "status": 200,
+        "count": 11
+      }
+    ],
+    [
+      "CG",
+      {
+        "name": "Congo",
+        "status": 200,
+        "count": 11
+      }
+    ],
+    [
+      "FK",
+      {
+        "name": "Falkland Islands",
+        "status": 200,
+        "count": 11
+      }
+    ],
+    [
+      "GA",
+      {
+        "name": "Gabon",
+        "status": 200,
+        "count": 11
+      }
+    ],
+    [
+      "GY",
+      {
+        "name": "Guyana",
+        "status": 200,
+        "count": 11
+      }
+    ],
+    [
+      "GW",
+      {
+        "name": "Guinea-Bissau",
+        "status": 200,
+        "count": 11
+      }
+    ],
+    [
+      "KY",
+      {
+        "name": "Cayman Islands",
+        "status": 200,
+        "count": 11
+      }
+    ],
+    [
+      "LS",
+      {
+        "name": "Lesotho",
+        "status": 200,
+        "count": 11
+      }
+    ],
+    [
+      "LR",
+      {
+        "name": "Liberia",
+        "status": 200,
+        "count": 11
+      }
+    ],
+    [
+      "MF",
+      {
+        "name": "Saint Martin",
+        "status": 200,
+        "count": 11
+      }
+    ],
+    [
+      "MH",
+      {
+        "name": "Marshall Islands",
+        "status": 200,
+        "count": 11
+      }
+    ],
+    [
+      "MS",
+      {
+        "name": "Montserrat",
+        "status": 200,
+        "count": 11
+      }
+    ],
+    [
+      "MW",
+      {
+        "name": "Malawi",
+        "status": 200,
+        "count": 11
+      }
+    ],
+    [
+      "PM",
+      {
+        "name": "Saint Pierre and Miquelon",
+        "status": 200,
+        "count": 11
+      }
+    ],
+    [
+      "PW",
+      {
+        "name": "Palau",
+        "status": 200,
+        "count": 11
+      }
+    ],
+    [
+      "SH",
+      {
+        "name": "Saint Helena, Ascension and Tristan da Cunha",
+        "status": 200,
+        "count": 11
+      }
+    ],
+    [
+      "TG",
+      {
+        "name": "Togo",
+        "status": 200,
+        "count": 11
+      }
+    ],
+    [
+      "TK",
+      {
+        "name": "Tokelau",
+        "status": 200,
+        "count": 11
+      }
+    ],
+    [
+      "TV",
+      {
+        "name": "Tuvalu",
+        "status": 200,
+        "count": 11
+      }
+    ],
+    [
+      "WS",
+      {
+        "name": "Samoa",
+        "status": 200,
+        "count": 11
+      }
+    ],
+    [
+      "BM",
+      {
+        "name": "Bermuda",
+        "status": 200,
+        "count": 10
+      }
+    ],
+    [
+      "ER",
+      {
+        "name": "Eritrea",
+        "status": 200,
+        "count": 10
+      }
+    ],
+    [
+      "IM",
+      {
+        "name": "Isle of Man",
+        "status": 200,
+        "count": 10
+      }
+    ],
+    [
+      "GQ",
+      {
+        "name": "Equatorial Guinea",
+        "status": 200,
+        "count": 10
+      }
+    ],
+    [
+      "MG",
+      {
+        "name": "Madagascar",
+        "status": 200,
+        "count": 10
+      }
+    ],
+    [
+      "SY",
+      {
+        "name": "Syria",
+        "status": 200,
+        "count": 10
+      }
+    ],
+    [
+      "SZ",
+      {
+        "name": "Eswatini",
+        "status": 200,
+        "count": 10
+      }
+    ],
+    [
+      "TO",
+      {
+        "name": "Tonga",
+        "status": 200,
+        "count": 10
+      }
+    ],
+    [
+      "CC",
+      {
+        "name": "Cocos (Keeling) Islands",
+        "status": 200,
+        "count": 9
+      }
+    ],
+    [
+      "CV",
+      {
+        "name": "Cape Verde",
+        "status": 200,
+        "count": 9
+      }
+    ],
+    [
+      "GG",
+      {
+        "name": "Guernsey",
+        "status": 200,
+        "count": 9
+      }
+    ],
+    [
+      "GM",
+      {
+        "name": "Gambia",
+        "status": 200,
+        "count": 9
+      }
+    ],
+    [
+      "JE",
+      {
+        "name": "Jersey",
+        "status": 200,
+        "count": 9
+      }
+    ],
+    [
+      "NU",
+      {
+        "name": "Niue",
+        "status": 200,
+        "count": 9
+      }
+    ],
+    [
+      "SB",
+      {
+        "name": "Solomon Islands",
+        "status": 200,
+        "count": 9
+      }
+    ],
+    [
+      "SL",
+      {
+        "name": "Sierra Leone",
+        "status": 200,
+        "count": 9
+      }
+    ],
+    [
+      "TD",
+      {
+        "name": "Chad",
+        "status": 200,
+        "count": 9
+      }
+    ],
+    [
+      "CX",
+      {
+        "name": "Christmas Island",
+        "status": 200,
+        "count": 8
+      }
+    ],
+    [
+      "ST",
+      {
+        "name": "São Tomé and Príncipe",
+        "status": 200,
+        "count": 8
+      }
+    ],
+    [
+      "GN",
+      {
+        "name": "Guinea",
+        "status": 200,
+        "count": 7
+      }
+    ],
+    [
+      "NE",
+      {
+        "name": "Niger",
+        "status": 200,
+        "count": 7
+      }
+    ],
+    [
+      "PN",
+      {
+        "name": "Pitcairn Islands",
+        "status": 200,
+        "count": 7
+      }
+    ],
+    [
+      "KM",
+      {
+        "name": "Comoros",
+        "status": 200,
+        "count": 5
+      }
+    ],
+    [
+      "LY",
+      {
+        "name": "Libya",
+        "status": 200,
+        "count": 5
+      }
+    ],
+    [
+      "YE",
+      {
+        "name": "Yemen",
+        "status": 200,
+        "count": 5
+      }
+    ],
+    [
+      "MR",
+      {
+        "name": "Mauritania",
+        "status": 200,
+        "count": 4
+      }
+    ],
+    [
+      "SD",
+      {
+        "name": "Sudan",
+        "status": 200,
+        "count": 4
+      }
+    ],
+    [
+      "SO",
+      {
+        "name": "Somalia",
+        "status": 200,
+        "count": 4
+      }
+    ],
+    [
+      "DJ",
+      {
+        "name": "Djibouti",
+        "status": 200,
+        "count": 3
+      }
+    ]
+  ],
+  "misses": []
+}

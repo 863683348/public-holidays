@@ -9,7 +9,8 @@
     "account": "Compte",
     "compare": "Comparer",
     "today": "Aujourd'hui",
-    "worldClock": "Horloge mondiale"
+    "worldClock": "Horloge mondiale",
+    "blog": "Blog"
   },
   "home": {
     "heading": "Jours fériés dans le monde",
@@ -158,7 +159,9 @@
     "subscribeNewsletterHint": "Get new posts delivered to your inbox",
     "notFound": "Article not found",
     "shareThis": "Share this article",
-    "relatedCountries": "Pays associés"
+    "relatedCountries": "Pays associés",
+    "postsCount": "{count} articles",
+    "viewAllCategory": "Voir toute la catégorie"
   },
   "auth": {
     "signIn": "Se connecter avec Google",

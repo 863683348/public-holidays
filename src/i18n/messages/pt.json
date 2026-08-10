@@ -9,7 +9,8 @@
     "account": "Conta",
     "compare": "Comparar",
     "today": "Hoje",
-    "worldClock": "Relógio mundial"
+    "worldClock": "Relógio mundial",
+    "blog": "Blog"
   },
   "home": {
     "heading": "Feriados públicos, mundo todo",
@@ -158,7 +159,9 @@
     "subscribeNewsletterHint": "Receba novos artigos no seu email",
     "notFound": "Artigo não encontrado",
     "shareThis": "Compartilhe este artigo",
-    "relatedCountries": "Países relacionados"
+    "relatedCountries": "Países relacionados",
+    "postsCount": "{count} artigos",
+    "viewAllCategory": "Ver toda a categoria"
   },
   "auth": {
     "signIn": "Entrar com Google",

@@ -9,7 +9,8 @@
     "account": "账户",
     "compare": "比较",
     "today": "今天",
-    "worldClock": "世界时钟"
+    "worldClock": "世界时钟",
+    "blog": "博客"
   },
   "home": {
     "heading": "全球公共假期，一站查全",
@@ -158,7 +159,9 @@
     "subscribeNewsletterHint": "Get new posts delivered to your inbox",
     "notFound": "Article not found",
     "shareThis": "Share this article",
-    "relatedCountries": "相关国家"
+    "relatedCountries": "相关国家",
+    "postsCount": "{count} 篇文章",
+    "viewAllCategory": "查看分类全部"
   },
   "auth": {
     "signIn": "使用 Google 登录",

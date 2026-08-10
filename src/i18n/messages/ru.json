@@ -9,7 +9,8 @@
     "account": "Аккаунт",
     "compare": "Сравнить",
     "today": "Сегодня",
-    "worldClock": "Мировые часы"
+    "worldClock": "Мировые часы",
+    "blog": "Блог"
   },
   "home": {
     "heading": "Государственные праздники по всему миру",
@@ -158,7 +159,9 @@
     "subscribeNewsletterHint": "Получайте новые статьи на почту",
     "notFound": "Статья не найдена",
     "shareThis": "Поделиться статьёй",
-    "relatedCountries": "Связанные страны"
+    "relatedCountries": "Связанные страны",
+    "postsCount": "{count} статей",
+    "viewAllCategory": "Смотреть всю категорию"
   },
   "auth": {
     "signIn": "Войти через Google",

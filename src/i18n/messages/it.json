@@ -9,7 +9,8 @@
     "account": "Account",
     "compare": "Confronta",
     "today": "Oggi",
-    "worldClock": "Orologio mondiale"
+    "worldClock": "Orologio mondiale",
+    "blog": "Blog"
   },
   "home": {
     "heading": "Festività pubbliche in tutto il mondo",
@@ -158,7 +159,9 @@
     "subscribeNewsletterHint": "Ricevi nuovi articoli nella tua inbox",
     "notFound": "Articolo non trovato",
     "shareThis": "Condividi questo articolo",
-    "relatedCountries": "Paesi correlati"
+    "relatedCountries": "Paesi correlati",
+    "postsCount": "{count} articoli",
+    "viewAllCategory": "Vedi tutta la categoria"
   },
   "auth": {
     "signIn": "Accedi con Google",

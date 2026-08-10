@@ -9,7 +9,8 @@
     "account": "Konto",
     "compare": "Vergleichen",
     "today": "Heute",
-    "worldClock": "Weltuhr"
+    "worldClock": "Weltuhr",
+    "blog": "Blog"
   },
   "home": {
     "heading": "Feiertage weltweit",
@@ -158,7 +159,9 @@
     "subscribeNewsletterHint": "Get new posts delivered to your inbox",
     "notFound": "Article not found",
     "shareThis": "Share this article",
-    "relatedCountries": "Verwandte Länder"
+    "relatedCountries": "Verwandte Länder",
+    "postsCount": "{count} Artikel",
+    "viewAllCategory": "Alle ansehen"
   },
   "auth": {
     "signIn": "Mit Google anmelden",

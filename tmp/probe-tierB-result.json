@@ -1,0 +1,482 @@
+[
+  {
+    "code": "AD",
+    "y2026": {
+      "status": 200,
+      "count": 14
+    },
+    "y2027": {
+      "status": 200,
+      "count": 14
+    },
+    "ok": true
+  },
+  {
+    "code": "MC",
+    "y2026": {
+      "status": 200,
+      "count": 12
+    },
+    "y2027": {
+      "status": 200,
+      "count": 12
+    },
+    "ok": true
+  },
+  {
+    "code": "LI",
+    "y2026": {
+      "status": 200,
+      "count": 21
+    },
+    "y2027": {
+      "status": 200,
+      "count": 21
+    },
+    "ok": true
+  },
+  {
+    "code": "SM",
+    "y2026": {
+      "status": 200,
+      "count": 18
+    },
+    "y2027": {
+      "status": 200,
+      "count": 18
+    },
+    "ok": true
+  },
+  {
+    "code": "VA",
+    "y2026": {
+      "status": 200,
+      "count": 15
+    },
+    "y2027": {
+      "status": 200,
+      "count": 15
+    },
+    "ok": true
+  },
+  {
+    "code": "HT",
+    "y2026": {
+      "status": 200,
+      "count": 20
+    },
+    "y2027": {
+      "status": 200,
+      "count": 20
+    },
+    "ok": true
+  },
+  {
+    "code": "BB",
+    "y2026": {
+      "status": 200,
+      "count": 12
+    },
+    "y2027": {
+      "status": 200,
+      "count": 12
+    },
+    "ok": true
+  },
+  {
+    "code": "BZ",
+    "y2026": {
+      "status": 200,
+      "count": 15
+    },
+    "y2027": {
+      "status": 200,
+      "count": 15
+    },
+    "ok": true
+  },
+  {
+    "code": "GY",
+    "y2026": {
+      "status": 200,
+      "count": 11
+    },
+    "y2027": {
+      "status": 200,
+      "count": 11
+    },
+    "ok": true
+  },
+  {
+    "code": "SR",
+    "y2026": {
+      "status": 200,
+      "count": 18
+    },
+    "y2027": {
+      "status": 200,
+      "count": 18
+    },
+    "ok": true
+  },
+  {
+    "code": "AG",
+    "y2026": {
+      "status": 200,
+      "count": 12
+    },
+    "y2027": {
+      "status": 200,
+      "count": 12
+    },
+    "ok": true
+  },
+  {
+    "code": "DM",
+    "y2026": {
+      "status": 200,
+      "count": 12
+    },
+    "y2027": {
+      "status": 200,
+      "count": 12
+    },
+    "ok": true
+  },
+  {
+    "code": "GD",
+    "y2026": {
+      "status": 200,
+      "count": 13
+    },
+    "y2027": {
+      "status": 200,
+      "count": 13
+    },
+    "ok": true
+  },
+  {
+    "code": "KN",
+    "y2026": {
+      "status": 200,
+      "count": 13
+    },
+    "y2027": {
+      "status": 200,
+      "count": 13
+    },
+    "ok": true
+  },
+  {
+    "code": "LC",
+    "y2026": {
+      "status": 200,
+      "count": 12
+    },
+    "y2027": {
+      "status": 200,
+      "count": 12
+    },
+    "ok": true
+  },
+  {
+    "code": "VC",
+    "y2026": {
+      "status": 200,
+      "count": 12
+    },
+    "y2027": {
+      "status": 200,
+      "count": 12
+    },
+    "ok": true
+  },
+  {
+    "code": "RW",
+    "y2026": {
+      "status": 200,
+      "count": 13
+    },
+    "y2027": {
+      "status": 200,
+      "count": 13
+    },
+    "ok": true
+  },
+  {
+    "code": "NA",
+    "y2026": {
+      "status": 200,
+      "count": 13
+    },
+    "y2027": {
+      "status": 200,
+      "count": 13
+    },
+    "ok": true
+  },
+  {
+    "code": "BW",
+    "y2026": {
+      "status": 200,
+      "count": 11
+    },
+    "y2027": {
+      "status": 200,
+      "count": 11
+    },
+    "ok": true
+  },
+  {
+    "code": "MG",
+    "y2026": {
+      "status": 200,
+      "count": 10
+    },
+    "y2027": {
+      "status": 200,
+      "count": 10
+    },
+    "ok": true
+  },
+  {
+    "code": "SC",
+    "y2026": {
+      "status": 200,
+      "count": 13
+    },
+    "y2027": {
+      "status": 200,
+      "count": 13
+    },
+    "ok": true
+  },
+  {
+    "code": "CV",
+    "y2026": {
+      "status": 200,
+      "count": 9
+    },
+    "y2027": {
+      "status": 200,
+      "count": 9
+    },
+    "ok": true
+  },
+  {
+    "code": "MW",
+    "y2026": {
+      "status": 200,
+      "count": 11
+    },
+    "y2027": {
+      "status": 200,
+      "count": 11
+    },
+    "ok": true
+  },
+  {
+    "code": "GM",
+    "y2026": {
+      "status": 200,
+      "count": 9
+    },
+    "y2027": {
+      "status": 200,
+      "count": 9
+    },
+    "ok": true
+  },
+  {
+    "code": "BJ",
+    "y2026": {
+      "status": 200,
+      "count": 14
+    },
+    "y2027": {
+      "status": 200,
+      "count": 14
+    },
+    "ok": true
+  },
+  {
+    "code": "TG",
+    "y2026": {
+      "status": 200,
+      "count": 11
+    },
+    "y2027": {
+      "status": 200,
+      "count": 11
+    },
+    "ok": true
+  },
+  {
+    "code": "ML",
+    "y2026": {
+      "status": 200,
+      "count": 14
+    },
+    "y2027": {
+      "status": 200,
+      "count": 14
+    },
+    "ok": true
+  },
+  {
+    "code": "BF",
+    "y2026": {
+      "status": 200,
+      "count": 13
+    },
+    "y2027": {
+      "status": 200,
+      "count": 13
+    },
+    "ok": true
+  },
+  {
+    "code": "GN",
+    "y2026": {
+      "status": 200,
+      "count": 7
+    },
+    "y2027": {
+      "status": 200,
+      "count": 7
+    },
+    "ok": true
+  },
+  {
+    "code": "SL",
+    "y2026": {
+      "status": 200,
+      "count": 9
+    },
+    "y2027": {
+      "status": 200,
+      "count": 9
+    },
+    "ok": true
+  },
+  {
+    "code": "CD",
+    "y2026": {
+      "status": 200,
+      "count": 11
+    },
+    "y2027": {
+      "status": 200,
+      "count": 11
+    },
+    "ok": true
+  },
+  {
+    "code": "SD",
+    "y2026": {
+      "status": 200,
+      "count": 4
+    },
+    "y2027": {
+      "status": 200,
+      "count": 4
+    },
+    "ok": true
+  },
+  {
+    "code": "SO",
+    "y2026": {
+      "status": 200,
+      "count": 4
+    },
+    "y2027": {
+      "status": 200,
+      "count": 4
+    },
+    "ok": true
+  },
+  {
+    "code": "YE",
+    "y2026": {
+      "status": 200,
+      "count": 5
+    },
+    "y2027": {
+      "status": 200,
+      "count": 5
+    },
+    "ok": true
+  },
+  {
+    "code": "NE",
+    "y2026": {
+      "status": 200,
+      "count": 7
+    },
+    "y2027": {
+      "status": 200,
+      "count": 7
+    },
+    "ok": true
+  },
+  {
+    "code": "TD",
+    "y2026": {
+      "status": 200,
+      "count": 9
+    },
+    "y2027": {
+      "status": 200,
+      "count": 9
+    },
+    "ok": true
+  },
+  {
+    "code": "VU",
+    "y2026": {
+      "status": 200,
+      "count": 14
+    },
+    "y2027": {
+      "status": 200,
+      "count": 14
+    },
+    "ok": true
+  },
+  {
+    "code": "WS",
+    "y2026": {
+      "status": 200,
+      "count": 11
+    },
+    "y2027": {
+      "status": 200,
+      "count": 11
+    },
+    "ok": true
+  },
+  {
+    "code": "SB",
+    "y2026": {
+      "status": 200,
+      "count": 9
+    },
+    "y2027": {
+      "status": 200,
+      "count": 9
+    },
+    "ok": true
+  },
+  {
+    "code": "TO",
+    "y2026": {
+      "status": 200,
+      "count": 10
+    },
+    "y2027": {
+      "status": 200,
+      "count": 10
+    },
+    "ok": true
+  }
+]

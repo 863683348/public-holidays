@@ -9,7 +9,8 @@
     "account": "계정",
     "compare": "비교",
     "today": "오늘",
-    "worldClock": "세계 시계"
+    "worldClock": "세계 시계",
+    "blog": "블로그"
   },
   "home": {
     "heading": "전 세계 공휴일을 한곳에서",
@@ -158,7 +159,9 @@
     "subscribeNewsletterHint": "새 글을 이메일로 받아보세요",
     "notFound": "글을 찾을 수 없습니다",
     "shareThis": "이 글 공유하기",
-    "relatedCountries": "관련 국가"
+    "relatedCountries": "관련 국가",
+    "postsCount": "블로그 {count}개",
+    "viewAllCategory": "카테고리 전체 보기"
   },
   "auth": {
     "signIn": "Google로 로그인",
