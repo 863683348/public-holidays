@@ -159,7 +159,9 @@
     "subscribeNewsletterHint": "Get new posts delivered to your inbox",
     "notFound": "Article not found",
     "shareThis": "Share this article",
-    "relatedCountries": "相关国家"
+    "relatedCountries": "相关国家",
+    "postsCount": "{count} 篇文章",
+    "viewAllCategory": "查看分类全部"
   },
   "auth": {
     "signIn": "使用 Google 登录",
