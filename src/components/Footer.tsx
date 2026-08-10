@@ -21,7 +21,6 @@ export default function Footer() {
     { href: "/privacy", label: t("privacy") },
     { href: "/terms", label: t("terms") },
     { href: "/faq", label: t("faq") },
-    { href: "/blog", label: t("blog") },
     { href: "/contact", label: t("contact") },
   ] as const;
 

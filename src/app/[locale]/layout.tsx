@@ -168,6 +168,12 @@ export default async function LocaleLayout({
                     {tNav("pricing")}
                   </Link>
                   <Link
+                    href="/blog"
+                    className="text-[var(--muted)] transition-colors hover:text-[var(--fg)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--ring)] rounded-sm"
+                  >
+                    {tNav("blog")}
+                  </Link>
+                  <Link
                     href="/account"
                     className="text-[var(--muted)] transition-colors hover:text-[var(--fg)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--ring)] rounded-sm"
                   >
