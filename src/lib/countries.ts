@@ -227,6 +227,18 @@ const HOLIDAY_TERMS: Record<string, string> = {
   ar: "عطل",
 };
 
+// Country-specific holiday terminology for English titles/descriptions.
+// Targets the exact high-impression queries seen in GSC (e.g. "uk bank
+// holidays", "us federal holidays"); generic "Public Holidays" is the fallback.
+const COUNTRY_HOLIDAY_TERM_EN: Record<string, string> = {
+  GB: "Bank Holidays",
+  US: "Federal Holidays",
+  CA: "Statutory Holidays",
+  AU: "Public Holidays",
+  IE: "Public Holidays",
+  NZ: "Public Holidays",
+};
+
 // Demonyms per country — used to compose natural English phrases such as
 // "Austrian bank holiday" / "Swiss public holidays" so country pages also
 // rank for adjective-form queries. getDemonym() falls back to the country name.
@@ -284,7 +296,8 @@ export function getHolidayPageTitle(code: string, locale: string, year: number):
   const meta = getCountry(code);
   if (!meta) return `${code} ${year}`;
   if (locale === "en") {
-    return `${meta.name} Public Holidays ${year} — Full List & Official Dates`;
+    const term = COUNTRY_HOLIDAY_TERM_EN[code] ?? "Public Holidays";
+    return `${meta.name} ${term} ${year} — Full List & Official Dates`;
   }
   const term = HOLIDAY_TERMS[locale] ?? "Public Holidays";
   const name = getCountryName(code, locale);
@@ -305,7 +318,8 @@ export function getHolidayPageDescription(code: string, locale: string, year: nu
   if (locale === "zh") {
     return `${meta.name}${year}年公共假期完整列表：含官方日期、桥梁日与长周末，可免费下载并打印日历。`;
   }
-  return `Complete ${year} ${meta.name} public holidays list with official dates, bridge days and long weekends. Download or print your free calendar.`;
+  const enTerm = COUNTRY_HOLIDAY_TERM_EN[code] ?? "Public Holidays";
+  return `Complete ${year} ${meta.name} ${enTerm.toLowerCase()} list with official dates, bridge days and long weekends. Download or print your free calendar.`;
 }
 
 // Interrogative title / description frames for the single-holiday detail page.
