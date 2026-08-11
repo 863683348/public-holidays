@@ -17,6 +17,7 @@ const LABELS: Record<Locale, string> = {
   ko: "KO",
   ru: "RU",
   ar: "AR",
+  nl: "NL",
   zh: "中文",
 };
 
