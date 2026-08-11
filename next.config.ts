@@ -42,6 +42,14 @@ const securityHeaders = [
   },
 ];
 
+// #11 FOT 修复：Next.js 对动态段路由（[country]/[year]/[holiday]）在 Vercel 上
+// 每次请求都重新渲染并强制 Cache-Control: max-age=0, must-revalidate，导致边缘缓存
+// 完全失效、FOT/函数调用飙升（实测 95% 缓存未命中）。这里用 next.config headers()
+// 直接覆盖响应头，告诉 Vercel CDN 把公开内容路由缓存 7 天（s-maxage=604800），
+// stale-while-revalidate=86400 允许后台刷新。动态/用户相关路由（account/compare/
+// pricing/api）用负向前瞻排除，保持 must-revalidate。
+const STATIC_CACHE_CONTROL = "public, s-maxage=604800, stale-while-revalidate=86400";
+
 const nextConfig: NextConfig = {
   async headers() {
     return [
@@ -53,6 +61,12 @@ const nextConfig: NextConfig = {
         source: `/${locale}/:path*`,
         headers: [{ key: "Content-Language", value: locale === "zh" ? "zh-CN" : locale === "en" ? "en-US" : locale === "ja" ? "ja-JP" : locale === "ko" ? "ko-KR" : locale === "es" ? "es-ES" : locale === "de" ? "de-DE" : locale === "fr" ? "fr-FR" : locale === "pt" ? "pt-PT" : locale === "it" ? "it-IT" : locale === "ru" ? "ru-RU" : "ar-SA" }],
       })),
+      // Static content routes: cache at edge for 7 days to kill FOT.
+      // Negative lookahead excludes user-specific / dynamic routes.
+      {
+        source: "/:locale/:path((?!account|compare|pricing|api).*)",
+        headers: [{ key: "Cache-Control", value: STATIC_CACHE_CONTROL }],
+      },
     ];
   },
 };
