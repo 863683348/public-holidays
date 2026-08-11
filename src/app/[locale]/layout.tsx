@@ -35,6 +35,7 @@ const LANG_MAP: Record<string, string> = {
   it: "it-IT",
   ru: "ru-RU",
   ar: "ar-SA",
+  nl: "nl-NL",
 };
 
 const JSON_BASE = {

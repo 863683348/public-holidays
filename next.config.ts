@@ -59,7 +59,7 @@ const nextConfig: NextConfig = {
       },
       ...routing.locales.map((locale) => ({
         source: `/${locale}/:path*`,
-        headers: [{ key: "Content-Language", value: locale === "zh" ? "zh-CN" : locale === "en" ? "en-US" : locale === "ja" ? "ja-JP" : locale === "ko" ? "ko-KR" : locale === "es" ? "es-ES" : locale === "de" ? "de-DE" : locale === "fr" ? "fr-FR" : locale === "pt" ? "pt-PT" : locale === "it" ? "it-IT" : locale === "ru" ? "ru-RU" : "ar-SA" }],
+        headers: [{ key: "Content-Language", value: locale === "zh" ? "zh-CN" : locale === "en" ? "en-US" : locale === "ja" ? "ja-JP" : locale === "ko" ? "ko-KR" : locale === "es" ? "es-ES" : locale === "de" ? "de-DE" : locale === "fr" ? "fr-FR" : locale === "pt" ? "pt-PT" : locale === "it" ? "it-IT" : locale === "ru" ? "ru-RU" : locale === "nl" ? "nl-NL" : "ar-SA" }],
       })),
       // Static content routes: cache at edge for 7 days to kill FOT.
       // Negative lookahead excludes user-specific / dynamic routes.
@@ -67,10 +67,18 @@ const nextConfig: NextConfig = {
         source: "/:locale/:path((?!account|compare|pricing|api).*)",
         headers: [{ key: "Cache-Control", value: STATIC_CACHE_CONTROL }],
       },
+      // 节假日详情页（4 段 /:locale/:country/:year/:holiday）——上一规则 `:path` 是单段，
+      // 只能匹配 3 段（/en/GB/2026），4 段详情页实际仍返回 private,no-cache,no-store
+      // （Next 动态页默认头，边缘零缓存 → 每区域每请求回源，FOT/函数调用持续高）。
+      // 精确 4 段规则不碰 account/compare/pricing（2 段）与 /api（无 locale 前缀）。
+      {
+        source: "/:locale/:country/:year/:holiday",
+        headers: [{ key: "Cache-Control", value: STATIC_CACHE_CONTROL }],
+      },
       // 各语言首页（单段路径 /en /zh /ja ...）——上一规则要求至少两段匹配不上，
       // 单独覆盖，避免这些静态页仍返回 max-age=0 每次回源验证。
       {
-        source: "/:locale(zh|en|ja|ko|es|de|fr|pt|it|ru|ar)",
+        source: "/:locale(zh|en|ja|ko|es|de|fr|pt|it|ru|ar|nl)",
         headers: [{ key: "Cache-Control", value: STATIC_CACHE_CONTROL }],
       },
       // sitemap/robots：爬虫高频访问路径，next-intl 通用规则不覆盖。
