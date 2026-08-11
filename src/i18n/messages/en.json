@@ -64,7 +64,9 @@
     "faqTodayYes": "Yes — today ({date}) is {holiday}, a public holiday in {name}.",
     "faqTodayNo": "No. The next public holiday in {name} is {holiday} on {date}.",
     "bankHolidayNote": "Bank holidays",
-    "holidayWeekendNote": "Holiday weekend"
+    "holidayWeekendNote": "Holiday weekend",
+    "faqWhenNext": "When is the next public holiday in {country}?",
+    "faqWhenNextAnswer": "The next public holiday in {country} is {holiday} on {date}."
   },
   "longWeekend": {
     "natural": "Long weekend",
