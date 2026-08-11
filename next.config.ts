@@ -73,6 +73,13 @@ const nextConfig: NextConfig = {
         source: "/:locale(zh|en|ja|ko|es|de|fr|pt|it|ru|ar)",
         headers: [{ key: "Cache-Control", value: STATIC_CACHE_CONTROL }],
       },
+      // sitemap/robots：爬虫高频访问路径，next-intl 通用规则不覆盖。
+      // /sitemap.xml 实测 2.1MB + max-age=0 → 每次爬虫抓都触发 ISR 回源 + 2.1MB 数据传输
+      // （爬虫每天多次抓 + 多 sitemap 路径），是 FOT 持续高的元凶之一。
+      {
+        source: "/:path(sitemap\\.xml|robots\\.txt)",
+        headers: [{ key: "Cache-Control", value: STATIC_CACHE_CONTROL }],
+      },
     ];
   },
 };
