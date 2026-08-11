@@ -88,6 +88,16 @@ const nextConfig: NextConfig = {
         source: "/:path(sitemap\\.xml|robots\\.txt)",
         headers: [{ key: "Cache-Control", value: STATIC_CACHE_CONTROL }],
       },
+      // 子目录下的 sitemap.xml（如 /holidays/sitemap.xml 实测 3.6MB）——上一规则要求
+      // 整段 path 就是文件名，匹配不到 /holidays/sitemap.xml 这种带目录前缀的。单独列。
+      {
+        source: "/blog/sitemap.xml",
+        headers: [{ key: "Cache-Control", value: STATIC_CACHE_CONTROL }],
+      },
+      {
+        source: "/holidays/sitemap.xml",
+        headers: [{ key: "Cache-Control", value: STATIC_CACHE_CONTROL }],
+      },
     ];
   },
 };
