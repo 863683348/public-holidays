@@ -1,12 +1,11 @@
 import { getTranslations } from "next-intl/server";
-import type { Holiday } from "@/lib/types";
 import MonthCalendar from "./MonthCalendar";
 
 export default async function YearCalendar({
   holidays,
   year,
 }: {
-  holidays: Holiday[];
+  holidays: { date: string; name: string }[];
   year: number;
 }) {
   const t = await getTranslations("calendar");

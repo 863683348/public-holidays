@@ -11,7 +11,7 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.sh
 // time (these cover ~all organic search traffic); other years stay on-demand.
 // On-demand ISR is not honored for dynamic-segment routes on Vercel, so
 // pre-rendering is what lets the CDN serve these pages.
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export function generateStaticParams() {
   const thisYear = new Date().getFullYear();

@@ -373,7 +373,10 @@ export default async function CountryHolidayView({
 
       <section className="space-y-3">
         <h2 className="text-xl font-semibold">{t("holidays")}</h2>
-        <YearCalendar holidays={holidays} year={year} />
+        <YearCalendar
+          holidays={holidays.map((h) => ({ date: h.date, name: h.name }))}
+          year={year}
+        />
       </section>
 
       <section className="space-y-3">

@@ -30,7 +30,7 @@ const ATTRIBUTION_HTML = (count: number) =>
 
 const escapeHtml = (html: string) => html.replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata({
   params,

@@ -9,7 +9,7 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.sh
 // directly (PRERENDER). On-demand ISR is not honored for dynamic-segment
 // routes on Vercel (each request re-renders), which was inflating Fast Origin
 // Transfer. revalidate=86400 still refreshes them daily.
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) =>

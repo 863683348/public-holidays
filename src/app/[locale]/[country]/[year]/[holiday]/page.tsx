@@ -16,7 +16,7 @@ const SITE_URL =
 
 // ISR: rendered on demand, cached 24h. No generateStaticParams — the URL space
 // (110 countries × years × holidays × 11 locales) is far too large to prebuild.
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata({
   params,

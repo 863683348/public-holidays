@@ -11,7 +11,7 @@ import { getAllPosts, getCategories } from "@/lib/blog-posts";
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
 
 // Revalidate daily to keep content fresh
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));

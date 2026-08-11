@@ -1,5 +1,3 @@
-import type { Holiday } from "@/lib/types";
-
 function isWeekend(d: Date): boolean {
   const day = d.getUTCDay();
   return day === 0 || day === 6;
@@ -14,11 +12,11 @@ export default function MonthCalendar({
 }: {
   year: number;
   month: number;
-  holidays: Holiday[];
+  holidays: { date: string; name: string }[];
   months: string[];
   weekdays: string[];
 }) {
-  const holidayMap = new Map<string, Holiday>();
+  const holidayMap = new Map<string, { date: string; name: string }>();
   for (const h of holidays) holidayMap.set(h.date, h);
 
   const first = new Date(Date.UTC(year, month, 1));
