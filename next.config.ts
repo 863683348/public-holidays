@@ -67,6 +67,12 @@ const nextConfig: NextConfig = {
         source: "/:locale/:path((?!account|compare|pricing|api).*)",
         headers: [{ key: "Cache-Control", value: STATIC_CACHE_CONTROL }],
       },
+      // 各语言首页（单段路径 /en /zh /ja ...）——上一规则要求至少两段匹配不上，
+      // 单独覆盖，避免这些静态页仍返回 max-age=0 每次回源验证。
+      {
+        source: "/:locale(zh|en|ja|ko|es|de|fr|pt|it|ru|ar)",
+        headers: [{ key: "Cache-Control", value: STATIC_CACHE_CONTROL }],
+      },
     ];
   },
 };
