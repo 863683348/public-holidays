@@ -2537,6 +2537,124 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>到 PubHoliday 查看完整的<a href="https://public-holidays.shop/en/IT">意大利 2026 公共假日日历</a>，或从<a href="https://public-holidays.shop">首页</a>把任意国家的假日同步进你的日历。</p>
     `,
   },
+{
+    id: 133,
+    title: "Netherlands Public Holidays: Few but Good",
+    slug: "netherlands-public-holidays-few-but-good",
+    category: "guide",
+    author: "PubHoliday Research Team",
+    publishedDate: "2026-08-12T08:00:00Z",
+    lastModified: "2026-08-12T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/netherlands-public-holidays.svg",
+    excerpt: "The Dutch holiday list is short on purpose: 10 national days plus King's Day. Full 2026 calendar, why Liberation Day became a real day off, and the bridge-day patterns locals actually use.",
+    relatedCountries: ["NL"],
+    locale: "en",
+    faq: [
+      { question: "How many public holidays does the Netherlands have?", answer: "Ten national days that are always observed, plus King's Day and Liberation Day, which brings the practical total to 12. It is one of the shortest holiday lists in Europe." },
+      { question: "Is Liberation Day a public holiday?", answer: "Yes, since 1990 it has been a national day off, observed every year on May 5 even though it only celebrates the end of the occupation once every five years." },
+      { question: "What is King's Day in the Netherlands?", answer: "Koningsdag, April 27, the King's official birthday. The whole country turns into a giant street market, everyone wears orange, and most people get the day off." },
+      { question: "Do Dutch people bridge holidays like elsewhere?", answer: "Only when the calendar cooperates. There is no official bridge-day system, but when a holiday lands on a Tuesday or Thursday, plenty of workplaces close on the connecting day." },
+    ],
+    content: `
+      <p>The Dutch call their calendar "feestdagen" and keep the list deliberately short. This guide to <strong>netherlands holidays</strong> covers all ten national days plus the two semi-holidays, the 2026 dates with weekdays, and the patterns locals plan around. If you need the full netherlands public holidays 2026 picture before booking anything, this is the page to start from.</p>
+
+      <h2>Why the Dutch list is short on purpose</h2>
+      <p>The Netherlands has ten fixed national public holidays, one of the leanest lists in Europe. Germany counts nine, France eleven, Italy twelve. The Dutch do not add regional holidays the way Spain does, and there is no nationwide carnival holiday. The result is a calendar that is easy to plan around: the same days off everywhere, with a couple of wildcards.</p>
+      <p>The two wildcards are King's Day (Koningsdag) on April 27 and Liberation Day (Bevrijdingsdag) on May 5. King's Day is the monarch's official birthday and a genuine national party. Liberation Day became a permanent day off in 1990, and since 2000 it is observed every single year, even though it celebrates the end of the German occupation with big events only once every five years.</p>
+
+      <h2>Netherlands public holidays 2026 (full calendar)</h2>
+      <table class="min-w-full border-collapse border border-gray-300 mb-4">
+        <thead><tr class="bg-gray-100"><th class="border p-2">Holiday</th><th class="border p-2">2026 date</th><th class="border p-2">Weekday</th></tr></thead>
+        <tbody>
+          <tr><td class="border p-2">New Year's Day (Nieuwjaarsdag)</td><td class="border p-2">Jan 1</td><td class="border p-2">Thursday</td></tr>
+          <tr><td class="border p-2">Good Friday (Goede Vrijdag)</td><td class="border p-2">Apr 3</td><td class="border p-2">Friday</td></tr>
+          <tr><td class="border p-2">Easter Sunday (Eerste Paasdag)</td><td class="border p-2">Apr 5</td><td class="border p-2">Sunday</td></tr>
+          <tr><td class="border p-2">Easter Monday (Tweede Paasdag)</td><td class="border p-2">Apr 6</td><td class="border p-2">Monday</td></tr>
+          <tr><td class="border p-2">King's Day (Koningsdag)</td><td class="border p-2">Apr 27</td><td class="border p-2">Monday</td></tr>
+          <tr><td class="border p-2">Liberation Day (Bevrijdingsdag)</td><td class="border p-2">May 5</td><td class="border p-2">Tuesday</td></tr>
+          <tr><td class="border p-2">Ascension Day (Hemelvaartsdag)</td><td class="border p-2">May 14</td><td class="border p-2">Thursday</td></tr>
+          <tr><td class="border p-2">Whit Sunday (Eerste Pinksterdag)</td><td class="border p-2">May 24</td><td class="border p-2">Sunday</td></tr>
+          <tr><td class="border p-2">Whit Monday (Tweede Pinksterdag)</td><td class="border p-2">May 25</td><td class="border p-2">Monday</td></tr>
+          <tr><td class="border p-2">Christmas (Eerste Kerstdag)</td><td class="border p-2">Dec 25</td><td class="border p-2">Friday</td></tr>
+          <tr><td class="border p-2">Boxing Day (Tweede Kerstdag)</td><td class="border p-2">Dec 26</td><td class="border p-2">Saturday</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Best bridge opportunities in 2026</strong>: King's Day lands on a Monday, so the whole weekend is already three days. Liberation Day on a Tuesday means taking May 4 off makes a four-day stretch. Ascension Day on a Thursday is the classic Dutch "bridge day": many workplaces close on Friday May 15, making a four-day weekend out of nothing.</p>
+
+      <h2>How Dutch holidays compare to its neighbors</h2>
+      <p>Compared to Germany, the Netherlands swaps the German Unity Day (October 3) for King's Day in late April, and adds Whit Monday, which Germany dropped. Compared to Belgium, it lacks the Belgian regional feasts entirely. What stands out is the Easter-Whitsun cluster: from Good Friday to Whit Monday, eight weeks with nine days off sprinkled through them. Locals call that stretch the "spring of days off" and it is the best season for a dutch holiday planning exercise.</p>
+
+      <h2>What visitors should know about koningsdag</h2>
+      <p>Koningsdag on April 27 is the day the Dutch dress in orange, take to the streets, and turn every city center into a giant free market where anyone can sell anything. Shops and trains run reduced schedules, so plan transport early. The day before, many towns hold a "Koningsnacht" (King's Night) party. For tourists it is the easiest Dutch holiday to join: no family obligations, just street food, live music, and the whole country in a good mood. It is also the busiest travel day of the year in the Netherlands, so book accommodation months ahead.</p>
+
+      <h2>FAQ</h2>
+      <p><strong>How many public holidays does the Netherlands have?</strong> Ten national days always observed, plus King's Day and Liberation Day, making a practical total of twelve. It is one of the shortest lists in Europe.</p>
+      <p><strong>Is Liberation Day a public holiday?</strong> Yes. Since 1990 it has been a national day off on May 5 every year, even though it only celebrates the end of the occupation on a grand scale once every five years.</p>
+      <p><strong>What is King's Day in the Netherlands?</strong> Koningsdag, April 27, the King's official birthday. The whole country turns into a giant street market, everyone wears orange, and most people get the day off.</p>
+      <p><strong>Do Dutch people bridge holidays?</strong> Only when the calendar cooperates. There is no official bridge-day system, but when a holiday falls on a Tuesday or Thursday, many workplaces close the connecting day anyway.</p>
+
+      <p>Planning a trip around the Dutch calendar? Check the full <a href="/en">public holiday calendar</a>, compare <a href="/en/compare">countries side by side</a>, or browse <a href="/en/blog">more holiday guides</a>.</p>
+    `,
+  },
+  {
+    id: 134,
+    title: "荷兰公共假日：少而精的假期",
+    slug: "netherlands-public-holidays-few-but-good",
+    category: "guide",
+    author: "PubHoliday 研究团队",
+    publishedDate: "2026-08-12T08:00:00Z",
+    lastModified: "2026-08-12T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/netherlands-public-holidays.svg",
+    excerpt: "荷兰的假日清单短得刻意：10 个法定假日加国王节。2026 全年日历、解放日为什么成了真假期、以及本地人真正在用的搭桥技巧。",
+    relatedCountries: ["NL"],
+    locale: "zh",
+    faq: [
+      { question: "荷兰有多少个公共假日？", answer: "10 个固定全国假日，加上国王节和解放日，实际总共 12 个，是欧洲最短的假日清单之一。" },
+      { question: "解放日是公共假日吗？", answer: "是。1990 年起每年 5 月 5 日都是全国假日，虽然只有每五年一次才举行盛大纪念活动。" },
+      { question: "荷兰的国王节是什么？", answer: "Koningsdag，4 月 27 日，国王的官方生日。全国变成巨型跳蚤市场，人人穿橙色，大多数人放假。" },
+      { question: "荷兰人也搭桥休假吗？", answer: "要看日历配不配合。没有官方的搭桥制度，但假日落在周二或周四时，很多公司会顺手把连接的那天也放了。" },
+    ],
+    content: `
+      <p>荷兰人管公共假日叫"feestdagen"，而且清单出奇地短。这篇 <strong>netherlands holidays</strong> 指南覆盖全部 10 个全国假日加上两个半假日、2026 年带星期几的完整日期，以及本地人真正会去规划的规律。订行程前需要完整的 netherlands public holidays 2026 全貌，从这里开始就对了。</p>
+
+      <h2>为什么荷兰的假日清单短得刻意</h2>
+      <p>荷兰有 10 个固定全国公共假日，是欧洲最精简的清单之一。德国 9 个、法国 11 个、意大利 12 个。荷兰不像西班牙那样加各种地区假日，也没有全国性的狂欢节假。结果就是日历非常好规划：全国上下同一天休息，只有几个变数。</p>
+      <p>两个变数是 4 月 27 日的国王节（Koningsdag）和 5 月 5 日的解放日（Bevrijdingsdag）。国王节是君主的官方生日，也是真正的全国性派对。解放日 1990 年起成为永久假日，2000 年后每年都放假，虽然只有每五年才大规模庆祝德国占领结束。</p>
+
+      <h2>2026 年荷兰公共假日（完整日历）</h2>
+      <table class="min-w-full border-collapse border border-gray-300 mb-4">
+        <thead><tr class="bg-gray-100"><th class="border p-2">假日</th><th class="border p-2">2026 日期</th><th class="border p-2">星期</th></tr></thead>
+        <tbody>
+          <tr><td class="border p-2">元旦（Nieuwjaarsdag）</td><td class="border p-2">1 月 1 日</td><td class="border p-2">周四</td></tr>
+          <tr><td class="border p-2">耶稣受难日（Goede Vrijdag）</td><td class="border p-2">4 月 3 日</td><td class="border p-2">周五</td></tr>
+          <tr><td class="border p-2">复活节周日（Eerste Paasdag）</td><td class="border p-2">4 月 5 日</td><td class="border p-2">周日</td></tr>
+          <tr><td class="border p-2">复活节周一（Tweede Paasdag）</td><td class="border p-2">4 月 6 日</td><td class="border p-2">周一</td></tr>
+          <tr><td class="border p-2">国王节（Koningsdag）</td><td class="border p-2">4 月 27 日</td><td class="border p-2">周一</td></tr>
+          <tr><td class="border p-2">解放日（Bevrijdingsdag）</td><td class="border p-2">5 月 5 日</td><td class="border p-2">周二</td></tr>
+          <tr><td class="border p-2">耶稣升天日（Hemelvaartsdag）</td><td class="border p-2">5 月 14 日</td><td class="border p-2">周四</td></tr>
+          <tr><td class="border p-2">圣灵降临日（Eerste Pinksterdag）</td><td class="border p-2">5 月 24 日</td><td class="border p-2">周日</td></tr>
+          <tr><td class="border p-2">圣灵降临周一（Tweede Pinksterdag）</td><td class="border p-2">5 月 25 日</td><td class="border p-2">周一</td></tr>
+          <tr><td class="border p-2">圣诞节（Eerste Kerstdag）</td><td class="border p-2">12 月 25 日</td><td class="border p-2">周五</td></tr>
+          <tr><td class="border p-2">节礼日（Tweede Kerstdag）</td><td class="border p-2">12 月 26 日</td><td class="border p-2">周六</td></tr>
+        </tbody>
+      </table>
+      <p><strong>2026 年最好的搭桥机会</strong>：国王节落在周一，整个周末自然就是三天。解放日在周二，5 月 4 日请一天假就能拼出四天。升天日在周四，这是荷兰经典的"搭桥日"：很多公司连周五 5 月 15 日一起放，凭空多出一个四天小长假。</p>
+
+      <h2>荷兰假日和邻国比怎么样</h2>
+      <p>跟德国比，荷兰用 4 月底的国王节替换了德国的国庆日（10 月 3 日），而且保留了德国已经取消的圣灵降临周一。跟比利时比，荷兰完全没有比利时那种地区节日。真正突出的是复活节到圣灵降临这一串：从受难日到圣灵降临周一，八周里撒了九个休息日。本地人管这段叫"春天的假日串"，也是规划 dutch holiday 行程的最好季节。</p>
+
+      <h2>游客需要知道的国王节</h2>
+      <p>4 月 27 日的 Koningsdag，荷兰人穿上橙色涌上街头，每个市中心都变成巨型自由市场，谁都能摆摊卖东西。商店和火车减少班次，交通要提前规划。前一天很多城镇还有"国王之夜"（Koningsnacht）派对。对游客来说这是最容易融入的荷兰假日：没有家庭义务，只有街头小吃、现场音乐，和整个国家的好心情。但这也是荷兰全年最繁忙的出行日，住宿要提前几个月订。</p>
+
+      <h2>FAQ</h2>
+      <p><strong>荷兰有多少个公共假日？</strong> 10 个固定全国假日，加上国王节和解放日，实际总共 12 个，是欧洲最短的清单之一。</p>
+      <p><strong>解放日是公共假日吗？</strong> 是。1990 年起每年 5 月 5 日放假，虽然只有每五年才大办一次纪念活动。</p>
+      <p><strong>荷兰的国王节是什么？</strong> Koningsdag，4 月 27 日，国王官方生日。全国变巨型跳蚤市场，人人穿橙，多数人放假。</p>
+      <p><strong>荷兰人搭桥吗？</strong> 看日历。没有官方制度，但假日落在周二或周四时，很多公司把连接日也放了。</p>
+
+      <p>想按荷兰日历规划行程？看完整<a href="/zh">公共假日日历</a>，用<a href="/zh/compare">国家对比</a>，或翻<a href="/zh/blog">更多假日指南</a>。</p>
+    `,
+  },
 ];
 
 // ========================================================================
