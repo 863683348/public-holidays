@@ -49,6 +49,8 @@ const securityHeaders = [
 // stale-while-revalidate=86400 允许后台刷新。动态/用户相关路由（account/compare/
 // pricing/api）用负向前瞻排除，保持 must-revalidate。
 const STATIC_CACHE_CONTROL = "public, s-maxage=604800, stale-while-revalidate=86400";
+// 时间敏感页（/today、首页今日模块）用短缓存：保留边缘缓存降 FOT，但避免日期陈旧（最长 1h）。
+const SHORT_CACHE_CONTROL = "public, s-maxage=3600, stale-while-revalidate=86400";
 
 const nextConfig: NextConfig = {
   async headers() {
@@ -64,7 +66,7 @@ const nextConfig: NextConfig = {
       // Static content routes: cache at edge for 7 days to kill FOT.
       // Negative lookahead excludes user-specific / dynamic routes.
       {
-        source: "/:locale/:path((?!account|compare|pricing|api).*)",
+        source: "/:locale/:path((?!account|compare|pricing|api|today).+)",
         headers: [{ key: "Cache-Control", value: STATIC_CACHE_CONTROL }],
       },
       // 节假日详情页（4 段 /:locale/:country/:year/:holiday）——上一规则 `:path` 是单段，
@@ -79,7 +81,12 @@ const nextConfig: NextConfig = {
       // 单独覆盖，避免这些静态页仍返回 max-age=0 每次回源验证。
       {
         source: "/:locale(zh|en|ja|ko|es|de|fr|pt|it|ru|ar|nl)",
-        headers: [{ key: "Cache-Control", value: STATIC_CACHE_CONTROL }],
+        headers: [{ key: "Cache-Control", value: SHORT_CACHE_CONTROL }],
+      },
+      // 时间敏感页（/today 今日节假日）：短缓存避免日期陈旧
+      {
+        source: "/:locale/today",
+        headers: [{ key: "Cache-Control", value: SHORT_CACHE_CONTROL }],
       },
       // sitemap/robots：爬虫高频访问路径，next-intl 通用规则不覆盖。
       // /sitemap.xml 实测 2.1MB + max-age=0 → 每次爬虫抓都触发 ISR 回源 + 2.1MB 数据传输

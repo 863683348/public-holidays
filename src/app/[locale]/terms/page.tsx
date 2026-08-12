@@ -5,7 +5,6 @@ import LegalPage from "@/components/legal/LegalPage";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
 
-export const revalidate = 604800;
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));

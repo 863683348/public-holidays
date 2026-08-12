@@ -10,7 +10,6 @@ const SITE_URL =
 // One holiday-detail URL per (country × holiday-slug × locale) for the CURRENT
 // year only (ADR-001 Q2) — roughly 15k URLs, well under the 50k/file limit.
 // Regenerated daily; upstream fetches are bounded and failure-tolerant.
-export const revalidate = 86400;
 
 const CONCURRENCY = 10;
 

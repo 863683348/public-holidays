@@ -5,7 +5,6 @@ import {
   getHolidayDetailTitle,
   getHolidayDetailDescription,
 } from "@/lib/countries";
-import { COUNTRIES } from "@/lib/countries";
 import type { Holiday } from "@/lib/types";
 import { parseYear } from "@/lib/year-window";
 import { getHolidays } from "@/lib/holidays";
@@ -16,26 +15,26 @@ import HolidayDetailView from "@/components/HolidayDetailView";
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
 
-// 静态生成策略：所有语言 × 5 年（2024-2028）× 全部国家（≈110,000 页，构建 ~30 分钟）。
-// 相比方案一（2 年，~49,798 页），扩展 3 年缓冲覆盖，进一步消除 ISR。
-// ISR Writes 保持为 0（全部静态化）。构建时间较长但一次性成本，
-// 换来的是一年内任意年份/语言的节假日详情页都从 CDN 边缘直接命中。
-// 关键：locale 遍历所有 12 语言，确保每种语言的节假日详情页都预构建。
-export const revalidate = 604800;
+// FOT 友好预构建：12 语言 × Top20 市场 × 3 年（2026-2028）× 节日 ≈ 12K 页（原 ≈110K）。长尾走 dynamicParams 按需渲染 + 边缘缓存。
+// 仅预构建高价值 hero 集合；其余长尾（非 Top20 国家 / 更早年份）保持 dynamicParams=true，
+// 首次访问按需渲染后由 next.config 的 s-maxage=604800 在边缘缓存 7 天。不再用时间型 revalidate，
+// 避免 ISR Writes 超额；数据更新走 /api/revalidate 按需重建。
+
+const TOP_COUNTRIES = ["US","GB","CA","AU","DE","FR","ES","IT","NL","IE","SE","CH","AT","BE","PT","PL","JP","IN","BR","AE"];
 
 export async function generateStaticParams() {
-  const years = [2024, 2025, 2026, 2027, 2028];
+  const years = [2026, 2027, 2028];
   const params: {
     locale: string;
     country: string;
     year: string;
     holiday: string;
   }[] = [];
-  for (const c of COUNTRIES) {
+  for (const c of TOP_COUNTRIES) {
     for (const y of years) {
       let holidays: Holiday[];
       try {
-        holidays = await getHolidays(c.code, y);
+        holidays = await getHolidays(c, y);
       } catch {
         continue; // 数据不可达国家跳过，避免整个构建失败
       }
@@ -43,7 +42,7 @@ export async function generateStaticParams() {
         for (const g of groupHolidays(holidays)) {
           params.push({
             locale: l,
-            country: c.code,
+            country: c,
             year: String(y),
             holiday: g.slug,
           });

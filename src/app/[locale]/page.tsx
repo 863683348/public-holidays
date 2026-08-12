@@ -15,7 +15,6 @@ const FEATURED_COUNTRIES = POPULAR_COUNTRIES.slice(0, 8);
 
 // The homepage carries a live "who is off today?" count; hourly re-render keeps
 // it from going stale, mirroring the /today utility page's freshness policy.
-export const revalidate = 3600;
 
 export default async function HomePage({
   params,

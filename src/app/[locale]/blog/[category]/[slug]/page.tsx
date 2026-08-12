@@ -11,7 +11,6 @@ import AdSlot from "@/components/AdSlot";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
 
-export const revalidate = 604800;
 
 export async function generateMetadata({
   params,

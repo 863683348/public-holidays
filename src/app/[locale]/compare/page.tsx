@@ -16,7 +16,6 @@ import AdSlot from "@/components/AdSlot";
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
 
 // ISR: holiday data is fetch-cached 90d upstream; re-render the shell daily.
-export const revalidate = 604800;
 
 type SearchParams = Record<string, string | string[] | undefined>;
 

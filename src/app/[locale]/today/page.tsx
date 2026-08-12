@@ -16,7 +16,6 @@ const SITE_URL =
 // few hours (Asia-Pacific crosses midnight first), so hourly beats daily.
 // This is a noindex utility — daily-changing content has no long-tail crawl
 // value, and the URL is intentionally kept out of every sitemap.
-export const revalidate = 3600;
 
 // Worker-pool concurrency cap mirroring holidays/sitemap.ts. The 110-country
 // fan-out is the hot path on cold renders; the 90-day fetch cache absorbs

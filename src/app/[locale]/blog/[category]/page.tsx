@@ -9,7 +9,6 @@ import { getPostsByCategory } from "@/lib/blog-posts";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
 
-export const revalidate = 604800;
 
 export async function generateMetadata({
   params,
