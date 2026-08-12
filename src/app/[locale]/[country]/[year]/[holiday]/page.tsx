@@ -16,16 +16,15 @@ import HolidayDetailView from "@/components/HolidayDetailView";
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
 
-// 静态生成策略：所有语言 × 今年/明年 × 全部国家（≈11,000 页，构建 ~15 分钟）。
-// 相比之前只预构建 en（~3,000 页），其余 11 语言全部走 ISR 首访触发函数执行 + 回源。
-// 此次扩展到全量预构建，ISR Writes 从 ~110,000/月 降到 ~0（全部静态化）。
-// 关键：此前 locale 硬编码 "en" 导致其他 11 语言 × 2年 × 500+ 节假日 = ~110,000 页
-// 每次首访都触发 serverless 函数 + fetch date.nager.at → FOT/函数调用持续高的元凶。
+// 静态生成策略：所有语言 × 5 年（2024-2028）× 全部国家（≈110,000 页，构建 ~30 分钟）。
+// 相比方案一（2 年，~49,798 页），扩展 3 年缓冲覆盖，进一步消除 ISR。
+// ISR Writes 保持为 0（全部静态化）。构建时间较长但一次性成本，
+// 换来的是一年内任意年份/语言的节假日详情页都从 CDN 边缘直接命中。
+// 关键：locale 遍历所有 12 语言，确保每种语言的节假日详情页都预构建。
 export const revalidate = 604800;
 
 export async function generateStaticParams() {
-  const thisYear = new Date().getFullYear();
-  const years = [thisYear, thisYear + 1];
+  const years = [2024, 2025, 2026, 2027, 2028];
   const params: {
     locale: string;
     country: string;
