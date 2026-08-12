@@ -15,7 +15,7 @@ import HolidayDetailView from "@/components/HolidayDetailView";
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
 
-// FOT 友好预构建：12 语言 × Top20 市场 × 3 年（2026-2028）× 节日 ≈ 12K 页（原 ≈110K）。长尾走 dynamicParams 按需渲染 + 边缘缓存。
+// FOT 友好预构建：12 语言 × Top20 市场 × 2 年（2026-2027）× 节日 ≈ 7K 页（原 ≈110K）。长尾走 dynamicParams 按需渲染 + 边缘缓存。
 // 仅预构建高价值 hero 集合；其余长尾（非 Top20 国家 / 更早年份）保持 dynamicParams=true，
 // 首次访问按需渲染后由 next.config 的 s-maxage=604800 在边缘缓存 7 天。不再用时间型 revalidate，
 // 避免 ISR Writes 超额；数据更新走 /api/revalidate 按需重建。
@@ -23,7 +23,7 @@ const SITE_URL =
 const TOP_COUNTRIES = ["US","GB","CA","AU","DE","FR","ES","IT","NL","IE","SE","CH","AT","BE","PT","PL","JP","IN","BR","AE"];
 
 export async function generateStaticParams() {
-  const years = [2026, 2027, 2028];
+  const years = [2026, 2027];
   const params: {
     locale: string;
     country: string;
