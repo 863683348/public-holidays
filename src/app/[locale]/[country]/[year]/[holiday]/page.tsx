@@ -16,11 +16,11 @@ import HolidayDetailView from "@/components/HolidayDetailView";
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
 
-// 静态生成策略：en 语言 × 今年/明年 × 全部国家（≈3,000 页，构建 ~5-10 分钟）。
-// 全量（12 语言 × 7 年）URL 空间 ~13 万页不现实，因此只 prebuild SEO 主力
-// （en + 当前两个年份）；其余语言/年份组合靠 dynamicParams 按需 ISR 生成并缓存。
-// 关键：此前无 generateStaticParams 时页面被当作纯动态渲染（每次请求执行函数 +
-// fetch date.nager.at + 响应强制 private,no-cache）→ 是 FOT/函数调用持续高的元凶。
+// 静态生成策略：所有语言 × 今年/明年 × 全部国家（≈11,000 页，构建 ~15 分钟）。
+// 相比之前只预构建 en（~3,000 页），其余 11 语言全部走 ISR 首访触发函数执行 + 回源。
+// 此次扩展到全量预构建，ISR Writes 从 ~110,000/月 降到 ~0（全部静态化）。
+// 关键：此前 locale 硬编码 "en" 导致其他 11 语言 × 2年 × 500+ 节假日 = ~110,000 页
+// 每次首访都触发 serverless 函数 + fetch date.nager.at → FOT/函数调用持续高的元凶。
 export const revalidate = 604800;
 
 export async function generateStaticParams() {
@@ -40,13 +40,15 @@ export async function generateStaticParams() {
       } catch {
         continue; // 数据不可达国家跳过，避免整个构建失败
       }
-      for (const g of groupHolidays(holidays)) {
-        params.push({
-          locale: "en",
-          country: c.code,
-          year: String(y),
-          holiday: g.slug,
-        });
+      for (const l of routing.locales) {
+        for (const g of groupHolidays(holidays)) {
+          params.push({
+            locale: l,
+            country: c.code,
+            year: String(y),
+            holiday: g.slug,
+          });
+        }
       }
     }
   }

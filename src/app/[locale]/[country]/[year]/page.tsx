@@ -7,8 +7,8 @@ import CountryHolidayView from "@/components/CountryHolidayView";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
 
-// Pre-render the current year + next year for every country/locale at build
-// time (these cover ~all organic search traffic); other years stay on-demand.
+// Pre-render 2 years (current + next) for every country/locale at build time.
+// Covers ~all organic search traffic. Total: 12 locales × 46 countries × 2 years = 1,104 pages.
 // On-demand ISR is not honored for dynamic-segment routes on Vercel, so
 // pre-rendering is what lets the CDN serve these pages.
 export const revalidate = 604800;

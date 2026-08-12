@@ -256,7 +256,13 @@ export default async function HolidayDetailView({
         <section className="space-y-2">
           <h2 className="text-xl font-semibold">{t("datesHeading", { year })}</h2>
           <p className="text-sm text-[var(--muted)]">
-            {t("multiDateNote", { name: group.name, country: countryName, year, count: group.dates.length })}
+            {t("multiDateNote", {
+              name: group.name,
+              country: countryName,
+              year,
+              count: group.dates.length,
+              dates: group.dates.map((d) => new Intl.DateTimeFormat(locale, { month: "long", day: "numeric", timeZone: "UTC" }).format(new Date(d + "T00:00:00Z"))).join(", "),
+            })}
           </p>
           <HolidayMultiDate dates={group.dates} locale={locale} dateHeading={t("factDate")} weekdayHeading={t("datesWeekdayHeading")} />
         </section>
