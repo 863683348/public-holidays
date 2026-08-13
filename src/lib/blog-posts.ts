@@ -2655,6 +2655,120 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>想按荷兰日历规划行程？看完整<a href="/zh">公共假日日历</a>，用<a href="/zh/compare">国家对比</a>，或翻<a href="/zh/blog">更多假日指南</a>。</p>
     `,
   },
+  {
+    id: 135,
+    title: "Ireland Public Holidays: Is St. Patrick's Day One?",
+    slug: "ireland-public-holidays-is-st-patricks-day-one",
+    category: "guide",
+    author: "PubHoliday Research Team",
+    publishedDate: "2026-08-13T08:00:00Z",
+    lastModified: "2026-08-13T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/ireland-public-holidays.svg",
+    excerpt: "Yes, St. Patrick's Day is a real public holiday in Ireland, and it is only one of ten. The full 2026 calendar with weekdays, the bank holiday system explained, and which dates locals actually plan around.",
+    relatedCountries: ["IE"],
+    locale: "en",
+    faq: [
+      { question: "Is St. Patrick's Day a public holiday in Ireland?", answer: "Yes. March 17 is a full national public holiday in the Republic of Ireland, and has been since 1903. Schools close, most businesses close, and banks and post offices shut for the day." },
+      { question: "How many public holidays does Ireland have?", answer: "Ten in the Republic of Ireland. Nine fixed dates plus Easter Monday, which moves every year. That puts Ireland on the shorter end of the European list, close to the Netherlands and Germany." },
+      { question: "What is the difference between a public holiday and a bank holiday in Ireland?", answer: "In practice very little. All ten public holidays are also bank holidays. The term bank holiday comes from the 1871 act that first closed banks and offices; today the two lists are identical." },
+      { question: "Do Irish workers get paid for public holidays?", answer: "Yes. Irish employment law gives most workers a paid day off, or a paid substitute day with an extra day off, plus a public holiday premium if they have to work." },
+    ],
+    content: `
+      <p>Quick answer: yes, St. Patrick's Day is a public holiday in Ireland, and it is one of ten. This guide to <strong>ireland public holidays</strong> covers the full 2026 calendar with weekdays, how the bank holiday system actually works, and the dates that matter if you are planning a trip or a move. The full ireland holidays 2026 picture, in one place.</p>
+
+      <h2>St. Patrick's Day is not just a parade</h2>
+      <p>March 17 is a full national public holiday in the Republic of Ireland, and it has been since 1903. It is the rare holiday that is both a religious feast day and a national day off. In 2026 it falls on a Tuesday, which makes it the easiest bridge day on the calendar: take Monday March 16 off and the weekend becomes four days.</p>
+      <p>The day itself is bigger than the parades. Banks close, courts close, most shops in Dublin close or run reduced hours. Outside the capital the day is often quieter than the tourism marketing suggests, families gather, and the pubs that stay open do steady business. If you are visiting, treat it as a normal public holiday, not just a street party.</p>
+
+      <h2>Ireland public holidays 2026 (full calendar)</h2>
+      <table class="min-w-full border-collapse border border-gray-300 mb-4">
+        <thead><tr class="bg-gray-100"><th class="border p-2">Holiday</th><th class="border p-2">2026 date</th><th class="border p-2">Weekday</th></tr></thead>
+        <tbody>
+          <tr><td class="border p-2">New Year's Day</td><td class="border p-2">Jan 1</td><td class="border p-2">Thursday</td></tr>
+          <tr><td class="border p-2">St. Patrick's Day</td><td class="border p-2">Mar 17</td><td class="border p-2">Tuesday</td></tr>
+          <tr><td class="border p-2">Easter Monday</td><td class="border p-2">Apr 6</td><td class="border p-2">Monday</td></tr>
+          <tr><td class="border p-2">May Bank Holiday</td><td class="border p-2">May 4</td><td class="border p-2">Monday</td></tr>
+          <tr><td class="border p-2">June Bank Holiday</td><td class="border p-2">Jun 1</td><td class="border p-2">Monday</td></tr>
+          <tr><td class="border p-2">August Bank Holiday</td><td class="border p-2">Aug 3</td><td class="border p-2">Monday</td></tr>
+          <tr><td class="border p-2">October Bank Holiday</td><td class="border p-2">Oct 26</td><td class="border p-2">Monday</td></tr>
+          <tr><td class="border p-2">Christmas Day</td><td class="border p-2">Dec 25</td><td class="border p-2">Friday</td></tr>
+          <tr><td class="border p-2">St. Stephen's Day</td><td class="border p-2">Dec 26</td><td class="border p-2">Saturday</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Best bridge opportunities in 2026</strong>: St. Patrick's Day on Tuesday means taking Monday March 16 gives you four days. Easter Monday already rides on the Easter weekend. The three May, June and August bank holidays all land on Mondays, which is the point, they exist to create three-day weekends.</p>
+
+      <h2>Bank holidays vs public holidays, explained</h2>
+      <p>The two terms are used interchangeably in Ireland and in practice they mean the same thing. The bank holiday label dates back to the Bank Holidays Act 1871, which gave banks and offices official days off. The Republic of Ireland has nine named bank holidays plus Easter Monday, which is the movable one. Northern Ireland has a different list, two extra days for the Twelfth of July and the Battle of the Boyne, which is a common point of confusion for people comparing the two jurisdictions.</p>
+
+      <h2>What most people get wrong about Irish holidays</h2>
+      <p>One: St. Patrick's Day is not the only spring holiday. Easter Monday and the May bank holiday follow within seven weeks, which makes the whole spring a stretch of long weekends. Two: October bank holiday is a recent addition, restored in 2022 after being removed in 2017, and it stays on the last Monday of October. Three: the December double, Christmas and St. Stephen's Day, is the only back-to-back pair on the list. If December 26 falls on a weekend, the day off shifts to the next weekday, which is exactly what happens in 2026, St. Stephen's Day lands on a Saturday and the substitute day is Monday December 28.</p>
+
+      <h2>FAQ</h2>
+      <p><strong>Is St. Patrick's Day a public holiday in Ireland?</strong> Yes. March 17 is a full national public holiday in the Republic of Ireland and has been since 1903. Schools, banks and most businesses close.</p>
+      <p><strong>How many public holidays does Ireland have?</strong> Ten in the Republic. Nine fixed dates plus Easter Monday, which moves each year.</p>
+      <p><strong>What is the difference between a public holiday and a bank holiday in Ireland?</strong> Nothing practical. All ten public holidays are also bank holidays.</p>
+      <p><strong>Do Irish workers get paid for public holidays?</strong> Yes. Most employees get a paid day off or a substitute day, plus a premium if they work the holiday.</p>
+
+      <p>Planning around the Irish calendar? See the full <a href="/en">public holidays calendar</a>, compare countries with the <a href="/en/compare">comparison tool</a>, or browse <a href="/en/blog">more holiday guides</a>.</p>
+    `,
+  },
+  {
+    id: 136,
+    title: "爱尔兰公共假日：圣帕特里克节算不算",
+    slug: "ireland-public-holidays-is-st-patricks-day-one",
+    category: "guide",
+    author: "PubHoliday 研究团队",
+    publishedDate: "2026-08-13T08:00:00Z",
+    lastModified: "2026-08-13T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/ireland-public-holidays.svg",
+    excerpt: "答案：算，而且只是十个之一。2026 年爱尔兰全年日历带星期、银行假日制度拆解、以及本地人真正会围绕哪些日期做规划。",
+    relatedCountries: ["IE"],
+    locale: "zh",
+    faq: [
+      { question: "圣帕特里克节在爱尔兰是公共假日吗？", answer: "是。3 月 17 日在爱尔兰共和国是完整的全国公共假日，1903 年起就是。学校、银行和大多数商家都会关门。" },
+      { question: "爱尔兰有多少个公共假日？", answer: "共和国境内十个：九个固定日期加上每年移动的复活节周一。这个数量在欧洲偏少，和荷兰、德国接近。" },
+      { question: "爱尔兰的 public holiday 和 bank holiday 有什么区别？", answer: "实际操作上没区别。十个公共假日同时都是银行假日。bank holiday 的叫法来自 1871 年首次给银行和机关放假的法案。" },
+      { question: "爱尔兰员工放公共假日有工资吗？", answer: "有。大多数员工获得带薪假或补休，加一天额外休息；如果假日必须上班，还要付加班补差。" },
+    ],
+    content: `
+      <p>快速答案：算，圣帕特里克节在爱尔兰是公共假日，而且只是十个之一。这篇 <strong>ireland public holidays</strong> 指南覆盖 2026 年带星期几的完整日历、银行假日制度的实际运作、以及你规划旅行或搬家时需要关心的日期。ireland holidays 2026 的全貌，一篇看全。</p>
+
+      <h2>圣帕特里克节不只是一场游行</h2>
+      <p>3 月 17 日在爱尔兰共和国是完整的全国公共假日，1903 年就开始了。它罕见地既是宗教节日又是全国休息日。2026 年它落在周二，这是整年最好搭桥的日子：周一 3 月 16 日请一天假，周末就变四天。</p>
+      <p>这一天本身比游行大得多。银行关门、法院关门、都柏林大部分商店停业或缩短营业。出了首都，这天往往比旅游宣传里安静，家人聚会，开门营业的酒吧生意稳定。如果你在旅行，把它当普通公共假日对待，别只当街头派对。</p>
+
+      <h2>2026 年爱尔兰公共假日（完整日历）</h2>
+      <table class="min-w-full border-collapse border border-gray-300 mb-4">
+        <thead><tr class="bg-gray-100"><th class="border p-2">假日</th><th class="border p-2">2026 日期</th><th class="border p-2">星期</th></tr></thead>
+        <tbody>
+          <tr><td class="border p-2">元旦</td><td class="border p-2">1 月 1 日</td><td class="border p-2">周四</td></tr>
+          <tr><td class="border p-2">圣帕特里克节</td><td class="border p-2">3 月 17 日</td><td class="border p-2">周二</td></tr>
+          <tr><td class="border p-2">复活节周一</td><td class="border p-2">4 月 6 日</td><td class="border p-2">周一</td></tr>
+          <tr><td class="border p-2">五月银行假日</td><td class="border p-2">5 月 4 日</td><td class="border p-2">周一</td></tr>
+          <tr><td class="border p-2">六月银行假日</td><td class="border p-2">6 月 1 日</td><td class="border p-2">周一</td></tr>
+          <tr><td class="border p-2">八月银行假日</td><td class="border p-2">8 月 3 日</td><td class="border p-2">周一</td></tr>
+          <tr><td class="border p-2">十月银行假日</td><td class="border p-2">10 月 26 日</td><td class="border p-2">周一</td></tr>
+          <tr><td class="border p-2">圣诞节</td><td class="border p-2">12 月 25 日</td><td class="border p-2">周五</td></tr>
+          <tr><td class="border p-2">圣斯蒂芬节</td><td class="border p-2">12 月 26 日</td><td class="border p-2">周六</td></tr>
+        </tbody>
+      </table>
+      <p><strong>2026 年最好的搭桥机会</strong>：圣帕特里克节在周二，周一请一天假就是四天。复活节周一本来就挂在复活节周末上。五月、六月、八月三个银行假日全落在周一，这就是它们存在的意义，专门制造三天小长假。</p>
+
+      <h2>银行假日和公共假日，说到底是一回事</h2>
+      <p>这两个词在爱尔兰可以互换，实际操作中意思相同。bank holiday 的叫法来自 1871 年的《银行假日法》，那部法律第一次给银行和机关放假日。爱尔兰共和国有九个有名字的银行假日加上复活节周一，也就是那个每年移动的。北爱尔兰的清单不一样，多了七月十二日和博因河战役两个假，这是人们对比两个地区时常被绕晕的地方。</p>
+
+      <h2>关于爱尔兰假日最常见的误解</h2>
+      <p>一：圣帕特里克节不是唯一的春季假日。复活节周一和五月银行假日七周内接踵而至，整个春天都是一串长周末。二：十月银行假日是最近才回来的，2022 年恢复，2017 年曾被取消，固定在十月的最后一个周一。三：十二月那对组合，圣诞节加圣斯蒂芬节，是清单上唯一背靠背的两天。如果 12 月 26 日落在周末，休息日顺延到下一个工作日，2026 年正好就是这样，圣斯蒂芬节在周六，补休日是 12 月 28 日周一。</p>
+
+      <h2>FAQ</h2>
+      <p><strong>圣帕特里克节在爱尔兰是公共假日吗？</strong> 是。3 月 17 日在全国是完整公共假日，1903 年起就是。学校、银行和大部分商家关门。</p>
+      <p><strong>爱尔兰有多少个公共假日？</strong> 共和国十个：九个固定日期加每年移动的复活节周一。</p>
+      <p><strong>public holiday 和 bank holiday 有什么区别？</strong> 没实质区别，十个公共假日同时都是银行假日。</p>
+      <p><strong>员工放假日有工资吗？</strong> 有。大多数员工拿带薪假或补休，假日上班还有加班补差。</p>
+
+      <p>想按爱尔兰日历规划行程？看完整<a href="/zh">公共假日日历</a>，用<a href="/zh/compare">国家对比</a>，或翻<a href="/zh/blog">更多假日指南</a>。</p>
+    `,
+  },
 ];
 
 // ========================================================================
