@@ -7,14 +7,14 @@ import CountryHolidayView from "@/components/CountryHolidayView";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
 
-// Pre-render 2 years (2026-2027) for every country/locale at build time.
+// Pre-render 3 years (2026-2028) for every country/locale at build time.
 // Covers the high-value search window; earlier years render on-demand + edge cache.
-// Total: 12 locales × 46 countries × 2 years = 1,104 pages.
+// Total: 12 locales × 46 countries × 3 years = 1,656 pages.
 // On-demand ISR is not honored for dynamic-segment routes on Vercel, so
 // pre-rendering is what lets the CDN serve these pages.
 
 export function generateStaticParams() {
-  const years = [2026, 2027].map(String);
+  const years = [2026, 2027, 2028].map(String);
   return routing.locales.flatMap((locale) =>
     COUNTRIES.flatMap((c) => years.map((year) => ({ locale, country: c.code, year })))
   );
