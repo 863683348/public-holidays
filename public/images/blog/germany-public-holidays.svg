@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000000"/>
+      <stop offset="33%" stop-color="#DD0000"/>
+      <stop offset="66%" stop-color="#FFCE00"/>
+      <stop offset="100%" stop-color="#DD0000"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="210" fill="#000000" opacity="0.85"/>
+  <rect x="0" y="210" width="1200" height="210" fill="#DD0000"/>
+  <rect x="0" y="420" width="1200" height="210" fill="#FFCE00"/>
+  <text x="600" y="160" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="bold" fill="#FFFFFF">DE</text>
+  <text x="600" y="440" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="bold" fill="#000000">Germany Public Holidays</text>
+  <text x="600" y="490" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" fill="#333333">16 states · 联邦假日与州级假日</text>
+</svg>
