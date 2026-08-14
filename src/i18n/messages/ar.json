@@ -164,7 +164,13 @@
     "shareThis": "شارك هذا المقال",
     "relatedCountries": "الدول ذات الصلة",
     "postsCount": "{count} مقالات",
-    "viewAllCategory": "عرض كل الفئة"
+    "viewAllCategory": "عرض كل الفئة",
+    "shareTwitter": "شارك على تويتر",
+    "shareLinkedIn": "شارك على لينكد إن",
+    "shareFacebook": "شارك على فيسبوك",
+    "faqHeading": "الأسئلة الشائعة",
+    "relatedArticles": "مقالات ذات صلة",
+    "relatedCountryLink": "عرض عطلات {name}"
   },
   "auth": {
     "signIn": "تسجيل الدخول باستخدام Google",
