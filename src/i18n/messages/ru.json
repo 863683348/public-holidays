@@ -66,7 +66,11 @@
     "bankHolidayNote": "Банковские праздники",
     "holidayWeekendNote": "Праздничные выходные",
     "faqWhenNext": "When is the next public holiday in {country}?",
-    "faqWhenNextAnswer": "The next public holiday in {country} is {holiday} on {date}."
+    "faqWhenNextAnswer": "The next public holiday in {country} is {holiday} on {date}.",
+    "topHolidays": "Главные государственные праздники",
+    "relatedCountries": "Связанные страны",
+    "compareWith": "Сравнить {name} с другими странами",
+    "details": "Подробнее"
   },
   "longWeekend": {
     "natural": "Длинные выходные",

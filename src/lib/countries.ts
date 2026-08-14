@@ -260,6 +260,45 @@ const COUNTRY_HOLIDAY_TERM_EN: Record<string, string> = {
   NZ: "Public Holidays",
 };
 
+// Neighboring / closely-related markets per country — powers the "Related
+// countries" internal-linking block on country pages (cross-country crawl
+// paths + user discovery). Tier-A markets only; a missing code renders no
+// chips, so coverage can grow incrementally.
+export const RELATED_COUNTRIES: Record<string, string[]> = {
+  GB: ["IE", "FR", "DE", "NL", "US", "CA", "AU", "ES"],
+  US: ["CA", "GB", "MX", "AU", "FR", "DE", "JP"],
+  CA: ["US", "GB", "MX", "AU", "FR"],
+  AU: ["NZ", "GB", "US", "CA", "SG"],
+  NZ: ["AU", "GB", "US"],
+  IE: ["GB", "FR", "DE", "NL", "US"],
+  DE: ["AT", "CH", "FR", "NL", "GB", "PL", "CZ"],
+  FR: ["BE", "DE", "ES", "IT", "GB", "NL"],
+  ES: ["PT", "FR", "IT", "GB", "DE"],
+  IT: ["FR", "ES", "DE", "AT", "GB"],
+  NL: ["DE", "BE", "FR", "GB"],
+  PT: ["ES", "FR", "BR", "GB"],
+  PL: ["DE", "CZ", "GB", "US"],
+  AT: ["DE", "CH", "IT", "CZ", "HU"],
+  CH: ["DE", "FR", "IT", "AT"],
+  BE: ["FR", "NL", "DE", "GB"],
+  JP: ["KR", "CN", "US", "GB"],
+  KR: ["JP", "CN", "US"],
+  CN: ["JP", "KR", "HK", "TW", "US"],
+  HK: ["CN", "TW", "SG", "GB"],
+  TW: ["CN", "HK", "JP", "US"],
+  IN: ["GB", "US", "AE", "SG"],
+  BR: ["PT", "US", "AR", "MX", "FR"],
+  MX: ["US", "ES", "BR", "CA"],
+  AR: ["BR", "ES", "MX", "US"],
+  SG: ["MY", "ID", "GB", "AU"],
+  AE: ["IN", "GB", "US", "SA"],
+  CZ: ["SK", "DE", "AT", "PL"],
+  SE: ["NO", "DK", "FI", "DE"],
+  NO: ["SE", "DK", "FI"],
+  DK: ["SE", "NO", "DE", "NL"],
+  FI: ["SE", "NO", "EE"],
+};
+
 // Demonyms per country — used to compose natural English phrases such as
 // "Austrian bank holiday" / "Swiss public holidays" so country pages also
 // rank for adjective-form queries. getDemonym() falls back to the country name.

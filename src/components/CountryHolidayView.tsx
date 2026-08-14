@@ -13,10 +13,12 @@ import {
   getHolidayPageDescription,
   getDemonym,
   getOfficialSource,
+  RELATED_COUNTRIES,
 } from "@/lib/countries";
 import { getHolidays } from "@/lib/holidays";
 import { findLongWeekends } from "@/lib/longWeekend";
 import { getPostsByCountry } from "@/lib/blog-posts";
+import { groupHolidays, slugifyHoliday } from "@/lib/slug";
 import { holidayItemList, breadcrumb, faqPage } from "@/lib/seo";
 import { routing } from "@/i18n/routing";
 import YearCalendar from "@/components/YearCalendar";
@@ -333,14 +335,48 @@ export default async function CountryHolidayView({
                 </React.Fragment>
               ))}.
             </p>
-            <p className="text-[var(--muted)] leading-relaxed text-sm">
-              Notable national holidays include:{" "}
-              {holidays.filter((h) => h.global).slice(0, 5).map((h, i, arr) => (
-                <React.Fragment key={h.date}>
-                  {i > 0 ? (i === arr.length - 1 ? " and " : ", ") : ""}<strong>{h.localName}{h.localName !== h.name ? " (" + h.name + ")" : ""}</strong> (on {new Date(h.date).toLocaleDateString(locale, { month: "long", day: "numeric" })})
-                </React.Fragment>
-              ))}.
-            </p>
+          </section>
+        );
+      })()}
+
+      {/* Top national holidays — content depth + deep links to holiday detail pages */}
+      {(() => {
+        const top = holidays.filter((h) => h.global).slice(0, 8);
+        if (top.length === 0) return null;
+        const groups = groupHolidays(holidays);
+        const slugByDate = new Map<string, string>();
+        for (const g of groups) for (const d of g.dates) slugByDate.set(d, g.slug);
+        return (
+          <section className="space-y-3">
+            <h2 className="text-xl font-semibold">{t("topHolidays")}</h2>
+            <ul className="divide-y divide-[var(--border)] overflow-hidden rounded-lg border border-[var(--border)] bg-[var(--card)]">
+              {top.map((h) => {
+                const slug = slugByDate.get(h.date) ?? slugifyHoliday(h.name);
+                return (
+                  <li key={h.date} className="flex items-center justify-between gap-3 px-4 py-3">
+                    <div>
+                      <p className="font-medium">
+                        {h.localName}
+                        {h.localName !== h.name ? ` (${h.name})` : ""}
+                      </p>
+                      <p className="text-sm text-[var(--muted)]">
+                        {new Date(h.date).toLocaleDateString(locale, {
+                          weekday: "long",
+                          month: "long",
+                          day: "numeric",
+                        })}
+                      </p>
+                    </div>
+                    <Link
+                      href={`/${country}/${year}/${slug}`}
+                      className="shrink-0 rounded-md border border-[var(--border)] bg-[var(--bg)] px-3 py-1.5 text-sm font-medium text-brand transition hover:border-brand focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-brand/30"
+                    >
+                      {t("details")} →
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
           </section>
         );
       })()}
@@ -419,6 +455,38 @@ export default async function CountryHolidayView({
                 </Link>
               ))}
             </div>
+          </section>
+        );
+      })()}
+
+      {/* Related countries — internal links for crawl paths + user discovery */}
+      {(() => {
+        const related = (RELATED_COUNTRIES[country.toUpperCase()] ?? []).filter(
+          (c) => COUNTRIES.some((x) => x.code === c)
+        );
+        if (related.length === 0) return null;
+        return (
+          <section className="space-y-3">
+            <h2 className="text-xl font-semibold">{t("relatedCountries")}</h2>
+            <div className="flex flex-wrap gap-2">
+              {related.map((c) => (
+                <Link
+                  key={c}
+                  href={`/${c}`}
+                  className="rounded-full border border-[var(--border)] bg-[var(--card)] px-3 py-1.5 text-sm font-medium transition hover:border-brand hover:text-brand focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-brand/30"
+                >
+                  {getCountryName(c, locale)}
+                </Link>
+              ))}
+            </div>
+            <p className="text-sm">
+              <Link
+                href={`/compare?c=${country},${related.slice(0, 2).join(",")}&y=${year}`}
+                className="font-medium text-brand hover:underline"
+              >
+                {t("compareWith", { name: meta.name })} →
+              </Link>
+            </p>
           </section>
         );
       })()}

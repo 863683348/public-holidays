@@ -66,7 +66,11 @@
     "bankHolidayNote": "Bank holidays",
     "holidayWeekendNote": "Holiday weekend",
     "faqWhenNext": "When is the next public holiday in {country}?",
-    "faqWhenNextAnswer": "The next public holiday in {country} is {holiday} on {date}."
+    "faqWhenNextAnswer": "The next public holiday in {country} is {holiday} on {date}.",
+    "topHolidays": "Top national holidays",
+    "relatedCountries": "Related countries",
+    "compareWith": "Compare {name} with other countries",
+    "details": "Details"
   },
   "longWeekend": {
     "natural": "Long weekend",

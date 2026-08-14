@@ -66,7 +66,11 @@
     "bankHolidayNote": "银行假日",
     "holidayWeekendNote": "假日周末",
     "faqWhenNext": "When is the next public holiday in {country}?",
-    "faqWhenNextAnswer": "The next public holiday in {country} is {holiday} on {date}."
+    "faqWhenNextAnswer": "The next public holiday in {country} is {holiday} on {date}.",
+    "topHolidays": "主要全国性假期",
+    "relatedCountries": "相关国家",
+    "compareWith": "将{name}与其他国家对比",
+    "details": "详情"
   },
   "longWeekend": {
     "natural": "长周末",

@@ -66,7 +66,11 @@
     "bankHolidayNote": "Bankfeestdagen",
     "holidayWeekendNote": "Feestdagweekend",
     "faqWhenNext": "Wanneer is de volgende feestdag in {country}?",
-    "faqWhenNextAnswer": "De volgende feestdag in {country} is {holiday} op {date}."
+    "faqWhenNextAnswer": "De volgende feestdag in {country} is {holiday} op {date}.",
+    "topHolidays": "Belangrijkste nationale feestdagen",
+    "relatedCountries": "Gerelateerde landen",
+    "compareWith": "Vergelijk {name} met andere landen",
+    "details": "Details"
   },
   "longWeekend": {
     "natural": "Lang weekend",

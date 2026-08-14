@@ -66,7 +66,11 @@
     "bankHolidayNote": "은행 공휴일",
     "holidayWeekendNote": "공휴일 주말",
     "faqWhenNext": "When is the next public holiday in {country}?",
-    "faqWhenNextAnswer": "The next public holiday in {country} is {holiday} on {date}."
+    "faqWhenNextAnswer": "The next public holiday in {country} is {holiday} on {date}.",
+    "topHolidays": "주요 공휴일",
+    "relatedCountries": "관련 국가",
+    "compareWith": "{name}를 다른 국가와 비교",
+    "details": "상세"
   },
   "longWeekend": {
     "natural": "긴 주말",

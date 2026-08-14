@@ -67,7 +67,11 @@
     "bankHolidayNote": "عطلات البنوك",
     "holidayWeekendNote": "عطلة نهاية الأسبوع",
     "faqWhenNext": "When is the next public holiday in {country}?",
-    "faqWhenNextAnswer": "The next public holiday in {country} is {holiday} on {date}."
+    "faqWhenNextAnswer": "The next public holiday in {country} is {holiday} on {date}.",
+    "topHolidays": "أهم العطلات الوطنية",
+    "relatedCountries": "دول ذات صلة",
+    "compareWith": "قارن {name} مع دول أخرى",
+    "details": "التفاصيل"
   },
   "longWeekend": {
     "natural": "عطلة نهاية أسبوع طويلة",

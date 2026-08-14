@@ -66,7 +66,11 @@
     "bankHolidayNote": "Días festivos bancarios",
     "holidayWeekendNote": "Fin de semana festivo",
     "faqWhenNext": "When is the next public holiday in {country}?",
-    "faqWhenNextAnswer": "The next public holiday in {country} is {holiday} on {date}."
+    "faqWhenNextAnswer": "The next public holiday in {country} is {holiday} on {date}.",
+    "topHolidays": "Principales festivos nacionales",
+    "relatedCountries": "Países relacionados",
+    "compareWith": "Comparar {name} con otros países",
+    "details": "Detalles"
   },
   "longWeekend": {
     "natural": "Fin de semana largo",

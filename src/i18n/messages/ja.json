@@ -66,7 +66,11 @@
     "bankHolidayNote": "銀行休業日",
     "holidayWeekendNote": "祝日の週末",
     "faqWhenNext": "When is the next public holiday in {country}?",
-    "faqWhenNextAnswer": "The next public holiday in {country} is {holiday} on {date}."
+    "faqWhenNextAnswer": "The next public holiday in {country} is {holiday} on {date}.",
+    "topHolidays": "主な祝日",
+    "relatedCountries": "関連する国",
+    "compareWith": "{name}を他国と比較",
+    "details": "詳細"
   },
   "longWeekend": {
     "natural": "連休",
