@@ -75,6 +75,10 @@ export default async function CountryHolidayView({
 
   const longWeekends = findLongWeekends(holidays, year);
 
+  // Localized country name used across the FAQ copy so questions read fully
+  // native (e.g. "Wie viele Feiertage hat Tschechien…?" not "…Czechia…").
+  const countryName = getCountryName(country, locale);
+
   // Compute FAQ data from holidays
   const nationalCount = holidays.filter((h) => h.global).length;
   const regionalCount = holidays.length - nationalCount;
@@ -93,9 +97,9 @@ export default async function CountryHolidayView({
   const todayHoliday = holidays.find((h) => h.date === todayStr) || null;
   const faqToday = todayHoliday
     ? {
-        question: t("faqToday", { name: meta.name }),
+        question: t("faqToday", { name: countryName }),
         answer: t("faqTodayYes", {
-          name: meta.name,
+          name: countryName,
           holiday: todayHoliday.name || todayHoliday.localName,
           date: new Date(todayHoliday.date).toLocaleDateString(locale, {
             year: "numeric",
@@ -105,9 +109,9 @@ export default async function CountryHolidayView({
         }),
       }
     : {
-        question: t("faqToday", { name: meta.name }),
+        question: t("faqToday", { name: countryName }),
         answer: t("faqTodayNo", {
-          name: meta.name,
+          name: countryName,
           holiday: nextHoliday?.name || nextHoliday?.localName || "",
           date: nextHoliday
             ? new Date(nextHoliday.date).toLocaleDateString(locale, {
@@ -121,13 +125,13 @@ export default async function CountryHolidayView({
 
   const faqItems = [
     {
-      question: t("faqHowMany", { name: meta.name, year }),
-      answer: t("faqHowManyAnswer", { name: meta.name, count: holidays.length, year }),
+      question: t("faqHowMany", { name: countryName, year }),
+      answer: t("faqHowManyAnswer", { name: countryName, count: holidays.length, year }),
     },
     ...(nextHoliday
       ? [
           {
-            question: t("faqNext", { name: meta.name }),
+            question: t("faqNext", { name: countryName }),
             answer: t("faqNextAnswer", {
               holiday: nextHoliday.name || nextHoliday.localName,
               date: new Date(nextHoliday.date).toLocaleDateString(locale, {
@@ -140,9 +144,9 @@ export default async function CountryHolidayView({
           // PAA hook (SPEC-002 §4b): "When is the next public holiday…?" —
           // answered with the already-computed nextHoliday; no new fetch.
           {
-            question: t("faqWhenNext", { country: meta.name }),
+            question: t("faqWhenNext", { country: countryName }),
             answer: t("faqWhenNextAnswer", {
-              country: meta.name,
+              country: countryName,
               holiday: nextHoliday.name || nextHoliday.localName,
               date: new Date(nextHoliday.date + "T00:00:00Z").toLocaleDateString(locale, {
                 year: "numeric",
@@ -155,7 +159,7 @@ export default async function CountryHolidayView({
         ]
       : []),
     {
-      question: t("faqAllNational", { name: meta.name }),
+      question: t("faqAllNational", { name: countryName }),
       answer: t("faqAllNationalAnswer", {
         yesno: allNational ? t("faqYes") : t("faqNo"),
         national: nationalCount,
@@ -163,10 +167,10 @@ export default async function CountryHolidayView({
       }),
     },
     {
-      question: t("faqLongWeekends", { name: meta.name, year }),
+      question: t("faqLongWeekends", { name: countryName, year }),
       answer: t("faqLongWeekendsAnswer", {
         count: longWeekends.length,
-        name: meta.name,
+        name: countryName,
         year,
       }),
     },
