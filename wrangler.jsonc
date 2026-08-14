@@ -20,6 +20,6 @@
 	//   3) Deploy:     npm run deploy
 	// Note: id must be a real 32-char hex or `wrangler deploy` will fail validation.
 	"kv_namespaces": [
-		{ "binding": "NEXT_INC_CACHE_KV", "id": "<KV_NAMESPACE_ID>" }
+		{ "binding": "NEXT_INC_CACHE_KV", "id": "301d285cf9504e489723cb1015d73948" }
 	]
 }
