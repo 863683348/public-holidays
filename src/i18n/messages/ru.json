@@ -163,7 +163,13 @@
     "shareThis": "Поделиться статьёй",
     "relatedCountries": "Связанные страны",
     "postsCount": "{count} статей",
-    "viewAllCategory": "Смотреть всю категорию"
+    "viewAllCategory": "Смотреть всю категорию",
+    "shareTwitter": "Поделиться в Twitter",
+    "shareLinkedIn": "Поделиться в LinkedIn",
+    "shareFacebook": "Поделиться в Facebook",
+    "faqHeading": "Часто задаваемые вопросы",
+    "relatedArticles": "Похожие статьи",
+    "relatedCountryLink": "Смотреть праздники {name}"
   },
   "auth": {
     "signIn": "Войти через Google",

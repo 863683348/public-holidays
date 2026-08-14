@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#AE1C28"/>
+      <stop offset="33%" stop-color="#FFFFFF"/>
+      <stop offset="33%" stop-color="#21468B"/>
+      <stop offset="66%" stop-color="#FFFFFF"/>
+      <stop offset="66%" stop-color="#AE1C28"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="210" fill="#AE1C28" opacity="0.9"/>
+  <rect x="0" y="210" width="1200" height="210" fill="#FFFFFF"/>
+  <rect x="0" y="420" width="1200" height="210" fill="#21468B" opacity="0.9"/>
+  <text x="600" y="160" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="bold" fill="#FFFFFF">NL</text>
+  <text x="600" y="450" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="bold" fill="#FFFFFF">Netherlands Public Holidays</text>
+  <text x="600" y="500" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" fill="#F2F2F2">少而精的假期 · 12 天全国假日</text>
+</svg>

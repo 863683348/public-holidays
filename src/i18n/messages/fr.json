@@ -163,7 +163,13 @@
     "shareThis": "Share this article",
     "relatedCountries": "Pays associés",
     "postsCount": "{count} articles",
-    "viewAllCategory": "Voir toute la catégorie"
+    "viewAllCategory": "Voir toute la catégorie",
+    "shareTwitter": "Partager sur Twitter",
+    "shareLinkedIn": "Partager sur LinkedIn",
+    "shareFacebook": "Partager sur Facebook",
+    "faqHeading": "Questions fréquentes",
+    "relatedArticles": "Articles connexes",
+    "relatedCountryLink": "Voir les jours fériés de {name}"
   },
   "auth": {
     "signIn": "Se connecter avec Google",

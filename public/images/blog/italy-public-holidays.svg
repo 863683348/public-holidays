@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#008C45"/>
+      <stop offset="50%" stop-color="#F4F9FF"/>
+      <stop offset="100%" stop-color="#CD212A"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="630" fill="#008C45"/>
+  <rect x="400" y="0" width="400" height="630" fill="#F4F9FF"/>
+  <rect x="800" y="0" width="400" height="630" fill="#CD212A"/>
+  <text x="600" y="260" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="bold" fill="#008C45">IT</text>
+  <text x="600" y="380" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="bold" fill="#008C45">Italy Public Holidays</text>
+  <text x="600" y="430" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" fill="#333333">节日与红日 · 全民假期全览</text>
+</svg>

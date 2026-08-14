@@ -163,7 +163,13 @@
     "shareThis": "Share this article",
     "relatedCountries": "Verwandte Länder",
     "postsCount": "{count} Artikel",
-    "viewAllCategory": "Alle ansehen"
+    "viewAllCategory": "Alle ansehen",
+    "shareTwitter": "Auf Twitter teilen",
+    "shareLinkedIn": "Auf LinkedIn teilen",
+    "shareFacebook": "Auf Facebook teilen",
+    "faqHeading": "Häufig gestellte Fragen",
+    "relatedArticles": "Ähnliche Artikel",
+    "relatedCountryLink": "{name} Feiertage ansehen"
   },
   "auth": {
     "signIn": "Mit Google anmelden",

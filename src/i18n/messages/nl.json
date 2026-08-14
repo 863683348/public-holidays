@@ -163,7 +163,13 @@
     "shareThis": "Deel dit artikel",
     "relatedCountries": "Gerelateerde landen",
     "postsCount": "{count} artikelen",
-    "viewAllCategory": "Alle categorieën bekijken"
+    "viewAllCategory": "Alle categorieën bekijken",
+    "shareTwitter": "Delen op Twitter",
+    "shareLinkedIn": "Delen op LinkedIn",
+    "shareFacebook": "Delen op Facebook",
+    "faqHeading": "Veelgestelde vragen",
+    "relatedArticles": "Gerelateerde artikelen",
+    "relatedCountryLink": "Bekijk {name} feestdagen"
   },
   "auth": {
     "signIn": "Inloggen met Google",

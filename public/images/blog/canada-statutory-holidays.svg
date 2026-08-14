@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00008B"/>
+      <stop offset="50%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#CC0000"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="315" fill="#00008B" opacity="0.8"/>
+  <rect x="0" y="315" width="1200" height="315" fill="#CC0000" opacity="0.8"/>
+  <polygon points="600,120 630,200 720,200 645,250 675,340 600,285 525,340 555,250 480,200 570,200" fill="#FFFFFF" opacity="0.9"/>
+  <text x="600" y="450" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="bold" fill="#FFFFFF">Canada Statutory Holidays</text>
+  <text x="600" y="500" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" fill="#F2F2F2">联邦与各省差异 · 9 大法定假日</text>
+</svg>

@@ -163,7 +163,13 @@
     "shareThis": "この記事をシェア",
     "relatedCountries": "関連国",
     "postsCount": "{count} 件のブログ記事",
-    "viewAllCategory": "カテゴリー全体を見る"
+    "viewAllCategory": "カテゴリー全体を見る",
+    "shareTwitter": "Twitterで共有",
+    "shareLinkedIn": "LinkedInで共有",
+    "shareFacebook": "Facebookで共有",
+    "faqHeading": "よくある質問",
+    "relatedArticles": "関連記事",
+    "relatedCountryLink": "{name}の祝日を見る"
   },
   "auth": {
     "signIn": "Googleでログイン",
