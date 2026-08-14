@@ -2897,7 +2897,128 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>想看全貌？去 <a href="/zh/SE">public-holidays.shop</a> 看完整瑞典日历，到 <a href="/zh">首页</a> 浏览所有国家，或者到 <a href="/zh/blog">博客</a> 读更多指南。public-holidays.shop 帮你把日期记准，省得自己算。</p>
     `,
   },
+  {
+    id: 139,
+    title: "Switzerland Public Holidays: 26 Cantons, Many Holidays",
+    slug: "switzerland-public-holidays-26-cantons",
+    category: "guide",
+    author: "PubHoliday Research Team",
+    publishedDate: "2026-08-15T08:00:00Z",
+    lastModified: "2026-08-15T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/switzerland-public-holidays-26-cantons.svg",
+    excerpt: "Switzerland has 26 cantons and no single holiday calendar. This guide to switzerland holidays explains the national days, canton-only dates like Jeune genevois, the swiss holidays 2026 calendar, and how to check schweiz feiertage by canton.",
+    relatedCountries: ["CH"],
+    locale: "en",
+    faq: [
+      {
+            "question": "How many public holidays does Switzerland have?",
+            "answer": "About five national ones, plus cantonal days, for a total of 9 to 15 a year depending on the canton."
+      },
+      {
+            "question": "What is August 1?",
+            "answer": "Swiss National Day, observed nationwide, with fireworks over the lakes. It's the one day all of Switzerland celebrates together."
+      },
+      {
+            "question": "When is Good Friday in swiss holidays 2026?",
+            "answer": "April 3, 2026, a Friday. Pair it with Easter Monday on April 6 and you have a long weekend. Ticino, as usual, skips Good Friday."
+      },
+      {
+            "question": "Jeûne genevois is observed everywhere?",
+            "answer": "No. It's a Geneva-only cantonal holiday, observed across the whole canton but nowhere else. These one-canton days are exactly where the Swiss system trips up visitors."
+      }
+],
+    content: `
+      <p>Ask about <strong>switzerland holidays</strong> and you'll get two different answers from two different websites. Neither is wrong. Switzerland is a federation: 26 cantons each decide their own public holidays, and only a handful are national. This guide explains the mechanism, gives you the core swiss holidays 2026 dates, and shows you how to check a specific day without booking a hotel for a day when nobody works.</p>
+      <h2>Why the holidays aren't uniform</h2>
+      <p>The national level guarantees only a few days: New Year's Day, Good Friday, Easter Monday, August 1 (National Day), and Christmas. Everything else belongs to the cantons. The constitution leaves holiday law to the states, so one canton gets 15 days a year and another gets 9. German speakers call them schweiz feiertage, French speakers say jours fériés, and the languages are the least confusing part.</p>
+      <p>Catholic cantons like Fribourg, Valais, and Lucerne add Corpus Christi and Assumption Day. Protestant cantons like Zurich and Bern lean on Good Friday and prayer days. So when you ask "is it a holiday in Switzerland," the honest answer is "which canton?" That's the system working as designed.</p>
+      <h2>The national holidays (safe everywhere)</h2>
+      <p>Watch out: St. Stephen's Day on Dec 26 is a holiday in many cantons, but it's a cantonal call, not a given. Ticino is the odd one out, with its Catholic calendar and no Good Friday, though it does take the Monday after Pentecost. Confirm the canton before you plan around the date. I learned this the hard way: I once scheduled a Bern delivery for a local prayer day nobody outside the canton had heard of.</p>
+      <h2>Canton-only holidays worth knowing</h2>
+      <ul>
+      <li>Zurich: Sechseläuten, around the third Monday in April, when a snowman gets set on fire to herald spring</li>
+      <li>Geneva: Jeûne genevois, a fast day in September that only Geneva observes</li>
+      <li>Basel: the Monday after Fasnacht carnival</li>
+      <li>Lucerne, Fribourg: Corpus Christi processions through town</li>
+      <li>Glarus: Näfelser Fahrt, a commemoration of a 14th-century battle</li>
+      </ul>
+      <p>On these days nobody clocks in. Shops close, and the quiet gives you the most local version of Switzerland you'll ever see.</p>
+      <h2>How to check a specific canton and date</h2>
+      <p>Don't guess. Three steps:</p>
+      <ol>
+      <li>Open public-holidays.shop, pick Switzerland, then pick your canton.</li>
+      <li>Check whether a date is "cantonal" before building your plan; cantonal holidays don't transfer across borders.</li>
+      <li>Watch for bridge days. Swiss calendars love joining a holiday to a weekend, and in 2026 Good Friday falls on a Friday, so you get a three-day weekend for free.</li>
+      </ol>
+      <p>Banks, post offices, and cantonal offices follow the cantonal calendar. Supermarket chains mostly follow it too, while train stations run year-round. Restaurants in tourist towns tend to stay open on cantonal holidays, which is nice if you're visiting and annoying if you work in one. Check first, book after.</p><h2>FAQ</h2>
+      <p><strong>How many public holidays does Switzerland have?</strong> About five national ones, plus cantonal days, for a total of 9 to 15 a year depending on the canton.</p>
+      <p><strong>What is August 1?</strong> Swiss National Day, observed nationwide, with fireworks over the lakes. It's the one day all of Switzerland celebrates together.</p>
+      <p><strong>When is Good Friday in swiss holidays 2026?</strong> April 3, 2026, a Friday. Pair it with Easter Monday on April 6 and you have a long weekend. Ticino, as usual, skips Good Friday.</p>
+      <p><strong>Jeûne genevois is observed everywhere?</strong> No. It's a Geneva-only cantonal holiday, observed across the whole canton but nowhere else. These one-canton days are exactly where the Swiss system trips up visitors.</p>
+    `,
+  },
+  {
+    id: 140,
+    title: "瑞士公共假日：26 个州各有各的假",
+    slug: "switzerland-public-holidays-26-cantons",
+    category: "guide",
+    author: "PubHoliday 研究团队",
+    publishedDate: "2026-08-15T08:00:00Z",
+    lastModified: "2026-08-15T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/switzerland-public-holidays-26-cantons.svg",
+    excerpt: "瑞士 26 个州，没有一份统一的假日日历。这篇瑞士公共假日指南讲清全国统一假日、各州独有假日（比如日内瓦的 Jeûne genevois）、swiss holidays 2026 核心日期，以及怎么按州查 schweiz feiertage。",
+    relatedCountries: ["CH"],
+    locale: "zh",
+    faq: [
+      {
+            "question": "瑞士一年有多少个公共假日？",
+            "answer": "全国统一的只有 5 个左右，加上州级假日，全年 9 到 15 天不等，具体看州。"
+      },
+      {
+            "question": "8 月 1 日是什么节？",
+            "answer": "瑞士国庆日，全国放假，晚上湖边看烟花，是全瑞士唯一一个全国同步庆祝的假日。"
+      },
+      {
+            "question": "swiss holidays 2026 里耶稣受难日是哪天？",
+            "answer": "2026 年 4 月 3 日（周五），搭配复活节周一 4 月 6 日，正好凑一个长周末。注意提契诺州不放耶稣受难日。"
+      },
+      {
+            "question": "在日内瓦查到 Jeûne genevois，是全市都放吗？",
+            "answer": "是，日内瓦州的州级假日，全州统一休息，其他州不放假。这种\"某州独有\"的假日正是瑞士假日体系最需要注意的地方。"
+      }
+],
+    content: `
+      <p>查 switzerland holidays 的人多半会先懵一下：有的网站说一年 4 天，有的说 15 天，谁都没错。瑞士是联邦制，26 个州各自定本州的公共假日，全国统一的只有几个。这篇把机制讲清楚，再给你一份 swiss holidays 2026 的核心日期和查询方法，免得你订完酒店才发现当天全城休息。</p>
+      <h2>为什么瑞士的假日不统一</h2>
+      <p>国家层面统一的假日只有 4-5 个：元旦、耶稣受难日、复活节周一、8 月 1 日国庆、圣诞节。其余全归各州。联邦宪法把假期立法权留给了州，于是有的州一年放 15 天，有的只放 9 天。德语区管这叫 schweiz feiertage，法语区叫 jours fériés，查的时候别被语言绕晕，记住规则就够。</p>
+      <p>天主教州（弗里堡、瓦莱、卢塞恩）会额外放圣体节、圣母升天节；新教州（苏黎世、伯尔尼）则更看重耶稣受难日和祈祷日。所以你问"瑞士今天放不放假"，等于在问"瑞士哪个州今天放不放假"。答案因州而异，这是常态，不是例外。</p>
+      <h2>全国统一假日（全年都跑不掉）</h2>
+      <p>注意 12 月 26 日圣斯蒂芬节在不少州也放假，但这是州级决定，别默认。提契诺是最特别的州：天主教传统深，耶稣受难日不放假，反而放圣体节。规划行程前先确认你要去的州。</p>
+      <h2>各州特色假日，碰到就是缘分</h2>
+      <ul>
+      <li>苏黎世：Sechseläuten（4 月第三个周一前后），春天烧雪人 Böögg，烟花报春</li>
+      <li>日内瓦：Jeûne genevois（9 月第一个周四后），全城斋戒日，独此一州</li>
+      <li>巴塞尔：Fasnacht 嘉年华后的周一，狂欢季官方休息</li>
+      <li>卢塞恩/弗里堡等：圣体节，列队游行，教堂钟声不断</li>
+      <li>格拉鲁斯：Näfelser Fahrt，纪念战役的州内假日</li>
+      </ul>
+      <p>这些日子当地没人上班，商店关门，游客稀少的季节反而能看到最本地的瑞士。</p>
+      <h2>怎么查某州某天是否放假</h2>
+      <p>别靠猜。三招：</p>
+      <ol>
+      <li>打开 public-holidays.shop，切到瑞士，选你要去的州。</li>
+      <li>看日期前确认是否"州级假日"，很多州级假日跨州不通用。</li>
+      <li>把长周末记下来：瑞士喜欢把假日和周末拼成 bridge day（架桥日），2026 年耶稣受难日落在周五，直接三连休。</li>
+      </ol>
+      <p>给个提醒：银行、邮局、州政府办公室按州级日历走，连锁超市多数按州级假日营业，火车站全年无休。查准了再订票。</p><h2>FAQ</h2>
+      <p><strong>瑞士一年有多少个公共假日？</strong> 全国统一的只有 5 个左右，加上州级假日，全年 9 到 15 天不等，具体看州。</p>
+      <p><strong>8 月 1 日是什么节？</strong> 瑞士国庆日，全国放假，晚上湖边看烟花，是全瑞士唯一一个全国同步庆祝的假日。</p>
+      <p><strong>swiss holidays 2026 里耶稣受难日是哪天？</strong> 2026 年 4 月 3 日（周五），搭配复活节周一 4 月 6 日，正好凑一个长周末。注意提契诺州不放耶稣受难日。</p>
+      <p><strong>在日内瓦查到 Jeûne genevois，是全市都放吗？</strong> 是，日内瓦州的州级假日，全州统一休息，其他州不放假。这种"某州独有"的假日正是瑞士假日体系最需要注意的地方。</p>
+    `,
+  },
 ];
+
 
 // ========================================================================
 // Locale-aware helper functions
