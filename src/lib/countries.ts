@@ -225,6 +225,27 @@ const HOLIDAY_TERMS: Record<string, string> = {
   it: "festività",
   ru: "праздники",
   ar: "عطل",
+  nl: "feestdagen",
+};
+
+// Localized meta-description frames for non-zh/non-en country pages.
+// Mirrors the Japanese "チェコ 祝日" pattern that already ranks (pos 15):
+// fully localized query phrasing in the description — not just the title —
+// so each high-potential locale (ja/de/fr/es/ko/…) matches its own-language
+// searches (e.g. "tschechien feiertage", "jours fériés tchéquie").
+// {name} = localized country name (via getCountryName), {year} = the year.
+const HOLIDAY_DESC_FRAMES: Record<string, string> = {
+  ja: "{name}の{year}年祝日一覧：公式日程、連休・振替休日もチェック。カレンダーを無料でダウンロード・印刷できます。",
+  ko: "{name} {year}년 공휴일 전체 목록: 공식 날짜, 연휴와 브리지데이. 달력을 무료로 다운로드하고 인쇄하세요.",
+  es: "Lista completa de los festivos de {name} en {year}: fechas oficiales, puentes y fines de semana largos. Descarga o imprime tu calendario gratis.",
+  de: "Alle Feiertage in {name} {year}: offizielle Daten, Brückentage und verlängerte Wochenenden. Kalender kostenlos herunterladen oder drucken.",
+  fr: "Liste complète des jours fériés en {name} en {year} : dates officielles, ponts et week-ends prolongés. Téléchargez ou imprimez votre calendrier gratuitement.",
+  pt: "Lista completa de feriados em {name} em {year}: datas oficiais, pontes e fins de semana prolongados. Baixe ou imprima seu calendário grátis.",
+  it: "Elenco completo dei giorni festivi in {name} nel {year}: date ufficiali, ponti e weekend lunghi. Scarica o stampa il tuo calendario gratis.",
+  ru: "Полный список праздников в {name} на {year} год: официальные даты, длинные выходные и мосты. Скачайте или распечатайте календарь бесплатно.",
+  ar: "القائمة الكاملة للعطلات في {name} لعام {year}: تواريخ رسمية وعطلات نهاية أسبوع طويلة. حمّل التقويم أو اطبعه مجانًا.",
+  nl: "Volledige lijst van feestdagen in {name} {year}: officiële data, brugdagen en lange weekenden. Download of print uw kalender gratis.",
+  en: "Complete {year} {name} holidays list with official dates, bridge days and long weekends. Download or print your free calendar.",
 };
 
 // Country-specific holiday terminology for English titles/descriptions.
@@ -318,8 +339,15 @@ export function getHolidayPageDescription(code: string, locale: string, year: nu
   if (locale === "zh") {
     return `${meta.name}${year}年公共假期完整列表：含官方日期、桥梁日与长周末，可免费下载并打印日历。`;
   }
-  const enTerm = COUNTRY_HOLIDAY_TERM_EN[code] ?? "Public Holidays";
-  return `Complete ${year} ${meta.name} ${enTerm.toLowerCase()} list with official dates, bridge days and long weekends. Download or print your free calendar.`;
+  if (locale === "en") {
+    const enTerm = COUNTRY_HOLIDAY_TERM_EN[code] ?? "Public Holidays";
+    return `Complete ${year} ${meta.name} ${enTerm.toLowerCase()} list with official dates, bridge days and long weekends. Download or print your free calendar.`;
+  }
+  // Localized description — same "native query phrasing" pattern as the
+  // Japanese page that ranks for 「チェコ 祝日」(GSC: pos 15, CTR 100%).
+  const frame = HOLIDAY_DESC_FRAMES[locale] ?? HOLIDAY_DESC_FRAMES.en;
+  const name = getCountryName(code, locale);
+  return frame.replace("{name}", name).replace("{year}", String(year));
 }
 
 // Interrogative title / description frames for the single-holiday detail page.
