@@ -10,6 +10,10 @@
 		"directory": ".open-next/assets",
 		"binding": "ASSETS"
 	},
+	"routes": [
+		"public-holidays.shop/*",
+		"www.public-holidays.shop/*"
+	],
 	"observability": {
 		"enabled": true
 	}
