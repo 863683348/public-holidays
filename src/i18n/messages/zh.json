@@ -163,7 +163,13 @@
     "shareThis": "Share this article",
     "relatedCountries": "相关国家",
     "postsCount": "{count} 篇文章",
-    "viewAllCategory": "查看分类全部"
+    "viewAllCategory": "查看分类全部",
+    "shareTwitter": "在 Twitter 上分享",
+    "shareLinkedIn": "在 LinkedIn 上分享",
+    "shareFacebook": "在 Facebook 上分享",
+    "faqHeading": "常见问题",
+    "relatedArticles": "相关文章",
+    "relatedCountryLink": "查看 {name} 的假日"
   },
   "auth": {
     "signIn": "使用 Google 登录",
