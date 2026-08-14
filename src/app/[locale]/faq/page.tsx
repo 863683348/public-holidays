@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import LegalPage from "@/components/legal/LegalPage";
+import { faqPage } from "@/lib/seo";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
 
@@ -56,6 +57,15 @@ export default async function FaqPage({
   ];
   return (
     <LegalPage title={t("faq")}>
+      {/* FAQPage structured data — mirrors the visible Q&A below */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            faqPage(items.map((i) => ({ question: i.q, answer: i.a })))
+          ),
+        }}
+      />
       <section className="space-y-6">
         {items.map((item) => (
           <div key={item.q}>

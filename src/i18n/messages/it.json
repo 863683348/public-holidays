@@ -343,5 +343,20 @@
     "sourceHeading": "Data source",
     "sourceNote": "Holiday information for {name} in {country} ({year}) reviewed and last updated {date}. Always confirm with official sources before planning.",
     "officialSource": "Official source"
+  },
+  "homeFaq": {
+    "heading": "Domande frequenti",
+    "q1": "Cos'è un giorno festivo?",
+    "a1": "Un giorno festivo è un giorno di riposo ufficiale stabilito dal governo, osservato in tutto il paese o in regioni specifiche. Scuole, banche e molte aziende chiudono e la maggior parte delle persone non lavora.",
+    "q2": "Quali paesi coprite?",
+    "a2": "PubHoliday copre i giorni festivi di {count} paesi e territori, con dati su più anni e abbonamenti iCal gratuiti.",
+    "q3": "Come trovo i giorni festivi di un paese specifico?",
+    "a3": "Digita il nome di un paese nel campo di ricerca qui sopra o tocca una scheda paese. Vedrai l'elenco completo dei festivi dell'anno, i ponti e le prossime festività.",
+    "q4": "Tutti i giorni festivi sono nazionali?",
+    "a4": "No. Alcuni sono nazionali e osservati ovunque, altri sono regionali e si applicano solo a una parte del paese. Ogni pagina paese mostra la suddivisione esatta.",
+    "q5": "Posso abbonarmi al calendario dei festivi di un paese?",
+    "a5": "Sì. Apri una pagina paese e tocca Abbonati per ottenere un feed iCal gratuito che resta aggiornato in Google Calendar, Apple Calendar o Outlook.",
+    "q6": "Quanto sono accurati i dati?",
+    "a6": "Compiliamo gli elenchi dei giorni festivi da fonti ufficiali pubbliche e li aggiorniamo ogni anno. Le date sono generalmente affidabili, ma conferma sempre le date critiche con fonti ufficiali prima di pianificare."
   }
 }

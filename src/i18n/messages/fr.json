@@ -343,5 +343,20 @@
     "sourceHeading": "Data source",
     "sourceNote": "Holiday information for {name} in {country} ({year}) reviewed and last updated {date}. Always confirm with official sources before planning.",
     "officialSource": "Official source"
+  },
+  "homeFaq": {
+    "heading": "Questions fréquentes",
+    "q1": "Qu'est-ce qu'un jour férié ?",
+    "a1": "Un jour férié est un jour de congé officiel décrété par le gouvernement, observé dans tout le pays ou dans certaines régions. Les écoles, les banques et de nombreuses entreprises ferment, et la plupart des gens ne travaillent pas.",
+    "q2": "Quels pays couvrez-vous ?",
+    "a2": "PubHoliday couvre les jours fériés de {count} pays et territoires, avec des données sur plusieurs années et des abonnements iCal gratuits.",
+    "q3": "Comment trouver les jours fériés d'un pays précis ?",
+    "a3": "Saisissez un nom de pays dans le champ de recherche ci-dessus ou touchez une carte de pays. Vous verrez la liste complète des fériés de l'année, les ponts et les prochains jours fériés.",
+    "q4": "Tous les jours fériés sont-ils nationaux ?",
+    "a4": "Non. Certains sont nationaux et observés partout, d'autres sont régionaux et ne s'appliquent qu'à une partie du pays. Chaque page de pays indique la répartition exacte.",
+    "q5": "Puis-je m'abonner au calendrier des fériés d'un pays ?",
+    "a5": "Oui. Ouvrez une page de pays et touchez S'abonner pour obtenir un flux iCal gratuit, toujours à jour dans Google Agenda, Apple Calendar ou Outlook.",
+    "q6": "Quelle est la fiabilité des données ?",
+    "a6": "Nous compilons les listes de jours fériés à partir de sources officielles publiques et les mettons à jour chaque année. Les dates sont généralement fiables, mais vérifiez toujours les dates importantes auprès de sources officielles avant de planifier."
   }
 }

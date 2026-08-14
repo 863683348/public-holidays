@@ -343,5 +343,20 @@
     "sourceHeading": "Data source",
     "sourceNote": "Holiday information for {name} in {country} ({year}) reviewed and last updated {date}. Always confirm with official sources before planning.",
     "officialSource": "Official source"
+  },
+  "homeFaq": {
+    "heading": "Frequently asked questions",
+    "q1": "What is a public holiday?",
+    "a1": "A public holiday is an official day off granted by a government, observed by the whole country or by specific regions. Schools, banks and many businesses close, and most people do not work.",
+    "q2": "Which countries do you cover?",
+    "a2": "PubHoliday covers public holidays for {count} countries and territories, with multi-year data and free iCal calendar subscriptions.",
+    "q3": "How do I find the holidays for a specific country?",
+    "a3": "Type a country name in the search box above or tap a country card. You will see the full holiday list for the current year, long weekends, and upcoming holidays.",
+    "q4": "Are all public holidays national holidays?",
+    "a4": "No. Some holidays are national and observed everywhere, while others are regional and only apply to part of a country. Each country page shows the exact breakdown.",
+    "q5": "Can I subscribe to a country's holiday calendar?",
+    "a5": "Yes. Open any country page and tap Subscribe to get a free iCal feed that stays up to date in Google Calendar, Apple Calendar, or Outlook.",
+    "q6": "How accurate is the data?",
+    "a6": "We compile holiday lists from public official sources and update them every year. Dates are usually reliable, but always confirm critical dates with official sources before planning."
   }
 }

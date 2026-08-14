@@ -343,5 +343,20 @@
     "sourceHeading": "Data source",
     "sourceNote": "Holiday information for {name} in {country} ({year}) reviewed and last updated {date}. Always confirm with official sources before planning.",
     "officialSource": "Official source"
+  },
+  "homeFaq": {
+    "heading": "Perguntas frequentes",
+    "q1": "O que é um feriado público?",
+    "a1": "Um feriado público é um dia de folga oficial decretado pelo governo, observado em todo o país ou em regiões específicas. Escolas, bancos e muitas empresas fecham, e a maioria das pessoas não trabalha.",
+    "q2": "Quais países vocês cobrem?",
+    "a2": "O PubHoliday cobre feriados públicos de {count} países e territórios, com dados de vários anos e assinaturas gratuitas de calendário iCal.",
+    "q3": "Como encontro os feriados de um país específico?",
+    "a3": "Digite o nome do país na caixa de busca acima ou toque em um cartão de país. Você verá a lista completa de feriados do ano, feriados prolongados e os próximos feriados.",
+    "q4": "Todos os feriados são nacionais?",
+    "a4": "Não. Alguns são nacionais e observados em todo o país, enquanto outros são regionais e se aplicam apenas a parte do país. Cada página de país mostra o detalhamento exato.",
+    "q5": "Posso assinar o calendário de feriados de um país?",
+    "a5": "Sim. Abra qualquer página de país e toque em Assinar para obter um feed iCal gratuito que permanece atualizado no Google Agenda, Apple Calendar ou Outlook.",
+    "q6": "Os dados são precisos?",
+    "a6": "Compilamos as listas de feriados a partir de fontes oficiais públicas e as atualizamos todos os anos. As datas costumam ser confiáveis, mas confirme sempre datas críticas com fontes oficiais antes de planejar."
   }
 }

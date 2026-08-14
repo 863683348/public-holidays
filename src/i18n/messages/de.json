@@ -343,5 +343,20 @@
     "sourceHeading": "Data source",
     "sourceNote": "Holiday information for {name} in {country} ({year}) reviewed and last updated {date}. Always confirm with official sources before planning.",
     "officialSource": "Official source"
+  },
+  "homeFaq": {
+    "heading": "Häufige Fragen",
+    "q1": "Was ist ein gesetzlicher Feiertag?",
+    "a1": "Ein gesetzlicher Feiertag ist ein von der Regierung festgelegter offizieller Ruhetag, der landesweit oder in bestimmten Regionen begangen wird. Schulen, Banken und viele Unternehmen bleiben geschlossen, die meisten Menschen arbeiten nicht.",
+    "q2": "Welche Länder sind abgedeckt?",
+    "a2": "PubHoliday deckt Feiertage für {count} Länder und Territorien ab, mit Daten für mehrere Jahre und kostenlosen iCal-Kalenderabos.",
+    "q3": "Wie finde ich die Feiertage eines bestimmten Landes?",
+    "a3": "Gib im Suchfeld oben einen Ländernamen ein oder tippe auf eine Länderkarte. Du siehst die komplette Feiertagsliste des Jahres, verlängerte Wochenenden und anstehende Feiertage.",
+    "q4": "Sind alle Feiertage bundesweit?",
+    "a4": "Nein. Manche Feiertage gelten landesweit, andere nur regional für einen Teil des Landes. Jede Länderseite zeigt die genaue Aufteilung.",
+    "q5": "Kann ich den Feiertagskalender eines Landes abonnieren?",
+    "a5": "Ja. Öffne eine beliebige Länderseite und tippe auf Abonnieren, um einen kostenlosen iCal-Feed zu erhalten, der in Google Kalender, Apple Kalender oder Outlook aktuell bleibt.",
+    "q6": "Wie genau sind die Daten?",
+    "a6": "Wir erstellen die Feiertagslisten aus öffentlichen offiziellen Quellen und aktualisieren sie jährlich. Die Daten sind meist zuverlässig, aber bestätige wichtige Termine vor der Planung immer mit offiziellen Quellen."
   }
 }

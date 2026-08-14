@@ -343,5 +343,20 @@
     "sourceHeading": "Data source",
     "sourceNote": "Holiday information for {name} in {country} ({year}) reviewed and last updated {date}. Always confirm with official sources before planning.",
     "officialSource": "Official source"
+  },
+  "homeFaq": {
+    "heading": "Veelgestelde vragen",
+    "q1": "Wat is een officiële feestdag?",
+    "a1": "Een officiële feestdag is een door de overheid vastgestelde vrije dag, die in het hele land of in bepaalde regio's wordt gevierd. Scholen, banken en veel bedrijven zijn gesloten en de meeste mensen werken niet.",
+    "q2": "Welke landen worden gedekt?",
+    "a2": "PubHoliday dekt officiële feestdagen van {count} landen en gebieden, met gegevens over meerdere jaren en gratis iCal-kalenderabonnementen.",
+    "q3": "Hoe vind ik de feestdagen van een specifiek land?",
+    "a3": "Typ een landnaam in het zoekvak hierboven of tik op een landkaart. Je ziet de volledige feestdagenlijst van het jaar, lange weekenden en aanstaande feestdagen.",
+    "q4": "Zijn alle feestdagen nationale feestdagen?",
+    "a4": "Nee. Sommige feestdagen zijn nationaal en worden overal gevierd, andere zijn regionaal en gelden alleen voor een deel van het land. Elke landpagina toont de exacte verdeling.",
+    "q5": "Kan ik me abonneren op de feestdagenkalender van een land?",
+    "a5": "Ja. Open een landpagina en tik op Abonneren om een gratis iCal-feed te krijgen die up-to-date blijft in Google Agenda, Apple Agenda of Outlook.",
+    "q6": "Hoe nauwkeurig zijn de gegevens?",
+    "a6": "We stellen feestdagenlijsten samen uit openbare officiële bronnen en werken ze jaarlijks bij. De data zijn meestal betrouwbaar, maar controleer belangrijke data altijd bij officiële bronnen voordat je plant."
   }
 }

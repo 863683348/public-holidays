@@ -10,6 +10,8 @@ import TodayHolidays from "@/components/TodayHolidays";
 import MyHolidays from "@/components/MyHolidays";
 import AdSlot from "@/components/AdSlot";
 import LocalTime from "@/components/LocalTime";
+import FaqAccordion from "@/components/FaqAccordion";
+import { faqPage } from "@/lib/seo";
 
 const FEATURED_COUNTRIES = POPULAR_COUNTRIES.slice(0, 8);
 
@@ -25,6 +27,7 @@ export default async function HomePage({
   setRequestLocale(locale);
   const t = await getTranslations("home");
   const ta = await getTranslations("homeAbout");
+  const tf = await getTranslations("homeFaq");
   const year = new Date().getFullYear();
 
   const featured = await Promise.all(
@@ -48,6 +51,17 @@ export default async function HomePage({
   const onHolidayToday = featured.filter((f) =>
     f.holidays.some((h) => h.date === todayISO)
   ).length;
+
+  // Homepage FAQ — same items feed the visible accordion AND the FAQPage
+  // JSON-LD so the structured data always matches on-page text (Google policy).
+  const faqItems = [
+    { question: tf("q1"), answer: tf("a1") },
+    { question: tf("q2"), answer: tf("a2", { count: COUNTRIES.length }) },
+    { question: tf("q3"), answer: tf("a3") },
+    { question: tf("q4"), answer: tf("a4") },
+    { question: tf("q5"), answer: tf("a5") },
+    { question: tf("q6"), answer: tf("a6") },
+  ];
 
   return (
     <div className="space-y-10">
@@ -159,6 +173,16 @@ export default async function HomePage({
           </Link>
         </p>
       </section>
+
+      {/* FAQ — visible accordion + FAQPage JSON-LD (same items, never drift) */}
+      <section className="space-y-4">
+        <h2 className="text-xl font-semibold">{tf("heading")}</h2>
+        <FaqAccordion items={faqItems} headingLevel="h2" />
+      </section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPage(faqItems)) }}
+      />
 
       <AdSlot />
     </div>

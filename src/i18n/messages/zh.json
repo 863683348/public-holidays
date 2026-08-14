@@ -343,5 +343,20 @@
     "sourceHeading": "Data source",
     "sourceNote": "Holiday information for {name} in {country} ({year}) reviewed and last updated {date}. Always confirm with official sources before planning.",
     "officialSource": "Official source"
+  },
+  "homeFaq": {
+    "heading": "常见问题",
+    "q1": "什么是公共假日？",
+    "a1": "公共假日是政府规定的官方休息日，全国或部分地区会共同庆祝。当天学校、银行和许多企业都会关门，大多数人不用上班。",
+    "q2": "你们覆盖哪些国家和地区？",
+    "a2": "PubHoliday 覆盖 {count} 个国家和地区的公共假日，提供多年份数据以及免费的 iCal 日历订阅。",
+    "q3": "如何查找某个国家的公共假日？",
+    "a3": "在上方搜索框输入国家名称，或点击国家卡片。你会看到该国的全年假期列表、长周末和即将到来的假期。",
+    "q4": "所有公共假日都是全国性假期吗？",
+    "a4": "不是。有些假期是全国性的，全国都放假；有些则是地区性的，只在部分地区适用。每个国家的页面都会显示具体的构成。",
+    "q5": "可以订阅某个国家的假日日历吗？",
+    "a5": "可以。打开任意国家页面，点击「订阅」即可获得免费的 iCal 订阅源，可在 Google 日历、Apple 日历或 Outlook 中保持同步更新。",
+    "q6": "数据准确吗？",
+    "a6": "我们从公开的官方来源整理假期列表，并每年更新。日期通常可靠，但重要安排前请务必用官方来源再次确认。"
   }
 }
