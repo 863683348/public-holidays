@@ -1,0 +1,13 @@
+{
+  "phase": "http_request_cache_settings",
+  "description": "PH: cache public holiday pages at edge (respect origin s-maxage=604800)",
+  "action": "set_cache_settings",
+  "enabled": true,
+  "expression": "(http.request.method eq \"GET\") and not (starts_with(http.request.uri.path, \"/api\") or starts_with(http.request.uri.path, \"/account\") or starts_with(http.request.uri.path, \"/checkout\") or starts_with(http.request.uri.path, \"/signin\") or starts_with(http.request.uri.path, \"/auth\"))",
+  "action_parameters": {
+    "cache": true,
+    "edge_ttl": { "mode": "respect_origin" },
+    "browser_ttl": { "mode": "respect_origin" },
+    "cache_key": { "ignore_vary": false }
+  }
+}

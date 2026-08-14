@@ -13,12 +13,12 @@
 	"observability": {
 		"enabled": true
 	},
-	// P0 — ISR 增量缓存用的 KV 命名空间（绑定名必须叫 NEXT_INC_CACHE_KV，与 open-next.config.ts 对应）
-	// 落地步骤：
-	//   1) 创建命名空间：  npx wrangler kv namespace create NEXT_INC_CACHE_KV
-	//   2) 把命令返回的 id 填到下面（替换 <KV_NAMESPACE_ID>）
-	//   3) 再部署：        npm run deploy
-	// 注意：id 必须是真实 32 位十六进制，否则 wrangler deploy 会校验失败。
+	// P0 - KV namespace for ISR incremental cache (binding name must be NEXT_INC_CACHE_KV)
+	// Steps:
+	//   1) Create it:  npx wrangler kv namespace create NEXT_INC_CACHE_KV
+	//   2) Paste the returned id below (replace <KV_NAMESPACE_ID>)
+	//   3) Deploy:     npm run deploy
+	// Note: id must be a real 32-char hex or `wrangler deploy` will fail validation.
 	"kv_namespaces": [
 		{ "binding": "NEXT_INC_CACHE_KV", "id": "<KV_NAMESPACE_ID>" }
 	]
