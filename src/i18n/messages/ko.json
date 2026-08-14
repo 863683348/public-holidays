@@ -163,7 +163,13 @@
     "shareThis": "이 글 공유하기",
     "relatedCountries": "관련 국가",
     "postsCount": "블로그 {count}개",
-    "viewAllCategory": "카테고리 전체 보기"
+    "viewAllCategory": "카테고리 전체 보기",
+    "shareTwitter": "Twitter에서 공유",
+    "shareLinkedIn": "LinkedIn에서 공유",
+    "shareFacebook": "Facebook에서 공유",
+    "faqHeading": "자주 묻는 질문",
+    "relatedArticles": "관련 글",
+    "relatedCountryLink": "{name} 공휴일 보기"
   },
   "auth": {
     "signIn": "Google로 로그인",
