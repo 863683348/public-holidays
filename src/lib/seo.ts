@@ -47,9 +47,13 @@ export function breadcrumb(items: { name: string; url: string }[]) {
 
 export function articleBreadcrumb(
   category: string,
+  slug: string,
   title: string,
   locale?: string
 ) {
+  const siteUrl =
+    process.env.NEXT_PUBLIC_SITE_URL || "https://public-holidays.shop";
+  const loc = locale || "en";
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -58,25 +62,25 @@ export function articleBreadcrumb(
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: process.env.NEXT_PUBLIC_SITE_URL || "https://public-holidays.shop",
+        item: `${siteUrl}/${loc}`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Blog",
-        item: `${process.env.NEXT_PUBLIC_SITE_URL || "https://public-holidays.shop"}/blog`,
+        item: `${siteUrl}/${loc}/blog`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: category,
-        item: `${process.env.NEXT_PUBLIC_SITE_URL || "https://public-holidays.shop"}/blog/${category}`,
+        item: `${siteUrl}/${loc}/blog/${category}`,
       },
       {
         "@type": "ListItem",
         position: 4,
         name: title,
-        item: `${process.env.NEXT_PUBLIC_SITE_URL || "https://public-holidays.shop"}/blog/${category}/${encodeURIComponent(title)}`,
+        item: `${siteUrl}/${loc}/blog/${category}/${slug}`,
       },
     ],
   };
@@ -90,8 +94,12 @@ export function articleStructuredData(
   lastModified: string,
   category: string,
   imageUrl: string,
+  slug: string,
   locale?: string
 ) {
+  const siteUrl =
+    process.env.NEXT_PUBLIC_SITE_URL || "https://public-holidays.shop";
+  const loc = locale || "en";
   return {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -115,7 +123,7 @@ export function articleStructuredData(
     dateModified: lastModified,
     mainEntityOfPage: {
       "@type": "WebPage",
-      url: `${process.env.NEXT_PUBLIC_SITE_URL || "https://public-holidays.shop"}/blog/${category}/${encodeURIComponent(title)}`,
+      url: `${siteUrl}/${loc}/blog/${category}/${slug}`,
     },
     image: [
       {

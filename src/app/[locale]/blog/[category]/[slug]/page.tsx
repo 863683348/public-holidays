@@ -31,11 +31,20 @@ export async function generateMetadata({
   const title = `${post.title} — ${t("blogSection")}`;
   const description = post.excerpt;
 
+  const languages: Record<string, string> = {};
+  for (const l of routing.locales) {
+    languages[l] = `${SITE_URL}/${l}/blog/${category}/${post.slug}`;
+  }
+
   return {
     title,
     description,
     alternates: {
       canonical: `${SITE_URL}/${locale}/blog/${category}/${post.slug}`,
+      languages: {
+        ...languages,
+        "x-default": `${SITE_URL}/en/blog/${category}/${post.slug}`,
+      },
     },
     openGraph: {
       type: "article",
@@ -72,7 +81,7 @@ export default async function ArticlePage({
   const t = await getTranslations("blog");
   const tNav = await getTranslations("nav");
 
-  const post = await getPostData(slug);
+  const post = await getPostData(slug, locale);
 
   if (!post) {
     notFound();
@@ -243,7 +252,9 @@ export default async function ArticlePage({
               post.publishedDate,
               post.lastModified,
               category,
-              post.imageUrl || ""
+              post.imageUrl || "",
+              post.slug,
+              locale
             )
           ),
         }}
@@ -252,7 +263,7 @@ export default async function ArticlePage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
-            articleBreadcrumb(category, post.title, locale)
+            articleBreadcrumb(category, post.slug, post.title, locale)
           ),
         }}
       />

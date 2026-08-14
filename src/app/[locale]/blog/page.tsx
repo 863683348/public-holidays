@@ -27,11 +27,20 @@ export async function generateMetadata({
   const title = t("title");
   const description = t("description");
 
+  const languages: Record<string, string> = {};
+  for (const l of routing.locales) {
+    languages[l] = `${SITE_URL}/${l}/blog`;
+  }
+
   return {
     title,
     description,
     alternates: {
       canonical: `${SITE_URL}/${locale}/blog`,
+      languages: {
+        ...languages,
+        "x-default": `${SITE_URL}/en/blog`,
+      },
     },
     openGraph: {
       type: "website",
