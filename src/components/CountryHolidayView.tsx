@@ -304,7 +304,7 @@ export default async function CountryHolidayView({
       <section className="space-y-2">
         <p className="text-[var(--muted)] leading-relaxed">
           {t("introSummary", {
-            name: meta.name,
+            name: countryName,
             year,
             count: holidays.length,
             national: nationalCount,
