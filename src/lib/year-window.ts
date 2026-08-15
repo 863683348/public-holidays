@@ -1,7 +1,7 @@
 // Single source of truth for the supported holiday year window.
 // Previously duplicated in [year]/page.tsx and YearNav.tsx.
 
-export const MIN_YEAR = 2000;
+export const MIN_YEAR = 2021;
 export const MAX_YEAR = 2035;
 
 /** Returns the year, or null if not an integer inside [MIN_YEAR, MAX_YEAR]. */
