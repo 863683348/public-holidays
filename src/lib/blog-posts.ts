@@ -3145,6 +3145,131 @@ export const BLOG_POSTS: BlogPost[] = [
       <p><strong>奥地利各州放假日一样吗？</strong> 13 个全国假日全州通用，个别州加放一天本地节日（比如萨尔茨堡的圣鲁珀特日），差异比德国那种“各州大杂烩”小得多。</p>
     `,
   },
+
+  {
+    id: 143,
+    title: "Belgium Public Holidays: Double Festivities",
+    slug: "belgium-public-holidays",
+    category: "guide",
+    author: "PubHoliday Research Team",
+    publishedDate: "2026-08-17T08:00:00Z",
+    lastModified: "2026-08-17T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/belgium-public-holidays.svg",
+    excerpt: "Belgium celebrates 10 national public holidays a year, and each one has two names. This belgium public holidays guide lists every belgium holidays 2026 date, explains the Dutch and French names you will see everywhere, and highlights the long weekends worth planning around.",
+    relatedCountries: ["BE"],
+    locale: "en",
+    faq: [
+      {
+            "question": "How many public holidays does Belgium have?",
+            "answer": "Ten national public holidays. Belgium is officially trilingual, so most dates carry both a Dutch name and a French name, and employers and schools observe the same ten across the whole country."
+      },
+      {
+            "question": "What is Belgium's National Day?",
+            "answer": "July 21, marking the day in 1831 when King Leopold I swore the oath as the first King of the Belgians. It is the country's most festive holiday, with a military parade and fireworks in Brussels."
+      },
+      {
+            "question": "Which belgium holidays 2026 fall on a long weekend?",
+            "answer": "July 21 is a Tuesday, and May 1 is a Friday, so Labour Day makes a three-day weekend. Easter Monday on April 6 and Whit Monday on May 25 both extend their weekends automatically."
+      },
+      {
+            "question": "Are regional holidays different in Belgium?",
+            "answer": "The ten national holidays apply everywhere. Some municipalities and language communities add local feast days, but they do not close businesses the way the national calendar does."
+      }
+],
+    content: `
+      <p>Belgium is a small country with a complicated identity, and its holidays show it. Every <strong>belgium public holidays</strong> date has two names — one Dutch, one French — because the country runs on both languages. This guide walks through every belgium holidays 2026 date, decodes the double names, and flags the long weekends worth planning around.</p>
+      <h2>Why every Belgian holiday has two names</h2>
+      <p>Belgium has three official languages: Dutch in the north, French in the south, and a small German-speaking community in the east. Public holidays are national, so each date gets a Dutch name and a French name. On posters, apps, and calendars you see both, sometimes three.</p>
+      <p>Practical example: July 21 is <em>Nationale Feestdag</em> in Dutch and <em>Fête nationale</em> in French. Same day, same banks closed, but you will hear it called either name depending on which part of the country you are in.</p>
+      <h2>The complete belgium holidays 2026 list</h2>
+      <ul>
+      <li>Jan 1 (Thu): New Year's Day — Nieuwjaar / Nouvel An</li>
+      <li>Apr 6 (Mon): Easter Monday — Paasmaandag / Lundi de Pâques</li>
+      <li>May 1 (Fri): Labour Day — Dag van de Arbeid / Fête du Travail</li>
+      <li>May 14 (Thu): Ascension Day — O.L.H. Hemelvaart / Ascension</li>
+      <li>May 25 (Mon): Whit Monday — Pinkstermaandag / Lundi de Pentecôte</li>
+      <li>Jul 21 (Tue): National Day — Nationale Feestdag / Fête nationale</li>
+      <li>Aug 15 (Sat): Assumption — O.L.V. Hemelvaart / Assomption</li>
+      <li>Nov 1 (Sun): All Saints' Day — Allerheiligen / Toussaint</li>
+      <li>Nov 11 (Wed): Armistice Day — Wapenstilstand / Armistice</li>
+      <li>Dec 25 (Fri): Christmas Day — Kerstmis / Noël</li>
+      </ul>
+      <p>That is ten days. Belgium does not observe Easter Sunday, Pentecost Sunday, or Good Friday as public holidays — those fall on weekends or are working days. Schools often close for the two weeks around Easter and Christmas regardless, which is where families get their real breaks.</p>
+      <h2>Long weekends in 2026</h2>
+      <p>May 1 lands on a Friday, handing you a free three-day weekend right after Easter Monday week. July 21 is a Tuesday, so many Belgians take Monday July 20 off to make a four-day break in the middle of summer. November 11 is a Wednesday, a classic bridge-day candidate.</p>
+      <p>Easter Monday and Whit Monday already sit at the end of their weekends, so those two are automatic long weekends with zero planning.</p>
+      <h2>What closes, what stays open</h2>
+      <p>On national holidays, banks, government offices, and most shops close. Grocery stores are shut on the big ones — Christmas, Easter Monday, National Day — and tourist areas in Brussels, Bruges, and Ghent keep restaurants and museums running. If you travel on July 21, expect the Grand Place in Brussels to be packed and the city fireworks worth the crowd.</p>
+      <h2>Check any date in seconds</h2>
+      <p>Do not memorise the calendar; check it. Open public-holidays.shop, pick Belgium, and you get the full year with each day marked national or regional, both language names included. Filter by month, check a specific date, and spot bridge days before you book anything.</p><h2>FAQ</h2>
+      <p><strong>How many public holidays does Belgium have?</strong> Ten national public holidays. Belgium is officially trilingual, so most dates carry both a Dutch name and a French name, and employers and schools observe the same ten across the whole country.</p>
+      <p><strong>What is Belgium's National Day?</strong> July 21, marking the day in 1831 when King Leopold I swore the oath as the first King of the Belgians. It is the country's most festive holiday, with a military parade and fireworks in Brussels.</p>
+      <p><strong>Which belgium holidays 2026 fall on a long weekend?</strong> July 21 is a Tuesday, and May 1 is a Friday, so Labour Day makes a three-day weekend. Easter Monday on April 6 and Whit Monday on May 25 both extend their weekends automatically.</p>
+      <p><strong>Are regional holidays different in Belgium?</strong> The ten national holidays apply everywhere. Some municipalities and language communities add local feast days, but they do not close businesses the way the national calendar does.</p>
+    `,
+  },
+  {
+    id: 144,
+    title: "比利时公共假日：双语国家的双份节日",
+    slug: "belgium-public-holidays",
+    category: "guide",
+    author: "PubHoliday 研究团队",
+    publishedDate: "2026-08-17T08:00:00Z",
+    lastModified: "2026-08-17T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/belgium-public-holidays.svg",
+    excerpt: "比利时每年有 10 个全国性公共假日，而且每个节日都有两个名字。这篇比利时公共假日指南列全 belgium holidays 2026 日期、解释荷语和法语双名规则，并标出值得计划的长周末。",
+    relatedCountries: ["BE"],
+    locale: "zh",
+    faq: [
+      {
+            "question": "比利时一年有多少个公共假日？",
+            "answer": "全国统一 10 个。比利时官方有荷兰语和法语，所以大多数节日同时有荷语名和法语名，全国上下放假日期完全一致。"
+      },
+      {
+            "question": "比利时国庆日是哪天？",
+            "answer": "7 月 21 日，纪念 1831 年利奥波德一世宣誓成为首任国王。这是全国最热闹的节日，布鲁塞尔有阅兵和烟火。"
+      },
+      {
+            "question": "belgium holidays 2026 有哪些长周末？",
+            "answer": "五一落在周五，自带三连休；7 月 21 日是周二，很多人会连休 7 月 20 日凑四天假；11 月 11 日是周三，是经典的桥假日候选。"
+      },
+      {
+            "question": "比利时各地区假日不一样吗？",
+            "answer": "10 个全国假日各地通用。部分市镇和语区有本地节日，但不像国家日历那样让店铺关门。"
+      }
+],
+    content: `
+      <p>比利时是个小国，身份却很复杂，节假日就是最好的证明。每个<strong>比利时公共假日</strong>都有两个名字——一个荷兰语、一个法语——因为全国官方语言有两种。这篇指南列全 belgium holidays 2026 的每个日期，帮你读懂双名规则，并标出值得规划的长周末。</p>
+      <h2>为什么比利时每个节日都有两个名字</h2>
+      <p>比利时官方有荷兰语、法语和一小块德语区。公共假日是全国统一的，所以每个日期都同时有荷语名和法语名。海报、应用和日历上通常两种都印，有时三种。</p>
+      <p>举个实际例子：7 月 21 日，荷语叫 Nationale Feestdag，法语叫 Fête nationale。同一天、同样的银行关门，但在不同地区你会听到不同的叫法。</p>
+      <h2>belgium holidays 2026 完整清单</h2>
+      <ul>
+      <li>1 月 1 日（周四）：元旦 — Nieuwjaar / Nouvel An</li>
+      <li>4 月 6 日（周一）：复活节星期一 — Paasmaandag / Lundi de Pâques</li>
+      <li>5 月 1 日（周五）：劳动节 — Dag van de Arbeid / Fête du Travail</li>
+      <li>5 月 14 日（周四）：耶稣升天节 — O.L.H. Hemelvaart / Ascension</li>
+      <li>5 月 25 日（周一）：圣灵降临节星期一 — Pinkstermaandag / Lundi de Pentecôte</li>
+      <li>7 月 21 日（周二）：国庆日 — Nationale Feestdag / Fête nationale</li>
+      <li>8 月 15 日（周六）：圣母升天节 — O.L.V. Hemelvaart / Assomption</li>
+      <li>11 月 1 日（周日）：万圣节 — Allerheiligen / Toussaint</li>
+      <li>11 月 11 日（周三）：停战日 — Wapenstilstand / Armistice</li>
+      <li>12 月 25 日（周五）：圣诞节 — Kerstmis / Noël</li>
+      </ul>
+      <p>一共 10 天。比利时不把复活节星期天、圣灵降临节星期天或耶稣受难日列为公共假日——它们落在周末或本来就是工作日。学校通常不管怎样都会在复活节和圣诞前后各放两周，家庭的真正长假来自这里。</p>
+      <h2>2026 年的长周末</h2>
+      <p>5 月 1 日落在周五，直接给你一个免费三连休，紧挨着复活节周一那周。7 月 21 日是周二，很多比利时人会在 7 月 20 日周一请一天假，凑出仲夏的四天连休。11 月 11 日是周三，是经典的桥假日候选。</p>
+      <p>复活节周一和圣灵降临节周一本来就接在周末后面，所以这两个是零规划自动生成的长周末。</p>
+      <h2>哪些关门，哪些照常</h2>
+      <p>全国假日当天，银行、政府机关和多数商店关门。大节——圣诞、复活节周一、国庆日——超市也休，布鲁塞尔、布鲁日和根特的旅游区餐厅和博物馆照常营业。7 月 21 日出行的话，布鲁塞尔大广场会挤满人，但晚上的烟火值得一挤。</p>
+      <h2>几秒查任意日期</h2>
+      <p>别背日历，直接查。打开 public-holidays.shop，选比利时，就能看到全年每一天标记为全国性或区域性假日，双语文名都带。按月筛选、查具体日期、订票前先找桥假日。</p><h2>FAQ</h2>
+      <p><strong>比利时一年有多少个公共假日？</strong> 全国统一 10 个。比利时官方有荷兰语和法语，所以大多数节日同时有荷语名和法语名，全国上下放假日期完全一致。</p>
+      <p><strong>比利时国庆日是哪天？</strong> 7 月 21 日，纪念 1831 年利奥波德一世宣誓成为首任国王。这是全国最热闹的节日，布鲁塞尔有阅兵和烟火。</p>
+      <p><strong>belgium holidays 2026 有哪些长周末？</strong> 五一落在周五，自带三连休；7 月 21 日是周二，很多人会连休 7 月 20 日凑四天假；11 月 11 日是周三，是经典的桥假日候选。</p>
+      <p><strong>比利时各地区假日不一样吗？</strong> 10 个全国假日各地通用。部分市镇和语区有本地节日，但不像国家日历那样让店铺关门。</p>
+    `,
+  },
 ];
 
 
