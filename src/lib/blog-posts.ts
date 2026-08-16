@@ -3017,6 +3017,134 @@ export const BLOG_POSTS: BlogPost[] = [
       <p><strong>在日内瓦查到 Jeûne genevois，是全市都放吗？</strong> 是，日内瓦州的州级假日，全州统一休息，其他州不放假。这种"某州独有"的假日正是瑞士假日体系最需要注意的地方。</p>
     `,
   },
+  {
+    id: 141,
+    title: "Austria Public Holidays: Different from Germany?",
+    slug: "austria-public-holidays",
+    category: "guide",
+    author: "PubHoliday Research Team",
+    publishedDate: "2026-08-16T08:00:00Z",
+    lastModified: "2026-08-16T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/austria-public-holidays.svg",
+    excerpt: "Austria has 13 national public holidays a year, several more than Germany. This guide to austria public holidays lists every austria holidays 2026 date, compares the two neighbours' calendars, and explains the österreich feiertage you can count on nationwide.",
+    relatedCountries: ["AT"],
+    locale: "en",
+    faq: [
+      {
+            "question": "How many public holidays does Austria have?",
+            "answer": "Thirteen national public holidays, among the most in Europe. German speakers say österreich feiertage; the list includes church feasts Germany does not observe, like Epiphany and Corpus Christi."
+      },
+      {
+            "question": "What is Austria's National Day?",
+            "answer": "October 26, marking the 1955 law that made Austria permanently neutral. Germany celebrates October 3 instead, which is one of the biggest calendar differences between the two countries."
+      },
+      {
+            "question": "When are austria holidays 2026 with a long weekend?",
+            "answer": "May 1 falls on a Friday, and October 26 lands on a Monday, so both make three-day weekends. Christmas 2026 is also convenient: December 25 is a Friday, December 26 a Saturday."
+      },
+      {
+            "question": "Do all Austrian states observe the same holidays?",
+            "answer": "The 13 national ones apply everywhere. A few states add one local day, like St. Rupert in Salzburg, but the differences are small compared with Germany's federal patchwork."
+      }
+],
+    content: `
+      <p>Austria and Germany share a language, a border, and a lot of history, but not the same holiday calendar. Austria keeps <strong>austria public holidays</strong> at 13 national days a year, four more than Germany's federal floor. This guide walks through every austria holidays 2026 date, explains the österreich feiertage newcomers always trip on, and shows where the two neighbours actually differ.</p>
+      <h2>Why Austria has more holidays than Germany</h2>
+      <p>Both countries are federal, but they split holiday law differently. Germany leaves most days to the Lander, so only a handful are national. Austria does the reverse: it locks 13 days at the federal level and adds almost nothing locally. The result is a country where the whole calendar is the same everywhere, which makes planning easier and surprises rarer.</p>
+      <p>The extra days are mostly church feasts. Epiphany on January 6, Corpus Christi in June, Assumption on August 15, All Saints on November 1, and the Immaculate Conception on December 8 all count as national holidays in Austria. In Germany these are regional or not observed at all.</p>
+      <h2>The complete austria holidays 2026 list</h2>
+      <ul>
+      <li>Jan 1 (Thu): New Year's Day</li>
+      <li>Jan 6 (Tue): Epiphany</li>
+      <li>Apr 6 (Mon): Easter Monday</li>
+      <li>May 1 (Fri): Labour Day</li>
+      <li>May 14 (Thu): Ascension Day</li>
+      <li>May 25 (Mon): Whit Monday</li>
+      <li>Jun 4 (Thu): Corpus Christi</li>
+      <li>Aug 15 (Sat): Assumption Day</li>
+      <li>Oct 26 (Mon): National Day</li>
+      <li>Nov 1 (Sun): All Saints' Day</li>
+      <li>Dec 8 (Tue): Immaculate Conception</li>
+      <li>Dec 25 (Fri): Christmas Day</li>
+      <li>Dec 26 (Sat): St. Stephen's Day</li>
+      </ul>
+      <p>That is thirteen days, and Austria rarely shops for bridge days the way Germany does, because many of them already fall next to weekends in 2026. May 1 on a Friday and October 26 on a Monday hand you two free long weekends with zero planning.</p>
+      <h2>Germany vs Austria: the real differences</h2>
+      <p>Germany's national days are New Year, Good Friday, Easter Monday, Labour Day, Ascension, Whit Monday, German Unity Day (Oct 3), Christmas, and St. Stephen's Day. Austria swaps German Unity Day for October 26, and adds Epiphany, Corpus Christi, Assumption, All Saints, and December 8. Good Friday in Austria is only a holiday for members of certain churches, not the general public, which surprises visitors from Protestant Germany.</p>
+      <p>Regionally, Austria is boring in a good way. Salzburg adds St. Rupert's Day in late September, and a couple of states observe local patron feasts, but the national 13 cover you everywhere. Compare that with Germany, where you need a map to know if a Tuesday is a holiday in your state.</p>
+      <h2>How to check any date in seconds</h2>
+      <p>Do not memorise the list; check it. Open public-holidays.shop, pick Austria, and you get the full year with each day marked national or regional. Filter by month, check a specific date, and look for bridge days before you book anything. Banks and post offices close on national holidays, supermarkets mostly follow, and tourist towns in Vienna and Salzburg keep restaurants running.</p>
+      <p>One tip: December 8 is a Tuesday in 2026, and many Austrians take December 7 as an extra day off to make a four-day gap. If you travel that week, expect city centres quieter than usual from Monday afternoon.</p><h2>FAQ</h2>
+      <p><strong>How many public holidays does Austria have?</strong> Thirteen national public holidays, among the most in Europe. German speakers say österreich feiertage; the list includes church feasts Germany does not observe, like Epiphany and Corpus Christi.</p>
+      <p><strong>What is Austria's National Day?</strong> October 26, marking the 1955 law that made Austria permanently neutral. Germany celebrates October 3 instead, which is one of the biggest calendar differences between the two countries.</p>
+      <p><strong>When are austria holidays 2026 with a long weekend?</strong> May 1 falls on a Friday, and October 26 lands on a Monday, so both make three-day weekends. Christmas 2026 is also convenient: December 25 is a Friday, December 26 a Saturday.</p>
+      <p><strong>Do all Austrian states observe the same holidays?</strong> The 13 national ones apply everywhere. A few states add one local day, like St. Rupert in Salzburg, but the differences are small compared with Germany's federal patchwork.</p>
+    `,
+  },
+  {
+    id: 142,
+    title: "奥地利公共假日：与德国很不同？",
+    slug: "austria-public-holidays",
+    category: "guide",
+    author: "PubHoliday 研究团队",
+    publishedDate: "2026-08-16T08:00:00Z",
+    lastModified: "2026-08-16T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/austria-public-holidays.svg",
+    excerpt: "奥地利每年有 13 个全国性公共假日，比德国多好几个。这篇奥地利公共假日指南列全 austria holidays 2026 日期、对比德奥两国日历，并讲清哪些 österreich feiertage 全国通用。",
+    relatedCountries: ["AT"],
+    locale: "zh",
+    faq: [
+      {
+            "question": "奥地利一年有多少个公共假日？",
+            "answer": "全国统一 13 个，属于欧洲最多的那一档。德语叫 österreich feiertage，里面包含德国不统一放的宗教节日，比如主显节、圣体节。"
+      },
+      {
+            "question": "奥地利国庆日是哪天？",
+            "answer": "10 月 26 日，纪念 1955 年通过永久中立法。德国则是 10 月 3 日，这是两国日历上最大的差异之一。"
+      },
+      {
+            "question": "austria holidays 2026 有哪些长周末？",
+            "answer": "五一落在周五、10 月 26 日落在周一，都自带三连休。圣诞 2026 也很友好：12 月 25 日周五、12 月 26 日周六。"
+      },
+      {
+            "question": "奥地利各州放假日一样吗？",
+            "answer": "13 个全国假日全州通用，个别州加放一天本地节日（比如萨尔茨堡的圣鲁珀特日），差异比德国那种「各州大杂烩」小得多。"
+      }
+],
+    content: `
+      <p>奥地利和德国共用一门语言、一条国境线和一堆历史，但放假日历并不相同。奥地利把 <strong>austria public holidays</strong> 固定为每年 13 个全国性假日，比德国全国统一的那几个多出不少。这篇把 austria holidays 2026 的每个日期列出来，解释哪些 österreich feiertage 是新手最容易踩坑的，再讲清楚两个邻国到底差在哪。</p>
+      <h2>为什么奥地利假日比德国多</h2>
+      <p>两国都是联邦制，但放假立法切法不同。德国把大多数假日留给各州决定，全国统一的很少；奥地利反过来，把 13 天锁在联邦层面，州里几乎不再加码。结果就是：奥地利的假日日历全境一致，规划起来省心，踩雷概率小。</p>
+      <p>多出来的主要是教会节日：1 月 6 日主显节、6 月圣体节、8 月 15 日圣母升天节、11 月 1 日万圣节、12 月 8 日圣母无染原罪节，在奥地利都是全国假日，在德国要么各州自定，要么干脆不放。</p>
+      <h2>austria holidays 2026 完整清单</h2>
+      <ul>
+      <li>1 月 1 日（周四）：元旦</li>
+      <li>1 月 6 日（周二）：主显节</li>
+      <li>4 月 6 日（周一）：复活节周一</li>
+      <li>5 月 1 日（周五）：劳动节</li>
+      <li>5 月 14 日（周四）：耶稣升天节</li>
+      <li>5 月 25 日（周一）：圣灵降临节周一</li>
+      <li>6 月 4 日（周四）：圣体节</li>
+      <li>8 月 15 日（周六）：圣母升天节</li>
+      <li>10 月 26 日（周一）：国庆日</li>
+      <li>11 月 1 日（周日）：万圣节</li>
+      <li>12 月 8 日（周二）：圣母无染原罪节</li>
+      <li>12 月 25 日（周五）：圣诞节</li>
+      <li>12 月 26 日（周六）：圣斯蒂芬节</li>
+      </ul>
+      <p>一共 13 天。2026 年很多假日本身就贴着周末，奥地利人不用像德国那样费劲拼 bridge day：五一落在周五、10 月 26 日落在周一，两个免费三连休直接到手。</p>
+      <h2>德奥对比：真正的差别在哪</h2>
+      <p>德国全国统一放的是元旦、耶稣受难日、复活节周一、劳动节、耶稣升天节、圣灵降临节周一、10 月 3 日德国统一日、圣诞节、圣斯蒂芬节。奥地利把德国统一日换成了 10 月 26 日，再额外加上主显节、圣体节、圣母升天节、万圣节和 12 月 8 日。而耶稣受难日在奥地利只对特定教会成员放假，普通大众不放假，这一点常把德国来的游客搞懵。</p>
+      <p>州级层面，奥地利“无聊”得让人放心：萨尔茨堡加放一个 9 月底的圣鲁珀特日，个别州有自己的主保圣人日，但全国 13 天到哪都覆盖你。反观德国，想知道你所在的州周二放不放假，得先看地图。</p>
+      <h2>任何日期，几秒查清</h2>
+      <p>别背清单，查就完了。打开 public-holidays.shop，选奥地利，全年日历立刻出来，每个日期标注全国性或区域性。按月份筛选、查特定日期、订票前先看有没有长周末。银行和邮局全国假日关门，连锁超市多数跟着休，维也纳和萨尔茨堡的旅游区餐厅照常营业。</p>
+      <p>一个提醒：2026 年 12 月 8 日是周二，很多奥地利人会顺手把 12 月 7 日周一也休了，拼一个四连休。那周出行的话，周一下午开始市中心就会比平时安静。</p><h2>FAQ</h2>
+      <p><strong>奥地利一年有多少个公共假日？</strong> 全国统一 13 个，属于欧洲最多的那一档。德语叫 österreich feiertage，里面包含德国不统一放的宗教节日，比如主显节、圣体节。</p>
+      <p><strong>奥地利国庆日是哪天？</strong> 10 月 26 日，纪念 1955 年通过永久中立法。德国则是 10 月 3 日，这是两国日历上最大的差异之一。</p>
+      <p><strong>austria holidays 2026 有哪些长周末？</strong> 五一落在周五、10 月 26 日落在周一，都自带三连休。圣诞 2026 也很友好：12 月 25 日周五、12 月 26 日周六。</p>
+      <p><strong>奥地利各州放假日一样吗？</strong> 13 个全国假日全州通用，个别州加放一天本地节日（比如萨尔茨堡的圣鲁珀特日），差异比德国那种“各州大杂烩”小得多。</p>
+    `,
+  },
 ];
 
 
