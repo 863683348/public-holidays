@@ -66,7 +66,7 @@ export default async function ForTeamsPage({
   const featured = COUNTRIES.filter((c) => c.popular).slice(0, 8);
 
   const faqItems: FaqItem[] = [
-    { question: t("faq1Q"), answer: t("faq1A") },
+    { question: t("faq1Q"), answer: t("faq1A", { count: countryCount }) },
     { question: t("faq2Q"), answer: t("faq2A") },
     { question: t("faq3Q"), answer: t("faq3A") },
     { question: t("faq4Q"), answer: t("faq4A", { langs: langCount }) },
