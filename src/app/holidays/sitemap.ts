@@ -1,5 +1,4 @@
 import type { MetadataRoute } from "next";
-import { routing } from "@/i18n/routing";
 import { COUNTRIES, NO_DATA_COUNTRIES } from "@/lib/countries";
 import { getHolidays } from "@/lib/holidays";
 import { groupHolidays } from "@/lib/slug";
@@ -7,9 +6,8 @@ import { groupHolidays } from "@/lib/slug";
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
 
-// One holiday-detail URL per (country × holiday-slug × locale) for the CURRENT
-// year only (ADR-001 Q2) — roughly 15k URLs, well under the 50k/file limit.
-// Regenerated daily; upstream fetches are bounded and failure-tolerant.
+// 仅列出 en + zh 的节日详情 URL（与 generateStaticParams 保持一致，-83% 条目）。
+// 其他语言详情页走 dynamicParams 按需渲染；metadata alternates 保留全 12 语言链接。
 
 const CONCURRENCY = 10;
 
@@ -42,7 +40,7 @@ export default async function holidaysSitemap(): Promise<MetadataRoute.Sitemap> 
   const lastModified = new Date();
   for (const { code, slugs } of slugsByCountry) {
     for (const slug of slugs) {
-      for (const l of routing.locales) {
+      for (const l of ["en", "zh"]) {
         urls.push({
           url: `${SITE_URL}/${l}/${code}/${year}/${slug}`,
           lastModified,

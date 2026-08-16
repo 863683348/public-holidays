@@ -15,10 +15,9 @@ import HolidayDetailView from "@/components/HolidayDetailView";
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
 
-// FOT 友好预构建：12 语言 × Top20 市场 × 3 年（2026-2028）× 节日 ≈ 13.3K 页（原 ≈110K）。长尾走 dynamicParams 按需渲染 + 边缘缓存。
-// 仅预构建高价值 hero 集合；其余长尾（非 Top20 国家 / 更早年份）保持 dynamicParams=true，
-// 首次访问按需渲染后由 next.config 的 s-maxage=604800 在边缘缓存 7 天。不再用时间型 revalidate，
-// 避免 ISR Writes 超额；数据更新走 /api/revalidate 按需重建。
+// FOT 友好预构建：节日详情页仅预构建 en + zh（12 语言降至 2 语言，-83% 预构建量）。
+// 12 语言国家页/年份页仍保持全量（SEO 主战场，在 sitemap.ts 里）。
+// 长尾走 dynamicParams 按需渲染 + 边缘缓存；metadata 的 alternates 保留全 12 语言链接。
 
 const TOP_COUNTRIES = ["US","GB","CA","AU","DE","FR","ES","IT","NL","IE","SE","CH","AT","BE","PT","PL","JP","IN","BR","AE"];
 
@@ -38,7 +37,7 @@ export async function generateStaticParams() {
       } catch {
         continue; // 数据不可达国家跳过，避免整个构建失败
       }
-      for (const l of routing.locales) {
+      for (const l of ["en", "zh"]) {
         for (const g of groupHolidays(holidays)) {
           params.push({
             locale: l,
