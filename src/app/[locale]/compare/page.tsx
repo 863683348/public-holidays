@@ -7,10 +7,17 @@ import {
 } from "@/lib/compare";
 import { getHolidays } from "@/lib/holidays";
 import { COUNTRIES, getCountryName } from "@/lib/countries";
+import type { CompareViewMode } from "@/components/compare/shareUrl";
 import ShareBar from "@/components/compare/ShareBar";
 import MultiSelect from "@/components/compare/MultiSelect";
 import YearSwitcher from "@/components/compare/YearSwitcher";
-import CompareView from "@/components/compare/CompareView";
+import CompareLegend from "@/components/compare/CompareLegend";
+import ViewToggle from "@/components/compare/ViewToggle";
+import AllOffBlock from "@/components/compare/AllOffBlock";
+import NearMiss from "@/components/compare/NearMiss";
+import CompareSummary from "@/components/compare/CompareSummary";
+import CompareDensityStrip from "@/components/compare/CompareDensityStrip";
+import CompareMatrix from "@/components/compare/CompareMatrix";
 import AdSlot from "@/components/AdSlot";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
@@ -41,6 +48,23 @@ export async function generateMetadata({
   };
 }
 
+/**
+ * Months with at least one holiday across the selection — drives the
+ * density strip. Pure data, no DOM access.
+ */
+function computeActiveMonths(
+  countries: { holidays: { date: string }[] }[]
+): boolean[] {
+  const active = Array(12).fill(false) as boolean[];
+  for (const country of countries) {
+    for (const holiday of country.holidays) {
+      const monthIndex = Number(holiday.date.slice(5, 7)) - 1;
+      if (monthIndex >= 0 && monthIndex < 12) active[monthIndex] = true;
+    }
+  }
+  return active;
+}
+
 export default async function ComparePage({
   params,
   searchParams,
@@ -51,6 +75,8 @@ export default async function ComparePage({
   const { locale } = await params;
   const sp = await searchParams;
   const t = await getTranslations({ locale, namespace: "compare" });
+  const tCal = await getTranslations({ locale, namespace: "calendar" });
+  const months = tCal.raw("months") as string[];
 
   // Selection is driven entirely by the URL — UI mutations just re-navigate.
   const parsed = parseCompareParams(spParam(sp, "c"), spParam(sp, "y"));
@@ -81,7 +107,7 @@ export default async function ComparePage({
 
   const matrix = computeCompareMatrix(countries, selection.year);
   const viewParam = spParam(sp, "view");
-  const initialView: "auto" | "summary" | "matrix" =
+  const view: CompareViewMode =
     viewParam === "summary" || viewParam === "matrix" ? viewParam : "auto";
 
   const countryOptions = COUNTRIES.map((c) => ({
@@ -89,6 +115,17 @@ export default async function ComparePage({
     name: getCountryName(c.code, locale),
     nameEn: c.name,
   }));
+
+  // Layout rules for view + viewport:
+  //   auto   → mobile summary / desktop matrix (md:hidden summary, hidden md:block matrix)
+  //   summary → both viewports: summary only
+  //   matrix  → both viewports: matrix only
+  const showSummary = view !== "matrix";
+  const showMatrix = view !== "summary";
+  const summaryClass =
+    view === "auto" ? "md:hidden" : "block";
+  const matrixClass =
+    view === "auto" ? "hidden md:block" : "block";
 
   return (
     <div className="space-y-8">
@@ -107,7 +144,34 @@ export default async function ComparePage({
 
       <YearSwitcher codes={selection.codes} year={selection.year} />
 
-      <CompareView matrix={matrix} initialView={initialView} />
+      <div className="flex flex-wrap items-center justify-between gap-3">
+        <CompareLegend />
+        <ViewToggle view={view} codes={selection.codes} year={selection.year} />
+      </div>
+
+      {matrix.allOff.length > 0 ? (
+        <AllOffBlock matrix={matrix} locale={locale} />
+      ) : (
+        <NearMiss matrix={matrix} locale={locale} />
+      )}
+
+      {showSummary && (
+        <div className={summaryClass}>
+          <CompareSummary matrix={matrix} locale={locale} />
+        </div>
+      )}
+
+      {showMatrix && (
+        <div className={matrixClass}>
+          <CompareDensityStrip
+            active={computeActiveMonths(countries)}
+            months={months}
+          />
+          <div className="mt-4">
+            <CompareMatrix matrix={matrix} locale={locale} months={months} />
+          </div>
+        </div>
+      )}
 
       <AdSlot />
     </div>

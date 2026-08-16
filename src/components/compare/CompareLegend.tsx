@@ -1,13 +1,12 @@
-"use client";
-
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
 /**
  * Three-level highlight legend (all/some/none). Color is never the only
  * signal — the row badge + legend text carry the meaning too.
+ * Server component — no client JS needed for this static label group.
  */
-export default function CompareLegend() {
-  const t = useTranslations("compare");
+export default async function CompareLegend() {
+  const t = await getTranslations("compare");
   const items = [
     {
       label: t("legendAll"),

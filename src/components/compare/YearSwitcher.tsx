@@ -1,8 +1,6 @@
-"use client";
-
+import { getTranslations } from "next-intl/server";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { useTranslations } from "next-intl";
-import { useRouter } from "@/i18n/navigation";
+import { Link } from "@/i18n/navigation";
 import { MIN_YEAR, MAX_YEAR } from "@/lib/year-window";
 import { comparePath } from "./shareUrl";
 
@@ -13,55 +11,70 @@ const idle =
 const active = "border-[var(--brand)] bg-brand text-white";
 
 /**
- * Year chips in the 2000–2035 window (mirrors YearNav). Selecting a year
- * re-navigates so the server renders the matrix for that year.
+ * Server component. Year chips are anchor links that navigate the server-
+ * rendered compare page to the new year. No client JS is shipped — the
+ * Next.js router preloads the new RSC payload on hover.
  */
-export default function YearSwitcher({
+export default async function YearSwitcher({
   codes,
   year,
 }: {
   codes: string[];
   year: number;
 }) {
-  const t = useTranslations("compare");
-  const router = useRouter();
+  const t = await getTranslations("compare");
   const clamp = (y: number) => Math.min(MAX_YEAR, Math.max(MIN_YEAR, y));
   const windowYears = Array.from(
     new Set([year - 1, year, year + 1, year + 2].map(clamp))
   );
-  const go = (y: number) => router.replace(comparePath(codes, y));
-
   return (
-    <nav className="flex items-center justify-center gap-2" aria-label={t("yearLabel")}>
-      <button
-        type="button"
-        onClick={() => go(year - 1)}
-        disabled={year <= MIN_YEAR}
+    <nav
+      className="flex items-center justify-center gap-2"
+      aria-label={t("yearLabel")}
+    >
+      <Link
+        href={comparePath(codes, clamp(year - 1))}
         aria-label={t("prevYear", { year: year - 1 })}
-        className={`${base} ${idle} disabled:cursor-not-allowed disabled:opacity-40`}
+        aria-disabled={year <= MIN_YEAR ? "true" : undefined}
+        className={`${base} ${idle} ${
+          year <= MIN_YEAR ? "pointer-events-none cursor-not-allowed opacity-40" : ""
+        }`}
       >
         <ChevronLeft size={16} aria-hidden className="rtl:rotate-180" />
-      </button>
-      {windowYears.map((y) => (
-        <button
-          key={y}
-          type="button"
-          onClick={() => go(y)}
-          aria-current={y === year ? "true" : undefined}
-          className={`${base} ${y === year ? active : idle}`}
-        >
-          {y}
-        </button>
-      ))}
-      <button
-        type="button"
-        onClick={() => go(year + 1)}
-        disabled={year >= MAX_YEAR}
+      </Link>
+      {windowYears.map((y) => {
+        const isActive = y === year;
+        if (isActive) {
+          return (
+            <span
+              key={y}
+              aria-current="true"
+              className={`${base} ${active}`}
+            >
+              {y}
+            </span>
+          );
+        }
+        return (
+          <Link
+            key={y}
+            href={comparePath(codes, y)}
+            className={`${base} ${idle}`}
+          >
+            {y}
+          </Link>
+        );
+      })}
+      <Link
+        href={comparePath(codes, clamp(year + 1))}
         aria-label={t("nextYear", { year: year + 1 })}
-        className={`${base} ${idle} disabled:cursor-not-allowed disabled:opacity-40`}
+        aria-disabled={year >= MAX_YEAR ? "true" : undefined}
+        className={`${base} ${idle} ${
+          year >= MAX_YEAR ? "pointer-events-none cursor-not-allowed opacity-40" : ""
+        }`}
       >
         <ChevronRight size={16} aria-hidden className="rtl:rotate-180" />
-      </button>
+      </Link>
     </nav>
   );
 }

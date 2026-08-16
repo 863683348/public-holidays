@@ -1,7 +1,4 @@
-"use client";
-
-import { useMemo } from "react";
-import { useLocale, useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { Users, Check } from "lucide-react";
 import type { CompareMatrix as CompareMatrixData } from "@/lib/compare";
 import type { Holiday } from "@/lib/types";
@@ -10,46 +7,37 @@ import { formatDateParts } from "./shareUrl";
 const cellBase = "px-3 py-1.5 align-top border-b border-[var(--border)]";
 
 /**
- * Full comparison matrix: rows = dates where ≥1 selected country has a
- * holiday (date-union, UTC), columns = selected countries. Common-holiday
- * rows are highlighted (L1 = some countries, L2 = every country) and the
- * sticky date column carries the level badge — color is never the only signal.
+ * Server component. Builds the comparison table directly — no useMemo, no
+ * client hooks. Sorting / grouping runs once at render time, no React state.
  */
-export default function CompareMatrix({
+export default async function CompareMatrix({
   matrix,
+  locale,
+  months,
 }: {
   matrix: CompareMatrixData;
+  locale: string;
+  months: string[];
 }) {
-  const t = useTranslations("compare");
-  const tCal = useTranslations("calendar");
-  const months = tCal.raw("months") as string[];
+  const t = await getTranslations("compare");
 
-  const holidayMaps = useMemo(
-    () =>
-      matrix.countries.map((c) => {
-        const map = new Map<string, Holiday>();
-        for (const h of c.holidays) map.set(h.date, h);
-        return map;
-      }),
-    [matrix.countries]
-  );
+  const holidayMaps = matrix.countries.map((c) => {
+    const map = new Map<string, Holiday>();
+    for (const h of c.holidays) map.set(h.date, h);
+    return map;
+  });
 
-  const sortedDates = useMemo(() => {
-    const set = new Set<string>();
-    for (const c of matrix.countries) for (const h of c.holidays) set.add(h.date);
-    return [...set].sort();
-  }, [matrix.countries]);
+  const dateSet = new Set<string>();
+  for (const c of matrix.countries) for (const h of c.holidays) dateSet.add(h.date);
+  const sortedDates = [...dateSet].sort();
 
-  const monthGroups = useMemo(() => {
-    const groups: { month: number; dates: string[] }[] = [];
-    for (const date of sortedDates) {
-      const m = Number(date.slice(5, 7)) - 1;
-      const last = groups[groups.length - 1];
-      if (!last || last.month !== m) groups.push({ month: m, dates: [date] });
-      else last.dates.push(date);
-    }
-    return groups;
-  }, [sortedDates]);
+  const monthGroups: { month: number; dates: string[] }[] = [];
+  for (const date of sortedDates) {
+    const m = Number(date.slice(5, 7)) - 1;
+    const last = monthGroups[monthGroups.length - 1];
+    if (!last || last.month !== m) monthGroups.push({ month: m, dates: [date] });
+    else last.dates.push(date);
+  }
 
   if (monthGroups.length === 0) {
     return (
@@ -89,161 +77,112 @@ export default function CompareMatrix({
             ))}
           </tr>
         </thead>
-        {monthGroups.map((group) => (
-          <MonthSection
-            key={group.month}
-            id={`compare-month-${group.month}`}
-            monthName={months[group.month]}
-            dates={group.dates}
-            countries={matrix.countries}
-            holidayMaps={holidayMaps}
-          />
-        ))}
+        {monthGroups.map((group) => {
+          const total = matrix.countries.length;
+          const sharedCount = group.dates.filter(
+            (d) => holidayMaps.filter((m) => m.has(d)).length >= 2
+          ).length;
+          return (
+            <tbody key={group.month} id={`compare-month-${group.month}`}>
+              <tr>
+                <th
+                  colSpan={matrix.countries.length + 1}
+                  scope="colgroup"
+                  className="border-b border-[var(--border)] bg-[var(--card)] px-3 py-2 text-start"
+                >
+                  <span className="flex items-center gap-2 text-sm font-semibold">
+                    {months[group.month]}
+                    {sharedCount > 0 && (
+                      <span className="inline-flex items-center rounded-full bg-[var(--highlight)] px-2 py-0.5 text-xs text-[var(--fg)]">
+                        {t("commonThisMonth", { count: sharedCount })}
+                      </span>
+                    )}
+                  </span>
+                </th>
+              </tr>
+              {group.dates.map((date) => {
+                const count = holidayMaps.filter((m) => m.has(date)).length;
+                const level = count === total ? 2 : count >= 2 ? 1 : 0;
+                const parts = formatDateParts(date, locale);
+                const rowBg =
+                  level === 2
+                    ? "bg-[var(--highlight-strong)]"
+                    : level === 1
+                      ? "bg-[var(--highlight)]"
+                      : "";
+                const dateCellCls =
+                  `sticky start-0 z-10 ${cellBase} bg-[var(--bg)]` +
+                  (level === 2
+                    ? " border-s-2 border-[var(--brand)]"
+                    : level === 1
+                      ? " border-s-2 border-[var(--brand)]/50"
+                      : "");
+                return (
+                  <tr key={date}>
+                    <th scope="row" className={`${dateCellCls} text-start`}>
+                      <span className="block font-semibold">{parts.monthDay}</span>
+                      <span className="block text-xs text-[var(--muted)]">{parts.weekday}</span>
+                      {level === 2 && (
+                        <span className="mt-1 inline-flex items-center gap-1 rounded-full bg-brand px-1.5 py-0.5 text-[10px] font-semibold text-brand-fg">
+                          <Check size={10} aria-hidden />
+                          {t("legendAll")}
+                        </span>
+                      )}
+                      {level === 1 && (
+                        <span className="mt-1 inline-flex items-center gap-1 text-[10px] font-semibold text-[var(--muted)]">
+                          <Users size={10} aria-hidden />
+                          {t("legendSome")}
+                        </span>
+                      )}
+                    </th>
+                    {matrix.countries.map((country, i) => {
+                      const holiday = holidayMaps[i].get(date);
+                      return (
+                        <td
+                          key={country.code}
+                          className={`${cellBase} ${rowBg}`}
+                          aria-label={
+                            holiday
+                              ? t("ariaHolidayCell", {
+                                  date,
+                                  holiday: holiday.name,
+                                  country: country.name,
+                                })
+                              : t("noHoliday")
+                          }
+                        >
+                          {holiday ? (
+                            <span
+                              className="block max-w-[10rem] truncate"
+                              title={holiday.name}
+                            >
+                              {holiday.localName || holiday.name}
+                            </span>
+                          ) : (
+                            <span aria-hidden className="text-[var(--muted)]">
+                              —
+                            </span>
+                          )}
+                        </td>
+                      );
+                    })}
+                  </tr>
+                );
+              })}
+              {sharedCount === 0 && (
+                <tr>
+                  <td
+                    colSpan={matrix.countries.length + 1}
+                    className="px-3 py-2 text-sm text-[var(--muted)]"
+                  >
+                    {t("monthlyNoShared")}
+                  </td>
+                </tr>
+              )}
+            </tbody>
+          );
+        })}
       </table>
     </div>
-  );
-}
-
-function MonthSection({
-  id,
-  monthName,
-  dates,
-  countries,
-  holidayMaps,
-}: {
-  id: string;
-  monthName: string;
-  dates: string[];
-  countries: CompareMatrixData["countries"];
-  holidayMaps: Map<string, Holiday>[];
-}) {
-  const t = useTranslations("compare");
-  const total = countries.length;
-  const sharedCount = dates.filter(
-    (d) => holidayMaps.filter((m) => m.has(d)).length >= 2
-  ).length;
-
-  return (
-    <tbody id={id}>
-      <tr>
-        <th
-          colSpan={countries.length + 1}
-          scope="colgroup"
-          className="border-b border-[var(--border)] bg-[var(--card)] px-3 py-2 text-start"
-        >
-          <span className="flex items-center gap-2 text-sm font-semibold">
-            {monthName}
-            {sharedCount > 0 && (
-              <span className="inline-flex items-center rounded-full bg-[var(--highlight)] px-2 py-0.5 text-xs text-[var(--fg)]">
-                {t("commonThisMonth", { count: sharedCount })}
-              </span>
-            )}
-          </span>
-        </th>
-      </tr>
-      {dates.map((date) => (
-        <DateRow
-          key={date}
-          date={date}
-          countries={countries}
-          holidayMaps={holidayMaps}
-          total={total}
-        />
-      ))}
-      {sharedCount === 0 && (
-        <tr>
-          <td
-            colSpan={countries.length + 1}
-            className="px-3 py-2 text-sm text-[var(--muted)]"
-          >
-            {t("monthlyNoShared")}
-          </td>
-        </tr>
-      )}
-    </tbody>
-  );
-}
-
-function DateRow({
-  date,
-  countries,
-  holidayMaps,
-  total,
-}: {
-  date: string;
-  countries: CompareMatrixData["countries"];
-  holidayMaps: Map<string, Holiday>[];
-  total: number;
-}) {
-  const t = useTranslations("compare");
-  const locale = useLocale();
-  const count = holidayMaps.filter((m) => m.has(date)).length;
-  const level = count === total ? 2 : count >= 2 ? 1 : 0;
-  const parts = formatDateParts(date, locale);
-  const rowBg =
-    level === 2
-      ? "bg-[var(--highlight-strong)]"
-      : level === 1
-        ? "bg-[var(--highlight)]"
-        : "";
-  // Sticky date cell needs an opaque backdrop (no bleed while scrolling).
-  const dateCellCls =
-    `sticky start-0 z-10 ${cellBase} bg-[var(--bg)]` +
-    (level === 2
-      ? " border-s-2 border-[var(--brand)]"
-      : level === 1
-        ? " border-s-2 border-[var(--brand)]/50"
-        : "");
-
-  return (
-    <tr>
-      <th scope="row" className={`${dateCellCls} text-start`}>
-        <span className="block font-semibold">{parts.monthDay}</span>
-        <span className="block text-xs text-[var(--muted)]">{parts.weekday}</span>
-        {level === 2 && (
-          <span className="mt-1 inline-flex items-center gap-1 rounded-full bg-brand px-1.5 py-0.5 text-[10px] font-semibold text-brand-fg">
-            <Check size={10} aria-hidden />
-            {t("legendAll")}
-          </span>
-        )}
-        {level === 1 && (
-          <span className="mt-1 inline-flex items-center gap-1 text-[10px] font-semibold text-[var(--muted)]">
-            <Users size={10} aria-hidden />
-            {t("legendSome")}
-          </span>
-        )}
-      </th>
-      {countries.map((country, i) => {
-        const holiday = holidayMaps[i].get(date);
-        return (
-          <td
-            key={country.code}
-            className={`${cellBase} ${rowBg}`}
-            aria-label={
-              holiday
-                ? t("ariaHolidayCell", {
-                    date,
-                    holiday: holiday.name,
-                    country: country.name,
-                  })
-                : t("noHoliday")
-            }
-          >
-            {holiday ? (
-              <span
-                className="block max-w-[10rem] truncate"
-                title={holiday.name}
-              >
-                {holiday.localName || holiday.name}
-              </span>
-            ) : (
-              <span aria-hidden className="text-[var(--muted)]">
-                —
-              </span>
-            )}
-          </td>
-        );
-      })}
-    </tr>
   );
 }

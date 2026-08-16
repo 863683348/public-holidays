@@ -1,7 +1,4 @@
-"use client";
-
-import { useMemo } from "react";
-import { useLocale, useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { CalendarX2 } from "lucide-react";
 import type { CompareMatrix as CompareMatrixData } from "@/lib/compare";
 import { formatDateParts } from "./shareUrl";
@@ -10,46 +7,41 @@ const chip =
   "inline-flex items-center rounded-full border border-[var(--border)] bg-[var(--bg)] px-2.5 py-0.5 text-xs text-[var(--fg)]";
 
 /**
- * Near-miss state (SPEC-002 §2d): when NO date is shared by every selected
- * country (allOff = []), surface the dates shared by the MOST countries
- * instead of rendering a bare empty grid. `max` < total by construction here —
- * CompareView only renders this when matrix.allOff is empty.
+ * Server component. Pure data → JSX, no hooks, no client JS shipped.
  */
-export default function NearMiss({ matrix }: { matrix: CompareMatrixData }) {
-  const t = useTranslations("compare");
-  const locale = useLocale();
+export default async function NearMiss({
+  matrix,
+  locale,
+}: {
+  matrix: CompareMatrixData;
+  locale: string;
+}) {
+  const t = await getTranslations("compare");
   const { year, countries } = matrix;
 
-  const groups = useMemo(() => {
-    const countByDate = new Map<string, number>();
-    const codesByDate = new Map<string, string[]>();
-    for (const c of countries) {
-      for (const h of c.holidays) {
-        countByDate.set(h.date, (countByDate.get(h.date) ?? 0) + 1);
-        const codes = codesByDate.get(h.date) ?? [];
-        codes.push(c.code);
-        codesByDate.set(h.date, codes);
-      }
+  const countByDate = new Map<string, number>();
+  const codesByDate = new Map<string, string[]>();
+  for (const c of countries) {
+    for (const h of c.holidays) {
+      countByDate.set(h.date, (countByDate.get(h.date) ?? 0) + 1);
+      const codes = codesByDate.get(h.date) ?? [];
+      codes.push(c.code);
+      codesByDate.set(h.date, codes);
     }
-    let max = 1;
-    for (const count of countByDate.values()) if (count > max) max = count;
-    const best: { date: string; codes: string[] }[] = [];
-    for (const [date, count] of countByDate) {
-      if (count === max && count >= 2) {
-        best.push({ date, codes: codesByDate.get(date) ?? [] });
-      }
+  }
+  let max = 1;
+  for (const count of countByDate.values()) if (count > max) max = count;
+  const best: { date: string; codes: string[] }[] = [];
+  for (const [date, count] of countByDate) {
+    if (count === max && count >= 2) {
+      best.push({ date, codes: codesByDate.get(date) ?? [] });
     }
-    best.sort((a, b) => a.date.localeCompare(b.date));
-    return { max, best };
-  }, [countries]);
+  }
+  best.sort((a, b) => a.date.localeCompare(b.date));
 
-  const namesByCode = useMemo(
-    () => new Map(countries.map((c) => [c.code, c.name])),
-    [countries]
-  );
+  const namesByCode = new Map(countries.map((c) => [c.code, c.name]));
 
-  // No two countries share a single day — nothing to salvage, show guidance.
-  if (groups.best.length === 0) {
+  if (best.length === 0) {
     return (
       <section
         aria-labelledby="compare-near-miss-heading"
@@ -83,7 +75,7 @@ export default function NearMiss({ matrix }: { matrix: CompareMatrixData }) {
       </h2>
       <p className="mt-1 text-sm text-[var(--muted)]">{t("nearMissPrefix")}</p>
       <ul className="mt-3 space-y-2">
-        {groups.best.map((row) => {
+        {best.map((row) => {
           const parts = formatDateParts(row.date, locale);
           return (
             <li

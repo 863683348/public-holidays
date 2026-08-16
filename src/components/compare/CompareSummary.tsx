@@ -1,7 +1,4 @@
-"use client";
-
-import { useMemo } from "react";
-import { useLocale, useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import type { CompareMatrix as CompareMatrixData } from "@/lib/compare";
 import { formatDateParts } from "./shareUrl";
 
@@ -9,41 +6,37 @@ const chip =
   "inline-flex items-center rounded-full border border-[var(--border)] bg-[var(--bg)] px-2.5 py-0.5 text-xs text-[var(--fg)]";
 
 /**
- * Mobile-first simplified view: only the high-value shared days (≥2 selected
- * countries off). No horizontal scroll — a vertical, scannable list.
+ * Server component. Computes rows from `countries` directly (no useMemo —
+ * data never re-renders within a render pass), formats dates via plain
+ * Intl.DateTimeFormat so no client hooks are needed.
  */
-export default function CompareSummary({
+export default async function CompareSummary({
   matrix,
+  locale,
 }: {
   matrix: CompareMatrixData;
+  locale: string;
 }) {
-  const t = useTranslations("compare");
-  const locale = useLocale();
+  const t = await getTranslations("compare");
   const { year, countries } = matrix;
 
-  const rows = useMemo(() => {
-    const countByDate = new Map<string, number>();
-    const codesByDate = new Map<string, string[]>();
-    for (const c of countries) {
-      for (const h of c.holidays) {
-        countByDate.set(h.date, (countByDate.get(h.date) ?? 0) + 1);
-        const codes = codesByDate.get(h.date) ?? [];
-        codes.push(c.code);
-        codesByDate.set(h.date, codes);
-      }
+  const countByDate = new Map<string, number>();
+  const codesByDate = new Map<string, string[]>();
+  for (const c of countries) {
+    for (const h of c.holidays) {
+      countByDate.set(h.date, (countByDate.get(h.date) ?? 0) + 1);
+      const codes = codesByDate.get(h.date) ?? [];
+      codes.push(c.code);
+      codesByDate.set(h.date, codes);
     }
-    const out: { date: string; codes: string[] }[] = [];
-    for (const [date, count] of countByDate) {
-      if (count >= 2) out.push({ date, codes: codesByDate.get(date) ?? [] });
-    }
-    out.sort((a, b) => a.date.localeCompare(b.date));
-    return out;
-  }, [countries]);
+  }
+  const rows: { date: string; codes: string[] }[] = [];
+  for (const [date, count] of countByDate) {
+    if (count >= 2) rows.push({ date, codes: codesByDate.get(date) ?? [] });
+  }
+  rows.sort((a, b) => a.date.localeCompare(b.date));
 
-  const namesByCode = useMemo(
-    () => new Map(countries.map((c) => [c.code, c.name])),
-    [countries]
-  );
+  const namesByCode = new Map(countries.map((c) => [c.code, c.name]));
 
   if (rows.length === 0) {
     return (
