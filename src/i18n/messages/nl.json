@@ -70,7 +70,8 @@
     "topHolidays": "Belangrijkste nationale feestdagen",
     "relatedCountries": "Gerelateerde landen",
     "compareWith": "Vergelijk {name} met andere landen",
-    "details": "Meer details"
+    "details": "Meer details",
+    "whyDifferent": "Waarom {name} anders is"
   },
   "longWeekend": {
     "natural": "Lang weekend",

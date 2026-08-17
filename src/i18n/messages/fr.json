@@ -70,7 +70,8 @@
     "topHolidays": "Principaux jours fériés",
     "relatedCountries": "Pays associés",
     "compareWith": "Comparer {name} avec d'autres pays",
-    "details": "Détails"
+    "details": "Détails",
+    "whyDifferent": "Pourquoi {name} est différent"
   },
   "longWeekend": {
     "natural": "Long week-end",

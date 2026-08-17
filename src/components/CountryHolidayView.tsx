@@ -9,6 +9,7 @@ import {
   COUNTRIES,
   getCountry,
   getCountryName,
+  getCountryInsight,
   getHolidayPageTitle,
   getHolidayPageDescription,
   getDemonym,
@@ -410,6 +411,29 @@ export default async function CountryHolidayView({
           )}
         </section>
       )}
+
+      {/* Country insight — curated "Why X is different" copy for A-tier markets.
+          Adds non-duplicated topical content + a deep internal link to the
+          country's own year view (crawl path for the freshest page). */}
+      {(() => {
+        const insight = getCountryInsight(country);
+        if (!insight) return null;
+        const linkYear = insight.linkYear(year);
+        return (
+          <section className="space-y-3">
+            <h2 className="text-xl font-semibold">{t("whyDifferent", { name: countryName })}</h2>
+            <p className="text-[var(--muted)] leading-relaxed text-sm">{insight.why}</p>
+            <p className="text-sm">
+              <Link
+                href={`/${country}/${linkYear}`}
+                className="font-medium text-brand hover:underline"
+              >
+                {insight.keyword} {linkYear} →
+              </Link>
+            </p>
+          </section>
+        );
+      })()}
 
       <section className="space-y-3">
         <h2 className="text-xl font-semibold">{t("holidays")}</h2>

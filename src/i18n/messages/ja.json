@@ -70,7 +70,8 @@
     "topHolidays": "主な祝日",
     "relatedCountries": "関連する国",
     "compareWith": "{name}を他国と比較",
-    "details": "詳細"
+    "details": "詳細",
+    "whyDifferent": "{name}の祝日が特別な理由"
   },
   "longWeekend": {
     "natural": "連休",

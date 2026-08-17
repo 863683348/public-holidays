@@ -481,4 +481,46 @@ export function getOfficialSource(code: string): string | undefined {
   return c ? OFFICIAL_SOURCES[c.code.toUpperCase()] : undefined;
 }
 
+// Curated, country-specific insight copy for the high-potential markets
+// (A-tier pages: /en/AT, /en/SE, /en/BR, /en/GB). Rendered as a "Why X is
+// different" block on the country landing page — turns the template page into
+// differentiated content, adds topical keywords for the target market, and
+// carries an internal link to the page's own year view (deep-link for crawlers).
+//
+// `why`: 2-3 sentences of factual, non-duplicated insight (bridges / regional
+//        days / unique traditions / transfer rules) — E-E-A-T friendly.
+// `keyword`: the market's native search phrasing (used in the link anchor).
+// `linkYear`: the year segment to deep-link to (current-year page gets the
+//             freshest content; crawlers follow the anchor).
+export const COUNTRY_INSIGHTS: Record<
+  string,
+  { why: string; keyword: string; linkYear: (year: number) => number }
+> = {
+  AT: {
+    why: "Austrian public holidays are notable for their strong regional character: nine of the thirteen nationwide days are shared with the whole country, but each Bundesland adds its own local days such as the Heiliger Leopold in Lower Austria. Bridge days (Zwickeltage) matter here more than almost anywhere else in Europe, because many workers take a single day off to create a long weekend around a Tuesday or Thursday holiday.",
+    keyword: "Feiertage Österreich",
+    linkYear: (y) => y + 1,
+  },
+  SE: {
+    why: "Swedish public holidays include several unique traditions you will not find elsewhere: Midsummer (Midsommardagen) is the biggest celebration of the year, the National Day was only made a full public holiday in 2005, and many holidays like Epiphany and All Saints' Day are flanked by 'squeeze days' (klämdagar) when most Swedes take a single day off to extend the break. Public holidays that fall on a weekend are not automatically moved to the next working day, unlike in many other countries.",
+    keyword: "helgdagar Sverige",
+    linkYear: (y) => y + 1,
+  },
+  BR: {
+    why: "Brazilian public holidays mix civic and religious days, with Carnaval (the Monday and Tuesday before Ash Wednesday) being the most distinctive — it is widely observed in practice even though it is not an official nationwide public holiday. Several days are 'movable' (calculated from Easter), so the exact dates change every year. Banks and federal offices follow the official calendar, while many states and municipalities add their own local holidays.",
+    keyword: "feriados Brasil",
+    linkYear: (y) => y + 1,
+  },
+  GB: {
+    why: "The UK runs on a system of bank holidays set by royal proclamation rather than fixed statute, so the dates shift every year — the May Day holiday and the late-summer August bank holiday are always the first or last Monday of the month. Boxing Day (26 December) and the early May bank holiday are unique to the UK, and when Christmas or New Year falls on a weekend the holiday moves to the next working day (a 'substitute day').",
+    keyword: "UK bank holidays",
+    linkYear: (y) => y + 1,
+  },
+};
+
+/** Returns the curated insight for a country, or undefined for uncurated ones. */
+export function getCountryInsight(code: string): (typeof COUNTRY_INSIGHTS)[string] | undefined {
+  return COUNTRY_INSIGHTS[code.toUpperCase()];
+}
+
 export const POPULAR_COUNTRIES = COUNTRIES.filter((c) => c.popular);

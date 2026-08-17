@@ -70,7 +70,8 @@
     "topHolidays": "主要全国性假期",
     "relatedCountries": "相关国家",
     "compareWith": "将{name}与其他国家对比",
-    "details": "详情"
+    "details": "详情",
+    "whyDifferent": "为什么{name}的假期与众不同"
   },
   "longWeekend": {
     "natural": "长周末",

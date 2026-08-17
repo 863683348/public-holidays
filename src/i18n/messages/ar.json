@@ -71,7 +71,8 @@
     "topHolidays": "أهم العطلات الوطنية",
     "relatedCountries": "دول ذات صلة",
     "compareWith": "قارن {name} مع دول أخرى",
-    "details": "التفاصيل"
+    "details": "التفاصيل",
+    "whyDifferent": "لماذا {name} مختلف"
   },
   "longWeekend": {
     "natural": "عطلة نهاية أسبوع طويلة",

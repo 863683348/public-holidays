@@ -70,7 +70,8 @@
     "topHolidays": "Главные государственные праздники",
     "relatedCountries": "Связанные страны",
     "compareWith": "Сравнить {name} с другими странами",
-    "details": "Подробнее"
+    "details": "Подробнее",
+    "whyDifferent": "Чем {name} отличается"
   },
   "longWeekend": {
     "natural": "Длинные выходные",

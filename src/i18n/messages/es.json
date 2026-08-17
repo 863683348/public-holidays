@@ -70,7 +70,8 @@
     "topHolidays": "Principales festivos nacionales",
     "relatedCountries": "Países relacionados",
     "compareWith": "Comparar {name} con otros países",
-    "details": "Detalles"
+    "details": "Detalles",
+    "whyDifferent": "Por qué {name} es diferente"
   },
   "longWeekend": {
     "natural": "Fin de semana largo",
