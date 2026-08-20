@@ -13,6 +13,7 @@ export default function robots(): MetadataRoute.Robots {
     sitemap: [
       `${SITE_URL}/sitemap.xml`,
       `${SITE_URL}/holidays/sitemap.xml`,
+      `${SITE_URL}/blog/sitemap.xml`,
     ],
   };
 }
