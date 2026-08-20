@@ -3270,6 +3270,104 @@ export const BLOG_POSTS: BlogPost[] = [
       <p><strong>比利时各地区假日不一样吗？</strong> 10 个全国假日各地通用。部分市镇和语区有本地节日，但不像国家日历那样让店铺关门。</p>
     `,
   },
+  {
+    id: 145,
+    title: "South Korea Public Holidays: The Substitute Holiday System Explained",
+    slug: "south-korea-public-holidays",
+    category: "guide",
+    author: "Public Holidays Team",
+    publishedDate: "2026-08-21T08:00:00Z",
+    lastModified: "2026-08-21T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/south-korea-holidays.svg",
+    excerpt: "South Korea has one of the densest public holiday calendars in the world. What makes it unique is the 'substitute holiday' system — when a statutory holiday falls on a weekend, workers get a compensatory day off.",
+    relatedCountries: ["KR"],
+    locale: "en",
+    content: `
+      <p>South Korea has one of the densest public holiday calendars in the world, with over 160 holiday days annually when you count weekends and traditional observances. But what truly sets Korea's system apart is the "substitute holiday" (보충휴일) mechanism — when a statutory public holiday lands on a Saturday or Sunday, workers are entitled to a compensatory weekday off.</p>
+      <h2>How the Substitute Holiday System Works</h2>
+      <p>Under Korea's National Official Service Workday Regulations, if a public holiday coincides with a weekend, employees receive a compensatory workday. The rules are straightforward:</p>
+      <ul>
+        <li><strong>Holiday falls on Sunday:</strong> The following Monday becomes the substitute holiday</li>
+        <li><strong>Holiday falls on Saturday:</strong> The following Sunday becomes the substitute holiday</li>
+        <li><strong>Holiday falls on Friday:</strong> The following Monday may become a substitute holiday (in certain cases)</li>
+      </ul>
+      <h2>Major South Korean Public Holidays in 2026</h2>
+      <table>
+        <tr><th>Date</th><th>Holiday</th><th>English Name</th></tr>
+        <tr><td>Jan 1</td><td>신정</td><td>New Year's Day</td></tr>
+        <tr><td>Jan 29</td><td>설날</td><td>Lunar New Year's Day</td></tr>
+        <tr><td>Mar 1</td><td>삼일절</td><td>Independence Movement Day</td></tr>
+        <tr><td>Jun 6</td><td>현충일</td><td>Memorial Day</td></tr>
+        <tr><td>Aug 15</td><td>광복절</td><td>Liberation Day</td></tr>
+        <tr><td>Oct 3</td><td>개천절</td><td>Foundation Day</td></tr>
+        <tr><td>Oct 9</td><td>한글날</td><td>Hangul Day</td></tr>
+        <tr><td>Dec 25</td><td>성탄절</td><td>Christmas Day</td></tr>
+      </table>
+      <h2>The Lunar Calendar Complexity</h2>
+      <p>Korean Lunar New Year (설날) and Chuseok (추석, Korean Thanksgiving) follow the lunar calendar, so their dates shift every year. In 2026:</p>
+      <ul>
+        <li><strong>Lunar New Year:</strong> January 29 (Wednesday)</li>
+        <li><strong>Chuseok:</strong> September 26 (Saturday) — this will trigger a substitute holiday</li>
+      </ul>
+      <h2>Why Understanding Korean Holidays Matters</h2>
+      <p>For those living in or planning to visit South Korea, understanding public holidays helps you:</p>
+      <ol>
+        <li>Plan business trips around government office closures</li>
+        <li>Time travel visits to avoid peak holiday crowds</li>
+        <li>Understand workplace culture around rest rights in Korea</li>
+      </ol>
+      <p>For the full Korean holiday calendar, visit our <a href="https://public-holidays.shop/en/KR">South Korea holidays page</a>.</p>
+    `,
+  },
+  {
+    id: 145,
+    title: "韩国公共假日：代替休日制度解析",
+    slug: "south-korea-public-holidays",
+    category: "guide",
+    author: "Public Holidays Team",
+    publishedDate: "2026-08-21T08:00:00Z",
+    lastModified: "2026-08-21T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/south-korea-holidays.svg",
+    excerpt: "韩国是世界上公共假日最密集的国家之一，全年约 160 多个公休日。但真正让韩国假日体系独特的是'代替休日'制度——当法定假日落在周末时，政府会补发一个工作日作为替代假期。",
+    relatedCountries: ["KR"],
+    locale: "zh",
+    content: `
+      <p>韩国是世界上公共假日最密集的国家之一，全年约 160 多个公休日。但真正让韩国假日体系独特的是"代替休日"（보충휴일）制度——当法定假日落在周末时，政府会补发一个工作日作为替代假期。</p>
+      <h2>代替休日的规则</h2>
+      <p>根据韩国《国家公务员工作日规则》，如果公休日与周末重合，雇员有权获得一个补偿性工作日。具体规则如下：</p>
+      <ul>
+        <li><strong>公休日落在周日：</strong>周一为代替休日</li>
+        <li><strong>公休日落在周六：</strong>周日为代替休日</li>
+        <li><strong>公休日落在周五：</strong>周一为代替休日（部分情况）</li>
+      </ul>
+      <h2>2026 年韩国主要公休日</h2>
+      <table>
+        <tr><th>日期</th><th>假日名称</th><th>中文</th></tr>
+        <tr><td>1月1日</td><td>신정</td><td>元旦</td></tr>
+        <tr><td>1月29日</td><td>설날</td><td>春节（农历）</td></tr>
+        <tr><td>3月1日</td><td>삼일절</td><td>三一节（独立运动纪念日）</td></tr>
+        <tr><td>6月6日</td><td>현충일</td><td>显忠日（阵亡将士纪念日）</td></tr>
+        <tr><td>8月15日</td><td>광복절</td><td>光复节（解放纪念日）</td></tr>
+        <tr><td>10月3日</td><td>개천절</td><td>开天节（建国纪念日）</td></tr>
+        <tr><td>10月9日</td><td>한글날</td><td>韩文日（世宗大王创制训民正音）</td></tr>
+        <tr><td>12月25日</td><td>성탄절</td><td>圣诞节</td></tr>
+      </table>
+      <h2>农历假日的特殊性</h2>
+      <p>韩国的春节（설날）和中秋（추석）是农历假日，日期每年变化。2026 年：</p>
+      <ul>
+        <li><strong>春节：</strong>1月29日（周三）</li>
+        <li><strong>中秋：</strong>9月26日（周六）—— 将触发代替休日</li>
+      </ul>
+      <h2>为什么了解韩国公休日很重要</h2>
+      <p>对于在韩国生活或计划前往韩国旅行的人，了解公休日可以帮助：</p>
+      <ol>
+        <li>规划商务行程避开政府机构休息日</li>
+        <li>安排旅游避开拥挤的假日出行</li>
+        <li>理解韩国职场文化中的休息权</li>
+      </ol>
+      <p>完整韩国假日日历请访问我们的 <a href="https://public-holidays.shop/zh/KR">韩国假日页面</a>。</p>
+    `,
+  },
 ];
 
 
