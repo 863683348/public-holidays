@@ -1,7 +1,24 @@
+import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { auth } from "@/auth";
 import { getSubscriptionByEmail, isProActive } from "@/lib/subscriptions";
 import AccountClient from "./AccountClient";
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://public-holidays.shop";
+
+// Login/account page: user-scoped content, keep it out of the index but let
+// crawlers follow links. Canonical pinned to its own URL (not the locale root).
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return {
+    robots: { index: false, follow: true },
+    alternates: { canonical: `${SITE_URL}/${locale}/account` },
+  };
+}
 
 export default async function AccountPage({
   searchParams,

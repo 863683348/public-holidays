@@ -15,6 +15,7 @@ export async function generateMetadata({
   return {
     title: `${t("title")} — PubHoliday`,
     description: t("subtitle"),
+    alternates: { canonical: `${SITE_URL}/${locale}/pricing` },
     openGraph: {
       type: "website",
       title: `${t("title")} — PubHoliday`,
