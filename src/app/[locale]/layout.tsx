@@ -68,6 +68,7 @@ export async function generateMetadata({
     routing.locales.map((l) => [l, `${SITE_URL}/${l}`])
   );
   return {
+    metadataBase: new URL(SITE_URL),
     title,
     description,
     alternates: {
@@ -79,7 +80,9 @@ export async function generateMetadata({
       siteName: "PubHoliday",
       title,
       description,
-      url: `${SITE_URL}/${locale}`,
+      // No hard-coded og:url: metadataBase + pathname makes Next generate the
+      // correct absolute og:url per child page (e.g. /en/GB/2027) instead of
+      // every page inheriting a locale-only /en URL.
       locale,
     },
     twitter: {
