@@ -10,7 +10,7 @@ import AdSlot from "@/components/AdSlot";
 import TodayClockAside from "@/components/today/TodayClockAside";
 
 const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
+  process.env.NEXT_PUBLIC_SITE_URL || "https://public-holidays.shop";
 
 // O2 default freshness: 1 h. "Today" goes stale for half the planet within a
 // few hours (Asia-Pacific crosses midnight first), so hourly beats daily.

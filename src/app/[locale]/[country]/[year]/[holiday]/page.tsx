@@ -13,7 +13,7 @@ import { routing } from "@/i18n/routing";
 import HolidayDetailView from "@/components/HolidayDetailView";
 
 const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
+  process.env.NEXT_PUBLIC_SITE_URL || "https://public-holidays.shop";
 
 // FOT 友好预构建：节日详情页仅预构建 en + zh（12 语言降至 2 语言，-83% 预构建量）。
 // 12 语言国家页/年份页仍保持全量（SEO 主战场，在 sitemap.ts 里）。

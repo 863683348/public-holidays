@@ -3,7 +3,7 @@ import { routing } from "@/i18n/routing";
 import { COUNTRIES, NO_DATA_COUNTRIES } from "@/lib/countries";
 import { BLOG_POSTS } from "@/lib/blog-posts";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://public-holidays.shop";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const urls: MetadataRoute.Sitemap = [];

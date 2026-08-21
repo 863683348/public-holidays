@@ -4,7 +4,7 @@ import { getHolidays } from "@/lib/holidays";
 import { groupHolidays } from "@/lib/slug";
 
 const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
+  process.env.NEXT_PUBLIC_SITE_URL || "https://public-holidays.shop";
 
 // 仅列出 en + zh 的节日详情 URL（与 generateStaticParams 保持一致，-83% 条目）。
 // 其他语言详情页走 dynamicParams 按需渲染；metadata alternates 保留全 12 语言链接。

@@ -11,7 +11,7 @@ import {
 import { COUNTRIES } from "@/lib/countries";
 import { Link } from "@/i18n/navigation";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://public-holidays.shop";
 
 // HTML snippet builders — machine-consumed by third-party sites, so they stay
 // English by design; only the live country count is interpolated at render time

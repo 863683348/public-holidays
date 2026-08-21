@@ -22,6 +22,8 @@ jobs:
         run: npm ci
 
       - name: Build with OpenNext for Cloudflare
+        env:
+          NEXT_PUBLIC_SITE_URL: https://public-holidays.shop
         run: npx @opennextjs/cloudflare@latest build
 
       - name: Deploy to Cloudflare Workers

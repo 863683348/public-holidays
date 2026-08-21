@@ -7,7 +7,7 @@ import SubscribeButton from "@/components/SubscribeButton";
 import AdSlot from "@/components/AdSlot";
 import { getPostsByCategory } from "@/lib/blog-posts";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://public-holidays.shop";
 
 
 export async function generateMetadata({

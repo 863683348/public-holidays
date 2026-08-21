@@ -5,7 +5,7 @@ import { parseYear } from "@/lib/year-window";
 import { routing } from "@/i18n/routing";
 import CountryHolidayView from "@/components/CountryHolidayView";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://public-holidays.shop";
 
 // Pre-render 3 years (2026-2028) for every country/locale at build time.
 // Covers the high-value search window; earlier years render on-demand + edge cache.

@@ -30,7 +30,7 @@ import YearNav from "@/components/YearNav";
 import FaqAccordion from "@/components/FaqAccordion";
 import { Link } from "@/i18n/navigation";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://public-holidays.shop";
 
 /**
  * Shared holiday-page renderer for both the country landing page

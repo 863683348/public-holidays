@@ -19,7 +19,7 @@ import MobileMenu from "@/components/MobileMenu";
 import "../globals.css";
 import Footer from "@/components/Footer";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://public-holidays.shop";
 
 // BCP 47 language tag mapping for precise <html lang> attribute
 // URL path uses simple locale (e.g., "/en/"), but HTML lang gets precise tag (e.g., "en-US")

@@ -8,7 +8,7 @@ import AdSlot from "@/components/AdSlot";
 import { getCountry } from "@/lib/countries";
 import { getAllPosts, getCategories } from "@/lib/blog-posts";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://public-holidays.shop";
 
 // Revalidate daily to keep content fresh
 

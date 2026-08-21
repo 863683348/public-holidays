@@ -4,7 +4,7 @@ import { routing } from "@/i18n/routing";
 import LegalPage from "@/components/legal/LegalPage";
 import { faqPage } from "@/lib/seo";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://public-holidays.shop";
 
 
 export function generateStaticParams() {

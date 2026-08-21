@@ -16,7 +16,7 @@ import { breadcrumb, faqPage } from "@/lib/seo";
 import FaqAccordion, { type FaqItem } from "@/components/FaqAccordion";
 
 const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
+  process.env.NEXT_PUBLIC_SITE_URL || "https://public-holidays.shop";
 
 
 export function generateStaticParams() {

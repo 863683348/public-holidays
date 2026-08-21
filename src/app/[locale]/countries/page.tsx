@@ -5,7 +5,7 @@ import { COUNTRIES, POPULAR_COUNTRIES } from "@/lib/countries";
 import CountriesDirectory from "@/components/countries/CountriesDirectory";
 
 const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
+  process.env.NEXT_PUBLIC_SITE_URL || "https://public-holidays.shop";
 
 // Indexable SEO hub — content refreshes with the yearly dataset.
 

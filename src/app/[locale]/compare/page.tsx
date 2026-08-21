@@ -20,7 +20,7 @@ import CompareDensityStrip from "@/components/compare/CompareDensityStrip";
 import CompareMatrix from "@/components/compare/CompareMatrix";
 import AdSlot from "@/components/AdSlot";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://public-holidays.shop";
 
 // ISR: holiday data is fetch-cached 90d upstream; re-render the shell daily.
 

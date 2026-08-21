@@ -33,7 +33,7 @@ import HolidaySource from "@/components/HolidaySource";
 import HolidaySiblingSection from "@/components/HolidaySiblingSection";
 import HolidayMetaRows from "@/components/HolidayMetaRows";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://public-holidays.shop";
 
 const BRIDGE_KEY: Record<BridgeAdvice, string> = {
   "long-weekend": "bridgeLongWeekend",

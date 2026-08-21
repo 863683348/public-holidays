@@ -3,7 +3,7 @@ import { COUNTRIES, getCountry, getHolidayPageTitle, getHolidayPageDescription, 
 import { routing } from "@/i18n/routing";
 import CountryHolidayView from "@/components/CountryHolidayView";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://public-holidays.shop";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://public-holidays.shop";
 
 // Pre-render every locale × country at build time so the CDN serves them
 // directly (PRERENDER). On-demand ISR is not honored for dynamic-segment
