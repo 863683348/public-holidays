@@ -23,6 +23,13 @@ export async function generateMetadata({
     description:
       "How PubHoliday collects, uses, and protects your personal data.",
     alternates: { canonical: `${SITE_URL}/${locale}/privacy` },
+    openGraph: {
+      type: "website",
+      title,
+      description: "How PubHoliday collects, uses, and protects your personal data.",
+      url: `${SITE_URL}/${locale}/privacy`,
+      locale,
+    },
   };
 }
 

@@ -45,6 +45,13 @@ export async function generateMetadata({
     // Query-param URLs are never indexed; the value of /compare is shareability.
     robots: { index: false, follow: true },
     alternates: { canonical: `${SITE_URL}/${locale}/compare` },
+    openGraph: {
+      type: "website",
+      title: t("metaTitle"),
+      description: t("metaDescription"),
+      url: `${SITE_URL}/${locale}/compare`,
+      locale,
+    },
   };
 }
 

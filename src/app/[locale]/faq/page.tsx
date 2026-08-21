@@ -23,6 +23,13 @@ export async function generateMetadata({
     title,
     description: "Common questions about PubHoliday, plans, and billing.",
     alternates: { canonical: `${SITE_URL}/${locale}/faq` },
+    openGraph: {
+      type: "website",
+      title,
+      description: "Common questions about PubHoliday, plans, and billing.",
+      url: `${SITE_URL}/${locale}/faq`,
+      locale,
+    },
   };
 }
 

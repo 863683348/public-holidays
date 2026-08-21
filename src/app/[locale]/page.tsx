@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ArrowRight, GitCompare } from "lucide-react";
 import { Link } from "@/i18n/navigation";
@@ -13,10 +14,27 @@ import LocalTime from "@/components/LocalTime";
 import FaqAccordion from "@/components/FaqAccordion";
 import { faqPage } from "@/lib/seo";
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://public-holidays.shop";
+
 const FEATURED_COUNTRIES = POPULAR_COUNTRIES.slice(0, 8);
 
 // The homepage carries a live "who is off today?" count; hourly re-render keeps
 // it from going stale, mirroring the /today utility page's freshness policy.
+
+// Homepage og:url — title/description inherit from [locale]/layout via metadata
+// merge; we only pin the URL so it resolves to the canonical locale root.
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return {
+    openGraph: {
+      url: `${SITE_URL}/${locale}`,
+    },
+  };
+}
 
 export default async function HomePage({
   params,

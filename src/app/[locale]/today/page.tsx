@@ -58,6 +58,13 @@ export async function generateMetadata({
     // Utility page: the content changes every day, so it must never be indexed.
     robots: { index: false, follow: true },
     alternates: { canonical: `${SITE_URL}/${locale}/today` },
+    openGraph: {
+      type: "website",
+      title: t("metaTitle"),
+      description: t("metaDescription"),
+      url: `${SITE_URL}/${locale}/today`,
+      locale,
+    },
   };
 }
 

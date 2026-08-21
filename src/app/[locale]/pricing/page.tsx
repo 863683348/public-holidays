@@ -3,6 +3,8 @@ import { getTranslations } from "next-intl/server";
 import { auth } from "@/auth";
 import PricingPage from "./PricingClient";
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://public-holidays.shop";
+
 export async function generateMetadata({
   params,
 }: {
@@ -13,6 +15,13 @@ export async function generateMetadata({
   return {
     title: `${t("title")} — PubHoliday`,
     description: t("subtitle"),
+    openGraph: {
+      type: "website",
+      title: `${t("title")} — PubHoliday`,
+      description: t("subtitle"),
+      url: `${SITE_URL}/${locale}/pricing`,
+      locale,
+    },
   };
 }
 

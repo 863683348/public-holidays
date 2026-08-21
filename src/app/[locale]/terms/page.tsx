@@ -23,6 +23,13 @@ export async function generateMetadata({
     description:
       "The terms that govern your use of PubHoliday and its Pro subscription.",
     alternates: { canonical: `${SITE_URL}/${locale}/terms` },
+    openGraph: {
+      type: "website",
+      title,
+      description: "The terms that govern your use of PubHoliday and its Pro subscription.",
+      url: `${SITE_URL}/${locale}/terms`,
+      locale,
+    },
   };
 }
 
