@@ -1,3 +1,19 @@
+
+  {
+    id: 147,
+    slug: "hong-kong-public-holidays-red-day-system",
+    title: { zh: "香港公共假日与红日制度", en: "Hong Kong Public Holidays and the Red-Day System" },
+    locale: "en",
+    category: "guide",
+    author: "Public Holidays Team",
+    publishedDate: "2026-08-23T08:00:00Z",
+    lastModified: "2026-08-23T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/hong-kong-holidays.svg",
+    excerpt: { zh: "香港独有的红日制度让公众假期一目了然。", en: "Hong Kong public holiday system is unique in Asia." },
+    relatedCountries: ["HK"],
+    tags: ["hong kong", "public holidays", "red day"],
+    body: { en: "Hong Kong public holidays use a red-day system. When a holiday falls on Sunday, the next Monday becomes a substitute holiday.", zh: "香港公众假期使用红日制度。如果假期落在星期日，下一个星期一成为补假。" },
+  },
 import type { BlogPost } from "./types";
 
 /**
