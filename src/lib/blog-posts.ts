@@ -3368,8 +3368,199 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>完整韩国假日日历请访问我们的 <a href="https://public-holidays.shop/zh/KR">韩国假日页面</a>。</p>
     `,
   },
+  {
+    id: 146,
+    title: "China Public Holidays: Maximize Your Golden Weeks",
+    slug: "china-public-holidays-golden-week",
+    category: "guide",
+    author: "Public Holidays Team",
+    publishedDate: "2026-08-22T08:00:00Z",
+    lastModified: "2026-08-22T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/china-holidays.svg",
+    excerpt: "China's public holiday calendar is deceptively simple — just a handful of official days. But the real magic is in how those days combine with weekends to create 'Golden Weeks,' periods of up to 7 consecutive days off.",
+    relatedCountries: ["CN"],
+    locale: "en",
+    content: `
+      <p>China's public holiday calendar is deceptively simple on the surface — just a handful of official days. But the real magic is in how those days combine with weekends to create "Golden Weeks," periods of up to 7 consecutive days off.</p>
+      <h2>The Big Three: Golden Weeks</h2>
+      <p>China has three official Golden Weeks, each created by bridging a statutory holiday with adjacent weekends:</p>
+      <ol>
+        <li><strong>Spring Festival (Chinese New Year)</strong> — 7 days, usually late January or early February</li>
+        <li><strong>National Day</strong> — 7 days, October 1-7</li>
+        <li><strong>Labor Day</strong> — 3 days (expanded from 1 in recent years)</li>
+      </ol>
+      <p>During these periods, billions of trips are made. Trains sell out in minutes. Hotels book months ahead. If you're in China during a Golden Week, expect everything to be crowded — and expensive.</p>
+      <h2>How the Bridging System Works</h2>
+      <p>The State Council announces the exact schedule each year. The pattern is consistent: if a holiday falls on a Tuesday or Thursday, the preceding or following Monday (or Friday) becomes a working day to create the 7-day stretch. This means you might work a weekend to get a week off.</p>
+      <h2>Smart Timing for 2026</h2>
+      <p>For Spring Festival 2026 (likely late January), consider:</p>
+      <ul>
+        <li>Taking 1-2 extra days before the official holiday to beat the crowds</li>
+        <li>Booking travel at least 30 days ahead</li>
+        <li>Avoiding the first and last days of the Golden Week if possible — these are peak travel days</li>
+      </ul>
+      <h2>Foreigners and Golden Weeks</h2>
+      <p>If you're not Chinese, Golden Weeks are both challenging and fascinating. Many businesses close. Tourist sites are packed. But it's also a chance to experience Chinese culture at its most celebratory. Domestic tourism is huge — expect to see Chinese families traveling together for the first time to places they've only seen on TV.</p>
+      <h2>Key Dates to Remember</h2>
+      <ul>
+        <li><strong>New Year's Day</strong>: January 1 (1 day)</li>
+        <li><strong>Spring Festival</strong>: Lunar calendar, 3 statutory days + weekend bridge</li>
+        <li><strong>Qingming Festival</strong>: April 4-5 (1-3 days depending on weekend)</li>
+        <li><strong>Labor Day</strong>: May 1 (now 3 days)</li>
+        <li><strong>Dragon Boat Festival</strong>: Lunar calendar, 1-3 days</li>
+        <li><strong>Mid-Autumn Festival</strong>: Lunar calendar, 1-3 days</li>
+        <li><strong>National Day</strong>: October 1-7 (7 days)</li>
+      </ul>
+      <h2>The Hidden Cost of Golden Weeks</h2>
+      <p>While the time off is valuable, Golden Weeks come with premium pricing. Flights and hotels can cost 2-3x normal rates. If you're budget-conscious, consider traveling just before or after the official holiday period.</p>
+      <p>For the full Chinese holiday calendar, visit our <a href="https://public-holidays.shop/en/CN">China holidays page</a>.</p>
+    `,
+  },
+  {
+    id: 146,
+    title: "中国大陆公共假日：黄金周前后怎么请假最值",
+    slug: "china-public-holidays-golden-week",
+    category: "guide",
+    author: "Public Holidays Team",
+    publishedDate: "2026-08-22T08:00:00Z",
+    lastModified: "2026-08-22T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/china-holidays.svg",
+    excerpt: "中国大陆的公共假日日历表面上看起来很简单——只有少数几个法定假日。但真正的巧妙之处在于这些假日如何与周末结合，形成长达 7 天的'黄金周'。",
+    relatedCountries: ["CN"],
+    locale: "zh",
+    content: `
+      <p>中国大陆的公共假日日历表面上看起来很简单——只有少数几个法定假日。但真正的巧妙之处在于这些假日如何与周末结合，形成长达 7 天的"黄金周"。</p>
+      <h2>三大黄金周</h2>
+      <p>中国有三个官方黄金周，每个都是通过法定假日与相邻周末连接而成：</p>
+      <ol>
+        <li><strong>春节（农历新年）</strong> — 7 天，通常在 1 月底或 2 月初</li>
+        <li><strong>国庆节</strong> — 7 天，10 月 1-7 日</li>
+        <li><strong>劳动节</strong> — 3 天（近年来从 1 天扩展）</li>
+      </ol>
+      <p>在这些期间，数十亿人次出行。火车票几分钟内售罄。酒店提前数月预订。如果你在中国过黄金周，一切都会拥挤——而且昂贵。</p>
+      <h2>调休系统如何运作</h2>
+      <p>国务院每年公布具体安排。模式一致：如果假日落在周二或周四，前一个或后一个周一（或周五）成为工作日，以形成 7 天连休。这意味着你可能需要上一个周末班来换取一周假期。</p>
+      <h2>2026 年聪明出行</h2>
+      <p>对于 2026 年春节（可能在 1 月下旬），考虑：</p>
+      <ul>
+        <li>在官方假日前多请 1-2 天，避开人流高峰</li>
+        <li>至少提前 30 天预订行程</li>
+        <li>尽可能避开黄金周的第一天和最后一天——这些是出行高峰</li>
+      </ul>
+      <h2>外国人如何应对黄金周</h2>
+      <p>如果你不是中国人，黄金周既是挑战也是机遇。许多企业关门。景点人满为患。但这也是体验中国文化最热闹时刻的机会。国内旅游非常火爆——你会看到中国家庭首次一起去他们只在电视上见过地方旅行。</p>
+      <h2>关键日期</h2>
+      <ul>
+        <li><strong>元旦</strong>：1 月 1 日（1 天）</li>
+        <li><strong>春节</strong>：农历，3 天法定 + 周末调休</li>
+        <li><strong>清明节</strong>：4 月 4-5 日（1-3 天，取决于周末）</li>
+        <li><strong>劳动节</strong>：5 月 1 日（现 3 天）</li>
+        <li><strong>端午节</strong>：农历，1-3 天</li>
+        <li><strong>中秋节</strong>：农历，1-3 天</li>
+        <li><strong>国庆节</strong>：10 月 1-7 日（7 天）</li>
+      </ul>
+      <h2>黄金周的隐藏成本</h2>
+      <p>虽然假期宝贵，但黄金周伴随着溢价。机票和酒店价格可以是平时的 2-3 倍。如果你注重预算，考虑在官方假日前后出行。</p>
+      <p>完整中国假日日历请访问我们的 <a href="https://public-holidays.shop/zh/CN">中国假日页面</a>。</p>
+    `,
+  },
+  {
+    id: 146,
+    title: "China Public Holidays: Maximize Your Golden Weeks",
+    slug: "china-public-holidays-golden-week",
+    category: "guide",
+    author: "Public Holidays Team",
+    publishedDate: "2026-08-22T08:00:00Z",
+    lastModified: "2026-08-22T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/china-holidays.svg",
+    excerpt: "China's public holiday calendar is deceptively simple — just a handful of official days. But the real magic is in how those days combine with weekends to create 'Golden Weeks,' periods of up to 7 consecutive days off.",
+    relatedCountries: ["CN"],
+    locale: "en",
+    content: `
+      <p>China's public holiday calendar is deceptively simple on the surface — just a handful of official days. But the real magic is in how those days combine with weekends to create "Golden Weeks," periods of up to 7 consecutive days off.</p>
+      <h2>The Big Three: Golden Weeks</h2>
+      <p>China has three official Golden Weeks, each created by bridging a statutory holiday with adjacent weekends:</p>
+      <ol>
+        <li><strong>Spring Festival (Chinese New Year)</strong> — 7 days, usually late January or early February</li>
+        <li><strong>National Day</strong> — 7 days, October 1-7</li>
+        <li><strong>Labor Day</strong> — 3 days (expanded from 1 in recent years)</li>
+      </ol>
+      <p>During these periods, billions of trips are made. Trains sell out in minutes. Hotels book months ahead. If you're in China during a Golden Week, expect everything to be crowded — and expensive.</p>
+      <h2>How the Bridging System Works</h2>
+      <p>The State Council announces the exact schedule each year. The pattern is consistent: if a holiday falls on a Tuesday or Thursday, the preceding or following Monday (or Friday) becomes a working day to create the 7-day stretch. This means you might work a weekend to get a week off.</p>
+      <h2>Smart Timing for 2026</h2>
+      <p>For Spring Festival 2026 (likely late January), consider:</p>
+      <ul>
+        <li>Taking 1-2 extra days before the official holiday to beat the crowds</li>
+        <li>Booking travel at least 30 days ahead</li>
+        <li>Avoiding the first and last days of the Golden Week if possible — these are peak travel days</li>
+      </ul>
+      <h2>Foreigners and Golden Weeks</h2>
+      <p>If you're not Chinese, Golden Weeks are both challenging and fascinating. Many businesses close. Tourist sites are packed. But it's also a chance to experience Chinese culture at its most celebratory. Domestic tourism is huge — expect to see Chinese families traveling together for the first time to places they've only seen on TV.</p>
+      <h2>Key Dates to Remember</h2>
+      <ul>
+        <li><strong>New Year's Day</strong>: January 1 (1 day)</li>
+        <li><strong>Spring Festival</strong>: Lunar calendar, 3 statutory days + weekend bridge</li>
+        <li><strong>Qingming Festival</strong>: April 4-5 (1-3 days depending on weekend)</li>
+        <li><strong>Labor Day</strong>: May 1 (now 3 days)</li>
+        <li><strong>Dragon Boat Festival</strong>: Lunar calendar, 1-3 days</li>
+        <li><strong>Mid-Autumn Festival</strong>: Lunar calendar, 1-3 days</li>
+        <li><strong>National Day</strong>: October 1-7 (7 days)</li>
+      </ul>
+      <h2>The Hidden Cost of Golden Weeks</h2>
+      <p>While the time off is valuable, Golden Weeks come with premium pricing. Flights and hotels can cost 2-3x normal rates. If you're budget-conscious, consider traveling just before or after the official holiday period.</p>
+      <p>For the full Chinese holiday calendar, visit our <a href="https://public-holidays.shop/en/CN">China holidays page</a>.</p>
+    `,
+  },
+  {
+    id: 146,
+    title: "中国大陆公共假日：黄金周前后怎么请假最值",
+    slug: "china-public-holidays-golden-week",
+    category: "guide",
+    author: "Public Holidays Team",
+    publishedDate: "2026-08-22T08:00:00Z",
+    lastModified: "2026-08-22T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/china-holidays.svg",
+    excerpt: "中国大陆的公共假日日历表面上看起来很简单——只有少数几个法定假日。但真正的巧妙之处在于这些假日如何与周末结合，形成长达 7 天的'黄金周'。",
+    relatedCountries: ["CN"],
+    locale: "zh",
+    content: `
+      <p>中国大陆的公共假日日历表面上看起来很简单——只有少数几个法定假日。但真正的巧妙之处在于这些假日如何与周末结合，形成长达 7 天的"黄金周"。</p>
+      <h2>三大黄金周</h2>
+      <p>中国有三个官方黄金周，每个都是通过法定假日与相邻周末连接而成：</p>
+      <ol>
+        <li><strong>春节（农历新年）</strong> — 7 天，通常在 1 月底或 2 月初</li>
+        <li><strong>国庆节</strong> — 7 天，10 月 1-7 日</li>
+        <li><strong>劳动节</strong> — 3 天（近年来从 1 天扩展）</li>
+      </ol>
+      <p>在这些期间，数十亿人次出行。火车票几分钟内售罄。酒店提前数月预订。如果你在中国过黄金周，一切都会拥挤——而且昂贵。</p>
+      <h2>调休系统如何运作</h2>
+      <p>国务院每年公布具体安排。模式一致：如果假日落在周二或周四，前一个或后一个周一（或周五）成为工作日，以形成 7 天连休。这意味着你可能需要上一个周末班来换取一周假期。</p>
+      <h2>2026 年聪明出行</h2>
+      <p>对于 2026 年春节（可能在 1 月下旬），考虑：</p>
+      <ul>
+        <li>在官方假日前多请 1-2 天，避开人流高峰</li>
+        <li>至少提前 30 天预订行程</li>
+        <li>尽可能避开黄金周的第一天和最后一天——这些是出行高峰</li>
+      </ul>
+      <h2>外国人如何应对黄金周</h2>
+      <p>如果你不是中国人，黄金周既是挑战也是机遇。许多企业关门。景点人满为患。但这也是体验中国文化最热闹时刻的机会。国内旅游非常火爆——你会看到中国家庭首次一起去他们只在电视上见过地方旅行。</p>
+      <h2>关键日期</h2>
+      <ul>
+        <li><strong>元旦</strong>：1 月 1 日（1 天）</li>
+        <li><strong>春节</strong>：农历，3 天法定 + 周末调休</li>
+        <li><strong>清明节</strong>：4 月 4-5 日（1-3 天，取决于周末）</li>
+        <li><strong>劳动节</strong>：5 月 1 日（现 3 天）</li>
+        <li><strong>端午节</strong>：农历，1-3 天</li>
+        <li><strong>中秋节</strong>：农历，1-3 天</li>
+        <li><strong>国庆节</strong>：10 月 1-7 日（7 天）</li>
+      </ul>
+      <h2>黄金周的隐藏成本</h2>
+      <p>虽然假期宝贵，但黄金周伴随着溢价。机票和酒店价格可以是平时的 2-3 倍。如果你注重预算，考虑在官方假日前后出行。</p>
+      <p>完整中国假日日历请访问我们的 <a href="https://public-holidays.shop/zh/CN">中国假日页面</a>。</p>
+    `,
+  },
 ];
-
 
 // ========================================================================
 // Locale-aware helper functions
