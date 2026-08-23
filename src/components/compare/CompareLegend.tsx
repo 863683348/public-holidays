@@ -27,7 +27,7 @@ export default async function CompareLegend() {
       aria-label={t("legendHeading")}
       className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-[var(--muted)]"
     >
-      {items.map((item) => (
+      {items.map((item: any) => (
         <span key={item.label} className="inline-flex items-center gap-1.5">
           <span
             aria-hidden

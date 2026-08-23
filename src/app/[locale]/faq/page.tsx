@@ -74,7 +74,7 @@ export default async function FaqPage({
         }}
       />
       <section className="space-y-6">
-        {items.map((item) => (
+        {items.map((item: any) => (
           <div key={item.q}>
             <h2 className="text-base font-semibold text-[var(--fg)]">
               {item.q}
