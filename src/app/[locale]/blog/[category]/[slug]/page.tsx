@@ -188,7 +188,7 @@ export default async function ArticlePage({
           <div className="mt-8 pt-8 border-t border-[var(--border)]">
             <h3 className="text-lg font-semibold mb-4">{t("relatedCountries")}</h3>
             <div className="flex flex-wrap gap-2">
-              {post.relatedCountries.map((code) => {
+              {post.relatedCountries.map((code: string) => {
                 const c = getCountry(code);
                 if (!c) return null;
                 return (
@@ -210,7 +210,7 @@ export default async function ArticlePage({
             <div className="mt-10 pt-8 border-t border-[var(--border)]">
               <h2 className="text-2xl font-bold mb-4">{t("faqHeading")}</h2>
               <div className="space-y-4">
-                {post.faq.map((item, i) => (
+                {post.faq.map((item: { question: string; answer: string }, i: number) => (
                   <div key={i}>
                     <h3 className="font-semibold mb-1">{item.question}</h3>
                     <p className="text-[var(--muted)] leading-relaxed">{item.answer}</p>
