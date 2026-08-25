@@ -3575,6 +3575,21 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt: 'Hong Kong public holiday system is unique in Asia.',
     relatedCountries: ['HK'],
     content: 'Hong Kong public holidays use a red-day system. When a holiday falls on Sunday, the next Monday becomes a substitute holiday.'
+  },
+
+  {
+    id: 148,
+    slug: 'india-public-holidays-most-diverse-calendar',
+    title: 'India Public Holidays: The Most Diverse Calendar',
+    locale: 'en',
+    category: 'guide',
+    author: 'Public Holidays Team',
+    publishedDate: '2026-08-25T08:00:00Z',
+    lastModified: '2026-08-25T08:00:00Z',
+    imageUrl: 'https://public-holidays.shop/images/blog/india-holidays.svg',
+    excerpt: 'India is called the "land of festivals" — and its holiday system reflects that diversity.',
+    relatedCountries: ['IN'],
+    content: '<p>India is called the "land of festivals," and this isn\'t an exaggeration. A country with 1.4 billion people, 28 states, and 8 union territories has one of the most complex public holiday systems in the world.</p><h2>The Three-Tier Holiday System</h2><p>India operates a three-tier system: national holidays (observed nationwide), state holidays (declared by each state), and restricted holidays (optional for employees). The central government mandates 11 national holidays. Adding each state\'s local festivals, total public holidays can reach 20-30 days.</p><h2>National Holidays</h2><ul><li>Republic Day (January 26)</li><li>Independence Day (August 15)</li><li>Gandhi Jayanti (October 2)</li></ul><h2>Diversity in Practice</h2><p>Because each state adds its own festivals — Diwali, Holi, Eid, Christmas, Pongal, and dozens more — the same date can be a holiday in one state and a working day in another. This makes India\'s calendar one of the most dynamic in the world.</p><h2>FAQ</h2><ul><li>How many public holidays does India have? The central government mandates 11 national holidays; with state festivals the total can reach 20-30 days.</li><li>Are holidays uniform across states? No. Each state declares its own additional holidays.</li></ul>'
   }
 
 ];
