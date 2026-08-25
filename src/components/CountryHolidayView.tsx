@@ -10,6 +10,7 @@ import {
   getCountry,
   getCountryName,
   getCountryInsight,
+  getCountryFeatureBlock,
   getHolidayPageTitle,
   getHolidayPageDescription,
   getDemonym,
@@ -431,6 +432,37 @@ export default async function CountryHolidayView({
                 {insight.keyword} {linkYear} →
               </Link>
             </p>
+          </section>
+        );
+      })()}
+
+      {/* Country feature block — locale-specific editorial content for near-win
+          keyword harvesting. Rendered after the insight block (if any) and before
+          the calendar, so it appears in a high-visibility position on the page.
+          The block is keyed by country + locale and contains a heading, paragraph,
+          and internal links to related pages. */}
+      {(() => {
+        const feature = getCountryFeatureBlock(country, locale);
+        if (!feature) return null;
+        return (
+          <section className="space-y-3">
+            <h2 className="text-xl font-semibold">
+              {locale === "en"
+                ? feature.heading
+                : t("featureBlockHeading", { name: countryName, year })}
+            </h2>
+            <p className="text-[var(--muted)] leading-relaxed text-sm">{feature.text}</p>
+            <div className="flex flex-wrap gap-2">
+              {feature.links.map((link, idx) => (
+                <Link
+                  key={idx}
+                  href={link.href}
+                  className="rounded-full border border-[var(--border)] bg-[var(--card)] px-3 py-1.5 text-sm font-medium transition hover:border-brand hover:text-brand"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
           </section>
         );
       })()}

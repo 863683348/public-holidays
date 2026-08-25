@@ -3590,8 +3590,277 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt: 'India is called the "land of festivals" — and its holiday system reflects that diversity.',
     relatedCountries: ['IN'],
     content: '<p>India is called the "land of festivals," and this isn\'t an exaggeration. A country with 1.4 billion people, 28 states, and 8 union territories has one of the most complex public holiday systems in the world.</p><h2>The Three-Tier Holiday System</h2><p>India operates a three-tier system: national holidays (observed nationwide), state holidays (declared by each state), and restricted holidays (optional for employees). The central government mandates 11 national holidays. Adding each state\'s local festivals, total public holidays can reach 20-30 days.</p><h2>National Holidays</h2><ul><li>Republic Day (January 26)</li><li>Independence Day (August 15)</li><li>Gandhi Jayanti (October 2)</li></ul><h2>Diversity in Practice</h2><p>Because each state adds its own festivals — Diwali, Holi, Eid, Christmas, Pongal, and dozens more — the same date can be a holiday in one state and a working day in another. This makes India\'s calendar one of the most dynamic in the world.</p><h2>FAQ</h2><ul><li>How many public holidays does India have? The central government mandates 11 national holidays; with state festivals the total can reach 20-30 days.</li><li>Are holidays uniform across states? No. Each state declares its own additional holidays.</li></ul>'
-  }
+  },
 
+  {
+    id: 149,
+    slug: 'labour-day-2026-where-does-it-fall',
+    title: 'Labour Day 2026: Where Does It Fall Around the World?',
+    locale: 'en',
+    category: 'guide',
+    author: 'PubHoliday Research Team',
+    publishedDate: '2026-08-25T08:00:00Z',
+    lastModified: '2026-08-25T08:00:00Z',
+    imageUrl: 'https://public-holidays.shop/images/blog/labour-day-2026.svg',
+    excerpt: 'Labour Day falls on different dates worldwide. Compare 2026 dates for US, Canada, New Zealand, Australia, and South Korea.',
+    relatedCountries: ['US', 'CA', 'NZ', 'AU', 'KR'],
+    faq: [
+      { question: 'When is Labour Day in the US in 2026?', answer: 'Labor Day 2026 falls on Monday, September 7 — the first Monday of September. It\'s a federal holiday and marks the unofficial end of summer.' },
+      { question: 'When is Labour Day in Canada in 2026?', answer: 'Labour Day 2026 also falls on Monday, September 7 in Canada — the same date as the US. It\'s a statutory holiday across all provinces and territories.' },
+      { question: 'When is Labour Day in New Zealand in 2026?', answer: 'New Zealand celebrates Labour Day on Monday, October 26, 2026 — the fourth Monday of September. Yes, it\'s later than the US and Canada!' },
+      { question: 'When is Labour Day in Australia in 2026?', answer: 'Australia has different Labour Day dates by state. In 2026: WA (March 2), VIC (March 9), NT (May 4), QLD (May 4), ACT/NSW/SA (October 5). Each state has its own historical reason for the date.' },
+      { question: 'When is Labour Day in South Korea in 2026?', answer: 'South Korea observes Labour Day (노동절) on Friday, May 1, 2026. While not a法定 holiday, most businesses close and it creates a natural 3-day weekend.' },
+    ],
+    content: `
+      <p>Labour Day is celebrated worldwide, but <strong>the date varies dramatically</strong> depending on where you are. While the US and Canada both celebrate on the first Monday of September, New Zealand waits until October, and Australia has <em>six different dates</em> across its states and territories.</p>
+
+      <h2>Labour Day 2026: By Country</h2>
+      <table class="min-w-full border-collapse border border-gray-300 mb-4">
+        <thead><tr class="bg-gray-100"><th class="border p-2">Country</th><th class="border p-2">Date</th><th class="border p-2">Day</th><th class="border p-2">Notes</th></tr></thead>
+        <tbody>
+          <tr><td class="border p-2">🇺🇸 United States</td><td class="border p-2">Sep 7</td><td class="border p-2">Monday</td><td class="border p-2">Federal holiday, 1st Monday of September</td></tr>
+          <tr><td class="border p-2">🇨🇦 Canada</td><td class="border p-2">Sep 7</td><td class="border p-2">Monday</td><td class="border p-2">Statutory holiday, same date as US</td></tr>
+          <tr><td class="border p-2">🇳🇿 New Zealand</td><td class="border p-2">Oct 26</td><td class="border p-2">Monday</td><td class="border p-2">4th Monday of September</td></tr>
+          <tr><td class="border p-2">🇦🇺 Australia (WA)</td><td class="border p-2">Mar 2</td><td class="border p-2">Monday</td><td class="border p-2">Eight Hours Day</td></tr>
+          <tr><td class="border p-2">🇦🇺 Australia (VIC)</td><td class="border p-2">Mar 9</td><td class="border p-2">Monday</td><td class="border p-2">Labour Day</td></tr>
+          <tr><td class="border p-2">🇦🇺 Australia (NT)</td><td class="border p-2">May 4</td><td class="border p-2">Monday</td><td class="border p-2">May Day</td></tr>
+          <tr><td class="border p-2">🇦🇺 Australia (QLD)</td><td class="border p-2">May 4</td><td class="border p-2">Monday</td><td class="border p-2">May Day</td></tr>
+          <tr><td class="border p-2">🇦🇺 Australia (ACT/NSW/SA)</td><td class="border p-2">Oct 5</td><td class="border p-2">Monday</td><td class="border p-2">Labour Day</td></tr>
+          <tr><td class="border p-2">🇰🇷 South Korea</td><td class="border p-2">May 1</td><td class="border p-2">Friday</td><td class="border p-2">Not法定 holiday, but widely observed</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Why Do Dates Vary So Much?</h2>
+      <p>The variation comes from <strong>different historical movements</strong>. The US and Canada follow the <em>Haymarket affair</em> tradition (September), while New Zealand adopted its date in 1899 to mark the anniversary of the first successful eight-hour day movement. Australia's multiple dates reflect each state's unique labor history.</p>
+
+      <h2>Planning Around Labour Day 2026</h2>
+      <p>Whether you're in New York, Toronto, Auckland, or Sydney, Labour Day 2026 creates excellent long-weekend opportunities:</p>
+      <ul>
+        <li><strong>US/Canada (Sep 7):</strong> Perfect late-summer getaway. Book flights early — September is peak season for fall foliage in Eastern North America.</li>
+        <li><strong>New Zealand (Oct 26):</strong> Four-day weekend if you count the Friday before. Great time for trout fishing or hiking in the Southern Alps.</li>
+        <li><strong>Australia (varies):</strong> WA and VIC celebrate early (March), while NSW/SA wait until October. Plan your trip around your state's date.</li>
+        <li><strong>South Korea (May 1):</strong> Natural 3-day weekend. Combine with Buddha's Birthday (May 5) for a longer break.</li>
+      </ul>
+
+      <h2>Labour Day Around the World: Quick Facts</h2>
+      <ul>
+        <li><strong>Most countries:</strong> Celebrate May 1 (International Workers' Day)</li>
+        <li><strong>US & Canada:</strong> First Monday of September</li>
+        <li><strong>New Zealand:</strong> Fourth Monday of September</li>
+        <li><strong>Australia:</strong> Different dates by state (March, May, or October)</li>
+        <li><strong>Japan:</strong> November 23 (Labour Thanksgiving Day)</li>
+      </ul>
+
+      <p>Want to check the full holiday calendar for any country? Visit <a href="https://public-holidays.shop">PubHoliday</a> — we track all 46 countries with verified 2026 dates, ICS calendar subscriptions, and long-weekend planning tools.</p>
+    `
+  },
+
+  {
+    id: 150,
+    slug: 'japan-golden-week-2026-complete-guide',
+    title: 'Japan Golden Week 2026: The Ultimate Travel Guide',
+    locale: 'en',
+    category: 'guide',
+    author: 'PubHoliday Research Team',
+    publishedDate: '2026-08-25T08:00:00Z',
+    lastModified: '2026-08-25T08:00:00Z',
+    imageUrl: 'https://public-holidays.shop/images/blog/japan-golden-week-2026.svg',
+    excerpt: 'Japan\'s Golden Week (Apr 29 - May 5) creates 7 consecutive holidays in 2026. Learn how to plan around it, avoid crowds, and save money.',
+    relatedCountries: ['JP'],
+    faq: [
+      { question: 'When is Golden Week 2026 in Japan?', answer: 'Golden Week 2026 runs from Sunday, April 29 to Sunday, May 5 — creating 7 consecutive holidays. This is the longest holiday stretch of the year in Japan.' },
+      { question: 'Is Golden Week a法定 holiday?', answer: 'Golden Week itself is not a法定 holiday — it\'s a cluster of four separate national holidays: Showa Day (Apr 29), Constitution Memorial Day (May 3), Greenery Day (May 4), and Children\'s Day (May 5). When these fall adjacent to weekends, they create the "golden" stretch.' },
+      { question: 'Should I travel to Japan during Golden Week 2026?', answer: 'It depends. Golden Week is the <em>busiest</em> travel period in Japan. Domestic tourism surges, flights and hotels sell out months ahead, and prices can be 2-3x normal. If you can avoid it, consider late May or autumn instead.' },
+      { question: 'What happens during Golden Week?', answer: 'Almost everything closes: schools, government offices, many businesses. Those who can take time off travel domestically — to hot springs, mountains, or beaches. Major cities like Tokyo become surprisingly quiet as residents leave.' },
+    ],
+    content: `
+      <p>Japan's <strong>Golden Week</strong> is the longest and most intense holiday period of the year. In 2026, it runs from <strong>Sunday, April 29 through Sunday, May 5</strong> — creating <strong>7 consecutive days off</strong> for most Japanese workers. Here's everything you need to know about planning around it.</p>
+
+      <h2>Golden Week 2026: The Dates</h2>
+      <table class="min-w-full border-collapse border border-gray-300 mb-4">
+        <thead><tr class="bg-gray-100"><th class="border p-2">Date</th><th class="border p-2">Day</th><th class="border p-2">Holiday</th><th class="border p-2">Note</th></tr></thead>
+        <tbody>
+          <tr><td class="border p-2">Apr 29</td><td class="border p-2">Sun</td><td class="border p-2">Showa Day</td><td class="border p-2">Start of Golden Week</td></tr>
+          <tr><td class="border p-2">Apr 30</td><td class="border p-2">Mon</td><td class="border p-2">—</td><td class="border p-2">Bridge day (not法定)</td></tr>
+          <tr><td class="border p-2">May 1</td><td class="border p-2">Tue</td><td class="border p-2">Labour Day</td><td class="border p-2">Not法定, but widely observed</td></tr>
+          <tr><td class="border p-2">May 2</td><td class="border p-2">Wed</td><td class="border p-2">—</td><td class="border p-2">Bridge day (many take off)</td></tr>
+          <tr><td class="border p-2">May 3</td><td class="border p-2">Thu</td><td class="border p-2">Constitution Memorial Day</td><td class="border p-2">法定 holiday</td></tr>
+          <tr><td class="border p-2">May 4</td><td class="border p-2">Fri</td><td class="border p-2">Greenery Day</td><td class="border p-2">法定 holiday</td></tr>
+          <tr><td class="border p-2">May 5</td><td class="border p-2">Sat</td><td class="border p-2">Children's Day</td><td class="border p-2">法定 holiday</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Why 2026 Golden Week Is Special</h2>
+      <p>2026 is exceptional because <strong>April 29 falls on a Sunday</strong>, and the holidays cluster perfectly around the weekend. This creates a <strong>7-day consecutive holiday</strong> — the longest possible stretch without taking additional vacation days. Most Japanese workers get this entire week off.</p>
+
+      <h2>Travel Tips for Golden Week 2026</h2>
+      <p>If you're planning to visit Japan during Golden Week, here's what to expect:</p>
+      <ul>
+        <li><strong>Book early:</strong> Flights and hotels sell out 3-6 months in advance. Prices can be 2-3x normal rates.</li>
+        <li><strong>Avoid travel days:</strong> April 28-30 and May 6 are the busiest travel days. If possible, arrive before April 28 or leave after May 6.</li>
+        <li><strong>Cities go quiet:</strong> Tokyo, Osaka, and Kyoto become surprisingly empty as residents travel to rural areas. Some businesses close for the week.</li>
+        <li><strong>Nature is beautiful:</strong> Late April/early May is cherry blossom season in many regions. Perfect time for hiking and onsen visits.</li>
+      </ul>
+
+      <h2>What Closes During Golden Week?</h2>
+      <ul>
+        <li><strong>Schools:</strong> All closed (this is part of spring break)</li>
+        <li><strong>Government offices:</strong> Closed nationwide</li>
+        <li><strong>Many businesses:</strong> Closed, especially smaller companies</li>
+        <li><strong>Restaurants:</strong> Some close, especially in rural areas; major cities stay open</li>
+        <li><strong>Transport:</strong> Trains and flights run on holiday schedules (less frequent)</li>
+      </ul>
+
+      <h2>Alternatives to Golden Week</h2>
+      <p>If 2026 Golden Week is too crowded, consider these alternatives:</p>
+      <ul>
+        <li><strong>Late May:</strong> Fewer holidays, but beautiful weather and fewer crowds</li>
+        <li><strong>Autumn (Oct-Nov):</strong> Fall foliage season, comfortable temperatures, fewer tourists</li>
+        <li><strong>Early June:</strong> Start of rainy season, but lowest hotel prices of the year</li>
+      </ul>
+
+      <p>For the full Japan 2026 holiday calendar with exact dates, long-weekend planning, and ICS calendar subscription, visit our <a href="https://public-holidays.shop/en/JP">Japan holidays page</a>.</p>
+    `
+  },
+
+  {
+    id: 151,
+    slug: 'korea-public-holidays-2026-seollal-chuseok-guide',
+    title: 'South Korea Public Holidays 2026: Seollal, Chuseok & More',
+    locale: 'en',
+    category: 'guide',
+    author: 'PubHoliday Research Team',
+    publishedDate: '2026-08-25T08:00:00Z',
+    lastModified: '2026-08-25T08:00:00Z',
+    imageUrl: 'https://public-holidays.shop/images/blog/korea-holidays-2026.svg',
+    excerpt: 'Complete guide to South Korea 2026 public holidays including Lunar New Year (Seollal), Chuseok, and all national holidays with exact dates.',
+    relatedCountries: ['KR'],
+    faq: [
+      { question: 'When is Seollal (Lunar New Year) 2026 in Korea?', answer: 'Seollal 2026 falls on February 17-19 (Tue-Thu). The official holiday period is 3 days, but many Koreans take additional days off, creating a week-long travel period — the biggest migration of the year.' },
+      { question: 'When is Chuseok (Korean Thanksgiving) 2026?', answer: 'Chuseok 2026 is September 25-27 (Fri-Sun). This 3-day holiday is Korea\'s second-biggest travel period. Families gather to honor ancestors and share meals.' },
+      { question: 'How many public holidays does Korea have in 2026?', answer: 'South Korea has 19法定 public holidays in 2026, plus substitute holidays when dates fall on weekends. This makes Korea one of the countries with the most holidays in Asia.' },
+      { question: 'Is Labour Day (May 1) a holiday in Korea?', answer: 'Labour Day (노동절) on May 1 is not a法定 public holiday in South Korea. However, most businesses and factories close, and many workers take the day off. In 2026, May 1 is a Friday, creating a natural 3-day weekend.' },
+    ],
+    content: `
+      <p>South Korea's public holiday calendar is dominated by <strong>two massive lunar holiday periods</strong>: Seollal (Lunar New Year) and Chuseok (Korean Thanksgiving). These create the year's biggest travel rushes, when millions of Koreans journey home to their hometowns. Here's the complete 2026 guide.</p>
+
+      <h2>Korea 2026 Public Holidays: The Full List</h2>
+      <table class="min-w-full border-collapse border border-gray-300 mb-4">
+        <thead><tr class="bg-gray-100"><th class="border p-2">Date</th><th class="border p-2">Holiday</th><th class="border p-2">Type</th><th class="border p-2">Notes</th></tr></thead>
+        <tbody>
+          <tr><td class="border p-2">Jan 1</td><td class="border p-2">New Year's Day</td><td class="border p-2">National</td><td class="border p-2">Gregorian calendar</td></tr>
+          <tr><td class="border p-2">Feb 17-19</td><td class="border p-2">Seollal (설날)</td><td class="border p-2">National</td><td class="border p-2">Lunar New Year — 3 day holiday</td></tr>
+          <tr><td class="border p-2">Mar 1</td><td class="border p-2">Independence Movement Day</td><td class="border p-2">National</td><td class="border p-2"> commemorates 1919 protests</td></tr>
+          <tr><td class="border p-2">Apr 5</td><td class="border p-2">Arbor Day</td><td class="border p-2">National</td><td class="border p-2">Plant trees</td></tr>
+          <tr><td class="border p-2">Apr 6</td><td class="border p-2">Buddha's Birthday</td><td class="border p-2">National</td><td class="border p-2">Lunar calendar</td></tr>
+          <tr><td class="border p-2">Jun 6</td><td class="border p-2">Memorial Day</td><td class="border p-2">National</td><td class="border p-2">Honors war dead</td></tr>
+          <tr><td class="border p-2">Jul 4</td><td class="border p-2">National Assembly Day</td><td class="border p-2">National</td><td class="border p-2">Rarely observed as holiday</td></tr>
+          <tr><td class="border p-2">Aug 15</td><td class="border p-2">Liberation Day</td><td class="border p-2">National</td><td class="border p-2">Korean independence from Japan</td></tr>
+          <tr><td class="border p-2">Oct 1</td><td class="border p-2">National Foundation Day</td><td class="border p-2">National</td><td class="border p-2">mythical founding in 2333 BC</td></tr>
+          <tr><td class="border p-2">Oct 1-2</td><td class="border p-2">Chuseok (추석)</td><td class="border p-2">National</td><td class="border p-2">Lunar Harvest Festival — 3 days</td></tr>
+          <tr><td class="border p-2">Dec 25</td><td class="border p-2">Christmas Day</td><td class="border p-2">National</td><td class="border p-2">Not religious, but法定 holiday</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Seollal 2026: The Biggest Travel Rush</h2>
+      <p><strong>Seollal (설날)</strong> falls on <strong>February 17-19, 2026</strong> (Tue-Thu). This is Korea's most important holiday — families gather for ancestral rites (charye) and share traditional meals like tteokguk (rice cake soup). The holiday period creates the year's <strong>largest human migration</strong>, with up to 40 million trips recorded.</p>
+      <p>Travel tips for Seollal 2026:</p>
+      <ul>
+        <li>Book transportation 2-3 months ahead</li>
+        <li>Expect sold-out flights and trains</li>
+        <li>Many businesses close for the full week</li>
+        <li>Hotels in rural areas fill up fast</li>
+      </ul>
+
+      <h2>Chuseok 2026: Korean Thanksgiving</h2>
+      <p><strong>Chuseok (추석)</strong> falls on <strong>September 25-27, 2026</strong> (Fri-Sun). This 3-day harvest festival is Korea's second-biggest holiday. Families return to their hometowns, visit ancestral graves (beolcho), and share mooncakes (songpyeon).</p>
+      <p>Unlike Seollal, Chuseok 2026 lands on a Friday-Sunday, creating a natural long weekend without needing to take time off.</p>
+
+      <h2>Other Notable 2026 Holidays</h2>
+      <ul>
+        <li><strong>Buddha's Birthday (Apr 6):</strong> Temples light up with lantern festivals. A major cultural event.</li>
+        <li><strong>Labour Day (May 1):</strong> Not法定, but widely observed. Falls on Friday in 2026 → 3-day weekend.</li>
+        <li><strong>Liberation Day (Aug 15):</strong> National pride day with military parades and ceremonies.</li>
+      </ul>
+
+      <p>For the complete South Korea 2026 holiday calendar with exact dates, lunar calendar conversions, and long-weekend planning, visit our <a href="https://public-holidays.shop/en/KR">Korea holidays page</a>.</p>
+    `
+  },
+
+  {
+    id: 152,
+    slug: 'europe-public-holidays-2026-complete-calendar',
+    title: 'Europe Public Holidays 2026: Complete Calendar for 46 Countries',
+    locale: 'en',
+    category: 'guide',
+    author: 'PubHoliday Research Team',
+    publishedDate: '2026-08-25T08:00:00Z',
+    lastModified: '2026-08-25T08:00:00Z',
+    imageUrl: 'https://public-holidays.shop/images/blog/europe-holidays-2026.svg',
+    excerpt: 'Compare public holidays across 46 European countries in 2026. Find shared holidays, plan cross-border trips, and discover unique national traditions.',
+    relatedCountries: ['DE', 'FR', 'IT', 'ES', 'GB', 'NL', 'BE', 'AT', 'CH', 'PL', 'CZ', 'SE', 'NO', 'DK', 'FI', 'IE', 'PT', 'GR', 'HU', 'RO', 'BG', 'HR', 'SI', 'SK', 'LT', 'LV', 'EE', 'LU', 'MT', 'CY', 'IS', 'LI', 'MC', 'SM', 'AD', 'VA'],
+    faq: [
+      { question: 'Which European countries share the most public holidays in 2026?', answer: 'Most European countries share Christmas (Dec 25-26), Easter Monday, and New Year\'s Day. Catholic countries also share Epiphany (Jan 6), Ascension Day, and All Saints\' Day (Nov 1). Protestant countries share Reformation Day (Oct 31 in Germany).' },
+      { question: 'When is Labour Day in Europe 2026?', answer: 'Labour Day (May 1) is a public holiday in most European countries: Germany, France, Italy, Spain, Netherlands, Belgium, Austria, Switzerland, Poland, Czech Republic, and many others. The UK does not observe May 1 as a法定 holiday (they have May Day bank holiday on the first Monday of May).' },
+      { question: 'Which European country has the most public holidays?', answer: 'Spain and Italy typically have the most public holidays in Europe (14+ per year), combining national holidays with regional and local observances. Vatican City has the most relative to its size!' },
+      { question: 'When is Easter in Europe 2026?', answer: 'Western Easter (Catholic/Protestant) is April 5, 2026. Eastern Easter (Orthodox) is April 12, 2026. This means Orthodox countries like Greece, Russia, and Romania celebrate Easter a week later than Western Europe.' },
+    ],
+    content: `
+      <p>Europe's public holiday calendar is a <strong>patchwork of religious traditions, national histories, and regional customs</strong>. With 46 countries tracked on PubHoliday, you can compare holidays across the continent and find shared days for planning cross-border trips.</p>
+
+      <h2>Europe 2026: Key Holiday Patterns</h2>
+      <p><strong>Shared holidays across most of Europe:</strong></p>
+      <ul>
+        <li><strong>New Year's Day (Jan 1):</strong> Universally observed</li>
+        <li><strong>Christmas Day (Dec 25) & Boxing Day (Dec 26):</strong> Universally observed</li>
+        <li><strong>Easter Sunday & Monday:</strong> Observed by Catholic and Protestant countries</li>
+        <li><strong>Labour Day (May 1):</strong> Observed by most continental European countries (not UK)</li>
+        <li><strong>Assumption Day (Aug 15):</strong> Catholic countries (France, Italy, Spain, Portugal, Austria, etc.)</li>
+        <li><strong>All Saints' Day (Nov 1):</strong> Catholic countries</li>
+      </ul>
+
+      <h2>Regional Variations</h2>
+      <p><strong>Protestant Northern Europe (Sweden, Norway, Denmark, Finland):</strong></p>
+      <ul>
+        <li>Epiphany (Jan 6) is法定 in Sweden, not in Denmark/Norway</li>
+        <li>Ascension Day and Pentecost Monday are widely observed</li>
+        <li>Constitution Days vary: Norway (May 17), Denmark (Jun 5), Finland (Dec 6)</li>
+      </ul>
+
+      <p><strong>Catholic Southern Europe (Italy, Spain, Portugal, France):</strong></p>
+      <ul>
+        <li>Epiphany (Jan 6) is法定 in Spain (Three Kings Day)</li>
+        <li>Assumption Day (Aug 15) is a major holiday in Spain and Portugal</li>
+        <li>Regional holidays vary significantly (e.g., Catalonia's La Mercè, Sept 24)</li>
+      </ul>
+
+      <p><strong>Orthodox Eastern Europe (Greece, Romania, Bulgaria, Russia):</strong></p>
+      <ul>
+        <li>Eastern Easter (April 12, 2026) — a week after Western Easter</li>
+        <li>Orthodox Christmas (Jan 7) — many Orthodox countries also celebrate Jan 1</li>
+        <li>Independent National Days vary by country</li>
+      </ul>
+
+      <h2>2026 European Holidays: By Country</h2>
+      <p>Use our <a href="https://public-holidays.shop">country pages</a> to see the exact holiday calendar for any European country. We track 46 European nations with:</p>
+      <ul>
+        <li>Official government sources</li>
+        <li>Regional vs. national holiday distinctions</li>
+        <li>Long-weekend and bridge-day analysis</li>
+        <li>ICS calendar subscriptions for Google, Apple, and Outlook</li>
+      </ul>
+
+      <h2>Planning Cross-Border Trips in Europe 2026</h2>
+      <p>Europe's holiday variation is actually great for travelers:</p>
+      <ul>
+        <li><strong>Shared holidays:</strong> Plan trips around dates when multiple countries are off (e.g., Christmas week)</li>
+        <li><strong>Differing holidays:</strong> If you need services in multiple countries, avoid dates when one is off but others are working</li>
+        <li><strong>Bridge days:</strong> Many Europeans take adjacent days off to create long weekends — prices surge during these periods</li>
+      </ul>
+
+      <p>For the complete Europe 2026 holiday comparison, visit our <a href="/compare">Compare Countries</a> tool — pick any combination of European nations to see overlapping holidays side by side.</p>
+    `
+  }
 ];
 
 // ========================================================================

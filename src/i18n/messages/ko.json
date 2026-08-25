@@ -71,7 +71,9 @@
     "relatedCountries": "관련 국가",
     "compareWith": "{name}를 다른 국가와 비교",
     "details": "상세",
-    "whyDifferent": "{name} 공휴일이 특별한 이유"
+    "whyDifferent": "{name} 공휴일이 특별한 이유",
+    "featureBlockHeading": "{name} {year}년 — 특별한 이유",
+    "featureBlockLinks": "{name} 더 보기"
   },
   "longWeekend": {
     "natural": "긴 주말",

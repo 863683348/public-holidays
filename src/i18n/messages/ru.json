@@ -71,7 +71,9 @@
     "relatedCountries": "Связанные страны",
     "compareWith": "Сравнить {name} с другими странами",
     "details": "Подробнее",
-    "whyDifferent": "Чем {name} отличается"
+    "whyDifferent": "Чем {name} отличается",
+    "featureBlockHeading": "Почему {name} в {year} особенный",
+    "featureBlockLinks": "Подробнее о {name}"
   },
   "longWeekend": {
     "natural": "Длинные выходные",

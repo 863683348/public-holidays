@@ -71,7 +71,9 @@
     "relatedCountries": "相关国家",
     "compareWith": "将{name}与其他国家对比",
     "details": "详情",
-    "whyDifferent": "为什么{name}的假期与众不同"
+    "whyDifferent": "为什么{name}的假期与众不同",
+    "featureBlockHeading": "{name}在{year}年有什么特别之处",
+    "featureBlockLinks": "更多关于{name}"
   },
   "longWeekend": {
     "natural": "长周末",

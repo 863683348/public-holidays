@@ -71,7 +71,9 @@
     "relatedCountries": "Pays associés",
     "compareWith": "Comparer {name} avec d'autres pays",
     "details": "Détails",
-    "whyDifferent": "Pourquoi {name} est différent"
+    "whyDifferent": "Pourquoi {name} est différent",
+    "featureBlockHeading": "Pourquoi {name} en {year} est spécial",
+    "featureBlockLinks": "Plus sur {name}"
   },
   "longWeekend": {
     "natural": "Long week-end",

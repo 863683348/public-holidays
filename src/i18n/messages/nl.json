@@ -71,7 +71,9 @@
     "relatedCountries": "Gerelateerde landen",
     "compareWith": "Vergelijk {name} met andere landen",
     "details": "Meer details",
-    "whyDifferent": "Waarom {name} anders is"
+    "whyDifferent": "Waarom {name} anders is",
+    "featureBlockHeading": "Waarom {name} in {year} bijzonder is",
+    "featureBlockLinks": "Meer over {name}"
   },
   "longWeekend": {
     "natural": "Lang weekend",

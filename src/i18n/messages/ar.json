@@ -72,7 +72,9 @@
     "relatedCountries": "دول ذات صلة",
     "compareWith": "قارن {name} مع دول أخرى",
     "details": "التفاصيل",
-    "whyDifferent": "لماذا {name} مختلف"
+    "whyDifferent": "لماذا {name} مختلف",
+    "featureBlockHeading": "لماذا {name} في {year} مميز",
+    "featureBlockLinks": "المزيد عن {name}"
   },
   "longWeekend": {
     "natural": "عطلة نهاية أسبوع طويلة",

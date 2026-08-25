@@ -523,4 +523,292 @@ export function getCountryInsight(code: string): (typeof COUNTRY_INSIGHTS)[strin
   return COUNTRY_INSIGHTS[code.toUpperCase()];
 }
 
+/**
+ * Country feature blocks for near-win keyword harvesting.
+ *
+ * Used on country×year pages (after the insight block, before the calendar) to add
+ * non-duplicated, locale-specific editorial content that targets high-intent queries
+ * currently ranking at positions 6–10 in GSC.
+ *
+ * Structure: { [countryCode]: { [locale]: { heading: string; text: string; links: Array<{label, href}> } } }
+ * Return undefined when no block exists for the given country+locale combo.
+ */
+export const COUNTRY_FEATURE_BLOCK: Record<string, Record<string, { heading: string; text: string; links: Array<{ label: string; href: string }> }>> = {
+  // ---- English: Labour Day comparison (targets "labour day 2026", "labor weekend 2026") ----
+  CA: {
+    en: {
+      heading: "Canada's Labour Day 2026: Your Long Weekend Guide",
+      text: "Canada's Labour Day falls on Monday, September 7, 2026 — the first Monday of September. This marks the unofficial end of summer and creates a perfect three-day weekend for travel or staycations. Unlike the US (which shares the same date), Canada's Labour Day is a statutory holiday across all provinces and territories. If you're planning a road trip, book accommodation early — September is peak fall-colour season in Eastern Canada.",
+      links: [
+        { label: "Canada 2026 holidays", href: "/CA/2026" },
+        { label: "US Labour Day comparison", href: "/US/2026" },
+        { label: "Long weekend planner", href: "/blog/long-weekend-opportunities-46-countries-2027-guide" },
+      ],
+    },
+  },
+  US: {
+    en: {
+      heading: "US Labor Day 2026: The Ultimate Long Weekend",
+      text: "Labor Day 2026 lands on Monday, September 7 — the first Monday of September. This federal holiday honors American workers and kicks off fall with a three-day weekend. In 2026, it's especially valuable because it falls right before the school year starts, making it ideal for family trips. Note: Labor Day is also observed in Canada (same date), but the US and Canada have different holiday traditions.",
+      links: [
+        { label: "US federal holidays 2026", href: "/US/2026" },
+        { label: "Canada Labour Day", href: "/CA/2026" },
+        { label: "New Zealand Labour Day", href: "/NZ/2026" },
+      ],
+    },
+  },
+  NZ: {
+    en: {
+      heading: "New Zealand Labour Day 2026: A Four-Day Weekend",
+      text: "New Zealand celebrates Labour Day on Monday, October 26, 2026 — the fourth Monday of September. Yes, it's later than the US and Canada! This gives Kiwis a four-day weekend (Fri–Mon) if you count the Friday before. It's a great time for trout fishing, hiking in the Southern Alps, or exploring Auckland's harbours. The date is fixed by the Labour Day and Anzac Day Adjustment Act 1943.",
+      links: [
+        { label: "New Zealand 2026 holidays", href: "/NZ/2026" },
+        { label: "Australia Labour Day", href: "/AU/2026" },
+        { label: "Compare with US/CA", href: "/compare?c=US,CA,NZ&y=2026" },
+      ],
+    },
+  },
+  AU: {
+    en: {
+      heading: "Australia's Labour Day 2026: It Depends Where You Are",
+      text: "Australia doesn't have a single Labour Day date — each state and territory celebrates on a different Monday. In 2026: Western Australia (WA) celebrates on March 2, Victoria (VIC) on March 9, Northern Territory (NT) on May 4 (as May Day), Queensland (QLD) on May 4, and ACT/NSW/South Australia (SA) on October 5. This regional variation is unique among English-speaking countries and makes Australia's calendar particularly interesting for travelers.",
+      links: [
+        { label: "Australia 2026 holidays by state", href: "/AU/2026" },
+        { label: "Compare AU states", href: "/compare?c=NSW,VIC,WA&y=2026" },
+        { label: "New Zealand Labour Day", href: "/NZ/2026" },
+      ],
+    },
+  },
+  KR: {
+    en: {
+      heading: "South Korea Labour Day 2026: May 1st Celebration",
+      text: "South Korea observes Labour Day (노동절, Nodongjeol) on May 1, 2026 — a Friday. This creates a natural three-day weekend with Saturday and Sunday. While not a法定 holiday (most businesses remain open), it's widely recognized and many workers take the day off. May 1st also falls between Buddha's Birthday (5/5) and Children's Day (5/5), making it part of a busy holiday period in spring.",
+      links: [
+        { label: "South Korea 2026 holidays", href: "/KR/2026" },
+        { label: "Japan Golden Week 2026", href: "/JP/2026" },
+        { label: "Labour Day around the world", href: "/blog/global-public-holidays-2027-complete-calendar" },
+      ],
+    },
+  },
+  // ---- Korean (ko): Country feature blocks for near-win harvesting ----
+  JP: {
+    ko: {
+      heading: "일본 2026년 공휴일: 골든 위크의 비밀",
+      text: "일본의 2026년 공휴일은 총 16일로, 개발도상국 중 가장 많습니다. 4월 29일부터 5월 5일까지의 골든 위크는 7일 연속 휴일로, 일본에서 가장 긴 연휴입니다. 이 기간에는 항공편과 호텔 가격이 2-3배까지 오르니 미리 예약하세요. 5월 1일 노동절은 법정휴일은 아니지만 대부분의 기업이 휴무합니다.",
+      links: [
+        { label: "일본 2026년 공휴일 전체", href: "/ko/JP/2026" },
+        { label: "한국 2026년 공휴일", href: "/ko/KR/2026" },
+        { label: "골든 위크 여행 가이드", href: "/blog/long-weekend-opportunities-46-countries-2027-guide" },
+      ],
+    },
+  },
+  PL: {
+    ko: {
+      heading: "폴란드 2026년 공휴일: 13일의 달력",
+      text: "폴란드는 2026년에 13개의 전국 공휴일을 가집니다. 주요holiday로는 새해(1/1), 세세례 예수(1/6), 부활절 월요일(4/6), 노동절(5/1), 헌법절(5/3), 성체축일(6/4), 천주교 성모승천날(8/15), 모든 성인 날(11/1), 독립기념일(11/11), 크리스마스(12/25)가 있습니다. 폴란드 공휴일은 대부분 가톨릭 전통과 얽혀 있어 다른 유럽 국가와 비교하면 흥미롭습니다.",
+      links: [
+        { label: "폴란드 2026 공휴일", href: "/ko/PL/2026" },
+        { label: "오스트리아 공휴일", href: "/ko/AT/2026" },
+        { label: "유럽 공휴일 비교", href: "/compare?c=PL,AT,CZ&y=2026" },
+      ],
+    },
+  },
+  AT: {
+    ko: {
+      heading: "오스트리아 2026년 공휴일: 주마다 다른 휴일",
+      text: "오스트리아는 13개의 전국 공휴일 중 9개가 전국적으로庆祝되지만, 각 주(Bundesland)마다 고유한 지역 공휴일이 있습니다. 예컨대 저어오스트리아주는 성 레오폴트 날(11/15)을, 잘츠부르크주는 성 미카엘 날(9/29)을 기념합니다. 브리키타그(Зwickeltage) 문화가 발달해 화요일或목요일 휴일 주위에 하루를 꺼서 긴 주말을 만드는 것이 일반적입니다.",
+      links: [
+        { label: "오스트리아 2026 공휴일", href: "/ko/AT/2026" },
+        { label: "독일 공휴일", href: "/ko/DE/2026" },
+        { label: "브리키타그 가이드", href: "/blog/long-weekend-opportunities-46-countries-2027-guide" },
+      ],
+    },
+  },
+  HU: {
+    ko: {
+      heading: "헝가리 2026년 공휴일: 혁명 기념일의 의미",
+      text: "헝가리의 2026년 공휴일은 13개입니다. 특히 3월 15일 1848년 혁명 기념일과 10월 23일 1956년 혁명 기념일은 헝가리 사람들에게 가장 중요한 날입니다. 이 두 날은 모두 2026년에 토요일과 일요일에 떨어져 대체 휴일이 없습니다. 5월 1일 노동절과 8월 20일 국경일(성 이シュ트반 기념일)도 중요한 national holiday입니다.",
+      links: [
+        { label: "헝가리 2026 공휴일", href: "/ko/HU/2026" },
+        { label: "폴란드 공휴일", href: "/ko/PL/2026" },
+        { label: "동유럽 공휴일 비교", href: "/compare?c=HU,PL,CZ&y=2026" },
+      ],
+    },
+  },
+  CO: {
+    ko: {
+      heading: "콜롬비아 2026년 공휴일: 카니발과 노동절",
+      text: "콜롬비아는 2026년에 12개의 전국 공휴일을 가집니다. 가장 독특한 것은 카니발 월요일과 화요일(2월 16-17일)으로, 바랑키야 카니발은 콜롬비아에서 두 번째로 큰 축제로 알려져 있습니다. 5월 1일 노동절은 법정휴일이며, 7월 20일 독립기념일과 8월 7일 산 마르틴 전투 기념일도 중요합니다. 콜롬비아 공휴일은 가톨릭 절일과 독립 운동 기념일이 혼합되어 있습니다.",
+      links: [
+        { label: "콜롬비아 2026 공휴일", href: "/ko/CO/2026" },
+        { label: "아르헨티나 공휴일", href: "/ko/AR/2026" },
+        { label: "라틴아메리카 공휴일 비교", href: "/compare?c=CO,AR,BR&y=2026" },
+      ],
+    },
+  },
+  PT: {
+    ko: {
+      heading: "포르투갈 2026년 공휴일: 그리스도 절일과 페테이이라",
+      text: "포르투갈은 2026년에 11개의 전국 공휴일을 가집니다. 특히 5월 1일 노동절, 7월 10일 포르투갈 날(국경일), 8월 15일 성모승천날, 10월 5일 공화국 선포 기념일, 11월 1일 모든 성인 날, 12월 8일 무염시태 성모 마리아 날이 독특합니다. 6월 10일 카몬스 날(포르투갈의 국가 시인)도 중요한 cultural holiday입니다.",
+      links: [
+        { label: "포르투갈 2026 공휴일", href: "/ko/PT/2026" },
+        { label: "스페인 공휴일", href: "/ko/ES/2026" },
+        { label: "유럽 공휴일 비교", href: "/compare?c=PT,ES,FR&y=2026" },
+      ],
+    },
+  },
+  SE: {
+    ko: {
+      heading: "스웨덴 2026년 공휴일: 미드섬머와 국립 기념일",
+      text: "스웨덴의 2026년 공휴일은 11개입니다. 다른 북유럽 국가와 달리 스웨덴은 미드섬머(Midsommardagen, 6월 26-27일 주말)가 가장 중요한 축제로, 크리스마스보다 더 크게celebrate합니다. 6월 6일은 국립 기념일(1974년부터 법정휴일)이며, 11월 1일은 모든 성인 날입니다. 스웨덴은 공휴일이 주말에 떨어지면 대체휴일이 없으니 주의하세요.",
+      links: [
+        { label: "스웨덴 2026 공휴일", href: "/ko/SE/2026" },
+        { label: "노르웨이 공휴일", href: "/ko/NO/2026" },
+        { label: "덴마크 공휴일", href: "/ko/DK/2026" },
+      ],
+    },
+  },
+  NL: {
+    ko: {
+      heading: "네덜란드 2026년 공휴일: 국왕절과 해방기념일",
+      text: "네덜란드는 2026년에 9개의 전국 공휴일을 가집니다. 가장 독특한 것은 4월 27일 국왕절(Koninginnedag)로, 전국이 오렌지 색으로 뒤덮이고 거리 축제가 열립니다. 5월 5일 해방기념일(Liberation Day)은 2년마다 법정휴일입니다(2026년은 법정휴일 아님). 6월 30일 왕의 날은 왕의 생일을 기념합니다. 네덜란드 공휴일은 대부분 개신교 전통과 얽혀 있습니다.",
+      links: [
+        { label: "네덜란드 2026 공휴일", href: "/ko/NL/2026" },
+        { label: "벨기에 공휴일", href: "/ko/BE/2026" },
+        { label: "유럽 공휴일 비교", href: "/compare?c=NL,BE,DE&y=2026" },
+      ],
+    },
+  },
+  AR: {
+    ko: {
+      heading: "아르헨티나 2026년 공휴일: 카니발과 독립기념일",
+      text: "아르헨티나의 2026년 공휴일은 12개입니다. 가장 유명한 것은 카니발 월요일과 화요일(2월 16-17일)으로, 마르델플라타와 부에노스아이레스에서 거대한 축제가 열립니다. 3월 24일 국가 추모의 날(독재 시대 기억)과 4월 2일 포클랜드 전쟁 기념일은 아르헨티나만의 특별한 holiday입니다. 5월 1일 노동절, 5월 25일 5월 혁기념일, 7월 9일 독립기념일도 중요합니다.",
+      links: [
+        { label: "아르헨티나 2026 공휴일", href: "/ko/AR/2026" },
+        { label: "콜롬비아 공휴일", href: "/ko/CO/2026" },
+        { label: "브라질 카니발 가이드", href: "/blog/global-public-holidays-2027-complete-calendar" },
+      ],
+    },
+  },
+  MA: {
+    ko: {
+      heading: "모로코 2026년 공휴일: 이슬람 절일과 독립기념일",
+      text: "모로코는 2026년에 10개의 공휴일을 가집니다. 이슬람 달인 히브리력의 영향을 받아eid 알피트르(금식종료 기념, 약 2월 18-19일 예상)와 eid 알아드하(희생제판, 약 6월 27-28일 예상) 날짜가 매년 다릅니다. 7월 30일 독립기념일, 8월 14일 광복기념일, 8월 21일 왕위계승기념일은 모로코만의 national holiday입니다. 이슬람 공휴일은 기러기 모양으로 이동하니 정확한 날짜는local authority를 확인하세요.",
+      links: [
+        { label: "모로코 2026 공휴일", href: "/ko/MA/2026" },
+        { label: "덴마크 공휴일", href: "/ko/DK/2026" },
+        { label: "아프리카 공휴일 비교", href: "/compare?c=MA,SN,DZ&y=2026" },
+      ],
+    },
+  },
+  DK: {
+    ko: {
+      heading: "덴마크 2026년 공휴일: 크리스텐 전통의 달력",
+      text: "덴마크는 2026년에 10개의 공휴일을 가집니다. 5월 5일은 성령강림절 다음 날(Stores Bededag)로, 덴마크만의 unique holiday입니다. 6월 5일은 헌법기념일(Constitution Day)로 국왕이 연설합니다. 12월 25-26일은 크리스마스 다음 날(Danksdag)로 가족과 보내는 날입니다. 덴마크 공휴일은 대부분 루터교 전통과 얽혀 있으며, 여름에는 낮이 길어 야외 축제와 잘 어울립니다.",
+      links: [
+        { label: "덴마크 2026 공휴일", href: "/ko/DK/2026" },
+        { label: "노르웨이 공휴일", href: "/ko/NO/2026" },
+        { label: "스웨덴 공휴일", href: "/ko/SE/2026" },
+      ],
+    },
+  },
+  SN: {
+    ko: {
+      heading: "세네갈 2026년 공휴일: 이슬람과 프랑스 영향의 조화",
+      text: "세네갈은 2026년에 9개의 공휴일을 가집니다. 인구의 95%가 무슬림이라 이슬람 절일이 대부분을 차지합니다. eid 알피트르(약 2월 18-19일 예상), eid 알아드하(약 6월 27-28일 예상), 이글(생일기념일)이 주요holiday입니다. 4월 4일 독립기념일, 5월 1일 노동절, 7월 1일 공화국기념일은 세네갈만의 national holiday입니다. 프랑스 식민역사의 흔적이 남아있는 공휴일도 있습니다.",
+      links: [
+        { label: "세네갈 2026 공휴일", href: "/ko/SN/2026" },
+        { label: "모로코 공휴일", href: "/ko/MA/2026" },
+        { label: "아프리카 공휴일 비교", href: "/compare?c=SN,MA,DZ&y=2026" },
+      ],
+    },
+  },
+  KR: {
+    ko: {
+      heading: "한국 2026년 공휴일: 노동절과 긴 주말",
+      text: "한국의 2026년 공휴일은 총 68일(국경일+대체공휴일 포함)입니다. 5월 1일 노동절은 법정공휴일은 아니지만 대부분의 기업이 휴무하며, 2026년에는 금요일에 있어 금·토·일 3일 연휴가 가능합니다. 설날(2월 17-19일)과 추석(9월 25-27일)에는 귀성ラのbiggest travel rush가 발생합니다. 어린이날(5월 5일)은 월요일이라 4일 연휴가 됩니다.",
+      links: [
+        { label: "한국 2026 공휴일 전체", href: "/ko/KR/2026" },
+        { label: "일본 공휴일", href: "/ko/JP/2026" },
+        { label: "긴 주말 계획 가이드", href: "/blog/long-weekend-opportunities-46-countries-2027-guide" },
+      ],
+    },
+  },
+  // ---- Japanese (ja): Country feature blocks for near-win harvesting ----
+  AR: {
+    ja: {
+      heading: "アルゼンチン2026年の祝日：カーニバルと独立記念日",
+      text: "アルゼンチンの2026年の祝日は12日間です。最も有名なのはカーニバル月曜日と火曜日（2月16-17日）で、マール・デル・プラタとブエノスアイレスで巨大な祭りが開催されます。3月24日の全国追憶の日（独裁時代記憶）と4月2日のフォークランド戦記念日はアルゼンチンだけの特別な祝日です。5月1日の労働節、5月25日の5月革命記念日、7月9日の独立記念日も重要です。",
+      links: [
+        { label: "アルゼンチン2026年祝日", href: "/ja/AR/2026" },
+        { label: "コロンビア祝日", href: "/ja/CO/2026" },
+        { label: "ラテンアメリカ祝日比較", href: "/compare?c=AR,CO,BR&y=2026" },
+      ],
+    },
+  },
+  MA: {
+    ja: {
+      heading: "モロッコ2026年の祝日：イスラム祭りと独立記念日",
+      text: "モロッコは2026年に10個の祝日があります。人口の95%がムスリムなので、イスラム祭日が大半を占めます。イード・アル＝フィトル（断食終了記念、約2月18-19日予測）、イード・アル＝アドハー（犠牲祭、約6月27-28日予測）、イグラ（生誕記念日）が主要な祝日です。7月30日の独立記念日、8月14日の解放記念日、8月21日の王位継承記念日はモロッコだけの祝日です。",
+      links: [
+        { label: "モロッコ2026年祝日", href: "/ja/MA/2026" },
+        { label: "デンマーク祝日", href: "/ja/DK/2026" },
+        { label: "アフリカ祝日比較", href: "/compare?c=MA,SN,DZ&y=2026" },
+      ],
+    },
+  },
+  DK: {
+    ja: {
+      heading: "デンマーク2026年の祝日：キリスト教伝統のカレンダー",
+      text: "デンマークは2026年に10個の祝日があります。5月5日は聖霊降臨祭翌日（Stores Bededag）で、デンマークだけの独自の祝日です。6月5日は憲法記念日（Constitution Day）で国王が演説します。12月25-26日はクリスマス翌日（Danksdag）で家族と過ごす日です。デンマークの祝日はほとんどルター教伝統と結びついており、夏は昼が長いて户外パーティーとよく合います。",
+      links: [
+        { label: "デンマーク2026年祝日", href: "/ja/DK/2026" },
+        { label: "ノルウェー祝日", href: "/ja/NO/2026" },
+        { label: "スウェーデン祝日", href: "/ja/SE/2026" },
+      ],
+    },
+  },
+  SN: {
+    ja: {
+      heading: "セネガル2026年の祝日：イスラムとフランス影響の調和",
+      text: "セネガルは2026年に9個の祝日があります。人口の95%がムスリムなので、イスラム祭日が大部分を占めます。イード・アル＝フィトル（約2月18-19日予測）、イード・アル＝アドハー（約6月27-28日予測）、イグラ（生誕記念日）が主要な祝日です。4月4日の独立記念日、5月1日の労働節、7月1日の共和国記念日はセネガルだけの祝日です。",
+      links: [
+        { label: "セネガル2026年祝日", href: "/ja/SN/2026" },
+        { label: "モロッコ祝日", href: "/ja/MA/2026" },
+        { label: "アフリカ祝日比較", href: "/compare?c=SN,MA,DZ&y=2026" },
+      ],
+    },
+  },
+  PT: {
+    ja: {
+      heading: "ポルトガル2026年の祝日：キリスト祭とペテイイラ",
+      text: "ポルトガルは2026年に11個の全国祝日があります。特に5月1日労働節、7月10日ポルトガルの日（国慶日）、8月15日聖母被昇天日、10月5日共和制宣言記念日、11月1日諸聖人の日、12月8日無原罪の聖母マリアの日は独特です。6月10日のカモンêsの日（ポルトガルの国歌詩人）も重要な文化的祝日です。",
+      links: [
+        { label: "ポルトガル2026年祝日", href: "/ja/PT/2026" },
+        { label: "スペイン祝日", href: "/ja/ES/2026" },
+        { label: "ヨーロッパ祝日比較", href: "/compare?c=PT,ES,FR&y=2026" },
+      ],
+    },
+  },
+  JP: {
+    ja: {
+      heading: "日本2026年の祝日：ゴールデンウィークの秘密",
+      text: "日本の2026年の祝日は合計16日で、先進国中最也多いです。4月29日から5月5日のゴールデンウィークは7日連続の休日で、日本で最も長い連休です。この期間、航空券とホテルの価格は2-3倍まで上昇するので提前予約が必要です。5月1日の労働節は法定休日ではありませんが、ほとんどの企業が休業します。",
+      links: [
+        { label: "日本2026年祝日一覧", href: "/ja/JP/2026" },
+        { label: "韓国2026年祝日", href: "/ja/KR/2026" },
+        { label: "ゴールデンウィーク旅行ガイド", href: "/blog/long-weekend-opportunities-46-countries-2027-guide" },
+      ],
+    },
+  },
+};
+
+/** Returns the country feature block for a given country and locale, or undefined. */
+export function getCountryFeatureBlock(
+  code: string,
+  locale: string
+): { heading: string; text: string; links: Array<{ label: string; href: string }> } | undefined {
+  return COUNTRY_FEATURE_BLOCK[code.toUpperCase()]?.[locale];
+}
+
 export const POPULAR_COUNTRIES = COUNTRIES.filter((c) => c.popular);
