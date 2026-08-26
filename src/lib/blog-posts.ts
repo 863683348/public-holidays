@@ -3860,6 +3860,68 @@ export const BLOG_POSTS: BlogPost[] = [
 
       <p>For the complete Europe 2026 holiday comparison, visit our <a href="/compare">Compare Countries</a> tool — pick any combination of European nations to see overlapping holidays side by side.</p>
     `
+  },
+
+  {
+    id: 150,
+    slug: 'brazil-public-holidays-carnival',
+    title: 'Brazil Public Holidays: How Long Is Carnival Really?',
+
+  ,
+  {
+    id: 24,
+    title: "Mexico Public Holidays: The Puente System",
+    slug: "mexico-public-holidays-puente",
+    category: "latin-america",
+    author: "Public Holidays Team",
+    publishedDate: "2026-08-27T00:00:00Z",
+    lastModified: "2026-08-27T00:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/mexico-puente.svg",
+    excerpt: "Mexico's puente system lets workers turn a Wednesday holiday into a four-day weekend. Here's how it works and why it matters.",
+    relatedCountries: ["MX"],
+    locale: "en",
+    content: `
+      <h2>What Is the Puente?</h2>
+      <p>A <strong>puente</strong> (Spanish for 'bridge') in Mexican labor culture refers to the informal practice of taking an extra day off when a public holiday falls on a Tuesday or Thursday, creating a four-day weekend.</p>
+      
+      <h2>Why Puente Matters</h2>
+      <ul>
+        <li><strong>Economic Impact:</strong> Bridge weekends boost domestic tourism and local business revenue</li>
+        <li><strong>Social Value:</strong> Extended weekends allow families to reunite</li>
+        <li><strong>Cultural Significance:</strong> Deeply embedded in Mexican work culture</li>
+      </ul>
+      
+      <h2>Common Puente Scenarios</h2>
+      <table>
+        <tr><th>Holiday</th><th>Day</th><th>Typical Puente</th></tr>
+        <tr><td>Cinco de Mayo</td><td>May 5</td><td>If Wednesday, bridge with Tuesday</td></tr>
+        <tr><td>Independence Day</td><td>Sept 16</td><td>Often creates 3-4 day weekend</td></tr>
+        <tr><td>Day of the Dead</td><td>Nov 2</td><td>Bridge with surrounding days</td></tr>
+      </table>
+      
+      <h2>Legal Status</h2>
+      <p>Puente is not explicitly recognized in Mexico's Federal Labor Law. However, it is widely respected in practice, especially in the public sector and urban areas.</p>
+      
+      <h2>FAQ</h2>
+      <p><strong>Is puente legally protected?</strong> No, it is an informal tradition.</p>
+      <p><strong>Which holidays create puente weekends?</strong> Holidays falling on Wednesday are most likely.</p>
+      <p><strong>Do all companies observe puente?</strong> Most do, especially in urban areas.</p>
+    `,
+  }
+    locale: 'en',
+    category: 'brazil',
+    author: 'Public Holidays Team',
+    publishedDate: '2026-08-26T08:00:00Z',
+    lastModified: '2026-08-26T08:00:00Z',
+    imageUrl: 'https://public-holidays.shop/images/blog/brazil-carnival.svg',
+    excerpt: 'Carnival is Brazil\'s biggest holiday, but how many days off do you actually get? Here\'s the real breakdown.',
+    relatedCountries: ['BR'],
+    faq: [
+      { question: 'How many federal holidays does Brazil have?', answer: 'Brazil has 12 federal holidays per year, including Carnival Tuesday and Good Friday.' },
+      { question: 'Is Carnival a week-long holiday?', answer: 'Technically no. The federal holiday is just Tuesday, but many people extend their break with surrounding weekends or vacation days.' },
+      { question: 'What is the best city for Carnival?', answer: 'Rio de Janeiro is the most famous, but Salvador and Recife offer equally vibrant celebrations with different styles.' },
+    ],
+    content: `<p>Brazil is one of the few countries where Carnival is not just a festival but a national institution. If you are planning a trip around Brazilian holidays, understanding how long Carnival actually lasts is essential. The answer is more complicated than most travel guides suggest.</p><h2>The Official Holidays</h2><p>Brazil has 12 federal holidays per year. Two of them fall during Carnival season: Carnival Tuesday (the main day of celebration, a federal holiday) and Good Friday (falls the Friday before Easter, always during Carnival week). That means most Brazilians get two consecutive days off during Carnival. Some companies and schools extend the break to four or five days, but the legal minimum is just two.</p><h2>How Long Does Carnival Really Last?</h2><p>The popular image of Carnival is a week-long explosion of parades, costumes, and street parties. The reality is more nuanced. The official holiday is just Tuesday. But the festivities start much earlier. In Rio de Janeiro, the Sambadrome parades run for about six nights, starting on the Saturday before Carnival Tuesday. Each night features a different samba school competing for the championship. The energy builds until Tuesday, when the streets fill with blocos (street bands) and impromptu parties. Outside Rio, Carnival looks different. In Salvador, the trios elétricos (massive sound trucks) roll through the streets for three days. In Recife and Olinda, the frevo music and traditional costumes create a completely different atmosphere.</p><h2>Carnival vs. Other Brazilian Holidays</h2><p>Brazilian holidays are known for their length and frequency. The country has more paid time off than most of Europe. Here is how Carnival compares: Carnival lasts 2-5 days (federal holiday plus extended weekends), Independence Day is 1 day (September 7), Christmas is 1 day (December 25), New Year's Eve is 1 day (December 31), and Easter spans 2 days (Good Friday plus Easter Sunday). Carnival is the only holiday that routinely extends beyond the official dates.</p><h2>Planning Around Carnival</h2><p>If you are visiting Brazil during Carnival, expect higher prices and fuller hotels. The country closes down for the holiday, and domestic tourism spikes. Book accommodations months in advance if you want to stay in Rio or Salvador. For a more relaxed experience, consider visiting during other Brazilian holidays like Independence Day or Tiradentes (April 21), when the celebrations are smaller and more local.</p><h2>FAQ</h2><ul><li>How many federal holidays does Brazil have? Brazil has 12 federal holidays per year, including Carnival, Independence Day, and Christmas.</li><li>Is Carnival a week-long holiday? Technically no. The federal holiday is just Tuesday, but many people extend their break with surrounding weekends or vacation days.</li><li>What is the best city for Carnival? Rio de Janeiro is the most famous, but Salvador and Recife offer equally vibrant celebrations with different styles.</li></ul>`
   }
 ];
 
