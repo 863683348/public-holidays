@@ -446,11 +446,7 @@ export default async function CountryHolidayView({
         if (!feature) return null;
         return (
           <section className="space-y-3">
-            <h2 className="text-xl font-semibold">
-              {locale === "en"
-                ? feature.heading
-                : t("featureBlockHeading", { name: countryName, year })}
-            </h2>
+            <h2 className="text-xl font-semibold">{feature.heading}</h2>
             <p className="text-[var(--muted)] leading-relaxed text-sm">{feature.text}</p>
             <div className="flex flex-wrap gap-2">
               {feature.links.map((link, idx) => (

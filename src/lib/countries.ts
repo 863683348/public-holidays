@@ -556,6 +556,16 @@ export const COUNTRY_FEATURE_BLOCK: Record<string, Record<string, { heading: str
         { label: "New Zealand Labour Day", href: "/NZ/2026" },
       ],
     },
+    es: {
+      heading: "Acción de Gracias 2026 en EE. UU.: el cuarto jueves de noviembre",
+      text: "El Día de Acción de Gracias (Thanksgiving) 2026 en Estados Unidos cae el jueves 26 de noviembre — siempre el cuarto jueves de noviembre. Es un feriado federal y la fiesta más importante del año para las familias estadounidenses: cena de pavo, reunión familiar y, al día siguiente, el Black Friday que abre la temporada de compras navideñas. En 2026, tomar el viernes 27 de noviembre crea un puente de cuatro días (jueves a domingo). La 'semana del pavo' es la semana completa que antecede a la fiesta, cuando millones de personas viajan para reunirse con sus familias.",
+      links: [
+        { label: "Acción de Gracias 2026 (EE. UU.)", href: "/es/US/2026/thanksgiving-day" },
+        { label: "Feriados de EE. UU. 2026", href: "/es/US/2026" },
+        { label: "Acción de Gracias en Puerto Rico", href: "/es/PR/2026/thanksgiving-day" },
+        { label: "Feriados de EE. UU. 2027", href: "/es/US/2027" },
+      ],
+    },
   },
   NZ: {
     en: {
@@ -784,7 +794,20 @@ export const COUNTRY_FEATURE_BLOCK: Record<string, Record<string, { heading: str
         { label: "アフリカ祝日比較", href: "/compare?c=SN,MA,DZ&y=2026" },
       ],
     },
+  },
 
+  // ---- Spanish (es): Thanksgiving cluster for near-win harvesting ----
+  PR: {
+    es: {
+      heading: "Acción de Gracias 2026 en Puerto Rico: el 26 de noviembre",
+      text: "En Puerto Rico, el Día de Acción de Gracias 2026 cae el jueves 26 de noviembre — el cuarto jueves de noviembre, igual que en Estados Unidos. Es un feriado oficial en la isla y se celebra con la tradicional cena de pavo y reunión familiar, al igual que en el continente. Como cae en jueves, tomar el viernes 27 de noviembre (el famoso Black Friday) crea un puente de cuatro días perfecto para viajar. La temporada navideña puertorriqueña — la más larga del mundo — arranca justo con esta fiesta y se extiende hasta la Fiesta de Reyes Magos en enero.",
+      links: [
+        { label: "Acción de Gracias 2026 (Puerto Rico)", href: "/es/PR/2026/thanksgiving-day" },
+        { label: "Feriados de Puerto Rico 2026", href: "/es/PR/2026" },
+        { label: "Acción de Gracias en EE. UU.", href: "/es/US/2026/thanksgiving-day" },
+        { label: "Feriados de Puerto Rico 2027", href: "/es/PR/2027" },
+      ],
+    },
   },
 
   // ---- Japanese (ja): Country feature blocks for near-win harvesting ----
