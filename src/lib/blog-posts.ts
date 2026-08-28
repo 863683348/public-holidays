@@ -4005,6 +4005,74 @@ export const BLOG_POSTS: BlogPost[] = [
       <p><h2>1. Argentina's Fixed-Date Holiday System | 阿根廷固定日期假日系统</h2></p><p></p><p>Unlike Mexico or Brazil, Argentina doesn't have a formal puente system. When a holiday falls on a Tuesday or Thursday, workers don't automatically get the bridging day off. The result is a calendar where holidays are predictable but rarely create long weekends.</p><p></p><p>**The key difference:**</p><p><li>**Mexico/Brazil**: Holidays near weekends → bridge days → 4-day weekends</li></p><p><li>**Argentina**: Holidays stay fixed → same weekend pattern every year</li></p><p></p><p>This means Argentine workers plan vacations around holidays rather than extending them with puente days. | 与墨西哥或巴西不同，阿根廷没有正式的 puente 系统。当假日落在周二或周四时，员工不自动获得桥接日休息。结果是可预测但很少形成长周末的日历。</p><p></p><p>**关键区别：**</p><p><li>**墨西哥/巴西**：假日靠近周末 → 桥接日 → 4 天周末</li></p><p><li>**Argentina**：假日固定 → 每年相同周末模式</li></p><p></p><p>这意味着阿根廷员工围绕假日计划假期而不是用 puente 日延长。</p><p></p><p>---</p><p></p><p><h2>2. The Major Argentine Holidays | 主要阿根廷假日</h2></p><p></p><p><h3>January 1 — Año Nuevo (New Year's Day)</h3></p><p>Fixed date. Families gather for asado (barbecue) and fireworks.</p><p></p><p><h3>March/April — Semana Santa (Holy Week)</h3></p><p>Moving holiday based on Easter. Friday before Easter Sunday is a mandatory day off. This is Argentina's most important religious holiday.</p><p></p><p><h3>April 2 — Día del Veterano (Veterans Day / Malvinas Day)</h3></p><p>Commemorates the 1982 Falklands War. National day of reflection and remembrance.</p><p></p><p><h3>May 1 — Día del Trabajador (Labor Day)</h3></p><p>Fixed date. Celebrated with union rallies and family gatherings.</p><p></p><p><h3>May 25 — Revolución de Mayo (May Revolution)</h3></p><p>Commemorates the 1810 revolution that began Argentina's independence. National holiday with parades and cultural events.</p><p></p><p><h3>June 20 — Día de la Bandera (Flag Day)</h3></p><p>Honors Manuel Belgrano, creator of the Argentine flag. Not a day off for most workers, but widely observed.</p><p></p><p><h3>July 9 — Independencia (Independence Day)</h3></p><p>Commemorates the 1816 Declaration of Independence. Major national holiday with celebrations across the country.</p><p></p><p><h3>August 17 — Día del General San Martín</h3></p><p>Honors General José de San Martín, liberator of Argentina, Chile, and Peru. Memorial day, not always a day off.</p><p></p><p><h3>October 12 — Día del Respeto a la Diversidad Cultural</h3></p><p>Previously "Día de la Raza," renamed to respect cultural diversity. Fixed date, national holiday.</p><p></p><p><h3>November 20 — Día de la Soberanía Nacional</h3></p><p>National Sovereignty Day. Commemorates the 1879 Battle of Las Piedras. Not always a day off.</p><p></p><p><h3>December 8 — Inmaculada Concepción (Immaculate Conception)</h3></p><p>Religious holiday honoring the Virgin Mary. Fixed date, widely observed.</p><p></p><p><h3>December 25 — Navidad (Christmas)</h3></p><p>Family gathering day. Most businesses closed. | 固定日期。家庭聚会烤肉和烟花。</p><p>移动假日基于复活节。复活节前的星期五是强制休息日。这是阿根廷最重要的宗教假日。</p><p>纪念 1812 福克兰战争。国家反思和纪念日。</p><p>固定日期。与工会集会和家庭聚会庆祝。</p><p>纪念开始阿根廷独立的 1810 年革命。全国性假日，有游行和文化活动。</p><p>纪念 Manuel Belgrano，阿根廷国旗创造者。大多数员工不放假，但广泛庆祝。</p><p>纪念 1816 独立宣言。主要全国性假日，全国庆祝。</p><p>纪念何塞·德·圣马丁，阿根廷、智利和秘鲁的解放者。纪念日，不总是休息日。</p><p>以前叫"种族日"，更名为尊重文化多样性。固定日期，全国性假日。</p><p>国家主权日。纪念 1879 拉斯皮德拉斯战役。不总是休息日。</p><p>宗教假日纪念圣母玛利亚。固定日期，广泛庆祝。</p><p>家庭聚会日。大多数企业关闭。</p><p></p><p>---</p><p></p><p><h2>3. Moving Holidays: When Dates Shift | 移动假日：日期变化</h2></p><p></p><p>Three major holidays move based on religious calendars:</p><p></p><p>| Holiday | Calculation | Typical Date Range |</p><p>|---------|-------------|-------------------|</p><p>| Carnivales (Carnival) | 47 days before Easter | Feb-Mar |</p><p>| Semana Santa (Holy Week) | Based on Easter Sunday | Mar-Apr |</p><p>| Rosario's Day | Nov 12 (fixed) | Nov 12 |</p><p></p><p>Carnival is celebrated with parades and street festivals, especially in northern provinces like Corrientes and Misiones. | 三个主要假日基于宗教日历移动：</p><p>狂欢节在复活节前 47 天。基于复活节星期日。11 月 12 日固定。</p><p>狂欢节以游行和街头节日庆祝，特别是在科连特斯和米西奥内斯等北部省份。</p><p></p><p>---</p><p></p><p><h2>4. Argentina vs. Neighbors: A Comparison | 阿根廷与邻国比较</h2></p><p></p><p>| Feature | Argentina | Brazil | Mexico |</p><p>|---------|-----------|--------|--------|</p><p>| Total holidays | ~18 | ~14 | ~16 |</p><p>| Puente system | ❌ No | ✅ Yes | ✅ Yes |</p><p>| Fixed vs. moving | Mostly fixed | Mix | Mix |</p><p>| Religious holidays | Strong Catholic influence | Strong Catholic | Strong Catholic |</p><p>| Regional variations | Some provincial holidays | Many state holidays | Many state holidays |</p><p></p><p>Argentina's lack of puente means holiday planning is more rigid. Workers know exactly which days are off each year — there's no surprise long weekend. | 阿根廷的 18 个假日 vs 巴西 14 个 vs 墨西哥 16 个。阿根廷没有 puente 系统，而巴西和墨西哥有。阿根廷主要是固定日期，而邻国有混合。阿根廷有强烈天主教影响。</p><p>阿根廷缺乏 puente 意味着假日计划更僵化。员工知道每年确切哪几天休息——没有意外长周末。</p><p></p><p>---</p><p></p><p><h2>5. Regional Variations Within Argentina | 阿根廷国内区域差异</h2></p><p></p><p>While national holidays apply everywhere, some provinces observe additional local holidays:</p><p></p><p><li>**Buenos Aires**: Local patron saint days</li></p><p><li>**Córdoba**: Religious festivals</li></p><p><li>**Tucumán**: Regional independence commemorations</li></p><p><li>**Misiones**: Carnival celebrations (largest in Argentina)</li></p><p></p><p>These provincial holidays don't affect national workers but matter for local businesses and government offices. | 虽然全国性假日适用于全国各地，但某些省份观察额外地方假日：</p><p>布宜诺斯艾利斯：本地守护神圣日</p><p>科尔多瓦：宗教节日</p><p>图库曼：区域独立纪念</p><p>米西奥内斯：狂欢节庆祝（阿根廷最大）</p><p>这些省级假日不影响全国员工，但对当地企业和政府办公室重要。</p><p></p><p>---</p><p></p><p><h2>6. Practical Tips for Visitors | 实用访客建议</h2></p><p></p><p>**When to visit:**</p><p><li>Avoid January-February (hottest, most holidays)</li></p><p><li>April-October is pleasant weather-wise</li></p><p><li>December-January is peak tourist season</li></p><p></p><p>**Business hours:**</p><p><li>Most businesses close on national holidays</li></p><p><li>Museums and attractions may have special holiday schedules</li></p><p><li>Restaurants in tourist areas often stay open</li></p><p></p><p>**Transportation:**</p><p><li>Public transport runs on reduced holiday schedules</li></p><p><li>Long-distance buses may have limited service</li></p><p><li>Domestic flights book early for holiday periods | 最佳访问时间：避免 1-2 月（最热，假日最多）。4-10 月天气宜人。12-1 月是旅游旺季。</li></p><p>商业时间：大多数企业在全国性假日关闭。博物馆和景点可能有特殊假日时间。旅游区餐厅通常营业。</p><p>交通：公共交通在假日减少时间表运行。长途巴士可能服务有限。国内航班假日期间提前预订。</p><p></p><p>---</p><p></p><p><h2>About public-holidays.shop | 关于 public-holidays.shop</h2></p><p></p><p>Plan your trips around Argentina's holiday calendar. Our [Argentina holidays page](/es/AR) has full dates, regional variations, and travel tips. Check our [Latin America section](/es/region/latam) for neighboring country holidays too. | 围绕阿根廷假日日历规划行程。我们的 [阿根廷假日页面](/es/AR) 有完整日期、区域差异和旅行建议。也查看我们的 [拉丁美洲部分](/es/region/latam) 邻国假日。</p><p></p><p>---</p><p></p><p><h2>FAQ | 常见问题</h2></p><p></p><p>**Q: Does Argentina have puente holidays like Mexico?** | A: No. Argentina's holidays are mostly fixed-date observances without bridge day systems. | 不。阿根廷的假日主要是固定日期庆祝，没有桥接日系统。</p><p></p><p>**Q: Which Argentine holidays are moving (not fixed)?** | A: Carnival, Holy Week (Semana Santa), and Easter Monday move based on the liturgical calendar. | 狂欢节、圣周（Semana Santa）和复活节星期一基于礼仪日历移动。</p><p></p><p>**Q: Are provincial holidays nationwide?** | A: No. Provincial holidays only apply in their respective provinces. National holidays apply everywhere. | 不。省级假日仅适用于 respective 省份。全国性假日适用于全国各地。</p><p></p><p>**Q: What's the most important Argentine holiday?** | A: May 25 (Revolución de Mayo) and July 9 (Independencia) are the two most significant national holidays. | 5 月 25 日（五月革命）和 7 月 9 日（独立日）是两个最重要的全国性假日。</p>
     `,
   },
+  {
+    id: 155,
+    slug: 'south-africa-public-holidays',
+    titleZh: '南非公共假日：和解日与遗产日',
+    titleEn: 'South Africa Public Holidays: Reconciliation & Heritage',
+    locale: 'en',
+    category: 'south-africa',
+    author: 'PubHoliday Research Team',
+    publishedDate: '2026-08-29T08:00:00Z',
+    lastModified: '2026-08-29T08:00:00Z',
+    imageUrl: 'https://public-holidays.shop/images/blog/south-africa-reconciliation.svg',
+    excerpt: 'South Africa has two holidays that turn reflection into action: Reconciliation Day and Heritage Day. Here is what they mean and why they matter.',
+    relatedCountries: ['ZA'],
+    content: `
+      <p>South Africa&apos;s public holiday calendar includes two dates that stand out for their focus on national identity rather than religious observance: Reconciliation Day on 16 December and Heritage Day on 24 September. Both emerged from the post-apartheid nation-building project, and both invite South Africans — and visitors — to think about what the country is and what it aspires to be.</p>
+
+      <h2>Reconciliation Day (16 December)</h2>
+      <p>Formerly known as the Day of the Covenant, Reconciliation Day replaced the old holiday in 1995 as part of the Truth and Reconciliation Commission&apos;s broader effort to reframe South African memory. The date sits inside the period historically marked by Afrikaners as the Day of the Vow, which commemorates the 1838 Battle of Blood River. Rather than erasing that history, the new holiday invites all South Africans to reflect on division and choose dialogue instead.</p>
+      <p>For many, the day is spent with family, church services, or quiet conversation about the country&apos;s past. For others, it is an opportunity to visit memorials, read about the TRC, or simply pause amid year-end festivities. The dual meaning is intentional: the same date holds different weight for different communities, and the holiday asks them to share the same calendar without requiring agreement on every detail.</p>
+
+      <h2>Heritage Day (24 September)</h2>
+      <p>Heritage Day is perhaps the more widely celebrated of the two. Known informally as the Braai Day, it has become a cultural moment where South Africans gather around a grill, share food, and celebrate the diversity of the nation&apos;s traditions. The official theme is heritage — language, music, clothing, cuisine, and the many stories that make up South African identity.</p>
+      <p>The braai tradition is more than a party. It is a social equalizer. On Heritage Day, people of different backgrounds stand side by side at the same grill, and the ritual of cooking together becomes a metaphor for the country&apos;s broader project of inclusion. Schools hold heritage presentations. Communities organize festivals. Radio and television feature programs about regional history and notable South Africans.</p>
+
+      <h2>Why These Holidays Matter for Visitors</h2>
+      <p>Travelers who visit South Africa around these dates will notice a different atmosphere. Businesses may be closed on Reconciliation Day. Heritage Day falls on a Saturday in 2026, making it a long weekend for many. Local events are more visible, and there is a sense of national conversation that is less present on ordinary days.</p>
+      <ol>
+        <li><strong>Respect the dual meaning</strong> — Reconciliation Day is solemn for some and celebratory for others; both responses are valid.</li>
+        <li><strong>Join a braai on Heritage Day</strong> — It is one of the most accessible ways to experience South African social culture.</li>
+        <li><strong>Learn the history</strong> — Understanding the TRC and the transition from apartheid adds depth to both holidays.</li>
+        <li><strong>Support local events</strong> — Heritage festivals and community gatherings are often free and open to the public.</li>
+      </ol>
+    `,
+  },
+  {
+    id: 156,
+    slug: 'south-africa-public-holidays-zh',
+    titleZh: '南非公共假日：和解日与遗产日',
+    titleEn: 'South Africa Public Holidays: Reconciliation & Heritage',
+    locale: 'zh',
+    category: 'south-africa',
+    author: 'PubHoliday Research Team',
+    publishedDate: '2026-08-29T08:00:00Z',
+    lastModified: '2026-08-29T08:00:00Z',
+    imageUrl: 'https://public-holidays.shop/images/blog/south-africa-reconciliation.svg',
+    excerpt: '南非有两个以反思和行动为核心的公共假日：和解日与遗产日。了解它们的含义与重要性。',
+    relatedCountries: ['ZA'],
+    content: `
+      <p>南非的公共假日日历中有两个日子因其聚焦于国家认同而非宗教纪念而格外突出：12月16日的和解日与9月24日的遗产日。这两个节日都诞生于后种族隔离时代的国家建设项目，它们邀请南非人——以及访客——思考这个国家是什么，以及它向往成为什么。</p>
+
+      <h2>和解日（12月16日）</h2>
+      <p>和解日的前身是盟约日，于1995年取代旧假日，成为真相与和解委员会更广泛的反思项目的一部分。这个日期位于阿非利卡人历史上称为"誓言日"的时段内，纪念1838年的血河战役。新假日并没有抹去这段历史，而是邀请所有南非人反思分裂，并选择对话而非仇恨。</p>
+      <p>对许多人来说，这一天与家人共度、参加教会礼拜，或安静地探讨国家的过去。对另一些人来说，它是参观纪念馆、阅读真相与和解委员会资料，或在年末节庆中暂停思考的机会。这种双重意义是有意为之的：同一日期对不同社区具有不同分量，假日要求他们共享同一个日历，而不必在所有细节上达成一致。</p>
+
+      <h2>遗产日（9月24日）</h2>
+      <p>遗产日是两个节日中庆祝更为广泛的一个。 informal 被称为"烧烤日"，它已成为南非人聚集在烤架旁、分享食物、庆祝国家多样性的文化时刻。官方主题是遗产——语言、音乐、服饰、美食，以及构成南非身份的众多故事。</p>
+      <p>烧烤传统不仅仅是一场聚会。它是一种社会平等器。在遗产日，不同背景的人站在同一个烤架旁，烹饪的仪式成为国家包容性项目的隐喻。学校举办遗产展示，社区组织节庆活动，广播电视播放关于区域历史和著名南非人的节目。</p>
+
+      <h2>为什么这些假日对访客很重要</h2>
+      <p>在这两个日期前后访问南非的旅行者会注意到不同的氛围。和解日当天商家可能会关门。2026年的遗产日落在星期六，对许多人来说是长周末。本地活动更加可见，平日少有的全国性对话氛围也会浮现。</p>
+      <ol>
+        <li><strong>尊重双重意义</strong> — 和解日对某些人来说是庄重的，对另一些人来说是庆祝的；两种反应都有效。</li>
+        <li><strong>在遗产日参加烧烤</strong> — 这是体验南非社会文化最便捷的方式之一。</li>
+        <li><strong>了解历史</strong> — 理解真相与和解委员会和种族隔离后的转型，能为两个节日增添深度。</li>
+        <li><strong>支持本地活动</strong> — 遗产节庆和社区聚会通常是免费开放的。</li>
+      </ol>
+    `,
+  },
 ];
 
 // ========================================================================
