@@ -588,7 +588,16 @@ export const COUNTRY_FEATURE_BLOCK: Record<string, Record<string, { heading: str
         { label: "Japan Golden Week 2026", href: "/JP/2026" },
         { label: "Labour Day around the world", href: "/blog/global-public-holidays-2027-complete-calendar" },
       ],
+    },    ko: {
+      heading: "한국 2026년 공휴일: 노동절과 긴 주말",
+      text: "한국의 2026년 공휴일은 총 68일(국경일+대체공휴일 포함)입니다. 5월 1일 노동절은 법정공휴일은 아니지만 대부분의 기업이 휴무하며, 2026년에는 금요일에 있어 금·토·일 3일 연휴가 가능합니다. 설날(2월 17-19일)과 추석(9월 25-27일)에는 귀성ラのbiggest travel rush가 발생합니다. 어린이날(5월 5일)은 월요일이라 4일 연휴가 됩니다.",
+      links: [
+        { label: "한국 2026 공휴일 전체", href: "/ko/KR/2026" },
+        { label: "일본 공휴일", href: "/ko/JP/2026" },
+        { label: "긴 주말 계획 가이드", href: "/blog/long-weekend-opportunities-46-countries-2027-guide" },
+      ],
     },
+
   },
   // ---- Korean (ko): Country feature blocks for near-win harvesting ----
   JP: {
@@ -600,7 +609,16 @@ export const COUNTRY_FEATURE_BLOCK: Record<string, Record<string, { heading: str
         { label: "한국 2026년 공휴일", href: "/ko/KR/2026" },
         { label: "골든 위크 여행 가이드", href: "/blog/long-weekend-opportunities-46-countries-2027-guide" },
       ],
+    },    ja: {
+      heading: "日本2026年の祝日：ゴールデンウィークの秘密",
+      text: "日本の2026年の祝日は合計16日で、先進国中最也多いです。4月29日から5月5日のゴールデンウィークは7日連続の休日で、日本で最も長い連休です。この期間、航空券とホテルの価格は2-3倍まで上昇するので提前予約が必要です。5月1日の労働節は法定休日ではありませんが、ほとんどの企業が休業します。",
+      links: [
+        { label: "日本2026年祝日一覧", href: "/ja/JP/2026" },
+        { label: "韓国2026年祝日", href: "/ja/KR/2026" },
+        { label: "ゴールデンウィーク旅行ガイド", href: "/blog/long-weekend-opportunities-46-countries-2027-guide" },
+      ],
     },
+
   },
   PL: {
     ko: {
@@ -655,7 +673,16 @@ export const COUNTRY_FEATURE_BLOCK: Record<string, Record<string, { heading: str
         { label: "스페인 공휴일", href: "/ko/ES/2026" },
         { label: "유럽 공휴일 비교", href: "/compare?c=PT,ES,FR&y=2026" },
       ],
+    },    ja: {
+      heading: "ポルトガル2026年の祝日：キリスト祭とペテイイラ",
+      text: "ポルトガルは2026年に11個の全国祝日があります。特に5月1日労働節、7月10日ポルトガルの日（国慶日）、8月15日聖母被昇天日、10月5日共和制宣言記念日、11月1日諸聖人の日、12月8日無原罪の聖母マリアの日は独特です。6月10日のカモンêsの日（ポルトガルの国歌詩人）も重要な文化的祝日です。",
+      links: [
+        { label: "ポルトガル2026年祝日", href: "/ja/PT/2026" },
+        { label: "スペイン祝日", href: "/ja/ES/2026" },
+        { label: "ヨーロッパ祝日比較", href: "/compare?c=PT,ES,FR&y=2026" },
+      ],
     },
+
   },
   SE: {
     ko: {
@@ -688,7 +715,16 @@ export const COUNTRY_FEATURE_BLOCK: Record<string, Record<string, { heading: str
         { label: "콜롬비아 공휴일", href: "/ko/CO/2026" },
         { label: "브라질 카니발 가이드", href: "/blog/global-public-holidays-2027-complete-calendar" },
       ],
+    },    ja: {
+      heading: "アルゼンチン2026年の祝日：カーニバルと独立記念日",
+      text: "アルゼンチンの2026年の祝日は12日間です。最も有名なのはカーニバル月曜日と火曜日（2月16-17日）で、マール・デル・プラタとブエノスアイレスで巨大な祭りが開催されます。3月24日の全国追憶の日（独裁時代記憶）と4月2日のフォークランド戦記念日はアルゼンチンだけの特別な祝日です。5月1日の労働節、5月25日の5月革命記念日、7月9日の独立記念日も重要です。",
+      links: [
+        { label: "アルゼンチン2026年祝日", href: "/ja/AR/2026" },
+        { label: "コロンビア祝日", href: "/ja/CO/2026" },
+        { label: "ラテンアメリカ祝日比較", href: "/compare?c=AR,CO,BR&y=2026" },
+      ],
     },
+
   },
   MA: {
     ko: {
@@ -699,7 +735,16 @@ export const COUNTRY_FEATURE_BLOCK: Record<string, Record<string, { heading: str
         { label: "덴마크 공휴일", href: "/ko/DK/2026" },
         { label: "아프리카 공휴일 비교", href: "/compare?c=MA,SN,DZ&y=2026" },
       ],
+    },    ja: {
+      heading: "モロッコ2026年の祝日：イスラム祭りと独立記念日",
+      text: "モロッコは2026年に10個の祝日があります。人口の95%がムスリムなので、イスラム祭日が大半を占めます。イード・アル＝フィトル（断食終了記念、約2月18-19日予測）、イード・アル＝アドハー（犠牲祭、約6月27-28日予測）、イグラ（生誕記念日）が主要な祝日です。7月30日の独立記念日、8月14日の解放記念日、8月21日の王位継承記念日はモロッコだけの祝日です。",
+      links: [
+        { label: "モロッコ2026年祝日", href: "/ja/MA/2026" },
+        { label: "デンマーク祝日", href: "/ja/DK/2026" },
+        { label: "アフリカ祝日比較", href: "/compare?c=MA,SN,DZ&y=2026" },
+      ],
     },
+
   },
   DK: {
     ko: {
@@ -710,7 +755,16 @@ export const COUNTRY_FEATURE_BLOCK: Record<string, Record<string, { heading: str
         { label: "노르웨이 공휴일", href: "/ko/NO/2026" },
         { label: "스웨덴 공휴일", href: "/ko/SE/2026" },
       ],
+    },    ja: {
+      heading: "デンマーク2026年の祝日：キリスト教伝統のカレンダー",
+      text: "デンマークは2026年に10個の祝日があります。5月5日は聖霊降臨祭翌日（Stores Bededag）で、デンマークだけの独自の祝日です。6月5日は憲法記念日（Constitution Day）で国王が演説します。12月25-26日はクリスマス翌日（Danksdag）で家族と過ごす日です。デンマークの祝日はほとんどルター教伝統と結びついており、夏は昼が長いて户外パーティーとよく合います。",
+      links: [
+        { label: "デンマーク2026年祝日", href: "/ja/DK/2026" },
+        { label: "ノルウェー祝日", href: "/ja/NO/2026" },
+        { label: "スウェーデン祝日", href: "/ja/SE/2026" },
+      ],
     },
+
   },
   SN: {
     ko: {
@@ -721,55 +775,7 @@ export const COUNTRY_FEATURE_BLOCK: Record<string, Record<string, { heading: str
         { label: "모로코 공휴일", href: "/ko/MA/2026" },
         { label: "아프리카 공휴일 비교", href: "/compare?c=SN,MA,DZ&y=2026" },
       ],
-    },
-  },
-  KR: {
-    ko: {
-      heading: "한국 2026년 공휴일: 노동절과 긴 주말",
-      text: "한국의 2026년 공휴일은 총 68일(국경일+대체공휴일 포함)입니다. 5월 1일 노동절은 법정공휴일은 아니지만 대부분의 기업이 휴무하며, 2026년에는 금요일에 있어 금·토·일 3일 연휴가 가능합니다. 설날(2월 17-19일)과 추석(9월 25-27일)에는 귀성ラのbiggest travel rush가 발생합니다. 어린이날(5월 5일)은 월요일이라 4일 연휴가 됩니다.",
-      links: [
-        { label: "한국 2026 공휴일 전체", href: "/ko/KR/2026" },
-        { label: "일본 공휴일", href: "/ko/JP/2026" },
-        { label: "긴 주말 계획 가이드", href: "/blog/long-weekend-opportunities-46-countries-2027-guide" },
-      ],
-    },
-  },
-  // ---- Japanese (ja): Country feature blocks for near-win harvesting ----
-  AR: {
-    ja: {
-      heading: "アルゼンチン2026年の祝日：カーニバルと独立記念日",
-      text: "アルゼンチンの2026年の祝日は12日間です。最も有名なのはカーニバル月曜日と火曜日（2月16-17日）で、マール・デル・プラタとブエノスアイレスで巨大な祭りが開催されます。3月24日の全国追憶の日（独裁時代記憶）と4月2日のフォークランド戦記念日はアルゼンチンだけの特別な祝日です。5月1日の労働節、5月25日の5月革命記念日、7月9日の独立記念日も重要です。",
-      links: [
-        { label: "アルゼンチン2026年祝日", href: "/ja/AR/2026" },
-        { label: "コロンビア祝日", href: "/ja/CO/2026" },
-        { label: "ラテンアメリカ祝日比較", href: "/compare?c=AR,CO,BR&y=2026" },
-      ],
-    },
-  },
-  MA: {
-    ja: {
-      heading: "モロッコ2026年の祝日：イスラム祭りと独立記念日",
-      text: "モロッコは2026年に10個の祝日があります。人口の95%がムスリムなので、イスラム祭日が大半を占めます。イード・アル＝フィトル（断食終了記念、約2月18-19日予測）、イード・アル＝アドハー（犠牲祭、約6月27-28日予測）、イグラ（生誕記念日）が主要な祝日です。7月30日の独立記念日、8月14日の解放記念日、8月21日の王位継承記念日はモロッコだけの祝日です。",
-      links: [
-        { label: "モロッコ2026年祝日", href: "/ja/MA/2026" },
-        { label: "デンマーク祝日", href: "/ja/DK/2026" },
-        { label: "アフリカ祝日比較", href: "/compare?c=MA,SN,DZ&y=2026" },
-      ],
-    },
-  },
-  DK: {
-    ja: {
-      heading: "デンマーク2026年の祝日：キリスト教伝統のカレンダー",
-      text: "デンマークは2026年に10個の祝日があります。5月5日は聖霊降臨祭翌日（Stores Bededag）で、デンマークだけの独自の祝日です。6月5日は憲法記念日（Constitution Day）で国王が演説します。12月25-26日はクリスマス翌日（Danksdag）で家族と過ごす日です。デンマークの祝日はほとんどルター教伝統と結びついており、夏は昼が長いて户外パーティーとよく合います。",
-      links: [
-        { label: "デンマーク2026年祝日", href: "/ja/DK/2026" },
-        { label: "ノルウェー祝日", href: "/ja/NO/2026" },
-        { label: "スウェーデン祝日", href: "/ja/SE/2026" },
-      ],
-    },
-  },
-  SN: {
-    ja: {
+    },    ja: {
       heading: "セネガル2026年の祝日：イスラムとフランス影響の調和",
       text: "セネガルは2026年に9個の祝日があります。人口の95%がムスリムなので、イスラム祭日が大部分を占めます。イード・アル＝フィトル（約2月18-19日予測）、イード・アル＝アドハー（約6月27-28日予測）、イグラ（生誕記念日）が主要な祝日です。4月4日の独立記念日、5月1日の労働節、7月1日の共和国記念日はセネガルだけの祝日です。",
       links: [
@@ -778,29 +784,16 @@ export const COUNTRY_FEATURE_BLOCK: Record<string, Record<string, { heading: str
         { label: "アフリカ祝日比較", href: "/compare?c=SN,MA,DZ&y=2026" },
       ],
     },
+
   },
-  PT: {
-    ja: {
-      heading: "ポルトガル2026年の祝日：キリスト祭とペテイイラ",
-      text: "ポルトガルは2026年に11個の全国祝日があります。特に5月1日労働節、7月10日ポルトガルの日（国慶日）、8月15日聖母被昇天日、10月5日共和制宣言記念日、11月1日諸聖人の日、12月8日無原罪の聖母マリアの日は独特です。6月10日のカモンêsの日（ポルトガルの国歌詩人）も重要な文化的祝日です。",
-      links: [
-        { label: "ポルトガル2026年祝日", href: "/ja/PT/2026" },
-        { label: "スペイン祝日", href: "/ja/ES/2026" },
-        { label: "ヨーロッパ祝日比較", href: "/compare?c=PT,ES,FR&y=2026" },
-      ],
-    },
-  },
-  JP: {
-    ja: {
-      heading: "日本2026年の祝日：ゴールデンウィークの秘密",
-      text: "日本の2026年の祝日は合計16日で、先進国中最也多いです。4月29日から5月5日のゴールデンウィークは7日連続の休日で、日本で最も長い連休です。この期間、航空券とホテルの価格は2-3倍まで上昇するので提前予約が必要です。5月1日の労働節は法定休日ではありませんが、ほとんどの企業が休業します。",
-      links: [
-        { label: "日本2026年祝日一覧", href: "/ja/JP/2026" },
-        { label: "韓国2026年祝日", href: "/ja/KR/2026" },
-        { label: "ゴールデンウィーク旅行ガイド", href: "/blog/long-weekend-opportunities-46-countries-2027-guide" },
-      ],
-    },
-  },
+
+  // ---- Japanese (ja): Country feature blocks for near-win harvesting ----
+
+
+
+
+
+
 };
 
 /** Returns the country feature block for a given country and locale, or undefined. */
