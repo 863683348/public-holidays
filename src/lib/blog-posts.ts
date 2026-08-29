@@ -3321,7 +3321,7 @@ export const BLOG_POSTS: BlogPost[] = [
     `,
   },
   {
-    id: 145,
+    id: 159,
     title: "韩国公共假日：代替休日制度解析",
     slug: "south-korea-public-holidays",
     category: "guide",
@@ -3418,103 +3418,7 @@ export const BLOG_POSTS: BlogPost[] = [
     `,
   },
   {
-    id: 146,
-    title: "中国大陆公共假日：黄金周前后怎么请假最值",
-    slug: "china-public-holidays-golden-week",
-    category: "guide",
-    author: "Public Holidays Team",
-    publishedDate: "2026-08-22T08:00:00Z",
-    lastModified: "2026-08-22T08:00:00Z",
-    imageUrl: "https://public-holidays.shop/images/blog/china-holidays.svg",
-    excerpt: "中国大陆的公共假日日历表面上看起来很简单——只有少数几个法定假日。但真正的巧妙之处在于这些假日如何与周末结合，形成长达 7 天的'黄金周'。",
-    relatedCountries: ["CN"],
-    locale: "zh",
-    content: `
-      <p>中国大陆的公共假日日历表面上看起来很简单——只有少数几个法定假日。但真正的巧妙之处在于这些假日如何与周末结合，形成长达 7 天的"黄金周"。</p>
-      <h2>三大黄金周</h2>
-      <p>中国有三个官方黄金周，每个都是通过法定假日与相邻周末连接而成：</p>
-      <ol>
-        <li><strong>春节（农历新年）</strong> — 7 天，通常在 1 月底或 2 月初</li>
-        <li><strong>国庆节</strong> — 7 天，10 月 1-7 日</li>
-        <li><strong>劳动节</strong> — 3 天（近年来从 1 天扩展）</li>
-      </ol>
-      <p>在这些期间，数十亿人次出行。火车票几分钟内售罄。酒店提前数月预订。如果你在中国过黄金周，一切都会拥挤——而且昂贵。</p>
-      <h2>调休系统如何运作</h2>
-      <p>国务院每年公布具体安排。模式一致：如果假日落在周二或周四，前一个或后一个周一（或周五）成为工作日，以形成 7 天连休。这意味着你可能需要上一个周末班来换取一周假期。</p>
-      <h2>2026 年聪明出行</h2>
-      <p>对于 2026 年春节（可能在 1 月下旬），考虑：</p>
-      <ul>
-        <li>在官方假日前多请 1-2 天，避开人流高峰</li>
-        <li>至少提前 30 天预订行程</li>
-        <li>尽可能避开黄金周的第一天和最后一天——这些是出行高峰</li>
-      </ul>
-      <h2>外国人如何应对黄金周</h2>
-      <p>如果你不是中国人，黄金周既是挑战也是机遇。许多企业关门。景点人满为患。但这也是体验中国文化最热闹时刻的机会。国内旅游非常火爆——你会看到中国家庭首次一起去他们只在电视上见过地方旅行。</p>
-      <h2>关键日期</h2>
-      <ul>
-        <li><strong>元旦</strong>：1 月 1 日（1 天）</li>
-        <li><strong>春节</strong>：农历，3 天法定 + 周末调休</li>
-        <li><strong>清明节</strong>：4 月 4-5 日（1-3 天，取决于周末）</li>
-        <li><strong>劳动节</strong>：5 月 1 日（现 3 天）</li>
-        <li><strong>端午节</strong>：农历，1-3 天</li>
-        <li><strong>中秋节</strong>：农历，1-3 天</li>
-        <li><strong>国庆节</strong>：10 月 1-7 日（7 天）</li>
-      </ul>
-      <h2>黄金周的隐藏成本</h2>
-      <p>虽然假期宝贵，但黄金周伴随着溢价。机票和酒店价格可以是平时的 2-3 倍。如果你注重预算，考虑在官方假日前后出行。</p>
-      <p>完整中国假日日历请访问我们的 <a href="https://public-holidays.shop/zh/CN">中国假日页面</a>。</p>
-    `,
-  },
-  {
-    id: 146,
-    title: "China Public Holidays: Maximize Your Golden Weeks",
-    slug: "china-public-holidays-golden-week",
-    category: "guide",
-    author: "Public Holidays Team",
-    publishedDate: "2026-08-22T08:00:00Z",
-    lastModified: "2026-08-22T08:00:00Z",
-    imageUrl: "https://public-holidays.shop/images/blog/china-holidays.svg",
-    excerpt: "China's public holiday calendar is deceptively simple — just a handful of official days. But the real magic is in how those days combine with weekends to create 'Golden Weeks,' periods of up to 7 consecutive days off.",
-    relatedCountries: ["CN"],
-    locale: "en",
-    content: `
-      <p>China's public holiday calendar is deceptively simple on the surface — just a handful of official days. But the real magic is in how those days combine with weekends to create "Golden Weeks," periods of up to 7 consecutive days off.</p>
-      <h2>The Big Three: Golden Weeks</h2>
-      <p>China has three official Golden Weeks, each created by bridging a statutory holiday with adjacent weekends:</p>
-      <ol>
-        <li><strong>Spring Festival (Chinese New Year)</strong> — 7 days, usually late January or early February</li>
-        <li><strong>National Day</strong> — 7 days, October 1-7</li>
-        <li><strong>Labor Day</strong> — 3 days (expanded from 1 in recent years)</li>
-      </ol>
-      <p>During these periods, billions of trips are made. Trains sell out in minutes. Hotels book months ahead. If you're in China during a Golden Week, expect everything to be crowded — and expensive.</p>
-      <h2>How the Bridging System Works</h2>
-      <p>The State Council announces the exact schedule each year. The pattern is consistent: if a holiday falls on a Tuesday or Thursday, the preceding or following Monday (or Friday) becomes a working day to create the 7-day stretch. This means you might work a weekend to get a week off.</p>
-      <h2>Smart Timing for 2026</h2>
-      <p>For Spring Festival 2026 (likely late January), consider:</p>
-      <ul>
-        <li>Taking 1-2 extra days before the official holiday to beat the crowds</li>
-        <li>Booking travel at least 30 days ahead</li>
-        <li>Avoiding the first and last days of the Golden Week if possible — these are peak travel days</li>
-      </ul>
-      <h2>Foreigners and Golden Weeks</h2>
-      <p>If you're not Chinese, Golden Weeks are both challenging and fascinating. Many businesses close. Tourist sites are packed. But it's also a chance to experience Chinese culture at its most celebratory. Domestic tourism is huge — expect to see Chinese families traveling together for the first time to places they've only seen on TV.</p>
-      <h2>Key Dates to Remember</h2>
-      <ul>
-        <li><strong>New Year's Day</strong>: January 1 (1 day)</li>
-        <li><strong>Spring Festival</strong>: Lunar calendar, 3 statutory days + weekend bridge</li>
-        <li><strong>Qingming Festival</strong>: April 4-5 (1-3 days depending on weekend)</li>
-        <li><strong>Labor Day</strong>: May 1 (now 3 days)</li>
-        <li><strong>Dragon Boat Festival</strong>: Lunar calendar, 1-3 days</li>
-        <li><strong>Mid-Autumn Festival</strong>: Lunar calendar, 1-3 days</li>
-        <li><strong>National Day</strong>: October 1-7 (7 days)</li>
-      </ul>
-      <h2>The Hidden Cost of Golden Weeks</h2>
-      <p>While the time off is valuable, Golden Weeks come with premium pricing. Flights and hotels can cost 2-3x normal rates. If you're budget-conscious, consider traveling just before or after the official holiday period.</p>
-      <p>For the full Chinese holiday calendar, visit our <a href="https://public-holidays.shop/en/CN">China holidays page</a>.</p>
-    `,
-  },
-  {
-    id: 146,
+    id: 161,
     title: "中国大陆公共假日：黄金周前后怎么请假最值",
     slug: "china-public-holidays-golden-week",
     category: "guide",
@@ -3863,7 +3767,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
 
   {
-    id: 150,
+    id: 160,
     slug: 'brazil-public-holidays-carnival',
     title: 'Brazil Public Holidays: How Long Is Carnival Really?',
     category: 'brazil',
@@ -3956,60 +3860,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
 
   {
-    id: 154,
-    title: "Argentina Public Holidays: The Non-Transferable Ones",
-    slug: "argentina-public-holidays-non-transferable",
-    category: "travel",
-    author: "Local Expert",
-    publishedDate: "2026-08-28T10:00:00Z",
-    lastModified: "2026-08-28T10:00:00Z",
-    imageUrl: "https://public-holidays.shop/images/blog/argentina-holidays.svg",
-    excerpt: "Argentina's holiday system is unique in Latin America — most holidays are fixed-date observances without the puente bridge system.",
-    relatedCountries: ["AR"],
-    locale: "en",
-    content: `
-      <p><h2>1. Argentina's Fixed-Date Holiday System | 阿根廷固定日期假日系统</h2></p><p></p><p>Unlike Mexico or Brazil, Argentina doesn't have a formal puente system. When a holiday falls on a Tuesday or Thursday, workers don't automatically get the bridging day off. The result is a calendar where holidays are predictable but rarely create long weekends.</p><p></p><p>**The key difference:**</p><p><li>**Mexico/Brazil**: Holidays near weekends → bridge days → 4-day weekends</li></p><p><li>**Argentina**: Holidays stay fixed → same weekend pattern every year</li></p><p></p><p>This means Argentine workers plan vacations around holidays rather than extending them with puente days. | 与墨西哥或巴西不同，阿根廷没有正式的 puente 系统。当假日落在周二或周四时，员工不自动获得桥接日休息。结果是可预测但很少形成长周末的日历。</p><p></p><p>**关键区别：**</p><p><li>**墨西哥/巴西**：假日靠近周末 → 桥接日 → 4 天周末</li></p><p><li>**Argentina**：假日固定 → 每年相同周末模式</li></p><p></p><p>这意味着阿根廷员工围绕假日计划假期而不是用 puente 日延长。</p><p></p><p>---</p><p></p><p><h2>2. The Major Argentine Holidays | 主要阿根廷假日</h2></p><p></p><p><h3>January 1 — Año Nuevo (New Year's Day)</h3></p><p>Fixed date. Families gather for asado (barbecue) and fireworks.</p><p></p><p><h3>March/April — Semana Santa (Holy Week)</h3></p><p>Moving holiday based on Easter. Friday before Easter Sunday is a mandatory day off. This is Argentina's most important religious holiday.</p><p></p><p><h3>April 2 — Día del Veterano (Veterans Day / Malvinas Day)</h3></p><p>Commemorates the 1982 Falklands War. National day of reflection and remembrance.</p><p></p><p><h3>May 1 — Día del Trabajador (Labor Day)</h3></p><p>Fixed date. Celebrated with union rallies and family gatherings.</p><p></p><p><h3>May 25 — Revolución de Mayo (May Revolution)</h3></p><p>Commemorates the 1810 revolution that began Argentina's independence. National holiday with parades and cultural events.</p><p></p><p><h3>June 20 — Día de la Bandera (Flag Day)</h3></p><p>Honors Manuel Belgrano, creator of the Argentine flag. Not a day off for most workers, but widely observed.</p><p></p><p><h3>July 9 — Independencia (Independence Day)</h3></p><p>Commemorates the 1816 Declaration of Independence. Major national holiday with celebrations across the country.</p><p></p><p><h3>August 17 — Día del General San Martín</h3></p><p>Honors General José de San Martín, liberator of Argentina, Chile, and Peru. Memorial day, not always a day off.</p><p></p><p><h3>October 12 — Día del Respeto a la Diversidad Cultural</h3></p><p>Previously "Día de la Raza," renamed to respect cultural diversity. Fixed date, national holiday.</p><p></p><p><h3>November 20 — Día de la Soberanía Nacional</h3></p><p>National Sovereignty Day. Commemorates the 1879 Battle of Las Piedras. Not always a day off.</p><p></p><p><h3>December 8 — Inmaculada Concepción (Immaculate Conception)</h3></p><p>Religious holiday honoring the Virgin Mary. Fixed date, widely observed.</p><p></p><p><h3>December 25 — Navidad (Christmas)</h3></p><p>Family gathering day. Most businesses closed. | 固定日期。家庭聚会烤肉和烟花。</p><p>移动假日基于复活节。复活节前的星期五是强制休息日。这是阿根廷最重要的宗教假日。</p><p>纪念 1812 福克兰战争。国家反思和纪念日。</p><p>固定日期。与工会集会和家庭聚会庆祝。</p><p>纪念开始阿根廷独立的 1810 年革命。全国性假日，有游行和文化活动。</p><p>纪念 Manuel Belgrano，阿根廷国旗创造者。大多数员工不放假，但广泛庆祝。</p><p>纪念 1816 独立宣言。主要全国性假日，全国庆祝。</p><p>纪念何塞·德·圣马丁，阿根廷、智利和秘鲁的解放者。纪念日，不总是休息日。</p><p>以前叫"种族日"，更名为尊重文化多样性。固定日期，全国性假日。</p><p>国家主权日。纪念 1879 拉斯皮德拉斯战役。不总是休息日。</p><p>宗教假日纪念圣母玛利亚。固定日期，广泛庆祝。</p><p>家庭聚会日。大多数企业关闭。</p><p></p><p>---</p><p></p><p><h2>3. Moving Holidays: When Dates Shift | 移动假日：日期变化</h2></p><p></p><p>Three major holidays move based on religious calendars:</p><p></p><p>| Holiday | Calculation | Typical Date Range |</p><p>|---------|-------------|-------------------|</p><p>| Carnivales (Carnival) | 47 days before Easter | Feb-Mar |</p><p>| Semana Santa (Holy Week) | Based on Easter Sunday | Mar-Apr |</p><p>| Rosario's Day | Nov 12 (fixed) | Nov 12 |</p><p></p><p>Carnival is celebrated with parades and street festivals, especially in northern provinces like Corrientes and Misiones. | 三个主要假日基于宗教日历移动：</p><p>狂欢节在复活节前 47 天。基于复活节星期日。11 月 12 日固定。</p><p>狂欢节以游行和街头节日庆祝，特别是在科连特斯和米西奥内斯等北部省份。</p><p></p><p>---</p><p></p><p><h2>4. Argentina vs. Neighbors: A Comparison | 阿根廷与邻国比较</h2></p><p></p><p>| Feature | Argentina | Brazil | Mexico |</p><p>|---------|-----------|--------|--------|</p><p>| Total holidays | ~18 | ~14 | ~16 |</p><p>| Puente system | ❌ No | ✅ Yes | ✅ Yes |</p><p>| Fixed vs. moving | Mostly fixed | Mix | Mix |</p><p>| Religious holidays | Strong Catholic influence | Strong Catholic | Strong Catholic |</p><p>| Regional variations | Some provincial holidays | Many state holidays | Many state holidays |</p><p></p><p>Argentina's lack of puente means holiday planning is more rigid. Workers know exactly which days are off each year — there's no surprise long weekend. | 阿根廷的 18 个假日 vs 巴西 14 个 vs 墨西哥 16 个。阿根廷没有 puente 系统，而巴西和墨西哥有。阿根廷主要是固定日期，而邻国有混合。阿根廷有强烈天主教影响。</p><p>阿根廷缺乏 puente 意味着假日计划更僵化。员工知道每年确切哪几天休息——没有意外长周末。</p><p></p><p>---</p><p></p><p><h2>5. Regional Variations Within Argentina | 阿根廷国内区域差异</h2></p><p></p><p>While national holidays apply everywhere, some provinces observe additional local holidays:</p><p></p><p><li>**Buenos Aires**: Local patron saint days</li></p><p><li>**Córdoba**: Religious festivals</li></p><p><li>**Tucumán**: Regional independence commemorations</li></p><p><li>**Misiones**: Carnival celebrations (largest in Argentina)</li></p><p></p><p>These provincial holidays don't affect national workers but matter for local businesses and government offices. | 虽然全国性假日适用于全国各地，但某些省份观察额外地方假日：</p><p>布宜诺斯艾利斯：本地守护神圣日</p><p>科尔多瓦：宗教节日</p><p>图库曼：区域独立纪念</p><p>米西奥内斯：狂欢节庆祝（阿根廷最大）</p><p>这些省级假日不影响全国员工，但对当地企业和政府办公室重要。</p><p></p><p>---</p><p></p><p><h2>6. Practical Tips for Visitors | 实用访客建议</h2></p><p></p><p>**When to visit:**</p><p><li>Avoid January-February (hottest, most holidays)</li></p><p><li>April-October is pleasant weather-wise</li></p><p><li>December-January is peak tourist season</li></p><p></p><p>**Business hours:**</p><p><li>Most businesses close on national holidays</li></p><p><li>Museums and attractions may have special holiday schedules</li></p><p><li>Restaurants in tourist areas often stay open</li></p><p></p><p>**Transportation:**</p><p><li>Public transport runs on reduced holiday schedules</li></p><p><li>Long-distance buses may have limited service</li></p><p><li>Domestic flights book early for holiday periods | 最佳访问时间：避免 1-2 月（最热，假日最多）。4-10 月天气宜人。12-1 月是旅游旺季。</li></p><p>商业时间：大多数企业在全国性假日关闭。博物馆和景点可能有特殊假日时间。旅游区餐厅通常营业。</p><p>交通：公共交通在假日减少时间表运行。长途巴士可能服务有限。国内航班假日期间提前预订。</p><p></p><p>---</p><p></p><p><h2>About public-holidays.shop | 关于 public-holidays.shop</h2></p><p></p><p>Plan your trips around Argentina's holiday calendar. Our [Argentina holidays page](/es/AR) has full dates, regional variations, and travel tips. Check our [Latin America section](/es/region/latam) for neighboring country holidays too. | 围绕阿根廷假日日历规划行程。我们的 [阿根廷假日页面](/es/AR) 有完整日期、区域差异和旅行建议。也查看我们的 [拉丁美洲部分](/es/region/latam) 邻国假日。</p><p></p><p>---</p><p></p><p><h2>FAQ | 常见问题</h2></p><p></p><p>**Q: Does Argentina have puente holidays like Mexico?** | A: No. Argentina's holidays are mostly fixed-date observances without bridge day systems. | 不。阿根廷的假日主要是固定日期庆祝，没有桥接日系统。</p><p></p><p>**Q: Which Argentine holidays are moving (not fixed)?** | A: Carnival, Holy Week (Semana Santa), and Easter Monday move based on the liturgical calendar. | 狂欢节、圣周（Semana Santa）和复活节星期一基于礼仪日历移动。</p><p></p><p>**Q: Are provincial holidays nationwide?** | A: No. Provincial holidays only apply in their respective provinces. National holidays apply everywhere. | 不。省级假日仅适用于 respective 省份。全国性假日适用于全国各地。</p><p></p><p>**Q: What's the most important Argentine holiday?** | A: May 25 (Revolución de Mayo) and July 9 (Independencia) are the two most significant national holidays. | 5 月 25 日（五月革命）和 7 月 9 日（独立日）是两个最重要的全国性假日。</p>
-    `,
-  },
-
-  {
-    id: 155,
-    title: "Argentina Public Holidays: The Non-Transferable Ones",
-    slug: "argentina-public-holidays-non-transferable",
-    category: "travel",
-    author: "Local Expert",
-    publishedDate: "2026-08-28T10:00:00Z",
-    lastModified: "2026-08-28T10:00:00Z",
-    imageUrl: "https://public-holidays.shop/images/blog/argentina-holidays.svg",
-    excerpt: "Argentina's holiday system is unique in Latin America — most holidays are fixed-date observances without the puente bridge system.",
-    relatedCountries: ["AR"],
-    locale: "en",
-    content: `
-      <p><h2>1. Argentina's Fixed-Date Holiday System | 阿根廷固定日期假日系统</h2></p><p></p><p>Unlike Mexico or Brazil, Argentina doesn't have a formal puente system. When a holiday falls on a Tuesday or Thursday, workers don't automatically get the bridging day off. The result is a calendar where holidays are predictable but rarely create long weekends.</p><p></p><p>**The key difference:**</p><p><li>**Mexico/Brazil**: Holidays near weekends → bridge days → 4-day weekends</li></p><p><li>**Argentina**: Holidays stay fixed → same weekend pattern every year</li></p><p></p><p>This means Argentine workers plan vacations around holidays rather than extending them with puente days. | 与墨西哥或巴西不同，阿根廷没有正式的 puente 系统。当假日落在周二或周四时，员工不自动获得桥接日休息。结果是可预测但很少形成长周末的日历。</p><p></p><p>**关键区别：**</p><p><li>**墨西哥/巴西**：假日靠近周末 → 桥接日 → 4 天周末</li></p><p><li>**Argentina**：假日固定 → 每年相同周末模式</li></p><p></p><p>这意味着阿根廷员工围绕假日计划假期而不是用 puente 日延长。</p><p></p><p>---</p><p></p><p><h2>2. The Major Argentine Holidays | 主要阿根廷假日</h2></p><p></p><p><h3>January 1 — Año Nuevo (New Year's Day)</h3></p><p>Fixed date. Families gather for asado (barbecue) and fireworks.</p><p></p><p><h3>March/April — Semana Santa (Holy Week)</h3></p><p>Moving holiday based on Easter. Friday before Easter Sunday is a mandatory day off. This is Argentina's most important religious holiday.</p><p></p><p><h3>April 2 — Día del Veterano (Veterans Day / Malvinas Day)</h3></p><p>Commemorates the 1982 Falklands War. National day of reflection and remembrance.</p><p></p><p><h3>May 1 — Día del Trabajador (Labor Day)</h3></p><p>Fixed date. Celebrated with union rallies and family gatherings.</p><p></p><p><h3>May 25 — Revolución de Mayo (May Revolution)</h3></p><p>Commemorates the 1810 revolution that began Argentina's independence. National holiday with parades and cultural events.</p><p></p><p><h3>June 20 — Día de la Bandera (Flag Day)</h3></p><p>Honors Manuel Belgrano, creator of the Argentine flag. Not a day off for most workers, but widely observed.</p><p></p><p><h3>July 9 — Independencia (Independence Day)</h3></p><p>Commemorates the 1816 Declaration of Independence. Major national holiday with celebrations across the country.</p><p></p><p><h3>August 17 — Día del General San Martín</h3></p><p>Honors General José de San Martín, liberator of Argentina, Chile, and Peru. Memorial day, not always a day off.</p><p></p><p><h3>October 12 — Día del Respeto a la Diversidad Cultural</h3></p><p>Previously "Día de la Raza," renamed to respect cultural diversity. Fixed date, national holiday.</p><p></p><p><h3>November 20 — Día de la Soberanía Nacional</h3></p><p>National Sovereignty Day. Commemorates the 1879 Battle of Las Piedras. Not always a day off.</p><p></p><p><h3>December 8 — Inmaculada Concepción (Immaculate Conception)</h3></p><p>Religious holiday honoring the Virgin Mary. Fixed date, widely observed.</p><p></p><p><h3>December 25 — Navidad (Christmas)</h3></p><p>Family gathering day. Most businesses closed. | 固定日期。家庭聚会烤肉和烟花。</p><p>移动假日基于复活节。复活节前的星期五是强制休息日。这是阿根廷最重要的宗教假日。</p><p>纪念 1812 福克兰战争。国家反思和纪念日。</p><p>固定日期。与工会集会和家庭聚会庆祝。</p><p>纪念开始阿根廷独立的 1810 年革命。全国性假日，有游行和文化活动。</p><p>纪念 Manuel Belgrano，阿根廷国旗创造者。大多数员工不放假，但广泛庆祝。</p><p>纪念 1816 独立宣言。主要全国性假日，全国庆祝。</p><p>纪念何塞·德·圣马丁，阿根廷、智利和秘鲁的解放者。纪念日，不总是休息日。</p><p>以前叫"种族日"，更名为尊重文化多样性。固定日期，全国性假日。</p><p>国家主权日。纪念 1879 拉斯皮德拉斯战役。不总是休息日。</p><p>宗教假日纪念圣母玛利亚。固定日期，广泛庆祝。</p><p>家庭聚会日。大多数企业关闭。</p><p></p><p>---</p><p></p><p><h2>3. Moving Holidays: When Dates Shift | 移动假日：日期变化</h2></p><p></p><p>Three major holidays move based on religious calendars:</p><p></p><p>| Holiday | Calculation | Typical Date Range |</p><p>|---------|-------------|-------------------|</p><p>| Carnivales (Carnival) | 47 days before Easter | Feb-Mar |</p><p>| Semana Santa (Holy Week) | Based on Easter Sunday | Mar-Apr |</p><p>| Rosario's Day | Nov 12 (fixed) | Nov 12 |</p><p></p><p>Carnival is celebrated with parades and street festivals, especially in northern provinces like Corrientes and Misiones. | 三个主要假日基于宗教日历移动：</p><p>狂欢节在复活节前 47 天。基于复活节星期日。11 月 12 日固定。</p><p>狂欢节以游行和街头节日庆祝，特别是在科连特斯和米西奥内斯等北部省份。</p><p></p><p>---</p><p></p><p><h2>4. Argentina vs. Neighbors: A Comparison | 阿根廷与邻国比较</h2></p><p></p><p>| Feature | Argentina | Brazil | Mexico |</p><p>|---------|-----------|--------|--------|</p><p>| Total holidays | ~18 | ~14 | ~16 |</p><p>| Puente system | ❌ No | ✅ Yes | ✅ Yes |</p><p>| Fixed vs. moving | Mostly fixed | Mix | Mix |</p><p>| Religious holidays | Strong Catholic influence | Strong Catholic | Strong Catholic |</p><p>| Regional variations | Some provincial holidays | Many state holidays | Many state holidays |</p><p></p><p>Argentina's lack of puente means holiday planning is more rigid. Workers know exactly which days are off each year — there's no surprise long weekend. | 阿根廷的 18 个假日 vs 巴西 14 个 vs 墨西哥 16 个。阿根廷没有 puente 系统，而巴西和墨西哥有。阿根廷主要是固定日期，而邻国有混合。阿根廷有强烈天主教影响。</p><p>阿根廷缺乏 puente 意味着假日计划更僵化。员工知道每年确切哪几天休息——没有意外长周末。</p><p></p><p>---</p><p></p><p><h2>5. Regional Variations Within Argentina | 阿根廷国内区域差异</h2></p><p></p><p>While national holidays apply everywhere, some provinces observe additional local holidays:</p><p></p><p><li>**Buenos Aires**: Local patron saint days</li></p><p><li>**Córdoba**: Religious festivals</li></p><p><li>**Tucumán**: Regional independence commemorations</li></p><p><li>**Misiones**: Carnival celebrations (largest in Argentina)</li></p><p></p><p>These provincial holidays don't affect national workers but matter for local businesses and government offices. | 虽然全国性假日适用于全国各地，但某些省份观察额外地方假日：</p><p>布宜诺斯艾利斯：本地守护神圣日</p><p>科尔多瓦：宗教节日</p><p>图库曼：区域独立纪念</p><p>米西奥内斯：狂欢节庆祝（阿根廷最大）</p><p>这些省级假日不影响全国员工，但对当地企业和政府办公室重要。</p><p></p><p>---</p><p></p><p><h2>6. Practical Tips for Visitors | 实用访客建议</h2></p><p></p><p>**When to visit:**</p><p><li>Avoid January-February (hottest, most holidays)</li></p><p><li>April-October is pleasant weather-wise</li></p><p><li>December-January is peak tourist season</li></p><p></p><p>**Business hours:**</p><p><li>Most businesses close on national holidays</li></p><p><li>Museums and attractions may have special holiday schedules</li></p><p><li>Restaurants in tourist areas often stay open</li></p><p></p><p>**Transportation:**</p><p><li>Public transport runs on reduced holiday schedules</li></p><p><li>Long-distance buses may have limited service</li></p><p><li>Domestic flights book early for holiday periods | 最佳访问时间：避免 1-2 月（最热，假日最多）。4-10 月天气宜人。12-1 月是旅游旺季。</li></p><p>商业时间：大多数企业在全国性假日关闭。博物馆和景点可能有特殊假日时间。旅游区餐厅通常营业。</p><p>交通：公共交通在假日减少时间表运行。长途巴士可能服务有限。国内航班假日期间提前预订。</p><p></p><p>---</p><p></p><p><h2>About public-holidays.shop | 关于 public-holidays.shop</h2></p><p></p><p>Plan your trips around Argentina's holiday calendar. Our [Argentina holidays page](/es/AR) has full dates, regional variations, and travel tips. Check our [Latin America section](/es/region/latam) for neighboring country holidays too. | 围绕阿根廷假日日历规划行程。我们的 [阿根廷假日页面](/es/AR) 有完整日期、区域差异和旅行建议。也查看我们的 [拉丁美洲部分](/es/region/latam) 邻国假日。</p><p></p><p>---</p><p></p><p><h2>FAQ | 常见问题</h2></p><p></p><p>**Q: Does Argentina have puente holidays like Mexico?** | A: No. Argentina's holidays are mostly fixed-date observances without bridge day systems. | 不。阿根廷的假日主要是固定日期庆祝，没有桥接日系统。</p><p></p><p>**Q: Which Argentine holidays are moving (not fixed)?** | A: Carnival, Holy Week (Semana Santa), and Easter Monday move based on the liturgical calendar. | 狂欢节、圣周（Semana Santa）和复活节星期一基于礼仪日历移动。</p><p></p><p>**Q: Are provincial holidays nationwide?** | A: No. Provincial holidays only apply in their respective provinces. National holidays apply everywhere. | 不。省级假日仅适用于 respective 省份。全国性假日适用于全国各地。</p><p></p><p>**Q: What's the most important Argentine holiday?** | A: May 25 (Revolución de Mayo) and July 9 (Independencia) are the two most significant national holidays. | 5 月 25 日（五月革命）和 7 月 9 日（独立日）是两个最重要的全国性假日。</p>
-    `,
-  },
-
-  {
-    id: 156,
-    title: "Argentina Public Holidays: The Non-Transferable Ones",
-    slug: "argentina-public-holidays-non-transferable",
-    category: "travel",
-    author: "Local Expert",
-    publishedDate: "2026-08-28T10:00:00Z",
-    lastModified: "2026-08-28T10:00:00Z",
-    imageUrl: "https://public-holidays.shop/images/blog/argentina-holidays.svg",
-    excerpt: "Argentina's holiday system is unique in Latin America — most holidays are fixed-date observances without the puente bridge system.",
-    relatedCountries: ["AR"],
-    locale: "en",
-    content: `
-      <p><h2>1. Argentina's Fixed-Date Holiday System | 阿根廷固定日期假日系统</h2></p><p></p><p>Unlike Mexico or Brazil, Argentina doesn't have a formal puente system. When a holiday falls on a Tuesday or Thursday, workers don't automatically get the bridging day off. The result is a calendar where holidays are predictable but rarely create long weekends.</p><p></p><p>**The key difference:**</p><p><li>**Mexico/Brazil**: Holidays near weekends → bridge days → 4-day weekends</li></p><p><li>**Argentina**: Holidays stay fixed → same weekend pattern every year</li></p><p></p><p>This means Argentine workers plan vacations around holidays rather than extending them with puente days. | 与墨西哥或巴西不同，阿根廷没有正式的 puente 系统。当假日落在周二或周四时，员工不自动获得桥接日休息。结果是可预测但很少形成长周末的日历。</p><p></p><p>**关键区别：**</p><p><li>**墨西哥/巴西**：假日靠近周末 → 桥接日 → 4 天周末</li></p><p><li>**Argentina**：假日固定 → 每年相同周末模式</li></p><p></p><p>这意味着阿根廷员工围绕假日计划假期而不是用 puente 日延长。</p><p></p><p>---</p><p></p><p><h2>2. The Major Argentine Holidays | 主要阿根廷假日</h2></p><p></p><p><h3>January 1 — Año Nuevo (New Year's Day)</h3></p><p>Fixed date. Families gather for asado (barbecue) and fireworks.</p><p></p><p><h3>March/April — Semana Santa (Holy Week)</h3></p><p>Moving holiday based on Easter. Friday before Easter Sunday is a mandatory day off. This is Argentina's most important religious holiday.</p><p></p><p><h3>April 2 — Día del Veterano (Veterans Day / Malvinas Day)</h3></p><p>Commemorates the 1982 Falklands War. National day of reflection and remembrance.</p><p></p><p><h3>May 1 — Día del Trabajador (Labor Day)</h3></p><p>Fixed date. Celebrated with union rallies and family gatherings.</p><p></p><p><h3>May 25 — Revolución de Mayo (May Revolution)</h3></p><p>Commemorates the 1810 revolution that began Argentina's independence. National holiday with parades and cultural events.</p><p></p><p><h3>June 20 — Día de la Bandera (Flag Day)</h3></p><p>Honors Manuel Belgrano, creator of the Argentine flag. Not a day off for most workers, but widely observed.</p><p></p><p><h3>July 9 — Independencia (Independence Day)</h3></p><p>Commemorates the 1816 Declaration of Independence. Major national holiday with celebrations across the country.</p><p></p><p><h3>August 17 — Día del General San Martín</h3></p><p>Honors General José de San Martín, liberator of Argentina, Chile, and Peru. Memorial day, not always a day off.</p><p></p><p><h3>October 12 — Día del Respeto a la Diversidad Cultural</h3></p><p>Previously "Día de la Raza," renamed to respect cultural diversity. Fixed date, national holiday.</p><p></p><p><h3>November 20 — Día de la Soberanía Nacional</h3></p><p>National Sovereignty Day. Commemorates the 1879 Battle of Las Piedras. Not always a day off.</p><p></p><p><h3>December 8 — Inmaculada Concepción (Immaculate Conception)</h3></p><p>Religious holiday honoring the Virgin Mary. Fixed date, widely observed.</p><p></p><p><h3>December 25 — Navidad (Christmas)</h3></p><p>Family gathering day. Most businesses closed. | 固定日期。家庭聚会烤肉和烟花。</p><p>移动假日基于复活节。复活节前的星期五是强制休息日。这是阿根廷最重要的宗教假日。</p><p>纪念 1812 福克兰战争。国家反思和纪念日。</p><p>固定日期。与工会集会和家庭聚会庆祝。</p><p>纪念开始阿根廷独立的 1810 年革命。全国性假日，有游行和文化活动。</p><p>纪念 Manuel Belgrano，阿根廷国旗创造者。大多数员工不放假，但广泛庆祝。</p><p>纪念 1816 独立宣言。主要全国性假日，全国庆祝。</p><p>纪念何塞·德·圣马丁，阿根廷、智利和秘鲁的解放者。纪念日，不总是休息日。</p><p>以前叫"种族日"，更名为尊重文化多样性。固定日期，全国性假日。</p><p>国家主权日。纪念 1879 拉斯皮德拉斯战役。不总是休息日。</p><p>宗教假日纪念圣母玛利亚。固定日期，广泛庆祝。</p><p>家庭聚会日。大多数企业关闭。</p><p></p><p>---</p><p></p><p><h2>3. Moving Holidays: When Dates Shift | 移动假日：日期变化</h2></p><p></p><p>Three major holidays move based on religious calendars:</p><p></p><p>| Holiday | Calculation | Typical Date Range |</p><p>|---------|-------------|-------------------|</p><p>| Carnivales (Carnival) | 47 days before Easter | Feb-Mar |</p><p>| Semana Santa (Holy Week) | Based on Easter Sunday | Mar-Apr |</p><p>| Rosario's Day | Nov 12 (fixed) | Nov 12 |</p><p></p><p>Carnival is celebrated with parades and street festivals, especially in northern provinces like Corrientes and Misiones. | 三个主要假日基于宗教日历移动：</p><p>狂欢节在复活节前 47 天。基于复活节星期日。11 月 12 日固定。</p><p>狂欢节以游行和街头节日庆祝，特别是在科连特斯和米西奥内斯等北部省份。</p><p></p><p>---</p><p></p><p><h2>4. Argentina vs. Neighbors: A Comparison | 阿根廷与邻国比较</h2></p><p></p><p>| Feature | Argentina | Brazil | Mexico |</p><p>|---------|-----------|--------|--------|</p><p>| Total holidays | ~18 | ~14 | ~16 |</p><p>| Puente system | ❌ No | ✅ Yes | ✅ Yes |</p><p>| Fixed vs. moving | Mostly fixed | Mix | Mix |</p><p>| Religious holidays | Strong Catholic influence | Strong Catholic | Strong Catholic |</p><p>| Regional variations | Some provincial holidays | Many state holidays | Many state holidays |</p><p></p><p>Argentina's lack of puente means holiday planning is more rigid. Workers know exactly which days are off each year — there's no surprise long weekend. | 阿根廷的 18 个假日 vs 巴西 14 个 vs 墨西哥 16 个。阿根廷没有 puente 系统，而巴西和墨西哥有。阿根廷主要是固定日期，而邻国有混合。阿根廷有强烈天主教影响。</p><p>阿根廷缺乏 puente 意味着假日计划更僵化。员工知道每年确切哪几天休息——没有意外长周末。</p><p></p><p>---</p><p></p><p><h2>5. Regional Variations Within Argentina | 阿根廷国内区域差异</h2></p><p></p><p>While national holidays apply everywhere, some provinces observe additional local holidays:</p><p></p><p><li>**Buenos Aires**: Local patron saint days</li></p><p><li>**Córdoba**: Religious festivals</li></p><p><li>**Tucumán**: Regional independence commemorations</li></p><p><li>**Misiones**: Carnival celebrations (largest in Argentina)</li></p><p></p><p>These provincial holidays don't affect national workers but matter for local businesses and government offices. | 虽然全国性假日适用于全国各地，但某些省份观察额外地方假日：</p><p>布宜诺斯艾利斯：本地守护神圣日</p><p>科尔多瓦：宗教节日</p><p>图库曼：区域独立纪念</p><p>米西奥内斯：狂欢节庆祝（阿根廷最大）</p><p>这些省级假日不影响全国员工，但对当地企业和政府办公室重要。</p><p></p><p>---</p><p></p><p><h2>6. Practical Tips for Visitors | 实用访客建议</h2></p><p></p><p>**When to visit:**</p><p><li>Avoid January-February (hottest, most holidays)</li></p><p><li>April-October is pleasant weather-wise</li></p><p><li>December-January is peak tourist season</li></p><p></p><p>**Business hours:**</p><p><li>Most businesses close on national holidays</li></p><p><li>Museums and attractions may have special holiday schedules</li></p><p><li>Restaurants in tourist areas often stay open</li></p><p></p><p>**Transportation:**</p><p><li>Public transport runs on reduced holiday schedules</li></p><p><li>Long-distance buses may have limited service</li></p><p><li>Domestic flights book early for holiday periods | 最佳访问时间：避免 1-2 月（最热，假日最多）。4-10 月天气宜人。12-1 月是旅游旺季。</li></p><p>商业时间：大多数企业在全国性假日关闭。博物馆和景点可能有特殊假日时间。旅游区餐厅通常营业。</p><p>交通：公共交通在假日减少时间表运行。长途巴士可能服务有限。国内航班假日期间提前预订。</p><p></p><p>---</p><p></p><p><h2>About public-holidays.shop | 关于 public-holidays.shop</h2></p><p></p><p>Plan your trips around Argentina's holiday calendar. Our [Argentina holidays page](/es/AR) has full dates, regional variations, and travel tips. Check our [Latin America section](/es/region/latam) for neighboring country holidays too. | 围绕阿根廷假日日历规划行程。我们的 [阿根廷假日页面](/es/AR) 有完整日期、区域差异和旅行建议。也查看我们的 [拉丁美洲部分](/es/region/latam) 邻国假日。</p><p></p><p>---</p><p></p><p><h2>FAQ | 常见问题</h2></p><p></p><p>**Q: Does Argentina have puente holidays like Mexico?** | A: No. Argentina's holidays are mostly fixed-date observances without bridge day systems. | 不。阿根廷的假日主要是固定日期庆祝，没有桥接日系统。</p><p></p><p>**Q: Which Argentine holidays are moving (not fixed)?** | A: Carnival, Holy Week (Semana Santa), and Easter Monday move based on the liturgical calendar. | 狂欢节、圣周（Semana Santa）和复活节星期一基于礼仪日历移动。</p><p></p><p>**Q: Are provincial holidays nationwide?** | A: No. Provincial holidays only apply in their respective provinces. National holidays apply everywhere. | 不。省级假日仅适用于 respective 省份。全国性假日适用于全国各地。</p><p></p><p>**Q: What's the most important Argentine holiday?** | A: May 25 (Revolución de Mayo) and July 9 (Independencia) are the two most significant national holidays. | 5 月 25 日（五月革命）和 7 月 9 日（独立日）是两个最重要的全国性假日。</p>
-    `,
-  },
-  {
-    id: 155,
+    id: 157,
     slug: 'south-africa-public-holidays',
-    titleZh: '南非公共假日：和解日与遗产日',
-    titleEn: 'South Africa Public Holidays: Reconciliation & Heritage',
+    title: 'South Africa Public Holidays: Reconciliation & Heritage',
     locale: 'en',
     category: 'south-africa',
     author: 'PubHoliday Research Team',
@@ -4040,10 +3893,9 @@ export const BLOG_POSTS: BlogPost[] = [
     `,
   },
   {
-    id: 156,
+    id: 158,
     slug: 'south-africa-public-holidays-zh',
-    titleZh: '南非公共假日：和解日与遗产日',
-    titleEn: 'South Africa Public Holidays: Reconciliation & Heritage',
+    title: '南非公共假日：和解日与遗产日',
     locale: 'zh',
     category: 'south-africa',
     author: 'PubHoliday Research Team',
