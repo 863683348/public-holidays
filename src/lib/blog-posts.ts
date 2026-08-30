@@ -3985,3 +3985,203 @@ export function getPostsByCountry(countryCode: string, locale?: string): BlogPos
     return matchCountry && matchLocale;
   });
 }
+  ,
+  {
+    id: 64,
+    title: "Singapore Public Holidays: A Multicultural Stack",
+    slug: "singapore-public-holidays",
+    category: "guide",
+    author: "Wei Ling Tan",
+    publishedDate: "2026-08-30T00:00:00Z",
+    lastModified: "2026-08-30T00:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/singapore-holidays.svg",
+    excerpt: "Singapore's public holiday calendar reflects its multicultural society with holidays from Buddhist, Christian, Islamic, Hindu, and secular traditions.",
+    relatedCountries: ["SG"],
+    locale: "en",
+    content: `
+      <p>Singapore's public holiday calendar is a fascinating study in multicultural coexistence. Unlike many countries that follow a single religious or cultural calendar, Singapore stacks holidays from multiple traditions — Buddhist, Christian, Islamic, Hindu, and secular — creating a year-round rhythm that reflects the nation's diverse population.</p>
+      <h2>The Holiday Stack</h2>
+      <p>Singapore recognizes 11-12 public holidays annually, with the exact number depending on whether certain festivals fall on weekends. The holidays rotate across different religious calendars, ensuring no single group dominates the schedule:</p>
+      <ul>
+        <li><strong>Chinese festivals:</strong> Chinese New Year (2 days), Hari Raya Puasa (Eid al-Fitr), Hari Raya Haji (Eid al-Adha)</li>
+        <li><strong>Buddhist:</strong> Vesak Day</li>
+        <li><strong>Christian:</strong> Christmas Day, Good Friday</li>
+        <li><strong>Hindu:</strong> Deepavali</li>
+        <li><strong>Secular:</strong> National Day (Aug 9), Labour Day (May 1)</li>
+      </ul>
+      <h2>2026 Holiday Schedule</h2>
+      <p>Looking ahead to 2026, Singapore's public holidays include:</p>
+      <ul>
+        <li>Jan 1: New Year's Day</li>
+        <li>Jan 29-30: Chinese New Year</li>
+        <li>Apr 2: Good Friday</li>
+        <li>Apr 13: Vesak Day</li>
+        <li>Apr 18: Hari Raya Puasa</li>
+        <li>May 1: Labour Day</li>
+        <li>May 26: Hari Raya Haji</li>
+        <li>Aug 9: National Day</li>
+        <li>Oct 20: Deepavali</li>
+        <li>Dec 25: Christmas Day</li>
+      </ul>
+      <h2>Cultural Significance</h2>
+      <p>Singapore's holiday stacking isn't just about accommodation — it's about celebration. The multi-faith calendar creates natural opportunities for cross-cultural exchange. It's common to see Muslim colleagues inviting non-Muslim coworkers to open houses during Hari Raya, or Buddhist temples opening their doors during Vesak for community meals.</p>
+      <p>This "stacked" approach to public holidays reflects Singapore's broader philosophy: diversity isn't something to manage, but something to celebrate.</p>
+      <p>For the complete Singapore holiday calendar, visit our <a href="https://public-holidays.shop/en/SG">Singapore public holidays page</a>.</p>
+    `,
+  },
+  {
+    id: 65,
+    title: "新加坡公共假日：多元文化的叠加",
+    slug: "singapore-public-holidays",
+    category: "guide",
+    author: "Wei Ling Tan",
+    publishedDate: "2026-08-30T00:00:00Z",
+    lastModified: "2026-08-30T00:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/singapore-holidays.svg",
+    excerpt: "新加坡的公共假日日历是多民族共存的有趣研究，从多个传统中叠加假日——佛教、基督教、伊斯兰教、印度教和世俗。",
+    relatedCountries: ["SG"],
+    locale: "zh",
+    content: `
+      <p>新加坡的公共假日日历是多民族共存的有趣研究。与遵循单一宗教或文化日历的许多国家不同，新加坡从多个传统中叠加假日——佛教、基督教、伊斯兰教、印度教和世俗——创造了一种反映国家多样化人口的全年节奏。</p>
+      <h2>假日叠加</h2>
+      <p>新加坡每年承认11-12个公共假日，确切数量取决于某些节日是否落在周末。假日在不同宗教日历之间轮换，确保没有单一群体主导时间表：</p>
+      <ul>
+        <li><strong>中国节日：</strong>春节（2天）、开斋节、哈芝节</li>
+        <li><strong>佛教：</strong>卫塞节</li>
+        <li><strong>基督教：</strong>圣诞节、耶稣受难日</li>
+        <li><strong>印度教：</strong>屠妖节</li>
+        <li><strong>世俗：</strong>国庆节（8月9日）、劳动节（5月1日）</li>
+      </ul>
+      <h2>2026年假日日程</h2>
+      <p>展望2026年，新加坡的公共假日包括：</p>
+      <ul>
+        <li>1月1日：元旦</li>
+        <li>1月29-30日：春节</li>
+        <li>4月2日：耶稣受难日</li>
+        <li>4月13日：卫塞节</li>
+        <li>4月18日：开斋节</li>
+        <li>5月1日：劳动节</li>
+        <li>5月26日：哈芝节</li>
+        <li>8月9日：国庆节</li>
+        <li>10月20日：屠妖节</li>
+        <li>12月25日：圣诞节</li>
+      </ul>
+      <h2>文化意义</h2>
+      <p>新加坡的假日叠加不仅仅是适应——更是庆祝。多信仰日历创造了跨文化交流的自然机会。经常可以看到穆斯林同事在开斋节期间邀请非穆斯林同事参加开斋宴会，或佛教寺庙在卫塞节期间开放门户进行社区餐会。</p>
+      <p>这种对公共假日的"叠加"方式反映了新加坡更广泛的哲学：多样性不是需要管理的问题，而是值得庆祝的事情。</p>
+      <p>查看完整的新加坡假日日历，请访问我们的<a href="https://public-holidays.shop/zh/SG">新加坡公共假日页面</a>。</p>
+    `,
+  },
+
+  {
+    id: 66,
+    title: "UAE Public Holidays: Floating Eid Dates",
+    slug: "uae-public-holidays-floating-eid-dates",
+    category: "guide",
+    author: "Admin",
+    publishedDate: "2026-08-31T00:00:00Z",
+    lastModified: "2026-08-31T00:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/uae-public-holidays-floating-eid-dates.svg",
+    excerpt: "UAE Public Holidays: Floating Eid Dates",
+    relatedCountries: ["AE"],
+    locale: "en",
+    content: `<p><strong>Main Keyword:</strong> uae public holidays</p>
+<p><strong>Long-tail Keywords:</strong> uae holidays 2026, dubai public holidays, eid holidays uae</p>
+<p><strong>Date:</strong> 2026-08-31</p>
+<p>---</p>
+<p>The United Arab Emirates follows a hybrid calendar for public holidays: secular dates are fixed, but Islamic holidays float based on lunar observations. This creates a unique scheduling challenge — Eid al-Fitr and Eid al-Adha dates can shift by a day depending on moon sighting announcements across the Gulf region.</p>
+<h2>2026 UAE Holiday Calendar</h2>
+<p>The UAE recognizes 10+ public holidays annually. Here's what's confirmed for 2026:</p>
+<p>| Date | Holiday | Notes |</p>
+<p>|------|---------|-------|</p>
+<p>| Jan 1 | New Year's Day | Secular, fixed |</p>
+<p>| Feb 18 | Eid al-Fitr | Floating — subject to moon sighting |</p>
+<p>| Feb 19 | Eid al-Fitr Holiday | Floating |</p>
+<p>| Mar 30 | Eid al-Adha | Floating — subject to moon sighting |</p>
+<p>| Mar 31 | Eid al-Adha Holiday | Floating |</p>
+<p>| Aug 9 | Eid穆巴拉克 | Secular holiday |</p>
+<p>| Nov 25 | UAE National Day | Fixed, 2 days off |</p>
+<p>| Dec 25 | Christmas Day | Recognized but not widely celebrated |</p>
+<p>Note: Some dates are estimates based on lunar calendar calculations. The UAE officially announces Eid dates 1-2 days in advance.</p>
+<h2>The Floating Holiday Challenge</h2>
+<p>For expats and businesses in the UAE, floating holidays create planning complexity:</p>
+<li>**Work schedules:** Offices may close unexpectedly if Eid is declared early</li>
+<li>**Travel bookings:** Flight and hotel prices fluctuate around Eid periods</li>
+<li>**Service appointments:** Banks, government offices, and many businesses close for 2-3 days during Eid</li>
+<h2>Tips for Navigating UAE Public Holidays</h2>
+<p>1. <strong>Follow official announcements:</strong> The UAE Supreme Committee announces Eid dates via state media. Check the official UAE government portal or follow local news.</p>
+<p>2. <strong>Plan around uncertainty:</strong> If you have important deadlines during Ramadan or Eid season, build in buffer days. The moon sighting can shift celebrations by 24-48 hours.</p>
+<p>3. <strong>Understand the weekend:</strong> The UAE weekend is Saturday-Sunday (changed from Friday-Saturday in 2022). This affects how holidays stack with weekends.</p>
+<p>4. <strong>Respect local customs:</strong> During Ramadan, eating, drinking, and smoking in public during daylight hours is frowned upon. Many restaurants close or operate with reduced hours.</p>
+<h2>Why This Matters for Expats</h2>
+<p>The UAE is home to over 90% expatriates. Understanding the holiday calendar isn't just about time off — it's about cultural participation. Joining Eid celebrations with colleagues, understanding when schools close, and knowing which services will be unavailable are essential for daily life.</p>
+<p>For visitors, the floating holidays mean trip timing matters. Tourist sites are beautiful during Eid (decorated, festive atmosphere) but crowded and expensive. The week before Ramadan is actually a great time to visit — fewer crowds, lower prices, and you'll experience the lead-up to the holy month.</p>
+<h2>FAQ</h2>
+<p><strong>Q: How far in advance are UAE Eid dates announced?</strong></p>
+<p>A: Usually 1-2 days before, based on actual moon sighting. Sometimes the Supreme Committee announces a tentative date a week ahead, but the official date comes last minute.</p>
+<p><strong>Q: Do all UAE emirates follow the same holiday schedule?</strong></p>
+<p>A: Yes, the federal government sets unified public holidays. However, some local observances may vary by emirate.</p>
+<p><strong>Q: Is Christmas Day a public holiday in the UAE?</strong></p>
+<p>A: Christmas Day (Dec 25) is recognized, and many Christian expats get the day off. However, it's not as universally observed as in Western countries.</p>
+<p><strong>Q: What happens if Eid falls on a weekend?</strong></p>
+<p>A: The UAE government typically announces a compensatory day off. For example, if Eid al-Fitr falls on a Saturday, Monday might be a holiday.</p>
+<h2>About PubHoliday</h2>
+<p>PubHoliday helps you track public holidays worldwide, including floating Islamic holidays. Plan your trips, understand work schedules, and never miss an important date. Visit [public-holidays.shop](/) to explore holidays by country.</p>
+<p>---</p>`
+  },
+  {
+    id: 67,
+    title: "UAE Public Holidays: Floating Eid Dates",
+    slug: "uae-public-holidays-floating-eid-dates-zh",
+    category: "guide",
+    author: "Admin",
+    publishedDate: "2026-08-31T00:00:00Z",
+    lastModified: "2026-08-31T00:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/uae-public-holidays-floating-eid-dates.svg",
+    excerpt: "UAE Public Holidays: Floating Eid Dates",
+    relatedCountries: ["AE"],
+    locale: "zh",
+    content: `<p><strong>阿联酋公共假日：浮动开斋节日期</strong></p>
+<p><strong>主关键词：</strong> uae public holidays</p>
+<p><strong>长尾关键词：</strong> uae holidays 2026, dubai public holidays, eid holidays uae</p>
+<p><strong>日期：</strong> 2026-08-31</p>
+<p>---</p>
+<p>阿联酋采用混合日历：世俗日期固定，但伊斯兰节日根据月相观测浮动。这带来独特的日程挑战——开斋节和宰牲节的日期可能因海湾地区的望月公告而偏移一天。</p>
+<h2>2026 年阿联酋假日日历</h2>
+<p>阿联酋每年认可 10+ 个公共假日。以下是 2026 年已确认的日期：</p>
+<p>| 日期 | 假日 | 备注 |</p>
+<p>|------|------|------|</p>
+<p>| 1 月 1 日 | 新年 | 固定 |</p>
+<p>| 2 月 18 日 | 开斋节 | 浮动——取决于望月 |</p>
+<p>| 2 月 19 日 | 开斋节假期 | 浮动 |</p>
+<p>| 3 月 30 日 | 宰牲节 | 浮动——取决于望月 |</p>
+<p>| 3 月 31 日 | 宰牲节假期 | 浮动 |</p>
+<p>| 8 月 9 日 | 国庆前假日 | 固定 |</p>
+<p>| 11 月 25 日 | 阿联酋国庆日 | 固定，连休 2 天 |</p>
+<p>| 12 月 25 日 | 圣诞节 | 认可但庆祝不多 |</p>
+<p>注：部分日期基于月历计算预估。阿联酋官方会在节前 1-2 天宣布开斋节日期。</p>
+<h2>浮动假日的挑战</h2>
+<p>对于阿联酋的外籍人士和企业来说，浮动假日带来规划复杂性：</p>
+<li>**工作安排：** 如果开斋节提前宣布，办公室可能突然关闭</li>
+<li>**旅行预订：** 开斋节期间机票和酒店价格波动</li>
+<li>**服务预约：** 银行、政府机构和许多企业在开斋节关闭 2-3 天</li>
+<h2>应对阿联酋公共假日的提示</h2>
+<p>1. <strong>关注官方公告：</strong> 阿联酋最高委员会通过国家媒体宣布开斋节日期。查看官方阿联酋政府门户或关注当地新闻。</p>
+<p>2. <strong>预留缓冲：</strong> 如果在斋月或开斋节季节有重要截止日期，预留缓冲天数。望月可能使庆祝活动推迟 24-48 小时。</p>
+<p>3. <strong>了解周末：</strong> 阿联酋周末为周六 - 周日（2022 年从周五 - 周六改为）。这影响假日与周末的叠加方式。</p>
+<p>4. <strong>尊重当地习俗：</strong> 斋月期间，白天在公共场合进食、饮水和吸烟是不合适的。许多餐厅关闭或缩短营业时间。</p>
+<h2>为什么这对移民重要</h2>
+<p>阿联酋超过 90% 是外籍人士。了解假日日历不仅仅是关于休假——更是关于文化参与。与同事一起参加开斋节庆祝、了解学校何时放假、知道哪些服务不可用，是日常生活 essentials。</p>
+<p>对于游客来说，浮动假日意味着旅行时机很重要。开斋节期间旅游景点很美（装饰、节日氛围），但人多价高。斋月前一周实际上是 visiting 的好时机——游客少、价格低，你还能体验斋月的准备期。</p>
+<h2>常见问题</h2>
+<p><strong>Q: 阿联酋开斋节日期提前多久宣布？</strong></p>
+<p>A: 通常在节前 1-2 天，基于实际望月。最高委员会有时会提前一周宣布暂定日期，但正式日期最后时刻才确定。</p>
+<p><strong>Q: 所有阿联酋酋长国都遵循相同的假日安排吗？</strong></p>
+<p>A: 是的，联邦政府设定统一的公共假日。但某些地方性 observance 可能因酋长国而异。</p>
+<p><strong>Q: 圣诞节是阿联酋公共假日吗？</strong></p>
+<p>A: 圣诞节（12 月 25 日）被认可，许多基督教外籍人士放假。但与西方国家相比，庆祝不普遍。</p>
+<p><strong>Q: 如果开斋节落在周末怎么办？</strong></p>
+<p>A: 阿联酋政府通常会宣布补休。例如，如果开斋节落在周六，周一可能是假日。</p>
+<h2>关于 PubHoliday</h2>
+<p>PubHoliday 帮你追踪全球公共假日，包括浮动的伊斯兰假日。规划旅行、了解工作安排、不错过重要日期。访问 [public-holidays.shop](/) 按国家查看假日。</p>`
+  },];
