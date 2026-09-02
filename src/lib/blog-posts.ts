@@ -3925,67 +3925,6 @@ export const BLOG_POSTS: BlogPost[] = [
       </ol>
     `,
   },
-];
-
-// ========================================================================
-// Locale-aware helper functions
-// ========================================================================
-
-/**
- * Get a single post by slug and optional locale.
- * Falls back to "en" if no locale match found.
- */
-export function getPostData(slug: string, locale?: string): BlogPost | undefined {
-  if (locale) {
-    const post = BLOG_POSTS.find(
-      (p) => p.slug === slug && (p.locale || "en") === locale
-    );
-    if (post) return post;
-  }
-  // Fallback: return any post with this slug (prefer "en")
-  return BLOG_POSTS.find((p) => p.slug === slug && (p.locale || "en") === "en");
-}
-
-/**
- * Get posts filtered by category and optional locale.
- */
-export function getPostsByCategory(category: string, locale?: string): BlogPost[] {
-  return BLOG_POSTS.filter((p) => {
-    const matchCategory = p.category === category;
-    const matchLocale = locale ? (p.locale || "en") === locale : true;
-    return matchCategory && matchLocale;
-  });
-}
-
-/**
- * Get all posts filtered by locale.
- */
-export function getAllPosts(locale?: string): BlogPost[] {
-  const posts = locale ? BLOG_POSTS.filter((p) => (p.locale || "en") === locale) : BLOG_POSTS;
-  // 按发布时间倒序（最新在前）
-  return [...posts].sort(
-    (a, b) => new Date(b.publishedDate).getTime() - new Date(a.publishedDate).getTime()
-  );
-}
-
-
-
-export function getCategories(locale?: string): string[] {
-  const posts = locale ? getAllPosts(locale) : BLOG_POSTS;
-  return [...new Set(posts.map((p) => p.category))];
-}
-
-/**
- * Get posts by related country code and optional locale.
- */
-export function getPostsByCountry(countryCode: string, locale?: string): BlogPost[] {
-  return BLOG_POSTS.filter((p) => {
-    const matchCountry = p.relatedCountries.includes(countryCode);
-    const matchLocale = locale ? (p.locale || "en") === locale : true;
-    return matchCountry && matchLocale;
-  });
-}
-  ,
   {
     id: 64,
     title: "Singapore Public Holidays: A Multicultural Stack",
@@ -4184,4 +4123,236 @@ export function getPostsByCountry(countryCode: string, locale?: string): BlogPos
 <p>A: 阿联酋政府通常会宣布补休。例如，如果开斋节落在周六，周一可能是假日。</p>
 <h2>关于 PubHoliday</h2>
 <p>PubHoliday 帮你追踪全球公共假日，包括浮动的伊斯兰假日。规划旅行、了解工作安排、不错过重要日期。访问 [public-holidays.shop](/) 按国家查看假日。</p>`
-  },];
+  },
+  {
+    id: 162,
+    title: "Denmark, Norway, Finland: A Nordic Holidays Comparison",
+    slug: "nordic-holidays-comparison",
+    category: "guide",
+    author: "PubHoliday Research Team",
+    publishedDate: "2026-09-02T08:00:00Z",
+    lastModified: "2026-09-02T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/nordic-holidays-comparison.svg",
+    excerpt: "How do Denmark, Norway, and Finland celebrate differently? A comparison of Nordic holiday traditions, key dates, and the culture behind them.",
+    relatedCountries: ["DK","NO","FI"],
+    locale: "en",
+    content: `<p>When people think of Nordic holidays, they often imagine a single unified calendar — somewhere between Swedish midsummer celebrations and Danish hygge winters. But the reality is more interesting. Denmark, Norway, and Finland each maintain distinct holiday traditions that reflect their unique histories, religions, and cultural identities.</p>
+
+<p>Understanding these differences matters if you're planning a trip, doing business in the region, or simply curious about how neighboring countries celebrate differently. Let me break down what makes each nation's holiday calendar unique.</p>
+
+<h2>Denmark: Hygge and High Church</h2>
+<p>Denmark's holiday calendar balances Lutheran traditions with secular celebrations that emphasize togetherness. The Danes take their holidays seriously, and the concept of hygge — cozy togetherness — permeates many celebrations.</p>
+
+<p><strong>Key Danish Holidays:</strong></p>
+<ul>
+  <li><strong>New Year's Day (Nytår):</strong> January 1st, marked by fireworks and candied almonds</li>
+  <li><strong>Maundy Thursday (Skærtorsdag):</strong> The Thursday before Easter, a public holiday</li>
+  <li><strong>Good Friday (Langfredag):</strong> Quiet day of reflection</li>
+  <li><strong>Easter Monday (Påskeaften):</strong> Family gatherings and egg hunts</li>
+  <li><strong>National Day (Grundlovsdag):</strong> June 5th, celebrating the constitution</li>
+  <li><strong>Christmas Eve (Juleaften):</strong> December 24th, the main celebration with roast duck and rice pudding</li>
+</ul>
+
+<p>What makes Danish holidays distinctive is the emphasis on family and coziness. Even secular celebrations like Constitution Day feel intimate rather than grandiose.</p>
+
+<h2>Norway: Grit and Fjords</h2>
+<p>Norway's holiday calendar reflects its rugged landscape and proud independence. The Norwegians celebrate with more external enthusiasm than their Danish cousins, often taking to the outdoors even during traditional holidays.</p>
+
+<p><strong>Key Norwegian Holidays:</strong></p>
+<ul>
+  <li><strong>Constitution Day (Grunnlovsdagen):</strong> May 17th, the biggest celebration of the year with children's parades</li>
+  <li><strong>Labour Day (Arbeiderens festdag):</strong> May 1st, marked by political speeches and celebrations</li>
+  <li><strong>Ascension Day (Kristi Himmelfartsdag):</strong> Thursday before Pentecost</li>
+  <li><strong>National Day (Syttende Mai):</strong> May 17th, children carry flags and sing songs</li>
+  <li><strong>Christmas Eve (Julaften):</strong> December 24th, the main celebration with ham and rice porridge</li>
+</ul>
+
+<p>Norwegian holidays often involve being outside, even in winter. The Constitution Day parade is one of the largest children's processions in the world, and many Norwegians celebrate by heading to the mountains or coast.</p>
+
+<h2>Finland: Silence and Saunas</h2>
+<p>Finnish holidays stand apart from their Nordic neighbors in several ways. The Finns tend toward quieter, more introspective celebrations, and their calendar includes unique national observances that have no direct equivalent in Denmark or Norway.</p>
+
+<p><strong>Key Finnish Holidays:</strong></p>
+<ul>
+  <li><strong>Independence Day (Itsenäisyyspäivä):</strong> December 6th, marked by the Presidential Reception in Helsinki</li>
+  <li><strong>Midsummer (Juhannus):</strong> The Saturday between June 20-26, Finns flee to summer cottages</li>
+  <li><strong>All Souls' Day (Pyhäinpäivä):</strong> Late October/early November, cemetery visits and candle lighting</li>
+  <li><strong>Christmas Eve (Jouluaatto):</strong> December 24th, sauna first, then the meal</li>
+  <li><strong>New Year's Eve (Uudenvuodenaatto):</strong> Bonfires and champagne</li>
+</ul>
+
+<p>Finnish holidays often involve saunas, candles, and a respect for silence and nature. Independence Day feels more solemn than celebratory, and Midsummer is essentially a nationwide exodus to the countryside.</p>
+
+<h2>Comparing the Three: What's Different?</h2>
+<p>While Denmark, Norway, and Finland share some Christian holidays, the way each country celebrates reveals deeper cultural differences:</p>
+
+<table class="min-w-full border-collapse border border-gray-300 mb-4">
+  <thead><tr class="bg-gray-100"><th class="border p-2">Aspect</th><th class="border p-2">Denmark</th><th class="border p-2">Norway</th><th class="border p-2">Finland</th></tr></thead>
+  <tbody>
+    <tr><td class="border p-2">Celebration Style</td><td class="border p-2">Cozy, intimate</td><td class="border p-2">External, enthusiastic</td><td class="border p-2">Quiet, reflective</td></tr>
+    <tr><td class="border p-2">National Day</td><td class="border p-2">June 5 (Constitution)</td><td class="border p-2">May 17 (Independence)</td><td class="border p-2">December 6 (Independence)</td></tr>
+    <tr><td class="border p-2">Summer Focus</td><td class="border p-2">Hygge outdoors</td><td class="border p-2">Mountain/hiking</td><td class="border p-2">Cottage life</td></tr>
+    <tr><td class="border p-2">Winter Focus</td><td class="border p-2">Candlelight, togetherness</td><td class="border p-2">Indoor family time</td><td class="border p-2">Sauna, darkness coping</td></tr>
+    <tr><td class="border p-2">Religious Influence</td><td class="border p-2">Strong Lutheran</td><td class="border p-2">Moderate Lutheran</td><td class="border p-2">Moderate Lutheran + Orthodox</td></tr>
+  </tbody>
+</table>
+
+<h2>Why These Differences Matter</h2>
+<p>Understanding these holiday nuances matters for several reasons:</p>
+<ul>
+  <li><strong>Travel Planning.</strong> If you visit Denmark during Christmas, expect cozy indoor gatherings. Norway during summer means outdoor adventures. Finland in winter requires embracing the darkness and cold.</li>
+  <li><strong>Business Etiquette.</strong> Closing dates vary. Norwegian businesses may be closed on Constitution Day but open on other Nordic holidays. Finnish companies observe Independence Day but may operate during Danish National Day.</li>
+  <li><strong>Cultural Respect.</strong> Showing up to a Danish hygge gathering with Norwegian exuberance might feel off. Bringing Finnish quiet reserve to a Norwegian parade could seem cold. Adapting to local celebration styles goes a long way.</li>
+</ul>
+
+<h2>The Shared Nordic Spirit</h2>
+<p>Despite these differences, the three countries share underlying values: a respect for nature, emphasis on family and community, and a tendency to celebrate simply rather than extravagantly. Whether it's a Danish hygge evening, a Norwegian Constitution Day parade, or a Finnish Midsummer bonfire, the spirit is the same — finding joy in simple, shared moments.</p>
+
+<p>For travelers and expats, learning these differences isn't just about calendars. It's about understanding how these neighbors see the world differently, even when they share the same Nordic sun.</p>`,
+  },
+  {
+    id: 163,
+    title: "丹麦、挪威、芬兰：北欧三国假日对比",
+    slug: "nordic-holidays-comparison",
+    category: "guide",
+    author: "PubHoliday Research Team",
+    publishedDate: "2026-09-02T08:00:00Z",
+    lastModified: "2026-09-02T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/nordic-holidays-comparison.svg",
+    excerpt: "丹麦、挪威和芬兰的假日传统有何不同？对比北欧三国的假日、关键日期与背后文化。",
+    relatedCountries: ["DK","NO","FI"],
+    locale: "zh",
+    content: `<p>当人们想到北欧假日时，他们常常想象一个统一的日历——介于瑞典仲夏节和丹麦 hygge 冬季之间。但现实更有趣。丹麦、挪威和芬兰各自保持着独特的假日传统，反映了他们不同的历史、宗教和文化身份。</p>
+
+<p>如果你计划旅行、在该地区经商，或者只是好奇邻国如何不同地庆祝，了解这些差异很重要。让我分析一下每个国家假日日历的独特之处。</p>
+
+<h2>丹麦：Hygge 和高教堂</h2>
+<p>丹麦的假日日历在路德宗传统和强调团聚的世俗庆祝之间取得平衡。丹麦人认真对待他们的假日，hygge（舒适团聚）的概念渗透到许多庆祝活动中。</p>
+
+<p><strong>主要丹麦假日：</strong></p>
+<ul>
+  <li><strong>元旦（Nytår）：</strong> 1 月 1 日，以烟花和糖杏仁为标志</li>
+  <li><strong>濯足星期四（Skærtorsdag）：</strong> 复活节前的星期四，公共假日</li>
+  <li><strong>耶稣受难日（Langfredag）：</strong> 安静的反思日</li>
+  <li><strong>复活节星期一（Påskeaften）：</strong> 家庭聚会和寻蛋活动</li>
+  <li><strong>国庆日（Grundlovsdag）：</strong> 6 月 5 日，庆祝宪法</li>
+  <li><strong>平安夜（Juleaften）：</strong> 12 月 24 日，主要庆祝活动，有烤鸭和米布丁</li>
+</ul>
+
+<p>丹麦假日的独特之处在于对家庭和舒适的强调。即使是像宪法日这样的世俗庆祝也感觉亲密而不是宏伟。</p>
+
+<h2>挪威：骨气与峡湾</h2>
+<p>挪威的假日日历反映了其崎岖的风景和骄傲的独立。挪威人比他们的丹麦表亲更热情地庆祝，即使在传统假日也常常走向户外。</p>
+
+<p><strong>主要挪威假日：</strong></p>
+<ul>
+  <li><strong>国庆日（Grunnlovsdagen）：</strong> 5 月 17 日，一年中最大的庆祝活动，有儿童游行</li>
+  <li><strong>劳动节（Arbeiderens festdag）：</strong> 5 月 1 日，以政治演讲和庆祝活动为标志</li>
+  <li><strong>Ascension Day（Kristi Himmelfartsdag）：</strong> Pentecost 前的星期四</li>
+  <li><strong>国庆日（Syttende Mai）：</strong> 5 月 17 日，儿童携带旗帜唱歌</li>
+  <li><strong>平安夜（Julaften）：</strong> 12 月 24 日，主要庆祝活动，有火腿和米粥</li>
+</ul>
+
+<p>挪威假日通常涉及户外活动，即使在冬天也是如此。国庆日游行是世界上最大的儿童游行之一，许多挪威人庆祝时前往山区或海岸。</p>
+
+<h2>芬兰：寂静与桑拿</h2>
+<p>芬兰的假日与其北欧邻国在某些方面不同。芬兰人倾向于更安静、更内省的庆祝活动，他们的日历包括丹麦或挪威没有直接对应的独特国家纪念活动。</p>
+
+<p><strong>主要芬兰假日：</strong></p>
+<ul>
+  <li><strong>独立日（Itsenäisyyspäivä）：</strong> 12 月 6 日，以赫尔辛基的总统招待会为标志</li>
+  <li><strong>仲夏（Juhannus）：</strong> 6 月 20-26 日之间的星期六，芬兰人逃离到夏季小屋</li>
+  <li><strong>诸灵节（Pyhäinpäivä）：</strong> 10 月底/11 月初，墓地访问和点蜡烛</li>
+  <li><strong>平安夜（Jouluaatto）：</strong> 12 月 24 日，先桑拿，然后用餐</li>
+  <li><strong>跨年夜（Uudenvuodenaatto）：</strong> 篝火和香槟</li>
+</ul>
+
+<p>芬兰假日通常涉及桑拿、蜡烛，以及对寂静和自然的尊重。独立日感觉比庆祝活动更庄严，仲夏几乎是全国性的乡间迁徙。</p>
+
+<h2>三国比较：有什么不同？</h2>
+<p>虽然丹麦、挪威和芬兰共享一些基督教假日，但每个国家的庆祝方式揭示了更深层的文化差异：</p>
+
+<table class="min-w-full border-collapse border border-gray-300 mb-4">
+  <thead><tr class="bg-gray-100"><th class="border p-2">方面</th><th class="border p-2">丹麦</th><th class="border p-2">挪威</th><th class="border p-2">芬兰</th></tr></thead>
+  <tbody>
+    <tr><td class="border p-2">庆祝风格</td><td class="border p-2">舒适、亲密</td><td class="border p-2">外向、热情</td><td class="border p-2">安静、反思</td></tr>
+    <tr><td class="border p-2">国庆日</td><td class="border p-2">6 月 5 日（宪法）</td><td class="border p-2">5 月 17 日（独立）</td><td class="border p-2">12 月 6 日（独立）</td></tr>
+    <tr><td class="border p-2">夏季重点</td><td class="border p-2">户外 hygge</td><td class="border p-2">登山/徒步</td><td class="border p-2">小屋生活</td></tr>
+    <tr><td class="border p-2">冬季重点</td><td class="border p-2">烛光、团聚</td><td class="border p-2">室内家庭时间</td><td class="border p-2">桑拿、应对黑暗</td></tr>
+    <tr><td class="border p-2">宗教影响</td><td class="border p-2">强路德宗</td><td class="border p-2">中等路德宗</td><td class="border p-2">中等路德宗 + 东正教</td></tr>
+  </tbody>
+</table>
+
+<h2>为什么这些差异很重要</h2>
+<p>了解这些假日细微差别对几个原因很重要：</p>
+<ul>
+  <li><strong>旅行计划。</strong> 如果你圣诞节去丹麦，期待舒适的室内聚会。挪威夏天意味着户外冒险。芬兰冬天需要拥抱黑暗和寒冷。</li>
+  <li><strong>商务礼仪。</strong> 关闭日期各不相同。挪威企业在国庆日可能关闭，但在其他北欧假日开放。芬兰公司纪念独立日，但可能在丹麦国庆日营业。</li>
+  <li><strong>文化尊重。</strong> 带着挪威人的热情出现在丹麦 hygge 聚会可能感觉不对劲。在挪威游行中带上芬兰人的安静克制可能显得冷漠。适应当地庆祝方式意义重大。</li>
+</ul>
+
+<h2>共同的北欧精神</h2>
+<p>尽管存在这些差异，这三个国家共享潜在价值观：对自然的尊重、对家庭和社区的强调，以及倾向于简单庆祝而不是奢侈。无论是丹麦的 hygge 夜晚、挪威的国庆日游行还是芬兰的仲夏篝火，精神都是一样的——在简单、共享的时刻中找到快乐。</p>
+
+<p>对于旅行者和移民来说，学习这些差异不仅仅是关于日历。它是关于理解这些邻居如何看待世界的不同，即使他们共享相同的北欧阳光。</p>`,
+  },
+];
+
+// Locale-aware helper functions
+// ========================================================================
+
+/**
+ * Get a single post by slug and optional locale.
+ * Falls back to "en" if no locale match found.
+ */
+export function getPostData(slug: string, locale?: string): BlogPost | undefined {
+  if (locale) {
+    const post = BLOG_POSTS.find(
+      (p) => p.slug === slug && (p.locale || "en") === locale
+    );
+    if (post) return post;
+  }
+  // Fallback: return any post with this slug (prefer "en")
+  return BLOG_POSTS.find((p) => p.slug === slug && (p.locale || "en") === "en");
+}
+
+/**
+ * Get posts filtered by category and optional locale.
+ */
+export function getPostsByCategory(category: string, locale?: string): BlogPost[] {
+  return BLOG_POSTS.filter((p) => {
+    const matchCategory = p.category === category;
+    const matchLocale = locale ? (p.locale || "en") === locale : true;
+    return matchCategory && matchLocale;
+  });
+}
+
+/**
+ * Get all posts filtered by locale.
+ */
+export function getAllPosts(locale?: string): BlogPost[] {
+  const posts = locale ? BLOG_POSTS.filter((p) => (p.locale || "en") === locale) : BLOG_POSTS;
+  // 按发布时间倒序（最新在前）
+  return [...posts].sort(
+    (a, b) => new Date(b.publishedDate).getTime() - new Date(a.publishedDate).getTime()
+  );
+}
+
+
+
+export function getCategories(locale?: string): string[] {
+  const posts = locale ? getAllPosts(locale) : BLOG_POSTS;
+  return [...new Set(posts.map((p) => p.category))];
+}
+
+/**
+ * Get posts by related country code and optional locale.
+ */
+export function getPostsByCountry(countryCode: string, locale?: string): BlogPost[] {
+  return BLOG_POSTS.filter((p) => {
+    const matchCountry = p.relatedCountries.includes(countryCode);
+    const matchLocale = locale ? (p.locale || "en") === locale : true;
+    return matchCountry && matchLocale;
+  });
+}
+
