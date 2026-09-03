@@ -4296,6 +4296,182 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>对于旅行者和移民来说，学习这些差异不仅仅是关于日历。它是关于理解这些邻居如何看待世界的不同，即使他们共享相同的北欧阳光。</p>`,
   },
+  {
+    id: 164,
+    title: "Central & Eastern Europe: Czech, Greece, Hungary, Romania",
+    slug: "central-eastern-europe-holidays",
+    category: "guide",
+    author: "PubHoliday Research Team",
+    publishedDate: "2026-09-03T08:00:00Z",
+    lastModified: "2026-09-03T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/central-eastern-europe-holidays.svg",
+    excerpt: "Czechia, Greece, Hungary and Romania share a region but not a calendar. The 2026 fixed dates, the Easter split, and the civic holidays that define each country.",
+    relatedCountries: ["CZ","GR","HU","RO"],
+    locale: "en",
+    content: `<p>Central and Eastern Europe does not share one holiday calendar. Czechia, Greece, Hungary, and Romania sit within a few hundred kilometers of each other, but their public-holiday rhythms come from different churches, different revolutions, and different ideas about what a day off is for. If you travel, work, or source suppliers across this region, the gaps will surprise you — most of all the Easter split in 2026.</p>
+
+<p>This guide walks through the four 2026 calendars with the actual fixed dates, then explains where the movable feasts land and why it matters.</p>
+
+<h2>Czechia: Thirteen Quiet Holidays</h2>
+<p>Czechia observes 13 public holidays, almost all tied to national memory rather than shopping. The fixed dates in 2026:</p>
+<ul>
+  <li><strong>Jan 1</strong> — New Year's Day, doubled as the Day of the Renewal of the Czech State</li>
+  <li><strong>May 1</strong> — Labour Day</li>
+  <li><strong>May 8</strong> — Liberation Day (end of WWII in Europe)</li>
+  <li><strong>Jul 5</strong> — Saints Cyril and Methodius Day</li>
+  <li><strong>Jul 6</strong> — Jan Hus Day</li>
+  <li><strong>Sep 28</strong> — St. Wenceslas Day (Czech Statehood)</li>
+  <li><strong>Oct 28</strong> — Independent Czechoslovak State Day (1918)</li>
+  <li><strong>Nov 17</strong> — Struggle for Freedom and Democracy Day</li>
+  <li><strong>Dec 24-26</strong> — Christmas Eve, Christmas Day, St. Stephen's Day</li>
+</ul>
+<p>The two July dates one day apart are easy to confuse, and Dec 24 is the main family celebration (not Dec 25). Easter is movable: in 2026 Good Friday falls on <strong>Apr 3</strong> and Easter Monday on <strong>Apr 6</strong>, both public holidays. See the full list on the <a href="https://public-holidays.shop/en/CZ">Czechia holidays page</a>.</p>
+
+<h2>Greece: The Orthodox Calendar Rules</h2>
+<p>Greece blends Independence Day with a religious feast and leans on the Orthodox calendar, so its Easter moves to a different week than Czechia's. Fixed 2026 dates:</p>
+<ul>
+  <li><strong>Jan 1</strong> — New Year's Day</li>
+  <li><strong>Jan 6</strong> — Epiphany (Theophany)</li>
+  <li><strong>Mar 25</strong> — Independence Day, sharing the date with the Annunciation</li>
+  <li><strong>May 1</strong> — Labour Day</li>
+  <li><strong>Aug 15</strong> — Assumption (Dormition of the Theotokos)</li>
+  <li><strong>Oct 28</strong> — Ohi Day (the "No" of 1940)</li>
+  <li><strong>Dec 25-26</strong> — Christmas and St. Stephen's Day</li>
+</ul>
+<p>Two dates do double duty: Jan 6 is both a feast and a holiday, and Mar 25 pairs independence with the Annunciation. The movable ones matter more here — <strong>Clean Monday</strong> (start of Lent) lands on <strong>Feb 23</strong>, and Orthodox Easter is <strong>Apr 12</strong> in 2026, with Easter Monday on Apr 13. Check the <a href="https://public-holidays.shop/en/GR">Greece holidays page</a> for the floating dates each year.</p>
+
+<h2>Hungary: Three Revolution Days</h2>
+<p>Hungary packs three civic-national holidays into the year and keeps Christmas on the Western calendar. Fixed 2026 dates:</p>
+<ul>
+  <li><strong>Jan 1</strong> — New Year's Day</li>
+  <li><strong>Mar 15</strong> — 1848 Revolution Memorial Day</li>
+  <li><strong>May 1</strong> — Labour Day</li>
+  <li><strong>Aug 20</strong> — State Foundation Day (St. Stephen's Day)</li>
+  <li><strong>Oct 23</strong> — 1956 Revolution Memorial Day</li>
+  <li><strong>Nov 1</strong> — All Saints' Day</li>
+  <li><strong>Dec 25-26</strong> — Christmas and St. Stephen's Day</li>
+</ul>
+<p>Mar 15 and Oct 23 are the two revolution anniversaries; Aug 20 honors the first king. Easter follows the Western church in 2026: <strong>Apr 5</strong> (Sunday) and <strong>Apr 6</strong> (Monday). Full detail on the <a href="https://public-holidays.shop/en/HU">Hungary holidays page</a>.</p>
+
+<h2>Romania: The Great Union</h2>
+<p>Romania's calendar is the most layered, with two January holidays and a midsummer saint's day. Fixed 2026 dates:</p>
+<ul>
+  <li><strong>Jan 1-2</strong> — New Year's Day (two days)</li>
+  <li><strong>Jan 6</strong> — Epiphany; <strong>Jan 7</strong> — St. John the Baptist</li>
+  <li><strong>Jan 24</strong> — Union Day (the 1859 "Small Union")</li>
+  <li><strong>May 1</strong> — Labour Day</li>
+  <li><strong>Jun 1</strong> — Children's Day</li>
+  <li><strong>Aug 15</strong> — Dormition of the Theotokos</li>
+  <li><strong>Nov 30</strong> — St. Andrew's Day</li>
+  <li><strong>Dec 1</strong> — National Day (Great Union of 1918)</li>
+  <li><strong>Dec 25-26</strong> — Christmas and St. Stephen's Day</li>
+</ul>
+<p>Dec 1 is the big one — parades in Bucharest and across the country. Like Greece, Romania follows the Orthodox church, so Easter is <strong>Apr 12</strong> in 2026. The <a href="https://public-holidays.shop/en/RO">Romania holidays page</a> tracks the floating dates.</p>
+
+<h2>What Differs, and Why It Bites</h2>
+<table class="min-w-full border-collapse border border-gray-300 mb-4">
+  <thead><tr class="bg-gray-100"><th class="border p-2">Country</th><th class="border p-2">Public holidays</th><th class="border p-2">Easter 2026</th><th class="border p-2">Signature civic day</th></tr></thead>
+  <tbody>
+    <tr><td class="border p-2">Czechia</td><td class="border p-2">13</td><td class="border p-2">Apr 5-6 (Western)</td><td class="border p-2">Oct 28</td></tr>
+    <tr><td class="border p-2">Greece</td><td class="border p-2">~11</td><td class="border p-2">Apr 12 (Orthodox)</td><td class="border p-2">Mar 25 / Oct 28</td></tr>
+    <tr><td class="border p-2">Hungary</td><td class="border p-2">~11</td><td class="border p-2">Apr 5-6 (Western)</td><td class="border p-2">Aug 20 / Oct 23</td></tr>
+    <tr><td class="border p-2">Romania</td><td class="border p-2">~14</td><td class="border p-2">Apr 12 (Orthodox)</td><td class="border p-2">Dec 1</td></tr>
+  </tbody>
+</table>
+
+<p>The Easter split is the trap. In 2026, Czechia and Hungary take Apr 6 off; Greece and Romania take Apr 13. If you schedule a regional meeting or a shipment across all four for "the week after Easter," you will miss one of them. Plan around both Mondays.</p>
+
+<h2>About public-holidays.shop</h2>
+<p>public-holidays.shop tracks public holidays across all four CEE countries, including the floating Orthodox Easter. Plan trips, check cross-border business closures, and never miss a key date. Visit <a href="https://public-holidays.shop/">public-holidays.shop</a> to browse holidays by country, or read more regional roundups on our <a href="https://public-holidays.shop/blog">blog</a>.</p>`,
+  },
+  {
+    id: 165,
+    title: "捷克、希腊、匈牙利、罗马尼亚：中东欧公共假日盘点",
+    slug: "central-eastern-europe-holidays",
+    category: "guide",
+    author: "PubHoliday Research Team",
+    publishedDate: "2026-09-03T08:00:00Z",
+    lastModified: "2026-09-03T08:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/central-eastern-europe-holidays.svg",
+    excerpt: "捷克、希腊、匈牙利、罗马尼亚同处中东欧，假日历却各走各的。2026 固定日期、复活节东西分裂、以及定义各国的公民假日。",
+    relatedCountries: ["CZ","GR","HU","RO"],
+    locale: "zh",
+    content: `<p>中东欧并没有一张统一的假日历。捷克、希腊、匈牙利、罗马尼亚彼此相距不过几百公里，但公共假日的节奏来自不同的教会、不同的革命，以及对于"放假究竟为了什么"的不同理解。如果你在这片区域旅行、出差或找供应商，那些差异会让你吃惊——尤其是 2026 年的复活节分裂。</p>
+
+<p>这篇指南按四个国家的 2026 日历，列出确切的固定日期，再说明浮动节日落在哪天、为什么重要。</p>
+
+<h2>捷克：十三个安静的假日</h2>
+<p>捷克有 13 个公共假日，几乎都绑定民族记忆而不是购物。2026 固定日期：</p>
+<ul>
+  <li><strong>1 月 1 日</strong> — 元旦，同时是捷克建国纪念日</li>
+  <li><strong>5 月 1 日</strong> — 劳动节</li>
+  <li><strong>5 月 8 日</strong> — 解放日（欧洲二战结束）</li>
+  <li><strong>7 月 5 日</strong> — 西里尔与美多德日</li>
+  <li><strong>7 月 6 日</strong> — 扬·胡斯日</li>
+  <li><strong>9 月 28 日</strong> — 圣瓦茨拉夫日（捷克国庆）</li>
+  <li><strong>10 月 28 日</strong> — 捷克斯洛伐克独立日（1918）</li>
+  <li><strong>11 月 17 日</strong> — 争取自由与民主日</li>
+  <li><strong>12 月 24-26 日</strong> — 圣诞夜、圣诞节、圣斯捷潘日</li>
+</ul>
+<p>七月那两个只差一天的日期很容易混淆，而真正的家庭大餐在 12 月 24 日（不是 25 日）。复活节是浮动的：2026 年耶稣受难日是 <strong>4 月 3 日</strong>，复活节星期一是 <strong>4 月 6 日</strong>，都是公共假日。完整列表见 <a href="https://public-holidays.shop/en/CZ">捷克假日页</a>。</p>
+
+<h2>希腊：东正教历法说了算</h2>
+<p>希腊把独立日和一个宗教节庆叠在一起，并且倚重东正教历法，所以复活节比捷克晚一周。2026 固定日期：</p>
+<ul>
+  <li><strong>1 月 1 日</strong> — 元旦</li>
+  <li><strong>1 月 6 日</strong> — 主显节</li>
+  <li><strong>3 月 25 日</strong> — 独立日，与圣母领报同一天</li>
+  <li><strong>5 月 1 日</strong> — 劳动节</li>
+  <li><strong>8 月 15 日</strong> — 圣母安息节（Dormition）</li>
+  <li><strong>10 月 28 日</strong> — 说不日（Ohi Day，1940 年的"不"）</li>
+  <li><strong>12 月 25-26 日</strong> — 圣诞节与圣斯捷潘日</li>
+</ul>
+<p>有两个日期身兼两职：1 月 6 日既是节庆也是假日，3 月 25 日把独立与领报并在一天。浮动节日在这里更关键——<strong>洁净星期一</strong>（大斋首日）落在 <strong>2 月 23 日</strong>，东正教复活节在 2026 年是 <strong>4 月 12 日</strong>，复活节星期一是 4 月 13 日。每年的浮动日期见 <a href="https://public-holidays.shop/en/GR">希腊假日页</a>。</p>
+
+<h2>匈牙利：三个革命纪念日</h2>
+<p>匈牙利一年塞进三个公民-民族假日，圣诞节走西方历法。2026 固定日期：</p>
+<ul>
+  <li><strong>1 月 1 日</strong> — 元旦</li>
+  <li><strong>3 月 15 日</strong> — 1848 年革命纪念日</li>
+  <li><strong>5 月 1 日</strong> — 劳动节</li>
+  <li><strong>8 月 20 日</strong> — 建国日（圣伊什特万日）</li>
+  <li><strong>10 月 23 日</strong> — 1956 年革命纪念日</li>
+  <li><strong>11 月 1 日</strong> — 万圣节</li>
+  <li><strong>12 月 25-26 日</strong> — 圣诞节与圣斯捷潘日</li>
+</ul>
+<p>3 月 15 日和 10 月 23 日是两个革命周年；8 月 20 日纪念第一位国王。复活节 2026 年随西方教会：<strong>4 月 5 日</strong>（周日）与 <strong>4 月 6 日</strong>（周一）。完整细节见 <a href="https://public-holidays.shop/en/HU">匈牙利假日页</a>。</p>
+
+<h2>罗马尼亚：大统一</h2>
+<p>罗马尼亚的日历最"层叠"，一月有两个假日，盛夏还有一个圣人日。2026 固定日期：</p>
+<ul>
+  <li><strong>1 月 1-2 日</strong> — 元旦（两天）</li>
+  <li><strong>1 月 6 日</strong> — 主显节；<strong>1 月 7 日</strong> — 圣约翰节</li>
+  <li><strong>1 月 24 日</strong> — 统一日（1859 年"小统一"）</li>
+  <li><strong>5 月 1 日</strong> — 劳动节</li>
+  <li><strong>6 月 1 日</strong> — 儿童节</li>
+  <li><strong>8 月 15 日</strong> — 圣母安息节</li>
+  <li><strong>11 月 30 日</strong> — 圣安德烈日</li>
+  <li><strong>12 月 1 日</strong> — 国庆日（1918 年大统一）</li>
+  <li><strong>12 月 25-26 日</strong> — 圣诞节与圣斯捷潘日</li>
+</ul>
+<p>12 月 1 日是重头戏——布加勒斯特和全国都有阅兵。和希腊一样，罗马尼亚随东正教会，所以 2026 年复活节是 <strong>4 月 12 日</strong>。浮动日期见 <a href="https://public-holidays.shop/en/RO">罗马尼亚假日页</a>。</p>
+
+<h2>差异在哪，为什么坑人</h2>
+<table class="min-w-full border-collapse border border-gray-300 mb-4">
+  <thead><tr class="bg-gray-100"><th class="border p-2">国家</th><th class="border p-2">公共假日数</th><th class="border p-2">2026 复活节</th><th class="border p-2">标志性公民日</th></tr></thead>
+  <tbody>
+    <tr><td class="border p-2">捷克</td><td class="border p-2">13</td><td class="border p-2">4 月 5-6 日（西方）</td><td class="border p-2">10 月 28 日</td></tr>
+    <tr><td class="border p-2">希腊</td><td class="border p-2">约 11</td><td class="border p-2">4 月 12 日（东正教）</td><td class="border p-2">3 月 25 日 / 10 月 28 日</td></tr>
+    <tr><td class="border p-2">匈牙利</td><td class="border p-2">约 11</td><td class="border p-2">4 月 5-6 日（西方）</td><td class="border p-2">8 月 20 日 / 10 月 23 日</td></tr>
+    <tr><td class="border p-2">罗马尼亚</td><td class="border p-2">约 14</td><td class="border p-2">4 月 12 日（东正教）</td><td class="border p-2">12 月 1 日</td></tr>
+  </tbody>
+</table>
+
+<p>复活节分裂是大坑。2026 年，捷克和匈牙利在 4 月 6 日放假；希腊和罗马尼亚在 4 月 13 日。如果你为"复活节后那周"安排四国跨区域会议或发货，会漏掉其中一边。两个周一都留出余量。</p>
+
+<h2>关于 public-holidays.shop</h2>
+<p>public-holidays.shop 追踪中东欧四国的公共假日，包括东正教浮动的复活节。规划旅行、核对跨国工作安排、不错过任何重要日期。访问 <a href="https://public-holidays.shop/">public-holidays.shop</a> 按国家查看假日，或到 <a href="https://public-holidays.shop/blog">blog</a> 读更多区域盘点。</p>`,
+  },
 ];
 
 // Locale-aware helper functions
