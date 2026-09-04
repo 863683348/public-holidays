@@ -4472,6 +4472,120 @@ export const BLOG_POSTS: BlogPost[] = [
 <h2>关于 public-holidays.shop</h2>
 <p>public-holidays.shop 追踪中东欧四国的公共假日，包括东正教浮动的复活节。规划旅行、核对跨国工作安排、不错过任何重要日期。访问 <a href="https://public-holidays.shop/">public-holidays.shop</a> 按国家查看假日，或到 <a href="https://public-holidays.shop/blog">blog</a> 读更多区域盘点。</p>`,
   },
+  {
+    id: 166,
+    title: "Asia Beyond: Turkey, Russia, Thailand, Malaysia, Indonesia, Philippines",
+    slug: "asia-beyond-turkey-russia-thailand-malaysia-indonesia-philippines",
+    category: "asian-public-holidays",
+    author: "Maya Chen",
+    publishedDate: "2026-09-04T09:00:00Z",
+    lastModified: "2026-09-04T09:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/asia-beyond-6.svg",
+    excerpt: "A 2026 public-holiday roundup across Turkey, Russia, Thailand, Malaysia, Indonesia, and the Philippines, with dates, traditions, and bridge-day tactics.",
+    relatedCountries: ["TR", "RU", "TH", "MY", "ID", "PH"],
+    locale: "en",
+    content: `
+      <p>Asian public holidays stretch far beyond China and Japan. For 2026, six countries on the map, Turkey, Russia, Thailand, Malaysia, Indonesia, and the Philippines, each run their own calendar of fixed and floating days that trip up travelers and remote teams. This roundup collects the dates that matter, the traditions behind them, and the bridge-day tricks that turn one day off into a four-day stretch.</p>
+      <h2>Turkey Holidays 2026</h2>
+      <p>Turkey mixes national days with two major Islamic festivals that move with the lunar calendar. Republic Day lands on October 29. The two Eid breaks, Eid al-Fitr and Eid al-Adha, shift earlier each year, so 2026 places them in the spring and summer. Istanbul and Ankara empty out around these dates, and domestic flights sell out fast.</p>
+      <h2>Russia Holidays 2026</h2>
+      <p>Russia takes a blunt approach: a long winter block around New Year and Defender of the Fatherland Day on February 23, then a spring cluster with International Women's Day on March 8 and Spring and Labour Day on May 1. The May holidays stretch from May 1 to May 9, Victory Day, giving locals a full week if they bridge with a single vacation day.</p>
+      <h2>Thailand Holidays 2026</h2>
+      <p>Thailand's calendar is dense with royal and Buddhist observances. Songkran, the April water festival, is effectively a multi-day national pause. The King's Birthday in July and Father's Day in December close the year. Many Thai holidays are declared only weeks ahead, so teams should watch the royal gazette before locking plans.</p>
+      <h2>Malaysia Holidays 2026</h2>
+      <p>Malaysia splits its calendar by state, but a shared national set covers Merdeka Day on August 31 and Malaysia Day on September 16. Islamic festivals like Hari Raya Aidilfitri shift yearly. Because states differ, a Kuala Lumpur office may be open while Penang is dark, a detail that matters for regional operations.</p>
+      <h2>Indonesia Holidays 2026</h2>
+      <p>Indonesia pairs fixed national days, Independence Day on August 17, with a moving set of Islamic holidays. The government often declares joint leave, cuti bersama, around Eid, extending the break by several days. Jakarta grinds to a near stop, and the exodus, mudik, back to home towns is one of the largest annual human migrations anywhere.</p>
+      <h2>Philippines Holidays 2026</h2>
+      <p>The Philippines lists both regular and special non-working days. Rizal Day on December 30, Independence Day on June 12, and a cluster of religious dates fill the year. Special days pay less strictly, so some employers stay open. Planning around the regular national holidays is the safe bet for cross-team coordination.</p>
+      <h2>Quick Comparison of the Six</h2>
+      <table>
+        <thead><tr><th>Country</th><th>Anchor holiday 2026</th><th>Notable quirk</th></tr></thead>
+        <tbody>
+          <tr><td>Turkey</td><td>Republic Day, Oct 29</td><td>Two moving Eid breaks</td></tr>
+          <tr><td>Russia</td><td>Victory Day, May 9</td><td>Long May block</td></tr>
+          <tr><td>Thailand</td><td>Songkran, April</td><td>Late gazette declarations</td></tr>
+          <tr><td>Malaysia</td><td>Merdeka Day, Aug 31</td><td>State-by-state splits</td></tr>
+          <tr><td>Indonesia</td><td>Independence Day, Aug 17</td><td>Joint leave around Eid</td></tr>
+          <tr><td>Philippines</td><td>Rizal Day, Dec 30</td><td>Regular vs special days</td></tr>
+        </tbody>
+      </table>
+      <h2>Plan Around the Gaps</h2>
+      <p>The smart move is to map each country's floating days early, then place team deadlines and travel between the fixed anchors. A single bridge day can unlock a four-day weekend in Russia or Malaysia, while Thailand and Indonesia reward flexible scheduling more than strict planning.</p>
+      <p>For country-by-country detail, visit <a href="https://public-holidays.shop/en">public-holidays.shop</a>, open the <a href="https://public-holidays.shop/en/TR">Turkey holidays page</a>, or browse the full <a href="https://public-holidays.shop/en/blog">blog</a> for more regional roundups.</p>
+    `,
+    faq: [
+      {
+        question: "Which of these six has the most public holidays in 2026?",
+        answer: "Indonesia and Malaysia add the most moving Islamic observances on top of fixed national days, but the raw count shifts every year with lunar dates, so the lead changes between them.",
+      },
+      {
+        question: "Do Thailand and Indonesia announce holidays late?",
+        answer: "Yes. Thailand often declares some dates only weeks ahead through the royal gazette, and Indonesia sets the joint leave around Eid close to the event.",
+      },
+      {
+        question: "How do I bridge one day into a long weekend?",
+        answer: "In Russia and Malaysia, placing one vacation day next to a fixed holiday like Victory Day or Merdeka Day often creates a four-day break.",
+      },
+    ],
+  },
+  {
+    id: 167,
+    title: "亚洲不止中日：土耳其、俄罗斯、泰国、马来西亚、印尼、菲律宾 2026 公共假期盘点",
+    slug: "asia-beyond-turkey-russia-thailand-malaysia-indonesia-philippines",
+    category: "asian-public-holidays",
+    author: "陈思远",
+    publishedDate: "2026-09-04T09:00:00Z",
+    lastModified: "2026-09-04T09:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/asia-beyond-6.svg",
+    excerpt: "2026 年亚洲公共假期盘点，覆盖土耳其、俄罗斯、泰国、马来西亚、印尼与菲律宾的日期、习俗与拼假技巧。",
+    relatedCountries: ["TR", "RU", "TH", "MY", "ID", "PH"],
+    locale: "zh",
+    content: `
+      <p>亚洲公共假期远不止中国和日本。2026 年，地图上这六个国家，土耳其、俄罗斯、泰国、马来西亚、印尼、菲律宾，各自有一套固定与浮动交织的假日表，常常让旅行者和跨国远程团队踩坑。这篇盘点把真正要紧的日期、背后的习俗，以及把一天假期拼成四天连休的技巧一并收进来。</p>
+      <h2>土耳其 2026 公共假期</h2>
+      <p>土耳其把国庆日和两个随阴历移动的伊斯兰大节混在一起。共和国日固定在 10 月 29 日。开斋节与宰牲节每年提前约十天，2026 年落在春夏两季。这两天前后伊斯坦布尔和安卡拉几乎空城，国内机票很快售罄。</p>
+      <h2>俄罗斯 2026 公共假期</h2>
+      <p>俄罗斯的风格很直接：新年前后一长段冬休，加上 2 月 23 日祖国保卫者日；春天则聚在 3 月 8 日国际妇女节和 5 月 1 日劳动节。5 月从 1 日一路连到 9 日胜利日，只要再休一天年假，本地人就能凑出整整一周。</p>
+      <h2>泰国 2026 公共假期</h2>
+      <p>泰国的日历塞满了王室与佛教节日。四月泼水节（Songkran）几乎是全国性的多日暂停。七月王诞、十二月父亲节收尾全年。不少泰国假日提前几周才公布，团队在敲定计划前最好盯紧王室公报。</p>
+      <h2>马来西亚 2026 公共假期</h2>
+      <p>马来西亚按州分日历，但全国共用的一套装假覆盖 8 月 31 日独立日和 9 月 16 日马来西亚日。开斋节这类伊斯兰节日每年浮动。因为各州不同，吉隆坡办公室上班时槟城可能休息，做区域运营的人得留心。</p>
+      <h2>印尼 2026 公共假期</h2>
+      <p>印尼把固定国庆日（8 月 17 日独立日）和一串浮动的伊斯兰假日叠加。政府常在开斋节前后宣布共同休假（cuti bersama），把假期延长好几天。雅加达近乎停摆，而返乡潮（mudik）是全球最大规模的人口年度迁徙之一。</p>
+      <h2>菲律宾 2026 公共假期</h2>
+      <p>菲律宾分"常规"与"特别不工作"两类假日。12 月 30 日黎刹日、6 月 12 日独立日，加上一串宗教日期填满全年。特别日薪水算法较松，部分雇主照常开工。跨团队协调时，围绕常规国庆日来排期最稳妥。</p>
+      <h2>六国速览对比</h2>
+      <table>
+        <thead><tr><th>国家</th><th>2026 锚点假日</th><th>明显特点</th></tr></thead>
+        <tbody>
+          <tr><td>土耳其</td><td>共和国日 10/29</td><td>两个浮动开斋/宰牲节</td></tr>
+          <tr><td>俄罗斯</td><td>胜利日 5/9</td><td>五月长连假</td></tr>
+          <tr><td>泰国</td><td>泼水节 4 月</td><td>临近才公布</td></tr>
+          <tr><td>马来西亚</td><td>独立日 8/31</td><td>各州不一</td></tr>
+          <tr><td>印尼</td><td>独立日 8/17</td><td>开斋节共同休假</td></tr>
+          <tr><td>菲律宾</td><td>黎刹日 12/30</td><td>常规日 vs 特别日</td></tr>
+        </tbody>
+      </table>
+      <h2>围着空档做计划</h2>
+      <p>聪明的做法是先把每个国家浮动假日标早，再把团队截止日和出行排进固定锚点之间。在俄罗斯或马来西亚，只要拿一天年假去拼胜利日或独立日，常常就能换来四天连休；泰国和印尼则更吃灵活的排期而非死板计划。</p>
+      <p>想逐国细看，欢迎访问 <a href="https://public-holidays.shop/zh">public-holidays.shop</a>，打开 <a href="https://public-holidays.shop/zh/TR">土耳其假日页</a>，或在 <a href="https://public-holidays.shop/zh/blog">blog</a> 读更多区域盘点。</p>
+    `,
+    faq: [
+      {
+        question: "这六国里 2026 年哪国公共假期最多？",
+        answer: "印尼和马来西亚在固定国庆日之上叠加了最多的浮动伊斯兰节日，但因为阴历每年都在变，具体名次会在两者之间来回换。",
+      },
+      {
+        question: "泰国和印尼会临时才公布假日吗？",
+        answer: "会。泰国常提前几周通过王室公报才定下某些日期，印尼的共同休假也常在开斋节临近时才公布。",
+      },
+      {
+        question: "怎么把一天假期拼成长周末？",
+        answer: "在俄罗斯和马来西亚，把一天年假放在胜利日或独立日旁边，往往就能凑出四天连休。",
+      },
+    ],
+  },
 ];
 
 // Locale-aware helper functions
