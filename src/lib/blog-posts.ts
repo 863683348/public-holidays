@@ -4586,6 +4586,104 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+
+  {
+    id: 168,
+    title: "Worldwide Holidays at a Glance: 46+ Countries Compared",
+    slug: "worldwide-holidays-at-a-glance",
+    category: "world-public-holidays",
+    author: "Maya Chen",
+    publishedDate: "2026-09-06T09:00:00Z",
+    lastModified: "2026-09-06T09:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/worldwide-holidays.svg",
+    excerpt: "A side-by-side look at public holidays by country across 46+ nations, who gets the most days off, who gets the fewest, and how the world holidays list breaks down by region.",
+    relatedCountries: ["US", "GB", "CN", "JP", "DE", "FR", "IN", "BR", "CA", "AU", "IT", "ES", "MX", "RU", "ZA", "KR"],
+    locale: "en",
+    content: `
+      <p>If you have ever tried to schedule a meeting across three time zones, you already know that public <strong>holidays by country</strong> are anything but uniform. This worldwide roundup lines up 46+ nations at a glance, so you can see who gets the most time off and who barely stops. We compare counts, clusters, and the quirks that trip up remote teams.</p>
+      <h2>Public holidays by country: the raw count</h2>
+      <p>The headline number varies more than most people expect. At one end, a handful of nations grant under ten paid public holidays a year. At the other, several cluster around fifteen to twenty once you add regional and substitute days. The <strong>world holidays list</strong> below groups them so the gaps are easy to read.</p>
+      <h2>The world holidays list, region by region</h2>
+      <p>Europe leans on fixed Christian and civic dates, with extra days added by individual states. Asia mixes lunar and solar calendars, so counts shift year to year. The Americas stack national independence days with a few floating observances. Africa and the Middle East follow their own religious and civic rhythm entirely.</p>
+      <table>
+        <thead><tr><th>Region</th><th>Typical public holidays</th><th>What moves the count</th></tr></thead>
+        <tbody>
+          <tr><td>Europe</td><td>10–15</td><td>State-added days, substitute Mondays</td></tr>
+          <tr><td>Asia</td><td>11–18</td><td>Lunar dates, royal and Buddhist observances</td></tr>
+          <tr><td>Americas</td><td>8–14</td><td>Independence days, floating civic dates</td></tr>
+          <tr><td>Africa &amp; Middle East</td><td>9–16</td><td>Islamic calendar, national days</td></tr>
+        </tbody>
+      </table>
+      <h2>Where you get the most, and the least</h2>
+      <p>Countries with the fewest statutory days often make up for it with generous annual leave, while the most generous holiday lists sit alongside shorter leave entitlements. Looking at public holidays by country next to leave allowance tells the real story, not the headline number alone.</p>
+      <h2>Planning across borders</h2>
+      <p>When a team spans regions, map the floating days first and place deadlines between the fixed anchors. One bridge day can unlock a four-day weekend in several countries at once, and a shared quiet week in late December is the one window almost everyone respects.</p>
+      <p>For country-by-country detail, open <a href="/">public-holidays.shop</a>, browse the <a href="/blog">blog</a> for more regional roundups, or jump straight to the <a href="/en/US">US holidays page</a>.</p>
+    `,
+    faq: [
+      {
+        question: "Which country has the most public holidays?",
+        answer: "No single country wins every year, because lunar-based holidays move. India and several Southeast Asian nations routinely top the list once regional and religious days stack, often landing in the high teens to low twenties.",
+      },
+      {
+        question: "Do all countries count holidays the same way?",
+        answer: "No. Some count only national statutory days, others include state or provincial days, and many add substitute days when a holiday lands on a weekend. That is why a raw count between two countries can be misleading.",
+      },
+      {
+        question: "How do I compare holidays by country for a remote team?",
+        answer: "Pull each team member's country into one calendar, mark the floating days early, and place deadlines between the fixed anchors. A single bridge day can create a long weekend across several countries at once.",
+      },
+    ],
+  },
+
+  {
+    id: 169,
+    title: "全球假日一览：46+ 国家横向对比",
+    slug: "worldwide-holidays-at-a-glance",
+    category: "world-public-holidays",
+    author: "陈思远",
+    publishedDate: "2026-09-06T09:00:00Z",
+    lastModified: "2026-09-06T09:00:00Z",
+    imageUrl: "https://public-holidays.shop/images/blog/worldwide-holidays.svg",
+    excerpt: "把 46+ 个国家的公共假日横向摆在一起：谁放假最多、谁最少，以及全球假日列表按区域怎么分。",
+    relatedCountries: ["US", "GB", "CN", "JP", "DE", "FR", "IN", "BR", "CA", "AU", "IT", "ES", "MX", "RU", "ZA", "KR"],
+    locale: "zh",
+    content: `
+      <p>如果你曾经试着在三个时区之间排会议，就会知道<strong>公共假日按国家</strong>差异有多大。这篇<strong>全球假日一览</strong>把 46+ 个国家横向摆在一起，一眼看清谁放假最多、谁几乎不歇，以及各地假日的排布逻辑，方便远程团队和旅行者提前规划。</p>
+      <h2>公共假日按国家：先数天数</h2>
+      <p>各国公共假日的总数，差距比多数人想的大。一端是每年不到十天的国家，另一端加上地方与补休日后能逼近十五到二十天。下面的<strong>全球假日列表</strong>按区域归组，方便直接对比。</p>
+      <h2>全球假日列表：分区域看</h2>
+      <p>欧洲以固定基督教与公民节日为主，各州还会补几天。亚洲混用阴历与阳历，所以数量每年浮动。美洲把独立日与几个浮动公民日叠在一起。非洲与中东则完全按自己的宗教与国庆节奏走。</p>
+      <table>
+        <thead><tr><th>区域</th><th>常见公共假日数</th><th>影响数量的因素</th></tr></thead>
+        <tbody>
+          <tr><td>欧洲</td><td>10–15</td><td>各州增补日、补休周一</td></tr>
+          <tr><td>亚洲</td><td>11–18</td><td>阴历日期、王室与佛教节日</td></tr>
+          <tr><td>美洲</td><td>8–14</td><td>独立日、浮动公民日</td></tr>
+          <tr><td>非洲与中东</td><td>9–16</td><td>伊斯兰历、国庆日</td></tr>
+        </tbody>
+      </table>
+      <h2>谁放假最多，谁最少</h2>
+      <p>法定假日最少的国家，往往用更长的年假来补；而假日最多的地方，年假反而偏短。把"公共假日按国家"和年假额度放在一起看，才看得到真实全貌，而不是被单一数字误导。</p>
+      <h2>跨国怎么排期</h2>
+      <p>团队跨区域时，先把浮动假日标出来，再把截止日排在固定锚点之间。只要一天补休，好几个国家能同时凑出四天连休；而十二月底那周几乎全球都安静，是唯一大家都买账的窗口。</p>
+      <p>想逐国细看，欢迎访问 <a href="/zh">public-holidays.shop</a>，到 <a href="/zh/blog">博客</a> 读更多区域盘点，或直接打开 <a href="/zh/CN">中国假日页</a>。</p>
+    `,
+    faq: [
+      {
+        question: "哪个国家公共假日最多？",
+        answer: "没有哪个国家每年都稳居第一，因为阴历节日会浮动。印度和几个东南亚国家把地方与宗教假日叠起来后，常常排到接近二十天。",
+      },
+      {
+        question: "各国计算假日的方式一样吗？",
+        answer: "不一样。有的只算全国法定日，有的把州或省的日子也算进去，还有不少会在假日撞上周末时补一天。所以两个国家的原始数字直接比，很容易误读。",
+      },
+      {
+        question: "远程团队怎么按国家对比假日？",
+        answer: "把每位成员所在国放进同一张日历，早点标出浮动假日，再把截止日排在固定锚点之间。只要一天补休，好几个国家就能同时凑出长周末。",
+      },
+    ],
+  },
 ];
 
 // Locale-aware helper functions
