@@ -1,11 +1,11 @@
 import type { MetadataRoute } from "next";
 import { routing } from "@/i18n/routing";
 import { COUNTRIES, NO_DATA_COUNTRIES } from "@/lib/countries";
-import { BLOG_POSTS } from "@/lib/blog-posts";
+import { fetchBlogPosts } from "@/lib/blog-source";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://public-holidays.shop";
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const urls: MetadataRoute.Sitemap = [];
   const year = new Date().getFullYear();
   // Past 1 year through next 5 years — keeps the sitemap focused on
@@ -77,7 +77,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
 
     // Blog articles (bilingual posts share a slug; category from post data)
-    const localePosts = BLOG_POSTS.filter((p) => (p.locale || "en") === l);
+    const posts = await fetchBlogPosts();
+    const localePosts = posts.filter((p) => (p.locale || "en") === l);
     for (const post of localePosts) {
       urls.push({
         url: `${SITE_URL}/${l}/blog/${post.category}/${post.slug}`,

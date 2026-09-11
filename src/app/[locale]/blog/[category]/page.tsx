@@ -5,7 +5,7 @@ import { routing } from "@/i18n/routing";
 import { Link } from "@/i18n/navigation";
 import SubscribeButton from "@/components/SubscribeButton";
 import AdSlot from "@/components/AdSlot";
-import { getPostsByCategory } from "@/lib/blog-posts";
+import { getPostsByCategory } from "@/lib/blog-source";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://public-holidays.shop";
 
@@ -53,8 +53,8 @@ export default async function CategoryPage({
   const t = await getTranslations("blog");
   const tNav = await getTranslations("nav");
 
-  // Fetch locale-aware posts from data store
-  const categoryPosts = getPostsByCategory(category, locale);
+  // Fetch locale-aware posts from the external data store (ISR)
+  const categoryPosts = await getPostsByCategory(category, locale);
 
   if (categoryPosts.length === 0) {
     notFound();

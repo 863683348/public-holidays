@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { getCountry } from "@/lib/countries";
-import { getPostData, getPostsByCategory } from "@/lib/blog-posts";
+import { getPostData, getPostsByCategory, fetchBlogPosts } from "@/lib/blog-source";
 import { articleBreadcrumb, articleStructuredData, faqPage } from "@/lib/seo";
 import { Link } from "@/i18n/navigation";
 import SubscribeButton from "@/components/SubscribeButton";
@@ -11,6 +11,19 @@ import AdSlot from "@/components/AdSlot";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://public-holidays.shop";
 
+
+export const dynamicParams = true;
+
+export async function generateStaticParams() {
+  // Build-time snapshot of all known posts; new posts render on first request
+  // (dynamicParams=true) without redeploying the main app.
+  const posts = await fetchBlogPosts();
+  return posts.map((p) => ({
+    locale: p.locale || "en",
+    category: p.category,
+    slug: p.slug,
+  }));
+}
 
 export async function generateMetadata({
   params,
@@ -89,7 +102,7 @@ export default async function ArticlePage({
 
   const localeStr = locale || "en";
 
-  const relatedPosts = getPostsByCategory(category, locale).filter((p) => p.slug !== slug).slice(0, 3);
+  const relatedPosts = (await getPostsByCategory(category, locale)).filter((p) => p.slug !== slug).slice(0, 3);
 
   return (
     <div className="space-y-8">

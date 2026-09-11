@@ -19,7 +19,7 @@ import {
 } from "@/lib/countries";
 import { getHolidays } from "@/lib/holidays";
 import { findLongWeekends } from "@/lib/longWeekend";
-import { getPostsByCountry } from "@/lib/blog-posts";
+import { getPostsByCountry } from "@/lib/blog-source";
 import { groupHolidays, slugifyHoliday } from "@/lib/slug";
 import { holidayItemList, breadcrumb, faqPage } from "@/lib/seo";
 import { routing } from "@/i18n/routing";
@@ -76,6 +76,10 @@ export default async function CountryHolidayView({
   }
 
   const longWeekends = findLongWeekends(holidays, year);
+
+  // 博客数据来自外部源（ISR）。组件顶层 await 取快照并 bake 进静态页；
+  // 运行时国家页是纯静态 HTML，不 fetch 外部源 → 零运行时 FOT。
+  const relatedPosts = await getPostsByCountry(country);
 
   // Localized country name used across the FAQ copy so questions read fully
   // native (e.g. "Wie viele Feiertage hat Tschechien…?" not "…Czechia…").
@@ -491,7 +495,6 @@ export default async function CountryHolidayView({
 
       {/* Related Blog Posts — internal links to blog content */}
       {(() => {
-        const relatedPosts = getPostsByCountry(country);
         if (relatedPosts.length === 0) return null;
         return (
           <section className="space-y-4">

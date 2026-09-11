@@ -35,7 +35,7 @@ const WT = 'C:/worktmp';
 // ---- 站点登记表：dir=仓库目录，files=数据文件(相对)，slugRe=slug/id 提取正则 ----
 const SITES = {
   1: { name: 'getcreditworth',        dir: `${WS}/getcreditworth`,            files: ['data/blog/posts.tsx'], slugRe: /slug:\s*['"]([^'"\s]+)['"]/g, bareDomain: 'getcreditworth.com' },
-  2: { name: 'public-holidays',       dir: `${WS}/public-holidays`,           files: ['src/lib/blog-posts.ts'], slugRe: /slug:\s*['"]([^'"\s]+)['"]/g, localeRe: /locale:\s*['"]([^'"\s]+)['"]/g, idRe: /^\s*id:\s*(\d+),?\r?$/gm, multiLang: true, bareDomain: 'public-holidays.shop' },
+  2: { name: 'public-holidays',       dir: `${WS}/public-holidays`,           files: ['../public-holidays-blog-data/blog-posts.json'], slugRe: /"slug"\s*:\s*"([^"]+)"/g, localeRe: /"locale"\s*:\s*"([^"]+)"/g, multiLang: true, bareDomain: 'public-holidays.shop', external: true, note: '博客数据已迁外部 data repo（public-holidays-blog-data），不再编译进主站 build' },
   3: { name: 'codexpetgenerator',     dir: `${WS}/codexpetgenerator-recover`, files: ['lib/blog/posts.ts'],     slugRe: /slug:\s*['"]([^'"\s]+)['"]/g, bareDomain: 'codexpetgenerator.com' },
   4: { name: 'codex-skin-studio',     dir: `${WS}/codex-skin-studio`,         files: ['src/data/posts.ts'],      slugRe: /slug:\s*['"]([^'"\s]+)['"]/g, bareDomain: 'codex-skin-studio.shop' },
   5: { name: 'dynamic-profile',       dir: `${WS}/dynamic-profile`,           files: ['lib/blog-posts.ts'],       slugRe: /slug:\s*['"]([^'"\s]+)['"]/g, bareDomain: 'dynamic-profile.shop' },

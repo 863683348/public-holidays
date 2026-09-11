@@ -101,6 +101,13 @@ const nextConfig: NextConfig = {
         source: "/holidays/sitemap.xml",
         headers: [{ key: "Cache-Control", value: STATIC_CACHE_CONTROL }],
       },
+      // 博客路由：内容每日更新，CDN 只缓存 5 分钟（覆盖上面的 7 天 static 规则），
+      // 避免新帖被冻在边缘 7 天。配合 fetch 的 revalidateTag('blog-posts') 实现
+      // 「加帖即时生效、主站不 redeploy」——这是方案 B 降 FOT 的关键。
+      {
+        source: "/:locale/blog/:path*",
+        headers: [{ key: "Cache-Control", value: "public, s-maxage=300, stale-while-revalidate=86400" }],
+      },
     ];
   },
 };

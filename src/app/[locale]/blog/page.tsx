@@ -6,7 +6,7 @@ import { Link } from "@/i18n/navigation";
 import SubscribeButton from "@/components/SubscribeButton";
 import AdSlot from "@/components/AdSlot";
 import { getCountry } from "@/lib/countries";
-import { getAllPosts, getCategories } from "@/lib/blog-posts";
+import { getAllPosts, getCategories } from "@/lib/blog-source";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://public-holidays.shop";
 
@@ -67,9 +67,9 @@ export default async function BlogPage({
   const t = await getTranslations("blog");
   const tNav = await getTranslations("nav");
 
-  // Fetch locale-aware blog data from the data store
-  const allPosts = getAllPosts(locale);
-  const categoryList = getCategories(locale);
+  // Fetch locale-aware blog data from the external data store (ISR)
+  const allPosts = await getAllPosts(locale);
+  const categoryList = await getCategories(locale);
 
   const featuredPost = allPosts.length > 0 ? allPosts[0] : null;
 

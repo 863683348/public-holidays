@@ -1,4 +1,4 @@
-import { revalidatePath } from "next/cache";
+import { revalidatePath, revalidateTag } from "next/cache";
 import { NextRequest, NextResponse } from "next/server";
 
 /**
@@ -20,6 +20,7 @@ export async function POST(request: NextRequest) {
     const body = (await request.json().catch(() => ({}))) as {
       secret?: string;
       paths?: string[];
+      tags?: string[];
     };
 
     const expectedSecret = process.env.REVALIDATE_SECRET;
@@ -35,8 +36,20 @@ export async function POST(request: NextRequest) {
 
     const paths =
       body.paths && body.paths.length > 0 ? body.paths : DEFAULT_PATHS;
+    const tags = body.tags && body.tags.length > 0 ? body.tags : [];
 
     const results: { path: string; revalidated: boolean }[] = [];
+    // 1) Revalidate fetch-cache tags (e.g. "blog-posts") — clears the external
+    //    blog-data fetch so the next request regenerates with the fresh posts.
+    for (const tag of tags) {
+      try {
+        revalidateTag(tag);
+        results.push({ path: `tag:${tag}`, revalidated: true });
+      } catch {
+        results.push({ path: `tag:${tag}`, revalidated: false });
+      }
+    }
+    // 2) Revalidate routes + CDN cache (clears stale HTML at the edge).
     for (const path of paths) {
       try {
         revalidatePath(path);
