@@ -123,6 +123,67 @@ function scanStructure(code, file, isTsx) {
   return issues;
 }
 
+// ---- 检查：外部博客数据 JSON 的字段契约（站 2 专用）----
+// 背景（2026-08 / 09 两次生产事故）：
+//   1) 6 条记录缺 lastModified → sitemap.ts 里 new Date(undefined).toISOString()
+//      抛 RangeError: Invalid time value，整个 build 失败（/blog/sitemap.xml）。
+//   2) 1 条记录的 title 被写成了 {en, zh} 对象 → 文章页 <h1> 抛
+//      "Objects are not valid as a React child"。
+//   3) 5 条记录缺 relatedCountries → 文章页 post.relatedCountries.length 抛
+//      TypeError，页面 500。
+//   本检查在 push 前拦住这三类脏数据。
+const BLOG_REQUIRED_STR = [
+  'title', 'slug', 'category', 'author',
+  'publishedDate', 'lastModified', 'imageUrl', 'excerpt', 'content',
+];
+
+function scanBlogJsonContract(file, fullPath) {
+  const issues = [];
+  let data;
+  try {
+    data = JSON.parse(fs.readFileSync(fullPath, 'utf8'));
+  } catch (e) {
+    return [`${file}: JSON 解析失败 — ${e.message}`];
+  }
+  if (!Array.isArray(data)) return [`${file}: 顶层不是数组（实际 ${typeof data}）`];
+
+  const seen = new Map();
+  data.forEach((p, i) => {
+    const tag = `${file}[#${i}]${p && p.slug ? ' ' + p.slug : ''}`;
+    if (!p || typeof p !== 'object') { issues.push(`${tag}: 元素不是对象`); return; }
+
+    for (const k of BLOG_REQUIRED_STR) {
+      const v = p[k];
+      if (typeof v !== 'string' || v.length === 0) {
+        issues.push(`${tag}: ${k} 缺失或非字符串（实际 ${v === undefined ? 'undefined' : typeof v}）← 会导致页面 500 或 build 失败`);
+      }
+    }
+    if (!Array.isArray(p.relatedCountries)) {
+      issues.push(`${tag}: relatedCountries 非数组（实际 ${typeof p.relatedCountries}）← 文章页 .length 会抛 TypeError`);
+    }
+    if (typeof p.id !== 'number') {
+      issues.push(`${tag}: id 非数字（实际 ${typeof p.id}）`);
+    }
+    // 日期必须可解析 —— sitemap 会对其调 toISOString()
+    for (const k of ['publishedDate', 'lastModified']) {
+      const v = p[k];
+      if (typeof v === 'string' && Number.isNaN(new Date(v).getTime())) {
+        issues.push(`${tag}: ${k} 无法解析为日期（"${v}"）← sitemap 序列化抛 RangeError`);
+      }
+    }
+    const pub = new Date(p.publishedDate).getTime();
+    const mod = new Date(p.lastModified).getTime();
+    if (!Number.isNaN(pub) && !Number.isNaN(mod) && mod < pub) {
+      issues.push(`${tag}: lastModified 早于 publishedDate`);
+    }
+    // slug + locale 唯一
+    const key = (p.locale || 'en') + ':' + p.slug;
+    if (seen.has(key)) issues.push(`${tag}: slug+locale 重复（与 #${seen.get(key)} 冲突）`);
+    else seen.set(key, i);
+  });
+  return issues;
+}
+
 // ---- 检查：裸域 CTA（href 指向裸域而非站内路径）----
 function scanBareDomain(code, file, domain) {
   const issues = [];
@@ -234,6 +295,22 @@ function checkSite(num, opts) {
     else {
       const dup = keys.filter((x, i) => keys.indexOf(x) !== i);
       fail(`slug 重复 ${keys.length - unique.size} 个: ${[...new Set(dup)].join(', ')}`);
+    }
+  }
+
+  // 外部数据仓库（站 2）：字段契约检查 —— 拦住「缺字段 / 类型错」造成的 build 失败与 500
+  if (s.external) {
+    const jsonFiles = existing.filter((f) => f.endsWith('.json'));
+    const contractIssues = [];
+    for (const f of jsonFiles) {
+      contractIssues.push(...scanBlogJsonContract(f, path.join(s.dir, f)));
+    }
+    if (contractIssues.length) {
+      fail(`数据契约 ${contractIssues.length} 处不符（可能击穿 build / 页面 500）`);
+      contractIssues.slice(0, 25).forEach((m) => console.log(`      ${m}`));
+      if (contractIssues.length > 25) console.log(`      …另有 ${contractIssues.length - 25} 处`);
+    } else {
+      pass(`数据契约 OK（${jsonFiles.length} 个 JSON，必需字段/日期/slug+locale/relatedCountries 全部合规）`);
     }
   }
 

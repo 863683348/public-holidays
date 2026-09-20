@@ -5,6 +5,19 @@ import { fetchBlogPosts } from "@/lib/blog-source";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://public-holidays.shop";
 
+/**
+ * 日期守卫：无法解析时返回 undefined，避免 Next.js 序列化 sitemap 时
+ * 对 Invalid Date 调 toISOString() 抛 "RangeError: Invalid time value"
+ * 而中断整个 build。
+ */
+function safeDate(value: unknown): Date | undefined {
+  if (typeof value !== "string" && typeof value !== "number" && !(value instanceof Date)) {
+    return undefined;
+  }
+  const d = value instanceof Date ? value : new Date(value as string | number);
+  return Number.isNaN(d.getTime()) ? undefined : d;
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const urls: MetadataRoute.Sitemap = [];
   const year = new Date().getFullYear();
@@ -69,7 +82,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       for (const y of years) {
         urls.push({
           url: `${SITE_URL}/${l}/${c.code}/${y}`,
-          lastModified: new Date(`${y}-01-01`),
+          lastModified: safeDate(`${y}-01-01`),
           changeFrequency: "yearly",
           priority: y === year ? 0.8 : 0.6,
         });
@@ -82,7 +95,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     for (const post of localePosts) {
       urls.push({
         url: `${SITE_URL}/${l}/blog/${post.category}/${post.slug}`,
-        lastModified: new Date(post.lastModified),
+        lastModified: safeDate(post.lastModified),
         changeFrequency: "monthly",
         priority: 0.7,
       });

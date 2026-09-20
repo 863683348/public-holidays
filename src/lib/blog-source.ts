@@ -25,15 +25,49 @@ function blogDataUrl(): string {
  * - next.revalidate=60：最多 60s 后台自动重拉，新帖最长 60s 内生效（无需 revalidate API 也可）。
  * - next.tags=['blog-posts']：允许 /api/revalidate 用 revalidateTag 主动清缓存即时生效。
  * fetch 失败时返回空数组（不阻断页面渲染，最坏情况博客区为空）。
+ *
+ * ⚠️ 数据来自外部 repo，属于不可信输入：这里做「运行时契约守卫」，
+ * 剔除字段类型不符 / 缺必需字段的记录。历史事故（2026-08~09）：
+ *   - 6 条记录缺 lastModified → sitemap 序列化时 new Date(undefined).toISOString()
+ *     抛 "RangeError: Invalid time value"，整个 build 失败（/blog/sitemap.xml）。
+ *   - 1 条记录 title 是 {en, zh} 对象 → React 渲染 <h1> 抛
+ *     "Objects are not valid as a React child"。
+ *   - 5 条记录缺 relatedCountries → 文章页 post.relatedCountries.length 抛
+ *     "Cannot read properties of undefined"，页面 500。
  */
+function isValidPost(p: unknown): p is BlogPost {
+  if (!p || typeof p !== "object") return false;
+  const o = p as Record<string, unknown>;
+  const strFields = [
+    "title",
+    "slug",
+    "category",
+    "author",
+    "publishedDate",
+    "lastModified",
+    "imageUrl",
+    "excerpt",
+    "content",
+  ];
+  for (const k of strFields) {
+    if (typeof o[k] !== "string" || (o[k] as string).length === 0) return false;
+  }
+  if (!Array.isArray(o.relatedCountries)) return false;
+  // 日期必须可解析，否则 sitemap 里的 toISOString() 会炸
+  if (Number.isNaN(new Date(o.publishedDate as string).getTime())) return false;
+  if (Number.isNaN(new Date(o.lastModified as string).getTime())) return false;
+  return true;
+}
+
 export async function fetchBlogPosts(): Promise<BlogPost[]> {
   try {
     const res = await fetch(blogDataUrl(), {
       next: { tags: [BLOG_DATA_TAG], revalidate: 60 },
     });
     if (!res.ok) throw new Error("blog data HTTP " + res.status);
-    const data = (await res.json()) as BlogPost[];
-    return Array.isArray(data) ? data : [];
+    const data = (await res.json()) as unknown;
+    if (!Array.isArray(data)) return [];
+    return data.filter(isValidPost);
   } catch {
     return [];
   }
