@@ -53,6 +53,13 @@ const STATIC_CACHE_CONTROL = "public, s-maxage=604800, stale-while-revalidate=86
 const SHORT_CACHE_CONTROL = "public, s-maxage=3600, stale-while-revalidate=86400";
 
 const nextConfig: NextConfig = {
+  async redirects() {
+    return [
+      // P2-10：根级 /blog 无路由（真实路径是 /en/blog），404 会丢外链权重 → 301 到默认语言博客。
+      // /blog 不在 middleware matcher 内，next.config redirects 直接生效。
+      { source: "/blog", destination: "/en/blog", permanent: true },
+    ];
+  },
   async headers() {
     return [
       {
