@@ -18,9 +18,22 @@ function safeDate(value: unknown): Date | undefined {
   return Number.isNaN(d.getTime()) ? undefined : d;
 }
 
+/**
+ * lastmod 不得晚于今天。年份页（/{locale}/{country}/{year}）在语义上落在
+ * 「该年 1 月 1 日」，因此当 years 数组覆盖到未来年份时，lastmod 会落到未来
+ * 日期 —— Google 会判定 sitemap 数据不可信并降低整份地图的抓取优先级。
+ * 未来年份一律钳到当前时刻（该页面确实是在本次构建中生成的）。
+ */
+function clampFuture(d: Date | undefined, now: Date): Date | undefined {
+  if (!d) return undefined;
+  return d.getTime() > now.getTime() ? now : d;
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const urls: MetadataRoute.Sitemap = [];
   const year = new Date().getFullYear();
+  // 单次求值：lastmod 钳制与"当前年份"用同一时刻，避免跨秒漂移
+  const now = new Date();
   // Past 1 year through next 5 years — keeps the sitemap focused on
   // discoverable, near-term long-tail while YearNav allows 2000–2035 on demand.
   const years = Array.from({ length: 7 }, (_, i) => year - 1 + i);
@@ -82,7 +95,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       for (const y of years) {
         urls.push({
           url: `${SITE_URL}/${l}/${c.code}/${y}`,
-          lastModified: safeDate(`${y}-01-01`),
+          lastModified: clampFuture(safeDate(`${y}-01-01`), now),
           changeFrequency: "yearly",
           priority: y === year ? 0.8 : 0.6,
         });
